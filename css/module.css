@@ -952,15 +952,6 @@ ul.tab li.active:last-child{
 	[id^=forgotten] .modalContainer form fieldset{
 		padding: 0 44px;
 	}
-
-	.listView li img,
-	.listView li div,
-	.gridView .grid img,
-	.gridView .grid div,
-	.gridView .plain:not(.vertical) img,
-	.gridView .plain:not(.vertical) div{
-		float: left;
-	}
 	.gridView.column,
 	.gridView.row{
 		display: flex;
@@ -1058,6 +1049,14 @@ ul.tab li.active:last-child{
 		background-position: 25px center;
 	}
 
+	.listView li img,
+	.listView li div,
+	.gridView .grid img,
+	.gridView .grid div,
+	.gridView .plain:not(.vertical:not(.newsSubTop .gridView .vertical)) img,
+	.gridView .plain:not(.vertical:not(.newsSubTop .gridView .vertical)) div{
+		float: left;
+	}
 	.gridView[class*=x] .grid div,
 	.gridView[class*=x] .plain div{
 		width: calc(100% - 184px);
@@ -1123,7 +1122,7 @@ ul.tab li.active:last-child{
 		margin-bottom: 22px;
 	}
 
-	.listView li:not(:last-child){
+	.listView li:not(.listView:last-of-type li:last-child){
 		margin-bottom: 22px;
 	}
 
@@ -1176,6 +1175,14 @@ ul.tab li.active:last-child{
 		font-size: 19px;
 	}
 
+	.listView li img,
+	.listView li div,
+	.gridView .grid img,
+	.gridView .grid div,
+	.gridView .plain:not(.vertical) img,
+	.gridView .plain:not(.vertical) div{
+		float: left;
+	}
 	.gridView li:not(.plain.vertical, .top, .display, :last-child){
 		margin-bottom: 22px;
 	}
