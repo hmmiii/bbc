@@ -903,7 +903,7 @@ ul.tab li.active:last-child{
 		scrollbar-width: none; 
 	}
 	[class^=postCarousel] div h2{
-		width: calc(100% - 78px);
+		width: calc(100% - 85px);
 		text-overflow: ellipsis;
 		overflow: hidden;
 		white-space: nowrap;
