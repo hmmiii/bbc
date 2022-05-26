@@ -677,7 +677,7 @@ ul.tab li.active:last-child{
 	line-height: 1.5;
 	margin-bottom: 22px;
 }
-.conten :last-child blockquote{
+.content :last-child blockquote{
 	font-style: italic;
 	line-height: 1.8;
 	margin-bottom: 22px;
