@@ -220,6 +220,7 @@ function progressSlide(){
     var progress = $('.pagerContainer div');
 
     var slider = $('.progressSlide').bxSlider({
+        mode:'fade',
         controls:false,
         pagerCustom: '.thumbPagerPS',
         auto:true,
