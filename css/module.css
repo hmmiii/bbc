@@ -379,7 +379,7 @@ form fieldset input[type=submit]:hover, #forgotten1 .modalContainer form fieldse
 .content :last-child img:hover{
 	transform: scale(0.98);
 }
-.gridView li:not(.gridView .display) div h3 a{
+.gridView li:not(.gridView .display, .left, .right) div h3 a{
 	font-weight: 600;
 	color: inherit;
 }
@@ -487,8 +487,8 @@ form fieldset input[type=submit]:hover, #forgotten1 .modalContainer form fieldse
 }
 .gridView .left div h3 a,
 .gridView .right div h3 a{
-	font-size: 24px;
 	font-weight: 700;
+	color: inherit;
 }
 .gridView .top{
 	border-radius: 4px;
@@ -569,7 +569,6 @@ form fieldset input[type=submit]:hover, #forgotten1 .modalContainer form fieldse
 }
 
 .listView li div h3 a{
-	font-size: 19px;
 	font-weight: 700;
 	color: inherit;
 }
@@ -972,6 +971,11 @@ ul.tab li.active:last-child{
 	.gridView .left img,
 	.gridView .right img{
 		height: 445px;
+	}
+	.gridView .left div h3 a,
+	.gridView .right div h3 a,
+	.listView li div h3 a{
+		font-size: 19px;
 	}
 	.gridView .top img{
 		height: 570px;
