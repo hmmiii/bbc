@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_how-we-live_4" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Lovelife</mark>
+                <h2>Are Gen Z more pragmatic about love and sex?</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Young people aren’t dating and having sex the same way past generations have. Is their approach to relationships more pragmatic?</h3>
+            <p>“Are you ready to settle down?”</p>
+            <p>This is the question Yale College student Kyung Mi Lee posed in a February 2020 piece, Settling Down: Romance in the Era of Gen Z, for the university’s Yale Daily News. Would she and her peers follow the millennial trend of delaying marriage?</p>
+            <p> Nearly two years after she wrote the article, Lee feels the answer is yes - but for a potentially different reason than her millennial counterparts. “In my cultural imagination, [for millennials] being averse to long-term relationships [means] people are hooking up a lot,” Lee, 23, says. In other words, it seemed to her that millennials waited to settle down because they were busy taking advantage of the single life. For Gen Z, she figures, “people are averse [to long-term relationships] because they’re more… introspective about the kinds of relationships they want to be in”.</p>
+            <p>An increasing body of research validates this opinion: members of Gen Z seem to take an especially pragmatic approach to relationships compared to prior generations, and they’re not having as much sex.</p>
+            <p>“They realise that they might have different partners at different times in their lives [who] may fulfil different needs,” says Julie Arbit, Global SVP of Insights at Vice Media Group. In her research, which looked at 500 respondents from the UK and US (of mostly Gen Z and millennials, with some Gen X included “for comparison”), she’s found just one in 10 members of Gen Z say they are “committed to being committed”.  </p>
+            <p>Other researchers have arrived at similar conclusions. According to a study of Gen Z from India, for example, 66% of respondents accept that “not all relationships will be permanent”, with 70% rejecting a “limiting romantic relationship”. </p>
+            <p>Both researchers and members of Gen Z attribute this to a few factors.</p>
+            <p>First, this generation is entering adulthood during a particularly tenuous time, marked by the Covid-19 pandemic, ever-worsening climate change, and financial instability. Many feel they need to achieve stability for themselves before bringing another person into the picture. There’s also the increased access to relationship information online, empowering Gen Z with the language they need to articulate both who they are as well as what they want from a relationship that doesn’t compromise their identity and needs.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Among Gen Z, there’s been a marked decrease in adhering to a gender binary, and an increase in “people willing to explore their sexuality" (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>“They’re hyper-focused on themselves,” says Arbit, “and it’s not because they’re being selfish. They know they’re responsible for their own success and happiness, and they know they need to be able to take care of themselves before they can take care of others.”</p>
+            <p><strong>Seeking stability</strong></p>
+            <p>“Back in the 1960s and 70s, your average 25-year-old man could support a family with his income and not expect his wife to work,” says Stephanie Coontz, the director of research and public education for the US-based Council on Contemporary Families. For many Gen Zers, both the idea that a 25-year-old could support an entire family, and that a man would expect a stay-at-home wife, no longer fits contemporary circumstances - and, for some, even seems laughable.</p>
+            <p>Instead, Gen Z is prioritising a solid financial foundation as individuals, which is lengthening the path toward marriage, says Arielle Kuperberg, an associate professor of sociology at the University of North Carolina at Greensboro, US. “People are taking longer and longer to settle down because they’re taking longer and longer to reach financial stability.”</p>
+            <p>Lee and her friends agree. She says being in what she feels is “the most unsafe, financially unstable generation in history” contributes to their desire to gain “financial independence” before they settle down with a long-term partner.</p>
+            <p>As a senior at university, Lee says she and her friends are much more likely to prioritise their careers over relationships, in order to reach a more financially stable place. “It’s rare that I have a friend who is like, ‘I’m going to move to this place so that I can be with my partner’,” she says. Rather, they’re focusing on what’s best for their careers, and how they can make relationships fit into that.</p>
+            <blockquote>They know they need to be able to take care of themselves before they can take care of others - Julie Arbit</blockquote>
+            <p>Kuperberg’s research on Gen Z chimes with this; she has found younger people in the throes of establishing their careers are less likely to go on formal dates compared to millennials.</p>
+            <p>“I don't think it’s [that] they don't want to have long-term relationships. I think it's that they’re putting them off,” she says.</p>
+            <p>Additionally, Kuperberg has found current instability in young adulthood has led more young people to move back home with their parents because they can’t afford to live on their own in their 20s. “The rise in more casual relationships and decline in more serious relationships… is because it’s just harder to form [the latter].”</p>
+            <p>Recently, this is in no small part because of the Covid-19 pandemic, which has exacerbated the trend of young adults being unable to live independently. Kuperberg interviewed a Gen Z man in spring 2020 who moved from Washington, DC to North Carolina with his parents shortly after the pandemic hit the country. He told researchers he wasn’t going to date again until he moved back to DC.</p>
+            <p><strong>Soul searching</strong></p>
+            <p>A global Vice Media Group study from September 2020, Love After Lockdown, made up of 45% Gen Z respondents, showed 75% were currently single and not dating during the pandemic. Many reported this was in part because they wanted to take the solitary time to get to know themselves better before pursuing a partnership.</p>
+            <p>“I started thinking about myself, what I want to do and what I don't want to do… and it taught me a lot,” said an anonymous Gen Z man from Italy, quoted in the survey. A Gen Z woman based in the US echoed the sentiment: “I'm physically distant from everyone and I can take a step back and say, ‘Who am I?’”</p>
+            <p>Of course, this attitude may have developed from a lack of choice during lockdowns, rather than a Gen-Z proclivity for introspection. However, members of Gen Z from all over the world do have many more resources to figure out who they are, including social media apps like TikTok, where therapists discussing attachment styles and healthy relationship tips have become commonplace.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Members of Gen Z report being more career focused to find financial stability before entering relationships (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>Lee, for example, notes her younger sisters (in their first and second years of college, respectively) have developed in-depth language to talk about relationships through TikTok.</p>
+            <p>“Teenagers are going around talking about their attachment styles to their romantic and sexual partners, using language like, ‘I’m an anxious attachment style,’” she says. This marks a very self-aware approach to dating that prioritises finding someone who makes sense for you, versus just someone you find attractive or interesting. While these priorities certainly aren’t unique to Gen Z, this generation have an easily accessible array of resources to more knowledgeably find a partner who fits them well, in ways that older generations might not have known to think about.</p>
+            <p>Evolving attitudes towards sexuality and gender roles are also a factor. Among Gen Z, there’s been a marked decrease in adhering to a gender binary, and an increase in “people willing to explore their sexuality”, says Kuperberg. In her research, seen by BBC Worklife, she’s noted a statistic showing roughly 50% of Gen Z identify as heterosexual, and “many say they’re heteroflexible”. </p>
+            <p>This openness to different types of sexual partners and relationships recalls Arbit’s observations about Gen Z not necessarily looking for their “one and only”, but rather various people to fulfill different needs, whether these needs be romantic, sexual or something else entirely.</p>
+            <p>“Our parents might have looked for someone of the same religion or the same political views,” says Arbit. “This generation is looking for honesty and passion and someone who makes them excited to get out of bed in the morning… compared to older generations, they’re open to dating different types of people and giving people a chance.”</p>
+            <p><strong>A mark of change</strong></p>
+            <p>This holistic approach to relationships differs dramatically from those embraced by much older generations.</p>
+            <p>Coontz, of the Council on Contemporary Families, says when she was interviewing people for her book on women and families in the 1960s and asked women why they decided to get married, “they would look startled… and say, ‘It was just time’”, she recalls. “There was this sense back [then] that marriage was something you did to enter adult life… Now it’s the opposite.”</p>
+            <blockquote>While marriage used to be a passage into adulthood, today, it’s a mark you’ve already achieved it</blockquote>
+            <p>This is a mark of change for Gen Z; while marriage used to be a passage into adulthood, today, it’s a mark you’ve already achieved it. Society’s been moving in this direction for some time, with each generation becoming more flexible with its ideas about a traditional family and its importance in their lives. Whether Gen Z are shaping society with these attitudes, or whether society is shaping Gen Z, is difficult to parse.</p>
+            <p>Of course, these patterns aren’t true across the board. Among college students, Kuperberg has found that a Gen Z person’s race, class, gender and religion can play a role in how they date and seek out relationships.</p>
+            <p>“White people are more likely to hook up. People of colour are more likely to form relationships or have more formal dates,” she says, adding that those from higher socioeconomic backgrounds are both more likely than other demographics to engage in casual sexual encounters and form long-term relationships - the latter likely because they “have more resources” to grant them stability.</p>
+            <p>While many signs point to Gen Z delaying marriage or permanent partnerships like millennials before them, their reasons for this seem to come increasingly from a place of pragmatism. Sure, millennials have delayed marriage for practical reasons like fearing divorce (many grew up as children of divorce) and because they can’t afford it. But Gen Z is inheriting an arguably even more uncertain world as the problems that plagued millennials (like climate change) become more acute and new ones (like the pandemic) arise. This might necessitate fostering individual stability as a number one priority for Gen Z even more so than their slightly older counterparts.</p>
+            <p>“We joke about who's going to get married first [in] our friend group,” says Lee, “like it's a funny thing that somebody would be engaged in their twenties.”</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

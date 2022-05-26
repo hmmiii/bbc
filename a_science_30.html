@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_science_30" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Science</mark>
+                <h2>International Space Station to crash down to Earth in 2031</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>The International Space Station (ISS) will continue working until 2030, before plunging into the Pacific Ocean in early 2031, according to Nasa.</strong></p>
+            <p>In a report this week, the US space agency said the ISS would crash into a part of the ocean known as Point Nemo.</p>
+            <p>This is the point furthest from land on planet Earth, also known as the spacecraft cemetery.</p>
+            <p>Many old satellites and other space debris have crashed there, including the Russian space station Mir in 2001.</p>
+            <p>Nasa said that in the future space activities close to Earth would be led by the commercial sector.</p>
+            <p>The ISS - a joint project involving five space agencies - has been in orbit since 1998 and has been continuously crewed since 2000. More than 3,000 research investigations have taken place in its microgravity laboratory.</p>
+            <p>However, it is only approved to operate until 2024 and any extension must be agreed by all partners.</p>
+            <p>Nasa said the plan to retire the ISS marked a transition to the commercial sector for activities in low-Earth orbit - the area of space close to Earth.</p>
+            <p>"The private sector is technically and financially capable of developing and operating commercial low-Earth orbit destinations, with Nasa's assistance," said Phil McAlister, director of commercial space at Nasa Headquarters.</p>
+            <p>In 2020, Nasa awarded a contract to Texas-based company Axiom Space to build at least one habitable module to be attached to the ISS. It has also provided funding to three companies to develop designs for space stations and other commercial destinations in orbit.</p>
+            <p>It is hoped that these new projects will be in at least partial operation before the ISS is retired.</p>
+            <p>Nasa said it wanted to create a "robust, American-led commercial economy in low-Earth orbit".</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Elon Musk's SpaceX spacecraft carry crew and cargo to the ISS</figcaption>
+            </figure>
+            <p>The commercial sector is already an important part of the US space programme, with private companies responsible for delivering crew and cargo. Russia's Soyuz and Progress spacecraft are also used.</p>
+            <p>According to Nasa, it will save $1.3bn (£956m) by transitioning to the private sector for activities in low-Earth orbit, money which instead can be spent on deep-space exploration.</p>
+            <p>The savings are anticipated because Nasa will only be paying for the services it needs, rather than for the maintenance and operations of the ISS. Nasa also points out that the private sector space stations will be newer and should require fewer spare parts.</p>
+            <p>Nasa said it had analysed its ISS budget on an annual basis and that it would continue to refine its savings estimates.</p>
+            <p>The transition report published by Nasa this week comes after the administration of US President Joe Biden said it had committed to extend the space station's activities until 2030.</p>
+            <p>However, the extension still requires the support of international partners, including Russia, and funding for the ISS is currently only approved by US Congress until 2024.</p>
+            <p>In an interview with the Russian news agency Interfax in December 2021, the head of Russia's space programme, Dmitry Rogozin, indicated a willingness to work with Nasa beyond 2024.</p>
+            <p>"Actions speak louder than words," he said. "This year we sent a new Nauka module to the ISS, which is expected to last at least 10 years."</p>
+            <p>The head of Roscosmos also complained that US sanctions on Russia were hurting the Russian space industry, and he has previously said Russia could end its participation in the ISS programme if the sanctions are not lifted.</p>
+            <p>The US and its Western partners have threatened further sanctions on Russia if it invades Ukraine, although the exact nature of those sanctions is not yet known.</p>
+            <p>Russia has previously said that structural fatigue meant the ISS would not be capable of working beyond 2030, and warned that outdated equipment could lead to "irreparable" failures.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

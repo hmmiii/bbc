@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_family-tree_4" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Family Tree</mark>
+                <h2>The 'time poverty' that robs parents of success</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>There’s never enough time in the day. But for some parents, there’s even less - and the ‘time poverty’ problem has never been more magnified.</h3>
+            <p>Time for yourself, time to spend with your kids or time to catch up on household tasks. Ask any parent what their greatest complaint is, and many will say some version of the same problem: there simply isn’t enough time for everything.</p>
+            <p>Defined as the chronic feeling of having too many things to do and not enough time in which to do them, ‘time poverty’ is on the rise. Research shows most people feel persistently ‘time poor’, and that time poverty can have severe and wide-reaching impacts, including lower wellbeing, physical health and productivity.</p>
+            <p>The problem is particularly persistent among parents; those living with children younger than 15 have up to 14 hours per week less free time than those living alone, according to official UK statistics from 2018. Research suggests that primary caregivers of many kinds - particularly low-income mothers without access to the support structures available to higher earners - are particularly prone to time pressure, and the chronically time poor often find themselves trapped in a cycle of social and economic poverty. The pandemic has magnified many of the problems of time poverty - but experts believe that there could be ways to close the gap.</p>
+            <p><strong>The greatest impacts</strong></p>
+            <p>We live in an era in which productivity is fetishised: ‘always on’ culture means that our work often strays into our personal time; parenting feels more intense; and our friends, hobbies and interests are just a tap or swipe away on our phones, 24/7.  </p>
+            <p>“You will find it hard to find any one human being who says that they are not time poor,” says Grace Lordan, director of the Inclusion Initiative at the London School of Economics. “People more regularly feel like they need to be on call for work, family and friends, as we are so plugged into technology all the time. For children, there are many more structured activities compared to the past, so for parents, your Saturday is no longer simply opening the door and letting a child out to play. These shifts have fundamentally changed the way that we perceive and feel about time.”</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Unpaid domestic work puts additional stress on time for mothers and other primary caregivers (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>And while certain demographics have enjoyed the benefits of more efficient ways of working over the last few decades, others have suffered due to an increase in time spent on unpaid work and cognitive labour - burdens most often shouldered by women. It isn’t necessarily time poverty that is increasing, but time inequality. </p>
+            <p>“Time poverty overwhelmingly affects caregivers, but it also disproportionately affects the poor,” says Aleksander Tomic, the associate dean for Strategy, Innovation and Technology at the department of economics, Boston College. “For families that cannot pay for caretakers for children, the elderly or ill in their family, childcare and various appointments can claim an inordinate amount of time. Caregiving tasks are almost always done by women, even if they live with a partner.”</p>
+            <p>For women - and particularly women who have children - lack of time is a serious problem. Research shows that in developed countries, women spend twice as many hours per day on unpaid work such as cooking, cleaning and caring for children, while in the developing world this rises to 3.4 times.</p>
+            <p>In some cases, this is because of overt inequalities and fixed gender expectations about what work women should do. In others, the inequalities are more subtle. For many women, extra time is consumed by the so-called ‘hidden load’ - the emotional and cognitive labour women shoulder, such as meal planning or organising playdates, that remains unrepresented in economic measures of productivity and growth. The time poverty prompted by the hidden load of housework often drives women - and particularly female caregivers - out of the workforce or funnels them into lower paid jobs.</p>
+            <p>“Cognitive time poverty can show up in even higher income households, as someone still has to coordinate all of the household help,” says Tomic. “We can see the outward representations of the frustrations stemming from time poverty at the moment, mainly in the form of the Great Resignation.”</p>
+            <p><strong>The vicious cycle of time poverty</strong></p>
+            <p>Nicole Villegas, an occupational therapist based in Portland, Oregon, US, often sees frazzled workers come to her complaining that they simply don’t have enough time in the day. She says that most people experience this as a sense of days passing too quickly, and that she’s seen time poverty lead to poor sleep, burnout and depression.</p>
+            <blockquote>Time poverty creates barriers for people who want to explore their interests outside of obligatory responsibilities like work or family care - Nicole Villegas</blockquote>
+            <p>For some, the health impacts can be even more significant. Feeling overwhelmed by domestic responsibilities can cause women to delay seeking medical care, with one study showing that over a quarter of American women had put off or not sought health care within the past 12 months due to a lack of time. There’s also evidence that time poverty promotes unhealthy eating habits and decreased exercise, and that those who are time poor experience much lower levels of wellbeing.</p>
+            <p>“Time poverty creates barriers for people who want to explore their interests outside of obligatory responsibilities like work or family care,” says Villegas. “When people live with time poverty, they often miss out on leisure activities that can support quality of life.”</p>
+            <p>But it isn’t just downtime and a chance to explore new interests that the particularly time poor are missing out on; opportunities to improve life circumstances also fall by the wayside. Parents who are also students are less likely than their childless peers to complete college, and individuals with children under the age of 13 spend significantly less time on education, with experts specifically pointing to time poverty as the primary cause.</p>
+            <p>Academics also note that the time poor struggle to carve out the hours needed to seek better employment, and often don’t have the mental space to make good financial decisions. The resultant economic poverty they experience creates even greater time poverty - this could be the length of time it takes to complete tasks if a household does not have reliable internet access, time spent looking after children if you can’t afford day-care, or the time that it takes to commute if a person cannot afford to live in a major urban centre.</p>
+            <p>Individuals then become trapped in a vicious cycle. Their low income makes them time poor - but their lack of time also stops them from improving their economic circumstances. “From an economic perspective, time poverty manifests in lower productivity, and eventually lower chances for advancement,” says Tomic. “This ultimately results in a wage gap.”</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Research shows those living with children younger than 15 have up to 14 hours per week less free time than those living alone (Credit: Getty Images)</figcaption>
+            </figure>
+            <p><strong>Closing the gap</strong></p>
+            <p>The pandemic only amplified existing issues, with the average working day increasing by 48 minutes in the early phases of lockdowns, and the proportion of unpaid work done by women multiplying as many working mothers juggled jobs with homeschooling. Stress and depression rocketed among overstretched parents, and in the US, labour market participation among women dropped to its lowest in 30 years as mothers struggling with the demands of work and family finally quit.</p>
+            <p>“The pandemic has magnified time poverty by removing many support systems previously available for parents, and in some cases adding additional responsibilities, such as grocery shopping for an elderly neighbour,” says Iryna Sharaievska, an assistant professor in the College of Behavioural, Social and Health Sciences, Clemson University, US. “These additional responsibilities fell primarily on the shoulders of women. As a result, mothers were twice as likely as fathers to lose their employment to accommodate for a lack of childcare, whilst many had to decrease their hours of work. Women of colour, women without a college degree and low-income women were most impacted.” </p>
+            <p>Sharaievska worries that time poverty will only increase in future. “As a society we are constantly increasing our expectations for productivity and performance, and engagement and responsibility as a parent,” she says. “We praise those who ‘do it all’. ‘Super mums’ who ‘have it all’ are constantly presented in the media and on social media as a goal to strive for, which even further normalises a lack of support from the government, employers and communities, putting the responsibility back on mothers.”</p>
+            <p>She says reducing the time-poverty gap requires real change from both governments and employers, with clear policies needed to support mothers and primary caregivers. </p>
+            <p>“The government needs to create policies that support parents - guaranteed paid vacation and parental leave, family leave that isn’t seen as a ‘once in a lifetime’ opportunity,” she says. “Additional assistance should be provided for single parents, low-income families, and families in rural communities. Employers must create an environment where employees can take care of their needs without fear of losing their jobs.”</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

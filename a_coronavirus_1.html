@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_coronavirus_1" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Coronavirus</mark>
+                <h2>Travelling during Covid: 'I was nervous using a fake Covid-19 test certificate'</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Coronavirus has changed the way we travel and many countries now demand proof of a negative Covid test before letting you in - with tests often costing hundreds of pounds. BBC reporter Joice Etutu has been speaking to two women who admit using and selling fake certificates.</strong></p>
+            <p>Coronavirus has changed the way we travel and many countries now demand proof of a negative Covid test before letting you in - with tests often costing hundreds of pounds. BBC reporter Joice Etutu has been speaking to two women who admit using and selling fake certificates.</p>
+            <p>"When I got to the counter where they check in your passport before you board the plane, the man asked me for my [Covid-19 test certificate]</p>
+            <p>"He literally read through it for no more than 10 to 20 seconds, and then he smiled and asked me where I was going and said, 'have a safe flight.'</p>
+            <p>"I was relieved because I knew once I passed that stage, I was free."</p>
+            <p>24-year-old Louise* travelled to Ghana in October using a fake negative Covid-19 test certificate - the documentation some countries require to prove you don't have the virus and are fit to fly before you leave.</p>
+            <p>Ghana is one of those countries and Louise says she needed to travel there for work and couldn't afford the cost of the test. They can cost between £100 to £300, so she looked into getting a fake certificate.</p>
+            <p>"I just asked people I knew, 'who does photoshop?' I asked my friends to see their Covid tests just to get a structure of what the certificate looks like and then had someone make one for me."</p>
+            <p>Buying or even attempting to buy a forged certificate is a crime in the UK and using a forged certificate to travel is fraud by false representation. If you're caught selling fake certificates in the UK, you might face a prison sentence.</p>
+            <p>Currently, it's the responsibility of airlines to check that passengers have a negative test result.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Getty Image</figcaption>
+            </figure>
+            <p>Jessica* is also 24. She admits to selling fake Covid-19 certificates to people who wanted to travel abroad by advertising her services on social media.</p>
+            <p>She says it was "easy money".</p>
+            <p>"They just didn't want to pay £150 for a private test," she says. "We charged them £50.</p>
+            <p>"Because it was so cheap people were asking so many questions, like 'how does it work?', 'when I get to the place are they gonna double check?', 'how did you do it?', 'am I gonna get in trouble?'"</p>
+            <p>Jessica justified the fraudulent activity to herself by saying she is a single parent.</p>
+            <p>"No one's helping me, no one's giving me money.</p>
+            <p>"If I have to take a small risk to make like £300 to feed my kid, trust me I'll do it."</p>
+            <p>Jessica realised there was a market for forged test certificates after needing one to travel herself. Not wanting to pay the fee for a private test, her friend told her she knew someone who had a forged certificate, and so she decided to set up a similar scheme.</p>
+            <p>In total, Jessica admits to selling eight fake certificates but she decided to stop when she realised the impact Covid-19 was having on people's lives.</p>
+            <p>"I feel bad now. [I'm] someone that works within the healthcare [sector] so obviously I don't want that on my conscience.</p>
+            <p>"People are getting Corona because of me. In other countries that don't have the opportunity of medical care like we have here."</p>
+            <h3>'I saved £200 to £250 by using a forged certificate'</h3>
+            <p>"For me it was more for financial reasons," says Louise about her fraudulent activity. "It wasn't necessarily that I didn't want to take the test.</p>
+            <p>"It wasn't feasible... and I know some people may be thinking 'so why are you travelling?'</p>
+            <p>"I saved about £200 to £250 by using a forged certificate."</p>
+            <p>Like Jessica, Louise knew she was committing fraud, but she admits she would do it again.</p>
+            <p>"Until there's some type of Covid computer that can track which clinic or hospital somebody got a test in, I don't see why I should worry myself."</p>
+            <p>Currently, there are only anecdotal examples to demonstrate the scale of this issue.</p>
+            <p>Europol recently warned about the use of false test certificates, blaming criminal gangs.</p>
+            <p>Europol recently warned about the use of false test certificates, blaming criminal gangs.</p>
+            <p>A man was arrested at Luton airport last month under suspicion of selling fake certificates.</p>
+            <p>And in Paris, French authorities recently arrested seven people at Charles de Gaulle airport. It's claimed they were carrying 200 counterfeit tests on digital devices.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Getty Image</figcaption>
+            </figure>
+            <p>The UK government says you can provide proof of your negative test with a printed document, an email or a text message.</p>
+            <p>The proof has to include your personal details, the date the test was done, and the name of the test provider and their contact details.</p>
+            <p>The International Air Transport Association (IATA), the trade association for the world's airlines, has come up with a possible solution for spotting fake certificates.</p>
+            <p>They've suggested the idea for a new "IATA travel pass app", says Alan Murray Hayden who is Head of Airport Passenger and Security Products at IATA.</p>
+            <p>The passenger creates a profile based on their passport details. When they get their test results, the laboratories can send them to the passenger as a "verifiable credential," meaning the passenger can't alter or change the test results and those results are linked to their identity.</p>
+            <p>In a statement, the Department for Transport says pre-departure testing is in place to protect the health of the UK public and those attempting to cheat the system are selfishly gambling with the lives of others.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

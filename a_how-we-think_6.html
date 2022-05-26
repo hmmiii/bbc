@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_how-we-think_6" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>How We Think</mark>
+                <h2>Are New Year's resolutions powerful or pointless?</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>1 January may seem like an arbitrary date to start self-improvement, but there are good psychological reasons for doing so.</h3>
+            <p>Almost every year of my adult life, I’ve started the New Year with a set of resolutions that I’ve been determined to keep. The results, predictably, have been variable.</p>
+            <p>In 2021, I mostly kept to my fitness goal of doing one 20-minute HIIT workout each day, but I failed miserably at my aim of quitting social media. According to my weekly screen-time reports, I still spend between two and three hours each day on my phone, much of that time doomscrolling.</p>
+            <p>I am far from alone in my determination to start each new year with a plan for self-improvement. At least a quarter of people typically make at least one New Year’s resolution, and a large portion of those good intentions end in disappointment. </p>
+            <p>For those who don’t follow this tradition, the very act of creating a New Year’s resolution can seem illogical. Rationally speaking, 1 January should be no better than any other day to make a life change - so why put the needless pressure on ourselves to ‘upgrade’ our lives at the opening of a new calendar?</p>
+            <p>Recent psychological research, however, suggests that there are many good reasons to begin a new regime on the first day of a new year. And by understanding and capitalising on those mechanisms, we can all increase our chances of sticking to our new goals for 2022.</p>
+            <p><strong>The fresh-start effect</strong></p>
+            <p>It’s hard to pinpoint exactly when our tradition of making New Year’s Resolutions was first established. Anna Katharina Schaffner, a cultural historian and author of The Art of Self-Improvement, notes literary references to self-improvement go back centuries, to Chinese antiquity and the Roman Stoics, for example. The practice of pegging goals to a particular calendar date was already well-established by the 1860s, as seen in one of Mark Twain’s letters.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Whether your goal is to spend more time with family or make it onto the Bake Off, using the New Year as a marker can help you reach your objectives (Credit: Getty Image)</figcaption>
+            </figure>
+            <p>“Yesterday, everybody smoked his last cigar, took his last drink, and swore his last oath,” he wrote on 1 January 1863. “Today, we are a pious and exemplary community. Thirty days from now, we shall have cast our reformation to the winds and gone to cutting our ancient shortcomings considerably shorter than ever. We shall also reflect pleasantly upon how we did the same old thing last year about this time.”</p>
+            <p>In Schaffner’s opinion, it is no coincidence many of us are especially keen to make positive changes after a hedonic holiday season. “You have over indulged and now it's time to purify,” she says. It’s notable, she says, that many resolutions are focused on abstinence - giving up our bad habits to cleanse our bodies and our souls.</p>
+            <p>The “purity principle” can’t fully explain our penchant for New Year’s resolutions. Many of us, after all, may make promises after relatively sober festivities. And many of our goals are related to work or personal pursuits that have nothing to do with spiritual and physical atonement. So, is there something special about the date itself that makes personal change, of any kind, enticing?</p>
+            <p>Some clues come from the way the brain organises its memories. Psychologists have found that, rather than seeing our life as a continuum, we tend to craft a narrative, divided into separate “chapters” that mark the different stages of our life. “People tend to think about life as if they’re characters in a book,” says Katy Milkman, a psychology professor at The Wharton School of the University of Pennsylvania, and the author of the book How to Change.</p>
+            <p>Those chapters may characterise major life events - such as arriving at university, getting married or the birth of your first child. But your mind can also split those major chapters into smaller sections so that the start of a new year can represent a break in the narrative. “Any time you have a moment that feels like a division of time, your mind does a special thing where it creates a sense that you have a fresh start,” says Milkman. “You're turning the page, you have a clean slate, it's a new beginning.”</p>
+            <blockquote>Any time you have a moment that feels like a division of time, your mind does a special thing where it creates a sense that you have a fresh start - Katy Milkman</blockquote>
+            <p>This helps you to create psychological distance from past failures, she says, allowing you to feel that any mistake was the “old you” and that you’ll now do better. On 1 January, I can think that all my time-wasting on Twitter was “2021 David”, while “2022 David” is going to have the focus and dedication of Zadie Smith, who somehow shuns social media (and indeed any online distraction) as she writes her masterpieces.</p>
+            <p>Milkman has worked with Jason Riis, at Harvard University, and her doctoral student Hengchen Dai, now a professor in UCLA’s school of management, to investigate the “fresh-start effect” in various settings. In one study, they analysed data from stickK, a popular goal-setting website and app that is meant to help people with their self-improvement. Dai and Milkman found that people were not only likely to set new goals at New Year - as you might expect - but also after any holiday breaks. There was even a slight uptick on Mondays, as people try to reset with the start of the new week, and on the first day of each month.</p>
+            <p>As further evidence, Milkman, Riis and Dai tested whether they could prime the fresh start effect artificially. To do so, the researchers first invited participants to sign-up for an email reminder of their goals - with subtle differences in the way they framed the date. Consider one reminder, sent on 20 March. For some students, the date was simply labelled “the third Thursday in March” - hardly a significant landmark. For others, it was called “the first day of spring” - which they hoped would provoke the sense of a new beginning.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Instead of saying you'll 'cook healthy' this year, look at your goal another way - say you'd like to eat more fresh veg each day (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>It worked a treat. The students who had been encouraged to think of a “fresh start”, based around a temporal landmark, were more likely to start a new gym habit, improve their sleep hygiene or spend less time on social media - compared to those who had not been primed to see the date as a marked and significant division in the timeline.</p>
+            <p>The New Year, of course, is an especially compelling starting point, compared to those other events. “It is a big chapter break for most people,” says Milkman. </p>
+            <p><strong>From failure to success</strong></p>
+            <p>Sceptics may still wonder whether the practice is worthwhile. Surely, most people are only setting themselves up for failure - no? Yet the available data shows that the overall success rate is higher than many might think.</p>
+            <p>According to a recent YouGov survey, 35% of people who made resolutions managed to stick to all of their goals, and 50% of people managed to keep some of their resolutions. That’s a lot of people who are making at least some positive changes to their lives - even if they do also fail at some of their goals.</p>
+            <p>The way you frame your resolutions could make an important difference. Per Carlbring at Stockholm University recently tracked the progress of 1,066 people who made New Year’s Resolutions at the end of 2017. He categorised their intentions into two classes. Some were “avoidance goals” - which, as the name suggests, involved quitting something like sweets, alcohol or social media. The others were “approach goals” - which involved adopting a new habit - such as swimming twice a week or practising the guitar in the evening. On average, the participants were about 25% more likely to meet their approach goals than the avoidance goals. “Instead of stopping things, you should start doing things,” he concludes.</p>
+            <p>I can easily see how this effect played out in my own resolutions for 2021. I mostly kept my resolution of completing a HIIT workout each day (an approach goal) but failed miserably at my attempt to quit social media (an avoidance goal).</p>
+            <blockquote>Instead of stopping things, you should start doing things - Per Carlbring</blockquote>
+            <p>Fortunately, Carlbring says we can often turn an avoidance goal into an approach goal to maximise our chances of success. Supposing you want to lose weight. “Instead of saying that I want to stop eating a candy bar every day, I might instead say that I want to start eating carrots each afternoon,” he says. “Because that would increase your blood-sugar level, and you then wouldn't have the craving for something else.”</p>
+            <p>Similarly, if I want to reduce my social media use, I might set myself the goal of reading 10 pages of an ebook whenever I am ready for a bit of downtime or distraction on my phone - a productive activity that should, I hope, lure me away from my usual doomscrolling. </p>
+            <p>You’ll still need perseverance, of course - but Milkman and Carlbring both argue that we should be forgiving of the odd failure. “If you face a setback, then you might think that you will never be able to achieve your goal,” Carlbring says. “But you can try to view it as a lesson to be learned.”</p>
+            <p>If you face a serious blockage, you can always try to look for another milestone that might mark a new beginning. If you’ve started to founder in February, for example, you might make a new commitment to start again at the beginning of March - a small act of reframing that should give you the boost of the fresh-start effect all over again.</p>
+            <p>Any journey worth pursuing will include a few bumps along the way - but by understanding the psychology of personal change, you can vastly increase your chances of reaching the goal.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

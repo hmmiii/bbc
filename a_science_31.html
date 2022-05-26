@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_science_31" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Science</mark>
+                <h2>Elon Musk SpaceX rocket on collision course with moon</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>A rocket launched by Elon Musk's space exploration company is on course to crash into the Moon and explode.</strong></p>
+            <p>The Falcon 9 booster was launched in 2015 but after completing its mission, the second stage did not have enough fuel to return towards Earth and instead remained in space.</p>
+            <p>Astronomer Jonathan McDowell told BBC News it will be the first known uncontrolled rocket collision with the Moon.</p>
+            <p>But the effects will be minor, he says.</p>
+            <p>The rocket was abandoned in high orbit seven years ago after it completed a mission to send a space weather satellite on a million-mile journey.</p>
+            <p>It was part of Mr Musk's space exploration programme SpaceX, a commercial company that ultimately aims to get humans living on other planets.</p>
+            <p>Since 2015 the rocket has been pulled by different gravitational forces of the Earth, Moon and Sun, making its path somewhat "chaotic", explains Prof McDowell from the US-based Harvard-Smithsonian Center for Astrophysics.</p>
+            <p>"It's been dead - just following the laws of gravity."</p>
+            <p>It's joined millions of other pieces of space junk - machinery discarded in space after completing missions without enough energy to return to Earth.</p>
+            <p>"Over the decades there have been maybe 50 large objects that we've totally lost track of. This may have happened a bunch of times before, we just didn't notice. This would be the first confirmed case," Prof McDowell says.</p>
+            <p>Falcon 9's projected demise was identified by journalist Eric Berger on the space website Ars Technica and by data analyst Bill Gray in his blog.</p>
+            <p>The collision is due to happen on 4 March when the rocket will explode as it makes contact.</p>
+            <p>"It's basically a four-tonne empty metal tank, with a rocket engine on the back. And so if you imagine throwing that at a rock at 5,000 miles an hour, it's not going to be happy," Prof McDowell says.</p>
+            <p>It will leave a small artificial crater on the Moon's surface.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>SpaceX launch: What is SpaceX and why is it working with Nasa?</figcaption>
+            </figure>
+            <p>Bill Gray, who uses software to track near-Earth space objects, projects that it made a close fly-by on 5 January. On 4 March it's likely to hit the Moon's far side, he says.</p>
+            <p>In 2009 Prof McDowell and other astronomers performed an experiment in which a similar-sized rocket was crashed into the Moon. Sensors gathered evidence of the collision so they could study the crater.</p>
+            <p>That means scientists are unlikely to learn anything new from this crash, Prof McDowell explains.</p>
+            <p>He adds that while there are no consequences now to space debris left to drift and occasionally crash, there could be in the future.</p>
+            <p>"If we get into the future where there are cities and bases on the Moon, we want to know what's out there. It's much easier to get that organised when there is slow traffic in space, rather than waiting until it's a problem."</p>
+            <p>And what happens between now and 4 March? Well the rocket will continue to follow the laws of gravity, careering through space, before it ends its days smashing into the Moon.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

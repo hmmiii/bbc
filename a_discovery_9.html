@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_discovery_9" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Discovery</mark>
+                <h2>The 'nest custodians' protecting a toddler-sized bird</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>They're working to protect the Southern ground hornbill, and the bird's cultural significance, for future generations.</h3>
+            <p>It was a dusty afternoon at the end of a long dry season, and Zimbabwean subsistence farmer Sofaya Ndlovu was sitting in the sun outside his home. Fifty metres away, between the clean-swept earth of his homestead and a small koppie (a hill in a flat area) of granite boulders, a ragged black bird with a puckered red face, long eyelashes and a voluptuous red wattle strutted over tufts of grass.</p>
+            <hr>
+            <p><strong>Why do you love the world?</strong></p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>50 REASONS TO LOVE THE WORLD - 2021</figcaption>
+            </figure>
+            <p>"Because the diversity of cultural patrimony in the Matobo Hills bears testimony to the intertwined relationship between man, wildlife and the natural environment." - Evans Mabiza, conservationist</p>
+            <hr>
+            <p>Like an old man surveying his lawn for crickets, the bird's every step seemed deliberate, calculated even; his body was tilted forward, eyes focussed on the ground. The bird - the height of a toddler - stopped, scratched the earth with his strong claws, stabbed at a locust with his sturdy black beak and then stepped over to join two birds foraging nearby. The locust was still clamped in his strong bill; this male had a youngster to feed.</p>
+            <p>"I hear them every day now," Ndlovu, a wiry man with strong arms, said, jutting his chin towards the birds that nest close to his home. "They've been calling a lot; there will be rain soon."</p>
+            <p>Out here in the Matobo Hills of south-west Zimbabwe (recognised as a Traditional Cultural Landscape by Unesco), most families are subsistence farmers and rain is a fundamental element of survival. Here, these large black birds, Southern ground hornbills (Bucorvus leadbeateri), are considered to be the callers of the rain. Amahundundu, the Ndebele and Kalanga people of the Matobos call them, naming the birds for their low, thunderous call that can be heard up to 5km away. They are so important to these communities that when a ground hornbill dies, elders gather and give the bird the same traditional burial they would a human.</p>
+            <p>Kill an ihundundu ("i" refers to the bird in the singular, "ama" in plural), they believe, and you will go mad. You will anger the gods, rain will not fall and you could be banished from the community for life.</p>
+            <p>Southern ground hornbills, which live in family groups, can be found on open savannah and grassland all the way from South Africa to Uganda and the Democratic Republic of Congo. But as the species' natural territory has shrunk due to development, farming and overgrazing, its population has plummeted - to such an extent that the International Union for Conservation of Nature now classifies these apex predators as vulnerable in sub-Saharan Africa and endangered in South Africa and Namibia.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The habitat of Southern ground hornbills stretches from South Africa to Uganda and the Democratic Republic of Congo (Credit: Universal Images Group/Getty Images)</figcaption>
+            </figure>
+            <p>In the area Sofaya Ndlovu lives, however, a different story is unfolding: the population of Southern ground hornbills here is thriving. In other parts of southern Africa, the birds, which can live for 70 years, breed successfully only every six to nine years. But in the Matobos, chicks are raised successfully every year or two.</p>
+            <p>Their success is due largely to the close relationship that the area's Ndebele and Kalanga people have with amahundundu. For generations, these communities have revered the birds, and now they're also engaging in citizen science to protect them. People like Ndlovu are assisting researchers by gathering data to better understand and safeguard not only the species but their cultural significance, too.</p>
+            <blockquote>If they go, we would lose something not just from our ecosystems, but from our hearts and souls, too</blockquote>
+            <p>"People in the Matobo district revere the bird to the extent that they equate it to a human being," said Evans Mabiza, a Zimbabwean conservationist who has been researching Motobos' ground hornbills for the past 14 years. "Many African cultures believe it's the rain bird - some call it the thunder bird - but there has been a lot of cultural erosion in some places over the years. We feared that would happen eventually in the Matobos, so we wanted to find out what beliefs exist now - and we're happy that they still are very strong here, even among children."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Zimbabwe's Matobo Hills region is home to granite rock formations and a thriving population of Southern ground hornbills (Credit: DeAgostini/Getty Images)</figcaption>
+            </figure>
+            <p>Conservation biologist Dr Lucy Kemp also has a special interest in ground hornbills: her parents pioneered research on the birds in South Africa's Kruger National Park in the 1970s, and she continues to work to protect the species. "It is important to protect these birds because they're not only a top-order predator, but they also have such huge cultural relevance; there are so many songs, stories and myths associated with this species. If they go, we would lose something not just from our ecosystems, but from our hearts and souls, too," she said. </p>
+            <p>It wasn't until 2007 that formal research into the ground hornbills of the Matobos began. There weren't extensive records of the birds in Zimbabwe at the time, and so to better understand the species, Mabiza, along with conservationists Elspeth Perry and Bruce McDonald, decided to focus on the Matobos, just 35km from their research base in Zimbabwe's second-largest city, Bulawayo.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Mabiza and his colleagues set up conservation clubs in local schools as a way of introducing communities to citizen-science initiatives (Credit: The Image Bank/Getty Images)</figcaption>
+            </figure>
+            <p>"Back then, we just wanted to collect data about their characteristics and breeding habits. We had no idea about the peoples' relationship with the ground hornbills, and we were puzzled as to why we faced resistance when we asked about the birds," explained Mabiza, who now heads the Children and Nature Conservation Zimbabwe Trust and continues to gather cultural and scientific information for the trust's Southern Ground Hornbill Project . "People were very concerned as to what our motives were, and it was only after we met with village leaders that people started to share information about them."</p>
+            <p>When they first started work in the Matobo Hills, Mabiza and his colleagues set up conservation clubs at schools. "We did this so that we could work with the children in 'citizen science' because they would encounter the birds when they walked to school, and it was crucial to us that they reported the bird behaviour they witnessed," he said. "Once we'd established a relationship with the children, the adults began to trust us too."</p>
+            <p>Mabiza says now the research includes both the science aspect and the cultural perspective, and the way the two can complement each other. "Our relationship has grown to the extent that now people will flag me down to give me information on a hornbill, and if a 'stranger' asks the community about hornbills, I will get a phone call. They value that we are working to ensure the continuation of the species," Mabiza said.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Though wildlife thrives in protected Matobo Hills National Park, many Southern ground hornbills prefer to nest close to villages and farms (Credit: iStock/Getty Images)</figcaption>
+            </figure>
+            <p>What's unusual about the ground hornbills here is that instead of living inside the nearby Matobo National Park, the birds have settled on community land and nest close to homesteads - because the human activity creates a favourable environment for the birds. People chase baboons and monkeys away from their crops, clearing the area of the predators that prey on hornbills' eggs and chicks. Agricultural areas attract rodents, and rodents attract snakes - the hornbills feed on both. Grazing cattle keep the surrounding grass low, providing ideal savannah-like conditions for the foraging birds.</p>
+            <p>And, the hornbills are protected by traditional beliefs, too. "Amahundundu are birds from the gods," said Mrs Moyo, a gently-spoken farmer who has had a small group of ground hornbills nesting in the rocks near her home since 1982. "We consider ourselves blessed to have amahundundu nesting here."</p>
+            <blockquote>These days they sing and they sing. Good songs, they sing very good songs</blockquote>
+            <p>Mrs Moyo's family is one of 17 in the Matobo district who have hornbills breeding close to their homesteads, and who assist Mabiza by keeping records of the birds' behaviour and breeding habits. Mabiza calls them "nest custodians". These nest custodians track details such as when the hornbills begin their mating calls, when the first chicks are seen, what they've been eating and their group dynamics. Mabiza's work is mostly self-funded and he is able to get out into the Motobos only two or three times a month - so the information collected by the custodians is exceptionally valuable to the work he does.</p>
+            <p>"I am very humbled and honoured by the effort the communities have put into ensuring that the project is successful," said Mabiza. "I feel the Matobo Hills will ultimately be a research centre for all of Africa, where people can come to understand how we can safeguard this magnificent species, which carries so much ecological and cultural value."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Referred to as "callers of the rain", Southern ground hornbills have a low thunderous call that can be heard up to 5km away (Credit: pacoahedo/Getty Images)</figcaption>
+            </figure>
+            <p>As the rainy season draws nearer, the booming calls of amahundundu begin to roll across the landscape. Around the Matobos, nest custodians record in their notebooks: amahundundu are calling. </p>
+            <p>"These days they sing and they sing. Good songs, they sing very good songs," said the farmer Ndlovu, gesturing again to the group of ground hornbills that has been nesting behind his homestead since before he was born. "When they sing like this, we suspect something: we suspect there will be very good rain."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

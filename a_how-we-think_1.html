@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_how-we-think_1" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Equality Matters</mark>
+                <h2>'Brain waste': The skilled workers who can't get jobs</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Some countries are full of educated people whose skills are badly needed. But there are barriers to matching them to jobs, leading to 'brain waste'.</h3>
+            <p>In 2019, when Mohammed Aldhaheri left bomb-ravaged Sanaa, Yemen, for the US state of Michigan, he assumed he’d be able to continue his work as a computer programmer. After all, he had 15 years of experience, in addition to a top college degree. </p>
+            <p>However, it wasn’t that easy, says Aldhaheri, now 42. He applied for more than 100 jobs throughout the next two years, but received rejection after rejection. Often the applications asked about his experience in the US, which felt like a Catch-22: he needed local experience to get a job, but he needed to get a job in order to have local experience. It was especially dispiriting because, based on the job descriptions, he was more than qualified, and he wasn’t demanding a high salary. </p>
+            <p>In the meantime, Aldhaheri needed to earn a wage. “I was working many jobs… not related to my career or my life,” he says - mainly doing deliveries of flowers, food and Amazon products. He wasn’t happy; he wanted his four children to see him as they always had, as an IT professional. </p>
+            <p>The turning point came when a friend told him about a state programme called Michigan International Talent Solutions (MITS), which aims to reduce employment barriers facing professionals arriving from other countries. Aldhaheri spent the next six months taking MITS courses at night to enhance his English, refresh his IT skills and help him land a skilled job. For instance, his resume was in a standard Yemeni format - long and detailed. His MITS coach explained that the applicant tracking systems used by many companies were likely automatically screening out his CV because of small format differences. </p>
+            <p>The coaching paid off seven months ago, when a hospital hired Aldhaheri to work in technical support. But his story illustrates just how daunting and exhausting it can be for an educated professional to achieve career continuity after migrating. </p>
+            <p>For an array of reasons, including licensing obstacles, language issues and discrimination, many migrants are unable to put their skills to use in their new homes, and wind up in lower-paid, lower-skilled roles than the ones they previously held. This phenomenon, sometimes known as ‘brain waste’, is a lose-lose situation for them and their new countries, as their potential isn’t being put to full use. A number of support programmes are working to fill this gap - but the problem remains large and structural.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Mohammed Aldhaheri spent two years searching for a role that used his IT skills (Credit: Alla Aldhaheri)</figcaption>
+            </figure>
+            <p><strong>Why brain waste is so common</strong></p>
+            <p>Some of the clearest data on brain waste comes from the US. There, “anywhere from 20 to 25% of college-educated immigrants are severely underemployed”, says Jeanne Batalova, who analyses migration data at the Migration Policy Institute (MPI). “So, they’re either unemployed or working in jobs that require no more than high school”, for instance as nannies, cashiers and drivers. </p>
+            <p>Certain groups are especially likely to be underemployed, notably black and Hispanic migrants, those with less proficiency in English and asylum seekers. Patterns also vary by profession: MPI analysis suggests that in the US, 15% of internationally trained health/medical graduates are underemployed, compared to 9% of those trained domestically. </p>
+            <p>And according to Batalova, brain waste is becoming more prevalent because of immigration and education trends. For instance, the proportion of refugees who are highly skilled is growing. At the same time, the proportion of jobs requiring degrees and certification has soared. “Professions that require a licence are much harder to recognise and reconcile across international borders,” says Batalova. </p>
+            <p>There are many reasons that an educated person might be unable to put their skills to work after arriving in a new country. Bureaucratic and legal obstacles can be substantial. Even if degrees and qualifications are seen as valid across borders, displaced people may not be able to provide evidence of them. Certain migration statuses bar people from work. Other issues include limited language proficiency and limited social networks (which so often provide information and connections to work).</p>
+            <blockquote>Professions that require a licence are much harder to recognise and reconcile across international borders - Jeanne Batalova</blockquote>
+            <p>Political pressures can also block skilled migrants from employment. Especially in weak economies, local-born workers may be resentful if they feel that foreign-born workers are being helped into skilled jobs. </p>
+            <p>Overall, policies that focus on short-term gains may end up missing out on long-term benefits. For instance, many resettlement programmes are designed to help refugees become self-sufficient as soon as possible. In practice, says Batalova, that means people with professional backgrounds are pushed “into taking any job, and usually those jobs are low-skilled, with no career mobility, so people are kind of trapped in that cycle”. </p>
+            <p><strong>The economic toll of brain waste</strong></p>
+            <p>Yet, a system that funnels migrants into jobs that don’t use all their skills comes with a cost; the MPI has estimated that the lost wages of underemployed migrants in the US amount to nearly $40bn (£29.5bn) each year. </p>
+            <p>That’s because, as Aldhaheri’s experience shows, even finding a role in a sector with comparatively few licensing requirements is hard enough. But working at the same level as your credentials can be particularly hard in professions like healthcare, which come with  onerous and expensive requirements for licensing. A dentist who must start a degree programme from scratch, rather than just taking an extra course to achieve a compatible qualification, may decide that driving a cab is the only feasible path.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Abigail Sandoval has switched from medicine to making pizza due to the employment discrimination she's faced (Credit: Jos Eizaga)</figcaption>
+            </figure>
+            <p>Abigail Sandoval’s story highlights some of these challenges. After training as a doctor, she was only able to practise medicine for one year in the Venezuelan state of Cojedes before she had to leave, as part of the Venezuelan refugee and migrant crisis. In 2015, she went to Panama, where she worked as a medical assistant; in 2017, she migrated to Argentina, to do a postgraduate degree in aesthetic medicine. </p>
+            <p>It was difficult for Sandoval, now 31, to adjust to each new culture and each new approach to patient care. Yet even after two attempts to restart her career, and an additional degree, she couldn’t continue to work in the medical field. She had to quit because of unfair treatment and dismal pay, from contracts that locked her into much lower rates than her Argentine colleagues were receiving. “As an immigrant they didn’t value my work,” she says. </p>
+            <p>She had to find an alternative. During the pandemic she and her husband started a delivery-based pizza business, and she’s actually earning much more from pizza than she did from medicine in Buenos Aires. “I always liked cooking. And I like doing it, but I studied medicine because it’s my passion,” explains Sandoval. She’d prefer to return to medicine, but it would have to be “in a place where they value all the knowledge and respect health workers”, including the immigrant workforce. </p>
+            <p>Clearly, even with a shared language, discrimination can stymie migrants’ professional careers. And Sandoval is far from alone. One survey of Venezuelan respondents living in Argentina found that 36% were unemployed and 52% were underemployed, although most were educated and middle-class when they arrived. </p>
+            <p><strong>How brain waste is being tackled</strong></p>
+            <p>Governments that are serious about confronting brain waste will need to examine policies around migration policy and long-term integration. But there’s also plenty of low-hanging fruit to make skilled employment more accessible to foreign-born workers. </p>
+            <p>For instance, expanding the number of locations where foreign-born nurses can take their language tests reduces one impediment to them starting work. Within EU countries, there’s some mutual recognition of degrees and harmonisation of professional requirements. Batalova says that the ASEAN countries are also trying to reduce barriers to employment integration of highly skilled migrants.</p>
+            <blockquote>Employers’ reluctance is real and is a very, very difficult barrier to overcome - but not impossible - Jeanne Batalova</blockquote>
+            <p>Regional and governmental cooperation is one major way to reduce brain waste - but it doesn’t magically resolve all the issues that keep skilled people out of skilled work. Here, employers have a part to play. </p>
+            <p>“We know that employers’ reluctance is real and is a very, very difficult barrier to overcome - but not impossible,” says Batalova. Outright discrimination should be stamped out, of course. But employers can also be educated about credentials from other countries as well as the exclusionary effects of conventional hiring processes. </p>
+            <p>Annie Fenton, the director of MITS, the programme Aldhaheri went through, understands companies’ hesitation. They may think that “there’s a higher level of unknowns” when dealing with foreign nationals. But she says that retention rates tend to be far higher for foreign-born workers compared to US-born ones, which is just one argument for facilitating their recruitment. </p>
+            <p>However, there is some impetus for change. Some governments already simplify requirements for occupations where there are worker shortages, but this has received an extra push due to Covid-19. “The pandemic became to some degree a wake-up call,” says Batalova, around the urgent need for health workers. </p>
+            <p>In the UK, the Medical Support Worker scheme allowed doctors without General Medical Council registration - which can be time-consuming for foreign-qualified doctors to attain - to work in certain capacities for the National Health Service, with supervision. And decrees in Peru and Colombia issued during the pandemic allowed the fast-track approval of qualifications for health professionals who graduated in another country. </p>
+            <p>These sorts of programmes are useful but tend to be small scale - sometimes only a drop in the bucket compared to both the need and availability of skilled labour. But “the ball is definitely rolling”, according to Batalova, who herself witnessed many educated fellow Moldovans starting from scratch as construction or domestic workers in Western Europe, following the breakup of the Soviet Union. </p>
+            <p><strong>A foot on the ladder</strong></p>
+            <p>In Michigan, Aldhaheri has been relatively lucky. He’s long been used to speaking English because his wife is American, and he’d previously worked with English speakers at an NGO in Yemen. “That helped me a lot when I came,” he says. “I didn’t face the difficulty some people face” with language. </p>
+            <p>Aldhaheri’s hard-won technical support job was initially part-time and short-term, but his contract has since been made full-time and extended by a year. It still isn’t his dream job, as he isn’t able to use his full range of skills as a programmer. But he’s pleased to be back in the tech sector. Aldhaheri is hopeful this position has provided the foot he needed to get back on the professional ladder, and that he’ll be able to use the references and experiences obtained there to progress in his career. </p>
+            <p>Having this chance “after suffering for two years, I’m definitely happy”, he says of his current role. The challenge in the coming years will be to ensure that capable people like Aldhaheri and Sandoval aren’t shut out of the jobs that badly need them.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

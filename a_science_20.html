@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_science_20" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Science</mark>
+                <h2>Climate change: Pledge of $100bn annual aid slips to 2023</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>A key pledge ahead of an upcoming climate change conference has still not been met and the money is not sure to be available before 2023.</strong></p>
+            <p>The UK government has set out a new financing plan ahead of next week's climate change conference - COP26.</p>
+            <p>It talks of how developed countries hope to deliver $100bn a year in climate finance to developing countries.</p>
+            <p>The original aim was for that target to be reached by 2020.</p>
+            <p>But the financing plan said the target looked "unlikely" to be met but that it was "confident" the target would be hit by 2023.</p>
+            <p>Some environmentalists say the new plan is too little, too late.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Climate finance</figcaption>
+            </figure>
+            <p>COP26 President-Designate Alok Sharma said: "This plan recognises progress, based on strong new climate finance commitments. There is still further to go, but this delivery plan, alongside the robust methodological report from the OECD, provides clarity, transparency and accountability.</p>
+            <p>"It is a step towards rebuilding trust and gives developing countries more assurance of predictable support."</p>
+            <p>Climate finance plays a critical role in helping developing countries tackle climate change and adapt to its impacts.</p>
+            <p>In 2009, developed countries agreed to mobilise $100bn in climate finance per year by 2020, and in 2015 agreed to extend this goal through to 2025.</p>
+            <p>However, the UK COP26 Presidency now says the $100bn goal is likely to fall short in 2021 and 2022 - though is confident it will be met in 2023.</p>
+            <p>Mohamed Nasheed, the former president of the Maldives, said: "To provide confidence and momentum going into COP26, the $100bn climate finance goal must be met immediately, not in 2023.</p>
+            <p>"The financing announcement is extremely disappointing in that it asks us as developing countries to wait even longer for the delivery of a promise that was first made more than a decade ago. I know the UK presidency has worked very hard for this, and I appreciate their efforts, but this is not sufficient to lay the groundwork for a successful outcome at COP26.</p>
+            <p>"Unless more progress is made in the next fortnight, we will all be in trouble. "</p>
+            <p>The finance delivery plan was produced by Jonathan Wilkinson and Jochen Flasbarth, environment ministers from Canada and Germany, respectively, at the request of Mr Sharma.</p>
+            <p>Canadian finance minister Jonathan Wilkinson was keen to stress that in his view the plan would achieve the $100bn goal per year over the 2020-2025 period.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>In some areas of the world, dry conditions will become more frequent in future</figcaption>
+            </figure>
+            <p>"We have much greater confidence that the goal that was agreed upon will in fact, be achieved, and in fact, it will be overachieved beyond 2023 so I think that's very good news.</p>
+            <p>"And I think that, perhaps through this process, we've moved the bar in terms of how we can provide greater confidence and transparency going forward."</p>
+            <p>On Monday, the UK Prime Minister Boris Johnson also said it was "touch and go" whether the upcoming COP26 global climate conference will secure the agreements needed to help tackle climate change.</p>
+            <p>"It is going to be very, very tough this summit. I am very worried because it might go wrong and we might not get the agreements that we need and it is touch and go, it is very, very difficult, but I think it can be done," he said.</p>
+            <p>In the meantime, the climate crisis continues to deepen: the World Meteorological Organization has said the build-up of warming gases in the atmosphere rose to record levels in 2020 despite the pandemic.</p>
+            <p>The amounts - or concentrations - of CO2, methane and nitrous oxide rose by more than the annual average in the past 10 years.</p>
+            <p>"Developing countries have been rightfully disappointed that so far developed countries have not delivered on the $100bn pledge that was already given in 2009," said the one of the plan's authors, Jochen Flasbarth, Germany's secretary of state for the environment.</p>
+            <p>"Hence, I am glad that the process I was honoured to lead jointly with minister Jonathan Wilkinson has created momentum to help complying with the finance commitment overall in the period up to 2025. We are very aware that also after today's release of the Delivery Plan, a lot of work remains."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

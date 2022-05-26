@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_business_6" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Business</mark>
+                <h2>How nurseries are keeping track of their toddlers</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Misty Ardouin says involving parents is an integral part of how the nursery works</figcaption>
+            </figure>
+            <p><strong>Misty Ardouin set up her nursery, Nestlings, in Cardiff City centre in 2019. At the end of each day, they would have a "good sit down" in the playroom with parents to catch-up on everything the children had been doing.</strong></p>
+            <p>"It was an integral part of our day," says Ms Ardouin.</p>
+            <p>"Building relationships and liaising with parents, helped us to know the children better. It meant we worked in sync, with the same ideas for the child's care and education both at nursery and at home."</p>
+            <p>But the pandemic changed everything. In March 2020, nurseries were ordered by the government to close to all except the children of keyworkers and vulnerable children. By March 2021, more than 3,300 childcare groups had closed their doors permanently.</p>
+            <p>At those settings that did eventually reopen, parents were no longer allowed inside to stay and chat, or to mingle outside with other parents and children - they were cut off from their child's nursery experience.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Blossom app allows staff to build daily diaries</figcaption>
+            </figure>
+            <p>Nestlings, like many nurseries, turned to technology to keep communication going. It uses Blossom software, which allows its staff to share children's daily diaries. Everything from nappies and lunch, to big moments like first words can be shared with parents.</p>
+            <p>Staff plan 'next steps' for each child, and parents can access this information to continue their child's learning at home. It can also handle the more mundane tasks like sending out invoices for fees.</p>
+            <p>"We had to think quickly about what we could do to keep relationships strong," says Ms Ardouin.</p>
+            <p>"Parents can check on their little one at any time. This is a big positive, as parents weren't - and still aren't allowed into the setting."</p>
+            <p>Sara Thakrar, co-founder of Blossom says that parents have been driving the boom in nursery tech.</p>
+            <p>"There has been a huge increase in nurseries stepping away from paper. Parents want information at their fingertips. They want to know what their child is doing in real time. They want instant feedback."</p>
+            <p>Caroline Humphreys' son Joe, goes to a nursery in London's Walthamstow that uses Famly, a Danish software application.</p>
+            <p>"I have never actually been inside the nursery. Our experience of his inner nursery life is through the photos on the app and, other than that, speaking to nursery staff at drop off and pick up," she says.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The pandemic boosted demand for software like Famly that shows photos and daily information</figcaption>
+            </figure>
+            <p>"We had a massive boom during 2020," says Matt Arnerich, Famly communications director, "and took on 1,300 settings in the last year alone."</p>
+            <p>A survey from Tapestry, another widely used app, suggested a third of early years providers now use video to communicate with parents, compared to just 9% pre-2020, and the use of printed letters has almost halved.</p>
+            <p>Over 75% agreed technology use has helped overcome barriers to engaging with families during the pandemic.</p>
+            <p>Demand for early education in the UK is high. According to the Department for Education, in 2021 there were about 1.5 million childcare places available in England - 75% of which were booked-up.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>David Wright founded childcare provider Paint Pots with his wife Anna in 1993</figcaption>
+            </figure>
+            <p>Anna and David Wright set up their nursery, Paint Pots, from their home in Southampton in 1993, caring for just a dozen children at first.</p>
+            <p>By 2000, demand had outgrown their home and they moved Paint Pots into a separate building. They now run three pre-schools and six day nurseries - caring for nearly 1,000 children a week.</p>
+            <p>"We used to rely on paper records, but it became impossible to keep track of the details, records and administrative tasks," says Mr Wright. So, the nursery now uses online learning journal, Tapestry.</p>
+            <p>"Technology releases our team members from time spent maintaining those manual records, giving them more time to spend with the children," he adds.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

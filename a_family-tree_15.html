@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_family-tree_15" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Family Tree</mark>
+                <h2>Why Germans celebrate school with a cardboard cone</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Through wars and natural disasters, German parents have given their children sweet-filled cones to celebrate the start of school - and pass on a surprisingly powerful message.</h3>
+            <p>A couple of months before six-year-old Jara started school in London last year, her grandmother in Germany began measuring her suitcases. She was planning a special surprise for Jara: a giant "Schultüte", or "school cone", a kind of cardboard cornucopia that is traditionally given to German children on their very first day of school.</p>
+            <p>In Jara's family, as in many German families, every generation had honoured this tradition, for as far back as they could think. Neither the pandemic, nor the practical question of how to transport a huge and squashable gift to London, were going to break that chain.</p>
+            <p>On the surface, German school cones are a very simple gift: a large, decorated cardboard cone, filled with sweets, stationery and toys. But over the past two centuries, they have acquired a unique place in German culture, as a much-loved, deeply symbolic present from one generation to the next - one that carries a powerful cultural and psychological meaning.</p>
+            <p>German parents patched together school cones during two world wars, in the rubble of post-war cities, and throughout the decades when the country was divided. In good times, the cones were filled with luxurious treats; in bad times, with potatoes, or nothing at all, and the cone itself would be the gift. To many Germans, they are the ultimate symbol of starting school, and entering a new phase of life.</p>
+            <p>"For our family, starting school isn't possible without a school cone," says Jacqueline, Jara's German mother, who works in London as a fitness coach. "I can't imagine it without one - it's a way of sweetening the first day of school." In her home region of Saxony, the cone is handed over as part of a big celebration, with a ceremony in school and a party at home. It's something she misses in the UK: "Here, the first day of school is just the first day of school."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>After Germany was divided, families continued the school cone tradition, like these children in Berlin's "American sector" in 1952 (Getty Images)</figcaption>
+            </figure>
+            <p>Bettina Nestler, whose family owns Nestler Feinkartonagen, Germany's biggest school-cone manufacturer, describes these school entry festivities as "like a little wedding". In Saxony, where the Nestler company is based, they are particularly exuberant, and planned up to a year in advance. The cone itself, known in some regions as "Zuckertüte" ("sugar cone"), is ordered as early as January, for a school-start in September.</p>
+            <p>Saxony, in eastern Germany, is thought to be where the cone-giving custom started. In one of the earliest references to the tradition, the son of a pastor in Saxony recalls being given "a sugar-cone by the teacher" on his first day at school in 1781. In those days, the cones were simple, small paper bags filled with raisins or other dried fruit. Today, they can measure up to 85cm (33.5in) and feature pictures of cars, unicorns or astronauts, along with flashing LED lights, and even buttons that produce neighing or roaring sounds when pressed. But whether it's a bag of raisins or a modern super-cone, the essential meaning remains the same.</p>
+            <p>"The school cone is a traditional rite of passage," says Christiane Cantauw, an historian and folklore expert at the Commission for Research into Everyday Culture in Westphalia, in western Germany. "The child is leaving the early years behind and entering the school years, and this fact is taken very seriously in Germany. And the tradition makes that clear."</p>
+            <p>In addition, the cone marks a special new bond: "Through the transition to school, the child detaches a little bit from the family unit," says Cantauw. "And with the cone-giving custom, the family creates a reconnection, and conveys that 'yes, you’re now a school child, but you're still part of our family. We support you and accompany you on this new path, just like we did before.'"  </p>
+            <p>She compares the custom to other rites of passage such as graduation ceremonies, or weddings, that exist all over the world: "The community clearly states, 'Ok, we've all understood it, you still belong to us, but you now have this new role'." </p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>German "school cones" reflect how parenting has changed. In the 1950s, when the post-war economy recovered, it became fashionable to buy rather than craft a cone (Getty Images)</figcaption>
+            </figure>
+            <p>For some, the memory of that special bond lasts a lifetime.</p>
+            <p>Hans-Günter Löwe, a retired teacher in Hamburg, grew up in the ruins of post-war Germany. He still remembers playing in the rubble of bombed-out houses. A photo taken on his first day at school, in 1949, reveals a strenuous effort to present some semblance of normality.</p>
+            <p>"My mother sewed me a jacket from scraps of fabric, I'm wearing knitted knee-high socks in second-hand boots, and I'm holding a home-made school cone decorated with shiny foil. Somehow, my mother managed to make one," he says, wondering how she pulled it off. "She must have somehow bartered for the foil, the cardboard, she really tried to rescue this cone. And she crafted it without me realising, even though we lived in a small, cramped flat."</p>
+            <p>After a pause, he adds softly, almost to himself: "She must have done it while I was asleep." </p>
+            <p>Löwe has collected dozens of antique school cones, which are now housed in a museum, as well as photos documenting the tradition. He has written a book about the custom's history - including some very poignant school-cone recollections.</p>
+            <p>"The long-feared day dawned," writes a 18th-Century German memoirist quoted in Löwe's book, of his first day of school. "Equipped with a new textbook, a big cone of raisins and a school fee of six coins, I began the sour path [to school], escorted by a maid, and shedding hot tears."</p>
+            <p>Then as now, starting school can inspire feelings of anxiety in children. According to a  review of early childhood transitions, rituals can help them cope and experience the moment of change as something positive - especially during the so-called "liminal period", a phase of uncertainty during which they are no longer at nursery, but have not yet fully settled into school.</p>
+            <p>When handled well, such transitions from one stage of life to another can be "key turning points in children's lives" and "provide challenges and opportunities for learning and growth on multiple levels", the review's authors argue. While the review does not mention specific school-entry rites, many societies mark the big day in some way. In the UK, families typically prepare children for school by buying a school uniform and a new pair of shoes, while in Japan, children are given traditional school bags known as randoseru.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>German "school cones" are carefully chosen to reflect the child's favourite colour, hobbies and stories (Getty Images)</figcaption>
+            </figure>
+            <p>In Germany, the cones tend to evoke powerful feelings of nostalgia in adults. But as Löwe's book documents, they have also reflected the country's tumultuous and violent history. In a photo taken during World War One, a little girl holds a school cone in one hand, and a model of a grenade in the other, inscribed with a message wishing her courage and strength. Children sent photos of themselves with their school cones to their fathers out in the battlefield. In the Nazi era, some cones featured swastikas.</p>
+            <p>After World War Two, when Germany was divided into the German Democratic Republic (the socialist East) and the Federal Republic (the capitalist West), a new schism emerged. In West Germany, the cones were round, and in the East, more angular. Decades after reunification, those differences remain, along with other subtle distinctions between East and West German cones. West Germans are more likely to craft their own cones, for example, while East Germans prefer shop-bought versions - a possible legacy of gender relations in the two Germanies. During the years of division, East German mothers tended to return to work quickly, while West German mothers were more likely to stay at home, a difference that persists to this day.</p>
+            <p>"In the East, both parents went to work, they didn't have time for crafting," says Bettina Nestler, the school-cone manufacturer - nor was it expected.</p>
+            <p>For her family, the cones and their East-West history carry a particularly profound significance, one that is intertwined with memories of loss and resilience. "What the school cone means to us - that's a very emotional question," sighs Nestler, whose grandfather started the company in 1953, by merging two older firms.</p>
+            <p>In 1972, just as her grandfather was about to take his family to Prague for a holiday, he received the call he'd been dreading. The family was about to be expropriated, and the business nationalised. Overnight, they lost everything, and her grandfather became an ordinary worker in the company he had once run. He still threw himself into his job, producing cones with fairy-tale motifs, East German cartoon characters - and sometimes, pictures of the Young Pioneers, a socialist youth organisation.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Today, many families craft their own "school cones" to get them exactly right (Getty Images)</figcaption>
+            </figure>
+            <p>Today, many families craft their own "school cones" to get them exactly right (Getty Images)</p>
+            <p>Today, her firm caters to a new trend: individualism. Parents can order customised cones printed with their child's name, or even request a one-off model based on a personal design. That didn't exist in the socialist days of Nestler's childhood: "It was central planning, with two to three new designs a year, and that was it."</p>
+            <p>Cantauw, the folklore expert, explains that cone design tracks Germany's economic fortunes, and also German ideas around good parenting.</p>
+            <p>In the 1950s, when the economy was recovering from the bitter post-war years, "it was a matter of showing that you could afford to buy a nice cone, with shiny paper and so on", Cantauw says. "It was a symbol of: 'We are investing in your future, starting with your school cone.'" Her own cone, given to her in 1970, was a classic example of those decades: dark red, shiny and shop-bought, with a watch, an apple "and probably sweets" inside.</p>
+            <p>But now, for parents who grew up in relative prosperity of the 1980s, and who have successful careers, "the gift is time". Specifically, time spent crafting a school cone: "The parents show the child that they're investing time, they're investing care."</p>
+            <p>In 2016, Der Spiegel, a German news magazine, condemned the "DIY craze for the first day of school", arguing that parents were under a "new kind of performance pressure" to craft the perfect cone, which was seen as a "barometer of love".</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Throughout history, "school cones" have retained their essential meaning as a gift that helps children cope with a big transition (Getty Images)</figcaption>
+            </figure>
+            <p>In moments of crisis, however, such homespun cone-crafting can turn out to be a superpower.</p>
+            <p>Manuela Schmidt, a therapist in the town of Wachtberg, lives close to the area in western Germany that was devastated by floods this summer. When she heard that some children had lost their school cones in the floods, she offered to make replacements with a group of volunteers. Dozens of families got in touch, and even a flood-wrecked nursery whose lovingly crafted cones were completely destroyed.</p>
+            <p>"As a psychotherapist, I know how important it is to give a sense of structure and stability after a terrible event like that," says Schmidt. The hand-made cones, decorated with unicorns, fire fighters and planets, offered a sense of hope. "It showed the children and their families that there was going to be a tomorrow, life was going to continue, even after this catastrophe."</p>
+            <p>In Schmidt's own family, school cones are treasured. Her niece, eight-year-old Lillian, proudly displays hers in a video call: sky-blue, with a rainbow, a tree, a moon and stars. She has kept it as a memento. "It's a memory of my first school day, which was really special."</p>
+            <p>As for Jara, the schoolgirl in London, her flown-in cone from Germany was everything she'd hoped for. Her grandmother had bought a customised model from a craft shop, made to fit the diagonal length of her suitcase. It was turquoise-blue, and decorated with a mermaid, and it was almost as big as Jara herself.</p>
+            <p>Jara found it absolutely magical: "I was so happy, I even took it to sleep with me."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

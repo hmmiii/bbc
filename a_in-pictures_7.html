@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_in-pictures_7" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>In Pictures</mark>
+                <h2>Flowers, fruit and bakes compete for best in show</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Last month, the Royal Horticultural Society celebrated the return of the Chelsea Flower Show - and just a few miles south, in West Norwood, another flower show also awoke from its Covid slumber. In its 70th year, the Lambeth Horticultural Society staged its first live show for two years. Photographer Jim Grover went along.</strong></p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>JIM GROVER's Picture</figcaption>
+            </figure>
+            <p>St Luke's Church is the regular home of the society's spring and late-summer shows.</p>
+            <p>Entries are invited, from members and non-members alike, for a wide range of floral, vegetable, fruit, domestic, craft, photographic and children's classes.</p>
+            <p>Entry fees are 15p per class.</p>
+            <p>The children's section is free.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>JIM GROVER's Picture</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>JIM GROVER's Picture</figcaption>
+            </figure>
+            <p>"I picked them this morning from my pots on my small terrace," says John Woolley, who has always loved flowers.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>JIM GROVER's Picture</figcaption>
+            </figure>
+            <p>Tony Pizzoferro, who chairs the society, says: "It's a breath of fresh air getting back to normality.</p>
+            <p>"We currently have around 250 members - we've lost none to Covid.</p>
+            <p>"Our members get monthly talks, outings to gardens and a newsletter four times a year."</p>
+            <p>The society has twice hosted BBC Radio 4's Gardeners' Question Time programme and traces its roots back to 1951, when the Lambeth Council Tenants' Horticultural Society was created from a group of council allotment holders.</p>
+            <p>Renamed in 1965, the society staged its first annual fruit, flower and vegetable show at Norwood School for Girls in September the following year.</p>
+            <p>The handicraft section comprises five classes.</p>
+            <p>Later in the day, Elaine Andrews would discover she had won first prize with her quilt entry.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>JIM GROVER's Picture</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>JIM GROVER's Picture</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>JIM GROVER's Picture</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>JIM GROVER's Picture</figcaption>
+            </figure>
+            <p>Ruth Lyon says: "I joined the society about 12 years ago and have shown something at every show since.</p>
+            <p>"The society organises interesting talks and visits and we can buy garden products at good prices in their well stocked little hut in Norwood.</p>
+            <p>"It has opened another door for me and given me the opportunity to meet another group of people."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>JIM GROVER's Picture</figcaption>
+            </figure>
+            <p>This was the first time Norinka Ford had entered the show.</p>
+            <p>Alas, her entry just exceeded the stipulated maximum size, so floral-art section judge Pauline Shockley had reluctantly to disqualify it but left an encouraging note for Norinka.</p>
+            <p>"I want to help entrants on their way, help them get even better, and encourage them to enter another time," Pauline says.</p>
+            <figure>
+                <img src="" alt="">
+                <figure></figure>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figure></figure>
+            </figure>
+            <p>A wide variety of floral classes make up 70 of the 125 in the show.</p>
+            <p>"It is such a joy - they are what I call real flowers," steward Wendy Rigg says.</p>
+            <p>"Ours are grown in the garden - it's so different to the cultivated flowers in a flower shop."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>JIM GROVER's Picture</figcaption>
+            </figure>
+            <p>The judging begins, with 20 points available for vegetable entries:</p>
+            <ul>
+                <li>seven for size, shape and colour</li>
+                <li>seven for condition</li>
+                <li>six for uniformity</li>
+            </ul>
+            <p>The society advises entrants: "All vegetables should be clean and fresh and, as far as possible, free from blemishes.</p>
+            <p>"Good quality, combined with size suitable for table use, is important.</p>
+            <p>"Mere size and weight, greatly above normal, usually indicates coarseness, and judges will regard this as a defect."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>JIM GROVER's Picture</figcaption>
+            </figure>
+            <p>Susan Sharp, who owns and runs a yarn shop in Herne Hill, judges the hand-knitted or crocheted item category.</p>
+            <p>"There's no joins or seams here - it's been knitted in the round up to the yoke, which makes it look even nicer," she says.</p>
+            <p>"And there's a hat with it - it's neatly done."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>JIM GROVER's Picture</figcaption>
+            </figure>
+            <p>Pam Fox judges the domestic section, which comprises eight different food categories, including three-cheese scones.</p>
+            <p>"It was very close - I like a strong cheese flavour," she says.</p>
+            <p>"At one show, I had to taste 22 carrot cakes - I still love carrot cake."</p>
+            <p>One of the winners was Fred Smith, his cheese scones were awarded first prize.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>JIM GROVER's Picture</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>JIM GROVER's Picture</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>JIM GROVER's Picture</figcaption>
+            </figure>
+            <p>In the afternoon, the doors are opened to the public.</p>
+            <p>"As I'm walking around, I feel like I'm in an episode of The Archers," Katarina says.</p>
+            <p>"It's wonderful.</p>
+            <p>"This is my first time coming here."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>JIM GROVER's Picture</figcaption>
+            </figure>
+            <p>Matilda Smith and Sam Harris are responsible for the tea bar.</p>
+            <p>Graphic-designer Sam also judged the photographic section.</p>
+            <p>Matilda works in a school human-resources department.</p>
+            <p>"It's a husband-and-wife tea," jokes Sam.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>JIM GROVER's Picture</figcaption>
+            </figure>
+            <p>It was a very successful show for Joanna French, on only the second time she has entered.</p>
+            <p>She was awarded the Banksian Medal, provided by the Royal Horticultural Society to all of its affiliated societies and named after scientist and gardener Sir Joseph Banks.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>JIM GROVER's Picture</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>JIM GROVER's Picture</figcaption>
+            </figure>
+            <p>"These roses remind me of my granddad in his garden - the smell just brings it all back," Michelle says.</p>
+            <p>Marilyn, her daughter, says: "You just forget that roses smell like this - it's so strong.</p>
+            <p>"Supermarket roses never smell like this."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>JIM GROVER's Picture</figcaption>
+            </figure>
+            <p>"I knitted it during lockdown," winner Margaret Davis says of the cardigan she is holding.</p>
+            <p>"It's for my granddaughter in New York - I'm hoping to visit them for Thanksgiving."</p>
+            <p>Margaret was accompanied to the show by her son and his son, Arthur, who was wearing the jumper she knitted for his father 34 years ago.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>JIM GROVER's Picture</figcaption>
+            </figure>
+            <p>"The show's turned out really well - we put it on with great trepidation," secretary Bob Tydeman says.</p>
+            <p>It attracted 150 entries from 29 people.</p>
+            <p>"We've taken £26.85 in entry fees - and we'll pay out £153 in prizes, and the church hire comes to £300," Bob says.</p>
+            <p>"It'll come out of our annual funds.</p>
+            <p>"The purpose of the society is to promote horticulture, which is why it is free to get in".</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>JIM GROVER's Picture</figcaption>
+            </figure>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

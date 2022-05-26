@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_family-tree_11" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Family Tree</mark>
+                <h2>Your teen's being sarcastic? It's a sign of intelligence</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Young children don't get sarcasm - but by the time they're teens, it can be their default mode. Here's what science tells us about the mental acrobatics behind that wry one-liner.</h3>
+            <p>If I were to tell you that sarcasm is one of our most powerful linguistic tools, your first response might reasonably be, yeah right! Perhaps you’d even simply assume that I was indulging in a little irony myself.</p>
+            <p>We are often reminded, after all, of Oscar Wilde's jibe that "sarcasm is the lowest form of wit" while forgetting that the famous twister of words immediately qualified his statement by adding "but the highest form of intelligence". Parents or teachers of teenagers, in particular, may find it hard to believe that this linguistic quirk is a sign of a flexible and inventive mind.</p>
+            <p>Yet that is exactly what psychologists and neuroscientists have been arguing. They have found that sarcasm requires the brain to jump through numerous hoops to arrive at a correct interpretation, requiring more brainpower than literal statements. And although it's often dismissed as juvenile snark, sarcasm is actually evidence of maturity - as it takes years for a child's developing brain to fully grasp and master it.</p>
+            <p>"It can be quite challenging," says Penny Pexman, a psycholinguist at the University of Calgary.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Sarcasm allows teenagers to add nuance to their interactions (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>The mental effort pays off. Sarcasm allows us to add much-needed nuance to our interactions, softening the blows of our insults or adding a playful tease to a compliment. There is even some evidence that it can prime us to be more creative and that it can help us to vent negative emotions when we’re feeling down.</p>
+            <p>Pexman is so convinced of sarcasm’s importance that she has now started designing training programmes to help those with an underdeveloped sense of sarcastic irony.</p>
+            <p><strong>Baby steps</strong></p>
+            <p>Some clues to sarcasm’s complexity come from its long developmental trajectory across childhood - a fact that Pexman has uncovered with the help of some sassy puppets.</p>
+            <blockquote>In general, children under five are unable to detect sarcasm and tend to take statements literally</blockquote>
+            <p>In a typical study, a child might watch a character named Jane, who is attempting to paint a rose - but makes a horrible mess. "You're an awesome painter," the puppet's friend Anne says. Or they may see a character called Sam is weeding the garden - and finishes the job very quickly. "You are an awful gardener," says his friend Bob.</p>
+            <p>In general, children under five are simply unable to detect the sarcasm of these statements and tend to take the statements literally. And even after they have started to realise that the words are veiling some kind of hidden meaning, they may struggle to understand nuances. (They may think that someone is simply lying, for instance.) An understanding of sarcasm's use in humour, as a form of teasing, comes last of all. "That develops particularly late - at around nine or 10 years of age on average," says Pexman.</p>
+            <p>This developmental arc seems to follow the emergence of "theory of mind" - a child’s capacity to understand another’s intentions - which tends to become more sophisticated with age.</p>
+            <p>Other factors may include vocabulary and grammar, the capacity to pick up on the subtle vocal cues that might signal the sarcastic meaning, and an understanding of the contexts in which sarcasm may or may not be expected. This can only come with extensive experience of social situations. "There are all these pieces that a child needs to put together, but none of them is sufficient, by itself, to understand sarcasm," says Pexman.</p>
+            <p>Her latest studies have shown that a child's home environment can strongly influence their understanding and use of sarcasm. If the parents use sarcasm, the children are much more likely to develop the ability themselves.</p>
+            <p>"By around four, children develop the ability to take the perspective of another person and to recognise that the belief someone might hold in their mind is different from their own," Pexman says. Sarcasm is complex because the child must both understand the actual belief of the speaker and the ways they intend their words to be interpreted by the other person - a two-step process that takes time for a child to master. (In general, children under seven find it hard to hold two potentially opposing ideas in mind.)</p>
+            <p>By the time they are teens, many children have mastered these complex skills - and it is perhaps not surprising that they then enjoy experimenting with them, and testing their effects on others.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Mastering sarcasm can boost creative thinking (Credit: Getty Images)</figcaption>
+            </figure>
+            <p><strong>Creative speaking</strong></p>
+            <p>If you're still not convinced that your teen's love of sarcasm is a milestone worth celebrating, consider a recent experiment from Ruth Filik, a psychologist at the University of Nottingham in the UK. The participants were asked to lie in an fMRI scanner as they read various scenarios of common events.</p>
+            <p>In some cases, the characters' statements were intended to be gently ironic, such as:</p>
+            <p>Bernice and Caitlin were both applying for a psychology course at a university in the USA. They went to print out their applications together. The printer only had pink paper available. Bernice said to Caitlin: "Very formal!"</p>
+            <p>In others, the same words were used as sarcastic criticism of a particular person:</p>
+            <p>Bernice and Caitlin were both applying for a psychology course at a university in the USA. They went to print out their applications together. Caitlin chose to print hers on pink paper. Bernice said to Caitlin: "Very formal!" </p>
+            <p>Both types of irony fired up the "mentalising" network involved in understanding other people's beliefs and intentions - a finding that underlines the importance of theory of mind in interpreting these kinds of ambiguous statements. </p>
+            <blockquote>It's more challenging to work out what the beliefs of the other person were, why they said that, and whether they're trying to either be mean or be funny - Ruth Filik</blockquote>
+            <p>Importantly, however, Filik found that the sarcasm also triggered greater activity in semantic networks involved in general language processing, and the brain regions involved in humour, compared to the non-sarcastic irony - which she takes to be a sign of its overall complexity. "It's more challenging to work out what the beliefs of the other person were, why they said that, and whether they're trying to either be mean or be funny."</p>
+            <p>This mental workout may come with some surprising benefits. Working with colleagues at Harvard and Columbia Universities, Li Huang at Insead’s business school in Fontainebleau, France, has shown that both expressing, receiving, or recalling sarcastic comments can help to catalyse creative thinking.</p>
+            <p>One of her experiments involved the "Candle Problem", for example, in which participants are presented with a candle, a pack of matches and a box of tacks. Their task is to find a way to attach the candle to the wall so that it can burn without dripping wax on the floor. The correct answer is to empty the box of tacks, pin it to the wall, and then place the candle inside - a solution that will only come to mind if you are prepared to think laterally about the functions of each object.</p>
+            <p>Before embarking on the problem, some participants were asked to recall a sarcastic interaction, while others remembered a sincere or neutral exchange. Quite amazingly, the sarcastic memories more than doubled the participants’ success rate, from around 30 to more than 60%.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Teenage sarcasm can leave parents feeling helpless (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>As a form of humour, sarcasm may also help us to deal with frustration or stress. "It can be a way of letting off steam," says Kathrin Rothermich at East Carolina University in Greenville, North Carolina. Intriguingly, one of her recent studies found that depressed and anxious individuals' use of sarcasm increased over the Covid-19 pandemic - which may reflect this coping mechanism.</p>
+            <p>In general, though, the primary motivation of sarcasm will be linguistic - to add colour to the messages that we hope to convey. "You have the veil of the surface meaning, over the underlying meaning," says Pexman. It could be a gentle tease, and if you are implicitly criticising someone, it can even give you plausible deniability - reducing the risk of an altercation.</p>
+            <blockquote>Sarcasm can be a way of letting off steam</blockquote>
+            <p>While these studies were conducted with adults rather than teenagers, it seems likely that teens experience similar sensations when they use sarcasm - and might find it a useful way to cope with negative feelings or difficult situations.</p>
+            <p><strong>Training sarcasm</strong></p>
+            <p>It may initially feel like a shock when parents notice their children deploying sarcasm - a sign, perhaps, of a more adult-like cynicism that jars with their impressions of their offspring's youthful innocence. Parents may feel particularly helpless when dealing with a teenager who injects it into almost all interactions, as if they struggle to express any sincere emotions.</p>
+            <p>But should we blame teens for wielding this versatile tool? Perhaps it's better seen as the useful practice of a vital ability? "It is a skill that they want to be able to be good at, particularly because a huge amount of the language that we use in everyday life is not literal," says Filik.</p>
+            <p>Pexman agrees - and it is for this reason that she has started looking for ways to teach sarcasm to children who are slow at grasping its nuances. The result is "Sydney Gets Sarcastic", a storybook that provides multiple examples of sarcasm and the reasons it was used. In a recent experiment on 5-6-year-olds, she showed that children who read and discussed the story found it easier to detect sarcastic statements in a subsequent test.</p>
+            <p>Given sarcasm's poor reputation, we might all be a bit more appreciative of its complexity and sophistication. I mean no irony when I say it is - quite literally - one of the language’s greatest gifts.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

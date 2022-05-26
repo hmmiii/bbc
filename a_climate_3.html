@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_climate_3" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Climate</mark>
+                <h2>Deforestation: Which countries are still cutting down trees?</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>World leaders have pledged to end and reverse deforestation by 2030.</strong></p>
+            <p>But in Brazil's Amazon rainforest it has hit its highest level in over 15 years - and progress elsewhere is challenging.</p>
+            <h3>Brazil: Illegal logging continues</h3>
+            <p>Some 60% of the Amazon rainforest is in Brazil, and it plays a vital role in absorbing harmful CO2 that would otherwise escape into the atmosphere.</p>
+            <p>After falling steadily since 2004, deforestation in Brazil's Amazon has risen again, according to the country's National Space Research Institute (INPE).</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Amazon deforestation highest since 2006</figcaption>
+            </figure>
+            <p>Its latest report found that deforestation increased by 22% in the last year, with 13,235 sq km (5,110 sq miles) of forest lost.</p>
+            <p>Brazil's president, Jair Bolsonaro, has been criticised for "anti-environment" policies, such as encouraging agriculture and mining in the Amazon.</p>
+            <p>He has cut the funding for the government agencies that are responsible for prosecuting farmers and loggers who break environmental law. Fines for illegal logging fell by 20% in 2020.</p>
+            <p>Exact figures are not available, but recent studies suggest as much as 94% of deforestation and habitat destruction in Brazil could be illegal.</p>
+            <p>Brazil is not the only country responsible for the deforestation of the Amazon - neighbouring countries, including Bolivia, also contribute.</p>
+            <p>Last year, Bolivia lost almost 300,000 hectares of tropical forest - the fourth-highest in the world.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Top four countiries for tropical primary</figcaption>
+            </figure>
+            <h3>Congo basin: Agriculture and mining</h3>
+            <p>The Congo forest basin is the second-largest rainforest in the world. More than half of it lies within the Democratic Republic of Congo.</p>
+            <p>Environmental campaign group Greenpeace says illegal logging - by both large and small companies - is leading to deforestation. Although the US and EU have banned importing illegal timber, it still gets smuggled outside the country.</p>
+            <p>Other threats include small-scale subsistence agriculture, clearing for charcoal and fuel, urban expansion and mining.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Primary forest loss in the Democratic Repubic of Congo, 2001 to 2020</figcaption>
+            </figure>
+            <p>In the past five years, the annual loss of primary forest has been nearly half a million hectares, according to Global Forest Watch.</p>
+            <p>President Felix Tshisekedi last month ordered an audit of some of the leases allocated to harvest public forests - including one for more than 1.4 million hectares - amid allegations of corruption. The move was welcomed by campaigners.</p>
+            <p>But earlier this year, the government also announced a plan to lift a ban dating back to 2002 on new logging operations - although it has not yet been implemented.</p>
+            <p>Greenpeace says that would contradict commitments made earlier this year to protect the forest and increase forest cover by 8%.</p>
+            <h3>Indonesia: Palm oil plantations</h3>
+            <p>Indonesia has been among the world's top five countries for forest loss for the past two decades.</p>
+            <p>According to data from Global Forest Watch, the country lost 9.75 million hectares of primary forest between 2002 and 2020.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Indonesia has lost nearly 10 million hectares of forest in 20 years</figcaption>
+            </figure>
+            <p>President Joko Widodo pledged in 2014 to crack down on deforestation by tackling the main contributor - clearing land for oil palm plantations.</p>
+            <p>Up to 80% of fires were set for this purpose, according to official data.</p>
+            <p>In 2016, a record 929,000 hectares of forest disappeared, but there's been a steady decrease in the rate of deforestation since then.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Getty Image</figcaption>
+            </figure>
+            <p>By 2020, the annual loss was down to 270,000 hectares.</p>
+            <p>In 2019, President Widodo issued a three-year moratorium on new forest clearance, covering about 66 million hectares of primary forest and peatland. This was extended indefinitely this year.</p>
+            <h3>What is the plan to stop deforestation?</h3>
+            <p>Forests absorb vast amounts of carbon dioxide (CO2) - a major contributor to global warming - so cutting down trees can have a big impact on climate change.</p>
+            <p>The UN says 420 million hectares (one billion acres) of forest have been lost since 1990. Agriculture is the main reason for this.</p>
+            <p>More than 100 world leaders have promised to end and reverse deforestation by 2030, at the COP26 summit.</p>
+            <p>There have been efforts to protect forests before.</p>
+            <p>In 2014 the UN announced a deal to halve deforestation by 2020 and end it by 2030.</p>
+            <p>Then, in 2017, it set another target to increase forested land by 3% worldwide by 2030.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The World forests are still decreasing in size</figcaption>
+            </figure>
+            <p>But deforestation continued at "an alarming rate", according to a 2019 report, with serious consequences for the fight against climate change.</p>
+            <p>There has been some reforestation, through natural growth or planting, but trees need years to mature before they can fully absorb CO2.</p>
+            <p>Over the past decade 4.7 million hectares of forest were still lost annually - with Brazil, the Democratic Republic of Congo and Indonesia among the countries worst affected.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

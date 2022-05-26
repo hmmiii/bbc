@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_science_22" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Science</mark>
+                <h2>Lab-grown meat and insects 'good for planet and health'</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Dining on the likes of lab-grown meat or ground-up insects could lead to big savings in carbon emissions and water, as well as freeing up land for nature.</strong></p>
+            <p>That's the finding of a study calculating the environmental benefits of "greener" foods hitting our plates.</p>
+            <p>Scientists say pressures on the planet could fall by more than 80% with such foods, compared with the typical European diet.</p>
+            <p>But it's not yet clear if consumers will want to shift their eating habits.</p>
+            <p>A host of non-conventional foods are being developed with the aim of providing food rich in protein and other nutrients, while being gentle on the planet by using less water and land.</p>
+            <p>Scientists in Finland studied the nutritional profile of some of these products and looked at three measures of environmental pressure: the use of water, land and potential carbon emissions.</p>
+            <p>They say switching meat, dairy and other animal products for alternative foods could reduce these impacts by more than 80%, while providing a more complete range of essential nutrients than a purely vegetarian or vegan diet.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Algae growing in a lab in Singapore</figcaption>
+            </figure>
+            <p>But they also found that relatively low-tech solutions, such as cutting down on meat and eating more vegetables, had a similar impact on the planet.</p>
+            <p>"With significant reductions in animal-sourced foods and substitutions with novel or future foods and plant-based protein alternatives, you can have significant reductions in environmental impacts in terms of global warming potential, land use and water use," said Rachel Mazac of the University of Helsinki.</p>
+            <p>But she said there were "similar savings in impacts in a vegan diet". And in a diet with a 75% reduction in animal-sourced foods, "you can have an approximately 75% reduction across all of your impacts".</p>
+            <p>The research, published in Nature Food, examined new foods that are expected to become a bigger part of our diets in future years, many of which rely on high-tech methods to "grow" animal and plant cells in bioreactors.</p>
+            <p>The novel foods studied - some of which are still on the drawing board - were:</p>
+            <ul>
+                <li>Ground-up flies and crickets</li>
+                <li>Egg white from lab-grown chicken cells</li>
+                <li>A type of seaweed called kelp</li>
+                <li>Protein powders made from mushrooms or microbes</li>
+                <li>Edible algae</li>
+                <li>Milk, meat and berries grown from cells.</li>
+            </ul>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Powdered kelp is found in a range of supplements</figcaption>
+            </figure>
+            <p>Dr Asaf Tzachor of the University of Cambridge, who was not part of the research team, said while these are "promising" findings, the unwillingness of consumers to shift their diets might "postpone, or indeed prevent, this much-needed transition".</p>
+            <p>Numerous studies have shown that moving towards a plant-based diet has benefits for both health and the planet.</p>
+            <p>A recent report by the Intergovernmental Panel on Climate Change recommended a switch to balanced diets that are rich in plants like grains and vegetables, with a moderate intake of sustainably produced meat and dairy.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

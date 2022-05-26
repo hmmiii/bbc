@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_world_15" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>World</mark>
+                <h2>Freedom Convoy: How might Canada's trucker protest end?</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>The narrow streets of central Ottawa remain clogged with trucks and other vehicles, two weeks into a protest calling for the country's pandemic measures to be axed. How might they be moved on?</strong></p>
+            <p>Organisers have pledged to keep going "for as long as it takes... until Canada is a free nation again".</p>
+            <p>But frustrated locals are calling for more action to be taken against the convoy's participants.</p>
+            <p>What can actually be done, however, remains unclear. Here are some options.</p>
+            <h3>Tow the trucks away</h3>
+            <p>The stand-off has created a tough choice for local towing companies.</p>
+            <p>Their heavy tow trucks, commonly known as "wreckers", can ostensibly help clear the roads, but trucker Doug Rowland says many may be reluctant to get involved for both political and practical reasons.</p>
+            <p>"A lot of towing companies consider themselves truck drivers as well," he explained.</p>
+            <p>According to him, even large to mid-sized towing companies might own five wreckers at most, often at hefty price tags ranging from $300,000 (£221,000) to $1m, so smaller companies are likely to avoid a hostile situation that could damage their expensive equipment.</p>
+            <p>Further logistical difficulties arise from the sheer number of vehicles involved in these protests. They can weigh 20-30 tonnes depending on the load.</p>
+            <p>Each truck requires its own wrecker and hooking up a wrecker to a truck takes about an hour, assuming the driver is present and co-operating.</p>
+            <p>"If the trucker is not co-operative, it probably takes an extra 15 minutes or half hour because you don't have access to the cab, the inside of the truck," said Mr Rowland.</p>
+            <p>A mechanical engineer by trade, he says such an instance could require each parking brake on the vehicle to be manually released. That means, for a lorry, the brakes need to be "caged" or manually backed off its 18 individual wheels.</p>
+            <p>The airlines to the brakes might also need to be removed if the driver is actively stepping on the brake pedal.</p>
+            <p>Mr Rowland further hypothesised that "if the driver gets in the way, say he lays down on the road in front of his truck, it becomes a standoff and the timing of that can be anywhere from 10 minutes to 10 hours".</p>
+            <p>In Alberta, the Royal Canadian Mounted Police (RCMP) indicated last week that it may tow away trucks blockading the main Highway 4 that leads to the US border.</p>
+            <p>After Canadian media reported that local heavy towers were hesitant to help them, an RCMP spokesperson confirmed to the BBC that it had not yet towed any vehicles away.</p>
+            <h3>Starve the protesters of cash and fuel</h3>
+            <p>Canada isn't used to protests this large, long and disruptive.</p>
+            <p>That might account for why Ottawa police apparently underestimated the degree of organisation and extent of financing behind this one, says Christian Leuprecht, a security expert at Queen's University and the Royal Military College in Ontario.</p>
+            <p>The legions of protesters that converged on downtown Parliament Hill had received support through a GoFundMe page set up by the convoy's organisers that raised more than C$10m.</p>
+            <p>On Friday, the company shut down the page, citing police reports of protest-related violence, but about $1m had already been disbursed.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Truckers 'don't have the right to hold us hostage'
+                </figcaption>
+            </figure>
+            <p>Mr Leuprecht says the page's success indicates that donors from outside Canada helped fund the movement.</p>
+            <p>"There are many NGOs in this country with professional fund-raising bureaucracies that raised less money than that in a year," he said. "Intelligence is presumably trying to figure out whether people are getting paid to hunker down there."</p>
+            <p>In recent days, authorities have also sought to make protesters' lives more difficult by seizing their petrol cans and propane cylinders, and moving their "community kitchen" and supply shed from nearby Confederation Park to an off-site location 5km away.</p>
+            <p>Ottawa did not take some of the proactive measures that other cities have taken to draw clear red lines and to protect access to critical services, Mr Leuprecht notes.</p>
+            <p>He says authorities are probably hoping the truckers - most of whom are thought unlikely to be salaried and earn wages per drive - will eventually pack up once they get tired and run out of money.</p>
+            <h3>Call in the troops</h3>
+            <p>Police have described the remaining protesters as a small but highly motivated group.</p>
+            <p>City officials have referred to them in increasingly stark language, as occupiers and insurrectionists.</p>
+            <p>It has fuelled speculation that the Canadian Armed Forces could be deployed on domestic soil.</p>
+            <p>Under Canada's National Defence Act, the country's military can be called on to assist domestic law enforcement, but this has only happened twice in the past century.</p>
+            <p>Both previous occasions - the October Crisis of 1970 and the Oka Crisis of 1990 - had developed into violent civil crises and troops provided the manpower to restore order, but their involvement was viewed unfavourably by the public.</p>
+            <p>Deploying the Forces and their tanks to protect the parliament and its surrounding areas runs a similar risk of unnerving residents and aggravating the protesters.</p>
+            <p>Last Thursday, Prime Minister Justin Trudeau tamped down calls for military intervention, warning: "One has to be very, very cautious before deploying military in situations engaging Canadians."</p>
+            <h3>Negotiate a compromise</h3>
+            <p>The convoy began in response to a federal vaccine mandate for cross-border truckers but what its participants now hope to achieve - the repeal of all pandemic health measures - is highly improbable, if not impossible.</p>
+            <p>Further complicating the chances of a compromise are that Mr Trudeau and other top officials have dismissed the protesters as a "fringe minority" and refused to meet with them. The prime minister has not met or held talks with the protesters.</p>
+            <p>Recent polling indicates that about two-thirds of Canadians oppose the protest, but nearly half agree that the prime minister and provincial premiers have displayed a "condescending attitude toward Canadians who disagree with vaccine mandates and lockdowns".</p>
+            <p>It suggests a heavy-handed police response that seeks to end the protest may only spark more disruptions by the well-organised group.</p>
+            <p>"You could enforce and try to shut down the protest, but that would be un-Canadian," Mr Leuprecht, the security expert, told the BBC. "When people protest, we wait it out and try to negotiate our way out of it."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

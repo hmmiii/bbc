@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_immune-response_2" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Immune Response</mark>
+                <h2>What will tomorrow's Covid-19 vaccines be like?</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>The first generation of Covid-19 vaccines was developed in record time. But now scientists have grander plans - for more potent immunity, easier transport, and mutation-proofing.</h3>
+            <p>As the news filtered through that the Covid-19 vaccine being developed by Pfizer and BioNTech was on the verge of being rolled out around the globe, Todd Zion could not help but feel slightly deflated.</p>
+            <p>It was November 2020, and for the first time, the news cycle was bringing tidings of hope in the fight against Covid-19. Not only Pfizer-BioNTech, but Moderna and then Oxford-AstraZeneca all reported Phase III clinical trial results for their vaccines with efficacies that went beyond the expectations of the most optimistic of scientists. What followed was an onrush of political deal-making and vaccine diplomacy, as the world's leaders scrambled to be the first to get their hands on the new shots. </p>
+            <p>While Zion, an entrepreneur and chief executive of a small start-up called Akston Biosciences, was personally relieved that the tide was turning against the global pandemic, he faced the unenviable task of trying to convince his employees that their hard graft had not been in vain.</p>
+            <p>Nine months earlier, Akston Biosciences had joined the global vaccine race as one of more than 40 teams vying to develop the world's first Covid-19 jab. Now, like dozens of others, they had been comprehensively beaten to the punch by the sheer speed and efficiency of their rivals' technologies, which had completed clinical trials while their own products were still in development.</p>
+            <p>But Zion still felt that the race was far from finished. "Those vaccines helped tremendously, but if you're an innovator, you know that the products which come first tend to have lots of issues which aren't sustainable," he says. "So for that reason I remained motivated. But it was a bit of a challenge as a small company to keep developing our vaccine while most of the world was thinking that the problem was solved."</p>
+            <p>Twelve months later, Akston Biosciences is among a plethora of companies hoping to bring a second generation of Covid-19 vaccines to the clinic over the next year and a half. The challenges are plentiful - many vital vaccine raw materials are now in desperately short supply, while more than two years into the pandemic, they must convince regulators that there is still a need for new products.</p>
+            <p>But they come with a range of novel innovations. From French biotech company Valneva, whose vaccine contains an adjuvant - vaccine parlance for a chemical that can be added to the shot to boost the immune response - aimed at eliciting a better immune response from the elderly, to California-based Vaxart, who are developing a vaccine-in-a-pill which could tackle the issue of needlephobia, each second generation vaccine has its own specific target markets.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Rwanda has among the lowest vaccination rates in the world, but powdered vaccines may be able to help (Credit: Alamy)</figcaption>
+            </figure>
+            <p>In addition, the emergence of new mutated versions of the Covid-19 virus over the past year, such as the Delta and now the Omicron variants, has created a potential requirement for different technologies which might be able to provide a more robust and widespread immune response.</p>
+            <p>"We have some data that your immune system's response to natural infection, but also to vaccination, wanes over time," says Andrew Ustianowski, clinical lead for the UK's National Institute for Health Research Covid Vaccine Research Programme. "We can see the antibody responses, and to a degree, the T cell responses dropping over time. So, one of the hopes for second generation vaccines is that they can give us protection for a longer period than these first vaccines."</p>
+            <p>The stringent refrigeration requirements for many of the first generation vaccines have also posed significant problems in reaching many of the world's poorest communities. For example, at present just 28% of India's population are fully vaccinated.</p>
+            <p>Akston Biosciences have recently received approval to conduct a Phase II/III clinical trial - the second stage of human testing, to check an intervention's safety and efficacy - in India over the next year. It is hoped that the nature of its vaccine - which can be kept at room temperature for at least six months - could help reach regions with limited infrastructure needed to store and transport less stable vaccines. As such, while it may not become widely available until 2023, Zion is confident that it is still very relevant in the fight against Covid-19.</p>
+            <p>"We just signed a licensing and manufacturing development deal with an Indian company," he says. "They have about 100 countries on their list that they're targeting, mostly in southeast Asia, the Middle East, and sub-Saharan Africa. We see primary vaccinations as still being an opportunity in some of the lesser served regions."</p>
+            <p><strong>The Need</strong></p>
+            <p>At the start of 2020, Filip Dubovsky was working for AstraZeneca when he heard about another pharmaceutical company called Novavax, which was developing a particularly inventive way of creating a flu vaccine.</p>
+            <p>The company's scientists had discovered a powerful adjuvant called Matrix-M, which comes from the inner bark of the Chilean soapbark tree, Quillaja saponaria. In a Phase III trial - usually the final stage of initial testing, involving large numbers of people - it not only yielded a stronger antibody response than existing influenza shots, but also provided cross-protection against multiple strains of flu.</p>
+            <p>Dubovsky was intrigued, so much so that by June 2020 he had joined Novavax as their chief medical officer, working on the company's Covid-19 vaccine. This recently became the first of the second generation jabs to hit the market, initially receiving emergency authorisation in Indonesia and the Philippines. Dubovsky felt that the technology - which combines the adjuvant Matrix-M with a more traditional protein-based jab - was always going to take longer to develop than the messenger RNA (mRNA) and adenovirus methods, which comprised the first wave of Covid-19 vaccines. However, he says that being slightly later to the party may have given Novavax certain advantages.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Transporting Covid-19 vaccines to more remote parts of the world can be challenging (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>While Novavax's clinical trials were underway, new variants of Covid-19 began to emerge, enabling them to prove that their vaccine was still effective against a range of different strains. So far, its data shows that their vaccine is 93% effective against the Alpha and Beta variants, although no efficacy has been published for the dominant Delta strain and it is still too early to say if it will be effective against Omicron.</p>
+            <p>Dubovsky says that, as with Novavax's flu vaccine, the use of the adjuvant means the vaccine stimulates the production of neutralising antibodies that are higher quality.</p>
+            <p>"It's not just how high your antibodies go, but how good they are," Dubovsky explains. "We have data from early clinical studies showing that our vaccine was able to generate neutralising antibodies that are very high level. So these aren't just antibodies that can recognise the spike protein, but they can actually stop the virus from spreading."</p>
+            <p>Dubovsky hopes that their new adjuvant may help to prevent so-called "breakthrough infections", whereby fully vaccinated individuals can become infected.</p>
+            <p>Breakthrough infections remain a major ongoing problem, particularly in the wake of the Delta variant, with studies estimating that breakthrough infection rates can range from 1 in 100 to 1 in 5,000, depending on the population. (Since the interview with Dubovsky, the heavily mutated Omicron variant has also emerged, which early signs suggest may also lead to a significantly higher rate of breakthrough infections.)</p>
+            <p>Generating more, and better quality antibodies, is one of the main ways in which second generation vaccines are hoping to stand out, both as a potential booster option in the US and Europe, but also as a primary vaccine in many parts of the world. Brian Ward, medical officer at the Canadian biotech Medicago, told the BBC that they are preparing to release the data from their  Phase III clinical trial, and that they intend to apply for regulatory approval for their vaccine within weeks. Medicago claim that they can produce far higher antibody titers (a measure of antibody concentration) than current jabs.</p>
+            <p>"The mRNA vaccines [produce antibody titres that] are somewhere between two and a half to four times higher [than in someone who's recovering from Covid-19]," says Ward. "Novavax's and our vaccine are 10 to 15 times higher."</p>
+            <p>Vaccines which are further behind in development, such as Vaxart - who are currently enrolling for their Phase II trial - are hoping that offering new technologies or novel delivery mechanisms will still make them commercially viable. Vaxart's vaccine, which comes in tablet form, produces antibody responses in the nosewhich are thought to be better at preventing the virus from spreading. In addition, the company has compiled survey data which found that 32% of Americans would be more likely to take a Covid-19 vaccine if it was offered as a pill.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The next generation of Covid-19 vaccines might lead to higher quality antibodies, which are better at neutralising the virus (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>According to the Lancet, since January 2021, 20% of US adults have consistently reported that they will either get vaccinated only if required for work, or not get vaccinated at all. Vaxart's founder Sean Tucker believes that having an oral vaccine may help with this problem. "When it comes down to it, a lot of people are afraid of needles," he says.</p>
+            <p>Another one key way in which these vaccines can compete with the first generation jabs is on price, undercutting the more expensive Pfizer/BioNTech and Moderna vaccines. "We're targeting $3-5 [£2.3-£3.8] a dose, and we think that's where everything happens going forward," says Zion. "The amount of government subsidisation at these $25-30 [£18.8-£22.5] per dose price ranges (for the mRNA vaccines) is just not going to be sustainable."</p>
+            <p>However, in such a competitive landscape, it remains to be seen whether there will be room for all the second generation vaccines in development. For one thing, the market for boosters in high income nationsis a highly uncertain one. Scientists are still unclear whether the emergence of further variants will make regular immunisations against the virus a necessity, or whether its threat will slowly wane in the coming years.</p>
+            <p>"Effectively the manufacturers of the newer vaccines have got to show a benefit above what we've already got," says Ustianowski. "And that isn't a definite."</p>
+            <p><strong>The Risks</strong></p>
+            <p>The successful roll-out of Covid-19 vaccinations over the past year has been widely hailed as an "unprecedented" achievement. Vaccine development is a notoriously precarious business, with two thirds of vaccines proving inadequate in clinical trials, however experts have warned that the success of the first wave of Covid-19 jabs is no guarantee that the second wave will make it through.</p>
+            <p>One early casualty was German company CureVac, whose mRNA vaccine yielded disappointing results in a Phase III trial in June, proving just 47% effective at preventing disease. The news was viewed as a setback as the vaccine - which utilised smaller doses of mRNA - was expected to be cheaper, and last longer in storage than the Pfizer/BioNTech and Moderna equivalents.</p>
+            <p>CureVac are now pursuing a new Covid-19 vaccine in partnership with GSK, which attempts to target multiple coronavirus variants at one time. While this has shown better results in animal studies and appears to elicit ten times more antibodies than their first attempt, Klaus Edvardsen, chief development officer at CureVac told the BBC that they would be unlikely to be in a position to apply for regulatory approval until the end of 2022 at the earliest.</p>
+            <p>This example serves to illustrate the multiple pitfalls and challenges faced by second generation vaccine developers. Many companies are already finding that the path to regulatory approval is much stiffer, with the US Food and Drug Administration announcing that there will be no more emergency use vaccine authorisations.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Currently, all Covid-19 vaccines need to be refrigerated. But this may be about to change (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>The billions of doses of vaccines which have already been administered - 29.92 million are now being given every day - are also putting unprecedented strain on the vaccine supply chain. With manufacturers of glass vials and other key raw materials choosing to prioritise first generation vaccines, second generation developers are finding it difficult to get hold of what they need.</p>
+            <p>"We're definitely in second class citizens when it comes to the supply chain," says Zion. "Vials, glass, plastic, it's all being consumed by the approved vaccines. We had some filters on order, which were on the truck, and then they were diverted away from us to one of the approved vaccine companies through some governmental edict. It's like that all the time."</p>
+            <p>For Akston Biosciences and the other new challengers vying for a part of the market, the price of commercial failure is potentially very high. Two years ago Novavax saw a clinical trial for an RSV vaccine crash and burn. The process cost them tens of millions of dollars, resulted in employees being laid off, and the sell-off of two development and manufacturing facilities.</p>
+            <p><strong>The Future</strong></p>
+            <p>To date an estimated 47.7% of the world's population, including large swathes of South America, Africa and Asia, is yet to receive even one coronavirus vaccine dose. The great hope for second generation vaccines is that they can make major inroads into this problem, especially as unvaccinated populations are at even greater risk from any new variants that might emerge.</p>
+            <p>William Hanage, an epidemiologist at the Harvard TH Chan School of Public Health, has been attempting to quantify the impact of the Delta variant on unvaccinated individuals, and recently uncovered a startling statistic. "I was looking at mortality rates across the US, and Florida had a Delta wave after vaccines became available," he says. "More than 30% of all Florida's Covid-19 deaths have happened since vaccines, because Delta is more dangerous and Florida has a lot of unvaccinated older people. And that's just the US. We know there are large parts of the world which are unvaccinated."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>While the first Covid-19 vaccines were developed to work on individual virus strains, newer versions might be able to recognise several (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>One company which is specifically focusing on getting Covid-19 vaccines to low-income nations is Lund-based biotech Ziccum which has developed a technology to air-dry existing vaccines and convert them into powder forms which do not need to be stored or transported at cold temperatures. Ziccum are currently collaborating with Janssen - whose first generation Covid-19 vaccine was approved in February 2021 - to study whether it will be possible to create dry powder forms of one of Janssen's vaccine platforms. In the near future, this may be utilised to try and improve the vaccine situation across the African continent. Ziccum's CEO Göran Conradson told the BBC that talks are underway about using their technology in Rwanda, where less than 20% of the population are fully vaccinated.</p>
+            <p>"We have been invited to Rwanda to see what we can do," says Conradson. "There's been a lot of initiatives in Africa at the moment. We've had so many contacts from the African CDC, African Development Bank, the African vaccine manufacturers, there's a whole bunch of initiatives."</p>
+            <p>Even if some of the second generation vaccines never make it to market for Covid-19, the vast investments in research and accelerating manufacturing processes, may yet bring major health benefits in the realms of other diseases. Vaxart are also looking to create vaccine-based pills for flu and norovirus, while CureVac and GSK are aiming to produce a jab which vaccinates against coronaviruses and influenza at the same time.</p>
+            <p>California-based biotech Gritstone have recently launched a Phase I clinical trial in Manchester, using a method known as self-amplifying RNA (saRNA), a newer form of the mRNA technology. Initially designed for use against cancer, saRNA produces copies of itself once inside the body's cells, meaning that you can induce the same response as an mRNA vaccine, but with a dose that is 50 or 100 times smaller, making the vaccine cheaper and easier to make.</p>
+            <p>Andrew Allen, president, chief executive and co-founder of Gritstone, says that the vaccine's technology, which aims to stimulate more durable, long lasting T cell responses against areas of Covid-19 which are conserved between coronaviruses, and so found in all viruses in this family, could also be utilised to help develop universal vaccines against other viruses such as the flu. It could even help accelerate its existing work on cancer vaccines, which uses biopsies to try and predict different targets for the immune system to attack, as the tumour evolves.</p>
+            <p>But one of the biggest legacies of this new wealth of vaccine research could be in making the world far more prepared for future coronavirus outbreaks, something many scientists believe is inevitable based on trends over the past two decades.</p>
+            <p>"We've had three coronavirus outbreaks in the last 20 years," says Allen. "We had Sars in 2002 Mers in 2012, and then Covid-19. I think we can all agree that there will be another coronavirus outbreak, and we need to be ready for it. We need to be better prepared than we were last time."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

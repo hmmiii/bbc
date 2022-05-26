@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_business_30" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Business</mark>
+                <h2>The scramble for cargo aircraft as shipping costs soar
+                </h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Last summer, as the shipping supply crisis worsened, a cargo aircraft in Italy was rapidly loaded with thousands of lipsticks. They were bound for the US, on a tight deadline.</strong></p>
+            <p>Mehir Sethi, chief executive and founder of California-based beauty brand True + Luscious, says she had relied on sea freight for years. It had always been reliable.</p>
+            <p>But to get those 15,000 lipsticks to her customers on time, her only option was to pay to send them by air.</p>
+            <p>"At great pain to myself, we had to do it for two time-sensitive shipments. These were goods that were already committed to retailers."</p>
+            <p>The lipsticks were flown-in at a slight loss to the business, but she says it was worth it to keep the clients.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Mehir Sethi had to take a loss to make sure orders were fulfilled</figcaption>
+            </figure>
+            <p>Firms have been making thousands of decisions like this in recent months. And there is no sign of let-up yet.</p>
+            <p>"We have used a lot of air freight, which we're not excited about, but it's a necessary thing with the challenges we're all being faced with," explained David Bergman, chief financial officer for sportswear brand, Under Armour, on an earnings call in November.</p>
+            <p>The Eastman Chemical Company similarly reported resorting to air freight to ship specialty plastics.</p>
+            <p>A US Census Bureau service called USA Trade Online, that tracks cargo flows in and out of the country, notes in the first 10 months of 2021, 78.9 million kg of car parts were sent by air from Asia to the US - a staggering increase from the 3 million kg shipped during the same period in 2020.</p>
+            <p>Sending goods by air has always been expensive. But now it is more expensive than ever.</p>
+            <p>Air freight costs from Asia to North America "have hit levels I've never seen before, $15 (£11) per kg which is just insanely high," says Greg Knowler, senior Europe editor at IHS Markit's Journal of Commerce.</p>
+            <p>Delays affecting sea freight are partly to blame for this but so is the huge fall in passenger flights since the start of the pandemic.</p>
+            <p>More than half of all the air freight in the world usually travels via 'belly cargo' in the holds of passenger planes. But with far less of that space available, airlines have been scrambling to convert passenger aircraft into freighters, and bring older models out of retirement.</p>
+            <p>AirBridgeCargo Airlines, a subsidiary of Russian air freight specialist, Volga-Dnepr, is boosting its fleet with an additional six aircraft, after what Alexey Zotov, commercial director, says has been a "peak season we never had before".</p>
+            <p>Backlogs at airports have "rolled over like [a] snowball since early autumn," he adds.</p>
+            <p>Some carriers, such as Air Canada, have also rushed cargo aircraft into service sooner than planned - before they've even had a chance to finish their paintwork, in some cases.</p>
+            <p>Manufacturers, including Airbus, have been inundated with requests to convert former passenger aircraft to carry more cargo, just to get additional capacity into the sky. The process includes removing the passenger seats and installing larger doors.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Orders for Airbus passenger aircraft converted for freight are sold out for the next two or three years, says Crawford Hamilton</figcaption>
+            </figure>
+            <p>"We're seeing a lot of people buying these conversions, they're sold out for the next two to three years," says Crawford Hamilton, head of marketing for freighter marketing at Airbus.</p>
+            <p>"That's something that we were not in a position two years ago to say."</p>
+            <p>While air freight only represents roughly 1% of the entire freight market in terms of volume, it accounts for about 35% of the value. Sometimes, expensive products such as consumer electronics and fashion goods that have a short market life are sent by air. Plus, during the pandemic, planes have carried countless loads of vaccines and personal protective equipment.</p>
+            <p>Airbus has also launched a new air-cargo service using its five-strong fleet of BelugaST aircraft, also known as flying whales thanks to their huge fuselage.</p>
+            <p>The question is whether demand for air freight will remain strong, even if the pandemic subsides. With lots of aircraft permanently converted to carry freight, and belly cargo capacity rising once again, Robert Mayer at Cranfield University questions whether there might be too much capacity in the market half a decade from now.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Airbus has just launched the A350F to meet anticipated demand for cargo carriers</figcaption>
+            </figure>
+            <p>Yet aircraft manufacturers seem confident. Airbus expects rising demand for dedicated cargo carriers in the coming years - and it has just launched the A350F aircraft in anticipation of that.</p>
+            <p>It can carry as much cargo, in terms of volume, as a Boeing 747 but is 40% more fuel efficient. This is achieved partly through the use of lighter materials, composites and titanium in the body of the aircraft.</p>
+            <p>Boeing, too, is bullish. It forecasts that the number of air freighters will grow globally by 60% between now and 2039. If correct, manufacturers will need to build 2,400 new cargo carriers by then.</p>
+            <p>Tom Sanderson, director of product marketing at Boeing, says it may introduce a freighter variant of its latest wide-bodied passenger jet, the 777X, but it would be "multiple years" before it came into service.</p>
+            <p>More freight might move by air in the coming years but that could lead to an unwelcome rise in emissions unless aviation gets greener.</p>
+            <p>Both Boeing and Airbus are currently testing "sustainable aviation fuels", including biofuels from renewable sources that can be used on existing aircraft instead of fossil fuel-based propellants.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>DHL has ordered 12 electric aircraft from Eviation</figcaption>
+            </figure>
+            <p>Small electric planes will are also likely to become more common. DHL Express has ordered 12 fully electric aircraft from Eviation, for example.</p>
+            <p>Besides the prohibitive cost, one thing that puts Ms Sethi off using air freight more often to fly in her beauty product is the environmental impact.</p>
+            <p>"It would definitely bother me, just the sheer increase in our carbon footprint as a company if we were to rely on air freight," she says.</p>
+            <p>Like many others, she is reconsidering her reliance on global supply chains. She has decided to source some of her products from suppliers closer to home, to avoid shipping problems in the future.</p>
+            <p>"Some of the orders we were placing to our Italian manufacturer will now go to our New Jersey manufacturer," she says.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_culture_4" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Culture</mark>
+                <h2>Aranese: Spain's little-known language</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Geographically, Spain's Val d'Aran should be part of France, but it's neither French, Spanish nor Catalan in culture, history or even language.</h3>
+            <p>Borders are supposed to be simple in the Pyrenees. On the southern side of the mountain range, you're in Spain. On the northern side, you're in France. Visit Val d'Aran, though, and geopolitics takes a more complicated turn.</p>
+            <p>Val d'Aran is on the wrong side of the mountains. Geographically, this small mountain valley with its population of 10,000 people should be in France. But Val d'Aran is the only community within Spain's contiguous borders that's located on the northern slopes of the Pyrenees.</p>
+            <p>Officially, Val d'Aran is within the administrative boundaries of Catalonia, but despite being caught between larger kingdoms and nation-states for centuries, Val d'Aran has never surrendered its local identity. Key to that local identity is the Aranese language, which alongside Catalan and Spanish, is officially recognised as the third language of Catalonia.</p>
+            <p>"We are Aranese because we speak Aranese," said Jusèp Loís Sans Socasau passionately, when I stepped into his office in Vielha, Val d'Aran's capital. It was early December and there was an ever-thickening layer of snow as the valley prepared for ski season.</p>
+            <p>"Aranese is the language of our valley," Sans Socasau added. "And it's the language of our culture."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>About 40% of Val d'Aran residents can speak Aranese, a distinct dialect of the Occitan language (Credit: Artur Debat/Getty Images)</figcaption>
+            </figure>
+            <p>Sans Socasau is the president of the Institut d'Estudis Aranese (Institute of Aranese Studies) and his office was stacked with historical manuscripts and Aranese dictionaries and novels. "Aranese is a Romance-based language," he explained, as I warmed up with a fresh coffee. "It's very close to Latin, but it's evolved very differently to Spanish and French."</p>
+            <p>Aranese is a distinct dialect of the Occitan language, which, in its medieval heyday, was spoken from the Pyrenees to Piedmont, located in what is now northern Italy. "This was the territory of the Occitan language," Sans Socasau said proudly, pointing at a historical map. "And it was the territory of the Troubadours."</p>
+            <p>In the 11th and 12th Centuries, there was an explosion of Occitan poetry across Europe. The language was spread far and wide by Troubadours, Occitan-speaking poets and writers who composed and performed medieval romances. Even Richard I of England - better known as Richard the Lionheart, and who held lands in France - spoke Occitan as a first language (his mother, Eleanor of Aquitaine, came from an Occitan speaking region). In later centuries, though, Occitan would be replaced by other languages, and in southern France, where there are still tens of thousands of Occitan speakers, the language has never been made official or afforded government protections.</p>
+            <p>In Val d'Aran, the Occitan language survived as Aranese, and government figures suggest that around 4,000 Val d'Aran residents - about 40% of the population - can read, write and speak Aranese. Despite being suppressed most recently during the Francisco Franco regime, which lasted until the dictator's death in 1975, Aranese received official recognition when Val d'Aran was granted autonomy by the Catalonian government in 1991. And in 2010, Aranese was proclaimed to be co-official alongside Spanish and Catalan, not just in Val d'Aran, but everywhere in Catalonia.</p>
+            <p>School children in Val d'Aran study in Aranese; there's a wealth of Aranese literature and articles; and radio shows and news programmes are broadcast in the language. "The language still lives here, in our valley," said Sans Socasau, whose daughter tours across Europe singing and songwriting solely in the Aranese language. "And this is the only place where the language is protected, where it is official."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Tourists visit for hiking, mountain biking and rafting in summer and snow sports in winter (Credit: Artur Debat/Getty Images)</figcaption>
+            </figure>
+            <p>Since Val d'Aran is separated from the rest of Spain by the Pyrenees, my six-hour winter bus ride from Barcelona was only possible thanks to a 5km-long tunnel through the mountains that opened in 1948. When I arrived, snow capped the mountain tops that surround Vielha, while the buildings, with their pitched roofs, were distinctly different from the flat roofs of Catalonia's capital. All things considered, "remote" seemed like a good descriptor, and surely, I thought, this remoteness was a cause for the survival of the Aranese language.</p>
+            <blockquote>Val d'Aran has always been a place of trade. It's a valley of communication, not of isolation</blockquote>
+            <p>Carla del Valle, an expert in medieval studies and director of the Musèu dera Val d'Aran, told me otherwise. "Traditionally, it's said that Val d'Aran is an isolated place and that's why we've preserved our unique culture," she said. "But that's not actually true, because Val d'Aran has always been a place of trade. It's a valley of communication, not of isolation."</p>
+            <p>Del Valle - whose surname means, "of the valley" - explained how Aranese has survived despite the influence of other languages, of which there are many in Val d'Aran. Del Valle, like most Aranese I met in the valley, is a polyglot. She joked how she spoke four and a half languages: Aranese, Catalan, Spanish, English and a bit of French.</p>
+            <p>In the museum, information boards were written in three languages, Aranese, Catalan and Spanish. Displayed next to one another, the similarities and differences between the three Romance languages became more apparent. The most obvious difference was in the prepositions. For example, the phrase "Artistic Legacy" was written in Spanish as "El Legado Artistico". In Catalan, this became "El Llegat Artistic", while in Aranese, it was "Eth Legat Artistic".</p>
+            <p>Del Valle explained that before the tunnel connecting Val d'Aran to Spain was built, the Aranese always looked to France for trade. Until the 18th-Century French Revolution, Val d'Aran was also religiously administered by bishops from the Diocese of Saint-Bertrand-de-Comminges in France.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Vielha, Val d'Aran's capital, is built along the Garona River, which flows into the Atlantic Ocean (Credit: Richard Collett)</figcaption>
+            </figure>
+            <p>Politically, though, Val d'Aran has for centuries been aligned with Spanish kingdoms, who were always looking to conquer the gateway to Catalonia. Fiercely independent, Val d'Aran played larger kingdoms against each other and always pledged its allegiance to the ruler that allowed the valley the most privileges.</p>
+            <p>In 1313, Val d'Aran signed the Querimonia, a Magna-Carta like document that granted the valley semi-independence. The Querimonia was drawn upon in 1991, when Val d'Aran was again re-granted its historical right to self-rule after being integrated into Catalonia in the 19th Century.</p>
+            <p>"It's all very game of thrones," said del Valle with a laugh. "The history of Val d'Aran can be simplified to fighting and then negotiating. Always trying to remain independent. But we weren't quite as successful as Andorra. They succeeded there, and they are still independent. And they now pay less taxes than us!"</p>
+            <p>The Aranese flag was flying proudly outside the offices of the Conselh Generau d'Aran, the local autonomous government, where I met with Juan Manuel Morell, who works for the local tourism board. He explained how geography has not only shaped Val d'Aran's history, but has shaped what it means to be Aranese.</p>
+            <p>"Here, it's all about the mountains and snow," Morell said. Val d'Aran has an Atlantic climate rather than a Mediterranean climate, a result of the River Garona flowing through the valley on its long journey to Bordeaux where it eventually empties into the Atlantic Ocean. "Val d'Aran is the only Atlantic facing valley in all of Catalonia," he added. "And that makes you different."</p>
+            <p>To experience the region's mountain culture firsthand, Marta Peruga, who works in Vielha's tourist information office, recommended visiting the village of Bagergue, which, at an altitude of 1,424m, is the highest village in Catalonia. "Get off the bus in Salardu," she told me. "Then take the walking trail to Bagergue. It's a beautiful walk, even in the snow, and at the top you can try the cheese!"</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Now part of Spain, Val d'Aran has been caught between larger kingdoms and nation-states for centuries (Credit: Richard Collett)</figcaption>
+            </figure>
+            <p>However, the hiking trail was snowed under when I jumped off the bus. Without snowshoes or cross-country skis, I took the 2km-long tarmacked road instead. Churches rise high above every village in Val d'Aran, and there was one standing tall at the entrance to Bagergue. Constructed in a local Romanesque style that was popular in the Middle Ages, Val d'Aran's churches were built not only as places of worship, but as castles, watchtowers and fortifications designed to guard the frontier.</p>
+            <p>Bagergue is home to the highest-altitude cheese shop in Catalonia, where local producers have revived a traditional mountain recipe that's regained its popularity throughout Val d'Aran; while testament to the weather and the alpine-esque culture, the villages I'd walked past to reach Bagergue - Salardu and Unha - had a museum dedicated to Pyrenean exploration and a museum solely dedicated to snow.</p>
+            <p>Morell said that as much as 92% of the valley's economy relies on tourism: hiking, mountain biking and rafting in the summer; and snow sports in the winter. Despite its official status and legal protections, Sans Socasau had mentioned that increasing tourism and immigration in Val d'Aran was resulting in Aranese being slowly being pushed out by larger languages like Spanish.</p>
+            <p>"Not enough people speak Aranese," Sans Socasau said. "Only around 20% of people in Val d'Aran speak the language regularly, at home. The language is in danger, and in 20 or 30 years, it might not even exist."</p>
+            <p>Del Valle sees things differently. Even if she speaks Spanish or Catalan as a way to communicate with tourists or newcomers, she also speaks Aranese at work, and she knows the second generation of migrant families settling in Val d'Aran all learn and are taught in Aranese at school. Indeed, the government estimates that around 80% of people who live in the valley understand Aranese, even if they don't always speak it.</p>
+            <p>"If you talk to the president of the Aranese language society," del Valle told me, "he will say that Aranese is about to die. But Aranese is an official language in all of Catalonia. That gives our language some power, and even though we might speak Catalan or Spanish in the valley to understand each other, I don't think Aranese is in danger, at least not anytime soon."</p>
+            <p>Places That Don’t Belong is a BBC Travel series that delves into the playful side of geography, taking you through the history and identity of geo-political anomalies and places along the way.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

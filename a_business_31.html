@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_business_31" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Business</mark>
+                <h2>AI: Why chefs are turning to artificial intelligence</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Nicolas Maire is the model of a professional French chef with years of experience and 18 Michelin stars under his belt, a man who dominates his kitchen dispensing nuggets of culinary wisdom as he prepares food for his guests.</strong></p>
+            <p>Today, this kitchen is buried inside a sprawling corporate HQ on the outskirts of Geneva. Mr Maire works for Firmenich, a business with a perfume industry pedigree stretching back to 1895.</p>
+            <p>Firmenich's nose for a new market saw it diversify into food ingredients as the public appetite for alternatives to meat led to a scramble to put plant-based food on supermarket shelves.</p>
+            <p>The company says there is a global market for plant-based meat substitutes of $25bn (£19bn) and believes this will grow to $200bn by 2030.</p>
+            <p>To help perfect the flavours of these innovative foods, Mr Maire has a new sous-chef in the form of Sam, an artificial intelligence (AI) robot.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>New plant-based foods have raised demand for flavouring</figcaption>
+            </figure>
+            <p>Along with a team of flavourists, Sam helps blend a huge array of flavours for clients.</p>
+            <p>In humans the sense of taste stems from multiple receptors that are primed to alert our brains to the nature of any possible food we encounter.</p>
+            <p>Sam lacks this sense of taste, but it has been trained on a database of ingredients gathered over 60 years at the company.</p>
+            <p>Using a technique called machine learning, it has raced through examples of flavour combinations and has learnt its own definitions, maturing over 18 months into today's AI robot.</p>
+            <p>Eric Saracchi runs the digital side of Firmenich: "Flavours are more complex than perfumes," he says, and Sam had to understand what a strawberry is, or how grilled beef hits the tongue, before finding matches between tastes and plant foodstuffs.</p>
+            <p>The robot is primed with so many ingredients it is known internally as "a piano with 5,000 keys".</p>
+            <p>That piano is played by the company's team of human flavourists.</p>
+            <p>The top tasters are the master flavourists, and out of some 30 in the world six work at Firmenich.</p>
+            <p>Creators of flavours are so rare, "you can't replace them, you can only enhance them," says Mr Saracchi.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Patrick Salord is principal flavourist at Firmenich</figcaption>
+            </figure>
+            <p>Flavourists are at the heart of Firmenich, and Patrick Salord is its principal flavourist.</p>
+            <p>"Being a flavourist is a combination of art and science. I took a masters degree in chemistry before I began this career. We train to pick the best ingredients to achieve the flavour we want. We evaluate and describe them and compare them."</p>
+            <p>He uses certain aromas and tastes to mask "off-notes" such as acidic tastes while giving a formula the right texture. He talks of the tonality of food, how removing one tiny ingredient can change the overall taste.</p>
+            <p>Sam takes the knowledge of flavourists and generates new formulas in minutes, a fraction of the time Mr Salord and his team take using their own skills. "It suggests a formula that is in line with our senses."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Getty Image</figcaption>
+            </figure>
+            <p>One big advantage of an AI robot is that it has no cognitive bias. This lack of human prejudices helps Firmenich to get past any unconscious leanings of the flavourists.</p>
+            <p>The objectivity of Sam, devoid of influences that can sway even the most professional of flavourists, allows it to work at speed. "It adds value by combining the knowledge of all the other flavourists here," says Mr Salord.</p>
+            <p>The machine rapidly gives an indication of how a flavour can be created and how much of an ingredient should be included. And Sam can hold the line between Mr Salord's team of flavourists and public tastes, refereeing decisions when the flavourists' view differs from that of a consumer panel.</p>
+            <p>But the finished product needs more - and that's what Mr Salord's team bring to the tasting party, which belongs to the start of the day.</p>
+            <p>"We try to taste in the morning before we have coffee. By the afternoon your sense of taste becomes tired and affected by lunch. So we leave the afternoon for work on the computer."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

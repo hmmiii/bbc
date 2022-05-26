@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_family-tree_12" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Family Tree</mark>
+                <h2>The unexpected ways children change their parents</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>We don't steer our children nearly as much as we might think - but they shape us all the time. Understanding this could make parenting less stressful, explains Melissa Hogenboom.</h3>
+            <p>I never thought that at four years old, our daughter would still interrupt our sleep, which feels especially unfair now that her younger brother sleeps well. </p>
+            <p>I once tried to plead with her not to wake us up, explaining that it would make us tired the next day. She thought about this for a moment and then replied: "But that's OK if you are tired because you can drink coffee tomorrow."</p>
+            <p>It was another stark reminder of how much she has changed my daily schedule and habits, including my increasing coffee consumption. But as a growing body of scientific research shows, she may in fact be influencing me on a much deeper level, far beyond my sleep patterns. Meanwhile, my own efforts at influencing her may not be nearly as impactful as I'd like to believe.</p>
+            <p>Understanding just how much our children shape us - and how much (or little) we shape them - can burst the illusion that as parents, we are in full control. But it could also dispel the stressful feeling that every decision we make as parents will affect them in some irreversible way, and might even open the door to a different kind of family life.  </p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Embracing our children's impact on us can make parenting more relaxing (Credit: Artyom Geodakyan\TASS via Getty Images)</figcaption>
+            </figure>
+            <p>Children begin influencing us even before they are born: we plan for their arrival and adjust our lives to welcome them. As babies, they direct our sleep and, as a side effect, our moods. We know for instance that parents of irritable babies are more stressed, sleep less and may even think they are parenting badly. In a vicious cycle, stress and lack of sleep can then contribute to an increased risk of parental depression and anxiety.</p>
+            <p>But there's more. Many studies show that a child's innate personality shapes how we parent them.</p>
+            <p>"Of course, parenting a child is a really different story depending on who the child is," says child psychologist Anne Shaffer at the University of Georgia. "I know clinically we see that parents will come to us because they're having challenges with a child and they'll say, but this worked for my older kid, and we're like: 'This child is a whole different person and so they have a whole different set of needs.'"</p>
+            <p>Focusing too much on how we parent therefore puts a "tremendous amount of pressure on parents, and it also creates this illusion that if only we do all the right things, we will be able to mould our children into these happy, healthy, successful adults that we all want them to eventually be," says Danielle Dick, author of The Child Code and a geneticist at Virginia Commonwealth University.</p>
+            <p> The reality may be more complex. For a start, there is mounting evidence that children influence their parents, as well as the other way around - a phenomenon called "bidirectional parenting".</p>
+            <p>One large study looking at bidirectional parenting and featuring over 1,000 children and their parents, concluded that the child's behaviour had a much stronger influence on their parents' behaviour than the other way around. Parents and their children were interviewed at age eight and again over the subsequent five years. Parental control, the study found, did not change a child's behaviour, but a child's behavioural problems led to less parental warmth and more control.</p>
+            <p>Research also shows that when children demonstrate challenging behaviour, parents may withdraw or use a more authoritarian (strict and cold) parenting style.</p>
+            <p>Similarly, parents of adolescents with behavioural issues act with less warmth and more hostility. The opposite occurs for adolescents who show good behaviour: their parents behave with more warmth over time. This reveals that it's not harsh parenting that predicts behavioural problems, says Shaffer, but rather, "children who act out, who are oppositional, who are defiant, have parents who respond by increasing the harshness of their parenting".</p>
+            <p>That is, the more a child rebels, the more we might escalate our threats or punishments - even if this makes the problem worse, and leads to yet more conflict and defiance.</p>
+            <p>Of course, parents are ultimately accountable for how they respond to their children's behaviour. They are the adults, after all, and if they find themselves being overly harsh or angry, they may benefit from more support, for example from family therapists (we know parental burnout is on the rise). Parents can also try proven techniques to calm emotionally fraught situations, such as managing their own feelings of stress and frustration, understanding the sources of their child's anger, or even just taking a moment to stop, breathe and take the heat out of the interaction. </p>
+            <p>But reflecting on the interplay between a child's innate personality traits, and one's own reactions, may open up new perspectives, and disrupt vicious cycles.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Some children love boisterous play, while others prefer calmer interactions (Credit: Costfoto/Barcroft Media via Getty Images)</figcaption>
+            </figure>
+            <p>"Genetic influence affects virtually every measurable trait," explains Nancy Segal who specialises in twin studies at California State University, Fullerton and is author of Deliberately Divided. For instance, a 2015 meta-analysis (a study of studies) looking at a combined total of 14 million twin pairs, either growing up together or raised apart, found that identical twins raised apart were more alike than fraternal twins raised in the same home.</p>
+            <p>This confirmed what Segal had long noticed among twins she had met - that "shared environments do not make family members alike", she says. It's why she often says that parents of one child are environmentalists, whilst parents of two are geneticists, because the latter quickly realise that two children raised in the same home can behave in completely different ways.</p>
+            <blockquote>Parents have the important and challenging responsibility of staying attuned to their children's behaviours - Nancy Segal</blockquote>
+            <p>Twin studies therefore reveal just how much behaviour is influenced by our genes. "And so all of this parenting advice, which focuses only on the parent, is really ignoring this basic, fundamental biological fact that our kids are not all blank slates. They all have their own genetic dispositions," explains Dick. "It means that different parenting strategies actually work better (or worse) for different types of kids."</p>
+            <p>Dick believes that despite a greater scientific understanding of the role of temperament shaping parenting, it still hasn't hit the mainstream. That's because if we attribute certain behaviours or preferences to genetics, it can feel as though it diminishes our role as parents. Instead, though, we can reframe this insight to help us understand how much - or how little - parents shape their children's lives, as it takes away an element of perpetual self-blame when children don't behave how we expected them to.</p>
+            <p>It doesn't mean that parenting doesn't matter, it just means how we parent depends on our children's temperament. One child may be naturally outgoing and therefore enjoy a constant stream of play dates. Another might respond well to more solitary activities, meaning we are quieter around them. One child might love surprises, while a sibling may find them stressful and prefer order and routine.</p>
+            <p>"Parents have the important and challenging responsibility of staying attuned to the kinds of behaviours that children express and making sure they nurture them," says Segal.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Reflecting on a child's personality can open up new perspectives (Credit: Rana Sajid Hussain/Pacific Press/LightRocket via Getty Images)</figcaption>
+            </figure>
+            <p>Staying attuned and mindful is not always easy, however. Getting two reluctant children dressed and ready to leave the house, as one screams about the wrong socks or shoes, can trigger a stress response among even the calmest of parents, especially when trying to get to work on time. It's perhaps no surprise that research shows that parents are more impatient than non-parents.</p>
+            <p>In such stressful situations, it can help to recognise that children have their own sense of agency, meaning, they want to act freely, make their own autonomous choices, and pursue their own goals and preferences. What we may think of as bad behaviour, may simply be a child expressing their sense of agency. For parents, accepting that can be challenging, for a number of reasons.</p>
+            <blockquote>Being receptive to a child's influence can be part of a close and respectful relationship - Leon Kuczynski</blockquote>
+            <p>Psychologist Leon Kuczynski at the University of Guelph, who studies agency in children, points to a double standard: we expect children to be compliant, but wouldn't expect that of an adult. "Most of parenting is about how to deal with children's non-compliance, with the idea of suppressing it…  From infancy, children's resistance is a sign of autonomy and that's actually a feature of [all] human beings," he says.</p>
+            <p>There is also the practical difficulty of reconciling different goals. Even the most patient parent may struggle when their children's desires clash with their own needs, such as leaving the house fully dressed, and on time. But while recognising children's sense of agency may not completely eliminate such stressful moments, it can at least make parents feel more aware of their child's perspective - and less pressured to assert their authority.</p>
+            <p>As children get older, their influence on us becomes more obvious. In one 2016 study, Kuczynski and colleagues asked parents from 30 families to talk about any recent events where their children had intervened or had some influence in their lives. He found a wide range of responses, from comments on a parent's appearance, their politeness, their health and driving abilities. They even changed their recycling habits, with one parent of a 10-year-old saying: "Maybe we didn't believe in being environmentally friendly before he drew our attention to it."</p>
+            <p>Mothers experienced more influence than fathers, presumably because mothers tend to spend more time with their children overall. The study, explains Kuczynski, shows that while our actions affect the child, "the child's actions affect you. By being in a close relationship, you're actually vulnerable and receptive to this child's influence." It happens for good reason too - parents reported wanting to "maintain a close relationship" with their children, to improve intimacy and respect. Listening to them is clearly a key part of that.</p>
+            <p>I was certainly a lot more patient and relaxed before I had children. It helps to understand that my children do not throw tantrums because I am impatient and stressed, but that I become more stressed when they scream. But they have also taught me that empathising with their outbursts and validating their feelings, however irrational they may seem, is the best way to defuse such tantrums. Ultimately, we are all learning from each other. Accepting this, and responding to their needs, makes life flow more smoothly - even if it means having that extra cup of coffee after another night of broken sleep.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

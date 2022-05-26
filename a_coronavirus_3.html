@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_coronavirus_3" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Coronavirus</mark>
+                <h2>Recordings show lockdown London quieter than 1928</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Recordings of silent London streets during the lockdown are to become part of the collection of the Museum of London.</strong></p>
+            <p>These soundscapes will be kept in a project capturing the experiences of Covid-19.</p>
+            <p>They are being made available online alongside sound recordings of the same London streets from 1928.</p>
+            <p>And it shows how the lockdown streets of 2020 were far quieter than almost a century before.</p>
+            <p>The recordings of London's streets in 1928, being made publicly available on the museum's website, were gathered in the middle of outrage over excessive traffic noise.</p>
+            <p>An anti-noise pollution campaign, spearheaded by the Daily Mail, complained about "irritating" and "unnecessary" hooting - and criticised the "screeching" and noisy acceleration of "so-called sports cars" in London's West End.</p>
+            <p>The newspaper, which gathered recordings with the Columbia Graphophone Company, warned of hospital patients being unable to sleep and the constant sounds of "engines, bells and whistles".</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The north side of Leicester Square in the 1920s</figcaption>
+            </figure>
+            <p>The September 1928 recordings published by the Museum of London include a commentary picking out the brakes of a "motorbus" or the rumble of a "motorcoach", alongside the rattle of horse-drawn carriages.</p>
+            <p>"There's a motor bicycle without a proper silencer," says the commentator.</p>
+            <p>In contrast, the recordings from May 2020, at London locations such as Piccadilly, Brompton Road and Leman Street, show the emptiness of streets during the Covid-19 lockdown.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Leicester Square at night in the early 1930s</figcaption>
+            </figure>
+            <p>There are cars still audible, but they are separate enough to be distinguished, with gaps in between rather than a constant roar.</p>
+            <p>And the recordings, gathered by the Strings and Tins group of sound engineers, show that even in a much emptier city, there is still a wash of background noise.</p>
+            <p>The reduction in traffic noise and the absence of flights overhead became a talking point during the lockdown, with suggestions that it was a return to a much quieter time.</p>
+            <p>But that quieter time was not 1928, according to the museum's recordings.</p>
+            <p>In clipped tones, the commentator, a former naval officer, takes issue with the blaring horns and says how difficult it was to cross (pronounced "craws") the road.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The view near to Leicester Square during the lockdown of 2020</figcaption>
+            </figure>
+            <p>Even though car ownership in the 1920s was much less common than now, driving was much more dangerous.</p>
+            <p>The first official road death figures were gathered in 1926 - and there were almost 4,900 fatalities, compared with about 1,900 in 2019.</p>
+            <p>Foteini Aravani, the Museum of London's digital curator, said the 1928 recordings were made when the "effects of sound pollution in central London were only starting to be understood".</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Sound engineers captured the absence of traffic in central London</figcaption>
+            </figure>
+            <p>A century later, she says the challenge was to record the absence of sound, which had become a "distinct aspect of London in lockdown".</p>
+            <p>"We felt it was our responsibility to capture this rare and significant moment to not only contrast the 1928 recordings, but to also provide a record of London's rarely 'silent streets' for future generations," said Ms Aravani.</p>
+            <p>Or as the Daily Mail said in 1928: "We have become so used to the perpetual noise around us that many of us fail to appreciate what our poor brains are being called upon to endure."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

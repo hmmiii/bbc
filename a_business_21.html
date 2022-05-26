@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_business_21" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Business</mark>
+                <h2>The people deciding to ditch their smartphones</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>In a world where many of us are glued to our smartphones, Dulcie Cowling is something of an anomaly - she has ditched hers.</strong></p>
+            <p>The 36-year-old decided at the end of last year that getting rid of her handset would improve her mental health. So, over Christmas she told her family and friends that she was switching to an old Nokia phone that could only make and receive calls and text messages.</p>
+            <p>She recalls that one of the pivotal moments that led to her decision was a day at the park with her two boys, aged six and three: "I was on my mobile at a playground with the kids and I looked up and every single parent - there was up to 20 - were looking at their phones, just scrolling away," she says.</p>
+            <p>"I thought 'when did this happen?'. Everyone is missing out on real life. I don't think you get to your death bed and think you should have spent more time on Twitter, or reading articles online."</p>
+            <p>Ms Cowling, who is a creative director at London-based advertising agency Hell Yeah!, adds that the idea to abandon her smartphone had built up during the Covid lockdowns.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Dulcie Cowling plans to use the time gained from ditching her smartphone to read and sleep more</figcaption>
+            </figure>
+            <p>"I thought about how much of my life is spent looking at the phone and what else could I do. Being constantly connected to lots of services creates a lot of distractions, and is a lot for the brain to process."</p>
+            <p>She plans to use the time gained from quitting her smartphone to read and sleep more.</p>
+            <p>About nine out of 10 people in the UK now own a smartphone, a figure broadly replicated across the developed world. And we are glued to them - one recent study found that the average person spends 4.8 hours a day on their handset.</p>
+            <p>Yet for a small, but growing number of people, enough is enough.</p>
+            <p>Alex Dunedin binned his smartphone two years ago. "Culturally we have become addicted to these tools," says the educational researcher and technology expert. "They are blunting cognition and impeding productivity."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Your smartphone can do so many things that using it to make calls is almost an afterthought</figcaption>
+            </figure>
+            <p>Mr Dunedin, who lives and works in Scotland, says another reason behind his decision was environmental concerns. "We are wasting exponential amounts of energy producing exponential amounts of CO2 emissions," he says.</p>
+            <p>He has become happier and more productive since he stopped using a smartphone, he says. Mr Dunedin doesn't even have an old-fashioned mobile phone or even a landline anymore. He is instead only electronically contactable via emails to his home computer.</p>
+            <p>"It has improved my life," he says. "My thoughts are freed up from constantly being cognitively connected to a machine that I need to feed with energy and money. I think that the danger of technologies is that they are emptying our lives."</p>
+            <p>Lynne Voyce, a 53-year-old teacher and writer from Birmingham, has moved in the opposite direction - she started using a smartphone again last August after a break of six years.</p>
+            <p>She says she was reluctantly compelled to buy one again due to having to deal with QR codes in restaurants, and so-called Covid passports, plus making it easier to keep in touch with one of her daughters who lives in Paris.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Lynne Voyce got rid of her smartphone to encourage her daughters to use their own phones less</figcaption>
+            </figure>
+            <p>But she plans to give up it up again, if she can. "After the pandemic, and when Ella [her eldest daughter] isn't living abroad, I might try and give it up again. It sounds like an addiction, doesn't it?"</p>
+            <p>When Ms Voyce first abandoned her smartphone back in 2016 it was to help encourage her daughters to reduce the time they spent on their handsets.</p>
+            <p>"They were glued to their phones. I thought the only way to stop it was to get rid of my own phone. And it made all the difference.</p>
+            <p>"For example, we'd got to a restaurant, and they would no longer see me pick up my phone."</p>
+            <p>Not having a smartphone "took a lot of pressure off my brain" she says, "I didn't feel like I had to instantly answer things or be available when out".</p>
+            <p>Yet, while some worry about how much time they spend on their handset, for millions of others they are a godsend.</p>
+            <p>"More than ever, access to healthcare, education, social services and often to our friends and family is digital, and the smartphone is an essential lifeline for people," says a spokesperson for UK mobile network Vodafone.</p>
+            <p>"We also create resources to help people get the most from their tech, as well as to stay safe when they're online - that's hugely important."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Smartphones proved very import during the coronavirus pandemic</figcaption>
+            </figure>
+            <p>However, Hilda Burke, a psychotherapist and author of The Phone Addiction Workbook, says there is a strong link between heavy device usage and relationship issues, quality of sleep, our ability to switch off and relax, and concentration levels.</p>
+            <p>"Many people have a constant drip feed of requests coming their way via their device, many with a false sense of urgency.</p>
+            <p>"They feel unable to lay boundaries down, with the result that they feel compelled to check their emails and messages last thing at night and first thing in the morning."</p>
+            <p>If getting rid of your smartphone seems too much but you are concerned that you spend too much time on it, there are other measures you can take to reduce your usage.</p>
+            <p>While it might initially seem counterintuitive, more apps are emerging to curtail mindless scrolling.</p>
+            <p>For example, Freedom lets you temporarily block apps and websites so you can focus more. And Off The Grid enables you to block off your phone for a certain time period.</p>
+            <p>Ms Burke says it would be useful if more people monitored how much time they spend on their smartphone. "Starting to realise exactly how much time you're frittering away each day on your phone can be a powerful wake-up call and catalyst for change."</p>
+            <p>She also advises carving out short periods when you have your phone switched off or left at home, and gradually increase the wait period till you check it again.</p>
+            <p>Finally, she recommends choosing an image or a word that represents what you would rather be doing - if only you had more time - as your phone's screensaver.</p>
+            <p>"Considering most of us check our phones 55 times per day and some of us even 100 times, this is a great visual reminder of a more valuable way to spend your precious time," she says.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

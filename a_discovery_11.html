@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_discovery_11" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Discovery</mark>
+                <h2>The unsolved mystery of Sri Lanka's 'Stargate'</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>In recent years, the internet has been alight with speculation that a chart-like carving in Anuradhapura is a stargate: an ancient gateway through which humans can enter the Universe.</h3>
+            <p>Sri Lanka's sacred city of Anuradhapura is an unlikely place to be enmeshed in a fantastic tale of UFOs and otherworldly happenings. Locally known as Rajarata (Land of Kings), the Unesco World Heritage Site was the first established kingdom on the island (in 377 BC) and is at the heart of Sri Lanka's Buddhist culture. Today, it's one of the nation's most visited places, attracting devoted pilgrims from around the country to its ancient Buddhist temples and giant dome-shaped stupas.</p>
+            <p>But this holy city is also home to something far more curious. Here, in Ranmasu Uyana (Golden Fish Park), a 40-acre ancient urban park surrounded by three Buddhist temples, is a chart that's alleged to be a map to unlock the secrets of the Universe.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Sakwala Chakraya has been variously interpreted as a cosmographical chart, a stargate and a building plan (Credit: Sahan Perera)</figcaption>
+            </figure>
+            <p>Measuring around 1.8m in diameter, Sakwala Chakraya (which translates to "Universe Cycle" in Sinhalese) is shallowly carved onto a low rock face among the protected park ruins. Its front facade can only be seen from ground level. In fact, four seats have been sculpted into a flat rock surface opposite that provide the ideal viewing area. Both the map and seats, which are also of mysterious origin, have puzzled historians, archaeologists and academics for more than a century.</p>
+            <blockquote>Its existence, function or anything related to it is not mentioned in any historic records
+            </blockquote>
+            <p>"Ranmasu Uyana was used for a prolonged period in history," said Professor Raj Somadeva, senior professor of archaeology at the University of Kelaniya, Sri Lanka. "The second major developmental phase seems to have begun in the 7th Century CE. During that period, several new buildings were added to the earlier garden layout. The chart could be a work of this period, but it's impossible to know because its existence, function or anything related to it is not mentioned in any historic records, which were meticulously kept by Buddhist monks."</p>
+            <p>While little is known about the chart and its purpose, the iconography is incompatible with other carvings of the Anuradhapura period (3rd-10th Century AD). The chart's centre is made up of seven concentric circles divided by parallel vertical and horizontal lines. Rectangular compartments contain small, crossed circles. To the untrained eye, there are figures resembling umbrellas or bow and arrows, a kite, wavy lines and cylindrical shapes. An outer ring depicts marine animals: fish, turtles, seahorses.</p>
+            <p>When compared to other carvings from the same period such as the Sandakada Pahana, which depicts vines, swans and a lotus, all typical of Buddhist iconography, the chart is without religious context, leaving it without an obvious explanation as to why it is here.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Sri Lanka's sacred city of Anuradhapura was the first established kingdom on the island (Credit: AnaG/Getty Images)</figcaption>
+            </figure>
+            <p>This has left it wide open to online speculation. Before the dawn of the internet, the chart garnered little attention in Sri Lanka. It is thought to have survived here, tucked away at the edge of a boulder, after the fall of the Anuradhapura kingdom; unremarkable in comparison to its breath-taking surroundings complete with twin ponds and bathing pavilions believed to have been used by kings. In fact, if aliens did arrive on Earth through here, they couldn't have picked a nicer place - these sacred temple grounds, cloaked in thick, tropical jungle, are mostly uninhabited and protected by the authorities.</p>
+            <p>The first academic to note the chart's archaeological importance was H C P Bell, a British civil servant appointed as the first Commissioner of Archaeology of Ceylon (Sri Lanka's former name). Bell included a description of the chart in his 1911 report for the Governor of Ceylon, where he concluded that, "This ancient 'map of the world', perhaps the oldest in existence, is of quite extraordinary interest. Its presence… testifies to the antiquity of that astronomical lore still pursued in some of the Buddhist monasteries of Ceylon."</p>
+            <p>While the chart does not resemble a map in a modern sense, Bell wrote that it depicts "an old-time cosmographical chart illustrating in naivest simplicity the Buddhistic notions of the universe". He interpreted the circles, the symbols and marine life on the chart, based on his knowledge of Buddhism on the island, to mean the Earth, the seas, outer space and the Universe.</p>
+            <p>While discussions around the chart for many years were mainly confined within academic circles due to its historically important location, the explosion of photo-sharing on social media over the last few years has shone a global spotlight on the mystery. Eagle-eyed tourists have remarked on parallels between the chart in Anuradhapura and similar sites in other countries that are believed by some to be stargates - ancient gateways through which humans could enter the Universe. Their theory goes that the chart holds the secret code for unlocking the portal.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Ranmasu Uyana is a 40-acre ancient pleasure garden that includes the ruins of bathing pools (Credit: Sri Lanka Tourism)</figcaption>
+            </figure>
+            <p>Conspiracy theorists noted that the stargate of Anuradhapura had near-identical shapes and symbols to those found at Abu Ghurab in Egypt and La Puerta de Hayu Marka in Peru. The most striking similarity, it was said, as speculation around Sri Lanka's stargate reached its peak, is its proximity to water. The nearby Tissa Weva reservoir, built in 300 BC, has been thrown around as conclusive evidence, since both Abu Ghurab and La Puerta de Hayu Marka were also built near water, which, according to the stargate theory, allowed extra-terrestrial beings to process gold from Earth's water.</p>
+            <p>This otherworldly theory has been further fuelled by the chart's proximity to Danigala mountain, also known as Alien Mountain, in the nearby sacred city of Polonnaruwa. Danigala, which lies deep in the jungle and is popular with hikers, has a unique circular shape and entirely flat top. This led internet sleuths to conclude that it must have, at one time, been used for UFO landings. Strangely, according to Sri Abeywickrama, a local tour guide, "villagers in the area do believe that Alien Mountain attracts more shooting stars and thunder and lightning above it than anywhere else."</p>
+            <p>However, according to Somadeva, "There is little archaeologically to suggest that it's a stargate." Instead, Somadeva believes a more sensible conclusion is that the chart is an early map of the world, as suggested by Bell, because that explanation has religious and cosmological context that is logical, given the period and place in time.</p>
+            <p>According to Somadeva, "At least since 250 BCE, Sri Lankans had a clear idea of objects in the sky and outer space. In early Brahmi inscriptions, found in Sri Lanka, there are a number of names that refer to specific stars and concepts related to astronomy. One of the inscriptions in Kirinda, a religious and historic site on Sri Lanka's southern coast, contains the phrase 'aparimita loka datuya' meaning 'the infinite universe'. What it suggests is that the person who engraved it had a very good understanding of the nature of the universe they lived in."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Opposite the chart, four seats sculpted into rock provide an ideal viewing area (Credit: Sahan Perera)</figcaption>
+            </figure>
+            <p>However, Shereen Almendra, senior lecturer of landscape design at the University of Moratuwa, Sri Lanka, offers a different, more earthly perspective. "I think the Sakwala Chakraya chart is a plan for a complex project similar to the enormous stupas that were being built at the time," she said. "I lean towards it being a plan for Sigiriya."</p>
+            <p>Sigiriya is one of Sri Lanka's most recognised ancient landmarks, a 5th Century BC rock fortress, complete with flowing water, landscaped gardens and multiple living quarters. It lies just half an hour away from Anuradhapura within Sri Lanka's Cultural Triangle, which is made up of three important ancient cities: Anuradhapura, Polonnaruwa and Kandy. "Given that the three seats carved in front of the chart appear to slightly face toward each other, it makes me think that it was a place for discussion - an ancient architect's office if you like," she said. "If the seats were built for a religious purpose, such as meditation, they would be in a straight line instead."</p>
+            <p>According to Somadeva, the greatest challenge in identifying the function of the chart has been the lack of evidence to correctly date it. While Ranmasu Uyana and other parks and stupas in Anuradhapura are mentioned in chronicles and inscriptions dating as far back as 250 BC, the Sakwala Chakraya is not described in any historical records. "There would definitely have been a practical use for this diagram but it's a huge challenge to figure out what that might have been when we can't correctly date it," he said.</p>
+            <p>So it seems that Sri Lanka's enigmatic alleged stargate remains shrouded in mystery, its purpose and meaning still lost to time. The chart's newly acquired cult status amongst sci-fi enthusiasts, however, has finally given it some well-deserved public attention. Thanks to their enthusiasm and the power of social media, it has finally stepped out of the shadow of larger-than-life Anuradhapura to stand apart on its own.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>One expert suggested the chart may be a building plan for nearby Sigiriya, a 5th Century BC rock fortress (Credit: Anthony Asael/Art in All of Us/Getty Images)</figcaption>
+            </figure>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_family-tree_5" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Family Tree</mark>
+                <h2>The millennials choosing friends as sperm donors</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Many LGBTQ couples are opting to start families with donations from friends or acquaintances - a choice helping to re-define modern family structures.</h3>
+            <p>When Alice, now 39, first started thinking about having a child solo, the idea of using a sperm bank “felt so strange”. She didn’t know how to pick from the list of potential donors, whose attributes ranged far and wide: bass players, English university majors and men with blue eyes. To Alice, choosing a close friend as a donor “felt simpler and richer”.</p>
+            <p>Today, Alice’s daughter, whose biological father is a friend Alice lived with during graduate school, is three years old. “He was the obvious choice,” Alice says of her donor. “I honestly don’t have that many cis male friends that I’m really close to.” Over brunch, she asked him if he would be open to donating his sperm, and he gamely said yes. </p>
+            <p>Alice remains in close touch with her donor and his partner, whom Alice and her own partner refer to as their daughter’s “uncle” and “aunt”. “I liked the idea of my kid getting to have some relationship with the [donor],” says California-based Alice. It also presented the “possibility for broader community and queer familial structures”.</p>
+            <p>During the past several years, the gap between LGBTQ and non-LGBTQ people planning to expand their families is shrinking. According to 2018 data from the US-based LGBTQ Family Building Survey, 48% of LGBTQ millennials have made the decision to increase their family size, versus 55% of non-LGBTQ millennials. In contrast to past numbers, nearly 70% of non-LGBTQ individuals older than 55 have children, compared to just 28% of LGBTQ people in that age group.</p>
+            <p>For certain LGBTQ couples who can’t have biological children together, sperm donations have become increasingly attractive. Australian data from 2018, for example, indicates that single women and lesbian couples made up 85% of sperm donor recipients that year. </p>
+            <p>Many queer couples seeking sperm want the experience to be personal, which means choosing to know who the sperm donor is. Several reasons drive this choice, such as knowing about the future child’s biological parents, being in touch with them for medical questions and creating an extended family. While this is possible if a couple goes through a sperm bank or other type of connection service, choosing a friend or personal relation for the donation is less costly.  </p>
+            <p>Regardless, these choices require a careful, deliberate thought process that involves emotional, financial and legal considerations that affect not just the lives of the parents and donors, but also those of their future children.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Lisa Schuman says she’s been seeing “more and more” future parents opt for friend or family member donations throughout the past several years (Credit: Getty Images)</figcaption>
+            </figure>
+            <p><strong>Changing shape of families</strong></p>
+            <p>While plenty of services exist today to help LGBTQ couples conceive via sperm donation, that was not the case when Lisa Schuman, founder of the Center for Family Building, started working in the industry more than 20 years ago in New York.</p>
+            <p>Among the leading organizations at the time - like the American Society for Reproductive Medicine and the American Fertility Association - there weren’t “any queer people being represented at all”, she says. Many queer couples she spoke with would consider adoption as the primary option for starting a family. “They really didn't understand that there were many other options for them,” says Schuman.</p>
+            <p>Schuman started a workshop for LGBTQ parents looking to start families at the Gay and Lesbian Center in New York City, through which she could teach them about options other than adoption. Early on, she recalls, only about five people would show up per session. “I just kept doing it,” she says. About a decade later, a lecture she hosted for prospective lesbian parents attracted 100 people. “The legalization of gay marriage [in 2015] helped a lot,” she says. Through efforts like Schuman’s, LGBTQ families got to learn more about their family-building options.</p>
+            <p>Still, while there are anecdotal accounts of growing interest, it’s difficult to find data on how many LGBTQ couples opt to use friends or family members as donors, as opposed to donors found through sperm banks.</p>
+            <p>Laura Goldberger has spent two decades as a psychotherapist running groups for LGBTQ parents trying to conceive. Goldberger says about half the couples they speak with opt for a donor they already know, versus one found through an outside service or sperm bank - that rate has remained the same throughout their experience. Schuman, however, says she’s been seeing “more and more” future parents opt for friend or family member donations throughout the past several years.</p>
+            <p><strong>A ‘wonderful, gentle presence’</strong></p>
+            <p>Alice’s choice wasn’t just obvious to her because the sperm bank route felt alienating - she also knew immediately whom she would ask to donate. She and her male friend were part of the same community, having worked on a political project together and attended the same graduate school. She trusted him deeply.</p>
+            <blockquote>Over brunch, Alice asked him if he would be open to donating his sperm, and he gamely said yes</blockquote>
+            <p>“I knew that our community would hold us both to being responsible with the ways in which we were forming a queer family,” she says, acknowledging that their relationship did not exist in a vacuum, but rather that their mutual friends would help ensure they maintained healthy communication. </p>
+            <p>Alice and her donor friend also had numerous, lengthy conversations about their expectations, spanning his family’s medical history, what his role would and wouldn’t consist of as the donor and how his family would be involved in the child’s life. They also had a conference call with his parents and sister to help clear up misunderstandings about the donor-child relationship they’d decided on. “I was glad we had the conversation,” she says. “They've been a wonderful, gentle presence throughout [the child’s life].”</p>
+            <p><strong>Navigating ‘ruthless’ conversations</strong></p>
+            <p>Of course, even with the closest friends, unexpected problems can arise with something so sensitive and impactful as a new human life. </p>
+            <p>“Everybody thinks, we've got this down, everything's going to be fine - we're best friends,” says Schuman. “But people go into marriages with the same idea, thinking they're going to be together forever, and it doesn't always happen.” Schuman stresses the importance of counselling pre-donation to make sure the recipient, their partner (if they have one) and the donor are all on the same page.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Couples who accept donations from friends or relatives often need to set guidelines on what their presence will be - but many are very close to the children (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>Communication is key, echoes Erika Tranfield, 41, founder and director of Pride Angel, a service based in the Northwest UK through which recipients can connect with sperm donors they don’t already know, but want to meet and speak with before beginning the donation process. Tranfield says it can be hard to broach “ruthless” and uncomfortable questions, like beliefs on religion and child discipline, that are important to ask a potential donor when that donor is already your friend, she says. To avoid those tough conversations with friends, Tranfield founded Pride Angel in 2009, partly to find her own donor with her now ex-wife. Today, roughly 25,000 sperm recipients use Pride Angel each in the UK, US and Europe.</p>
+            <p>Tranfield and her then-wife wanted to meet their donor, and ensure he was someone who wouldn’t want to co-parent or share financial responsibilities, but would be open to seeing the child’s school reports or popping by on Christmas. To ensure this was how the relationship would play out, Tranfield, her then-wife, and the donor signed a “letter of intent” specifying the limits of their relationship. This was not a legal agreement.</p>
+            <p>Lesbian couples from the US who spoke with BBC Worklife were more likely to say they signed notarized agreements ahead of the donation or ones drawn up by lawyers. Rosslyn, 40, and Laura, 37, a married couple in California, say they worked with a lawyer who specializes in queer conception to create an agreement with their donor, Laura’s good friend from college (he offered after Laura told him about their struggles finding a donor). The agreement stated that the donor would relinquish all parental rights, but he’s still a friend of the family, as is his current partner. Rosslyn and Laura's two daughters, now ages five and two, simply call him by his first name.</p>
+            <p>Other legal processes might include the non-gestational parent (who doesn’t carry the child) legally adopting to gain parental rights, which Alice’s partner plans do with their child (who already calls Alice’s partner “mom”). For Rosslyn and Laura, this cost roughly $2,000 (£1,480) per child. Other costs went to conception. For instance, they paid about $300 for one session with a midwife specializing in at-home conception for their first child. </p>
+            <p>The cost of conception can be considerably higher when going through a sperm bank. For New York-based married couple Elizabeth, 32, and Joy, 36, using a sperm bank has cost about $6,000 so far. Some of this covered medical co-pays and shipping for the sperm, but most went to the vials, five of which cost about $5,300. It costs $200 to thaw the frozen vials pre-IUI (intrauterine insemination), which they plan to do soon.</p>
+            <p>Though the process is pricey, the couple ultimately decided on a previously unknown donor, whose identity they learned through the sperm bank, because of the complications that could arise from seeking donation from someone already in their lives.</p>
+            <blockquote>I knew that our community would hold us both to being responsible with the ways in which we were forming a queer family - Alice</blockquote>
+            <p>“They can say until they’re blue in the face that they can watch their biological child grow up in front of their eyes and not have that parental connection,” says Elizabeth, but she worries that could change with the birth of the child. Since Elizabeth plans to carry the child, they also considered using Joy’s brother as the donor.</p>
+            <p>“Originally, the idea of having my own blood being able to donate was intriguing,” says Joy, but ultimately decided against it because of the reasons Elizabeth cited. “I come from a big Italian family, and they are literally always around,” Joy adds. She and Elizabeth didn’t want to deal with all the conversations that might come up between the child and various family members about the child’s conception. </p>
+            <p><strong>Expanding family building options </strong></p>
+            <p>Over time, LGBTQ couples and potential parents have gotten more information and resources to help them make choices about how to build their families. While plenty still adopt, many are choosing to ask close friends to donate sperm, like Alice, Rosslyn and Laura, while others prefer connecting with donors through services like Pride Angel or sperm banks.</p>
+            <p>Regardless of the decision these families ultimately make, the fact that the donor option is now so visibly on the table in general has expanded their possibilities. Unlike when Schuman first started working in the fertility space, couples of all types are now presented with a variety of ways to create families, whether that includes a donor friend, a known donor who stops by just on holidays or someone who stays out of the children’s lives completely. </p>
+            <p>For Rosslyn and Laura, the kind of extended family they might form with their donor’s partner and future children remains up in the air. Her kids and the donor’s children “will make up their own narrative about how they feel towards each other, like what they get to call themselves… and the biological link they have to [the donor] as they grow older,” says Rosslyn. “But right now, it’s all honky dory.” </p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

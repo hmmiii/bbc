@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_world_38" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Europe</mark>
+                <h2>Putin critic Navalny put on trial again in Russia</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>A new trial against jailed Russian opposition leader Alexei Navalny has begun inside the maximum-security prison east of the capital, Moscow, where he is held.</strong></p>
+            <p>Navalny is accused of fresh fraud charges. He has already spent a year behind bars after surviving a poison attack that he blames on the Kremlin.</p>
+            <p>He is currently serving a two-and-a-half-year sentence.</p>
+            <p>This latest trial could see his prison time extended by more than a decade.</p>
+            <p>US Secretary of State Antony Blinken called the new charges "dubious", and said Navalny and his associates are "targeted for their work to shine a light on official corruption". He called on the Russian authorities to release the prisoner.</p>
+            <p>Navalny, 45, was detained when he returned to Russia in January 2021, after months of treatment in Germany for a near-fatal Novichok nerve agent attack in Siberia.</p>
+            <p>The following month he was jailed for three-and-a-half years for violating the conditions of a suspended sentence in an embezzlement case. Navalny insists the charges were politically motivated but he could not have met the conditions anyway as he was in a coma for some of the time.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Alexei Navalny: what you need to know (February 2021)</figcaption>
+            </figure>
+            <p>The new charges allege that he stole $4.7m (£3.5m) of donations given to his political organisations.</p>
+            <p>They carry a maximum penalty of 10 years in prison.</p>
+            <p>"You're going to increase my term indefinitely. What can we do about it?" Navalny said during the court hearing.</p>
+            <p>"The activities of people are more important than the fate of one individual. I'm not afraid."</p>
+            <p>His wife, Yuliya Navalnaya, was at the hearing at the jail in Pokrov, having demanded access to the closed-door proceedings a day earlier.</p>
+            <p>A prosecutor accused Navalny and his allies of "misleading citizens" with the "deliberate" aim of stealing funds.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Navalny's wife Yulia was seen hugging him at the start of the trial in the jail in Pokrov</figcaption>
+            </figure>
+            <p>His close colleague Leonid Volkov tweeted that for a change Navalny was not being tried inside the usual "cage". That was because the whole court was a cage as it was inside his penal colony, he said.</p>
+            <p>German Chancellor Olaf Scholz said the new case was "incompatible" with the rule of law, speaking at a news conference with Russian President Vladimir Putin in Moscow.</p>
+            <p>Amnesty International described the hearing as a "sham trial, attended by prison guards rather than the media".</p>
+            <p>"It's obvious that the Russian authorities intend to ensure that Mr Navalny doesn't leave prison any time soon," it said in a statement on Monday.</p>
+            <p>Navalny spearheaded an anti-corruption foundation called FBK that highlighted graft in Mr Putin's United Russia party and published a widely viewed video alleging that the president's rich associates gave him a luxurious Black Sea palace.</p>
+            <p>Last year, a court in Moscow banned FBK and political organisations linked to him, classifying them as "extremist".</p>
+            <p>Dozens of his foundation's regional staff have faced criminal charges and many of his colleagues have left Russia to go into exile.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

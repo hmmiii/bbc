@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_business_32" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Business</mark>
+                <h2>Like a drone that you sit in - but would you feel safe?</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Peter Ternstrom was about nine years old when he first saw the movie, Return of the Jedi, at the cinema. The scene in which Luke and Leia take to hover-bikes on a high-speed chase through a forest left a particular impression on him.</strong></p>
+            <p>"Absolutely, that has been an important inspiration for me," says Mr Ternstrom, who co-founded Swedish firm Jetson with Tomasz Patan.</p>
+            <p>
+                Recently, his company released a video of its prototype personal flying machine, the Jetson ONE, in action. The clip quickly clocked more than 12m views on YouTube in about four weeks.</p>
+            <p>The filming location, a desert-like area, was deliberately chosen for its sci-fi feel. It is actually a military training ground in Poland.</p>
+            <p>A helmeted pilot sits in the centre of what looks like a large drone, with its multiple spinning rotors. The craft zooms across the landscape, blowing up dust.</p>
+            <p>This is an electric vertical take-off and landing vehicle, or eVTOL. Personal eVTOLs are among the smallest rideable aircraft around and generally have capacity to transport just one passenger - the pilot.</p>
+            <p>The vehicle's diminutive size helps to keep down their price tag but there is another advantage for firms seeking to sell them. In the US, the Federal Aviation Administration (FAA) says that ultra-light vehicles - which weigh less than 254lbs (115kg) and have a maximum speed of 55kts (63mph; 101km/h) - can be flown without a pilot's certificate.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Scenes from Return of the Jedi inspired the founder of Jetson, Peter Ternstrom</figcaption>
+            </figure>
+            <p>This is the route that Jetson and a number of other firms are taking in order to get their products on to the market. But will these new-fangled flying machines actually be safe, especially if just about anyone can buy one?</p>
+            <p>Mr Ternstrom for one, is being slightly more cautious than he's legally required to be. The first Jetson ONEs will sell in 2023, if all goes to plan, but the founder says he wants the first owners to be people who hold, or who have held, a pilot's licence.</p>
+            <p>"If you have previous experience, we have said, 'OK, cool, you can buy one'," he explains. These people will be "ambassadors" for the brand, he says. Everyone who buys one, for $92,000 (£77,000), will also get a two-day training course in Tuscany, Italy.</p>
+            <p>There has certainly been lots of interest from prospective owners. Three and a half weeks after the firm published its video, Jetson had taken pre-orders for 118 aircraft.</p>
+            <p>The Jetson ONE currently offers 20 minutes of flight time on a fully charged battery. But in a couple of years' time, Mr Ternstrom predicts this will rise to 30 minutes, thanks to better battery technology. As for safety, the drone is built with crumple zones around the pilot's seat to cushion the impact of a low-altitude crash.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Initially the Jetson ONE will only be sold to customers with a pilots licence</figcaption>
+            </figure>
+            <p>The vehicle can also continue flying after losing one of its propellers - though pilots in such situations will be prompted to land immediately.</p>
+            <p>Plus, on-board software will attempt to automatically prevent dangerous flying behaviour. The software slows the vehicle down as it approaches the ground, for instance, and uses a Lidar (light detection and ranging) system to sense how far away the ground actually is.</p>
+            <p>But Mr Ternstrom knows that there is still the potential for things to go wrong, which is partly why he has stipulated that the first owners must have some flying experience.</p>
+            <p>"This is a machine made for mischief, basically," he adds. "I want them to be very responsible."</p>
+            <p>No eVTOL aircraft are currently certified to fly in the UK, though the Civil Aviation Authority (CAA) expects that the first flights of such vehicles could begin within five years - and this is likely to be for commercial rather than personal operation.</p>
+            <p>"With that in mind, it is vital that a strong safety culture is built into the heart of eVTOL vehicles," says David Tait, head of innovation at the CAA.</p>
+            <p>The Jetson ONE is far from the only vehicle of its kind in development. The US-based company Opener will also soon bring its aircraft, the single-seater BlackFly, to market.</p>
+            <p>A spokeswoman for the firm says safety is Opener's first priority. "General adoption of eVTOL technology is not possible without it," she adds. New owners will have to take a training course before the company allows them to fly.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The TeTra Mark 5 is sold in kit form</figcaption>
+            </figure>
+            <p>There's also the TeTra Mk5, which uses a combination of rotors and fixed wings to power itself. It also carries just one person but is too heavy to be classed as ultralight. However, it comes as kit-aircraft so must be assembled by the new owner, meaning that TeTra can sell the vehicle in the US, at least, without having to obtain full aircraft certification.</p>
+            <p>"That's why we're producing the kit planes," says Tasuku Nakai, chief executive at TeTra.</p>
+            <p>Some companies however, are going for full aircraft certification which can be a long process. Including AIR, an Israeli firm, which is designing a two-seater eVTOL. Chief executive and co-founder Rani Plaut says his company has been working with the FAA for nearly two and a half years. The certification process takes so long partly because electric propulsion is a relatively new frontier for flying machines, he says.</p>
+            <p>AIR's vehicle, the AIR ONE, is designed to continue flying even if it loses one rotor, or a battery, for example.</p>
+            <p>"If worst comes to worst, we have a ballistic parachute system," says Mr Plaut. He says the firm aims to deliver its first vehicles to customers in 2024, pending FAA certification.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>AIR hopes to deliver its first aircraft to customers by 2024</figcaption>
+            </figure>
+            <p>Many of these vehicles still require hundreds of hours of test flights, to ensure they fly as intended. And it remains to be seen exactly how responsible their eager new owners will be when they take them out for a spin.</p>
+            <p>"We know that most aircraft accidents are caused by the user. Hopefully the manufacturers will put into place certain safeguards in the system to limit the ability for a user to put the aircraft in an unsafe operating condition," says Darrell Swanson, director of Swanson Aviation Consultancy.</p>
+            <p>The relatively easy route to market that these very small eVTOLs are taking will get them into people's hands quickly, and allow early adopters to have some fun, says Mr Swanson.</p>
+            <p>That's all well and good in the near-term, he says. But if these aircraft are to play a role in improving urban mobility for city populations, they will have to carry more passengers, complement public transport, and be more accessible. Otherwise, says Mr Swanson, "the price will go up and it'll be seen as elitist."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Personal eVTOLs are unlikely to be flown in cities in the very near future</figcaption>
+            </figure>
+            <p>For now, Mr Ternstrom is happy to market the Jetson ONE purely as a recreational vehicle. It is for having fun, he says. After all, practically everyone has had that thrilling dream where they can fly.</p>
+            <p>"This thing makes that dream possible," he says. "It's just awesome. I love it."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

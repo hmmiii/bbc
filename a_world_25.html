@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_world_25" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Europe</mark>
+                <h2>Covid protests: Hundreds fined and dozens arrested as convoy enters Paris</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Police have intercepted hundreds of vehicles trying to enter Paris as part of a protest against France's coronavirus regulations.</strong></p>
+            <p>Tear gas was fired in the city as demonstrators defied an order banning the "Freedom Convoy".</p>
+            <p>Interior Minister Gérald Darmanin said more than 300 tickets had been handed out and 54 people arrested.</p>
+            <p>Authorities have deployed more than 7,000 officers over the next three days in a bid to stop the demonstrators.</p>
+            <p>Despite those efforts, some vehicles managed to arrive at the Arc de Triomphe in the city, and tear gas was fired at demonstrators on the nearby Champs-Élysées avenue.</p>
+            <p>The groups were inspired by the self-styled Canadian "Freedom Convoy" which has disrupted trade on the US border and occupied streets in Ottawa. Similar demonstrations have started to spread around the world.</p>
+            <p>Austria and Belgium have banned such convoys from entering their capitals, with similar demonstrations also emerging in Australia, New Zealand and the Netherlands.</p>
+            <p>On Saturday, police in Paris said they had intercepted hundreds of vehicles heading into the city. Two were allegedly carrying knives, hammers and petrol canisters, and five were allegedly carrying slingshots.</p>
+            <p>A video posted online by a journalist and shared by the police showed officers halting lines of vehicles on the city's ring road. Police close to the Arc de Triomphe were seen diverting camper vans and other vehicles away from the area.</p>
+            <p>Demonstrators who oppose France's Covid pass, which requires people to show proof of vaccination before entering public venues, want to gather and blockade the capital across the weekend - suggesting such scenes may be repeated Sunday.</p>
+            <p>Convoys have organised online and appear to come from various political and ideological backgrounds, making it difficult to estimate how many vehicles might arrive in Paris each day. They have also drawn in others angry at rising prices in France.</p>
+            <p>Some plan to continue on to Brussels, home of many European Union institutions, for further demonstrations on Monday. City officials there have also banned the planned demonstration.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A protester by the Arc de Triomphe</figcaption>
+            </figure>
+            <p>Prime Minister Jean Castex said on Friday that authorities would be "very firm" if the group tried to block the French capital.</p>
+            <p>"The right to demonstrate and to have an opinion are a constitutionally guaranteed right in our republic and in our democracy. The right to block others or prevent coming and going is not," he told France 2.</p>
+            <p>Mr Castex also objected to the demonstrators calling themselves a "Freedom Convoy".</p>
+            <p>The word freedom should not be associated with "virulent attacks against vaccination", he said, because freedom is not "contaminating others".</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Analysis By Hugh Schofield Paris correspondent</figcaption>
+            </figure>
+            <p>The convoys consisting overall of some several hundred cars and camper-vans spent the night at points outside Paris, and from early this morning began driving into the city centre - their aim, apparently, to block the Champs-Élysées.</p>
+            <p>Police have set up checkpoints at exits from the Paris ring road, and they're out in force across the capital, stopping cars that look like they're occupied by protesters. By midday they'd issued around 300 fines.</p>
+            <p>Two months ahead of presidential elections the government is anxious to avoid any scene reminiscent of the sometimes violent yellow-vest protests of three years ago.</p>
+            <p>The protest movement is ostensibly about Covid restrictions, in imitation of the so-called Freedom Convoys in Canada, but many of the participants also proclaim their allegiance to the yellow-vests.</p>
+            <p>Some intend to proceed to Brussels on Sunday.</p>
+            <p>France's protesters were inspired by the blockade in Canada, which has closed a crossing that sees $1.7bn (£1.2bn) of daily trade between Canada and the US.</p>
+            <p>Truckers there, objecting to a federal Covid vaccine mandate for those crossing the border into Canada, have occupied the Ambassador Bridge and camped on the streets of the capital Ottawa for days.</p>
+            <p>A court order ordering them to leave the bridge came into effect at 19:00 local time (midnight GMT) on Friday.</p>
+            <p>Copycat protests have also emerged elsewhere.</p>
+            <p>Some 10,000 protesters opposed to vaccine mandates arrived at Parliament House in the Australian capital Canberra on Saturday, local media reported, while police in New Zealand's capital Wellington arrested more than 100 people on Thursday who blocked roads in the city.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

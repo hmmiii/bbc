@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_adventure_9" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Adventure</mark>
+                <h2>A discovery of Northern Ireland's lost holy relic</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Ireland's biggest wilderness is undergoing a rewilding programme to allow its bog and forest to return to their natural state, even if much of the land has always been wild.</h3>
+            <p>Standing on top of Correen More hill in the middle of Wild Nephin National Park in County Mayo, you can see miles and miles of uninterrupted bogland, a carpet of orange and brown stretching into the distance across ridges, up over hills and down along valleys dotted with forests and lakes.</p>
+            <p>To the west, from this 285m-high lookout point, the views stretch all the way to the Atlantic Ocean, to the grey-blue of Bellacragher Bay and further on to the pointy dark peak of Slievemore Mountain on Achill Island, 32km away as the crow flies. To the north is Bellacorick wind farm, 16km away.</p>
+            <p>Between here and there is a wilderness that looks untouched. There are no roads, no buildings, no telegraph wires, no houses or villages, visible in any direction. The land is empty, and one of Ireland's six national parks, named Wild Nephin after the Nephin Beg Mountain range, this is said to be the loneliest. Some even say it contains Ireland's loneliest place.</p>
+            <p>It does not feel bleak or desolate though, thanks to the warm reds and golds of the bog. In the distance, patches of green forest carpet the sides of a valley and nearby lakes look like tiny puddles, reflecting the sky. Underfoot, the bogland is grassy, mossy and wet, and rocky in some parts.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>From the Correen More lookout point, you can see hills, valleys, forests, lakes and miles of bogland (Credit: Yvonne Gordon)</figcaption>
+            </figure>
+            <p>County Mayo is one of the most westerly parts of Ireland's Atlantic coast. Go 1km from Newport village, and there's a turn off the N59 (signposted for Furnace) which brings you onto the road to Letterkeen, where there's an entrance to Wild Nephin. As civilisation falls away, there's a feeling of driving into the middle of nowhere, as I found when I followed this road along the edge of Lough Feeagh while the sun lit up Ben Gorm mountain behind it.</p>
+            <p>The Irish landscape sometimes has a magical, mischievous air, and this day was no exception as a rainbow appeared right in the middle of the road. I drove on over bumps and hills, following the twists and bends. Around one, a pretty stone house with a brown and white cat sitting outside appeared, like something from a children's fairytale.</p>
+            <p>At Letterkeen, at the end of the road that narrows to a gravel trail, I came to a small stone bothy (a small hut that serves as a shelter) and carpark. There was nobody around - and no phone signal. It felt a bit eerie. An information panel about Wild Nephin Wilderness outlined how the area will in time become truly wild.</p>
+            <p>This is Ireland's biggest wilderness, which is undergoing a rewilding programme to allow the bog and forest go back to their natural state even if much of the land has always been wild. Wet and boggy, it was unsuitable for tillage, and the lack of shelter meant it was hard on livestock too, although it's been grazed by sheep since the mid-1800s.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The bogland appears mostly vast and empty, but sheep can still be found grazing in the wilderness (Credit: Bo Scheeringa/Alamy Stock Photo)</figcaption>
+            </figure>
+            <p>It was Irish naturalist Robert Lloyd Praeger who described the Nephin Beg mountains in 1937 as "the very loneliest place in this country, for the hills themselves are encircled by this vast area of trackless bog", and little seems to have changed since then.</p>
+            <p>In his book The Way That I Went, Praeger described this area as a houseless and roadless 200 square miles of "nothing but brown heather", but found the place "not lonely or depressing but inspiriting". He wrote, "You are thrown at the same time back upon yourself and forward against the mystery and majesty of nature, and you may feel dimly something of your own littleness and your own greatness…"</p>
+            <p>Someone who also finds the landscape full of spirit is Michael Chambers, head guide at Wild Nephin National Park, who grew up in the townland of Srahmore on the southern edge of the park. We met at the bothy at Letterkeen, which is named the Robert Lloyd Prager Centre.</p>
+            <p>Even before he worked here, Chambers spent years exploring every inch of the land, looking for places he'd heard about in childhood stories and discovering some of its extraordinary secrets. As we crossed the rushing Altaconey River and walked past knee-deep heather along the banks, Chambers told me that he loves how you can reconnect with nature here. "As you go into the park, there's no evidence of man's impression on the landscape. It's a natural landscape, left intact, where you can become one with the natural world around you," he said.</p>
+            <h3>You are thrown at the same time back upon yourself and forward against the mystery and majesty of nature - Robert Lloyd Praeger</h3>
+            <p>While the landscape seems empty, beneath the surface are layers of history and stories so fascinating they sometimes leave shivers. From Letterkeen, the Bangor Trail runs 26km to the town of Bangor Erris, following an ancient path where drovers moved livestock between there and the town of Newport. The full 40km trail dates back to at least the 16th Century and is older than many of the surrounding villages.</p>
+            <p>Experienced hikers describe the trail as one of Ireland's most challenging, with shin-deep soggy bogland, streams and hills - and no exit route. In the past, as roads were built, the trail became disused, so conditions deteriorated. But as well as stories of wet gear, there are darker tales.</p>
+            <p>Chambers told local stories of highwaymen along the trail; for example, the story of a young girl returning from selling cattle at the market, who was murdered. The robbers could not find her money but later, when her family was laying her out for the funeral, they found she'd hidden it in the bun of her hair. Her ghost is said to wander the trail.</p>
+            <p>There are remains of old cottages, some abandoned during the Great Hunger, the famine of 1845-1852, when many tenants were evicted, plus old famine graves - mass graves of people who lost their lives along the Bangor Trail while walking to the town of Westport to catch a boat to emigrate across the Atlantic to America.</p>
+            <p>When he was young, Chambers heard stories from his father and grandfather of caves sheltering rebels in 1921 during the War of Independence. He was always looking out for the caves, and on a walk in 2016, he followed a fox and found a cave on Ben Gorm that had human remains from the Neolithic period 5,600 years ago. Carbon dating showed it was a ritual site used for more than 1,000 years to prepare bodies for the afterlife (the remains are still being studied and will later go to the National Museum).</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Michael Chambers, head guide at Wild Nephin National Park, leads a hike along the Altaconey River (Credit: Yvonne Gordon)</figcaption>
+            </figure>
+            <p>The national park was established in 1998 originally as Ballycroy National Park, and in 2009, the visitor centre was built at Ballycroy, with an exhibition on the park's habitat and species. There's a 2km looped trail at the centre, but the main body of the park starts 3km to the east and stretches more than 15,000 hectares past the Nephin Beg mountains, taking in the 721m Slieve Carr, said to be Ireland's most remote mountain.</p>
+            <p>The park was extended when 4,000 hectares of commercial forest (called Nephin Forest) was taken over in 2017 and was renamed Wild Nephin National Park a year later. Since then, around 10,000 native trees have been planted - including sessile oak, birch, rowan, alder, poplar and native Scots pine - which would have covered the area 4,000 years ago, before a wetter climate and more rainfall led to the formation of the bogs.</p>
+            <p>The park's Owenduff bog is one of the last intact active blanket bogs left in Western Europe. Bogs like these are important in the battle against climate change because they store so much carbon. In the past, forestry drained huge areas, releasing the carbon and leading to flooding. The conservation plan to rewild the bogs back to their natural state includes removing the conifers and blocking up the drains to keep the wetlands wet and the carbon stores intact.</p>
+            <p>Overgrazing of sheep also damaged the vegetation. Chambers said there is evidence that the vegetation is recovering and attracting wildlife again. Birds like the golden plover and red head grouse are once more nesting these sites.</p>
+            <p>We saw a red deer on our walk. The area is attracting native animals like the pine marten, cait crann in Irish (tree cat), plus field mice, otters, badgers and foxes. Birds include finches, sand martins, dippers, dunnocks, swallows and cuckoo. In winter, whooper swans and white fronted geese come to feed. There are herons and ducks, too.</p>
+            <h3>There's no phone coverage. You have that in-nature remote experience, which is fantastic</h3>
+            <p>Local hiker Rosanna Loftus from Crossmalina said she started hiking in the park on the Letterkeen looped trails (6km, 10km and 12km) and then worked up to the Bangor Trail. "It's absolutely beautiful in the park," she said. "You just get lost in your thoughts. There's no phone coverage. You have that in-nature remote experience, which is fantastic."</p>
+            <p>Loftus said that meeting others in the park is so rare that people stop and chat when they do - however, she didn't meet anyone else on the Bangor Trail, even on a sunny July day. She loves that it's not crowded like some other parks. "It's a blessing to have, you have peace of mind and quiet to just enjoy it."</p>
+            <p>Another local hiker, Trish Reddington from Castlebar, said her first experience of the park was a three-day trek on the Bangor Trail while studying outdoor education.</p>
+            <p>"It was amazing. We stayed in the bothy and we camped out the second night. We were eaten alive by midges, we got drowned wet and fell into bog holes, but it was the best experience ever," she told me. "It wasn't until then that I realised this wilderness was out there. When you get there, you feel like you're far away from everything and everyone. It's just so remote, the fact that you can go in there and just walk for 10 hours and not meet anybody. When you really get into the national park, you don't hear the outside world, you just hear nature."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The landscape is so uninterrupted by roads or trails it almost seems empty (Credit: Yvonne Gordon)</figcaption>
+            </figure>
+            <p>Camping is allowed in designated spots in the park; as well as the bothy, there are two mountain meitheals (open wooden shelters). Also, the park is rebuilding some stone herders houses along the Bangor Trail and the Western Way (a 124km trail that partly runs through the park) so people can stay overnight. It's planned that around three of these will be ready to open this year, and on a clear night, the park is the perfect spot to admire the stars.</p>
+            <p>The night sky is so unpolluted by light that it is home to Mayo Dark Sky Park, one of the world's few Gold Tier dark sky parks - meaning certain phenomena like the Milky Way and faint meteors are visible. There are three official dark sky viewing points - the most remote is at the Robert Lloyd Praeger Centre - and there are plans for an observatory and planetarium in the future. During a night winter lantern guided walk, Georgia MacMillan, the Dark Sky Park's development officer, explained how constantly being exposed to artificial light (even from streetlights) negatively affects our circadian rhythms and also impacts wildlife and biodiversity. And while the night sky views are amazing, even on a cloudy night, you might have a divine experience.</p>
+            <p>"The park is called after the Nephin Beg mountain range, which means heaven and heavenly," said Chambers, referring to the Irish word, néifinn. "The Nephin Beg mountains are my little piece of heaven."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

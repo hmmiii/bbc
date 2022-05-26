@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_business_11" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Business</mark>
+                <h2>How streaming services left us with too much to watch</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>The stunning growth of video streaming services like Netflix, Amazon Prime Video and Disney Plus, has transformed how we watch movies and TV shows.</strong></p>
+            <p>Here we speak to industry insiders, from producers to executives, to get their take on future trends for the so-called "streamers" sector.</p>
+            <p>One of these is film producer, Miranda Bailey, who found that when her new movie premiered at this month's Sundance Film Festival there was a catch.</p>
+            <p>Due to Covid restrictions, the film - God's Country, starring Thandiwe Newton - could not be shown on a cinema screen at the annual event in the small Utah town of Park City. Instead, it had to be streamed to the festival's virtual attendees.</p>
+            <p>"Obviously it's a great disappointment, to me and the other filmmakers, to not have the experience of showing our movie to an audience of indie film lovers at Sundance," says Ms Bailey.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Previous movies produced by Miranda Bailey include The Squid And The Whale, and The Diary Of A Teenage Girl</figcaption>
+            </figure>
+            <p>Historically, filmmakers show their new movies at Sundance and other festivals, to get cinema distribution deals. The focus has shifted to streaming platform contracts, or deals for distribution in cinemas and streaming simultaneously.</p>
+            <p>"Ideally, the filmmakers I work with would be sure to secure some sort of theatrical [cinema] run," says Ms Bailey. "But with the pandemic right now that seems to be a promise no outlet can truly fulfil.</p>
+            <p>"Fortunately there are a plethora of streaming platforms with brilliant original content who care about indies, and are spending money for award campaigns like traditional [cinema] distribution used to do."</p>
+            <p>The video streaming sector has become a huge part of the entertainment industry - a dominance partly driven by cinemas being shut down during the pandemic.</p>
+            <p>The world's largest platform, Netflix, had 222 million subscribers at the end of last year, 18.2 million more than in 2020. Meanwhile, Amazon Prime Video had 175 million viewers in 2021, while Disney Plus' base topped 118 million.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A majority of homes subscribe to more than one streaming service</figcaption>
+            </figure>
+            <p>These vast user numbers are supported by studies that show a growing number of people now prefer to watch new release movies at home, rather than go to a cinema. One report last October found that this was now the case for 71% of Americans.</p>
+            <p>At the same time, we now stream TV shows at a time of our choosing more often than we watch programmes as they are broadcast by a traditional, linear channel such as BBC 1 or Channel 4.</p>
+            <h3>'Overwhelmed by choice'</h3>
+            <p>The convenience of on-demand viewing is obvious, but Lisa Holme, group senior vice president of content and commercial strategy at US television company, Discovery, fears consumers are now put off by the sheer number of streaming services available.</p>
+            <p>"We now have a lot of content available across six or eight major streaming services, of which [our] Discovery Plus is one," she says. "I think consumers are now finding themselves a bit overwhelmed by the choice."</p>
+            <p>Ms Holme adds that some people are "feeling confused and annoyed" that they have to go to multiple streaming services to get all the content that they want.</p>
+            <p>For the US, figures show that 46% of homes with broadband subscribe to four or more video streaming services. While in the UK, one study found 65% of homes subscribe to two or more of the providers.</p>
+            <p>Phil Hopkins, president of niche streaming channel Fandor, says in a crowded market like this standing out from the competition is crucial. His service specialises in showing independent or classic movies, plus foreign films and documentaries.</p>
+            <p>"The biggest challenge is that there are a lot similarities to the main streaming services, and they're not really doing much in the way of separating themselves to have their own identity," he says.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Streaming site Fandor specialises in art house, classic and foreign movies</figcaption>
+            </figure>
+            <p>Mr Hopkins thinks that among the big players in streaming, Disney Plus is on the most robust footing. "They have such an amazing legacy [of Disney titles to show]," he says. "But I don't know how many other streaming platforms can survive on their own merits... eventually people are going to get fatigue and look elsewhere for something that's unique and different."</p>
+            <p>At streaming site Paramount Plus, its plan is to accelerate its popularity using live channels, a new feature where its most popular shows and movies go out at scheduled times on 20 genre-themed channels - mimicking traditional TV channels.</p>
+            <p>"Even in the era of on-demand, there is clearly a strong consumer appetite for reimagined linear channels that provide effortless, lean-back entertainment," says Tom Ryan, president and chief executive of ViacomCBS Streaming, the owner of Paramount Plus.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Tom Ryan has introduced live channel at Paramount Plus</figcaption>
+            </figure>
+            <p>Whereas at streaming app Struum, its plan is to make life easier by offering streams from numerous other providers all in one place. This means if you sign up you can access 25 sites, from the likes of the BBC, FilmBox, Magellan TV, Tribeca and Tastemade.</p>
+            <p>"Viewers want to find that next gem of a show or unknown movie," says Lauren Devillier, chief executive of Struum. "We provide a curated experience so people can 'go deep' on a particular subject.</p>
+            <p>"You love documentaries? We have hundreds. True crime? LGBTQ? We have all of it for you in one subscription, making simple what might otherwise be confounding."</p>
+            <p>Paul Erickson, senior analyst at market research firm Parks Associates, says the growth of streaming services was fuelled by the pandemic and continues today despite the general relaxation of lockdown rules.</p>
+            <p>Yet, he cautions that subscription growth in the streaming video market has already begun to slow. He says many consumers are now experiencing "subscription overload" and becoming more discriminating with their spending.</p>
+            <p>But as the streaming services wrestle each other for our affections, what does it mean for cinema chains? Are they doomed?</p>
+            <p>Far from it, says Paul Serwitz, president of US firm Landmark Theatres. He points out that attendances "steadily increased" in 2021. "[And] expectations are for cinema attendance to continue increasing as consumer confidence improves with the Covid evolution, and more compelling film content."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Cinemas will need to improve the experience for film goers to compete, says media critic Eric Deggans</figcaption>
+            </figure>
+            <p>But Tearlach Hutcheson, vice president at US cinema chain Studio Movie Grill, says while regular film goers have returned to cinemas, "it is the casual movie goer who hasn't".</p>
+            <p>US National Public Radio TV and media critic Eric Deggans says cinemas will need to improve the experience for film goers to compete with streaming.</p>
+            <p>"We're always going to have movie theatres but what form are they going to take? How many of them are there going to be and what kinds of films are they going to show? All of that is up in the air."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

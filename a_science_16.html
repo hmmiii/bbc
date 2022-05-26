@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_science_16" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Science</mark>
+                <h2>Climate change: 'Fifty-fifty chance' of breaching 1.5C warming limit</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>The likelihood of crossing a key global warming threshold has risen significantly, according to a new analysis.</strong></p>
+            <p>UK Met Office researchers say that there's now around a fifty-fifty chance that the world will warm by more than 1.5C over the next five years.</p>
+            <p>Such a rise would be temporary, but researchers are concerned about the overall direction of temperatures.</p>
+            <p>It's almost certain that 2022-2026 will see a record warmest year, they say.</p>
+            <p>The Met Office is the UK's national meteorological service.</p>
+            <p>As levels of warming gases in the atmosphere have accrued rapidly over the past three decades, global temperatures have responded by rising in step.</p>
+            <p>In 2015, the world's average temperature first went 1C above the pre-industrial levels, which are generally thought of as the temperatures recorded in the middle of the 19th century.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The recent heatwave in India has impacted millions of people</figcaption>
+            </figure>
+            <p>That was also the year that political leaders signed the Paris climate agreement, which committed the world to keeping the rise in global temperatures well below 2C while pursuing efforts keep them under 1.5C.</p>
+            <p>At COP26 in Glasgow last November, governments re-iterated their commitment to keeping "1.5C alive."</p>
+            <p>For the past seven years, global temperatures have stayed at or around that 1C mark, with 2016 and 2020 essentially tied as the warmest years on record.</p>
+            <p>Scientists say that with around 1C of warming the world is already experiencing significant impacts such as the unprecedented wildfires seen in North America last year, or the drastic heatwaves currently hitting India and Pakistan.</p>
+            <p>This update from the World Meteorological Organisation (WMO), carried out by the UK Met Office, says that the chances of temporarily going over 1.5C in one of the next five years have never been higher.</p>
+            <p>The study suggests that temperatures between 2022 and 2026 will be between 1.1C and 1.7C higher than pre-industrial levels.</p>
+            <p>The Met Office researchers predict that for any one year in the period, the likelihood of breaching the 1.5C level is around 48%, or close to 50:50.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Rising temperatures are linked to more extreme weather events such as these floods in China</figcaption>
+            </figure>
+            <p>"The basic thing that's changing is that the carbon dioxide levels in the atmosphere, are slowly creeping up," said Dr Leon Hermanson from the Met Office, the lead author of the report.</p>
+            <p>"I think people are already quite concerned about climate change and it is worrying, it is showing that we continue to warm the planet and we're getting closer to this first threshold that was set in the Paris agreement - and we need to continue doing everything we can to cut the use of fossil fuels."</p>
+            <p>The researchers say that going over 1.5C for one year isn't the same as a sustained rise where temperatures don't fall below this figure. The likelihood is that if it is exceeded in the next five years, it will fall below 1.5C again. However there is now little room for complacency.</p>
+            <p>"For as long as we continue to emit greenhouse gases, temperatures will continue to rise," said Prof Petteri Taalas from the WMO.</p>
+            <p>"And alongside that, our oceans will continue to become warmer and more acidic, sea ice and glaciers will continue to melt, sea level will continue to rise and our weather will become more extreme," he said.</p>
+            <p>According to the study, the Arctic region will likely feel a greater impact of warming over the next five years compared to the rest of the world. The researchers say that the difference in temperatures from the long-term average will be three times as large in these areas.</p>
+            <p>The researchers also believe that one of the coming years will likely break the 2016 and 2020 record for warmest year.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>At COP26 in Glasgow, political leaders reaffirmed their commitment to keep warming under 1.5C</figcaption>
+            </figure>
+            <p>That will happen, most likely in an El Niño year.</p>
+            <p>That's a natural, meteorological phenomenon associated with an unusual warming of the surface waters of the eastern Pacific ocean that can impact weather all over the world.</p>
+            <p>"The year we do exceed 1.5 degrees temporarily will probably be an El Niño year," said Dr Hermanson from the Met Office.</p>
+            <p>"It's on top of climate change, kind of like the wiggles on top of the trend, if you like, and the next record year will probably be an El Niño year, like 2016 was."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

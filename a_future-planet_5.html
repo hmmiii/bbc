@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_future-planet_5" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Future Planet</mark>
+                <h2>The mystery of Mexico's vanishing stream oaks</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Mexico has more species of oak tree than any other country. In recent years, the saplings of one of its most vulnerable and well-loved oak species have disappeared.</h3>
+            <p>By the banks of a seasonal riverbed in north-western Mexico, a collection of towering, gnarled oak trees stand guard. These trees descend from ancestors that lived more than 50 million years ago and their species has faced, and survived, any number of challenges.</p>
+            <p>Today fewer than 5,000 of them are still standing, and they are found only in the Sierra La Laguna mountains, in the state of Baja California Sur. These trees, at the tip of the Baja California peninsula, are the last living populations of Quercus brandegeei, a species of oak known locally as "encino arroyero" (stream oak) due to its restricted habitat along the banks of streams.</p>
+            <p>"They are survivors, those trees are heroes," says Silvia Álvarez Clare, a Costa Rican ecologist who is the director of the Global Tree Program of the Morton Arboretum, a botanical garden and conservation center in Illinois.</p>
+            <p>Mexico is home to more species of oak than any country in the world, though many of them are threatened. In the case of the arroyo oak, as it is known, the species now faces a particularly troubling problem. Though plenty of trees aged more than 100 years can be found, locals noticed that in recent years there had been no seedlings that have sprouted from their acorns in sight. For some reason, the trees had simply stopped reproducing.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The arroyo oak likely had a much wider range in the past, but is now restricted to a small pocket of Mexico (Credit: The Morton Arboretum)</figcaption>
+            </figure>
+            <p>Álvarez Clare describes the trees as "a community of arroyo oak pensioners, because we haven't been able to find juveniles. And in a healthy population of trees there are a lot of young individuals".</p>
+            <p>Mexican and US scientists, alongside local communities, are now seeking not only to solve this mystery of the missing stream oak saplings, but to save this iconic species from extinction.</p>
+            <p><strong>Global but vulnerable</strong></p>
+            <p>"It is estimated that there are between 400 and 600 species of oaks in the world," explains Maricela Rodríguez, a Mexican botanist specialising in oaks and the coordinator for Mexico and Central America of the Global Consortium for the Conservation of Oaks (GCCO).</p>
+            <p>Some scientists conservatively estimate there to be "a figure of 435 species, of which 168 are found in Mexico", says Rodríguez. "In other words, 38% of the total are found in this part of the world. Other regions with high oak species richness are South East Asia, which is home to 140 species, and the United States with 91 species."</p>
+            <p>The Red List of Oaks 2020, a study published by the Morton Arboretum and the Botanic Gardens Conservation International (BGCI), indicates that at least one third of oak species are endangered. And for about another 105 species, there is not enough information to tell how the population is doing.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Arroyo oaks provide rare shade in hot weather, but this can lead to its own problems for the trees' acorns (Credit: The Morton Arboretum)</figcaption>
+            </figure>
+            <p>"I find it incredible. They are such rare, new [to science] or unknown species that we don't even know if they are threatened or not," says Álvarez Clare.</p>
+            <p>In the case of Mexico, the Red List estimates that 32 of the country's oak species are in danger of extinction. And among the most threatened is the arroyo oak.</p>
+            <p><strong>A haven in Mexico</strong></p>
+            <p>Part of the puzzle lies in the species' limited range, far from its evolutionary relatives. The most closely related species to the stream oak is Quercus fusiformis, which is found in Texas, Oklahoma and north-east Mexico, says botanist Allen Coombes, who curates scientific collections at the Botanic Garden of the University of Puebla in Mexico.</p>
+            <p>So how did the stream oak come to survive only at the tip of the Baja California peninsula?</p>
+            <p>"Since its appearance about 55 million years ago, in the late Paleocene, the genus Quercus has survived many biological and physical changes," says Rodríguez. "Since then, climatic changes have caused population movements, expansions and decreases in their distribution, both latitudinally and altitudinally."</p>
+            <p>The arroyo oak probably had a wider distribution in the past, and found a haven in the Sierra La Laguna, says Mexican ecologist Aurora Breceda from the Centre for Biological Research of the Northwest (Cibnor). "Everything indicates that it is a relict species,” she says, referring to species that survive only in small populations, serving as remnants of the past.</p>
+            <p>"There is only that relic of the historical distribution of the arroyo oak that we calculate must have a total of less than 5,000 individuals, very restricted to only the banks of the streams," says Álvarez Clare.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Local people have helped revive the arroyo by planting, caring for and "adopting" seedlings (Credit: The Morton Arboretum)</figcaption>
+            </figure>
+            <p>Scientists believe that the species failed to adapt to changes that, over millions of years, created a near-desert climate in this region. Today, the habitat is so dry that many streams are only filled with water by winter rains or hurricanes that create powerful but ephemeral currents.</p>
+            <p>It is only in the humidity of sandy soil on the banks of the streams of the Sierra La Laguna, that the arroyo oak found its refuge.</p>
+            <p><strong>An oasis and a resource</strong></p>
+            <p>Quercus brandegeei is considered a key species for the ecosystem and is highly valued by the local population.</p>
+            <p>The arroyo oaks "are beautiful", says Breceda. "Here in Baja California Sur, an area with scarce vegetation cover, you have these huge trees.</p>
+            <p>"An arroyo oak can measure 20m [66ft] in height and have crowns of 30sq m [320sq ft]. They are like a peaceful oasis."</p>
+            <p>Most of these scattered oak populations are found within a range of 3,000sq km (1,200sq miles), most inside the perimeter of the Sierra La Laguna Biosphere Reserve. Biosphere reserves are natural spaces identified by Unesco - the United Nations Educational, Scientific and Cultural Organization - where biological conservation coexists with the cultural and economic development of local people. The arroyo oak survives here alongside humans and their cattle, which are allowed to roam the area freely.</p>
+            <p>Many locals report having lived with this species for generations. "I remember my grandmother who used the acorns to make oil, tortillas," says Rogelio Rosas López, owner of a local tour agency, Rancho Ecológico El Refugio. His grandmother, he recalls, also cooked with the seeds "atole", a typical Mexican pudding. "And she used to take us and pinch us because we had to gather sacks of acorns to give to the pigs."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Livestock such as pigs have shared the landscape with the arroyo oak for generations (Credit: The Morton Arboretum)</figcaption>
+            </figure>
+            <p>The acorns of the stream oak are food for pigs and goats, as well as wild animals. Occasionally, if there is a fallen tree, the wood is used.</p>
+            <p>"A lot would be lost for the ecosystem if the oaks weren't there, mainly the shade. We wouldn't enjoy such a beautiful landscape," says Juan Refugio Manríquez Rosas, another member of the community. "People would lose the best acorns, and everything from birds to raccoons and squirrels would be affected." The honey from this oak, too, is highly valued and has become a source of local income, he adds.</p>
+            <p><strong>The missing saplings</strong></p>
+            <p>No one knows exactly how old the arroyo oaks of the Sierra La Laguna are. "It really is a great mystery. We think they are definitely over a hundred years old. But it could be that they are hundreds of years old," said Álvarez Clare. In 2022, a team of experts in dendrochronology, the science of dating trees, is expected to find a conclusive answer to the question.</p>
+            <p>But the biggest puzzle is the absence of juveniles, something that has long drawn the attention of local inhabitants.</p>
+            <p>"My grandfather used to say that there were many more trees," said José Abelino Cota, owner of a plot of land in the Sierra La Laguna. "It is very rare to see a new tree. I don't know what is the reason for it."</p>
+            <p>Explaining this lack of regeneration is vital. Although oaks can sometimes reproduce asexually, producing underground stems with shoots that give rise to new individuals, this form of reproduction does not protect the future of the species. It only creates clones of the same tree, without the genetic variability necessary to respond to drastic environmental changes or new diseases.</p>
+            <p>Only sexual reproduction, with small trees born from acorns, is likely to maintain the arroyo oak in the long run.</p>
+            <p><strong>Looking for answers</strong></p>
+            <p>Scientists explored various hypotheses to explain the lack of regeneration. The first was the impact of climate change, which, according to Álvarez Clare, has caused "the dry season to be drier and hotter, and the rains to be more unpredictable in this area of ​​Baja California Sur".</p>
+            <p>The second hypothesis was the lack of viability of the acorns - but a study at Cibnor showed the opposite. "We collected seeds from several locations. At Cibnor we measured them, did a morphological study and put them to germinate. And they have a very high germination rate - more than 90% germinate," says Breceda.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The acorns of the arroyo oak had no trouble in germinating, researchers found - the limitations to the oak's regeneration must lie elsewhere (Credit: The Morton Arboretum)</figcaption>
+            </figure>
+            <p>The third hypothesis, according to the Morton Arboretum's Álvarez Clare, was the conflict with the ranchers' cattle. "We think the cows are definitely a problem for the oak because they love to be in the shade and they crush the seedlings," she says. "And besides, the pigs eat the acorns."</p>
+            <p>For Álvarez Clare, the mystery of the stream oak's lack of regeneration continues and "has only been partially solved". Scientists agree on the impact of livestock crushing and eating acorns, but the consequences of climate change raise further questions. "Climate change is indeed a problem, but how much and to what magnitude is something we are still not sure about," she says.</p>
+            <p>For Breceda, the big problem could be the changes in the temporary patterns of both rainfall and temperatures. "We really don't know if the effects of climate change could be causing variations in these seasonal patterns, which could be affecting the species. We don't know, a separate study is required."</p>
+            <p><strong>'Let's Save the Arroyo Oak'</strong></p>
+            <p>Although the precise impact of climate change on the germination of acorns is unknown, there is one thing that the project's experts are certain about: the way to save these oaks lies in the hands of the community members themselves.</p>
+            <p>"The ranchers have a double function: they are part of the problem, but they are our only solution if we want to save the arroyo oak," says Álvarez Clare.</p>
+            <p>The scientists' response has been to establish a tree care and adoption program with ranchers and other residents called Salvemos al Encino Arroyero, or "Let's save the Arroyo Oak". The project is part of the Global Trees Campaign, an initiative to save the world's threatened trees coordinated by the BGCI.</p>
+            <p>The idea is that local people plant, care for and "adopt" seedlings, becoming guardians of the species, says Mexican biologist and researcher Daniel Wblesther Pérez Morales, who leads the work with the communities, explains. The residents will in turn benefit from the acorns and the many other services that these trees provide.</p>
+            <p>"We established a community nursery and propagated seedlings to plant new arroyo oak trees in the region," says Pérez Morales. It's important that collected acorns are planted, as the seeds of the stream oak do not tolerate being dehydrated. So far, close to 500 new trees have been planted with the help of the inhabitants of the communities.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Researchers like Silvia Alvarez Clare have worked to collect arroyo acorns, before they are devoured by pigs (Credit: The Morton Arboretum)</figcaption>
+            </figure>
+            <p>"We plan to plant about 1,200 new oaks in the region. We will plant within the fences of the ranches to ensure that each oak is growing protected and well cared for," says Pérez Morales.</p>
+            <p>"We will also plant outside the ranches in areas where there is less pressure from predators. And with the help of the municipal authorities, we will plant in public spaces, where each planted tree has protection, care and its growth can be monitored."</p>
+            <p>The Morton Arboretum and the GCCO are also working with botanic gardens in Mexico to establish the oak elsewhere beyond its current range, to improve the chances for conservation of the species. Currently 15 trees are growing in the botanic garden of the University of Puebla in central Mexico.</p>
+            <p><strong>An exchange of knowledge</strong></p>
+            <p>Scientists, local authorities, ranchers and other members of the community in the town of San Dionisio in Baja California Sur came together to discuss the oak's future at a workshop on the initiative in late 2021. "It was a workshop where we co-constructed knowledge," says Breceda. "Because it's not like 'wise' scientists are going to tell local people what to do with something that has been theirs for hundreds of years. They grew up with these trees."</p>
+            <p>Local people know better than anyone the best places to plant, says Pérez Morales. And they know that without their help, in an increasingly dry and unpredictable climate, it will be very difficult for the oak to survive.</p>
+            <p>"It is important that we ranchers give ourselves the task of taking care of these spaces, of watering the trees until they are at least two years old," says Rogelio Rosas López.</p>
+            <p>More workshops are planned in 2022, as well as the first "Festival of the Arroyo Oak" in San Dionisio. The idea is also to promote other activities that are a source of income, including ecotourism and artisan products such as mango jelly or a drink from damiana, a local plant.</p>
+            <p><strong>Clinging to life</strong></p>
+            <p>The stream oak project shows how complex, and case-by-case, the task of saving endangered species is.</p>
+            <p>"The work has not been easy since the results of these efforts are not immediate and it must be understood that they will be seen over longer periods. However, we are on the right track," says Pérez Morales.</p>
+            <p>Noelia Álvarez de Román, director of conservation for Latin America and the Caribbean of the BGCI, has praised the outcomes so far. "The Quercus brandegeei conservation project has resulted in important advances in knowledge of the species and its threats, in the dissemination of the importance of its conservation and in the increase of capacities of local collaborators," she says.</p>
+            <p>"If this species disappears, it disappears from the face of the known universe," says Cibnor's Aurora Breceda. "And on the other hand we lose the possibility of sustainable resources for the rural populations of Baja California Sur, for which I have enormous respect and admiration."</p>
+            <p>The Morton Arboretum's Álvarez Clare never ceases to be amazed that "currents, storms, hurricanes, droughts happen to these oaks and they are still clinging there, producing their acorns, providing shade, cleaning the air, giving life".</p>
+            <p>"Actually, when I'm next to one of those trees, I just touch the trunk and say, 'thank you!'.</p>
+            <p>"The arroyo oaks have been there much longer than we have," says Álvarez Clare. "And we want to ensure that they are there for our children and our grandchildren, that they can have the shade of that wonderful tree that our grandparents had."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

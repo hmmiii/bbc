@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_food_2" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Food</mark>
+                <h2>The hidden legacy of the Seychelles' island cuisine</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Seychelles' fragrant, spice-laden cuisine is increasingly hard to find - but travellers-in-the-know can still feast on delicious traditional dishes around the Indian Ocean archipelago.</h3>
+            <p>In a steep valley high on the eastern slopes of the Seychelles island of Mahé, the spice garden of Le Jardin du Roi tells a story of unimaginable variety. Anchored by a graceful 19th-Century home of white wood, soaring ceilings and big windows designed to catch a cooling mountain breeze, Le Jardin du Roi is a window on so much that is good about traditional Seychelles Creole cooking.</p>
+            <p>More than 120 different species of spices and fruits grow here across 25 hectares that face down towards the sea. Guided trails wind past coconut palms and cinnamon, avocado and jackfruit. Right next to the entrance, nutmeg (Myristica fragrans) grows wild and free.</p>
+            <p>Le Jardin du Roi began life in 1772, barely two years after the first French settlers had arrived to establish the fledgling Seychelles colony. Eager for France to join the lucrative global trade in spices, the French colonist Pierre Poivre sent clandestine expeditions to the spice islands of Ceylon (now Sri Lanka) and the Moluccas (Dutch East Indies) to steal spices so that they might be grown in Seychelles. Poivre's dastardly act of horticultural piracy nearly came to nothing: in 1780, the island's governor destroyed the spice garden when he mistook an approaching ship for an enemy vessel: the spices were too valuable to fall into enemy hands.</p>
+            <p>Some survived, and they would become central to Seychelles' fragrant, spice-laden cuisine.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Traditional dishes, like smoked fish salad, are becoming increasingly hard to find in Seychelles (Credit: Anders Blomqvist/Getty Images)</figcaption>
+            </figure>
+            <p>When these first European settlers arrived in the Seychelles in the 18th Century, they found an uninhabited string of islands blessed with rich abundance. The waters were rich in fish and the year-round climate - Seychelles lies beyond the Indian Ocean cyclone zone - was conducive to the establishment of small plantations where, until slavery was abolished in 1835, enslaved Africans often did most of the work growing food. The location, too, combined deep-ocean isolation with a safe harbour for passing ships that carried with them spices and culinary influences from Europe, Africa, India and China. In this complicated confluence of factors was born Seychelles' unique tradition of Creole cooking (the word ‘Creole’ is the adjective locals use to describe the people, language and cuisine of Seychelles).</p>
+            <p>When I arrived in Seychelles in January, I expected a sampling of Creole dishes to be a major highlight of my visit. I imagined myself dining beneath coconut palms, looking out upon a turquoise sea as I tried the traditional flavours for which Seychelles is famous. I dreamed of fragrant spices - some known to me, others more unusual - wafting on ocean breezes. And I was very excited.</p>
+            <p>It turned that it wasn't that simple. Yes, almost every local with whom I spoke wanted to talk about the wonders of their national cuisine. And yes, they told a story of dishes filled with spices, flavours and natural ingredients. But almost in the same breath they apologised for how difficult it would be for me to try these dishes. It was, they said, a familiar story of globalisation, of how a younger generation of Seychellois were far more interested in fast food - pizza, hamburgers and the like - than local foods. Many restaurants were, they assured me, moving away from traditional dishes and towards catering to this new generation's appetite for everything new and foreign.</p>
+            <p>Hoping they were wrong, worried that they may be right, I set out to try and unearth what remained of Seychelle's culinary tradition. To do so, I called on three masters of Seychelles' culinary life. With me at upmarket restaurant L’Escale, overlooking the marina at Eden Island close to the capital Victoria, were Rose-Marie Emont and her Belgian-born husband Philos, who together opened one of the first restaurants in Seychelles - Chez Philos - back in 1981. Now retired, Philos is widely considered a pioneer of modern Seychellois cooking. Another of Seychelles' premier chefs and culinary identities, Christelle Verheyden, joined us as well. Between them they brought to the table nearly a century of local and international experience.</p>
+            <p>At first, they confirmed what I'd been told: "We're losing a lot," said Rose-Marie. "And we're losing it fast."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Spread over 25 hectares, Le Jardin du Roi is the oldest spice garden in Seychelles and one of few that is open to visitors (Martin Moxter/Alamy)</figcaption>
+            </figure>
+            <p>But I wanted to know exactly what it was that was being lost, and over the hours that followed, they told a story of great variety and abundance. "I had a guest who stayed with us for one month," remembered Philos. "He ate every day in the restaurant. I made a bet with him: for every day that he ate in my restaurant, he would eat a different kind of fish. We did it. It was easy - 27 or 28 different kinds."</p>
+            <p>They also spoke about the intricacies of individual dishes that Seychellois hold dear. Should the bones be left in an authentic Creole chicken curry? They should. Do you roast the cardamom and other spices before cooking the curry? Absolutely. Do you mix notoriously fiery Seychelles chillies into an octopus curry or serve it separately? Either is fine.</p>
+            <p>The three of them laughed at the audacity of some of the dishes that Philos and Rose-Marie prepared back in the day. There was the fruit-bat pâté whose fame reached Seychelles' presidential palace; the then-president used to send his personal driver to Chez Philos to pick up supplies. Or the sea-urchin soufflé; Rose-Marie's eyes glazed over at the memory.</p>
+            <p>If some of the dishes were in danger of disappearing, the three of them said, at least many of the natural ingredients survived. Philos swore that he could still find a different fish to cook for every day of the month, just as he had nearly four decades ago. "Seychelles has the best avocado in the world," added Verheyden. "If you see them on the table at the market or by the side of the road, buy them."</p>
+            <p>The same is also true of spices. According to Verheyden, curry-pili, a fragrant curry leaf that is generally smaller than the Indian version, is still used in local curries. "Curry-pili and cinnamon still grow wild. You can stop alongside the road and find it easily."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Rose-Marie and Philos Emont opened Chez Philos, one of the first restaurants in Seychelles, in 1981 (Credit: Anthony Ham)</figcaption>
+            </figure>
+            <p>Rose-Marie acknowledged that she still cooked traditional dishes at home for friends and family. And it remains a popular Sunday tradition among Seychellois to gather in family groups on the beach for barbecues, particularly at Au Cap and Anse Royale. At some, traditional Creole dishes - marinated tuna steaks cut open and filled with garlic and coriander and perhaps cooked in banana leaves; a curry animated with the bitter-sweet, cranberry-like flavours of hibiscus flowers - remain popular.</p>
+            <blockquote>Traditionally, you would be invited to the home of family and friends. This is where we eat</blockquote>
+            <p>Such gatherings are very much in keeping with how the Seychellois have always enjoyed their food. "There is no tradition of people eating out in restaurants," said Rose-Marie. "Traditionally, you would be invited to the home of family and friends. This is where we eat."</p>
+            <p>The problem, I was learning, is not that Creole cooking is disappearing from the islands. It's just becoming harder to find in the public sphere. Or is it?</p>
+            <p>On many restaurant menus, hidden among more international dishes, it is still possible to find grilled fish, smoked mackerel and marlin, mango salads, chicken or shrimp or octopus curries: these were all staples in the old Seychelles.</p>
+            <p>Of the high-end restaurants, L'Escale, whose kitchen Verheyden oversees, serves traditional dishes like the "awfully spicy" boudin Creole (black pudding) and chatini (a traditional chutney-like salad of papaya, green mango and/or pumpkin, served cold or lukewarm). When she can get them, Verheyden makes sure that there is camaron, a small, freshwater shrimp found only in a few Seychelles streams, on the menu. "When I serve that," she said, "there are often Seychellois crying, because they remember eating these when they were kids, and they haven't eaten them for 20 years."</p>
+            <p>The trio agreed that street food and some of the small takeaway places and informal restaurants scattered around Seychelles are good spots to try. Covid-permitting, Bazar Labrin, a Wednesday-evening food market by the beach at Beau Vallon, on the north-west coast of Mahé, might be a good place to find traditional foods such as chilli bites (lentils soaked in chilli then fried), fish cooked in banana leaves or aubergine fritters.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Creole set menu at Marie-Antoinette includes mango salad, seared tuna steaks, Creole chicken curry, aubergine fritters and other local dishes (Credit: Anthony Ham)</figcaption>
+            </figure>
+            <p>"I had some very nice aubergine fritters at La Gaulette," Verheyden recalled. "That's another good place." La Gaulette is across the road from the long and lovely Baie Lazare beach along Mahé's south-western coast.</p>
+            <p>"And what about Le Reduit? Or Chez Léon?" asked Philos, and all murmured in agreement; both are in Anse La Mouche on Mahé's south-west coast. Takeaway restaurant Chez Léon is the simple, eponymous home kitchen of a renowned Seychellois chef who once worked with Philos.</p>
+            <p>There's also Marie-Antoinette, a stalwart of Creole cooking on a rise above the capital, Victoria. Once under the watchful eye of culinary matriarch Madam Fonseka, it has now passed to her grandchildren, and many dishes remain the same: their Creole set menu is a reassuring collection of greatest hits that includes chicken coconut curry, coconut chatini, mango salad, aubergine fritters, parrotfish fritters, tuna steak with a Creole sauce and more.</p>
+            <p>"When I go to La Digue," said Rose-Marie, speaking of one of the other inner islands, a short boat ride from Mahé, "I go to the north-east of the island. There's one little restaurant there, called Chez Jules - perfect. You must order the palm heart."</p>
+            <p>When we finally got up from the table, rumours of traditional Creole cooking's demise seemed greatly exaggerated. There are certainly more international restaurants in Seychelles than there used to be, and fewer places like Chez Philos. And perhaps because the Seychellois still eat mostly at home, my three companions had initially feared the worst.</p>
+            <p>But as I'd learned, you just need to know where to look. </p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The waters that surround Seychelles are some of the richest fishing grounds on the planet (Credit: Andrea Comi/Getty Images)</figcaption>
+            </figure>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

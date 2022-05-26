@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_science_34" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Science</mark>
+                <h2>Hubble: 'Single star' detected at record-breaking distance</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>They've nicknamed it "Earendel" and it's the most distant, single star yet imaged by a telescope.</strong></p>
+            <p>The light from this object has taken 12.9 billion years to reach us.</p>
+            <p>It's at the sort of distance that telescopes normally would only be able to resolve galaxies containing millions of stars.</p>
+            <p>But the Hubble space observatory has picked out Earendel individually by exploiting a natural phenomenon that's akin to using a zoom lens.</p>
+            <p>It's called gravitational lensing and it works like this: If there is a great cluster of galaxies in the line of sight, the gravitational pull from this mass of matter will bend and magnify the light of more distant objects behind.</p>
+            <p>Usually, this is just other galaxies, but in this specific case Earendel was in a sweetspot in the lens effect.</p>
+            <p>"We got lucky. This is really extreme; it's really exciting to find something with such a high magnification," said Brian Welch, a PhD student from Johns Hopkins University in Maryland, US. "If you happen to hit that right sweetspot, like we have in this case, the magnification can grow up to factors of 1000s," he told BBC News.</p>
+            <p>The previous record-setter was a star called Icarus. Again, captured by Hubble, the light from this star took nine billion years to reach us.</p>
+            <p>Earendel is therefore significantly further away. We are seeing it a mere 900 million years after the Big Bang, or at a time when the Universe was only 6% of its current age.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>After more than three decades of operation, Hubble continues to make remarkable discoveries</figcaption>
+            </figure>
+            <p>The name Earendel comes from an Old English word meaning "morning star" or "rising light". It's not much to look at in the Hubble photo - just a faint blob on a long crescent of light created by the lens that's been dubbed the "Sunrise Arc".</p>
+            <p>Mr Welch and colleagues report the star's discovery in the journal Nature. There is a lot left to learn about its properties, the authors concede.</p>
+            <p>For example, there's uncertainty around Earendel's size. It's at least 50 times the mass of our own Sun, but depending on the exact amount of magnification it could be a great deal larger still. Even at 50 solar masses, though, it would be among the biggest stars ever observed.</p>
+            <p>It's quite likely that what Hubble has spied is a binary. That is, it's actually two stars that are orbiting close to each other. This is very common. However, in such instances, there is usually a larger partner and it's this object's light that would dominate the signal.</p>
+            <p>Some astronomers will question whether Earendel isn't just a tight cluster of many stars, but Mr Welch said there were limits on how large the phenomenon could be before the lensing effect started to smear the light into a more elongated, cigar-like shape. He's confident Hubble has detected one, or at most, two stars.</p>
+            <p>One alternative explanation might be that the spot of light is a foreground object that just happens to have a similar light profile. Certain failed stars, or brown dwarfs as they're known, could fit the data. But the probability is low. After five years of observations, the feature has remained totally static in the field of view. If it were a much closer brown dwarf, its position on the sky would be expected to drift slightly.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>James Webb and Hubble comppared</figcaption>
+            </figure>
+            <p>A fascinating piece of speculation surrounding Earendel is its composition. There is a way the data can be interpreted to suggest it is a pioneer star, an object made from the pristine gas created in the Big Bang.</p>
+            <p>Theory tells us that the very first stars to shine in the Universe comprised only hydrogen and helium. Astronomers call them Population III stars. Only when these stars and their descendants had fused heavier elements did the cosmic environment change to the one we recognise around us today.</p>
+            <p>But a 50-solar-mass star would only burn for a very short time, perhaps a million years at most before it ran out of fuel and collapsed and died. For a pioneer star to exist 900 million years after the Big Bang, it would need to have grown out of a long-surviving, isolated and unpolluted cloud of gas. Not impossible, but arguably a stretch too far.</p>
+            <p>"Yes, we expect that Earendel is more likely to be a star that has been a little bit enriched in heavier elements, but not so much as the local stars around us today," Mr Welch said.</p>
+            <p>"There is a small chance that it's a Population III star. A few other studies predict you could get them in the outskirts of some galaxies. But that's something we're going to need much more detailed follow-up from other telescopes such as James Webb."</p>
+            <p>James Webb is the successor to Hubble. Launched in December, it has a much bigger mirror and superior analytical instruments. It will be able to tease out details that are beyond Hubble.</p>
+            <p>Webb is due to start full science operations in two or three months' time. Mr Welch and colleagues have already been granted time on the new observatory to go and look at Earendel.</p>
+            <p>But it's worth celebrating for a moment the continued brilliance of Hubble. It was launched in 1990 and even as a new wonder observatory prepares to take up the reins, Hubble keeps turning out ground-breaking studies.</p>
+            <p>"The Hubble Space Telescope is doing very well," said Nasa project scientist Dr Jennifer Wiseman.</p>
+            <p>"It's powerful. It's as scientifically productive as ever, and we're looking forward to the kinds of science that Hubble will be doing in the coming years. We're particularly excited about the James Webb Space Telescope also operating in space along with the Hubble Space Telescope. By having both of these amazing facilities, we're going to learn more about the Universe than we've ever been able to before."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

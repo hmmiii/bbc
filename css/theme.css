@@ -1,0 +1,136 @@
+body[data-dark=true]{
+    color: #fff;
+    background-color: #111;
+}
+body[data-dark=true] .overflowBox, body[data-dark=true] .infoBox, body[data-dark=true] .navigator{
+    background-color: #222;
+}
+body[data-dark=true] .gridView .plain mark, body[data-dark=true] small,
+body[data-dark=true] .readMore, body[data-dark=true] time, body[data-dark=true] .moreArticles,
+body[data-dark=true] .listView li p,
+body[data-dark=true] .gridView .left p,
+body[data-dark=true] .gridView .right p,
+body[data-dark=true] #access .modalContainer, body[data-dark=true] [id^=forgotten] .modalContainer,
+body[data-dark=true] input[type=email], body[data-dark=true] input[type=password], body[data-dark=true] input[type=text],
+body[data-dark=true] .content figcaption,
+body[data-dark=true] .navigator .navigatorContainer ul li:not(:first-child, :last-child){
+    color: inherit;
+}
+
+body[data-dark=true] header .headerContainer h1 a{
+    background-image: url('../images/logo_white.png');
+}
+body[data-dark=true] header .headerContainer div input:first-child{
+    background-image: url('../images/ico_access_white.svg');
+}
+body[data-dark=true] header .headerContainer div input:last-child{
+    background-image: url('../images/ico_search_white.svg');
+}
+
+body[data-dark=true] header{
+    background-color: #000;
+}
+body[data-dark=true] .navigator .navigatorContainer ul li:not(:last-child, :first-child)::after,
+body[data-dark=true] .navigator .navigatorContainer ul li:nth-child(2)::before{
+    background-image: url('../images/ico_navArrow_white.svg');
+}
+body[data-dark=true] .navigator .navigatorContainer li:first-child{
+    background: url("../images/logo_nav_white.png") no-repeat left;
+}
+body[data-dark=true] time{
+    background-image: url('../images/ico_update_white.svg');
+}
+body[data-dark=true] .readMore{
+    background-image: url('../images/ico_moreArrow_white.svg');
+}
+body[data-dark=true] .moreArticles{
+    background-image: url('../images/ico_plus_white.svg');
+}
+body[data-dark=true] .content div blockquote{
+    background-image: url('../images/ico_quote_white.png');
+}
+body[data-dark=true] #access .modalContainer, body[data-dark=true] [id^=forgotten] .modalContainer,
+body[data-dark=true] .content div blockquote{
+    background-color: #333;
+}
+body[data-dark=true] input[type=email], body[data-dark=true] input[type=password], body[data-dark=true] input[type=text]{
+    background-color: #222;
+    border-color: #555;
+}
+body[data-dark=true] #access .modalContainer ul li a{
+    background-color: #555;
+}
+body[data-dark=true] #access .modalContainer ul li a.active{
+    background-color: inherit;
+}
+body[data-dark=true] ul.tab li{
+    border-color: #555;
+}
+body[data-dark=true] ul.tab li:hover, body[data-dark=true] ul.tab li.active{
+    border-color: #3861F6;
+}
+body[data-dark=true] .gridView .rankCircle:not(:last-child),
+body[data-dark=true] .gridView .top div{
+    border-color: #555;
+}
+body[data-dark=true] .gridView .top div{
+    background-color: #333;
+}
+body[data-dark=true] .viewBox div .views .btn_grid.active{
+    background-image: url("../images/btn_girdView_active_white.svg");
+}
+body[data-dark=true] .viewBox div .views .btn_list.active{
+    background-image: url("../images/btn_listView_active_white.svg");
+}
+
+/* ALL USING */
+
+@media screen and (max-width:1279px){
+    body[data-dark=true] header .headerContainer nav{
+        background-color: #222;
+    }
+    body[data-dark=true] header .headerContainer nav ul li:hover ol{
+        background-color: inherit;
+    }
+    body[data-dark=true] header .headerContainer nav a{
+        color: #a5a6aa;
+    }
+    body[data-dark=true] header .headerContainer .mui{
+        background-image: url('../images/ico_menu_white.svg');
+    }
+    body[data-dark=true] header .headerContainer .mui.opened{
+        background-image: url('../images/ico_close_white.svg');
+    }
+    body[data-dark=true] header .headerContainer nav ul > li:not(:first-child)::before{
+        background-image: url('../images/ico_plus_gray.svg');
+    }
+    body[data-dark=true] header .headerContainer nav ul > li:hover:not(:first-child)::before{
+        background-image: url('../images/ico_minus_white.svg');
+    }
+}
+
+/* Mobile + Tablet */
+
+@media screen and (min-width:1280px){
+    body[data-dark=true] header .headerContainer nav ul li ol li a{
+        color: inherit;
+    }
+    body[data-dark=true] header .headerContainer nav ul li:hover ol{
+        background-color: #444;
+    }
+    body[data-dark=true] header .headerContainer nav ul > li:not(:first-child) > a::after{
+        background-image: url('../images/bul_dropdown_white.svg');
+    }
+    
+    body[data-dark=true] .infoBox .infoContainer div:first-child section:first-child ul li:nth-of-type(1){
+        background-image: url('../images/ico_cloud_white.png');
+    }
+    body[data-dark=true] .infoBox .infoContainer div:first-child section:first-child ul li:nth-of-type(2){
+        background-image: url('../images/ico_clear_white.png');
+    }
+    body[data-dark=true] .infoBox .infoContainer div:first-child section:first-child ul li:nth-of-type(3){
+        background-image: url('../images/ico_overcast_white.png');
+    }
+}
+
+/* Desktop */

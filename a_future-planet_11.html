@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_future-planet_11" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Future Planet</mark>
+                <h2>Why climate lawsuits are surging</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Activists are increasingly suing governments and companies to take action against climate change - and winning. Could this be a turning point?</h3>
+            <p>David Schiepek, a student from the southern German state of Bavaria, has been involved in climate activism for around three years. "After all this time fighting, protesting and talking to politicians, I was losing hope a bit," the 20-year-old says. "I feel like my future is being taken away."</p>
+            <p>But in May this year, an unexpected event gave him a fresh sense of optimism. A lawsuit brought by a number of environmental NGOs, on behalf of a group of young activists, resulted in Germany's constitutional court ruling that the country's climate protection act must be amended to include more ambitious CO2 emissions reductions. The decision stated that the government's failure to protect the climate for future generations was unconstitutional.</p>
+            <p>"I saw that, finally, politicians can be put under pressure and forced to take measures against climate change," Schiepek says. "It really changed the way I see politics."</p>
+            <p>Now he is hoping to build on this ruling, which applies only to the federal government. He has been recruited by an NGO, along with other young people from around Germany, to bring similar cases against their local state governments. Technically, he is suing his state to take action on climate change.</p>
+            <p>The last few years have seen a snowballing of court rulings in favour of environmentalists around the world. The cumulative number of climate change-related cases has more than doubled since 2015, according to a report authored by Kaya Axelsson of Oxford University's Environmental Change Institute and colleagues. Just over 800 cases were filed between 1986 and 2014, while over 1,000 cases have been brought in the last six years, researchers Joana Setzer and Catherine Higham of the Grantham Research Institute on Climate Change and the Environment found. Thirty-seven of those cases were "systemic mitigation" cases brought against governments.</p>
+            <blockquote>The Paris agreement has teeth - not just against governments, but against companies - Paul Benson</blockquote>
+            <p>One of the most high-profile was a Dutch case in 2015, in which a court ruled that The Netherlands' government has a duty of care when it comes to protecting its citizens from climate change. The judges decided the government's plan to cut emissions by 14-17% compared with 1990 levels by 2020 were unlawful given the threat of climate change. They ordered the target be increased to 25%. As a result, the Dutch government closed a power plant four years earlier than planned and introduced a new climate plan in 2019. Elsewhere cases have led to similar rulings - including the recent German one that inspired Schiepek, as well as cases in countries such as Australia.</p>
+            <p>The rising number of cases is paving the way for stricter enforcement of environmental laws around the world and giving activists like Schiepek a new sense of hope.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A number of high-profile rulings have found certain governments' and corporations' climate action has been insufficient (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>Roda Verheyen, one of the best-known environmental lawyers in Germany, and one of those who represented citizens in Germany's constitutional court case this year, says she believes there are three reasons for the increase in successful cases. "One is that courts take a long time to actually come to conclusions," she says. An increasing number of cases have been filed since 2014, so some are only now being heard after many years of work.</p>
+            <p>On top of this, the scientific evidence that climate change is caused by humans has become undeniable, meaning it is much easier for lawyers to prove this in court. And the governing laws that countries are expected to follow have also developed and expanded - Verheyen points out that back when she first started studying law around three decades ago, there was nothing remotely related to climate.</p>
+            <p>"And then obviously the narrative of what society perceives climate change to be has changed," she explains. "A lot of law is flexible to some degree, because you always have to interpret existing rules. And when [judges] do that, they take into account societal norms and how belief systems might have changed."</p>
+            <p>She compares this development to marijuana-related offences - as attitudes towards the drug have become more liberal in many countries, sentences have become much lighter. In the context of climate change, the public now overwhelmingly accepts the scientific consensus that it is man-made, and polls regularly put it towards the top of peoples’ concerns. This has in turn made courts more willing to rule against those responsible for emissions.</p>
+            <p>Verheyen explains that this year's German ruling is significant because many countries do not have a constitutional court that can make this type of decision. Secondly, it is unlimited, so applies from now until forever, and she expects it to have a big impact on other cases around Europe.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Roda Verheyen successfully represented citizen's in Germany's constitutional case in 2021 (Credit: Alamy)</figcaption>
+            </figure>
+            <p>As well as cases against governments, cases against corporations have also been gathering pace. One landmark ruling of 2021 was again in The Netherlands, where oil giant Royal Dutch Shell was ordered to cut its emissions by 45% by 2030, compared with 1990 levels. Shell has said it will appeal the ruling, while stepping up efforts to reach net zero emissions by 2050.</p>
+            <p>A Royal Dutch Shell spokesperson says the company is "rising to meet the challenge of the Dutch court's ruling" and has committed to reducing its Scope 1 and 2 emissions by 50% by 2030, compared with 2016 levels - these are Shell's direct emissions from owned or controlled sources, and its indirect emissions from the generation of purchased electricity, steam, heating and cooling.</p>
+            <p>"Our 2022 business plan will reflect this new target, which we are committed to delivering regardless of whether we win or lose our appeal against the ruling," the Shell spokesperson says.</p>
+            <p>These reductions don't include the emissions from burning Shell's fossil fuel products, which come under the category of Scope 3 emissions. The Dutch ruling stated that the company also needed to reduce its Scope 3 emissions, but the Shell spokesperson says that these findings hold Shell accountable for a wider global issue.</p>
+            <p>Paul Benson, a lawyer at Brussels-based NGO Client Earth, which specialises in environmental litigation, says this case "sought to apply the same reasoning [from the ruling against the Dutch government] to a corporate body. That was very novel, and I think a lot of commentators and people in our fairly enclosed legal circle weren't entirely sure what way the court would interpret [that]."</p>
+            <p>"I was thrilled for a court to find that a company's climate policy is in effect inadequate," he continues, calling the judgment "ground-breaking". The case was also the first time that a company was ordered to comply with the Paris climate agreement: "[It] shows the Paris agreement has teeth - not just against governments, but against companies."</p>
+            <p>This has paved the way for other lawsuits seeking to force corporations to comply with the treaty - Verheyen is currently working on a lawsuit against German carmakers BMW, Mercedes-Benz and Volkswagen which, if successful, would force them to phase out combustion engines by 2030 in line with the Paris goals. "As you would expect, actors in this space and lawyers in our community have been studying the [Shell] judgement very carefully, and sought local reasoning to apply [it] in their jurisdiction," adds Benson.</p>
+            <p>"The complaint has not yet been served on us," says a spokesperson for Daimler, which makes Mercedes-Benz vehicles. "We do not see a basis for a cease-and-desist declaration, because we have long since issued a clear declaration for our 'lane change' to climate neutrality: As a car manufacturer, it is our ambition to become fully electric by the end of the decade wherever market conditions allow."</p>
+            <p>A BMW spokesperson says: "The BMW Group is firmly committed to the Paris climate agreement and already leads the automotive industry in the fight against climate change." Meanwhile a Volkswagen spokesperson says that Volkswagen was the first car manufacturer to commit to all targets set by the Paris climate agreement "and is committed to become net carbon neutral at the latest by 2050", aiming to invest €35bn [£30bn/$40bn] in electric mobility before 2025.</p>
+            <blockquote>I think there's a tendency sometimes for people to think about climate in a fatalist way. But everything we do now to mitigate and adapt is hugely worthwhile - Paul Benson</blockquote>
+            <p>Benson and one of his colleagues, Sebastian Bechtel, both stress that the cases taking place now only challenge a fraction of environmental destruction that is happening around the world. Many activists do not have the financial resources to take on big corporations. "A lot of countries do not want to bring these claims," Bechtel says. "In the UK, those relate primarily to costs. In other countries, it's simply not possible to go to court to enforce specific laws."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Increasingly solid science proving anthropogenic climate change and shifting public sentiment are two reasons for the uptick in climate lawsuits (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>Back in Germany, a newly launched NGO, Green Legal Impact, is seeking to address this issue by offering specialised training to young lawyers and connecting civil society groups to those offering legal representation. Managing director Henrike Lindemann says that as a young environmental activist she "always saw that young people had political ideas. And then there were lawyers, often old white men, who told us our ideas were not possible because of the law," she says. "And I thought, I want to know for myself if this is true. And if it is, I want to know how to change it."</p>
+            <p>Lindemann says that one of the aims of the organisation is to encourage activist groups to be strategic in the court cases they pursue, so that any judgments can pave the way for further litigation. She gives the example of a number of current cases challenging the planned 850km (530 miles) of motorway due to be built in Germany, which she argues has not been looked at through the lens of climate. "I think if the court [ruled against one part of motorway], the discussion would change," she says. "It would not just be about that one section of motorway, it would be the entire plan. And then we would have to change the whole discussion around mobility."</p>
+            <p>The question of access to justice also brings about the issue of whether those in the Global South, who are disproportionately impacted by climate change, could in future bring cases against corporations or governments in wealthier nations. Green Legal Impact is already working on helping people in other countries who have been impacted by German companies' actions seek justice, and a recent UK ruling stated that communities can sue parent companies for environmental damage caused by their subsidiaries.</p>
+            <p>Verheyen says it would be difficult to find courts to support cases against foreign governments, "unless at some point one very severely hit country decides to go state-versus-state, which has been a topic of conversation in academic and political circles for a long time, but hasn't happened."</p>
+            <p>Environmentalists are feeling optimistic after this year's judgments. But given how slowly courts move, do they feel this may all be too little, too late? "Obviously I don't think it's too late, otherwise I would stop what I'm doing," replies Verheyen. "I think we're actually seeing a lot of movement."</p>
+            <p>Benson agrees. "I think there's a tendency sometimes for people to think about climate in a fatalist way," he adds. "But everything we do now to mitigate and adapt is hugely worthwhile."</p>
+            <p>In terms of which potentially ground-breaking cases we might see in future, Verheyen suggests that both the finance sector "and anything to do with land use and forests" are areas where she is expecting more action to arise. "If you look closely at the Shell judgement, it says, no further fossil fuel investment, full stop," she explains. "If I was a financial institution, I would be looking very closely at that one."</p>
+            <p>But overall, lawyers working in this field are keen to point out that litigation isn't a silver bullet for ending the climate crisis. "It's just one of the levers that can be pulled to trigger necessary change," says Benson. "The other levers are activism, policy and, of course, science. But [litigation] is an incredibly powerful tool, and I think this year we've seen that."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

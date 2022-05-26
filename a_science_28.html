@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_science_28" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Science</mark>
+                <h2>Astronomers stand up to satellite mega-constellations</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Astronomy is finally putting up a co-ordinated front to defend its interests as thousands of satellites are placed in the sky.</strong></p>
+            <p>Huge networks of spacecraft are being launched that are making it harder to get a clear view of the cosmos.</p>
+            <p>These low-orbiting, fast-moving satellites leave bright streaks across telescope images.</p>
+            <p>The International Astronomical Union is establishing a new centre to focus the community's response.</p>
+            <p>Its work will be led by the US National Optical-Infrared Astronomy Research Laboratory (NOIRLab) in Tucson, Arizona; and by the Square Kilometre Array Organisation (SKAO) in Manchester, UK. The latter is most concerned with the satellites' effects on radio astronomy.</p>
+            <p>The new Centre for the Protection of the Dark and Quiet Sky from Satellite Constellation Interference will try to act as a single voice for astronomy.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Artwork: Starlink satellites incorporate measures designed to reduce their reflectivity</figcaption>
+            </figure>
+            <p>It will engage with, and encourage, satellite companies to make every effort to minimise the light pollution they are creating. But it will also pursue policymakers around the world to tighten the regulations on what is acceptable behaviour in orbit.</p>
+            <p>"The IAU's primary priority is to take [a] cooperative approach with industry and have them establish a voluntary corporate culture that looks to mitigate these impacts," said Richard Green from the University of Arizona.</p>
+            <p>The dramatic reduction in the cost of rocket launches, linked to a similar reduction in the cost of building satellites, has led to a rush to place new infrastructure in the sky.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Starlink satellites cross over Venus and the Pleiades ("Seven Sisters") group of stars</figcaption>
+            </figure>
+            <p>Of immediate concern are the constellations designed to deliver broadband internet connections from space. These involve placing many hundreds to many thousands of satellites just a few hundred kilometres above the Earth.</p>
+            <p>At this altitude, they move quickly across the sky, and at dawn and dusk when the Sun is low on the horizon will catch the light and trace a bright line through a telescope's exposure.</p>
+            <p>The satellites' transmissions can also, if not tightly constrained, bleed across the frequencies used by astronomy's radio antennas.</p>
+            <p>Two broadband projects - US entrepreneur Elon Musk's Starlink network and the UK-headquartered OneWeb initiative - are leading the new wave of constellations, and have between them launched over 2,000 satellites, but both have plans for many, many more.</p>
+            <p>As do other companies and nations. The Amazon.com founder Jeff Bezos is preparing his Kuiper network. And the EU, for example, wants its own broadband network in orbit by the middle of this decade.</p>
+            <p>Federico Di Vruno, from the SKAO and co-director of the new centre, said important science was at risk if a free-for-all was permitted.</p>
+            <p>He cited the radio detectors that study the cosmic microwave background, which is the oldest light in the sky and gives us a glimpse of the structure and contents of the Universe shortly after the Big Bang. These detectors could be blinded by the downlinks from the constellation satellites, he said. And in optical/visible astronomy, Dr Di Vruno raised the issue of planetary defence.</p>
+            <p>"At optical wavelengths, observations with long exposure times will be affected the most, particularly in the hours close to twilight, and observing low on the horizon. A prime example would be the potential hazardous asteroid research done by the international asteroid warning network," he explained.</p>
+            <p>Connie Walker from NOIRLab and the other co-director of the new centre added: "As the number of satellites continues to grow, astronomy is facing a watershed moment of increasing interference with observations and loss of science.</p>
+            <p>"By the end of a decade, more than 5,000 satellites will be above the horizon at any given time at a typical dark-sky observatory location. A few 100 to several 1,000 of these satellites will be illuminated by the Sun. These satellites will be detectable by even the smallest optical or infrared telescopes, depending on the hour of the night and the season."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Starlink satellites over Carson National Forest, New Mexico, photographed soon after launch</figcaption>
+            </figure>
+            <p>The new centre will impress on the companies the need to provide accurate and up-to-date information on the co-ordinates of their satellites so their movements can be anticipated when planning astronomical observations.</p>
+            <p>The centre will also become a knowledge bank to develop and host software that can be used to "clean" telescope imagery.</p>
+            <p>And, critically, it will act as a forum to discuss with industry voluntary measures that can be implemented to minimise the intrusiveness of the satellites. A good example has been SpaceX's and OneWeb's willingness to discuss how they can reduce the reflectivity of their spacecraft by applying different coatings or sunshields.</p>
+            <p>"It's better to make these agreements than to go through regulations. But we're hopeful in talking with them already that some compromises can be made," said Dr Walker.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

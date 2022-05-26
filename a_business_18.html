@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_business_18" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Business</mark>
+                <h2>Bionic eye tech aims to help blind people see</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Once upon a time there were some unusual Australian sheep, with exceptionally sharp eyesight.</strong></p>
+            <p>The small flock spent three months last year with bionic, artificial eyes, surgically implanted behind their retinas.</p>
+            <p>These sheep were part of a medical trial that aims to ultimately help people with some types of blindness to be able to see.</p>
+            <p>The specific aim of the sheep test was to see if the device in question, the Phoenix 99, caused any adverse physical reactions - the bionic eye was said to have been well tolerated by the animals. As a result, an application has now been made to start testing in human patients.</p>
+            <p>The project is being carried out by a team of researchers from the University of Sydney and the University of New South Wales.</p>
+            <p>The Phoenix 99 is wirelessly linked to a small camera attached to a pair of glasses, it works by stimulating a user's retina. The retina is the layer of light-sensitive cells at the back of the eye that convert light into electrical messages, sent to the brain via the optic nerve, and processed into what we see.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A close up of the tiny Phoenix 99 system, which it is hoped will soon start human trials</figcaption>
+            </figure>
+            <p>The Phoenix 99 device is able to bypass faulty retina cells, and 'trigger' those that are still able to work.</p>
+            <p>"There were no unexpected reactions from the tissue around the device, and we expect it could remain in place for many years," says Samuel Eggenberger, a biomedical engineer at the the University of Sydney's School of Biomedical Engineering.</p>
+            <p>At least 2.2 billion people around the world suffer from some form of impaired vision, ranging from a mild level to total blindness, according to the World Health Organisation. The WHO says the financial impact of this, in terms of loss of productivity, is more than $25bn (£19bn) per year for the global economy.</p>
+            <p>The use of bionic eye systems to help treat blindness is an industry still very much in its infancy, but with technological developments advancing quickly, one report expects the sector to be worth $426m by 2028.</p>
+            <p>"Advancements in technology have been redefining ophthalmology," says Dr Diane Hilal-Campo, a New Jersey-based ophthalmologist. "Innovations have not only made diagnosis easier and more precise, but have transformed patient care for the better."</p>
+            <p>As an example, she points to a bionic eye that has already been fitted to more than 350 people around the world - Argus II from US firm, Second Sight.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Turkish woman Dilek Umran Ozturk got an Argus II implant in 2015, and it has enabled her to see the light form of people and shape for the first time</figcaption>
+            </figure>
+            <p>This works in the same way as the Phoenix 99, and the initial version was first fitted to a patient as far back as 2011.</p>
+            <p>Second Sight is now continuing work on a new product called Orion. This is a brain implant, and the company says that it has the goal that Orion will be able to treat nearly all forms of profound blindness. The project is still in early clinical phases.</p>
+            <p>Other bionic eyes systems include the Prima device, which has been developed by French firm Pixium Vision; and Bionic Eye System by another Australian team, Bionic Vision Technologies.</p>
+            <p>Dr Hilal-Campo says that one current problem is the high cost of the technology, which makes them "accessible to very few people". The Argus II, for example, costs about $150,000.</p>
+            <p>She adds that as the tech is still in its infancy the results are not yet anywhere near perfect. "I have no doubt that the technology has transformed the lives of patients who have been lucky enough to receive these implants," says Dr Hilal-Campo. "Currently, however, the technology is limited, only allowing for the perception of light and shadows, and, to some extent, shapes.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Dr Hilal-Campo says that the cost of bionic eyes need to come down substantially</figcaption>
+            </figure>
+            <p>"[Yet] I am optimistic, that in the coming years, biotech firms will continue to find new ways to help restore sight in those with vision loss."</p>
+            <p>Bhavin Shah, a London-based optometrist, agrees that bionic eyes still have a long way to go. He compares them with digital cameras, which were first invented in 1975, and then took decades before they were widely available.</p>
+            <p>"I believe that once the quality of the technology reaches a suitable standard, and approaches something approximating the vision achieved by a healthy eye, this technology will be much more commonplace," he says.</p>
+            <p>"However, there is still a strong drive to treat or prevent blindness from occurring in the first place."</p>
+            <p>Technologies that detect and diagnose vision impairments, he explains, are likely to have a much wider impact in the short-term. "There are [now] more advanced, easier to use, more reliable and inter-connected diagnostic tools," Mr Shah says.</p>
+            <p>"For example, we are able to quickly take multiple scans of different structures within the eye, examine them in greater resolution, and share them quickly with colleagues. Artificial intelligence is also able to take decisions [on this], in some cases faster, and with greater reliability, than experienced clinicians."</p>
+            <p>Dr Karen Squier, an associate professor and chief of low-vision services at the Southern College of Optometry in Memphis, Tennessee, believes that some of the most important improvements in eyecare technology are often the smallest.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Dr Karen Squier says that we often forget the big advances in smartphone technology that have helped people with impaired vision</figcaption>
+            </figure>
+            <p>She points to thing like the Apple iPhone's accessibility features. These include a voiceover function whereby the user can get audio descriptions of what is on the screen - from the battery percentage, to who is calling, and what app your finger is on.</p>
+            <p>Dr Squier also highlights Microsoft's Seeing AI app, which uses a smartphone's camera to identify people and objects, and describe them audibly. It can also check barcodes and then tell you what the item is, or read handwriting out loud, such as a letter from a grandchild.</p>
+            <p>"That's probably the technology that people get most excited about, because it does a lot of different things, and just uses the camera and operating software that is built into the phone already," adds Dr Squier "And it's usually pretty easy for people to learn how to use."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Numerous systems now allow smartphones to talk to a blind or visually impaired user</figcaption>
+            </figure>
+            <p>Longer-term, she believes some of the main benefits of eyecare technologies will come from integrating them into disability-friendly public policies and systems. One example could involve using technology that can alert vision-impaired passengers of bus timetables and alerting them when a bus is on its way, eliminating potential problems at the bus stop.</p>
+            <p>That isn't to say that Dr Squier doesn't see more sophisticated technologies - bionic eyes included - having a significant impact in the future as technology advances.</p>
+            <p>"I think even bionic eyes are going in the right direction," she says. "But we'll have to see how it goes."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

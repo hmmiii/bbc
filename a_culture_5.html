@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_culture_5" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Culture</mark>
+                <h2>Where asking someone's age isn't rude</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Though considered impertinent in many cultures, asking someone's age in South Korea is a social contract that establishes the pecking order between speakers.</h3>
+            <p>The first time British expat Joel Bennett understood he had committed a major linguistic faux pas was when he thanked a restaurant owner for a good meal during his first trip to South Korea.</p>
+            <p>The owner was a female in her 60s and Bennett, then 23, said "gomawo", which translates to a breezy "thanks" in English. He thought he was being polite.</p>
+            <p>Unbeknownst to him, Bennett, now 33, had used a casual, informal version of "thank you" that would have been construed as rude and insulting had he been Korean.</p>
+            <p>"I didn't realise there were so many ways to say thank you," Bennett said. "I always just thought thank you was thank you."</p>
+            <p>But in Korean culture, as a person several decades younger than the owner, Bennett was expected to have used the honorific form of the Korean language, a complex linguistic system with multiple levels of speech that has been described as one of the most complicated languages in the world as it requires constantly assessing one's seniority, social status and level of intimacy in relation to the addressee.</p>
+            <p>This is why, in South Korea, shortly after meeting someone new, you will be invariably asked to reveal your age. Freely sharing your age or your year of birth is not merely a social convention. It's a social contract that establishes the pecking order and hierarchy between speakers. Because even the difference of one year can dictate everything from the way people speak to each other to the way they eat and drink in each other's company.</p>
+            <p>"The number one factor when determining which speech style to use is age," explained Jieun Kiaer, a professor of Korean language and linguistics at the University of Oxford. "This is why people are always asking each other their age. Not because they're necessarily interested in how old you are, but because they really need to find the suitable form of speech style."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>South Korea is among the world's most technologically advanced and digitally connected nations (Credit: Diego Mariottini/Getty Images)</figcaption>
+            </figure>
+            <p>For some Westerners, inquiring after a new acquaintance's age could be seen as inappropriately intrusive. But to fully understand why age isn't just a number in Korean society requires understanding the lasting impact of neo-Confucianism in South Korea, an ancient ideology centred on filial piety, deference to elders and social order, which governed the country for more than 500 years throughout the Joseon Dynasty (1392-1910) and continues to dictate social norms.</p>
+            <p>"All of Confucianism can be summarised in two words," said Ro Young-chan, a professor of religious studies and the director of the Korean Studies Centre at George Mason University in Fairfax, Virginia. "Humanity and ritual."</p>
+            <p>The teachings of Chinese philosopher Confucius (551 to 479BC) were born during a period of upheaval in Chinese history, Ro explained. To restore order throughout the country, the philosopher believed that humanity could be saved by establishing a social structure based on a strict code of propriety and ceremonial rites in which everyone occupied a certain role - and everyone understood their place within it.</p>
+            <p>In neo-Confucianism, social harmony can be achieved by respecting the natural order within five central relationships known as oryun in Korean: king and subject; husband and wife, parent and child; sibling to sibling; and friend to friend. Those who occupy the senior role - parent, husband, king - are to be treated with respect and humility, while those on the lower rungs of the social hierarchy are cared for with benevolence in return.</p>
+            <p>But out in larger society, when meeting someone new, who gets assigned the higher position - and gets to command the respect, courtesies and honorific formalities that go along with it? </p>
+            <p>That's where age comes in.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Korean society remains centred around ancient traditions of filial piety, deference to elders and social order (Credit: Prasit Photo/Getty Images)</figcaption>
+            </figure>
+            <p>While the honorific Korean language system has as many as seven levels of speech and writing styles, everyday conversation can be divided into two levels: banmal, the casual, informal form; and jondaemal, the more formal, deferential form of speech which is generally expressed by adding the ending "yo" to a sentence. </p>
+            <p>"It requires a lot of care and negotiation to find the right speech styles," said Kiaer. "And if you use the wrong one, it can create a lot of conflict and you won't be able to talk successfully with the other person.</p>
+            <p>Because while age plays a big part in determining speech style, it's not a hard and fast rule, Kiaer explained. There are a host of nuances and factors to consider: the context; the socio-economic status between speakers; levels of intimacy; and whether you're in a public or private setting. Thanks to the global popularity of Hallyu, or Korean wave - be it K-pop, the film Parasite or the recent Netflix export Squid Game ­- the principles are becoming easier to teach, she said, but can still be confounding.</p>
+            <blockquote>A fascinating thing is that this is difficult not only for non-Koreans, but Koreans too
+            </blockquote>
+            <p>It's all so confusing, in fact, that even native Korean speakers can get it wrong. In a 2019 paper published in the journal Discourse and Cognition, Kiaer found that more than 100 conflicts involving serious incidents of physical assault in South Korea between 2008 and 2017 were caused after one of the speakers was perceived to have shifted to banmal, or informal speech, inappropriately.</p>
+            <p>"A fascinating thing is that this is difficult not only for non-Koreans, but Koreans too," Kiaer said.</p>
+            <p>At this point in the conversation, I, a second-generation Korean Canadian with mediocre Korean language skills, entered a mild panic and sifted through a mental checklist of all the times I could have offended my elders, as well as those younger than myself.</p>
+            <p>I shamelessly seized the opportunity to ask the linguistic expert a personal question: When I first met my sister-in-law's younger sister, almost 20 year my junior, did I err when I switched to banmal a few hours following our initial encounter?</p>
+            <p>There was a pause. I could tell Kiaer was trying to break it to me gently. Though I was clearly the elder in this situation, she was my in-law, a very particular relationship in Korean culture, and I had just met her. Either I could have continued using jondaemal, or I should have negotiated and asked her permission to address her casually, Kiaer said.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Drinking in South Korea is riddled with rules, including that you must never let an elder's glass stay empty for long (Credit: Jaewook Kim/Getty Images)</figcaption>
+            </figure>
+            <p>"To find the right speech style, the first step is always to negotiate. Because if you switch to the other speech style without negotiation, that's what leads to people feeling offended."</p>
+            <p>Before moving to South Korea in August, Toronto expat Delia Xu was strategic about learning Korean to avoid doing just that. "I think it's really important when you're first learning, to learn the formal grammar structures," she said. "Because you don't ever want to accidentally come off as rude."</p>
+            <p>There are likewise a raft of non-verbal gestures and behaviours that go along with being on the lower rung of the social hierarchy.</p>
+            <p>In a 2016 YouTube video that has been viewed more than 1.2 million times, expat Bennett was given a lesson on proper drinking etiquette in South Korea when in the company of elders. The rules are dizzying: as a sign of respect, you must pour the drink using two hands; turn your head away from the elder when drinking; never let the elder's glass stay empty for long; and to wait for the elder to set down their glass first before lowering your own.</p>
+            <p>"You're not on edge, but you're aware," Bennett said. "I'm looking at the speed at which they're drinking their beer and I'm going to match that. I make sure that they're topped up so that when we go to cheers, it's not an awkward moment."</p>
+            <p>Xu also admits that learning the code of drinking conduct can be daunting.</p>
+            <p>"It's definitely a lot of pressure because suddenly, you're bestowed with a lot of responsibilities," she said. "If you take a drink of alcohol and you don't look away, you've suddenly offended someone. It can definitely be consuming but I'm sure it's something you get used to."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Travellers to South Korea should be aware of the complex linguistic system with multiple levels of speech (Credit: Sunwoo Jung/Getty Images)</figcaption>
+            </figure>
+            <p>At this point, it might be easy to call out the Korean social structure as an oppressive form of both ageism and sexism, as women are also expected to obey and submit to their husbands under traditional Confucian doctrine. But as Bennett soon learned, the role of being an elder also comes with its own responsibility.</p>
+            <p>"A lot of that authority is quite beautifully about serving," he said. "If I'm the elder person, who is more ahead in terms of my career and in life, I will look after you as I'm older." In contemporary Korea, that might mean paying for the younger person's dinner or serving as a professional and personal mentor</p>
+            <hr>
+            <p><strong>WAYS TO CONVEY RESPECT</strong></p>
+            <ul>
+                <li>When giving and receiving money, do so with two hands</li>
+                <li>When in doubt, always use the formal, polite speech style regardless of their age</li>
+                <li>In general, ending sentences with "yo" and "nida" denotes the polite, jondaemal form</li>
+                <li>Add the suffix "nim" to names and titles to show respect</li>
+            </ul>
+            <p>It's a concept that circles back to the principle of filial piety and honorifics. In more intimate relationships, older female friends aren't called by their names but by the generic term "older sister" (unni when it's a female speaking, noona for males). Older male friends are also called "older brother" (obba for female speakers, hyung for male speakers).</p>
+            <p>"In Korea, social ethics is an extension of the family," Ro explained. "We have to understand society as a larger family. If you meet an older person, you treat them like your older brother or sister. It's an interesting way to see society, the nation and the world. That humanity is just an extension of our family."</p>
+            <p>But Ro acknowledges that somewhere along the way, the Confucian principle of reciprocity between senior and junior; younger and older; male and female relationships may have got lost.</p>
+            <p>Instead of mutually beneficial relationships where respect is offered in exchange for care, and deference is given in return for guidance, the hierarchical system can be ripe for abuse and power imbalances. In the Korean workplace, for example, the phenomenon of authoritative bosses harassing lower rank-and-file subordinates is so common it spawned a modern term to denote workplace bullying called gapjil. And when it comes to gender equality, South Korea consistently posts the largest gender pay gap among the 38 member states of the OECD. In addition, a growing backlash led by conservative South Korean men against the feminism movement has been gaining momentum in recent years.</p>
+            <p>One modern Korean scholar, Kim Kyung-il, even called for the demise of Confucianism altogether in a controversial book titled Confucius must die for this nation to live.</p>
+            <p>For Ro, however, what ails South Korean society is not Confucianism, but a poor understanding of it.</p>
+            <p>“Confucianism is a living tradition," he said. "We have to revitalise and reinterpret our traditions and make them make sense to modern society. Confucianism is 2,500 years old. We cannot simply abandon all this. In one way or another, we are indebted to this tradition."</p>
+            <p>Lost in Translation is a BBC Travel series exploring encounters with languages and how they are reflected in a place, people and culture.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

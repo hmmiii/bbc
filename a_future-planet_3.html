@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_future-planet_3" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Future Planet</mark>
+                <h2>How Taipei discovered an active volcano on its doorstep</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>When Taiwan's capital discovered an active volcano on its doorstep, it found itself hastily setting up a system to monitor it for dangerous signs.</h3>
+            <p>Steam billows from cracks in rocks stained a sickly yellow-green. Pools of cloudy water bubble like a pan on the boil. The sharp stench of sulphur laces the air.</p>
+            <p>This smouldering moonscape is Xiaoyoukeng, an impressive collection of steam vents in Yangmingshan National Park, an 11,000-hectare (42 sq-mile) expanse of hiking trails lying within Taipei's city limits.</p>
+            <p>Xiaoyoukeng is the best place to get up close to the park's geothermal activity - it is pitted with fumaroles (natural vents in the Earth's surface that allow gases to escape like steam from a kettle's spout) and hot springs, some just a metre (39in) or so from the paths.</p>
+            <p>For decades, most residents of the Taiwanese capital simply thought they were lucky to have such a striking national park on their doorstep. Geologists knew about the Datun (sometimes spelt Tatun) Volcano Group, a body of around 20 peaks, in the park, but they largely thought that the fumaroles and hot springs were simply remnants of its fiery past. With no historical records of an eruption, the accepted view was that the group was extinct and no longer posed a risk.</p>
+            <blockquote>In a worst-case eruption scenario, hot lava could engulf residential settlements at the foot of the park, while the cities could be covered in swirling clouds of volcanic ash</blockquote>
+            <p>But in February 2017, the media reported on a recent paper by Lin Cheng-Horng, director of the Taiwan Volcano Observatory, that argued there was a magma chamber beneath Datun - the hallmark of an active volcano. Downtown Taipei, with its skyscrapers, bars and restaurants, is just 15km (9 miles) away. Five million people in Taipei and New Taipei cities are well within reach of the impacts of an eruption. In a worst-case eruption scenario, hot lava could engulf residential settlements at the foot of the park, while the cities could be covered in swirling clouds of volcanic ash.</p>
+            <p>Behind the scenes, Taiwan's government swung into action. First, it ordered scientists to find out as much as they could about the volcanoes and the risks. Then, in May 2018, it tasked the Central Weather Bureau (CWB), its meteorological and forecasting agency, to work with scientists, government agencies and officials to hammer out procedures for an early warning system. It was unveiled to the public little more than two years later, in September 2020.</p>
+            <figure>
+                <img src="" alt="">
+            <figcaption>If one of the 20 peaks in Datun Volcano Group erupted, Taipei could be covered in swirling clouds of volcanic ash (Credit: Sean Pavone/Alamy)</figcaption>
+            </figure>
+            <p>Most of what we know about the volcanoes in Xiaoyoukeng can be credited to Lin, who has dedicated the past two decades of his life to studying them. The majority of the academic literature on Taiwan's volcanoes over the past decade features his name, and it was his 2016 paper proving the existence of the magma chamber that first made the government sit up and pay attention. "Everyone knows me as the man who studies volcanoes," he says, laughing.</p>
+            <p>My first view of Lin is of a smiling grandfatherly figure carrying a giant black golf umbrella. He cuts a sprightly figure in the rain at the gates of the Taiwan Volcano Observatory near Datun in Yangmingshan.</p>
+            <p>Lin was originally interested in earthquakes, but pivoted to volcanology about two decades ago, his interest piqued by emerging studies that showed maybe Datun wasn't extinct after all. Researchers had detected something odd about the gases being given off at the volcanoes' hot springs - they had too much helium-3, an isotope that originates from deep under the earth in the mantle. Scientists view helium an "excellent tracer of magmatic processes" and the presence of so much helium-3 pointed to volcanic activity.</p>
+            <p>In 2003, Lin led a small study placing seismometers all over the park, a standard approach to investigating the status of a volcano. He was surprised when they recorded a large number of seismic activities with a very peculiar trace. "I had not seen these kinds of waveforms before," he says. He sent them to fellow scientists in Japan, a country with well over 100 volcanoes of its own. "They told me that this was the signature of an active volcano," he says. The evidence pointing to volcanic activity was mounting, though it was still a fringe belief.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Tourists reach the peak of Cising Mountain in Yangmingshan National Park, a huge expanse of hiking trails lying within Taipei's city limits (Credit: Stockinasia/Alamy)</figcaption>
+            </figure>
+            <p>Sitting on the Pacific Ring of Fire, Taiwan experiences around 1,000 earthquakes a year that can be felt, and thousands more that can't. Lin exploited this intense seismicity to infer what was going on underground.</p>
+            <p>He focused on two particular waveforms produced by the tremors: primary (or P) and shear (or S) waves. These can be used to detect any areas of liquid (indicating a possible magma chamber) under the Earth's surface because liquids block S waves and slow down P waves. The method is the same one scientists used more than 100 years ago to show that the outer core of the Earth, about 2,900km (1,800 miles) down, is liquid.</p>
+            <blockquote>I was pretty scared. How could that be true? We were told it's extinct ever since I was a child - Patrick Lu</blockquote>
+            <p>Lin indeed noticed that the P waves on the seismometers over Datun were delayed compared with those detected on seismometers elsewhere in the park, and that the S waves didn't arrive at all, but showed up on the other seismometers. His calculations revealed the existence of a magma chamber below the volcano group and a hydrothermal reservoir (composed of water and steam) above it.  </p>
+            <p>"This was the key evidence that this is an active volcano," he says. "As a researcher I was excited that I had proof, but on the other hand I worried that someday we could have a disaster."</p>
+            <p>For the public living near Datun, though, the headlines were shocking. Patrick Lu, a father of two who lives in Tianmu, a residential district close to the volcanoes, remembers how he felt when he first heard the news. "I was pretty scared," he recalls. "How could that be true? We were told it's extinct ever since I was a child."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Volcanologist Lin Cheng-Horng has dedicated the past two decades of his life to studying the volcanoes in Xiaoyoukeng (Credit: Dinah Gardner)</figcaption>
+            </figure>
+            <p>Alarmed by the findings, the government asked Lin and his team to gather more information about the magma chamber so they could understand the signs and risks of eruption, essential for the ground work needed to construct an emergency warning system. The more they understood about the magma chamber, the easier it would be to know when and where an eruption would take place. "The problem was we didn't know how deep or how big the magma chamber was; we didn't know the detailed geometry," says Lin.</p>
+            <p>They deployed 146 broadband seismic stations over northern Taiwan to record the maximum number of earthquakes from all different directions including local tremors to what are called tele events - quakes from as far away as Japan and Hawaii.</p>
+            <p>"We needed thousands and thousands of quake events to collect data in great detail and we needed them from all different angles to build up a full picture," explains Lin. Within a couple of years, though, they had enough information. It was bad news: the chamber was both shallower and bigger than they had thought. It was roughly cylindrical in shape, the top a depth of 8km (5 miles), the diameter around 12km (7.5 miles), and about 12km (7.5 miles) tall.</p>
+            <blockquote>The magma movement is quite slow: it won't happen in the space of a day, it could take a week or even a month - Lin Cheng-Horng</blockquote>
+            <p>In addition to seismic data, Lin and his team also began listening for phreatic activity, an early warning sign of magmatic activity. Constant heat from the magma chamber causes gases underground to move upwards through conduits in the rock until they break through the surface explosively. In large phreatic eruptions, rocks, volcanic ash and other debris are also ejected.</p>
+            <p>Using infrasound sensors, the team picked up what Lin describes as a "conversation" between two fumaroles about 7km (4.3 miles) apart. You can listen to a 100-times speeded-up segment here. Lin says the sound is "a bit like a jet going overhead", at times high pitched, at others low pitched. This conversation was interpreted as more evidence that the volcanoes may erupt phreatically.</p>
+            <p>By 2018, the government was concerned enough about Lin's findings to order its Central Weather Bureau (CWB) to set up an early warning system. The Taiwan Volcano Observatory, headed by Lin, was tasked with designing and establishing a system to monitor in real-time evidence which would indicate a coming eruption. Meanwhile, the CWB would set up a mechanism for them to coordinate with government agencies, city officials and scholars to make decisions - such as possible evacuations - based on the data.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Monitoring equipment in Xiaoyoukeng features a GPS sensor (green dome), underground seismometer (marked by two silver drums on the left) and tiltmeter (Credit: Dinah Gardner)</figcaption>
+            </figure>
+            <p>The observatory set up dense array of around 40 stations called the Yangmingshan Seismic Network that feeds constant data back to the observatory. If the magma started ascending, it would trigger multiple local tremors that would easily be picked up by the array, says Lin. A sudden increase in the number would immediately sound the alert.</p>
+            <p>Two other key sources of data are geodesic (any changes to the curve of the Earth's surface) and the chemical composition of fluids and gases emitted from vents. Lin's team have installed more than 10 GPS stations near the most likely eruption sites at Dayoukeng, Xiaoyoukeng and Huangzuishan (the most seismically active locations) and apparatus at hot springs and fumaroles to constantly measure the concentrations and densities of marker compounds and isotopes, such as carbon dioxide and helium.</p>
+            <p>From a global perspective, the monitoring system is fairly standard. "[S]cientists are typically looking for increases in a volcano's seismicity, deformation, and or gas emissions" to predict eruptions, says Elizabeth Cottrell, a research geologist from the Smithsonian Institution in the US.</p>
+            <p>While Lin's team was setting up the equipment on the slopes of Yangmingshan, the CWB began creating the logistics of the early warning system. Pu Hsin-Chieh, a researcher at the CWB's Seismological Center and Lin's former graduate student, was part of that team. He remembers the stress he and his colleagues at the bureau felt at the time because of the newly understood danger of a volcanic eruption in Taiwan. "There were no modern records of volcanic eruption in the Datun Volcano Group, so it was difficult to design a proper early warning system," he says.</p>
+            <p>The sense of urgency spread to the local government. But when Taipei staged the city's first ever volcano drill in early 2018, weeks before Pu and his team got the orders to start work on the early warning system, they forgot to give the public a heads up. The city's fire department sent an SMS alert to residents living near the volcanoes asking them to evacuate their homes. The fact it was a test drill was only mentioned at the end of the message. A news report at the time described the panic, with one person posting online that they had been "scared to death".</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A hot spring with a temperature of around 100C erupts from a fumerole on Dayoukeng volcano (Credit: Taiwan Volcano Observatory)</figcaption>
+            </figure>
+            <p>Under the early warning system, regular meetings are held by a "task force" of different partners. If they think the data show signs of volcanic activities, a chain of meetings is initiated. First, the task force would consult with an expert committee of scholars. If the evidence of an eruption is still mounting, officials from the central, Taipei City and New Taipei City governments would get involved.</p>
+            <p>Text messages would keep the public informed, as in the 2018 mock drill. Taiwanese are used to receiving these "presidential alerts" for commonplace threats here, such as earthquakes and typhoons. A colour-coded alert has also been designed, with level 1 (green) for "everything is normal"; level 2 (yellow) alerting for possible signs of a coming eruption; and level 3 (red), warning an eruption has happened or is imminent. So far, says Pu, the level has never been raised above green.</p>
+            <p>It's all laid out in a flow chart that Pu shows me. When I ask him how long all these meetings would take in the event of aberrant data, he laughs self-consciously. "I think it could be very fast, but I don't know, it's never happened before."</p>
+            <p>Any early warning system, however, is only effective if the precursors being measured are detected well in advance of any disaster. Lin is confident that in the case of Datun, the TVO will be able to predict any volcanic activity with days, even weeks to spare. "The magma movement is quite slow: it won't happen in the space of a day, it could take a week or even a month," he says.</p>
+            <blockquote>Volcanoes are very complex systems, no matter how much we monitor them, they can still give us significant surprises - Kostas Konstantinou</blockquote>
+            <p>But some other scientists urge caution. Cottrell says that it's not always possible to know when a volcano will erupt. "The elapsed time between precursor activity and an eruption climax is highly variable," she says. "Scientists have documented precursor events that occurred from minutes to years in advance of eruptions."</p>
+            <p>Kostas Konstantinou, a volcanologist at Taiwan's National Central University who took part in the early work placing seismometers over Datun with Lin, agrees it is not possible to say with certainty that Datun would give a clear signal well ahead of time. "Nature does not play by your rules, it plays by its own rules," he cautions. "Volcanoes are very complex systems, no matter how much we monitor them, they can still give us significant surprises."</p>
+            <p>However, Caroline Whitehill, a structural geologist who previously studied risk zones near volcanoes at the University of Caldas in Colombia, is more optimistic about predictions on volcanic eruptions. "The tenor around making statements about predictions is pretty conservative," she says. "Informally, I think we can predict eruptions of monitored volcanoes weeks or months before eruption in most cases."</p>
+            <p>It's not well understood why some volcanoes give off warning signals while others don't, but what is certain is that if Datun is the kind to show early precursors then the observatory's system is about as good as you can get.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Five million people in Taipei and New Taipei cities would be well within reach of the impacts of an eruption from Datun Tatun Volcano Group (Credit: Marko Reimann/Alamy)</figcaption>
+            </figure>
+            <p>Lin says he doesn't believe it is likely that Datun will erupt in his lifetime. He puts the chance of a magmatic event in the next few decades at about 1%, although he warns that a phreatic eruption is much more likely, at 10-20%. While phreatic eruptions do not capture the imagination as much as magma events with their cascades of glowing lava, they can still be deadly. In 2014, a volcano in Japan called Ontake erupted phreatically killing more than 60 people hiking nearby.</p>
+            <p>Konstantinou describes the hydrothermal system in Yangmingshan as like a covered pot of water on the boil. A quake or landslide could depressure the system and cause a phreatic eruption, with rocks sent flying out like bullets, he says. "The danger is very real. It can happen any time."</p>
+            <p>In a paper he co-authored in 2018, Konstantinou calculated that hiking trails and roads at Xiaoyoukeng were within the possible range of rocks that would be expelled in a phreatic eruption. "If it happens on a Sunday, when all the people are out and it's a nice day, taking photos of the fumarole, the casualties are going to be many," he warns.</p>
+            <p>Phreatic eruptions are notoriously difficult to predict, but Lin says the monitoring using tiltmeters, which measure small changes in vertical levels, and other instruments could still help. "We still have a great chance at detecting anomalies if we focus on a variety of data such as those from tiltmeters, geochemical observations and infrasonic signals."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

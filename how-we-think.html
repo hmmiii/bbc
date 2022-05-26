@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How We Work - BBC Worklife</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="howWeThink" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>Worklife</li>
+                <li>How We Think</li>
+            </ul>
+        </div>
+    </section>
+    <div class="postCarouselABox etcSubTop">
+        <div>
+            <h2 class="heading large">How We Think</h2>
+            <div class="controller">
+                <span class="btn_prev"></span>
+                <span class="btn_next"></span>
+            </div>
+        </div>
+        <ul class="gridView">
+            <li class="top">
+                <img src="images/thumb_how-we-think_2.png" alt="Article Image">
+                <div>
+                    <mark>How We Think</mark>
+                    <h3><a href="a_how-we-think_2.html">How to live with your regrets</a></h3>
+                    <p>Regret is often seen as undesirable, but it’s a crucial emotion in helping us develop. How do we harness its powerful lessons?</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_how-we-think_2.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="top">
+                <img src="images/thumb_how-we-think_3.png" alt="Article Image">
+                <div>
+                    <mark>How We Think</mark>
+                    <h3><a href="a_how-we-think_3.html">The brain quirk that ruins future plans</a></h3>
+                    <p>We should think more about whom we'll be in the future because doing so has profound consequences for our health, happiness and financial security.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_how-we-think_3.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="top">
+                <img src="images/thumb_how-we-live_7.png" alt="Article Image">
+                <div>
+                    <mark>Lovelife</mark>
+                    <h3><a href="a_how-we-live_7.html">Why people settle for romantic partners</a></h3>
+                    <p>We assume we choose our life partners very carefully but research shows we may be less selective in love than we think.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_how-we-live_7.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="top">
+                <img src="images/thumb_how-we-think_4.png" alt="Article Image">
+                <div>
+                    <mark>How We Think</mark>
+                    <h3><a href="a_how-we-think_4.html">The paradox of the 'frenemy'</a></h3>
+                    <p>You and your colleague have a love-hate relationship. Why does this this friendly-ish, ambivalent grey area make you so anxious?</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_how-we-think_4.html" class="readMore">Read More</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <section class="plainBox">
+        <h2 class="heading large">More Stories</h2>
+        <ul class="gridView hiddenList">
+            <li class="left">
+                <img src="images/thumb_how-we-think_5.png" alt="Article Image">
+                <div>
+                    <mark>How We Think</mark>
+                    <h3><a href="a_how-we-think_5.html">How awe can transform the mind</a></h3>
+                    <p>Intentionally seeking the feeling of awe can improve memory, boost creativity and relieve anxious rumination.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_how-we-think_5.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="right">
+                <img src="images/thumb_how-we-think_6.png" alt="Article Image">
+                <div>
+                    <mark>How We Think</mark>
+                    <h3><a href="a_how-we-think_6.html">The power of the 'fresh-start effect'</a></h3>
+                    <p>1 January may seem like an arbitrary date to start self-improvement, but there are good psychological reasons for doing so.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_how-we-think_6.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="left">
+                <img src="images/thumb_how-we-think_7.png" alt="Article Image">
+                <div>
+                    <mark>How We Think</mark>
+                    <h3><a href="a_how-we-think_7.html">Can you ever get over a grudge?</a></h3>
+                    <p>We all have ongoing grudges. It’s in our interests to get over them so, can we?</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_how-we-think_7.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="right">
+                <img src="images/thumb_how-we-think_8.png" alt="Article Image">
+                <div>
+                    <mark>How We Think</mark>
+                    <h3><a href="a_how-we-think_8.html">Why you find do-gooders insufferable</a></h3>
+                    <p>‘Do-gooders’ are often judged harshly. Why do we resent their acts of altruism or question their motives?</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_how-we-think_8.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="left">
+                <img src="images/thumb_how-we-think_9.png" alt="Article Image">
+                <div>
+                    <mark>How We Think</mark>
+                    <h3><a href="a_how-we-think_9.html">Why saying no feels so awkward</a></h3>
+                    <p>People have a hard time saying no, for fear of disagreement. Influencers can use this power for good  or bad.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_how-we-think_9.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="right">
+                <img src="images/thumb_how-we-think_10.png" alt="Article Image">
+                <div>
+                    <mark>How We Think</mark>
+                    <h3><a href="a_how-we-think_10.html">The art of better conversation</a></h3>
+                    <p>Can you chat your way to greater social connection? Five useful steps can help us strengthen ties and avoid mistakes.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_how-we-think_10.html" class="readMore">Read More</a>
+                </div>
+            </li>
+        </ul>
+        <input class="moreArticles" type="button" value="Load More Articles">
+    </section>
+    <section class="viewBox mV">
+        <div>
+            <h2 class="heading large">More around the BBC</h2>
+            <div class="views">
+                <input type="button" class="btn_list active" value="List View">
+                <input type="button" class="btn_grid" value="Grid View">
+            </div>
+        </div>
+        <ul class="listView x3 column">
+            <li class="display medium">
+                <img src="images/thumb_science_10.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_10.html">74% of ransomware revenue goes to Russian hackers</a></h3>
+                    <p>Crypto-currency researchers say more than $400m of cyber-crime funds go to Russian gangs.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_10.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_world_20.jpg" alt="Article Image">
+                <div>
+                    <mark>World</mark>
+                    <h3><a href="a_world_20.html">Eccentric sewage rebels head for the big screen</a></h3>
+                    <p>When a group of middle-aged swimming friends from Scarborough became worried about sewage in the sea in the 1980s, they started staging eccentric stunts to highlight their cause, and even took on the government. Now, their story is being turned into a film.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_world_20.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_business_6.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_6.html">How nurseries are keeping track of their toddlers</a></h3>
+                    <p>Misty Ardouin set up her nursery, Nestlings, in Cardiff City centre in 2019. At the end of each day, they would have a "good sit down" in the playroom with parents to catch-up on everything the children had been doing.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="/a_business_6.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_science_6.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_6.html">Record high deforestation of Amazon in January</a></h3>
+                    <p>The number of trees cut down in the Brazilian Amazon in January far exceeded deforestation for the same month last year, according to government satellite data.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_6.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_science_8.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_8.html">Lessons in pleasure boost good safe sex</a></h3>
+                    <p>Teaching people about achieving sexual pleasure can help sell safe-sex messages, say researchers from the World Health Organization.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_8.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_world_21.jpg" alt="Article Image">
+                <div>
+                    <mark>World</mark>
+                    <h3><a href="a_world_21.html">White House left behind as states drop Covid rules</a></h3>
+                    <p>The White House is facing pressure to revise its position on mask wearing as pandemic restrictions are eased in a number of US states.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_world_21.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_science_9.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_9.html">James Webb telescope begins to focus its 'big eye'</a></h3>
+                    <p>It's a confusing but amazing image.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_9.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_science_11.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_9.html">How Taiwan used simple tech to help contain Covid-19</a></h3>
+                    <p>In Taiwan, finding someone who will talk about their Covid experience is harder than you might think.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_11.html" class="readMore">Read More</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

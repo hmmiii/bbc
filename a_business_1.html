@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_business_1" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Business</mark>
+                <h2>US consumer prices rise at fastest rate since 1982</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A woman wearing a mask moves her shopping cart December 3, 2020 in a Trader Joe's supermarket in New York City.</figcaption>
+            </figure>
+            <p><strong>Price rises in the US accelerated by more than expected last month, pushing annual inflation up to 7.5% - the highest rate since 1982.</strong></p>
+            <p>Food and energy costs helped to drive the increases, which left few spending categories untouched.</p>
+            <p>The rising prices are squeezing household finances as wages fail to keep pace.</p>
+            <p>Washington is under pressure to address the issue, with the US central bank expected to raise interest rates.</p>
+            <p>The Bank of England has already raised interest rates twice in the last three months in a bid to dampen down consumer spending by making borrowing more expensive.</p>
+            <p>In the US, consumer spending held strong for much of last year despite the rapidly rising prices, which analysts say have been caused by a mix of robust demand, government spending, supply chain hold-ups and pay increases following labour shortages.</p>
+            <p>Amazon, Netflix and Procter & Gamble are among the many firms that have announced price rises in recent months, citing higher costs. They have said they expect most households to absorb the increases.</p>
+            <p>But the issue is increasingly a key issue for voters, hurting President Joe Biden's popularity despite strong economic growth last year.</p>
+            <p>In a statement, Mr Biden pledged that his administration would "be all hands on deck to win this fight", acknowledging that "Americans' budgets are being stretched in ways that create real stress at the kitchen table".</p>
+            <ul>
+                <li>The people fighting price rises by trying to buy nothing</li>
+            </ul>
+            <p>On a monthly basis, consumer prices climbed 0.6% in January, the US Labor Department said.</p>
+            <p>The rent index rose 0.4%, while grocery prices jumped 1%, driven by increases in the cost of bakery and cereal products.</p>
+            <p>Detra Thomas, a 60-year-old human resources assistant who lives in New York, says she recently stopped shopping at the supermarket, opting to order in bulk online or visit street vendors in hopes of finding lower prices.</p>
+            <p>"I just can't afford to buy all my food from the regular grocery store," she told the BBC.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Detra Thomas says she has stopped shopping at supermarkets</figcaption>
+            </figure>
+            <p>She has been delaying clothing purchases, clipping coupons and taking other steps in an effort to make her money go farther. Though she received a small pay raise last year, it does not match the rapid increases in the cost of living, she says.</p>
+            <p>"You have to worry about what am I going to buy, what am I not going to buy, can I do without this for a while," she said.</p>
+            <p>"I would like the stability of knowing that the supplies are going to get through in a timely manner and that we're not going to have to pay an arm and a leg for them."</p>
+            <p>University of Michigan economist Betsey Stevenson said the "fundamental problem" was demand outstripping supply.</p>
+            <p>"So we've got two ways to fix the problem: We can bring down demand ... or we can try to increase supply," she said.</p>
+            <p>"The central bank is going to deal with trying to constrain demand by raising interest rates. But we've got to look at governments to try to do what they can to increase supply."</p>
+            <p>Mr Biden said his administration was making investments to ease supply chain bottlenecks and had championed other policies aimed at lowering prices with increased competition.</p>
+            <p>Thursday's report held some signs that inflationary pressures may start to cool, noting that prices for new cars - one of the key drivers of inflation over the last year - were unchanged over the month, while the increases for used cars slowed.</p>
+            <p>Rates for hotel rooms also dropped a hefty 3.9%, which may have been driven by the impact of reduced travel due to Omicron.</p>
+            <p>But given the jumps in food and shelter costs, the financial pressures for most households are not going away, said Andrew Hunter, senior US economist at Capital Economics.</p>
+            <p>"A rapid cyclical acceleration in inflation is underway and, with labour market conditions exceptionally tight, it is unlikely to abate any time soon," he said.</p>
+            <p>"While we still expect more favourable base effects and a partial easing of supply shortages to push core inflation lower this year, this suggests it will remain well above the Fed's target for some time."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

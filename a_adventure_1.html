@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_adventure_1" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Adventure</mark>
+                <h2>The people who grow ice</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Known as the "Switzerland of America", Ouray is a bustling outdoor recreation hub, particularly for ice climbing - on waterfalls created by a small team of "ice farmers".</h3>
+            <p>There was a rumour going around that a group of climbers was accessing the park illegally before opening day. Pete Davis, operations manager at the Ouray Ice Park in Colorado, set off to investigate. I followed him along the snow-packed edge of the Uncompahgre Gorge. Beneath us were cascading sheets of ice, frozen to the cliffside. The park wasn't due to open for another three days, but everyone - climbers and staff alike - was anxious to get the season started.</p>
+            <p>The Ouray Ice Park sits at the mouth of a narrow box canyon sculpted by the Uncompahgre River. Here on the western edge of the Rocky Mountains in the south-west United States, the landscape pivots quickly from jagged alpine terrain to red rock plateau. Just below the park is Ouray, a historical mining town that's now a bustling hub for outdoor recreation. It's known as the "Switzerland of America".</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Ouray Ice Park is nestled in the Rocky Mountains in the south-west United States, known as the "Switzerland of America" (Credit: Margaret Hedderman)</figcaption>
+            </figure>
+            <p>As we picked our way up the canyon, Davis used an ice axe to point out the various projects his staff were rushing to complete before opening day. There was signage to erect, a new bridge to inspect, and of course, lots of ice to grow. The waterfalls in the Ouray Ice Park are entirely manmade, created by a small team of "ice farmers".</p>
+            <p>He showed me the lines of water pipes and sprinklers situated along the cliff edge. There are more than 200 of these sprinklers, which spray water directly onto the rock, creating walls of ice containing 100-plus climbs. Starting in November when the temperature drops, the ice farmers saturate the rock with water to cool it, essentially building a canvas for the waterfalls. They use existing features on the rock, like overhangs, to grow a variety of routes for all skill levels.</p>
+            <p>Though the job involves extensive manual labour in freezing weather, Davis described growing ice as a kind of art form. "Because it's not really a natural phenomenon to have showerheads, you know, flowing on mountain ice climbs."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The snow-packed edge of the Uncompahgre Gorge runs along an icy cliffside, above the Uncompahgre River (Credit: Margaret Hedderman)</figcaption>
+            </figure>
+            <p>In the wild, climbable ice forms as either a frozen waterfall or as water seepingout of the rock. The park attempts to mimic both styles. Steve Imhoff, a second-year ice farmer, said their ultimate goal is to create routes that are challenging to both the mind and body by fine-tuning the valves and observing the water spray.</p>
+            <p>"You get up real early in the morning, and the first job is to turn the water off before everyone gets there," Imhoff said. "You get this moment when you're one-on-one with the ice park, just out there in your element."</p>
+            <p>If half an ice farmer's job is creation, the other half is maintenance and repair. Exposed water pipes in the mountains are prone to freeze and break. Last year, there was a 150ft section of piping suspended in trees that froze twice. They had to scramble into the branches to remove and repair sections, a process that took nearly four days.</p>
+            <h3>You get this moment when you're one-on-one with the ice park, just out there in your element - Steve Imhoff</h3>
+            <p>Like most seasonal jobs, ice farming ends when the park closes, usually in March. Some of the farmers leave Ouray to pursue work in other states. Sarah Goodnow, a first-year ice farmer, works as a wildland firefighter, literally dividing her year into fire and ice. She said she's attracted to manual labour in the outdoors, something both jobs offer plenty of.</p>
+            <p>"It just sort of happened," Goodnow said. "Fire and the ice park happened to be the opportunities that presented themselves."</p>
+            <p>Other farmers work as rope access technicians, providing support on wind turbines. Before taking a full-time position at the park, Davis spent his summers working as an archaeologist.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The park tries to mimic natural climbable ice forms, like a frozen waterfall or water seeping out of the rock (Credit: Xander Bianchi/Ouray Ice Park, Inc.)</figcaption>
+            </figure>
+            <p>When Davis and I reached the back of the one-mile-long park, there were no rogue climbers to be found. Either we missed them, or it was nothing but a rumour. With opening day quickly approaching, Davis was hyper-vigilant about preserving the ice. The weather certainly wasn't doing him any favours. This winter has been unusually warm and temperatures, even in December, were not cold enough to make sufficient ice. It even rained a day before the park was set to open, destroying 30% of the ice farmers' efforts.</p>
+            <p>"Winter climate is less certain due to the warming of our planet," said Heidi Steltzer, Fort Lewis College professor of environment and sustainability and lead author of IPCC SROCC (the Special Report on Oceans and Cryosphere in a Changing Climate). "Human-made ice may not be possible every year, but in years when it is, [the ice park] offers joy, a gathering place and livelihoods to sustain rural mountain life that's one part of the adaptation puzzle in our heated world."</p>
+            <p>The gates did eventually open, and the park has been busier than ever. One morning, ice farmers arrived to find 155 people waiting to climb, something unheard of only a few years ago. In total, the park will likely see more than 20,000 visitors this season. Peter O'Neil, executive director of the Ouray Ice Park, attributes it to ice climbing's soaring popularity as well as the gym-like nature of the park.</p>
+            <p>"The fact that it's so accessible helps with the growth of the sport," O'Neil said. "In my time, you had to hike or ski in for multiple hours."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Elite climbers will train at the Ouray Ice Park before going on other high-altitude expeditions (Credit: Ouray Ice Park, Inc.)</figcaption>
+            </figure>
+            <p>Ice climbing in Ouray has come a long way since its early days in the 1980s, when local adventurers discovered that leaks in the city's hydroelectric pipes had created waterfalls near town in the Uncompahgre Gorge. Suitable to the town's Old West roots, there are tales of outlaw climbers "accidentally" puncturing the pipeline with their ice axes to make more waterfalls.</p>
+            <p>Though legitimate ice farming began in the early '90s, the park became an official non-profit in 1997. This year, it will host three major ice climbing events, including a festival for marginalised communities and an internationally sanctioned competition that will attract top athletes from around the world. Other elite climbers, many preparing for Himalayan and other high-altitude expeditions, come to here to train.</p>
+            <h3>Ice climbing in Ouray has come a long way since its early days in the 1980s</h3>
+            <p>I returned to the park a few weeks later with a group of new ice climbers. We set up in a wide stretch of canyon, along with 20 or so other people. In front of us was 90ft of pale blue ice, shimmering down the wall. Now I could understand what the ice farmers meant when they referenced the different qualities of ice. There were big bulbous sections called "cauliflower", that ice axes sink into with a satisfying thunk. Newer ice hung from cliffs like chandeliers. In other sections there was no ice at all, allowing climbers to use their axes and crampons to ascend the rock.</p>
+            <p>While I was on belay, wrapped in a warm puffy jacket, I noticed several of the park's rangers making their rounds. This is a relatively new position, a result of the park's growing popularity. Rangers welcome climbers, perform head counts and ensure everyone is staying safe. To prepare for opening day, they also helped install new trails, benches, and signage.</p>
+            <p>"Building things that will last makes me feel like I'm giving back," said Ally Bloom, a ranger and former climbing guide.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

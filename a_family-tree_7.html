@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_family-tree_7" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Family Tree</mark>
+                <h2>The science of healthy baby sleep</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Sleep regressions aren't real. Night wakes are normal, and protect against SIDS. And 12 hours of sleep isn't a gold standard. Here's what scientists want us to know about baby sleep.</h3>
+            <p>Mention you've had a baby, and almost everyone will ask one thing: how is she sleeping?</p>
+            <p>After all, many exhausted parents look forward to the time when their baby finally sleeps through the night. Particularly in the West, an industry of sleep coaches, books and articles has sprung up, promising to help families achieve what many see as the holy grail: a baby who sleeps in a crib, alone, all night, and has several long naps during the day. Even some paediatricians warn parents that, if these goals aren't reached, children are less likely to get the sleep they need to grow and thrive.</p>
+            <p>But not only is this idea of independent, uninterrupted baby sleep far from universal, it is also very different to how human infants have slept through most of our species' history. Taken too far, it can cause a great deal of anxiety and stress for parents - and even be unsafe for the babies themselves.</p>
+            <p>"The way in which we sleep now in the 21st Century is kind of odd, in an evolutionary sense, because we weren't evolved to sleep like we're dead for an eight-hour period, and not wake up, in total silence and total darkness," says Helen Ball, professor of anthropology at Durham University and the director of the Durham Infancy and Sleep Centre. "But that's what people in Western societies have become accustomed to.</p>
+            <p>"And that affects the way in which we think about what babies should be able to do, and how babies should be treated." (Read more about how sleeping through the night is a relatively new phenomenon, even for adults.)</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>There can be a huge variation in how much babies sleep (Credit: Oscar Wong/Getty Images)</figcaption>
+            </figure>
+            <p><strong>Sleeping enough?</strong></p>
+            <p>Worrying about whether babies are getting enough sleep isn't new. The first "scientific" guidelines date as early as 1897, when, in a book on sleep for the London-based Contemporary Science Series, a Russian physician recommended that newborns should sleep 22 hours a day. Throughout the following century, although these suggested amounts declined, recommended sleep consistently ran around 37 minutes more than the actual sleep babies were getting, paving the way for decades of concerned parents.</p>
+            <p>Experts agree that sleep is crucial for babies and young children (and, for that matter, for adults). A lack of sleep has been associated with cardiometabolic risk factors, an increased risk of ADHD and low cognitive performance, and with poorer emotional regulation, academic achievement and quality of life.</p>
+            <p>Many of these longer-term findings, however, involve school-aged children, not babies. They are also correlations, not causations. The only way to know if a certain amount (or lack) of sleep "causes" a specific condition such as ADHD, as might seem to be suggested by research showing a correlation between children who consistently slept less overnight and ADHD, would be to set up a randomised controlled study. This would involve sleep-depriving one group of children over years. That's obviously unethical. So, it is difficult to unravel how much of the association may be the reverse: children with ADHD may simply sleep less.</p>
+            <blockquote>Just as adults differ in terms of their sleep, so do babies - Alice Gregory</blockquote>
+            <p>Of course, it's likely that the relationship between sleep and development goes both ways. Short-term randomised controlled trials have found that babies given a memory task did better when they napped and, in findings that will surprise exactly zero parents, that fatigued infants had a harder time dealing with a stressful episode than alert infants.</p>
+            <p>But while that might mean we shouldn't do anything (such as deliberately forcing a child to stay awake) to inhibit sleep, it doesn't mean that every baby requires 12 hours of unbroken sleep a night and several two-hour naps per day, either.</p>
+            <p>"Just as adults differ in terms of their sleep, so do babies," says Alice Gregory, a psychology professor specialising in sleep at Goldsmiths University of London and the author of the book Nodding Off: The Science of Sleep.</p>
+            <p>She points out that it has been recommended by the US's National Sleep Foundation that babies up to three months old should obtain 14-17 hours of sleep in a 24 hour period, but that as few as 11 or as many as 19 hours might be appropriate. Meanwhile, sleep length recommendations from the American Academy of Sleep Medicine make no recommendations at all for infants under four months old. Neither body makes specific recommendations for nap versus nighttime sleep amounts.</p>
+            <p>"These slightly different guidelines highlight the fact that even leading experts disagree about infant sleep," Gregory says.</p>
+            <p>The amount of variation is also clear if you look at how babies actually sleep. In one Australian study, the average amount of sleep over a 24-hour period among 554 four- to six-month-olds was 14 hours. But look closer at the data and it becomes clear that there were more than eight hours' difference between those getting the most and the least sleep. "There are huge differences in sleep duration at the 98th percentile vs the 2nd percentile," says Harriet Hiscock, a paediatrician at Royal Children's Hospital Melbourne and one of the study's authors.</p>
+            <p><strong>Staying on schedule</strong></p>
+            <p>What about following a preset routine that schedules naps (and feeds) throughout the day? Or the nighttime schedule known as the seven-to-seven (where the baby sleeps through from 7pm to 7am), considered the gold standard by countless baby sleep books and trainers?</p>
+            <p>In the earliest days, this kind of regular schedule can be especially difficult to follow. That's because the physiological functions that tell adults that nighttime is for sleeping, such as melatonin excretion and a body temperature rhythm, don't start emerging until at least eight to eleven weeks of age in healthy, full-term babies. Exposing newborns to light during the day and to darkness at night can help get these systems going. (And despite some sleep coaches' claims, babies don't produce melatonin during the day - and it would confuse their circadian rhythms if they did - so it's not necessary to have pitch-black naps for the purpose of melatonin production.)</p>
+            <p>"The main theory of sleep regulation proposes that there are two processes controlling sleep and wake," says Gregory. "First is the homeostatic process (the idea that the longer we have been awake the sleepier we become), and the second is the circadian process (a clock-like process, which results in us being more likely to be sleepy or alert at certain times of the day and night).</p>
+            <p>"Both processes are under-developed in babies, accounting for differences in sleep in babies as compared to adults."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Putting babies to sleep on their backs can reduce the risk of sudden infant death syndrome (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>In a global context, the 7pm bedtime can seem quite arbitrary. In plenty of cultures, babies and children go to sleep later - around 10:45pm in the Middle East, 9:45pm in Asia and 10pm in Italy - and wake up later, too. </p>
+            <p>A number of studies have associated an earlier bedtime with outcomes like better academic performance and a lower risk of obesity. But that research has involved preschoolers and older children, not babies. It's also unclear if it's the bedtime that inherently makes any difference. Since school and other routines for children tend to start earlier in the day, the early-to-bed children tend to get more sleep overall, for example, and families who put their children to bed early may prioritise healthy habits in other ways. Unravelling these other factors is not simple.</p>
+            <p>There also is limited evidence that younger children release melatonin, the "darkness hormone" which makes us drowsy, earlier in the evening than adults. But it's not quite as early as many people think. One small study in Providence, Rhode Island, found, for example, that even in the US, where children tend to be put to sleep early, the average toddler didn't experience dim light melatonin onset until 7:40pm. Naps can also push back melatonin release. And it is worth noting that because this hormone release is a process, not an on-off switch, that's not to say that 7:40pm is an optimal bedtime - it could be even later.</p>
+            <p>For some families, a seven-to-seven nighttime works brilliantly. But for others, trying to force it can cause its own sleep issues. "Our data suggest that if young children are put to bed at a biologically non-optimal time, they will not feel ready for bed and will resist (e.g. come out of the bedroom for another drink of water, call-out, refuse bedtime, tantrum)," write the researchers of the Rhode Island study. And if your baby turns out not to need a full 12 hours of sleep per night, then getting him or her to sleep at 7pm can have unintended consequences - like "split nights", where a baby wakes for an extended period of time in the middle of the night, or an extremely early start.</p>
+            <p>A more flexible approach to sleep may also facilitate responsive feeding, which means  responding to a baby's hunger cues, rather than feeding on a set schedule. Also known as "baby-led" or "on-demand" feeding, responsive feeding is recommended by associations like the UK's National Health Service (NHS), Unicef, the UK parenting charity NCT and the American Academy of Pediatrics, regardless of whether breast- or bottle-feeding. </p>
+            <p>Studies suggest that a baby-led approach has a number of advantages over a strict, parent-imposed schedule or routine. Research has found, for example, that the more parents controlled their baby's feeds, the more likely the child gained either too much or too little weight (although, as the authors note, "does nonresponsive feeding cause child obesity, or do parents of obese children react to concerns about their child's obesity by using nonresponsive feeding strategies?"). It also can affect breastfeeding: feeding responsively is key for establishing a milk supply, scheduling feeds is also linked to stopping breastfeeding earlier, and mothers who read books promoting strict sleep and feeding routines were less likely to breastfeed at all.</p>
+            <p>"It could either be that mothers who want a routine stop breastfeeding, or that the routine lowers milk supply,” says Amy Brown, public health professor at the UK's Swansea University and director of the centre for Lactation, Infant Feeding and Translation and author of two of the latter studies. “Both, probably.”</p>
+            <p>Observing and following the baby's needs may also benefit the parents' mental health. Parent-led routines are linked to higher levels of reported anxiety among mothers. Another study co-authored by Brown found that mothers who used baby books that promoted strict routines were more likely to say they felt depressed, stressed and less confident in their parenting abilities - though it's worth noting that stressed-out parents might be more likely to turn to these baby books or routines to begin with.</p>
+            <p>Ultimately, sleep researchers say, it doesn't have to be that complicated. To know what's optimal for any individual baby - whether a strict routine organised around seven-to-seven sleep, or something else - look at that baby.</p>
+            <p>"I always say to parents, if your baby during the day is generally happy, then they're probably fine. If they're grumpy, they're irritable, maybe it's their sleep," says Hiscock.</p>
+            <p><strong>Sleeping through the night</strong></p>
+            <p>If hitting a certain number of hours of sleep at set times weren't enough, many parents are also told to aim for another goal: for their baby's sleep to be "consolidated". </p>
+            <p>Sleep coaches and books often say that this deeper, non-stop sleep is better for an infant's development (not to mention less disruptive for parents). But even if 12 hours of sleep without any arousals were an optimal goal, it's a biologically challenging one - as well as one that, if successful, could put babies at risk.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Responsive, baby-led parenting has a number of advantages (Getty Images)</figcaption>
+            </figure>
+            <p>All humans wake between sleep cycles. As adults, if we have our basic needs met (we don't need another blanket or to go to the toilet) and relaxed (who hasn't woken up worrying about a work presentation or an argument?), after we rouse slightly, we go right back to sleep. This is why most of us don't remember these arousals in the morning.</p>
+            <p>But adult sleep cycles tend to be longer, about 90 minutes. A baby's can be half that length. And, unlike adults, babies can't meet their own needs, so they often arouse more fully.</p>
+            <p>The most obvious example is for feeding. Compared to other primates, humans have relatively large brains but narrow birth canals, possibly to help us balance while walking on two feet. As a result, babies are born far more neurologically immature than other mammals - a newborn's brain volume is one-third an adult's.</p>
+            <p>This means that human newborns need a lot of energy to develop quickly after birth. They're also relatively helpless, requiring constant closeness to their caregiver. As a result, instead of being high-fat - which would satiate a baby and allow them to be left alone for longer periods - breast milk is high-sugar, which is digested quickly and requires more frequent feeds. Add to that the fact that newborns have tiny stomachs, holding just 20ml (0.7fl oz) at a time (around four teaspoons), and it's clear why they need to feed so frequently day and night.</p>
+            <p>"Young babies, they wake. That's what they do: they feed and they wake," says Wendy Hall, a professor emeritus in the University of British Columbia School of Nursing and a long-time paediatric sleep researcher. "Over time they start to develop a longer biological sleep period at night. By three months, that could be five or six hours if you're doing well. And that's a gift.</p>
+            <p>"But it doesn't mean you're not getting up two or three times a night to feed them. It just means there may be a little bit longer stretch in there where they have a little bit longer sleep."</p>
+            <p>As babies get older, feeding around the clock becomes less common. By six months of age, many sleep researchers say that healthy, normal-weight babies don't "need" to feed at night, at least in terms of nutrition. (Lactation experts often disagree, pointing out that, left to their own devices, babies still wake to feed after six months of age.) But waking and needing a caregiver for other reasons is still common. This is especially true throughout their first year of life, when babies are most vulnerable and their nervous systems the most immature.</p>
+            <blockquote>Three-month-olds wake up as many as 15 times a night</blockquote>
+            <p>One recent study of 5,700 Finnish children found that three-month-olds woke and needed resettling an average of 2.2 times a night - though the range was anywhere between 0 and 15 times. This persisted throughout the baby's first year. Eight in 10 parents of both three-month-olds and eight-month-olds said their babies woke more than five nights a week. After 12 months, this changed dramatically - almost two-thirds of 18-month-olds, and nearly three-quarters of two-year-olds, no longer needed resettling at night. The study also found that sleep quality was "highly variable", especially until the age of two.</p>
+            <p>Other studies have had similar findings. One study using time-lapse videos of 80 infants over four nights, for example, found that the number of night wakes didn't change over the first year of life. Interestingly, however, caregivers responded to them less frequently over time. "Infants continued to awaken as much throughout the first year of life but were not removed from their cribs for as long at older ages," the researchers write.</p>
+            <p>It is important to note that, while wakes may still be common among older babies and even toddlers, it's worth getting a medical assessment to rule out any health reasons for frequent, sustained waking, such as reflux or a tongue tie.</p>
+            <p><strong>Why waking isn't bad</strong></p>
+            <p>As frustrating as it can be for tired parents, there is another reason babies have evolved to arouse frequently: their own protection.</p>
+            <p>When it comes to sudden infant death syndrome (SIDS), one potentially risky stage of sleep for babies is deep sleep or "slow wave sleep". In this stage, babies can suddenly stop breathing. A healthy infant will rouse. But a baby with risk factors (potentially undetected, like a brainstem abnormality) may not.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>As children grow older, their sleep habits change (Getty Images)</figcaption>
+            </figure>
+            <p>Prematurely pushing a baby towards longer, deeper sleep, therefore, can increase SIDS risk, says James McKenna, the founder and director of the Mother-Baby Behavioral Sleep Laboratory at the University of Notre Dame and endowed chair in anthropology at Santa Clara University, California.</p>
+            <p>The most infamous example is putting a baby to sleep on their stomach, or "prone". While this does seem to help babies sleep more deeply, it also makes SIDS up to 13 times more likely. After campaigns around the world told parents to put babies to sleep on their backs, SIDS rates plummeted.</p>
+            <p>"We created the SIDS epidemic," McKenna says simply. "We wanted to promote this idea of early consolidation of sleep - deep sleep, uninterrupted sleep, with less arousals. So we promoted this notion of putting babies prone so that they didn't wake as much and rouse as much, an independent risk factor for SIDS." </p>
+            <blockquote>Is longer, deeper sleep better for babies? Not according to the research</blockquote>
+            <p>What about longer, deeper chunks of sleep, without arousals, being better for babies' development? While a common perception, it's not one that the research bears out.</p>
+            <p>Sleep researcher Jodi Mindell looked at 117 infants and toddlers at regular intervals over an 18-month period. "What we found in our data, which was done in the United States, is no real relationship between sleep and later cognitive development," says Mindell, who is an associate director of the Sleep Center at the Children's Hospital of Philadelphia. Her team even found a modest relationship between more night wakings and better cognitive outcomes.</p>
+            <p>Another study, from Canada, looked at the sleep of more than 350 six- and 12-month-old infants and their mental and motor skills at 36 months of age. There were "no significant associations between sleeping through the night and later mental development, psychomotor development, or maternal mood," the authors write. However, "sleeping through the night was associated with a much lower rate of breastfeeding", they add.</p>
+            <p>And the largest, longest longitudinal study done on babies who received behavioural interventions to reduce sleep problems like night wakes found no difference between the children's sleep habits, behaviour, emotional regulation or quality of life at six years old.</p>
+            <p>What does sometimes show up is a relationship between a lack of sleep and poorer social and emotional development - though that's regarding less sleep overall, not whether a baby is waking frequently.</p>
+            <blockquote>Learning a new skill, like crawling or walking, excites babies and makes them wake more at night</blockquote>
+            <p>Even so, this is the correlation versus causation question again. A baby who is fussier and requires more soothing from parents day or night, for example, could simply be the kind of child who has a harder time with emotional regulation. </p>
+            <p>"You don't know whether it's the sleep that does it, or just an early marker," Mindell says.</p>
+            <p><strong>Sleep regressions</strong></p>
+            <p>What about sleep regressions? This term is often used to refer to defined periods when sleep gets more chaotic. They're said to be as frequent as they are supposedly predictable: one sleep consultancy website outlines a four-month regression, an 8-10 month regression, an 11-12 month regression, and an 18-month regression (but, the site notes helpfully, despite babies often showing similar signs, "there isn't a six-month sleep regression".)</p>
+            <p>Most frighteningly of all, the four-month regression is often reputed - inaccurately - to be permanent. "It WON'T go away until your baby has learned to self-settle," another sleep coach writes.</p>
+            <p>The problem, sleep researchers say, is that sleep regressions don't exist - not in the way they're often described.</p>
+            <p>"Total myth," says Mindell. "I have very, very large databases of sleep. I've looked at every month of sleep in the first two years and there's not a single month where you see, all of the sudden, a peak in sleep problems. It is consistent across time. It's just different babies at different times."</p>
+            <p>These "regressions" usually have nothing to do with sleep at all, but other forms of development. Learning a new skill, like crawling or walking, excites babies enough to wake more at night. Or it could be psychological.</p>
+            <p>"An infant may have started to develop object permanence and realise that family members continue to exist when they leave the room, so call for them rather than fall asleep," says Gregory. (She adds that changes in sleep can also sometimes reflect medical issues, such as reflux, so again, it's important to contact a healthcare provider if you are concerned).</p>
+            <p>While the four-month regression in particular is often put down to a change in babies' sleep architecture, this change typically happens anytime in the first six months; it can also be a gradual shift. Either way, it's not a sign of anything going "backwards".</p>
+            <p>"We have some markers of sleep development. One is the percentage of REM sleep versus non-REM sleep. The other is the longest sleep period, the LSP - how long the baby can sustain a period of sleep without awakening," says Thomas Anders, a former psychiatry professor at the University of California-Davis and a sleep researcher for more than 40 years. "Those all progress rapidly for the first six months. The longest sleep period lengthens; the number of awakenings decrease.</p>
+            <p>"What you're talking about when you talk about regression - those markers don't regress."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Babies rely on caregivers to help them with their emotional regulation, including relaxing enough to fall asleep. (Getty Images)</figcaption>
+            </figure>
+            <p>While babies develop their own sleep preferences and habits as they get older, there's also no evidence that any specific sleep change is "permanent".</p>
+            <p>In one study comparing baby sleep in Asian versus Western countries, for example, Mindell found that, for the most part, babies wake less the older they get - including in Asian countries where babies are more likely to bedshare and less likely to sleep independently.</p>
+            <p><strong>Independent sleep</strong></p>
+            <p>Sleep schedules typically rely on one premise: babies should sleep independently as soon as possible. But it can difficult to get a baby to fall asleep, and stay asleep, alone. Babies' immature neurological systems (remember those tiny newborn brains?) mean they rely on caregivers to help them with their emotional regulation, including relaxing enough to fall asleep.</p>
+            <p>This is borne out by how parents actually get their babies to sleep. In the Finnish study of 5,700 children mentioned earlier, fewer than half of parents said that their baby falls asleep independently. Similarly, in one questionnaire-based study by Mindell and colleagues, just over half of parents said their nine- to 11-month-old babies fall asleep in a crib alone. Of the rest, almost half of parents fed their babies to sleep, a third were held to sleep and more than a quarter were rocked.</p>
+            <p>The author of books including Sleeping Through the Night and Take Charge of Your Child's Sleep, Mindell is an advocate of using strategies to help babies fall asleep independently. Even so, she says, there is no reason to think soothing a baby will hinder their development.</p>
+            <p>"Do we think that babies who have frequent wakings during the night don't develop independence skills?" She chuckles. "No. I think people are giving too much credence to sleep. There are so many other things that are going on.</p>
+            <p>"Does it help a family day to day? Yes, absolutely."</p>
+            <p>At the opposite end of independent sleep, even bedsharing has a nuanced relationship with development. Some studies have found that there is no relationship between parents sharing a bed with their baby and the infant's longer-term cognitive and behavioural outcomes or even that bedsharing has a small beneficial effect on later cognitive outcomes. There are also studies that show it can reduce the risk of insecure attachment.</p>
+            <p>But other research, including a study of nearly 4,000 three-month-olds in Brazil who were followed up until the age of six, found children sharing beds with their mothers were more likely to have psychiatric disorders. There is also a relationship between bedsharing and children being more likely to have sleep problems.</p>
+            <p>These studies, though, have a major flaw: because researchers did not ask parents why babies bedshared, it's impossible to know if a certain sleeping arrangement "causes" any particular outcome. If a parent brings a child to bed because they won't settle on their own, that could point to an underlying issue the child would have no matter where he slept.</p>
+            <p>On the other hand, parents who responsively bring their child into bed may also be the kinds of parents who are responsive the rest of the time, increasing the likelihood of secure attachment. In both cases, bedsharing could be an indicator - not a cause. In fact, researchers on a US military base found that children who bedshared when one of their parents left for active duty were less likely to have psychiatric problems and were considered better behaved than children who did not.</p>
+            <blockquote>That to me is hugely problematic, that you're causing parents to think that there's something wrong with their baby, when it's behaving like a baby - Helen Ball</blockquote>
+            <p>This could be why in parts of the world where bedsharing is the norm, these differences don't appear: parents aren't bedsharing in reaction to a problem.</p>
+            <p>And, indeed, one of the only studies designed to account for this difference found that preschoolers who began bedsharing as young babies were more self-reliant and more socially independent not only than children who always had slept alone, but also than children who began bedsharing over the age of one, considered "reactive" bedsharing. (Information about safe bedsharing can be found here.)</p>
+            <p><strong>Sleep problems</strong></p>
+            <p>Despite how common it is for babies to wake or not want to sleep alone, parents often worry that their children's sleep isn't normal. Nearly 40% of the parents of eight-month-old babies in the large Finnish study, for example, said they thought their child had sleep problems.</p>
+            <p>So how do sleep researchers define a "sleep problem"?</p>
+            <p>"There's no acceptable or quantifiable strict definition," says Hiscock. "But the first step is, if parents see it as a problem, it's a problem that we need to do something about."</p>
+            <p>In some cases, that may simply mean education, Hiscock says. "If a parent says they have a three-month-old, and they're waking twice a night to feed, they're exhausted - you say well, actually, that's normal behaviour."</p>
+            <p>That realisation is key, not least of all since thinking that your baby has a problem, when they are behaving like many other babies, can exacerbate the issue - such as by increasing the stress and anxiety of (often already tired) parents. Parents who believe their child has an ongoing sleep problem are more likely to feel anger at their baby and a lack of confidence in their parenting. (It also goes the other way, with a parent's beliefs impacting how their children sleep - one study even found that a pregnant woman's belief that her infant would need help at night predicted her six-month-old waking more).</p>
+            <p>Much of what we think is a problem is also set by our cultural expectations. In one large study, Mindell found that parents' perceptions of problems differed vastly by country. Just 10.1% of parents in Vietnam thought there was a problem, compared to 75.9% in China.</p>
+            <p>"I think the whole idea about babies having sleep problems is pathologising. It suggests to parents that there's something wrong with their baby. That to me is hugely problematic, that you're causing parents to think that there's something wrong with their baby, when it's behaving like a baby," says Ball.</p>
+            <p><strong>The origin of myth</strong></p>
+            <p>And so, as obsessed as many parents are with infant sleep, it seems we get much of it wrong. How is that possible?</p>
+            <p>As BBC Future has covered before, much of how we see infant sleep comes down to cultural values, assumptions and ideologies, not science.</p>
+            <p>Anthropologist McKenna, a proponent of safe co-sleeping (which he has dubbed "breastsleeping"), explains that, for centuries, it was not only common but necessary for babies to sleep with their families. Without electricity or heating (or, often, any room to spare), staying close to their mothers was convenient, protective and facilitated breastfeeding. In most cultures, this remains the case.</p>
+            <p>"Prior to the 19th Century, infant sleep was not generally a concern of new parents, with popular parenting manuals of the time failing to mention anything about it," anthropologists Jennifer G Rosier and Tracy Cassels write. "When an infant woke, there was either an awake family member ready to care for the infant or a sleeping family member next to the baby who was able to quickly respond. There was also an understanding that babies (and adults) slept when they needed to sleep and that they were awake when they needed to be awake."</p>
+            <p>With the 1800s came the Industrial Revolution, a rising middle class and a new emphasis on independence. Longer working days meant more interest in unbroken sleep at night, urbanisation increased the number of new parents living away from the support of their families, and male doctors, who believed that having multiple people in the same sleep space could "poison" the air, began to replace the guidance of mothers and midwives. New books emphasised the need for rigid sleep schedules and the necessity of having infants sleep alone so that they would become independent and strong.</p>
+            <p>This has not been the case everywhere. "The Japanese think the US culture rather merciless in pushing small children toward such independence at night," one researcher noted. In Guatemala, Maya mothers responded to information about US sleeping practices with "shock, disapproval and pity".</p>
+            <p>Today, many tired parents get their information from baby sleep books or sleep coaches - who have been gaining popularity outside of the US, too. But many books aren't evidence-based, and the sleep coaching industry is unregulated. Ultimately, anyone can call themselves a sleep expert.</p>
+            <p>Meanwhile, even health care professionals often don't have background or training on baby sleep. One study found that, across 126 medical schools in the US, students received only 27 minutes of training on children's sleep. A survey of Canadian health care providers found that only 1% received any training on paediatric sleep in medical school and a study of 263 health professionals in Australia found professionals correctly answered less than half of questions about paediatric sleep. And these are countries which prioritise sleep education even more than others.</p>
+            <p>The bottom line? The single biggest, and most harmful, misconception about infant sleep may be a simple one: that there is just one correct approach to how infants should sleep.</p>
+            <p>"Different families have different requirements and preferences and take different approaches to baby sleep," says Gregory.</p>
+            <p>"This is fine as long as safety is always put at the forefront of decisions - and those looking after babies should be aware of ways in which they can help prevent SIDS."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

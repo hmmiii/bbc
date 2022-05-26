@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_coronavirus_5" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Coronavirus</mark>
+                <h2>Coronavirus: 'We made a feature film in lockdown'</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Like so many other industries, Covid-19 struck at the heart of the film industry shutting down production on big blockbusters, closing cinemas and even making the mighty James Bond franchise abandon its scheduled release of No Time To Die.</strong></p>
+            <p>Hundreds of millions of dollars had been spent on a global marketing push for an April release, which had to be abandoned.</p>
+            <p>With Bond and other blockbusters, including Disney's new Avatar and Star Wars films, in retreat, some smaller independent film makers have taken lockdown and the pandemic as a creative point of departure.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Matthew and Tori Butler-Hart are a film-making husband and wife partnership</figcaption>
+            </figure>
+            <p>"We are not great at really not doing things," says London-based film director Matthew Butler-Hart who, along with his producer and actress wife Tori Butler-Hart, not only made a feature film during the last few months, they also persuaded stars such as Sir Ian McKellen and Conleth Hill to be in it.</p>
+            <p>They had already been working on a large-scale idea for a science-fiction project, which imagined a universe where people were having an experiment performed on them without knowing it. It began with a woman waking up in a van and not knowing who she was.</p>
+            <p>While they had been developing the idea as a TV series and a graphic novel, when lockdown came they thought they could make a side-story about the woman.</p>
+            <p>Matthew would be the director and using a smartphone would directly film the footage, Tori would produce and act and they would work with what they could for lighting.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>This Jacobean mansion was empty due to lockdown so the couple received permission to film there</figcaption>
+            </figure>
+            <p>One location immediately fell into their lap, or at least under their feet. Their landlord let them use the apartment below theirs.</p>
+            <p>"It hasn't been updated since the 70s. So it's got that really sort of otherworldly strange vibe to it. No-one lives there. So it's kind of stuck in a time," says Tori.</p>
+            <p>The couple filmed what they could in that apartment and then a second location, a massive Jacobean mansion in Oxford where Tori's mother worked as a lecturer, allowed them access to film.</p>
+            <p>"We had to write down exactly where we were going and then they would deep clean everywhere that we've gone," says Tori. But an empty location for free is something that independent film makers dream of.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Sir Ian McKellen is a long-time supporter of the couple's film projects</figcaption>
+            </figure>
+            <p>As lockdown eased, the couple got their long-time collaborators Sir Ian McKellen and Conleth Hill to film socially distanced inserts bringing a bit of star power to the production.</p>
+            <p>We speak just a few hours after their film editors sent them the very first assembly of the film - always a nervous time for a director and producer - and they seem genuinely happy with what has come together.</p>
+            <p>"The film world one way or another will always survive and thrive because of technology, we know we're able to adapt to whatever situation happens. There's always gonna be bumps and lumps in the way but you know, people always find a way," says Matthew.</p>
+            <p>It's a sentiment echoed by another British film maker who has been busy in lockdown.</p>
+            <p>"Film-making is a craft. It's an art form, but it's also a military operation," says Ian Pons Jewell.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>British director Ian Pons Jewell has worked through most of the pandemic</figcaption>
+            </figure>
+            <p>During lockdown the director, most used to making adverts with a crew of around 60 per shoot, has not only managed to make a short film on the empty streets of London but also continued to make adverts for some of the biggest brands in the world by a variety of methods.</p>
+            <p>"What lockdown did was create a new worldwide event which was shared by every home. Almost every human on the planet has now experienced this once-in-a-generation event," he says.</p>
+            <p>It inspired a short film idea. The story is set in 2040, Covid is still with us and lockdown hasn't ended.</p>
+            <p>Pons Jewell roped in his regular director of photography who lived close by. They hired a London black cab and made the driver one of the central characters of the film.</p>
+            <p>Days later Pons Jewell was on his way to Kyiv in Ukraine where he started to set up filming for adverts as the industry there restarted.</p>
+            <p>He has also been working around the clock remotely directing adverts that are being filmed in South Korea, while his crew monitor and direct from Kyiv and some of the clients watch from the United States.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Ian Pons Jewell directs an advert from Ukraine on Zoom, which is being filmed in South Korea</figcaption>
+            </figure>
+            <p>People's body clocks were all over the place but it's a model that has been used more than once.</p>
+            <p>He says the UK has lost out on some film opportunities to other countries where Covid has been dealt with.</p>
+            <p>"I know about some jobs that have gone to Australia because the direction is there and they can fully shoot. Sweden as well has done some shoots that you wouldn't normally shoot there for the American market."</p>
+            <p>But production in some of the big filming facilities is getting under way in the UK, and cinemas have now been allowed to reopen, though it may be some time before the blockbusters come back.</p>
+            <p>"The rest of the world will pretty much have to wait for big American markets like New York, like Los Angeles to get moving again," says Daily Telegraph film critic Robbie Collin.</p>
+            <p>While the likes of Bond wait to come back, Collin thinks this could favour smaller film makers.</p>
+            <p>"What we will see in the wake of this is I hope one of these great realignments that Hollywood occasionally goes through.</p>
+            <p>"There will be fewer enormously expensive blockbusters being produced, these 'too big to fail' films. I think a few of them probably will fail and as a result, people will pivot to these smaller, nimbler, more creative movies."</p>
+            <p>That's something that will give some hope at least to smaller film makers, but little help to the vast majority of people who work in film, many of them self-employed and who wait for major productions to start again.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

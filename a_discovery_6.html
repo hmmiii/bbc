@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_discovery_6" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Discovery</mark>
+                <h2>The last known ship of the US slave trade</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>The discovery of the remains of the Clotilda, 160 years after it sank, brings new life and interest to the settlement built by the original survivors.</h3>
+            <p>"It's crazy to think they would have sailed right past here," Darron Patterson said, pulling his car onto a scrap of grass overlooking the murky Mobile River. As president of the Clotilda Descendants Association, Patterson is well versed in talking about the voyage of the Clotilda - the last known slave ship to reach America. His great-great-grandfather was Kupollee, later renamed Pollee Allen; one of the 110 men, women and children cruelly stolen from Benin in West Africa and brought to the US onboard the notorious ship.</p>
+            <blockquote>To conceal evidence of the crime, the distinctive-looking schooner was set ablaze</blockquote>
+            <p>The story of how Patterson's relative arrived in America aboard an illegal slaver started as a shockingly flippant bet. Fifty-two years after the US banned the importation of enslaved people, in 1860, a wealthy Alabama business owner named Timothy Meaher wagered that he could orchestrate for a haul of kidnapped Africans to sail under the noses of federal officers and evade capture.</p>
+            <p>With the assistance of Captain William Foster at the helm of an 80ft, two-mast schooner, and following a gruelling six-week transatlantic passage, he succeeded. The ship sneaked into Mobile Bay on 9 July under a veil of darkness. To conceal evidence of the crime, the distinctive-looking schooner - made from white oak frames and southern yellow pine planking - was set ablaze and scuttled to the depths of the swampy Mobile River, where it lay concealed beneath the water, its existence relegated to lore.</p>
+            <p>That is until almost 160 years later, when during a freakishly low tide, a local reporter named Ben Raines discovered a hefty chunk of shipwreck in the Mobile River, initially thought to belong to the Clotilda. It turned out to be a false alarm, but the discovery reignited interest and led to an extensive search involving multiple parties, including the Alabama Historical Commission, National Geographic Society, Search Inc and the Slave Wrecks Project. Following their exhaustive effort, in May 2019 it was finally announced that the elusive Clotilda had at long last been discovered.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A mural of the Clotilda slave ship runs alongside the freeway separating the two sides of Africatown (Credit: Carmen K Sisson/Alamy)</figcaption>
+            </figure>
+            <p>Now, three years later, the city of Mobile finds itself standing on the brink of a tourism boom, as interest in the story of the Clotilda, and the lives of its resilient captives, builds.</p>
+            <p>Patterson had agreed to drive me around Africatown, an area where many of the ship's captives finally settled and where Patterson himself was raised. We began the tour at this scrap of land by the Mobile River, beneath a soaring interstate bridge where a group of Clotilda slave ship descendants meet annually for their Under the Bridge festival, to "talk about how our ancestors got here and to have some food and dance," Patterson said. There was no festival that day though and the atmosphere was muted; just one woman and her grandson played by the marshy water's edge below the steady hum of traffic.</p>
+            <p>Walking back to his car, Patterson, a former sportswriter now in his 60s, recalled that growing up, Africatown was a thriving, self-sufficient place, where "the only time we needed to leave the community was to pay a utility bill" as everything needed was close to hand, aside from a post office.</p>
+            <p>Located three miles north of downtown Mobile, Africatown was founded by 32 of the original Clotilda survivors following emancipation at the end of the Civil War, in 1865. Longing for the homeland they'd been brutally ripped from, the residents set up their own close-knit community to blend their African traditions with American folkways, raising cattle and farming the land. One of the first towns established and controlled by African Americans in the US, Africatown had its own churches, barbershops, stores (one of which was owned by Patterson's uncle); and the Mobile County Training School, a public school that became the backbone of the community.</p>
+            <p>However, this once-vibrant neighbourhood fell on hard times when a freeway was constructed in the heart of it in 1991, and industrial pollution meant that many of the remaining residents eventually packed up and left. "We couldn't even hang out our washing to dry because it would get covered in ash [a product of the oil storage tanks and factories on the outskirts of Africatown]," said Patterson. With the high-profile closure of the corrugated box factory, International Paper, in 2000, and an ensuing public health lawsuit brought about by residents, Africatown's community that had swelled to 12,000 people in the 1960s plummeted to around 2,000, where it stands today.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Cudjoe Kazoola Lewis, one of the Clotilda survivors and founders of Africatown, died in 1935 (Credit: Zoey Goto)</figcaption>
+            </figure>
+            <p>The exodus, poverty and environmental scars were visible as Patterson drove further into Africatown. The roadside was littered with abandoned factories. The quiet, residential streets were peppered with empty lots and vacant homes, some in such disrepair that their decaying walls had surrendered entirely to the creeping vines engulfing them.</p>
+            <p>But Africatown is changing, once again. With the discovery of the ship's remnants came the interest necessary to rebuild and preserve this historical place; an influx of attention and funds that is affecting everything from personal relationships to history to the fortune of the neighbourhood. Because, though the story of the Clotilda was known - and the lives of the original passengers were so well documented that photos, interviews and even film footage existed - without evidence of the vessel, the history was buried and it was not in the interest of the white population to acknowledge the truth of how they had arrived. Finding the vessel allowed their story to be affirmed and truth to be restored after decades of denial.</p>
+            <p>In the almost three years since the Clotilda was discovered, the wreck has undergone extensive archaeological exploration to determine the likelihood of raising it safely. The ripple effect of media and public interest has meant a slew of government, community and private funding for Africatown's revitalisation, including The Africatown Redevelopment Corporation, which is using grants to restore homes in disrepair and demolishing and rebuilding derelict lots. Added to this is a $3.6 million payout from a BP oil spill settlement that has been earmarked for the long-awaited rebuilding of the Africatown Welcome Center, which was swept away in 2005 by Hurricane Katrina.</p>
+            <p>Patterson drove me to his grandmother's house and pulled over to chat with an elderly neighbour on her porch ("no photos, mind", she requested politely). Unlike some of the other descendent families, he told me, growing up he was told little of his ancestry. "I think my folks may have been embarrassed," he reflected, recalling that the smuggled captives had faced many humiliations, including being stripped naked for the voyage. "That must have just broke their will," Patterson said.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Africatown was one of the first towns established and controlled by African Americans in the US (Credit: Zoey Goto)</figcaption>
+            </figure>
+            <p>The 2019 announcement of the ship's discovery galvanised Patterson's curiosity, and he started to piece together his heritage, at which point his "whole life changed". He's since become hands-on in ensuring the story is told accurately, including an onscreen role in the film Descendant premiering at the 2022 Sundance Film Festival and as co-producer of the second installment of the forthcoming documentary The 110: The Last Enslaved Africans Brought to America about the Clotilda's passengers.</p>
+            <p>For Patterson, the discovery of the infamous ship brings fresh hope that Africatown is on the eve of a renaissance. Following years of denial, "the ship's very existence has finally been affirmed, so a burden has been lifted," said Mobile County Commissioner Merceria Ludgood. "That's every bit as important to the ethos of Africatown as the housing revitalisation currently happening."</p>
+            <p>Although there's a lack of restaurants and tourism facilities, that could be all set to change as well, said Ludgood, who is helping to set up the Africatown Heritage House, a permanent museum created in collaboration with the History Museum of Mobile to chart the history of Africatown. "Hopefully cottage industries will spring up, owned by people who live in the community," she said, noting that the discovery of the Clotilda has given Africatown's community a boost, resonating far beyond economics.</p>
+            <p>Next on Patterson's tour was the Africatown Heritage House, situated in the hub of the neighbourhood, overlooked by a row of modest, well-kept bungalows on a palm-lined avenue. Currently under construction, the museum is due to open in early summer 2022 and will include a gallery of West African artefacts as well as salvaged sections of the Clotilda shipwreck, presented in preservation tanks.</p>
+            <blockquote>This is actually the best documented Middle Passage story we have as a nation</blockquote>
+            <p>It promises a unique insight, given the relatively recent timing of the Clotilda voyage in relation to the history of slavery. "This is actually the best documented Middle Passage story we have as a nation," explained Meg McCrummen Fowler, director of the History Museum of Mobile. "There's just an abundance of sources, mostly because it occurred so late. Several of the people on the ship lived well into the 20th Century, so instead of silence there's diaries, there's ship records."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Work has started on the Africatown Heritage House, a $1.3 million exhibit about the 110 enslaved West Africans and the Clotilda vessel (Credit: Zoey Goto)</figcaption>
+            </figure>
+            <p>Further regeneration projects on the horizon include a footbridge connecting the two areas of Africatown currently divided by the freeway. Water tours taking visitors close to the shipwreck site are scheduled to launch in spring 2022, and a few local residents ahead of the curve are offering walking tours of Africatown.</p>
+            <p>While tourists have yet to arrive in serious numbers, Africatown faces a familiar set of challenges to other US neighbourhoods experiencing rapid revitalisation, including ensuring the whole community supports change and that residents don't fall through the cracks. But Patterson said that the Africatown community is united in its mission.</p>
+            <p>"We're all on board with this," he said.</p>
+            <p>The final stop on our tour was the cemetery where many of the Clotilda's enslaved have been laid to rest. As we walked, Patterson told me that with the light currently shinning on this troubling chapter of history, he has hopes that there will be enough sustained interest to generate the funds needed to raise the schooner from the water.</p>
+            <p>Though the true impact of this fabled ship's discovery is yet to be seen, for Patterson, it presents an opportunity to lift up the Africatown community and honour the struggles of its founders. "This is about more than bricks and mortar, it's ultimately about the growth of our souls," he said, looking out over their crumbling gravestones, all facing east towards their motherland. "Finding the ship has finally validated our truth."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Unlike some of the other descendent families, Darron Patterson was told little of his ancestry (Credit: Zoey Goto)</figcaption>
+            </figure>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

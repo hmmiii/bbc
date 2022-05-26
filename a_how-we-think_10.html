@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_how-we-think_10" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>How We Think</mark>
+                <h2>The conversational habits that build better connections</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Can you chat your way to greater social connection? Five useful steps can help us strengthen ties and avoid mistakes.</h3>
+            <p>“There is no such thing as conversation,” the novelist and literary critic Rebecca West famously wrote in her collection of stories, The Harsh Voice. “It is an illusion. There are intersecting monologues, that is all.” In her opinion, our own words simply pass over the words of others without any profound communication taking place. </p>
+            <p>Who has not been able to empathise with this sentiment at some point in their life? Whether we’re making small talk with a barista, or meeting up with a close friend, we may hope to make a connection, only to leave the conversation feeling that our minds have failed to meet. </p>
+            <p>The pandemic has surely heightened our awareness of these sensations. After long periods of isolation, our hunger for social contact is greater than ever - and it is even more disappointing to feel that a void remains between us and others, even when rules of physical distancing have been lifted. </p>
+            <p>If this rings true for you, help may be at hand. During the past few years, psychologists studying the art of conversation have identified many of the barriers that stand in the way of a deeper connection, and the ways to remove them. Read on for the top five steps to better conversation. </p>
+            <p><strong>Ask questions</strong></p>
+            <p>The first step might seem obvious, yet it is often forgotten: if you want to have a meaningful dialogue with someone - rather than two “intersecting monologues” - then you should make the effort to ask some questions. </p>
+            <p>Consider the research of Karen Huang, an assistant professor at Georgetown University, US. While studying for a PhD in organisational behaviour at Harvard University, Huang invited more than 130 participants into her laboratory and asked them to converse in pairs for 15 minutes through an online instant messenger. She found that, even in this short period of time, people’s rates of question-asking varied widely, from around four or fewer at the low end to nine or more at the high end.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Never underestimate the power of asking questions - and indeed going in for a follow up, research shows (Credit: Getty)</figcaption>
+            </figure>
+            <p>Throughout a series of follow-up studies, Huang found question-asking made a significant difference to people’s likeability. Analysing the conversations at a speed-dating event, for example, she found that the number of questions asked by a participant could predict their chance of securing another meeting. </p>
+            <p>Not all questions are equally charming: a follow-up that requires more information about a previous point is more appealing than a ‘switch’ that changes topic, or a ‘mirror’ that simply copies what someone has already asked you. Importantly, Huang’s findings suggested that most people did not anticipate the effects of question asking. We enjoy talking about ourselves, but we underestimate the benefits of letting others do the same - to the detriment of our relationships. </p>
+            <p><strong>Beware empathy</strong></p>
+            <p>We are often told to place ourselves in other people’s shoes - but our empathy is rarely as accurate as we think it is. </p>
+            <p>One reason for this is egocentrism. “It’s when I'm using my own experience, my own mental states, as a proxy for yours,” says Nicholas Epley, a professor of behavioural science at the University of Chicago. “And we fail to differentiate sufficiently between the two.” </p>
+            <p>In its most basic guise, this egocentrism can be seen when we point to something in our physical surroundings and fail to recognise that it is out of the other person’s line of view, or when we overestimate someone’s knowledge on a topic that is familiar to us and fail to explain ourselves properly. It may also lead us to think that someone else is feeling the same mood as us, or that they hold the same opinions - whether a preference for a particular restaurant or their views on a controversial topic.</p>
+            <blockquote>We enjoy talking about ourselves, but we underestimate the benefits of letting others do the same - to the detriment of our relationships</blockquote>
+            <p>Interestingly, Epley’s research has shown that our egocentrism is worse when we are with an acquaintance, rather than a stranger - a phenomenon called the “closeness-communication bias”. “We often perceive close friends and partners to be similar to us, so we assume that they know what we know,” Epley explains. With strangers, we may be a bit more cautious about making those assumptions. </p>
+            <p>You might hope to solve this problem with some conscious “perspective taking”, in which you deliberately imagine what the other person is thinking and feeling, based on your existing knowledge of them. Yet Epley’s studies show that in many cases, this practice decreases the accuracy of our social perception, since it still relies on us making assumptions that may not be true. In general, it’s far better to ask someone what they actually think and feel, he says, than trying to divine it. </p>
+            <p><strong>Favour familiarity over originality </strong></p>
+            <p>How about our choices for the topic of conversation? </p>
+            <p>It’s natural to assume that people favour originality; we should always attempt to convey something new and exciting, rather than telling someone something they already know. But these intuitions are off kilter. According to research by Gus Cooney, a social psychologist at the University of Pennsylvania, US, we suffer a “novelty penalty” when we discuss something new, compared to a subject that is already familiar to the listener. </p>
+            <p>During one experiment, participants were placed into groups of three. While alone, each member watched one of two short videos, which either described the intelligence of crows or the creation of specialist soda pops. The trio then met in their group, and one member - the speaker - was asked to describe the video he or she had seen, while the others listened for two minutes. </p>
+            <p>Surprisingly, the listeners preferred to hear the speaker describing the video they had already seen, while they remained distinctly underwhelmed if he spoke about the unfamiliar clip - despite the fact it was providing fresh information that they had not heard before. </p>
+            <p>Cooney argues that the novelty penalty arises from the “informational gaps” in our conversation. If we are talking about something completely new, our audience may not have enough knowledge to understand everything that we are saying. If we are talking about something already familiar to our audience, however, the listeners can fill in those gaps themselves.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>If you're imparting new information, figure out a way to make it relatable - or your tale might fall flat (Credit: Getty)</figcaption>
+            </figure>
+            <p>The novelty penalty might explain why a description of an exotic holiday can often fall flat with your colleagues unless they have been to that location themselves. “When the experience is so vibrant in your head, and you can smell it and taste it and see all the colours, you just assume other people can do it too,” says Cooney. </p>
+            <p>Cooney suggests you might be able to overcome the novelty penalty with finely-tuned storytelling that helps to create a vivid impression of the events you’re describing. “When you are aware of this, you might try a little harder to bring that experience alive,” he says. Until you’ve perfected your patter, however, it may be safer to pick topics of conversation that lean on shared experiences.  </p>
+            <p><strong>Don’t be afraid to go deep </strong></p>
+            <p>This need for common ground should not limit our conversation to mundane small talk. On the contrary, many shared human experiences can be incredibly profound, and Epley’s recent research shows that most people appreciate the chance to explore their innermost thoughts and feelings, even if they are talking to perfect strangers. </p>
+            <p>Epley’s team asked pairs of participants, who had not met previously, to discuss questions such as, “If a crystal ball could tell you the truth about yourself, your life, your future or anything else, what would you want to know?”. </p>
+            <p>Beforehand, most participants feared the exchanges would be painfully awkward - yet the conversation flowed far more smoothly than they had predicted. They also felt a greater sense of connection with their conversation partners than they had thought possible, and this was also accompanied by a happier mood following the exchange. In general, the participants were much more interested in their conversation partners’ innermost thoughts and feelings than each had initially imagined.</p>
+            <blockquote>The novelty penalty might explain why a description of an exotic holiday can often fall flat with your colleagues unless they have been to that location themselves</blockquote>
+            <p>“In these deep conversations you get access to the mind of another person, and you get to recognise that the other person actually cares about you,” says Epley. And that can make for a touching exchange of words, even if you will never encounter that person again. </p>
+            <p><strong>Value tactful honesty over mindless kindness </strong></p>
+            <p>Imagine, for a moment, you were compelled to talk with complete honesty during every social interaction. How would your relationships fare? </p>
+            <p>A few years ago, Emma Levine, an associate professor of behavioural science at the University of Chicago, and Taya Cohen, an associate professor of organisational behaviour at Carnegie Mellon University, decided to turn this thought experiment into reality. They recruited 150 participants, who were divided into three groups. The first set were asked to be “absolutely honest” in every conversation, at home and at work, for the next three days; the second set were told to be kind, caring and considerate for the same period, while the final third were encouraged to behave normally. </p>
+            <p>Most people predict the kind group would have the best experience - while the honest group would struggle to keep their friendships. Yet the honest participants scored just as highly on measures of pleasure and social connection throughout the three days as those who were told to be kind, and often found a lot of meaning in the exchanges. </p>
+            <p>“It seems like it would be awful,” says Cohen. “But the participants reported being happy to have had the honest conversations, even if they were hard.” </p>
+            <p>In follow-up experiments, Cohen asked pairs of friends, colleagues or spouses to open up about personal issues - such as the last time they cried or the issues with their current relationship. In each case, the honest communication proved to be far more constructive than people predicted - and the benefits of the candid disclosure on their overall wellbeing continued for at least a week afterwards. “These conversations were having downstream positive effects on the relationships,” Cohen says. “It was a valuable experience.” </p>
+            <p>It should go without saying that honesty is best served with a healthy dose of diplomacy. Cohen says that you should think carefully about the timing of your comments, the way they are phrased and whether the person will have the opportunity to make use of the information. “Five minutes before the wedding, you don’t need to tell the bride that she looks terrible, right?” There’s no excuse for being a bully, even if you think your insults convey the truth. </p>
+            <p>When practicing each of these five steps, you should always remain conscious of the other person’s mood and comfort, and be prepared to step away when your conversational gambits are not welcome. But with a little tact, sensitivity and a genuine interest in the people around you, you may often find that greater social connection is easily within your reach. </p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

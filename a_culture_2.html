@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_culture_2" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Culture</mark>
+                <h2>A Caribbean take on body positivity</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>An important part of Curacao's dushi (sweet) culture, Mama and Chichi sculptures can be found across the island and have come to represent the beauty of the female form.</h3>
+            <p>It's impossible to travel around the Dutch Caribbean island of Curaçao without falling in love with the affectionate-looking, plus-sized Mama (mother) and Chichi (big sister) sculptures found in public squares, outside hotels and in unexpected locations around the island. Their poses - with hands outstretched in a welcoming embrace or clasped together in quiet contemplation - radiate maternalistic warmth. Combined with their lofty 2m scale, Curacaoans and travellers alike can't resist rushing in to photograph a hug with a Mama or Chichi or stopping by for a quick chat.</p>
+            <p>The prevalence of these voluptuous sculptures across the island is indicative of Curaçao's flourishing emergent culture and art scene. Curaçao was settled by the Arawak people from South America around 6,000 years ago, but in 1515 the entire population was deported to the nearby island of Hispaniola and enslaved in their copper mines by the Spanish. Today, still coming to terms with its past, the ever-growing population of Curaçao is a fusion of African, European and Latin American cultures from more than 50 countries.</p>
+            <p>In fact, it was relatively recent migrants to Curaçao who, inspired by the beauty and strength of the women they saw around them, first decided to immortalise the island's Mamas and Chichis in sculptures. But few people know the stories behind these vibrant figures or how they became emblems of contemporary Curacao's dushi (sweet) culture.</p>
+            <p>My first encounter with a Mama was under a canopy of trees on a sun-soaked hillside near the Colourful Steps in Willemstad's Otrobanda district. Created by sculptor Hortence Brouwn, this hilltop Mama is the highest and one of the largest Mamas on the island. At 2m in height and almost the same in width, she perches serenely on a small clifftop above a resplendent tangle of magenta, coral and white bougainvillea bushes. Her scarlet dress is adorned with sunflowers that perfectly match her saffron headwrap. Pressing her hands together, she gazes out across Sint Anna Bay, as if patiently waiting for the return of a loved one.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>For many Curaçaoan women, these statues have become emblems of body positivity (Credit: Hortence Brouwn)</figcaption>
+            </figure>
+            <p>Brouwn, 84, has been sculpting since she was 17. Originally from Suriname, she migrated to Curaçao 40 years ago. The sculptor specialises in the human form and aims to express movement and feelings through the body language of her subjects. The inspiration for Brouwn's first Mama came 35 years ago, after observing how Curacaoan mothers across the island would sit in one spot enjoying the day for long periods while their children were at school. Today, Brouwn's sculptures can be found around the world, including Holland and Bonaire, but her beloved Curaçao has more Mamas than any other location.</p>
+            <p>"I started by making a small sculpture of a lady sitting on a bench," Brouwn explained. "The former owner of Avila Beach Hotel came to me for a coffee one day and saw it. He said, 'It's such a beautiful sculpture, can you make me a very big one?'. I asked him how big, and he replied, 'Lifesize!'."</p>
+            <p>And so, Brouwn cast her first large bronze Mama sculpture, which was given pride of place on a bench outside the hotel. Swiftly afterwards came a commission from Kura Hulanda Hotel for another Mama. Brouwn's second bronze Mama, while also extremely lifelike, preserves a snapshot of Curacaoan life from the 1980s. "Women in Curaçao used to walk around in the streets with curl pins in their hair and when they went out for the evening, they'd take them out, but you don't see it anymore," she told me.</p>
+            <p>Her Mamas of all sizes were soon in high demand, although the largest ones appear to evoke the strongest emotional reactions from observers and buyers. Perhaps in part it's due to the previous lack of representation of the huge diversity of shapes and sizes of members of the Curaçaoan population, which is made up of 75.4% black or mixed race Curaçaoans, 6% Dutch, 3.6% Dominican and 3% Colombian, with the remainder being from various other Caribbean islands, Venezuela and Suriname. To many Curaçaoan women, statues such as Brouwn's have become emblems of body positivity, serving as a reminder that women in this melting pot come in all shapes and colours.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Created by Hortence Brouwn, this 2m-tall hilltop Mama is one of the largest on the island (Credit: Sarah Harvey)</figcaption>
+            </figure>
+            <p>Many Curaçaoans, as well as visitors, see themselves or family members in the sculptures. "One day I was looking out of my kitchen window, and I couldn't believe it when I saw a man come and sit down and talk to one of my Mamas," said Brouwn. "Since then, I've noticed many people like to come sit beside them, and even talk with the sculptures sometimes."</p>
+            <hr>
+            <p><strong>WHERE TO FIND CHICHIS AND MAMAS</strong></p>
+            <p>WHERE TO FIND CHICHIS AND MAMAS</p>
+            <p>You can make an appointment to visit Brouwn's studio to see her work, which also includes other types of figures, and can buy or commission a piece.</p>
+            <p>Alternatively, look out for both Chichis and Mamas outside major hotels, the historic Rif Fort and in unexpected locations around the island.</p>
+            <hr>
+            <p>Many Curaçaoans have the figurines in their homes, too. Their affection and respect for the women of the island is part of the national character, which values and celebrates all things dushi. The dushi way encompasses not only behaviour; it's also a word frequently used as a term of endearment for anyone from family members to strangers, a way of describing a delicious meal, or indeed anything deemed to be nice, good or enjoyable. Seeing the sweetness in everything may be one way this diverse new nation has attempted to heal from its past.</p>
+            <p>While Brouwn was the first artist in Curaçao to popularise these curvy depictions of women - with many other artists following suit - it was sculptor Serena Israel who took making plus-sized figures into a community-based enterprise for local women. This time, the inspiration was another important member of Curacaoan families: the Chichi.</p>
+            <p>Like Brouwn, Israel was drawn to Curaçao and it has now been her home since 2001. As a new migrant, finding herself strapped for cash, unmarried and pregnant, the German native pivoted from working as a cleaner and waitress to teaching sculpting skills at the well-known Landhuis Bloemhof gallery. As she discovered more over the years from Curaçaoan friends about the island's culture and complex history, she was inspired by the backstory of Curaçao's Chichis - the Papiamentu word for the eldest sister in a family.</p>
+            <p>"Chichis are so much more than just a big sister; they capture the embraces, the pride and the heritage of many Curaçaoan women," Israel explained. "During WWI, the Chichis came to the forefront because the mothers were working while many of the men were away fighting. They had to take control of the family, which often meant they had no time for a school education. So Chichis became pillars of the Curaçaoan families - they held them together."</p>
+            <p>That was when people first began calling them "Chichi", as a sign of respect. When the first generation of Chichis grew up, the word became used as a more general term to describe local women.</p>
+            <blockquote>Chichis are so much more than just a big sister; they capture the embraces, the pride and the heritage of many Curaçaoan women</blockquote>
+            <p>Israel began making small Chichis from papier mache for tourists 14 years ago. Demand snowballed, leading to the creation of an Art Factory, where visitors can watch her in action, along with various shops and outlets. She has been commissioned to create large Chichisto celebrate their importance in Curaçaoan culture, including a colourful figure outside the Renaissance Wind Creek Hotel, wearing a swimsuit painted with tropical flower designs. Guests are frequently seen perched on her lap.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A new "XXXL Chichi" includes illustrations of Curaçao's most beautiful attractions (Credit: Serena Israel)</figcaption>
+            </figure>
+            <p>"My Chichis are very joyful and capture the root of the truth," Israel said. "With regards to body positivity, I think they're big and beautiful. It doesn't mean they're not sporty or not eating healthily. They have their own beauty. To me, they are about national pride, but also about healing. Curaçao is still healing from its past. It has a heavy history. All these thoughts were going through my mind when I came up with an idea that I thought might work; a sculpture that would celebrate voluptuousness, and Curacaoan women and their heritage."</p>
+            <p>After transforming from struggling migrant to successful artist in her new home country, Israel says she decided to pay it forward by teaching jobless women in her neighbourhood how to craft and paint their own Chichis - a 12-step process involving 10 pairs of hands. Operating as a kind of artists' cooperative, the opportunity gives them the ability to earn their own money, as well as to work from home and choose their own hours to fit around family commitments.</p>
+            <p>Unsurprisingly, the holiday island did not escape unscathed from the ongoing Covid-19 pandemic. Israel's cooperative relied upon tourists for 80% of its income. But she has just launched a crowdfunding idea to create a new extra-large "XXXL Chichi" that draws attention to Curaçao's charms through illustrations of its most beautiful attractions - including the popular cliff jumping spot at Playa Forti - as well as native flora and fauna such as dolphins, hummingbirds and cayenne flowers. People can watch Israel and the other artists doing live painting sessions on the sculpture every Wednesday at different locations, or view the livestream.</p>
+            <p>"We will move the XXXL Chichi around the island for a year because we want to show the world how beautiful our island is," Israel said, explaining that the new Chichi will be donated to the city of Willemstad for three years after its one-year tour. "In the meantime, the crowdfunding helps get our painters back to work and allows us to hire new painters, so we can provide an extra income to the local community that really needs it."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Angelique Martina is one of Israel's Curaçaoan associates who paints Chichis (Credit: Sarah Harvey)</figcaption>
+            </figure>
+            <p>Angelique Martina, a Curaçaoan artist who has been making Chichis with Israel for several years, is also a firm believer in the importance of the figures as a symbol of female strength. "For me, the Chichi sculptures are all the members of the family who are strong women. We are smart, we can work hard, we take care of our children, we take responsibility - we're great!" Martina said.</p>
+            <blockquote>We come in all shapes and sizes, and with all the colours and happiness in the world</blockquote>
+            <p>"Lately, there is a lot of talk about body positivity. The Chichis help with this because they prove the shape of the body has nothing to do with the soul - how you feel, how happy you are, how important you are, and how hard you are working. For me, the sculptures show that women are truly amazing. We come in all shapes and sizes, and with all the colours and happiness in the world."</p>
+            <hr>
+            <p>Join more than three million BBC Travel fans by liking us on Facebook, or follow us on Twitter and Instagram.</p>
+            <p>If you liked this story, sign up for the weekly bbc.com features newsletter called "The Essential List". A handpicked selection of stories from BBC Future, Culture, Worklife and Travel, delivered to your inbox every Friday.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

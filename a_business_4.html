@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_business_4" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Business</mark>
+                <h2>Ukraine crisis: How much Russian money is there in the UK?</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <figure>
+                <img src="" alt="">
+                <figcaption>London has earned the nickname "Londongrad" as the preferred destination for wealthy Russians</figcaption>
+            </figure>
+            <p><strong>The UK has imposed sanctions on banks, companies and individuals linked to Russia since the invasion of Ukraine.</strong></p>
+            <p>The government has been under pressure to do more to tackle the flow of Russian money into the UK.</p>
+            <p>Home Secretary Priti Patel has said: "I'm very open about the fact that for too long London has been the place that people have come to wash dirty money."</p>
+            <h3>How much Russian money is there in the UK?</h3>
+            <p>Many wealthy individuals and companies from Russia and around the world invest legitimately in UK financial and property markets.</p>
+            <p>But the anti-corruption organisation Transparency International has identified at least £1.5bn of UK property owned by Russians accused of financial crime or with links to the Kremlin.</p>
+            <p>A Home Office report says the UK has seen "a significant volume of Russian, or Russian-linked illicit finance", which is spent on things like luxury property, cars and school fees, and sometimes as donations to cultural institutions, which allow individuals to "launder their reputation".</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Unexplained Wealth Orders have rarely been used since they were introduced in 2018</figcaption>
+            </figure>
+            <p>When it comes to property, which can be owned through companies rather than in the names of individuals, information sometimes does not come easily. The Overseas Company Ownership database for England and Wales says only four of 94,000 properties where the registered legal owner is an overseas company, are listed as being owned by Russian companies.</p>
+            <p>But it's possible that many more property purchases could ultimately be owned by Russian individuals, using companies based overseas in places such as the British Virgin Islands (BVI).</p>
+            <p>One example was Alexei Chepa, a Russian politician and businessman, who used a BVI company to buy a 10-bedroom mansion in Holland Park in 2011 - it was sold last year for £25m. His representatives said the purchase "would have followed absolutely the proper processes as advised at the time".</p>
+            <p>The scale of the use of these offshore companies was revealed in a major leak of almost 12 million documents known as the Pandora Papers in October 2021.</p>
+            <p>It exposed hidden wealth, tax avoidance and, in some cases, money laundering by some of the world's rich and powerful people.</p>
+            <p>Researchers identified more than 700 offshore companies which owned UK properties, and found that 5% of them were owned by Russian citizens.</p>
+            <ul>
+                <li>What sanctions are being imposed on Russia?</li>
+                <li>Pandora Papers: The secret owners of UK property worth billions</li>
+            </ul>
+            <h3>Why is the UK attractive to Russian investors?</h3>
+            <p>London has long been a popular destination for wealthy Russians to settle in, or to purchase property and investments.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Getty Images</figcaption>
+            </figure>
+            <p>Holders of the visas were able to apply for permanent residency in the UK, along with their families. How quickly they could apply depended on the size of their investment:</p>
+            <ul>
+                <li>Two years with £10m</li>
+                <li>Three years with £5m</li>
+                <li>Five years with £2m</li>
+            </ul>
+            <p>The Home Office issued 2,581 investor visas to Russian citizens, since the scheme was introduced in 2008.</p>
+            <p>It was scrapped by the government on 17 February 2022, amid pressure over UK links to Russia.</p>
+            <p>Russian companies have also been able to raise large sums in share sales on the London Stock Exchange.</p>
+            <p>An energy firm (En+ Group) was one such beneficiary. At the time of its initial public offering, the company was controlled by Oleg Deripaska, an associate of Russian President Vladimir Putin.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Oleg Deripaska was able to raise large sums on the London stock market</figcaption>
+            </figure>
+            <p>A House of Commons report in 2018 called on the government to close the gaps "in the sanctions regime that allowed a company such as En+ to float on the London Stock Exchange".</p>
+            <p>Mr Deripaska was sanctioned by the UK government on 10 March 2022.</p>
+            <h3>What action has the government taken so far?</h3>
+            <p>In 2018, the UK government introduced a mechanism to confiscate property without first seeking a criminal conviction.</p>
+            <p>These Unexplained Wealth Orders (UWOs) put the onus on the individual to prove where the cash had come from to purchase the property.</p>
+            <p>However, UWOs have been used just four times, and only one has resulted in property being surrendered so far.</p>
+            <p>The new Economic Crime Bill is supposed to make UWOs more effective by widening the range of people they can be used on and giving the authorities protection against being hit with legal costs after using them.</p>
+            <ul>
+                <li>Economic Crime Bill: What is it and will it find Putin's loot?</li>
+            </ul>
+            <p>Another tool available to courts is the Account Freezing Order (AFO). It allows courts to freeze funds in a bank or building society if they suspect the money is linked to criminal activity.</p>
+            <p>The introduction of the AFO has been more successful so far than the UWO, according to a report from the Chatham House think tank, which points to action taken against the niece of Syrian president Bashar al-Assad and the son of a former Moldovan prime minister.</p>
+            <p>The Economic Crime Bill, which was approved in Parliament on Monday 7 March 2022 and is expected to become law later this month, also sets up a register of beneficial ownership for property owned by overseas entities.</p>
+            <p>Beneficial ownership refers to the person who ultimately owns or controls a property and benefits from it.</p>
+            <p>Plans for such a register had been announced in 2016 and campaigners have cited the lack of it as a key problem in fighting money laundering and implementing sanctions.</p>
+            <p>Lord Faulks, a former Conservative justice minister, has said that Downing Street under Theresa May "leant on him" to stop him introducing such a measure in 2017 and then again in 2018.
+            <p>The register will apply to property bought by overseas owners up to 20 years ago in England and Wales and from December 2014 for property in Scotland.</p>
+            <p>Boris Johnson has also said that government sanctions will also limit the amount of money Russian nationals will be able to deposit in their UK bank accounts.</p>
+            <p>Correction: An earlier version of this story incorrectly stated the number of Tier 1 (Investor) visas granted to Russians as 14,516. The correct figure to the end of March 2020 was 2,581.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

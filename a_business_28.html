@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_business_28" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Business</mark>
+                <h2>How to store excess wind power underwater</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>With 17 new wind farm projects planned for Scotland, the UK's offshore wind power capacity is set to more than double.</strong></p>
+            <p>But what happens when the wind is blowing, the turbines are cranking out electricity and there's no demand for it?</p>
+            <p>It's already a problem. In 2020, enough electricity to supply more than one million homes was wasted due to a lack of storage, according to a report by KPMG that was commissioned by the power company Drax.</p>
+            <p>But one firm, which won a 2022 Best of Innovation award at the CES technology show earlier this year, believes it has the solution.</p>
+            <p>Dutch startup, Ocean Grazer, has developed the Ocean Battery, which stores energy below the wind farm.</p>
+            <p>When there is excess electricity the system pumps water from an underground reservoir into tough, flexible bladders that sit on the sea bed. You could think of them like big bicycle inner tubes.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Ocean Battery uses a bladder on the sea bed which holds water under pressure</figcaption>
+            </figure>
+            <p>The water in those tubes is under pressure, so when it is released the water flows quickly and is directed through turbines, also on the sea bed, generating electricity when needed.</p>
+            <p>"The Ocean Battery, is effectively based on the same technology as hydro storage, where water is pumped back through a dam in a river, though we have transformed it into something you can deploy on the sea bed," says chief executive Frits Bliek.</p>
+            <p>A protoype designed for deep water has already been tested at the port of Groningen in the Netherlands. The firm is now preparing to test a second system that has been modified for shallower water in a lake in the northern Netherlands. This should be operational next year.</p>
+            <p>Many on-shore wind farms already use batteries to store extra power but there are a number of problems when it comes to using these offshore.</p>
+            <p>"If you want to build a large-scale system offshore, you would also need to build a really huge platform built of sea containers and that's been found to be very, very costly. Also the lifetime of the batteries is not very long," says Mr Bliek.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Ocean Grazer's prototype being lowered into the water - it is now planning a bigger test</figcaption>
+            </figure>
+            <p>While lithium-ion batteries can last for 5,000-10,000 charging cycles, the Ocean Battery can take up to a million, he says. Though the cost of storage is roughly the same, this extended life makes it much cheaper overall.</p>
+            <p>"We found it can be built in shallow waters everywhere where wind farms are being built, and that's also pretty cost-effective at the end of the day," says Mr Bliek.</p>
+            <p>He also thinks the technology can be used alongside solar farms, if there is a lake nearby.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

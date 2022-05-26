@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_in-pictures_3" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>In Pictures</mark>
+                <h2>Underwater Photographer of the Year winner revealed</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Rafael Fernandez Caballero has been named Underwater Photographer of the Year 2022 for his image of five whale sharks feeding together in the Maldives.</strong></p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>MATTY SMITH/UPY2022</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Macro: Mimicry, by Javier Murcia, from Spain</figcaption>
+            </figure>
+            <p>This is a special moment, capturing the meeting of the seagrass shrimp and the seagrass pipefish in Spanish waters.</p>
+            <p>Both species live on the leaves of seagrasses.</p>
+            <p>The pipefish looks like a seagrass leaf - and for this reason, some prawns merge with its body, thinking they are leaves that move.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Wrecks: Abandoned Ship, by Alex Dawson, from Sweden</figcaption>
+            </figure>
+            <p>The wreck of Tyrifjord is one of the favourite wrecks in the Gulen dive-resort area of Norway.</p>
+            <p>It sits approximately 40m (130ft) underwater and is very sheltered.</p>
+            <p>The highlight of the wreck is always the huge steering wheel in the aft.</p>
+            <figure>
+                <img src="" alt="">
+                <figure>Behaviour: All You Need Is Love, by Pekka Tuuri, from Finland
+                </figure>
+            </figure>
+            <p>This love pond is a 20-minute drive from my home [in Finland] and it has rewarded me plentifully over the past 10 years.</p>
+            <p>It was full of love in late April 2021.</p>
+            <p>I spent four days and four nights wearing a dry suit, lots of undergarments and a heated vest, to survive in the 5C water.</p>
+            <p>I floated and stayed put among the frogs - and quite soon, they accepted me and my camera as part of the scenery.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Portrait: Rapunzel on Fire, by Thomas Heckmann, from Germany</figcaption>
+            </figure>
+            <p>Our idea was to create a completely black silhouette in the foreground - but at the same time, make eye contact with the viewer.</p>
+            <p>To make the hair glow in the underwater studio, three powerful strobes were hidden in the background.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Black and white: Sarah's Underwater World, by Kerrie Burow, from Australia</figcaption>
+            </figure>
+            <p>This shot was taken a year into the coronavirus pandemic - my seven-year-old niece Sarah stares with wonder while on one breath underwater.</p>
+            <p>The scene portrays the therapeutic power of water, which so many of us experienced during the pandemic.</p>
+            <p>I minimalised my presence, gave no instructions to Sarah and allowed the scene to evolve naturally.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Compact: Peace, by Enrico Somogyi, from Germany</figcaption>
+            </figure>
+            <p>Once a year, at the end of March, it is mating time for the toads.</p>
+            <p>I was trying to take a split shot with this toad [in a pond in Leipzig, Germany], when he started to crawl on my small dome port.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Up and coming: Supernova in Paradise, by Quico Abadal, from Spain</figcaption>
+            </figure>
+            <p>I first met Jeniya having breakfast at one of my favourite food spots in Koh Tao, Thailand.</p>
+            <p>After a couple of months, we met again, at Sairee beach.</p>
+            <p>She was wearing a stunning long white dress and we planned to shoot mostly split shots with the sunset, using strobes to illuminate the underwater scene.</p>
+            <p>It was a pretty challenging shot, since I didn't have any fins or wetsuit.</p>
+            <p>What I like about this photograph is the imperfection of backscatter, recreating space and making it perfect to me.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>British waters wide angle: Gannet Storm, by Henley Spiers, from the UK</figcaption>
+            </figure>
+            <p>A northern gannet swims in an artistic hail of bubbles created by diving seabirds in Shetland.</p>
+            <p>Hitting the frigid water faster than an Olympic diver, these incredible birds have evolved air sacs in the head and chest to survive these repeated heavy impacts.</p>
+            <p>From underwater, the sound was thunderous, as streamlined white torpedoes pierced the surface.</p>
+            <p>I wanted to create a novel image of these handsome seabirds and resolved to try to capture their movement through a slow exposure.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>British waters macro: Best Buddies, by Dan Bolt, from the UK</figcaption>
+            </figure>
+            <p>We were diving on an area of reef in Loch Carron, Ross-shire, I'd not previously explored.</p>
+            <p>After an excited squeal and waving of a torch in my direction, I dropped down to see my buddy had found not one but two beautiful little Yarrell's blennies holed up in a crack in the rock.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>British waters living: A Peaceful Coexistence, by Lewis Michael Jefferies, from the UK</figcaption>
+            </figure>
+            <p>In the summer months, jellyfish frequent the British Isles in large numbers, thought to be attracted by the warmer waters.</p>
+            <p>The summer of 2021 was no exception and there were huge numbers of these compass jellyfish in Falmouth Bay, Cornwall.</p>
+            <p>I hope my image can inspire others to explore and appreciate the wonders found right in our backyard, in British waters.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>British waters compact: Rock Pool Star, by Martin Stevens, from the UK</figcaption>
+            </figure>
+            <p>Living from shallow water to deep water and reaching impressive sizes, spiny starfish are abundant in Cornwall.</p>
+            <p>I've often taken photos of them underwater - but on a low tide, they can be found in the exposed rock pools.</p>
+            <p>I attached a fisheye wet lens and was lucky with bright conditions.</p>
+            <p>After a while, I came across a large starfish in a gully flanked by exposed kelp.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Save Our Seas Foundation, Marine Conservation: Big Appetite, by Thien Nguyen Ngoc, from Vietnam</figcaption>
+            </figure>
+            <p>An aerial perspective of busy anchovy fishing activities off the coast of Hon Yen, Phu Yen province, Vietnam.</p>
+            <p>Salted anchovy is the most important raw material to create traditional Vietnamese fish sauce, but anchovies are a little fish with a big impact.</p>
+            <p>When they are over-fished, the whales, tunas, sea birds, and other marine predators that rely on them as a dietary staple, face starvation and population decline.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_how-we-work_2" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Hello Hybrid</mark>
+                <h2>The tussle over location-based pay</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Companies are grappling over whether fully remote employees should be paid the same as in-office staff. What is the right way forward?</h3>
+            <p>Sam is a full-time employee for a Big Tech company. Based in London, he’s still currently working from home five days a week. His employer has offered him a great deal of flexibility: he can return to the office whenever he wishes, or continue working remotely forever. </p>
+            <p>The choice is Sam’s, but there’s a crucial caveat: if he decides to move too far from his firm’s London headquarters, he’ll be docked 10% of his wages. “The pay cut would be adjusted to the cost of living and labour markets outside of London,” he explains. </p>
+            <p>Sam and his colleagues have worked remotely throughout the pandemic on full salary. Yet, employees deemed to have moved too far from the office over the past two years, and who want to continue working remotely, will be forced to take a sizable pay cut. Those within the right radius who want to stay remote will lose perks like travel discounts.  </p>
+            <p>It’s a hard choice - but one many workers may find themselves facing in coming months. As businesses continue to grapple with the return to office, companies who are allowing staff to choose their preferred long-term working models must decide how to handle pay for remote workers who have relocated away from offices.</p>
+            <p>Businesses are currently split on whether to adjust workers’ salaries based on where they live. By August 2021, most Big Tech firms (a group including Alphabet, Amazon, Apple, Meta and Microsoft) had announced they would slash the pay of employees who relocated out of Silicon Valley, arguing that existing wages were pegged to high living costs in the San Francisco Bay Area. Other firms, however, say pay shouldn’t be linked to location; rather, employees will receive the same wage regardless of their local cost of living, because their work can be done from anywhere, and that cutting remote-worker pay could mean good staff leave. </p>
+            <p>Each decision comes with huge consequences for workers. For employees who work productively from home, is it right that their wages are cut? Or is dictating that pay should be in line with people's proximity to the office a fairer approach?</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Google is among the largest workplaces involved in the back-and-forth over location-based pay (Credit: Getty Images)</figcaption>
+            </figure>
+            <p><strong>Salary minus geography</strong></p>
+            <p>For some employees, choosing to remain fully remote is about feeling comfortable and productive in set-ups they’ve cultivated for two years. But for others, it’s a necessity - because they’ve moved too far away from the office to commute.  </p>
+            <p>In many instances, remote workers have left major cities for regions with a lower cost of living, such as rural areas, where they’ve been able to afford a home that would have been previously out of reach. Returning to the office would ultimately mean choosing between where they want to live and where they want to work.</p>
+            <p>Some companies have therefore decided to take location out of the salary equation. For example, online real-estate marketplace Zillow pays the same wage to employees who move away from its Seattle headquarters to anywhere in the US. “It’s a philosophy of giving people the same opportunity to earn top-end salaries regardless of where they live,” says Dan Spaulding, chief people officer at Zillow. “It means they don’t have to pick between a great paying job and a location that matters to them.”</p>
+            <p>Other businesses are considering employees who may want to move abroad. Rather than anchor salary to locales across the US, software company Hubspot, based in Cambridge, Massachusetts, fixes it to one city per country. In practice, it means remote employees can move anywhere domestically on equal wages, or possibly emigrate for a one-time pay cut. “Moving to another part of the country is a decision an employee should make based on what’s best for their work and home life,” says Katie Burke, chief people officer at Hubspot. “It shouldn’t be at the expense of their compensation.”</p>
+            <blockquote>It’s a hyper-competitive market: removing location-based pay offers greater flexibility - Dan Spaulding</blockquote>
+            <p>Such benefits not only extend to the worker - it also means that firms now have a deeper talent pool to operate from and a greater chance of keeping staff amid the Great Resignation. “It’s a hyper-competitive market: removing location-based pay offers greater flexibility,” says Spaulding. “It’s allowing people to work more intentionally and productively, giving them more control over their time - and it helps us retain employees.”</p>
+            <p>Spaulding says allowing staff to move away doesn’t mean they’ll permanently lose chances to interact with colleagues in person. “Our major offices remain open and we’ve increased our travel budget for meaningful collaboration,” he explains. But he is convinced that big team days should be fluid, employee-led and only occasional. “It's up to employees to plan: once a month, quarter or year. We just don’t think it needs to be weekly - we really believe that companies won’t be able to dictate what hybrid will look like.”</p>
+            <p><strong>Why location-based pay can work</strong></p>
+            <p>Given some firms believe dropping location-based pay is a win for them and their staff, it can come as a surprise that Big Tech and other companies want to retain it. But the relationship between the cost of living and workers’ salaries goes back years. </p>
+            <p>Tsedal Neeley, professor of business administration at Harvard Business School, says although it’s unfair that some workers will be eventually paid less for doing the same job - especially when their work takes up significant space in their homes - location has always been factored into wages. “Companies have the right to make a cost-of-living adjustment,” she explains. “It’s a practice that has been going on for decades and is a labour market issue: salaries today have a cost-of-living algorithm.”</p>
+            <p>That’s the case for companies of all types, even early stage, fully remote start-ups: it still makes business sense to consider the cost of living when calculating salary for new hires. “Regionally, we use location as a baseline,” explains Eric Doran, director of people operations at online-ordering platform Lunchbox, based in New York City. “We don’t anticipate paying for a [remote] role in the middle of the US as much as we do on the coasts, but if that perfect candidate comes up, we’re not going to miss out due to a 6-to-12% geographic pay difference.”</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Some companies are asking workers to keep their addresses in and around city centres in order to retain their full pay packets, especially in a hybrid world (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>But beyond the bottom line, there are deeper factors at play explaining why Big Tech firms are willing to risk aggrieving staff over pay cuts - businesses are worried that large-scale remote working could end the hybrid workplace before it’s even begun.  </p>
+            <p>There will be, for example, employees who choose to remain living near the office as well as hybrid workers who are required to be at the office periodically. It’s the latter group who could feel hard done by if remote colleagues’ pay remains unchanged.</p>
+            <p>“Firms have told me if you don’t reduce wages for employees in remote locations, then employees in the workplace are going to be upset,” explains Nicholas Bloom, professor of economics at Stanford University, US. “They’re going to pay higher rents, food and transport costs to live in Silicon Valley and come in for two or three days a week.”</p>
+            <p>Therefore, unless remote positions are priced at a lower rate, businesses could begin losing the hybrid workers they need on site. “If an employee thinks they can save a lot of time and money by working fully remote, without suffering a pay cut, that will be attractive to them,” says Bloom.</p>
+            <p>For these businesses, location-based pay is a necessary step towards building a successful hybrid model. “The nature of tech means that such firms have the most to gain from working from home,” says Bloom. “Yet, there is evidence that you need some people in the office to nurture creativity and culture. I’ve spoken to more than 300 organisations during the pandemic: almost all plan on introducing hybrid for managers and professionals; they’re worried about eroding hybrid working.”</p>
+            <p><strong>How the debate could play out</strong></p>
+            <p>The embrace of location-based pay by Big Tech and other companies shows that they’re prioritising hybrid working for their businesses - and that they’ll incentivise workers to spend time in the office.</p>
+            <p>One area that will need refining is employees whose jobs have been made fully remote during the pandemic. Bloom gives the example of IT-support workers: they wouldn’t work hybrid, but without a location-based pay system, inequalities could emerge if they’re paid disproportionately more than new remote hires. “Such employees are hard to figure out as you’re either going to have to cut their salary, or pay them more for doing exactly the same job as new hires - neither option is appealing,” he says. </p>
+            <blockquote>If that perfect candidate comes up, we’re not going to miss out due to a 6-to-12% geographic pay difference - Eric Doran</blockquote>
+            <p>As the pandemic wanes, and companies look to bring workers back to the office on a hybrid basis, many will be wrangling with decisions like these. However, it’s unlikely that any plan will be fixed for good.</p>
+            <p>Rather, over the next months and years, leading companies will need to respond to moving targets like the Great Resignation, the tight job market and how the pandemic plays out. They’ll also likely be watching one another: a Big Tech firm suddenly altering its policy so employees work from anywhere, for example, would have immediate knock-on effects for its rivals. Companies will need to balance their desire to have workers in the office with their need to retain good staff who want to go fully remote.</p>
+            <p>For now, Sam says that based on the conditions his employer is offering, he’ll opt for a hybrid set-up and stay within the London region. “I’d probably still come into the office and keep my current benefits,” he adds. “It's unlikely that once pandemic restrictions are finally over that I’d have to be in the office every day anyway.” </p>
+            <p>Sam believes that taking a pay cut, should he decide to leave London, ultimately represents a good deal. He says it’s a view shared by colleagues. “A 10% salary cut is absolutely a trade-off worth taking if it means being able to move to other parts of the UK that have significantly lower costs of living,” he explains. “My company is also offering a one-off payment should I switch to remote to help with home office start-up costs, as well paying for broadband. I think it’s fair.”</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

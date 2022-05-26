@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_coronavirus_2" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Coronavirus</mark>
+                <h2>Young shielders: Covid vaccine is a ticket back to normal</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>I was out walking my dog last March when I received a text telling me I was clinically vulnerable and needed to start shielding immediately.</strong></p>
+            <p>Being totally honest, I burst into tears when I saw it - knowing I wouldn't be able to go out for a walk or a run, or even go to the supermarket.</p>
+            <p>I've had an auto-immune disease since the age of ten and take immunosuppressants, which have controlled it really well and let me lead a relatively normal life.</p>
+            <p>But one thing I've always struggled with is my weakened immune system. Before lockdown I'd get common colds that would knock me out for weeks and constantly need antibiotics for various infections I pick up.</p>
+            <p>I'd certainly let myself wonder about what would happen to me if I did catch coronavirus and working as a journalist every day certainly didn't help that feeling of anxiety.</p>
+            <p>So when I got a text last week offering me the chance to book in my first vaccine, I was absolutely overjoyed.</p>
+            <p>I immediately texted my parents, my sister and my friends - it felt like the biggest thing that had happened to me in a long time.</p>
+            <p>I immediately texted my parents, my sister and my friends - it felt like the biggest thing that had happened to me in a long time.</p>
+            <p>As I walked to the vaccine centre on Saturday morning (in my new trainers and a full face of make-up, because why not?), I allowed myself to dream.</p>
+            <p>I thought about all the things I used to take for granted, but now miss so much.</p>
+            <p>Spontaneously planning a night out three hours in advance. The excitement you get before going to a gig. The countdown and frantic packing days before a holiday. Not that we can do any of that just yet - but still, it's good to dream.</p>
+            <p>A paramedic gave me the jab and handed me a card with my batch number on, which now felt like the most precious thing I owned.</p>
+            <p>It was my ticket to a return to normal life.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>El has been shielding since last year</figcaption>
+            </figure>
+            <p>I called some fellow twentysomethings who've also had to shield and have got the jab.</p>
+            <p>El Afzal is a 24-year-old from Manchester, whose severe asthma and skin condition have meant she's also had to shield.</p>
+            <p>"Everyone's struggled with lockdown but when you're clinically vulnerable there's a different stress level," she says.</p>
+            <p>"I was getting all the texts and letters from the government telling me I was more likely to get severe Covid and that's been really hard in terms of anxiety."</p>
+            <h3>'I can sleep through the night'</h3>
+            <p>El found it very tough seeing her friends going out - even in a limited, socially-distanced way.</p>
+            <p>"It feels like a big kick in the face when you're sat at home and you can't even go to the shop."</p>
+            <p>She says her experience of trying to get the vaccine was tough at first because her health conditions meant she couldn't receive the Pfizer jab.</p>
+            <p>"I've had the Oxford one now and I'm really grateful that I've been able to have it at this point and at least get my first jab.</p>
+            <p>"There's a sense of relief and I can sleep through the night and actually know I've done everything that I possibly can to ensure I'm as safe as possible," she says.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Georgie has a genetic condition which means she has to shield</figcaption>
+            </figure>
+            <p>"I remember sitting down with my family eating lunch and my mum looked at her phone and she'd got the text - I had my phone charging in the other room and I went to grab it.</p>
+            <p>"It was incredible to see that message - I was absolutely buzzing."</p>
+            <p>Georgie Hodges is a 20-year-old student from London who has been shielding since the start of the pandemic due to a genetic condition. She says lockdown's had a really bad impact on her education and social life.</p>
+            <p>"My attention span has completely dropped in the last year and I can't sit down and focus - I also have joint pain and mobility issues," she says.</p>
+            <p>Georgie, along with her key worker parents, has received the first dose of the vaccine but doesn't expect her life to suddenly change, even when restrictions are relaxed.</p>
+            <p>"I won't be going out as normal until I get the second part but I'm actually quite overwhelmed with what to do," she says.</p>
+            <p>"I find going out for a walk quite overwhelming at the moment, so as much as I'd love to say I'll be going out with my friends, I don't know what I'll do."</p>
+            <p>But Georgie says she "can't put into words" how it feels to know that she's on her way back to a normal life.</p>
+            <p>"It's finally light at the end of the tunnel."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

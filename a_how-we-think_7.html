@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_how-we-think_7" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>How We Think</mark>
+                <h2>Can you ever get over a lingering grudge?</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>We all have ongoing grudges. It’s in our interests to get over them - so, can we?</h3>
+            <p>When you spend 40 hours a week with the same people, it’s not surprising that some of them will occasionally rub you up the wrong way. </p>
+            <p>One of my own lingering grudges comes from a Christmas party when I was a new, junior member of a team. Halfway through the celebrations, most of the colleagues at my table decided they wanted to go outside for a cigarette, leaving just me and a more senior journalist at the table. </p>
+            <p>“Don’t leave me by myself,” he said as they left. When another colleague tried to point out my presence, he cut them short. “That’s what I mean,” he said. </p>
+            <p>His message couldn’t have been clearer: as a junior member of staff, I was a “no-one”, unworthy of his company. I’ve since worked with this man without too much friction - but I can’t say that I’ve ever quite forgotten his smirk or my feelings of discomfort as we sat staring at our phones. </p>
+            <p>Perhaps it’s petty for me to hold on to that resentment - but it’s not unusual. Workplace grudges are common, and they can seriously impact our own and others’ productivity. They can also have serious health implications. Perhaps due to the stress of bearing resentment, people who regularly bear grudges are more susceptible to a range of illnesses - including cardiovascular conditions, arthritis, headaches and chronic pain. </p>
+            <p>Unsurprisingly, the psychological research suggests it is far better to resolve problems with people than to sweep emotions aside or let them fester. Finding an appropriate response that feels constructive and emotionally honest can be tricky, however, but these studies do offer some strategies to heal our hurt feelings - even if our offender offers no apology or efforts to make amends. </p>
+            <p><strong>Voodoo revenge</strong></p>
+            <p>Let’s first consider retaliation. If we’re nursing a grudge for a perceived wrong, we may react spitefully: by playing a prank, reacting rudely to requests for help or by maliciously gossiping about someone behind their back. There’s a good reason for this: acts of retaliation may restore people’s sense of justice and personal power. </p>
+            <p>Unfortunately, revenge also comes with some obvious risks - including the very real possibility of escalating the conflict. But there may be a way of gleaning some of those benefits without putting your future in jeopardy, as Lindie Liang at Wilfrid Laurier University in Canada discovered with a recent eye-catching study.</p>
+            <blockquote>The simple act of sticking the virtual pins in the virtual doll reduced the participants’ feelings of injustice</blockquote>
+            <p>Liang first asked her participants to recall, and visualise in detail, a time when their supervisor had acted in an abusive manner - such a being rude, insulting their ideas or failing to acknowledge their work. </p>
+            <p>Half the participants were then shown a virtual voodoo doll, which they were told represented the guilty supervisor - along with some virtual tools that allowed them to harm the doll in whatever way they saw fit. The other half - the control group - were simply shown a screenshot of the doll, which was labelled “nobody”, and asked to trace the outline of the image with their computer cursor. </p>
+            <p>All participants were then given a fill-in-the-letters task designed to test their implicit feelings. They were presented with “un _ _ ual”, for example - which could either form “unusual” or “unequal”. Or they saw “un _ _ st” - which could either spell “unjust” or “unrest”. The idea is that if you feel you’ve been wronged, and are ruminating on the event, you are more likely to pick the words associated with injustice. </p>
+            <p>Surprisingly, the simple act of sticking the virtual pins in the virtual doll reduced the participants’ feelings of injustice, meaning that the participants were more likely to choose the neutral words than those who had not been able to take part in the symbolic act of revenge. </p>
+            <p>Liang isn’t seriously suggesting that we should all keep a voodoo doll locked up in our desk drawer. But until companies figure out how to tackle dysfunctional leadership - the root cause of workplace bullying - we might be able to use other forms of “symbolic retaliation” to help us to get over our grudge, she says. We could write out an angry or insulting email to the person involved, without sending it, to vent our feelings and alleviate our feelings of injustice. It’s definitely safer than seeking actual revenge. </p>
+            <p><strong>Taking the high road</strong></p>
+            <p>An imaginary act of retaliation cannot trump a genuine act of forgiveness, of course. This is hardly news - religious leaders have been endorsing forgiveness, over spite, for millennia. Their teachings were primarily concerned with our spiritual future. But psychological science can help us to understand why forgiveness is also beneficial to our mental and physical health, and how to make it happen.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>While revenge might feel better, forgiving someone for offending us is ultimately in our best interests (Credit: Getty) 0</figcaption>
+            </figure>
+            <p>Consider a series of recent studies by Karina Schumann, director of the Conflict Resolution Lab at the University of Pittsburgh. She was interested in the ways that victimisation can make us lose our “self-humanity”, which - as a psychological construct - encompasses our sense of dignity and sophistication. People who have been victimised are more likely to endorse statements such as “I felt superficial like I had no depth” or “I felt like I lacked self-restraint, like an animal”, for instance. </p>
+            <p>Using questionnaires to probe people’s past experiences, Schumann found acts of forgiveness were far better at restoring self-humanity than acts of revenge, and this psychological change, in turn, seemed to bring a host of emotional benefits - including more positive feelings about themselves and about the offending event itself. </p>
+            <p>To replicate the finding, Schumann next asked participants to consider a currently unresolved conflict and encouraged them to write either a vengeful or a forgiving letter to the offender. Their experiences included everything from insults about appearance to acts of infidelity - and not everyone was able to summon up the necessary magnanimity to forgive the offence. But for those who did, the process of writing the letter increased their sense of self-humanity, and their overall psychological wellbeing. </p>
+            <p>While revenge might leave people feeling more powerful, “it doesn’t actually contribute to feeling more human”, says Schumann, whose results were published earlier this year. “Forgiveness makes us feel more moral - that we’ve acted in this elevated way - and that restores our sense of humanness.”   </p>
+            <p><strong>Seeking resolution</strong></p>
+            <p>If you are struggling to forgive a misdeed, exercises such as “perspective taking” have been shown to ease the process, Schumann says. “You can try to immerse yourself in the other person's experience of the event and try to understand their reasoning and the contextual factors that contributed to their harmful behaviour.”</p>
+            <blockquote>Forgiveness makes us feel more moral - that we’ve acted in this elevated way - and that restores our sense of humanness - Karina Schumann</blockquote>
+            <p>You might also spend a bit of time contemplating the offender’s capacity for change. In general, people seem to have two “mindsets” about personality. Some believe that it is fixed and immutable, while others believe that it can evolve and grow over time. According to recent studies, people who believe in a “fixed mindset” are more likely to harbour grudges and seek revenge, while those with a “growth mindset” find it easier to forgive. It’s not hard to imagine why this might be. If you assume a single act of unkindness must reflect an inherent nastiness, you will perceive your offender as far less worthy of your understanding and forbearance. </p>
+            <p>Your judgements will necessarily depend on the situation at hand; even people with an extreme growth mindset could find it very hard indeed to shift their opinions about a serial bully. If you are dealing with an isolated incident, however, you might try to question whether you have an overly fixed mindset that is leading you to be excessively pessimistic about the offender’s potential for personal development - a small realisation that could open the way for forgiveness. </p>
+            <p>Few of us, after all, would like to be judged for every faux pas and ill-judged comment that we’ve made - without any chance of redemption. And our wellbeing may benefit enormously if we feel a little more inclined to give others the same benefit of the doubt. It is certainly something that I’ll try to remember the next time I meet my abrasive former colleague. </p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

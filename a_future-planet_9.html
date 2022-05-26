@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_future-planet_9" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Future Planet</mark>
+                <h2>The new use for abandoned oil rigs</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>As offshore oil and gas platforms come to the end of their working lives, the remarkable ecosystems beneath the waves come into their own.</h3>
+            <p>The grey steel girders of Platform Holly rise 235ft (72m) above the waters of the Pacific Ocean, just a couple of miles off the Santa Barbara coast. Above the water, this decommissioned oil rig is dull and lifeless, but the view below the surface is very different. Beneath the waves, colourful fish, crabs, starfish and mussels congregate on the huge steel pylons, which stretch for more than 400ft (120m) to the ocean floor.</p>
+            <p>There are more than 12,000 offshore oil and gas platforms worldwide. As they drain their reservoirs of fossil fuels below the sea, they eventually become defunct when they produce too little fuel for extraction to be profitable to their operators.</p>
+            <p>The big question is what to do with these enormous structures when the fossil fuels stop flowing. With curbing climate change rising up the international agenda, and with some questioning whether we have already passed peak oil, hastened by the coronavirus pandemic, the number of defunct rigs in the ocean is set to get bigger. Removing them from the water is incredibly expensive and labour-intensive. Allowing them to rust and fall into disrepair is an environmental risk that could seriously damage marine ecosystems.</p>
+            <blockquote>For some species, offshore rigs are even better nurseries than natural reefs. The towering pylons are the perfect spawning grounds for tiny fish larvae</blockquote>
+            <p>But there is one way in which these old rigs can be remarkably useful: the subsurface rig provides the ideal skeleton for coral reefs. Teeming with fish and other wildlife, offshore rigs like Platform Holly are in fact the most bountiful human-made marine habitats in the world.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The subsea structures are a vertical spine that gradually turn into reefs over time (Credit: Alamy)</figcaption>
+            </figure>
+            <p>The practice of transforming rigs into reefs in the United States dates back almost 40 years. In 1984, the US Congress signed the National Fishing Enhancement Act which recognised the benefits artificial reefs provided and encouraged states to draw up plans to turn defunct rigs into reefs. The five coastal states on the Gulf of Mexico - Alabama, Florida, Louisiana, Mississippi and Texas - all have rigs-to-reefs programmes and have converted more than 500 oil and gas platforms into artificial reefs.</p>
+            <p>When oil companies cease drilling in these states, they decommission their platform by sealing the oil well. Then they can either choose to remove the entire platform or convert it into a reef by removing just the upper section of the structure.</p>
+            <p>Reefing a platform is an attractive proposition for oil and gas companies as it is significantly less expensive than total removal and is estimated to save the industry millions of dollars each year. Campaigners say it is a win-win situation as companies spend half of their decommissioning savings on the state's artificial reef programme. This money goes towards maintaining the platforms, marine conservation and education. Due to the abundant marine species living there, the platforms in the Gulf of Mexico have become hotspots for diving, snorkelling and recreational fishing.</p>
+            <p>Marine scientists Emily Hazelwood and Amber Sparks are on a mission to replicate this conservation success in other parts of the world. They founded the California-based organisation Blue Latitudes in 2014 to raise awareness about the benefits of rigs and persuade oil companies and governments to designate them as permanent reefs.</p>
+            <blockquote>In 2019, gas made up 21% and oil 34% of the world’s CO2 emissions from fuel, with a significant proportion coming from offshore rigs like these</blockquote>
+            <p>"We're trying to help the general public understand that conservation isn't always just about saving the whales," says Sparks. "There are other ways we can look at complex ideas in our oceans, such as repurposing manmade structures like artificial reefs."</p>
+            <p>Hazelwood and Sparks have reefed rigs from Thailand to West Africa, preventing more than a dozen large marine ecosystems from being wiped out.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>When offshore rigs become defunct, they can either be left in place and maintained for wildlife, or dismantled (Credit: Alamy)</figcaption>
+            </figure>
+            <p>Offshore rigs are among the most productive fish habitats in the world, according to marine biologist Milton Love who has spent 20 years studying fish populations around oil and gas platforms in California. They provide marine wildlife with food, shelter from predators and a safe breeding ground.</p>
+            <p>For some species, the rigs are even better nurseries than natural reefs, says Love. The towering pylons are the perfect spawning grounds for tiny fish larvae. "A lot of them are just drifting," says Love. "They want to settle." The 500ft (150m) high underwater structures provide an opportunity for just that.</p>
+            <p>One of the big beneficiaries is rockfish, stocks of which have been heavily depleted due to overfishing along the US West Coast. These fish are found in abundance around oil platforms. For instance, the platforms have helped revive the critically endangered bocaccio rockfish. "We've found a very high density of young bocaccio at platforms, around 400,000 at six platforms. We didn't see that at natural reefs," says Love, adding that the number of juvenile bocaccio found at rigs was enough to boost the adult stock of the Pacific Coast population by around 3%.</p>
+            <p>The abundant fish populations found at Californian platforms can partly be attributed to the fact that oil rigs serve as de facto marine protected areas, says Love. In California, fishing around oil and gas platforms is prohibited.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Displaced fish will often return to their home platforms, which provide a safe and versatile habitat (Credit: James Wiseman)</figcaption>
+            </figure>
+            <p>Chris Lowe, a marine biologist at California State University who has been tracking fish populations in southern California since 2008, says there is clear evidence that fish are drawn to the platforms.</p>
+            <p>For one study, Lowe attached sensors to fish living by three oil platforms, before moving them to a natural reef located up to 18km (11 miles) away and monitoring their movements over two years. A quarter of the fish, across all species, quickly returned to their home oil platform, while others would migrate back during non-breeding seasons. "They had a higher likelihood of going back to their original platform than somewhere else. They really like their home platform. This showed us a lot about how the fish treat the platform as a habitat," says Lowe.</p>
+            <blockquote>Californians are very opposed to offshore oil and gas and many of them want their coastline and view free of those structures - Kristen Hislop</blockquote>
+            <p>One reason for this affinity is that the rigs offer a property rarely found in featureless open water: their considerable height. The platform acts as a pinnacle and allows fish to move into deeper water as they mature, without having to leave their habitat, according to Lowe. Typically, fish living in shallow reefs will leave their habitat when they are fully grown and venture out to open sea. The fish found on oil rigs simply have to move down the platform, without ever venturing far from their refuge.</p>
+            <p>Many scientists are calling for Californian platforms to be preserved as artificial reefs, given the bountiful ecosystems they harbour. The state introduced a law in 2010 allowing for rigs to be converted in reefs, but to date no platforms have been reefed. That could change in the next decade; eight of the state's 27 rigs are no longer operating and several will be decommissioned in the next few years.</p>
+            <p>Blue Latitudes' Sparks says it is a challenge convincing Californians, "the greenest folks you'll meet", of the merits of keeping rigs in the ocean. California is the US state with the most ambitious climate goals. By 2030 the state aims to slash emissions by 40% compared with 1990 levels and has passed a law that all electricity must come from carbon-free sources by 2045.</p>
+            <p>"Californians are very opposed to offshore oil and gas and many of them want their coastline and view free of those structures," says Kristen Hislop, a marine conservationist at the Environmental Defense Center, an advocacy group based in the Santa Barbara region, where there are 20 platforms.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>While marine life might benefit from the subsurface structures, there are concerns about the rigs-to-reefs programmes also supporting extractive industries (Credit: Alamy)</figcaption>
+            </figure>
+            <p>It's not hard to see why some are reluctant. The extraction and burning of fossil fuels including oil and gas are major drivers of climate change. Overall, in 2019, gas made up 21% and oil 34% of the world’s CO2 emissions from fuel, with a significant proportion coming from offshore rigs like these and thousands of others.</p>
+            <p>But the objections are not just symbolic. There are concerns that the cost savings offered to oil companies under the rigs-to-reefs programme could encourage them to expand, Hislop notes. She adds that research and discussions about what to do with the rigs once they have been decommissioned are ongoing.</p>
+            <p>But Blue Latitudes says the aim of rigs to reefs is not to reward polluters and boost the oil industry, but to protect valuable marine habitats by offering an alternative to complete platform removal.</p>
+            <p>If California's platforms are toppled, it would result in the loss of 27 huge marine ecosystems. Some of these rigs are taller than the Eiffel Tower - the Harmony platform in the Santa Barbara Channel, for example, reaches depths of 1198ft (365m). "California platforms are some of the largest and deepest in the world," says Hazelwood. "You don't even see the beams, they are so encrusted with marine wildlife."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

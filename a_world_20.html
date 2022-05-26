@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_world_20" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>World</mark>
+                <h2>Sons of Neptune: Scarborough sewage rebels head for the big screen</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>When a group of middle-aged swimming friends from Scarborough became worried about sewage in the sea in the 1980s, they started staging eccentric stunts to highlight their cause, and even took on the government. Now, their story is being turned into a film.</strong></p>
+            <p>"No-one in Scarborough knew I was arrested."</p>
+            <p>Freddie Drabble was supposed to be a respectable local solicitor, but trying to navigate a leaky dinghy laden with a giant toilet - dubbed the Thatcherloo - down the River Thames outside the Houses of Parliament in an attempt to raise the issue of sewage ended in disaster.</p>
+            <p>The boat was listing, taking in water and surrounded by the river police. Freddie and the rest of his gang of sewage rebels were taken to Wapping police station.</p>
+            <p>Sitting alongside him was the commander of the hapless vessel, Captain Sydney Smith, who was well into his 80s. Captain Smith was asked if he needed to call to his solicitor.</p>
+            <p>"No need," he said "He's sitting there."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Sons of Neptune built the Thatcherloo in 1989</figcaption>
+            </figure>
+            <p>These days, the five remaining members of this group of environmental protesters are all in their 80s, but are as talkative as they were 30 years ago when they started causing outrage in their home town with their long war over a sewage pipe.</p>
+            <p>Their exploits are now making their way to the screen. It's a familiar story of British eccentrics and a battle against the authorities, but also a tale of how high-minded idealism can affect peoples' lives in all sorts of ways. There are still people in the North Yorkshire town who can't forgive them.</p>
+            <p>They were, at the beginning, merely a collection of enthusiastic and slightly eccentric sea swimmers. But everything changed when Yorkshire Water revealed plans to "improve" water quality by building a long sea sewage outfall pipe in Scarborough's North Bay.</p>
+            <p>"We have got two fantastic bays and then someone comes along and wants to poison our waters," as Drabble puts it.</p>
+            <h3>Furious response</h3>
+            <p>It was Freddie who started the resistance by sending a letter to his friends - chiropodist and rock 'n' roll historian Charles White (who wrote the biography of his good friend Little Richard), marketing manager Brian Dew, accountant Chris Found and bookmaker Cecil Ridley. They were now called the Sons of Neptune, he said. It was a letter that changed their lives.</p>
+            <p>"I sort of conscripted them," he says.</p>
+            <p>When they began protesting about the quality of the water off Scarborough, it brought a furious response from the council and the local holiday trade, who felt the group were unfairly maligning the town's reputation.</p>
+            <p>Ridley remembers it well. "They wrote a letter in the paper and said, 'Boycott Ridley, Drabble and White. They're destroying this town'," he recalls.</p>
+            <p>Thirty years later, not everyone has forgiven them for saying it wasn't safe to swim in Scarborough's seawater. This, after all, claims to be the birthplace of therapeutic sea bathing. People have been coming to Scarborough for the health benefits of going for a dip for more than 300 years.</p>
+            <p>When the Sons of Neptune appeared on BBC Newsnight saying the bay was filled with raw sewage, the holiday trade saw it as a misleading and ruinous assault on their reputation. It did not stop them.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The group often dressed up for their beach protests</figcaption>
+            </figure>
+            <p>Their outfits and stunts had more than a touch of Monty Python. Their photo archive has pictures of them dressed as undertakers and hooded figures chasing costumed holidaymakers across the beach. Events would be gatecrashed, with the Sons bringing bottles of murky looking seawater. There was a lot of bobbing about with jam jars.</p>
+            <p>The most famous stunt, the Thatcherloo on the Thames, was provoked by an interview with the prime minister at the time, Margaret Thatcher, who said the sewage discharged off the British coast was treated. The Sons of Neptune were incensed.</p>
+            <p>The "maceration" of the sewage that was being pumped out along the outfall pipe was, they said, not treatment, and it would be washed back in to Scarborough's bays.</p>
+            <p>Scarborough was, of course, not alone in this battle. The surfing beaches of south-west Britain gave rise to Surfers against Sewage, but the Sons of Neptune hit a nerve in the town. Through these years, Scarborough's holiday trade was facing a long-term shift, with week-long family holidays based around the beach turning into occasional day trips and weekend breaks.</p>
+            <p>The town did not want bad publicity on top of this, and there were official assurances that the water quality was fine and the long sea outfall was working as planned. Further expensive treatment plants appeared to be an impossible demand, so the only outcome of the campaign was, it was felt, a slur on the reputation of Scarborough.</p>
+            <h3>'A big fight'</h3>
+            <p>However, the political climate was changing. The European Union took up the issue and set targets for improving water quality in 1991. It would be an exaggeration to say the Sons of Neptune changed the law, but they were part of a wider political process that led to the monitoring and improvement of bathing water around Europe.</p>
+            <p>In 2001, Yorkshire Water opened ultra-violet treatment plants serving Scarborough, Whitby, Bridlington and Filey. The Sons of Neptune had won their battle, and Scarborough's North Bay was given a three-star rating in 2021. The sewage war is over.</p>
+            <p>The water quality these days, Freddie says, is "excellent". He adds: "It took a long time and took a big fight, but can I say Yorkshire Water has come on board and are now friends with us."</p>
+            <p>However, even now, they can't say the same for everyone else.</p>
+            <p>"Loved by some, hated by others," says Freddie.</p>
+            <p>"The word is 'notorious'," adds Chris.</p>
+            <p>And they seem to rather like that. The question now is, who will play them in the forthcoming film.</p>
+            <p>"I'm hoping for Gregory Peck," says Cecil.</p>
+            <p>"I'm not sure he's available," says Freddie.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

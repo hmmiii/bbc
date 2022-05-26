@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_business_24" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Business</mark>
+                <h2>Can fitness apps be as effective as a personal trainer?</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>As we start 2022, lots of us will be resuming the battle to lose weight and get fit. A wealth of high-tech fitness apps are now available to help, but are they anywhere near as good as hiring a human personal trainer?</strong></p>
+            <p>Four years ago, Jenny Wiener was in a fitness slump.</p>
+            <p>She wanted to improve her physical and mental health, but her workouts lacked intensity without a proper training programme to follow.</p>
+            <p>When she went to the gym she says she often chose "easy" options, like jogging on a treadmill, to avoid more daunting exercises.</p>
+            <p>A personal trainer who might push her was out of the question because of the high cost - typically prices start from £30 an hour.</p>
+            <p>Ms Wiener, 32, who works as an events manager in St Albans, then discovered fitness app Freeletics.</p>
+            <p>To use the app you first input information about your previous training experiences and preferences, and goals. A virtual coach then used that information to suggest a personalised training regime.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Freeletics app asks users for feedback after each of its recommended training sessions</figcaption>
+            </figure>
+            <p>At the end of each workout, the Freeletics app then asks Ms Wiener to provide feedback about its suitability and difficulty. The app's artificial intelligence (AI) software system then uses her answers - plus those from its other 53 million users around the world - to adjust future training sessions.</p>
+            <p>"The AI aspect is one of the main things that got me interested," says Ms Wiener. "I was going to the gym every day before, but seeing zero results.</p>
+            <p>"When I found Freeletics, I was like 'OMG it's a PT [personal trainer] in my pocket, my gym buddy'."</p>
+            <p>She adds that she finds the workouts exciting, because no two are ever the same. And that, as a result, the app has helped her to lose four-stone.</p>
+            <p>Freeletics' digital personal trainer app, called 'The Coach', costs from £1.78 a week. The firm's chief product and technology officer, Kornelius Brunner, says it "gets smarter and better" as users give it more and more feedback.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Can an app motivate you to keep going to the gym as much as a human personal trainer?</figcaption>
+            </figure>
+            <p>However, sports and fitness psychologist, Anthony Papathomas, says that such apps are no substitute for human personal trainers.</p>
+            <p>"With an interpersonal relationship you are going to get that increased sensitivity to personal needs," says the senior lecturer at Loughborough University's National Centre for Sport and Exercise Medicine.</p>
+            <p>"If you don't fancy the session, or if you're not in a mood, which is often the case, particularly in exercise behaviour change," he says. "Then I'm not sure the kind of alert [you get] on your phone, necessarily takes into consideration that we are human beings with competing interests outside of our health and fitness."</p>
+            <p>Whereas, Mr Papathomas points out a "human being" trainer is probably more likely to empathise "and exercise is only sustainable if we enjoy it."</p>
+            <p>Brighton-based marketing consultant, Tom Bourlet, says he used to love exercising, but lost motivation after entering into a relationship.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Here is Tom Bourlet before he started his training regime</figcaption>
+            </figure>
+            <p>Then in January of this year, he and his partner received a wedding invitation, and both were determined to lose a set amount of weight to get in shape for the big day.</p>
+            <p>He discovered app FitnessAI, which uses a similar approach to Freeletics - mining its users' data to improve and personalise all their workouts.</p>
+            <p>"I often utilise data in my work, and find it incredibly useful to ensure you're making continuous progress, therefore the entire concept appealed to me," says Mr Bourlet.</p>
+            <p>"One guilty factor of training can be to keep doing the same reps [repetitions of a specific exercise], or weights, each week, failing to push yourself each time. However, the app helped to set out what I should be trying to achieve each week."</p>
+            <p>While Mr Bourlet used to take long rests, from two to three minutes between each set of gym work, the app's AI kept him on-target. It gave him an exact rest-time, according to the specific exercise or weight lift session, and his performance.</p>
+            <p>He says that, overall, it helped him reach his weight-loss target of dropping three stone (19kg) almost a month ahead of plan.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>And here is Tom Bourlet and his partner at the wedding that they set out to lose all the weight for</figcaption>
+            </figure>
+            <p>FitnessAI founder, Jake Mor believes the AI's mathematical approach makes it better than a personal trainer.</p>
+            <p>"FitnessAI does tons of math behind the scenes to figure out what your workout plan should look like," he says. "While trainers are great motivators, they are not math professionals."</p>
+            <p>Perhaps unsurprisingly, London-based personal trainer Aimee Victoria Long disagrees with this analysis.</p>
+            <p>"Personal trainers come with a higher cost, but when you do one-to-one sessions, you can check an individual's form, to see they're doing the exercises correctly," she says. "It really ensures that they're not going to have any injuries from the exercises that they're doing, which you can't really get from an app.</p>
+            <p>"Also, I can get to know not only their physical health, but also their mental health, because sometimes people are training all the time, and it might not be good for their mental health. And that's not going to be shown or picked up on an app."</p>
+            <p>Yet sometimes fitness apps can help by asking the user questions that a human person trainer might not feel comfortable posing.</p>
+            <p>Take Jennis, the fitness app by British Olympic champion Jessica Ennis-Hill. It requests data from female users about their menstrual cycles, in order to better programme their workouts.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Jessica Ennis-Hill's app helps women do the right amount and type of exercise for a particular day</figcaption>
+            </figure>
+            <p>Dame Jessica explains: "The daily conversations [via the app] that we have with each woman mean that we regularly update recommendations, so that you're always getting sessions most suited to your hormonal profile.</p>
+            <p>"This, in turn, means you're doing what's right for your body, making bigger training gains, and capitalising on what your hormones are doing each day."</p>
+            <p>Former British soldier Rachel Carey, 37, is a fan. After ovulation she receives more strength-based workouts, whereas in the first 14 days of her menstrual cycle, she receives more high-intensity workouts.</p>
+            <p>"The cycle mapping recommendations for the workouts are so much more appropriate for physiologically what's going on for me," says Ms Carey.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

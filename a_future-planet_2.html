@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_future-planet_2" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Future Planet</mark>
+                <h2>Why the Dutch embrace floating homes</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Faced with worsening floods and a shortage of housing, the Netherlands is seeing growing interest in floating homes. These floating communities are inspiring more ambitious Dutch-led projects in flood-prone nations, from French Polynesia to the Maldives.</h3>
+            <p>When a heavy storm hit in October, residents of the floating community of Schoonschip in Amsterdam had little doubt they could ride it out. They tied up their bikes and outdoor benches, checked in with neighbours to ensure everyone had enough food and water, and hunkered down as their neighborhood slid up and down its steel foundational pillars, rising along with the water and descending to its original position after the rain subsided.</p>
+            <p>"We feel safer in a storm because we are floating," says Siti Boelen, a Dutch television producer who moved into Schoonschip two years ago. "I think it's kind of strange that building on water is not a priority worldwide."</p>
+            <p>As sea levels rise and supercharged storms cause waters to swell, floating neighbourhoods offer an experiment in flood defence that could allow coastal communities to better withstand climate change. In the land-scarce but densely populated Netherlands, demand for such homes is growing. And, as more people look to build on the water there, officials are working to update zoning laws to make the construction of floating homes easier.</p>
+            <p>"The municipality wants to expand the concept of floating because it is multifunctional use of space for housing, and because the sustainable way is the way forward," says Nienke van Renssen, an Amsterdam city councillor from the GreenLeft party.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Netherlands' floating houses are attached to a pillar, and can bob up and down the pillar according to the water level (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>The floating communities in the Netherlands, which emerged in the past decade, have served as proof of concept for larger-scale projects now being spearheaded by Dutch engineers. These are not just in European countries such as Britain, France and Norway, but also French Polynesia and the Maldives, where sea level rise in the Indian Ocean nation now poses an existential threat. There is even a proposal for floating islands in the Baltic Sea on which small cities would be built.</p>
+            <blockquote>Living on water is normal for us - Marjan de Blok</blockquote>
+            <p>A floating house can be constructed on any shoreline and is able to cope with rising seas or rain-induced floods by remaining atop the water's surface. Unlike houseboats, which can easily be unmoored and relocated, floating homes are fixed to the shore, often resting on steel poles, and are usually connected to the local sewer system and power grid. They are structurally similar to houses built on land, but instead of a basement, they have a concrete hull that acts as a counterweight, allowing them to remain stable in the water. In the Netherlands, they are often prefabricated, square-shaped, three-storey townhouses built offsite with conventional materials such as timber, steel and glass. For cities facing worsening floods and a shortage of land for housing, floating homes are one potential blueprint to expand urban housing in the age of climate change.</p>
+            <p>Koen Olthuis, who in 2003 founded Waterstudio, a Dutch architectural firm focused exclusively on floating buildings, says the relatively lo-tech nature of floating homes is potentially their biggest advantage. The homes he designs are stabilised by poles dug roughly 65m (210ft) into the ground and outfitted with shock-absorbent materials to reduce the feeling of movement from nearby waves. The houses ascend when waters rise and descend when waters recede. But despite their apparent simplicity, Olthuis contends they have the potential to transform cities in ways not seen since the introduction of the elevator, which pushed skylines upward.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Netherlands is a pioneer for water-based developments, as a low-lying country that has had to work alongside the sea for centuries (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>"We now have the tech, the possibility to build on water," says Olthuis, who has designed 300 floating homes, offices, schools and health care centres. He added he and his colleagues "don't see ourselves as architects, but as city doctors, and we see water as a medicine".</p>
+            <p>In the Netherlands, a country which is largely built on reclaimed land and a third of which remains below sea level, the idea is not so far-fetched. In Amsterdam, which has almost 3,000 officially registered traditional houseboats across its canals, hundreds of people have moved into floating homes in previously neglected neighbourhoods.</p>
+            <p>Schoonschip, designed by Dutch firm Space&Matter, consists of 30 houses, half of which are duplexes, on a canal in a former manufacturing area. The neighbourhood is a short ferry ride from central Amsterdam, where many of the residents work. Community members share nearly everything, including bikes, cars and food bought from local farmers. Each building runs its own heat pump and devotes roughly a third of its roof to greenery and solar panels. Residents sell surplus power to one another and to the national grid.</p>
+            <p>"Living on water is normal for us, which is exactly the point," says Marjan de Blok, a Dutch TV director who initiated the project in 2009 by organising the collective of architects, legal experts, engineers and residents who worked to get the project off the ground.</p>
+            <blockquote>There's no longer this idea of a crazy magician building a floating house - Koen Olthuis</blockquote>
+            <p>Rotterdam, which is 90% below sea level and the site of Europe's biggest port, is home to the world's largest floating office building, as well as a floating farm where cows are milked by robots, supplying dairy products to local grocery stores. Since the 2010 launch of the Floating Pavilion, a solar-powered meeting and event space in Rotterdam's harbour, the city has been ramping up efforts to mainstream such projects, naming floating buildings one of the pillars of its Climate Proof and Adaptation Strategy.</p>
+            <p>"Over the last 15 years, we've reinvented ourselves as a delta city," says Arnoud Molenaar, chief resilience officer with the City of Rotterdam. "Instead of seeing water just as an enemy, we see it as an opportunity."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Netherlands' floating developments have inspired much larger developments in low-lying countries elsewhere (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>To help protect cities against climate change, in 2006 the Dutch government undertook its "Room for the River" programme, which strategically allows certain areas to flood during periods of heavy rain, a paradigm shift that seeks to embrace, rather than resist, rising water levels. Olthuis says the housing shortage in the Netherlands could fuel demand for floating homes, including in "Room for the River" areas where floods will be, at least for a portion of the year, part of the landscape. Experts say that relieving the Dutch housing shortage will require the construction of one million new homes over the next 10 years. Floating homes could help relieve pressure on the shortage of land available for development.</p>
+            <p>Dutch firms specialising in floating buildings have been inundated with requests from developers abroad for more ambitious projects too. Blue21, a Dutch tech company focused on floating buildings, is currently working on a proposed series of floating islands in the Baltic Sea. The development could house 50,000 people and connect to a privately funded €15bn ($16.9bn/£12.5bn) underwater rail tunnel to link Helsinki, Finland and Tallin in Estonia. The project is backed by Finnish investor and "Angry Birds" entrepreneur Peter Vesterbacka.</p>
+            <p>Waterstudio will oversee construction this winter of a floating housing development near the low-lying capital of Male in the Maldives, where 80% of the country sits less than 1m (3ft) above sea level. It is composed of simply designed, affordable housing for 20,000 people. Underneath the hulls will be artificial reefs to help support marine life. The buildings will pump cold seawater from the deep to aid air-conditioning systems.</p>
+            <p>"There's no longer this idea of a crazy magician building a floating house," Olthuis says. "Now we're creating blue cities, seeing water as a tool."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The ocean-based development of Maldives Floating City is an ambitious plan to relieve pressure on land and provide homes (Credit: Koen Olthuis/Waterstudio)</figcaption>
+            </figure>
+            <p>Floating homes pose numerous challenges, however. Severe wind and rain, or even the passing of large cruise ships, can make the buildings rock. Siti Boelen, the Schoonschip resident, says that when she first moved in, stormy weather made her think twice before venturing up to her third-floor kitchen, where she felt the movement the most. "You feel it in your stomach," she says, adding that she has since gotten used to the feeling.</p>
+            <p>Floating homes also require extra infrastructure and work to connect to the electricity grid and sewer system, with special waterproof cords and pumps needed to link to municipal services on higher ground. In the case of Schoonschip in Amsterdam and the floating office building in Rotterdam, new microgrids had to be built from scratch.</p>
+            <p>But the benefits may outweigh the costs. Rutger de Graaf, the cofounder and director of Blue21, says that the growing number of disastrous, unprecedented storms around the world spurred both city planners and residents to look to the water for solutions. Floating developments, he says, could have saved lives and billions of dollars in damage last summer, when deadly floods hit Germany and Belgium, killing at least 222 people.</p>
+            <p>"If there are floods, it's expected that many people will move to higher ground. But the alternative is to stay close to coastal cities and explore expansion onto the water," says De Graaf. "If you consider that in the second half of the century, hundreds of millions of people will be displaced by sea level rise, we need to start now to increase the scale of floating developments."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

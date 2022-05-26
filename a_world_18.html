@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_world_18" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>World</mark>
+                <h2>Death on the Nile and addressing racism in Agatha Christie</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>With Kenneth Branagh's second Hercule Poirot film out, Christie is hot Hollywood property once more. But how should adaptors navigate her books' attitude to race, asks David Jesudason.</strong></p>
+            <p>In modern Hollywood, amid all the hot intellectual properties, from Marvel superheroes to Mattel toys, the lucrative potential of one British author stands out: murder-mystery queen Agatha Christie. In 2017, Kenneth Branagh's adaptation of one of her most celebrated novels, Murder on the Orient Express, in which he also starred as Belgian detective Hercule Poirot, hit big at the box office, grossing more than $350 million worldwide on a budget of $55 million. Now, five years later, and after many Covid-related delays, comes his take on another Poirot novel, Death on the Nile, released in cinemas last week. The appeal of these films? Well, that may be obvious: the chance to see ensembles packed with A-listers waltzing about in glamorous locations in service of a gripping plot.</p>
+            <p>Yet adapting Agatha Christie as mass 21st-Century entertainment is not without its complications: they are products of the time they were written in, the mid-20th Century, and arguably reflect some unsavoury attitudes not least when it comes to racism, xenophobia and colonialism. The question is therefore: how do you translate and update Agatha Christie - or not - for the modern age? </p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Kenneth Branagh's Murder on the Orient Express included a more diverse cast of characters than usual, including Leslie Odom Jr's Dr Arbuthnot (Credit: Alamy)</figcaption>
+            </figure>
+            <p>In Murder on the Orient Express, Branagh notably tried to update the source material in this respect, both through casting and the substance of the script. It began with a scene featuring a black policeman, played by Paapa Essiedu, while among the guests enjoying the luxury of the famous train were Dr Arbuthnot, an African-American doctor and former army sniper (played by Leslie Odom Jr), who was an amalgamation of two characters from the novel, an English colonel and a Greek physician; and Cuban-American car salesman Biniamino Marquez, played by Manuel Garcia-Rulfo, who again was Branagh's invention, adapted from the Italian character Antonio Foscarelli. In one sense, these may seem like small tweaks, but they were important symbolically.</p>
+            <p>At the same time, however, the film uses these amendments to tackle themes of racism and xenophobia head on. For example, Odom Jr's Dr Arbuthnot endures racist jibes from a fellow passenger, while he is involved in a dual-heritage relationship with Daisy Ridley's governess Mary Debenham - something that Poirot himself comments will make life difficult for them because of the racist mores of the time. Elsewhere, the secretary Hector MacQueen (played by Josh Gad) tells Poirot that he isn't racist but that he doesn't trust Cubans, and another character, Willem Dafoe's Gerhard Hardman, is seemingly a white supremacist who espouses the kind of far-right views that were common in the 1930s, when the book was written and set.</p>
+            <p>Again, with Death on the Nile, Branagh has assembled a more inclusive cast than has been typical for Christie adaptations, from the opening flashback to Poirot's time as a young soldier in the Belgian World War One trenches, in which black soldiers are prominent. Their presence pays tribute to the thousands of Congolese who fought for Belgium and is a rare cinematic depiction of how European forces relied on their colonies to help them fight their battles.</p>
+            <p>Then, as the main story kicks off, the cast of luxury-travellers-cum-suspects making their way down the Nile includes black British actors Sophie Okonedo and Letitia Wright playing aunt-and-niece duo Salome and Rosalie Otterbourne. In the novel the Otterbournes are a white British mother and daughter but the film makes them African-American blues musicians as well as tweaking their familial relationship. The film also features a new character, lawyer Andrew Katchadourian, played by Indian actor Ali Farzal and adapted from another character in the novel, Andrew Pennington: his heritage isn't ever described, but you are led to assume he's a British person of colour based on his upper-class British accent. The diverse casting also includes the Israeli actress Gal Gadot, who is of Ashkenazi Jewish heritage, as arguably the most high-profile lead, playing American heiress Linnet Ridgeway-Doyle.</p>
+            <blockquote>Racism and xenophobia manifest in Christie's oeuvre in the form of either studied erasure or the re-inscription of certain denigrating stereotypes - Sam Naidu</blockquote>
+            <p>It has to be said the way the film addresses race is less pronounced than in Murder on the Orient Express: an example of this is the way the romantic relationship between Tom Bateman's Bouc and Wright's Rosalie Otterbourne is blighted by his snobbish mother's disapproval, but race is notably never raised as one of her objections. Towards the end, however, the Otterbournes' experiences of racism are revealed, as they describe how the first murder victim was bigoted toward Rosalie in her childhood, saying she wouldn't "share a pool with a coloured", in a heart-wrenching moment that is a reminder of how people of colour at the time were expected to forgive white people for their prejudices. Poirot naturally seizes on this as a possible motive for murder but Salome neatly quips that the "world is littered with bad white ladies". Prejudice also rears its head when Katchadourian is accused of murder, as he acknowledges that if "a local saw a dark man" accused of a crime, "they'll shoot me before the noose". In this film again, racism is shown to be simply part of the dark underbelly of polite society.</p>
+            <p><strong>Judging the books</strong></p>
+            <p>With these additions and reworkings, these new films inevitably throw the original novels and their attitude to race and racism into relief. Christie's books still sell millions around the world each year, and yet the question is: to what extent should they be judged as racist and xenophobic? This is, after all, an author who originally named one of her most celebrated mysteries with a title that featured the N-word.</p>
+            <p>Professor Sam Naidu, professor of literary studies in English at South Africa's Rhodes University and a specialist in race and ethnicity in crime fiction, believes that Christie's works certainly normalise racial prejudice, on two fronts. Firstly, for the fact that they rarely feature empowered characters of colour and instead propagate the "the dominance of whiteness reinforced through their homogenous, monocultural casts and their determined preservation of the status quo." And secondly, for the fact they adopt a broadly racist and xenophobic stance in which those considered "foreign" from the British white hegemony are othered.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>In Death on the Nile, Sophie Okonedo and Letitia Wright play Salome and Rosalie Otterbourne - whose experiences of racism are referenced in the denouement (Credit: Alamy)</figcaption>
+            </figure>
+            <p>"[Whether it's the] Belgian Poirot, or Americans, Jews or Middle Eastern characters, they feature as exceptions to the norm, often with undesirable or suspicious traits," she says. "Racism and xenophobia therefore manifest in Christie's oeuvre in the form of either studied erasure/absence or the re-inscription of certain denigrating stereotypes."</p>
+            <p>The American characters in Christie's original work are invariably mistrusted by the British contingent of characters and/or depicted as obnoxious - as in Death on the Nile where wealthy socialite Marie Van Schuyler is said to have the "expression of reptilian contempt for the majority of mankind". Another group of people that are often treated derisively in her work are Italians -  in Murder on the Orient Express, they are stereotyped as being "hot-headed" and "liars" who are unable to be cunning murderers.</p>
+            <p>But these xenophobic caricatures are nothing compared to the way the Middle East is represented in her books - its inhabitants are frequently depicted in the most dehumanising terms, such as in Death on the Nile, where she describes a group of merchants as a "human cluster of flies". Anti-Semitism is equally prevalent in her books from her very first novel in 1916, The Mysterious Affair at Styles, which features a character called Dr Bauerstein whose Jewishness is emphasised as a point of suspicion.</p>
+            <p>And while Poirot and his Belgian nationality cause him to suffer from xenophobia, usually via slurs about his foreignness from suspects who have something to hide, he himself makes offensive remarks, including anti-Semitic ones - as in The Mystery of the Blue Train (1928), when he claims that Jews are a race of people who never forget the past. Christie's portrayal of black characters is often highly offensive too, such as in Miss Marple novel A Caribbean Mystery, which features locals who climb coconut trees to get breakfast and then sleep in the sun all day. On the other hand, there is a view that to judge Christie's work, written a century ago, predominantly by these offensive elements would be to overlook some of her more progressive traits.</p>
+            <blockquote>Censoring the novels made them less socially critical as documents of their time because I do think Christie's novels criticise racism rather than perpetuating it - Professor Vike Martina Plock</blockquote>
+            <p>Arguably, in the very murders themselves, Christie demonstrates an innate egalitarianism, a belief that humanity is capable of good and bad, no matter their nationality or social status. But more pointedly, her books also often critically depict the reality of bigotry in the early 20th Century by making clear the unpleasantness of certain privileged characters and their attitudes. Christie was well travelled, journeying around the world with her archaeologist second husband Max Mallowan and she based Death on the Nile on the passengers she met when she travelled herself through Egypt. The explicit references to racism in Branagh's film are hardly a stretch, given the original novel's scathing contrast between the luxury of the Western tourists and its depictions of Egyptian poverty - albeit stereotypical ones: it shows how merchants sell trinkets and are dismissed as "riff-raff" by most of the characters. (In fact, the novel features one character, Mr Ferguson, who defends the Egyptians, but has his views dismissed by the others because he is an outspoken communist.) It's  important that we don't simply erase the dark history of racism and in that respect Christie novels are important cultural documents of a time, when white British people used terms like "natives" or would freely describe Iraqis as "very dark, a dirty dark yellow colour", as a character does in Murder in Mesopotamia (1936).</p>
+            <p>That's the view of Professor Vike Martina Plock, a professor of modern literature and culture at the the University of Exeter in the UK, which holds some of Agatha Christie's business correspondence in its special collections. Plock read her mother's copies of Agatha Christie novels when she was a teenager in West Germany and only discovered the books' controversial race elements in her early 30s after moving to the UK. They had been expurgated in the German-language versions: post-World War Two, West Germany was hyper-cautious about literature that contained any hint of racist or anti-Semitic description.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Poirot TV series, starring David Suchet, arguably erased some diversity in its adaptations of the novels (Credit: Alamy)</figcaption>
+            </figure>
+            <p>However, she says that censoring the books in such a way was a mistake - as she believes that, for the most part, Christie was not being racist herself in her novels, but rather reflecting the racist attitudes of her time and leaving them open to critique. "It made the [censored] novels less socially critical as documents of their time because I do think Christie's novels criticise racism rather than perpetuating [it]," she says. "The racism depicted in the books draws attention to the fact that it was very dominant in the culture in which Christie was living. The 1930s [when her career as a crime writer hit its peak] saw the rise of the far right in Europe, leading to the Spanish Civil War and to World War Two, and [racism and] xenophobia were obviously rife." She believes this aspect of the books gives them a particular resonance again in 2022. "I'm not saying we're in the same situation right now but far-right sentiments are on the rise again."</p>
+            <p><strong>Christie on TV</strong></p>
+            <p>If there is more to Christie novels than meets the eye when it comes to racism and xenophobia, however, then this has never really been reflected in screen takes on her work. Previous adaptations of Poirot - from the films starring Albert Finney and Peter Ustinov to the UK TV version memorably starring David Suchet - have been very white, and often merely used "exotic" locations as eye-pleasing backdrops rather than truly depicted them as real-world places, suffering from the effects of colonial rule.</p>
+            <p>"There was a conscious erasure of diversity in the TV adaptations of the 1980s and 1990s," says Dr Jamie Bernthal-Hooker, author of Queering Agatha Christie. "Black characters in the books were replaced with white characters and similarly those who we can read as LGBT [were removed]." One example Bernthal-Hooker gives is of Christie's 1955 Poirot novel Hickory Dickory Dock, which was originally set in a 1950s student hostel and featured an array of international characters, including Egyptian student Ahmed Ali and his flatmate Akibombo, who was of West African origin. However, when the book was adapted for the small screen in 1995, the action - as was often the case in the long-running TV series - was transplanted to the inter-war years and it featured an all-white cast.</p>
+            <p>"It was perhaps understandable in terms of avoiding the problematic stereotypes," Bernthal-Hooker says - the characters were sympathetically but stereotypically drawn by Christie, with the latter speaking in "comical" broken English - "but also there was clearly no attempt to develop or update these characters for the screen, as happens to other characters in the adaptations."</p>
+            <p>"I find [the 1990s TV] adaptations a little too white, too conservative, too Middle-England-y," continues Bernthal-Hooker. "You can get these readings from the books but you can also get a much more worldly reading from them."</p>
+            <p>However when it comes to approaches to adapting Christie, times are changing. Branagh aside, the other major interpreter of Christie's work recently has been writer Sarah Phelps, who has been behind a number of recent Christie adaptations for TV, including And Then There Were None, The Pale Horse, and the Poirot story The ABC Murders. The latter miniseries, in particular, offered an interesting exploration of xenophobia by showing Poirot being targeted by members of the British Union of Fascists for being un-English - in one scene a train conductor throws his ticket to the ground in disdain. This plot point was an amplification of the dismissive attitude expressed towards Poirot in many of the novels by other characters because of his foreignness. Some commentators also saw it as an indirect critique of Britain in the wake of Brexit, for better or worse: one newspaper called it "excruciating liberal-Left drivel."</p>
+            <p>However Bernthal-Hooker, who was an extra in The ABC Murders, counters that the interpretation made sense within the context of Christie's original novels. "People forget he was a Belgian refugee during World War One," he argues. "He comes to England homeless and lives on charity. Poirot is always an outsider and comes from the world outside the one he's investigating."</p>
+            <p>Similarly Branagh's Murder on the Orient Express also added historical context by flagging up the threat of far-right bigotry via the aforementioned character Gerhard Hardman: "The producers obviously put a lot of thought into the character," Plock says. "It cleverly brings the past and present together. They took an element of the 1930s, recalling Nazi ideology, but also brought in a contemporary perspective. [Willem] Dafoe's character is performing the role of the white supremacist that we would recognise today."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Sarah Phelps' take on The ABC Murders, starring John Malkovich as Poirot, amplified the theme of xenophobia by featuring him being targeted by fascists (Credit Alamy)</figcaption>
+            </figure>
+            <p>Performing is the word, though - for as it transpires, Hardman is revealed to be a detective only pretending to be a white supremacist for investigative purposes, and subsequently apologises for his racism. Elsewhere, characters comment on the race laws in the US, growing anti-Semitism in Europe, and general feelings of xenophobia against anyone deemed "different" in a way that is critical. The question is: is this a case of the film pulling its punches when it comes to racism - raising the issue but then making its white characters inauthentically enlightened and so, given what we know about the prevalence of racist attitudes in the 1930s, letting them off the hook - to the greater comfort of white audiences, perhaps?</p>
+            <p>Naidu thinks so: "while the effect of [these changes] may be to update or 'recuperate' Christie's original text," she says, "in the process, verisimilitude is sacrificed, and as with Poirot's aphoristic pronouncements on the nature of justice, these [characters'] comments appear too obviously stage-managed and hollow." Similarly, it might be said, Death on the Nile is content to highlight racism in one particular instance, while shying away from showing bigotry on a more endemic level.</p>
+            <p>This gets to the heart of the conundrum as modern film and TV makers try to tackle an author from a different time like Agatha Christie in adaptations aimed at a popular audience. On the one hand, you can't not discuss racism when looking at stories set in the mid-20th Century involving a lot of privileged white people and colonial power dynamics - and yet, how do you do that in a way that is authentic without also losing their entertainment value?</p>
+            <p>If it's a difficult line to be negotiated, however, then it certainly can't be ignored. "It's really important to shed light on the problems with racism," Plock concludes. "It's about encouraging debates […] and making clear that racism was a problem when Christie was writing her books, and continues to be a problem today."</p>
+            <p>Death on the Nile is out in cinemas in the UK and US now</p>
+            <p>Love film and TV? Join BBC Culture Film and TV Club on Facebook, a community for cinephiles all over the world.</p>
+            <p>If you would like to comment on this story or anything else you have seen on BBC Culture, head over to our Facebook page or message us on Twitter.</p>
+            <p>And if you liked this story, sign up for the weekly bbc.com features newsletter, called The Essential List. A handpicked selection of stories from BBC Future, Culture, Worklife and Travel, delivered to your inbox every Friday.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

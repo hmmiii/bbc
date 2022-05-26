@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure - BBC Travel</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="adventure" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>Travel</li>
+                <li>Adventure</li>
+            </ul>
+        </div>
+    </section>
+    <div class="postCarouselABox etcSubTop">
+        <div>
+            <h2 class="heading large">Adventure</h2>
+            <div class="controller">
+                <span class="btn_prev"></span>
+                <span class="btn_next"></span>
+            </div>
+        </div>
+        <ul class="gridView">
+            <li class="top">
+                <img src="images/thumb_adventure_1.png" alt="Article Image">
+                <div>
+                    <mark>Adventure</mark>
+                    <h3><a href="a_adventure_1.html">The 'farmers' who grow ice</a></h3>
+                    <p>Known as the "Switzerland of America", Ouray is a bustling outdoor recreation hub, particularly for ice climbing on waterfalls created by a small team of "ice farmers".</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_adventure_1.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="top">
+                <img src="images/thumb_discovery_1.png" alt="Article Image">
+                <div>
+                    <mark>Travel</mark>
+                    <h3><a href="a_discovery_1.html">A ski town stuck in the wrong nation</a></h3>
+                    <p>Life for the locals is far from straightforward</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_discovery_1.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="top">
+                <img src="images/thumb_adventure_2.png" alt="Article Image">
+                <div>
+                    <mark>Adventure</mark>
+                    <h3><a href="a_adventure_2.html">The world's first anti-vaxxers</a></h3>
+                    <p>Before the pandemic, Dr Jenner's House where the world's first vaccine was given was an obscure tourism site. Post-Covid, it could become a major international attraction.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_adventure_2.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="top">
+                <img src="images/thumb_adventure_3.png" alt="Article Image">
+                <div>
+                    <mark>Adventure</mark>
+                    <h3><a href="a_adventure_3.html">America's extreme subarctic road</a></h3>
+                    <p>Winding 1,387 miles through some of North America's most extreme environments, it was the most ambitious construction project since the Panama Canal and built to defend a continent.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_adventure_3.html" class="readMore">Read More</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <section class="plainBox">
+        <h2 class="heading large">More Stories</h2>
+        <ul class="gridView hiddenList">
+            <li class="left">
+                <img src="images/thumb_adventure_4.png" alt="Article Image">
+                <div>
+                    <mark>Adventure</mark>
+                    <h3><a href="a_adventure_4.html">A French city that doesn't feel French</a></h3>
+                    <p>"The city of 100 neighbourhoods" has long been overlooked for the same reasons that make it so great: it's not like Paris, Lyon or Aix.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_adventure_4.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="right">
+                <img src="images/thumb_adventure_5.png" alt="Article Image">
+                <div>
+                    <mark>Adventure</mark>
+                    <h3><a href="a_adventure_5.html">The discovery of an ancient holy well</a></h3>
+                    <p>While searching for a new path in life, two former nuns created a wondrous "Coastal Camino" that is bringing travellers to an otherwise neglected part of Northern Ireland.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_adventure_5.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="left">
+                <img src="images/thumb_adventure_6.png" alt="Article Image">
+                <div>
+                    <mark>Adventure</mark>
+                    <h3><a href="a_adventure_6.html">The nation that's banishing light</a></h3>
+                    <p>The Pacific nation's audacious bid to become the world's first dark sky nation might provide a blueprint for the rest of the world.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_adventure_6.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="right">
+                <img src="images/thumb_adventure_7.jpg" alt="Article Image">
+                <div>
+                    <mark>Adventure</mark>
+                    <h3><a href="a_adventure_7.html">How travel can improve mental health</a></h3>
+                    <p>With a former medical scare and prolonged isolation due to the Covid pandemic, Kimberly Davis' mental health was deteriorating  until a friend offered her a holiday to France.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_adventure_7.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="left">
+                <img src="images/thumb_adventure_8.png" alt="Article Image">
+                <div>
+                    <mark>Adventure</mark>
+                    <h3><a href="a_adventure_8.html">The oldest place on Earth?</a></h3>
+                    <p>Dating to around 3.6 billion years ago, the Pilbara region of Western Australia is home to the fossilised evidence of the Earth's oldest lifeforms.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_adventure_8.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="right">
+                <img src="images/thumb_adventure_9.png" alt="Article Image">
+                <div>
+                    <mark>Adventure</mark>
+                    <h3><a href="a_adventure_9.html">Ireland's loneliest wilderness</a></h3>
+                    <p>Ireland's biggest wilderness is undergoing a rewilding programme to allow its bog and forest to return to their natural state, even if much of the land has always been wild.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_adventure_9.html" class="readMore">Read More</a>
+                </div>
+            </li>
+        </ul>
+        <input class="moreArticles" type="button" value="Load More Articles">
+    </section>
+    <section class="viewBox mV">
+        <div>
+            <h2 class="heading large">More around the BBC</h2>
+            <div class="views">
+                <input type="button" class="btn_list active" value="List View">
+                <input type="button" class="btn_grid" value="Grid View">
+            </div>
+        </div>
+        <ul class="listView x3 column">
+            <li class="display medium">
+                <img src="images/thumb_science_10.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_10.html">74% of ransomware revenue goes to Russian hackers</a></h3>
+                    <p>Crypto-currency researchers say more than $400m of cyber-crime funds go to Russian gangs.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_10.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_world_20.jpg" alt="Article Image">
+                <div>
+                    <mark>World</mark>
+                    <h3><a href="a_world_20.html">Eccentric sewage rebels head for the big screen</a></h3>
+                    <p>When a group of middle-aged swimming friends from Scarborough became worried about sewage in the sea in the 1980s, they started staging eccentric stunts to highlight their cause, and even took on the government. Now, their story is being turned into a film.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_world_20.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_business_6.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_6.html">How nurseries are keeping track of their toddlers</a></h3>
+                    <p>Misty Ardouin set up her nursery, Nestlings, in Cardiff City centre in 2019. At the end of each day, they would have a "good sit down" in the playroom with parents to catch-up on everything the children had been doing.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="/a_business_6.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_science_6.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_6.html">Record high deforestation of Amazon in January</a></h3>
+                    <p>The number of trees cut down in the Brazilian Amazon in January far exceeded deforestation for the same month last year, according to government satellite data.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_6.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_science_8.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_8.html">Lessons in pleasure boost good safe sex</a></h3>
+                    <p>Teaching people about achieving sexual pleasure can help sell safe-sex messages, say researchers from the World Health Organization.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_8.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_world_21.jpg" alt="Article Image">
+                <div>
+                    <mark>World</mark>
+                    <h3><a href="a_world_21.html">White House left behind as states drop Covid rules</a></h3>
+                    <p>The White House is facing pressure to revise its position on mask wearing as pandemic restrictions are eased in a number of US states.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_world_21.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_science_9.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_9.html">James Webb telescope begins to focus its 'big eye'</a></h3>
+                    <p>It's a confusing but amazing image.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_9.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_science_11.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_9.html">How Taiwan used simple tech to help contain Covid-19</a></h3>
+                    <p>In Taiwan, finding someone who will talk about their Covid experience is harder than you might think.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_11.html" class="readMore">Read More</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

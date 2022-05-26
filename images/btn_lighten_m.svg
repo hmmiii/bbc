@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68" height="68" viewBox="0 0 68 68">
+  <defs>
+    <filter id="타원_2" x="0" y="0" width="68" height="68" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="btn_lighten_m" transform="translate(-1365 248)">
+    <g transform="matrix(1, 0, 0, 1, 1365, -248)" filter="url(#타원_2)">
+      <circle id="타원_2-2" data-name="타원 2" cx="25" cy="25" r="25" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <path id="moon" d="M38.731,37.289A13.408,13.408,0,0,1,39.693,32,13.081,13.081,0,1,0,57,49.307a13.414,13.414,0,0,1-5.289.961A12.98,12.98,0,0,1,38.731,37.289Z" transform="translate(1354.5 -261.5)"/>
+  </g>
+</svg>

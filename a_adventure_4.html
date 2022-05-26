@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_adventure_4" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Adventure</mark>
+                <h2>Marseille: France's 'good natured' city</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>"The city of 100 neighbourhoods" has long been overlooked for the same reasons that make it so great: it's not like Paris, Lyon or Aix.</h3>
+            <p>It took the TGV train no time to thrust its way out of Paris and into a realm of swelling wheat fields peppered by quaint farmhouses - the quintessential northern French terrain I had neglected since my semester on the Erasmus study abroad programme almost 20 years ago. Although I had visited in the interim, my years have been largely lost in Asia, penning guidebooks 9,600km east of the Champs Élysées.</p>
+            <p>But nostalgia haunted me through the French Concession in Shanghai, down Hanoi's café-lined boulevards and even while queuing for croissants in the artisan bakeries of Hong Kong. I hankered to pick up where I'd left off, so when a French friend I'd known in Guangzhou, China, invited me to visit, the excuse to explore France's "second-city" belatedly fell in my lap.</p>
+            <p>"Come to Marseille. It's not like other bourgeois French cities. It's cool and the weather is hot," Pierre Picard said on the phone, referencing both its hip urban character and the 300 days of sunshine that bless the city each year.</p>
+            <p>As the train from Paris chased the southern horizon, I thought about Marseille, which, despite giving its name to the rebel-rousing national anthem La Marseillaise, has a reputation of being distinct from the rest of the country. It's a metropolis on the margins both geographically and culturally, its denizens composed of waves of migrants who arrived over two-and-half-millennia of recorded history, making it not just France's oldest city but its most multicultural one as well.</p>
+            <p>The story begins with the Greeks who, sailing from Asia Minor, recognised the strategic deep-water port and settled in what is now Le Panier overlooking the Vieux Port. The Greeks traded with the Gauls, introducing grapes and olives to the region, unwittingly laying the foundation for Provençal cuisine.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Basilique Notre-Dame de la Garde is one of Marseille's most iconic landmarks (Credit: Atlantide Phototravel/Getty Images)</figcaption>
+            </figure>
+            <p>Six centuries as an independent Greek city ended when the armies of Caesar came crashing in, claiming the city for Rome in 49BC and initiating 500 years of Gallo-Roman culture. Next came the Visigoths, who invaded the city in the 5th Century; the Arabs sacked it in the ninth. Its urban population collapsed during the Great Plague of 1720 to 1721 - commemorated in a temporary exhibition at the Marseille History Museum when I visited, with clear references to the current coronavirus pandemic. But Marseille persisted.</p>
+            <p>When France's ambitions turned global, particularly after 1830 and the close of the Napoleonic wars, the southern port emerged as the Empire's chief nexus point, and Marseille enjoyed a golden age as the "Gate of Empire": France's colonial officers, her navies and fortune-seekers departed from the Vieux Port, first to North African and American colonies, and, after the completion of the Suez Canal in 1859, to Asia as well.</p>
+            <p>But this was no one-way road. Everything made landfall in Marseille: people and produce, culture and contraband. This legacy was conspicuous when I walked along the Cours Belsunce, a broad boulevard named after Bishop Henri François Xavier de Belsunce de Castelmoron, who cared for the sick during the Great Plague. Here, the smell of Arab and Turkish cuisine wafted through the air with the comforting richness of home cooking; trams made an occasional "dang dang" as they passed; and trackside street vendors hawked African wood carvings, colourful headscarves and Olympique de Marseille football shirts.</p>
+            <p>There are Chinese and Vietnamese communities in Marseille, Corsicans, Comorians and Armenians. But in Wicked City: The Many Cultures of Marseille, Nicholas Hewitt writes of an unusually "strong affinity" with Algiers, a city "emotionally" closer than Paris, observing that, "the colonisation of Algeria in 1830, which supplemented Marseille's already intimate relations with its partners, and rivals, along the northern and eastern littorals of the Mediterranean with a powerful North African dimension."</p>
+            <h3>I began to get a sense of why Marseille is called "the city of 100 neighbourhoods"</h3>
+            <p>Almost 200 years on, the conception of Marseille as a North African city remains part of its popular image in France. As I walked the laundry-draped backstreets, first impressions endorsed the sentiment that the Maghrebi stamp is pronounced. At the mouth of a lane, youths congregated around speakers blasting Arabic and French rap that echoed between bakeries vending flatbreads. Men in flat caps sipped mint tea from thimble-like glasses. A block downhill, women in sublimely colourful dresses of the Sahel sold almonds from Morocco and avocados from the Ivory Coast, humming along to the latest hits from Bamako, Mali's capital. And I began to get a sense of why Marseille is called "the city of 100 neighbourhoods".</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Marseille is both France's oldest city and its most multicultural (Credit: Pierre Picard)</figcaption>
+            </figure>
+            <p>Arriving at the Marseille-Saint-Charles station, visitors are treated to a view from its lavish, elevated forecourt that feels strikingly far-flung. Casting my eyes down an ornate 1920s staircase, my gaze followed the Boulevard d'Athènes, a sloping street where orange-tiled rooves overhang fawn stone walls. The route dipped as it met with the main thoroughfare, Rue Cannebière, before rising crescendo-like to the Notre-Dame de la Garde, a hilltop basilica crowned by a golden Virgin - the city's highest point, shining like a holy lighthouse out to sea.</p>
+            <p>Notwithstanding the decline in sea freight and other industries, the Vieux Port remains the city's focus, its waters dotted with yachts bobbing like swans on a lake. All roads seem to lead there, and anyone attempting to explore the city on foot inevitably ends up in one of the waterfront brassieres. In my case, it was the Beau Rivage Café, where, over late-afternoon pastis, I attempted to absorb the scene: the castle-like, 1,500-year-old Abbaye St-Victor, Marseille's oldest church; and the swanky Hotel Dieu that, during the plague, served as a lazaretto - an isolation hospital for sailors to quarantine in. Now the InterContinental Hotel Marseille, guests enjoy a five-star spectacle over the water, which to my mind rivals the great harbours of the world, Hong Kong or Sydney, and one sorely overlooked.</p>
+            <p>For the detractors, Marseille doesn't fulfil their "Parisian" vision of France in the ways that regal Lyon, its closest rival to second-city status, does; or by fans of neighbouring Aix-en-Provence, whose chic, conservative denizens have helped it earn "the 21st arrondissement of Paris" moniker.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The port city is known as "the city of 100 neighbourhoods" (Credit: Gu/Getty Images)</figcaption>
+            </figure>
+            <p>To some, Marseille is a city of vice, an image traded by authors like Jean-Claude Izzo in novels like Total Chaos and recurrent in film and television as a crime-subgenre dubbed "Marseille Noir". Most of these disparaging opinions are outmoded, belonging to an economic slump in the late 20th Century that was captured in celluloid in the Marseille Noir classic French Connection II. But the grubby, traffic-flanked Vieux Port of 1975 has little in common with the vibrant scene that confronted me.</p>
+            <p>"It wasn't until the city was made the European Capital of Culture in 2013 that they really cleaned up the Vieux Port," explained Marie Picard, Pierre's sister. "Now we have somewhere to enjoy on foot." The year-long EU designation not only gave Marseille the chance to promote its uniquely rich Mediterranean culture, but also prompted authorities to get the old port in order. The quay and surrounding commercial streets were duly pedestrianised and orientated to tourism.</p>
+            <p>Underlining Marseille's many civic improvements, which include a new tramway completed in 2007, are the Parisians who, like Pierre and Marie, have dared break with their tribe to move south, despite a historical rivalry that goes back centuries and still plays out in the "Le Classique" whenever Paris Saint-Germain and Olympique de Marseille meet on the pitch.</p>
+            <p>"I moved from Paris 10 years ago," said Marie, citing such obvious draws as affordable rent and sunshine as the principal reasons for her move, as well as the less obvious lure of work. "I'm a digital content producer. I was worried about leaving Paris but the TGV means it's only three hours away if I need to go back for a meeting."</p>
+            <p>To escape the heat, I headed to the Plage des Catalans. Whizzing on an e-scooter, I navigated the imposing Fort St-Nicolas on the southside of the Vieux Port. In the late-afternoon sun, the beach was drenched in an otherworldly amber hue.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Since being named European Capital of Culture in 2013, Marseille has shaken off its seedy image (Credit: Gu/Getty Images)</figcaption>
+            </figure>
+            <p>I walked past a group playing volleyball, a DJ spun records, locals sunbathed and gossiped and the city's bon enfant - "good natured" - vibe was tangible. It was here I belatedly noticed Marseille's "Frenchness", so distracting had the city's cosmopolitan charms been. It reminded me of Shanghai, Liverpool or New York, those great port cities whose allegiance is ever caught between the state and the sea. But on that warm summer's day, amidst the sun worshippers and seaside salsa dances, those allegiances felt reconciled. </p>
+            <p>I considered one of Marie's lunchtime quips: "If you come to France and you don't come to Marseille you won't see France."</p>
+            <p>She had a point: the city is just another expression of a country more diverse and culturally intricate than it often likes to admit.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

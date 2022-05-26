@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_world_47" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Australia</mark>
+                <h2>Biloela family: Locked up by Australia for three years</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Biloela family: Locked up by Australia for three years</strong></p>
+            <p>In 2019, her family was sent to a detention centre on Christmas Island, an Australian outpost in the Indian Ocean.</p>
+            <p>They live in a guarded compound under 24-hour watch - an operation that has cost more than A$6m (£3.3m; $4.6m) so far.</p>
+            <p>Kopi, as she's known to her friends, is allowed to go to school on the island. She's taken there in a police van.</p>
+            <p>School is her "happy place", where she's free from her minders.</p>
+            <p>"Why are we always followed?" she's asked before.</p>
+            <p>Kopi is in this situation because her parents, Tamil refugees from Sri Lanka, arrived by boat in Australia nearly a decade ago seeking asylum.</p>
+            <p>They settled in a country town in Queensland, and lived there for years, until police arrived to deport them.</p>
+            <p>Their community fought for them to stay, kicking off a legal battle that has dragged through the nation's top courts. Through it all the family have remained in detention.</p>
+            <p>"You can't imagine this life," Kopika's mother Priya, told the BBC.</p>
+            <p>"It's not a normal thing. We can't talk to people, we have guards watch us, we can't go out by ourselves. It's not a detention, it's a jail."</p>
+            <h3>The 'Biloela family'
+            </h3>
+            <p>The Murugappans are a family of four: mother Priya, father Nades, Kopi, and her three-year-old sister Tharnicaa.</p>
+            <p>They are Australia's most famous asylum seekers, but they're barely known by their family name.</p>
+            <p>Instead they're "the Biloela family" - named after the small town where they lived for four years.</p>
+            <p>Nades and Priya arrived in Australia on separate journeys in 2012 and 2013 and lodged claims for asylum. The government granted them temporary protection visas.</p>
+            <p>Both moved to Biloela, which had a meatworks known to employ new migrants including Tamil asylum seekers.</p>
+            <p>That's where they met. They fell in love, got married, and had two kids.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The family seen in detention in 2018</figcaption>
+            </figure>
+            <p>Nades worked while Priya took care of the children. On the weekends, they would go fishing or play card games at home with their friends.</p>
+            <p>"They're good people," says close friend Vashini Riswan. The couple are like family to her. They took her in when she and her kids fled her abusive husband.</p>
+            <p>She now chats to Priya every morning over Facebook messenger.</p>
+            <p>"Even now I just tell her, I want her back to play the games," Ms Riswan told the BBC. "Remember how we did that? We'll do that again soon."</p>
+            <h3>The deportation attempts</h3>
+            <p>Priya and Nades both fled to Australia fearing persecution in Sri Lanka's civil war. Ethnic Tamil people were being harassed and detained by Sri Lankan authorities.</p>
+            <p>After years of processing, their asylum claims were rejected. Australia ruled that they failed to meet the criteria required to be considered refugees.</p>
+            <p>On that basis, Australia has tried twice to deport them.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Australia</figcaption>
+            </figure>
+            <p>The first attempt came after the family's temporary visa expired in 2018. Guards arrived in a pre-dawn raid - a common deportation tactic, lawyers say.</p>
+            <p>The family were flown to a detention centre across the country in Melbourne. A few days later they were bundled onto a flight to Sri Lanka.</p>
+            <p>Their deportation would have proceeded as planned had something unusual not happened.</p>
+            <p>When their friends were taken away, the 6,000-strong town of Biloela took their outrage to the media.</p>
+            <p>They launched the #HometoBilo campaign and lobbied politicians. A petition in support of the family has more than 350,000 signatures.</p>
+            <p>"They're one of us. They belong to Biloela," says Angela Fredericks, a supporter who met Priya through church in Biloela.</p>
+            <p>Lawyers secured an injunction to stop the deportation, and the Murugappans were sent back to detention in Melbourne.</p>
+            <p>A legal battle followed and ultimately the courts ruled against the family's claim.</p>
+            <p>So in 2019, the government swung into action again. Guards gave the family two hours to pack before they were put on a flight bound for Sri Lanka.</p>
+            <p>Panicked, Nades alerted lawyers. On the plane he filmed scenes of the chaotic removal, his infant children wailing as their mum was dragged on board. Australians woke up to the distressing vision shared in news bulletins and on social media.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The family contacted their supporters during a flight to Sri Lanka</figcaption>
+            </figure>
+            <p>Once again, lawyers secured an injunction and the plane was ordered to turn around mid-flight. The family was brought back to Australia and sent to Christmas Island, some 3,000km (1,800 miles) off the country's west coast.</p>
+            <p>A 400-bed detention centre there had been recently re-opened. The Murugappans became its sole occupants.</p>
+            <h3>Life in detention</h3>
+            <p>The years in detention have left Priya numb. She has developed a deep depression and has very little energy.</p>
+            <p>"I find it very hard to pass the day. Mentally and physically," she told the BBC over video link.</p>
+            <p>She fears she has failed her children.</p>
+            <p>"Both my kids have grown now. They want to go out, see and enjoy the outside world. They want to live with freedom."</p>
+            <p>The family live in a flimsy two-room container in a larger compound behind fences. The doors can't be locked from the inside. Guards patrol every day.</p>
+            <p>The heat is sweltering. Pests and insects invade their rooms.</p>
+            <p>Their lives are controlled to a minute degree, as if they were criminals.</p>
+            <p>When Kopika is invited to a school friend's birthday party, her invite is sent to an office on the mainland where a bureaucrat will assess the risk. She's been allowed out to a few birthday parties, accompanied by a guard.</p>
+            <p>The government says the family are "well looked after", but their welfare has long been a concern.</p>
+            <p>During their first months of detention in Melbourne, the girls were only allowed half an hour of play outside each day.</p>
+            <p>The lack of sunlight led to a vitamin D deficiency, which caused infections and other problems. Tharnicaa's nutritional needs weren't met and her teeth started to rot. At age two, she had surgery to have teeth removed.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Tharnicaa's teeth decayed in the first years of detention requiring surgery</figcaption>
+            </figure>
+            <p>Priya suffers ongoing medical problems, including diabetes.</p>
+            <p>She's also scared for her safety. Last year, she had encounters with one of the guards at the centre. One day a man came to her room, and hovered at the doorway, leering. He seemed drunk, she said.</p>
+            <p>"I believe he wanted to try and see me or touch my body or something sexually, so I felt that in how he acted towards me," she told the BBC.</p>
+            <p>"I pushed him back and I went outside because I was concerned about my safety."</p>
+            <p>The family later filed a complaint and the guard was removed. But Priya is still scarred from the encounter.</p>
+            <p>"I find it really hard to get back from that situation," she said.</p>
+            <p>"Everyday I just don't feel safe anymore. They can unlock the rooms whenever they want."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Priya spoke to the BBC from Christmas Island</figcaption>
+            </figure>
+            <p>The government did not respond to the BBC's questions on the incident.</p>
+            <p>In relation to the family's welfare, a spokesperson said: "The Australian Border Force is committed to ensuring the health and wellbeing of the family, and has always provided access to nurses, doctors and specialists for all members."</p>
+            <h3>'Australia's 'stop the boats' policy</h3>
+            <p>Australia's tough immigration laws allow it to lock up what it terms "unlawful non-citizens" like the Murugappans in indefinite detention.</p>
+            <p>Thousands of asylum seekers have been held in facilities off the mainland since 2013, when the government introduced "offshore processing" of those who arrive by boat. They wait there while their refugee claims are assessed, a process that can take years.</p>
+            <p>The UN has criticised the poor living standards and conditions in the camps. At least 12 asylum seekers have died in Australian offshore detention since 2013, six of them suicides.</p>
+            <p>The government has long defended its policy, which was brought in after people died at sea attempting to reach Australia.</p>
+            <p>It stands by its commitment that anyone who comes by boat will never be settled in Australia, arguing this policy has disrupted the people-smuggling trade and stopped drownings.</p>
+            <p>It appears to have worked: very few boats have arrived since 2014.</p>
+            <p>Against that backdrop, the Murugappans continue to be held in detention.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Activists have lobbied the government for years to release the family</figcaption>
+            </figure>
+            <p>"It's so cruel," says University of Adelaide law professor Alex Reilly. "It is so clearly against the normal ideas of rule of law and human rights.</p>
+            <p>"Even when things get absurd and ridiculous, the Australian government will stick to their guns because they think it plays well politically," he says.</p>
+            <p>"If you look at their case through a human lens, no one could stomach it."</p>
+            <h3>Plea for compassion</h3>
+            <p>Human rights advocates and the Biloela community are joined by the Labor opposition in supporting the Murugappans' release. Others, including the former prime minister Malcolm Turnbull whose government first detained the family, have also called for them to be returned to Biloela.</p>
+            <p>But the newly appointed Home Affairs Minister Karen Andrews has so far resisted those calls.</p>
+            <p>"What I'm very determined to do is to make sure that the people smugglers do not think for a second that there is a change to our policy, and I am not going to open that door even a slither," she told Sky News Australia in April.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>"What I'm very determined to do is to make sure that the people smugglers do not think for a second that there is a change to our policy, and I am not going to open that door even a slither," she told Sky News Australia in April.</figcaption>
+            </figure>
+            <h3>The next chapter</h3>
+            <p>The courts are again reviewing the family's asylum claims. The government has, on several occasions, ruled their claims to be invalid.</p>
+            <p>"At no time has any member of the family been found to have engaged Australia's protection obligations," a spokesperson said.</p>
+            <p>Still, the family say they will suffer persecution if they are sent to Sri Lanka - a risk that has grown over the years as their case attracted media coverage.</p>
+            <p>The girls have no connection to Sri Lanka. Born and raised in Australia, they also can't obtain Australian citizenship as the children of "unauthorised maritime arrivals".</p>
+            <p>Minister Andrews refuses to comment on the matter while it's before the courts. But last week she indicated the government may move the family out of the detention compound and into their own home on the island.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Kopika has strong memories of her time in Biloela her parents say</figcaption>
+            </figure>
+            <p>The family's barrister Carina Ford says their suffering could "end tomorrow" if the government wanted.</p>
+            <p>The Home Affairs minister has extraordinary power to intervene in people's lives by granting visa extensions and stopping deportations. Activists have long pleaded for that power to be used to free the Murugappans.</p>
+            <p>"This is a case involving children born in Australia who have spent years in detention… far away from a community which really wants them," says constitutional lawyer Dr Sangeetha Pillai.</p>
+            <p>"It's hard to think of a more compelling case."</p>
+            <p>It requires just a little act of compassion, says family-friend Ms Fredericks.</p>
+            <p>"All the minister would need to do is just sign it off. A stroke of a pen and they can come back to the community that loves them."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

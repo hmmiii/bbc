@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_in-pictures_10" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>In Pictures</mark>
+                <h2>World Press Photo Contest 2022: Global winners revealed</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Amber Bracken's picture, entitled Kamloops Residential School, has been named World Press Photo of the Year.</strong></p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>MATTHEW ABBOTT TAKEN FOR NATIONAL GEOGRAPHIC</figcaption>
+            </figure>
+            <p>The photos show indigenous Australians strategically burning land in a practice known as Cool Burning, in which fires move slowly, burn only the undergrowth, and remove the build-up of fuel that feeds bigger blazes.</p>
+            <p>The series featured the Nawarddeken people of West Arnhem Land, Australia, who have been carrying out the practice for tens of thousands of years.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>MATTHEW ABBOTT TAKEN FOR NATIONAL GEOGRAPHIC</figcaption>
+            </figure>
+            <p>The jury chose Amazonian Dystopia by Lalo de Almeida as the winner of the Long-Term Project Award.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>MATTHEW ABBOTT TAKEN FOR NATIONAL GEOGRAPHIC</figcaption>
+            </figure>
+            <p>The photos, taken for Folha de São Paulo and Panos Pictures, show the threat to the Amazon rainforest from deforestation, mining, infrastructural development and the exploitation of natural resources under Brazil's President Jair Bolsonaro.</p>
+            <p>"This project portrays something that does not just have negative effects on the local community, but also globally, as it triggers a chain of reactions," said Ms Effendi.</p>
+            <p>The series also won the Stories award in the regional Southeast Asia and Oceania category.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>MATTHEW ABBOTT TAKEN FOR NATIONAL GEOGRAPHIC</figcaption>
+            </figure>
+            <p>Blood is a Seed, by Isadora Romero, was awarded the World Press Photo Open Format Award.</p>
+            <p>Through personal stories and a journey to Ms Romero's ancestral village of Une, Cundinamarca, Colombia, the project questions the disappearance of seeds, forced migration, colonisation, and the subsequent loss of ancestral knowledge.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>MATTHEW ABBOTT TAKEN FOR NATIONAL GEOGRAPHIC</figcaption>
+            </figure>
+            <p>The World Press Photo regional winners were also announced, some of which can be seen below, with captions from the competition.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Africa, Singles: Sudan Protests, by Faiz Abubakr Mohamed, Sudan</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Africa, Stories: Afraid to go to School, by Sodiq Adelakun Adekola, Nigeria, for Agence France-Presse</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Asia, Singles: Palestinian Children in Gaza, by Fatima Shbair, Gaza, for Getty Images</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Asia, Stories: The Cinema of Kabul, by Bram Janssen, the Netherlands, for the Associated Press</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Europe, Singles: Evia Island Wildfires, by Konstantinos Tsakalidis, Greece, for Bloomberg News</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Europe, Stories: As Frozen Land Burns, by Nanna Heitmann, Russia/Germany, for Magnum Photos</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>North and Central America, Stories: The People Who Feed the United States, by Ismail Ferdous, Bangladesh, for Agence VU'</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>South America, Singles: San Isidro Settlement Eviction, by Vladimir Encina, Colombia</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>South America, Stories: The Promise, by Irina Werning, Argentina, for Pulitzer Center</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Southeast Asia and Oceania, Singles: Slingshots, by anonymous, for The New York Times</figcaption>
+            </figure>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

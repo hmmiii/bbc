@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_family-tree_2" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Family Tree</mark>
+                <h2>The parental shame that haunts working parents</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Juggling work and family pressures is hard - and when parents are ashamed of how they’re managing the “impossible balancing act”, research shows their careers suffer.</h3>
+            <p>Shame is a familiar feeling for Gill, a careers expert from the UK, who works long hours.</p>
+            <p>She often finds herself battling guilt when she’s rushing the bedtime routine to get back to her computer, or when a work commitment means she’s late picking her children up from school. “I can’t bear the look on my children’s face when they are one of the last to be collected,” she says, adding that she has to actively suppress the negative feelings so they don’t impact her work. </p>
+            <p>Working parents often feel inadequate. Working mothers in particular often lament the struggles of balancing career demands with their desire to be a present parent. Yet, new research suggests these negative feelings can directly impact careers; parents who report feelings of shame also tend to be less productive in the workplace. That’s because when they feel bad about their parenting, they withdraw from the activity that they feel is the cause, potentially hampering career development, or even causing some to leave the workforce.</p>
+            <p>At a time when resignations - particularly among working women - are at record highs, understanding the link between parental shame and performance at work is important. Taking time to evaluate how we normalise and support the balancing act so many caregivers contend with could not only improve the lives of parents, but also help keep women in the workforce in a time of unprecedented economic upheaval.</p>
+            <p><strong>‘Parental identity threat’</strong></p>
+            <p>Parents, particularly female caregivers, have long been encouraged to formulate identities that combine work with parenthood. The idea of ‘having it all’ rose to prominence in the 1980s, as women entered the workforce en masse.</p>
+            <p>But in recent years, experts have pushed back on the idea that individuals can effectively and happily manage a thriving work, home and family life simultaneously; they point out that this is an impossibly high standard for women to strive towards. Today, there’s broader acceptance of the challenges of combining professional and family roles - yet many parents still feel pressure to do better.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Many parents have had to navigate the balance of home and work life, especially amid the pandemic, which has increased instances of parental shame (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>For Cynthia Wang, personal experience sparked an interest in studying parental shame. Wang, a clinical professor of management and organisations at Northwestern University, US, and her research team - all professionals based at universities in the UK and US - were also parents. Although they cherished their careers and children, they all felt under significant pressure to be both the perfect parent and the perfect employee.</p>
+            <p>Wang and her co-authors decided to examine what happened when working parents felt they were falling short of social expectations to juggle family and home well. They asked hundreds of working parents to complete an online survey assessing their emotional stability and ability to handle stressful situations before the workday began. Next, they were asked to rate how strongly they agreed with statements such as ‘my role as a parent was looked at in a negative way’. Wang and her team were looking for something that they termed “parental identity threat”, which describes the way that parents feel when their role as caregiver is challenged by career demands, and balancing the two becomes untenable.</p>
+            <p>“Parental identity threat is something that happens at work that makes you question whether you’re a good parent,” she explains. “For example, a co-worker might ask who is taking care of your kid when you are working late, or perhaps your child’s school asks for more volunteers to chaperone a field trip but you can’t attend because it is during working hours. These instances can make parents feel shame.”</p>
+            <p>After they finished the working day, the same parents were asked to report whether they had felt ashamed, embarrassed or humiliated in instances where their parental identity was threatened, as well as how productive they had been at work that day. The research showed that when parents experienced high levels of parental identity threat, they also reported higher levels of shame and lower levels of productivity.</p>
+            <blockquote>When parents experienced high levels of parental identity threat, they also reported higher levels of shame and lower levels of productivity</blockquote>
+            <p>“When parents criticise themselves in terms of their parenting, the result is a withdrawal from situations that prompt these feelings of shame - namely, pulling away from their work responsibilities,” says Wang. “By distancing themselves from work, employees attempt to manage shame by signalling that they will not allow work to adversely affect their parenting duties. That way, they can’t be judged as being more devoted to work than to their children.”</p>
+            <p><strong>‘The thing that she’s going to remember is how much I worked’</strong></p>
+            <p>For many working parents, the pandemic exacerbated existing challenges by blurring the boundaries between parenting time and the working day.</p>
+            <p>Take Angela, a US-based mother of one, who works as a consultant. During the pandemic, she struggled with stress when her work and home lives collided. “We had Zoom classes at the same time that my husband was doing meetings,” she says. “I would get messages from the teacher saying, ‘We can hear you on conference calls during class’. We have a small house, so there was truly no quiet space.”</p>
+            <p>The conflict between educating her daughter at home and responding to her clients’ needs exacerbated already existing feelings of guilt. Angela says she’s trying to do better by her daughter, setting boundaries to devote more time to family tasks. But even as she misses work deadlines to prioritise her family, Angela still worries her daughter will look back on her childhood as a time when her parents were constantly focused on their jobs. “I worry that of all of the things that I do for [my daughter], and all of the ways that I’m present in her life, the thing that she’s going to remember is how much I worked.”</p>
+            <p>Christy Pruitt-Haynes, a US-based HR Consultant at the NeuroLeadership Institute, says many parents Angela’s pandemic struggles.</p>
+            <p>“Many people used to use leaving the office as a signal that the work day was over, and it was time to transition to parent mode,” she says. “When your workplace and your home are the same location, it is difficult to make those mental shifts between the employee and parent identities. Overall, we found that during the pandemic parents worked longer hours and had increased parenting needs, and struggled to find a balance.”</p>
+            <p><strong>Another layer of shame</strong></p>
+            <p>For some, feeling shame about parenting might only have a temporary impact on productivity. But if negative emotions become deeply embedded into the working day, parents might find themselves making more significant withdrawals from office life. </p>
+            <p>“Those who feel guilt are less likely to contribute in meetings or volunteer for new projects and initiatives,” says Naomi Murphy, a professor of psychology at Nottingham Trent University, UK, whose research focuses on parental shame. “It can also impact on their relationships with colleagues, making them irritable and defensive.”</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Negative emotions can become deeply embedded into the working day, with detrimental effects for all types of caregivers (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>At worst, the effect of parental shame on work performance could lead to much higher staff turnover as unhappy workers quit - something that impacts the shape of the workforce and the role of women. Data suggests that in mid-2020, labour market participation among women dropped to its lowest rate in 30 years, and that a third of women in the US workforce scaled back or left their jobs between March 2020 and August 2021. A global survey showed that the primary force pushing women to leave their jobs was increased responsibilities at work as a result of the pandemic, and the difficulties of carrying these out whilst also shouldering the majority of household responsibilities. </p>
+            <p>The start of the return to the office has also brought another layer of shame, says Melissa Huey, an assistant professor of psychology at the New York Institute of Technology.</p>
+            <p>“Realising the amount of time that is lost to careers, rather than being spent with children, can be disheartening. As a result, workplace productivity suffers, and everyday tasks suddenly feel meaningless or less important than they were before the pandemic. These feelings of guilt, coupled with the burnout that many are experiencing, may be one reason that we are now seeing workers quitting their jobs in record numbers.”</p>
+            <p><strong>Normalising the struggle</strong></p>
+            <p>Murphy believes making the workplace a better environment for those balancing careers with childcare should become a priority for employers.</p>
+            <blockquote>During the pandemic, parents worked longer hours and had increased parenting needs, and struggled to find a balance - Christy Pruitt-Haynes</blockquote>
+            <p>“Acknowledging that shame and guilt are a normal part of parenthood can go a long way,” she says. “Employers should be opening up conversations to acknowledge that their employee is managing more complex life circumstances at the moment, and putting this in the context of a range of life events that have to be juggled by different people at different points in time, like bereavement, health concerns or ageing parents. Most people become parents or experience one or more of those circumstances at some point, and will understand what an employee struggling with guilt is going through.”</p>
+            <p>Northwestern University researcher Wang says finding strong support networks or emotionally stable mentors can be a helpful way for workers to reduce feelings of parental shame, but that there is also a lot of work to do around reframing the idea of shame.</p>
+            <p>“Society places a lot of pressure on working parents to be ‘perfect’,” she says. “I think that understanding that no parent or employee is perfect can be helpful. Research shows that when individuals who face a stressful task are told that their negative emotions aren’t harmful, but are in face beneficial, they exhibit less shame and even perform better on the task.”</p>
+            <p>Pruitt-Haynes adds workplaces must give workers permission to talk about real-life problems, and the “seemingly impossible balancing act” between being a parent and employee. “We tend to feel shame when we think that we have done something wrong. If a company acknowledges that it is normal to feel pulled in two directions, then an employee won’t feel so bad. They will simply feel normal.”</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

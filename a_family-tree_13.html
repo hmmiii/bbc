@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_family-tree_13" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Family Tree</mark>
+                <h2>How climate change has altered Christmas</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>While Hollywood's depiction of a white Christmas might be the northern hemisphere ideal, for many around the world the holiday is celebrated in very different weather. But, climate change is threatening both winter wonderlands and warmer Christmas traditions.</h3>
+            <p>Whether it's decorating the Christmas tree with sparkly lights, building a snowman or carolling to your heart's content, we all have our favourite holiday traditions.</p>
+            <p>In the Netherlands, where I grew up, a popular tradition around Christmas is to put on your skates and take to the country's frozen ponds, canals and rivers. When it freezes, young and old head onto the ice. As my father says, "Skating is in our blood."</p>
+            <p>"You'll see very young children holding onto chairs as they scrabble along, as old people skate by hand-in-hand," he says, painting a verbal picture of a beautiful wintery landscape. "It's a truly magical scene."</p>
+            <p>Keen skaters used to enter the Elfstedentocht, which translates to the "eleven cities tour", an iconic ice skating race covering 200km (120 miles) that passes through 11 cities in the northern province Friesland. It's been 24 years since the last race took place. Climate change is endangering this beloved winter tradition. </p>
+            <p>When my father was at school he regularly enjoyed "ice days", when schools closed and everyone spent the day skating instead of studying. I only remember one such exhilarating moment during my teenage years.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Skating in the Netherlands and similar regions of Europe tend to be restricted to specially made ice rinks rather than ponds or rivers (Credit: Paulo Amorim/Getty Images)</figcaption>
+            </figure>
+            <p>And it is not just cold-weather holiday traditions that are slowly fading away. Around the world extreme weather caused by climate change and rising temperatures are altering beloved Christmas traditions. In the accounts below, BBC Future speaks to three young people from the Philippines, Puerto Rico and Brazil who share their stories of how the rapidly changing climate is transforming Christmas where they live.</p>
+            <p><strong>Mitzi Jonelle Tan, 22, the Philippines</strong></p>
+            <p>The Philippines boasts the earliest and longest Christmas season in the world. </p>
+            <p>"They say that Filipinos celebrate Christmas the longest," says Mitzi Jonelle Tan, a 22-year-old climate activist from Manila, the capital of the Philippines. "We celebrate from 1 September until 6 January."</p>
+            <p>It is a colourful and creative time. People make their own Christmas decorations, including a star-shaped lantern, called a parol. They hang these bright lanterns in windows and streets for the entire festive season, from September until January.</p>
+            <p>"The parol is something that families create together using colourful, recycled plastic and little pieces of wood," says Jonelle Tan.</p>
+            <p>"On Christmas morning we always take photos in front of churches near where my mum grew up," she says. "My mum and grandpa also used to take pictures in front of these churches."</p>
+            <p>But in 50 years' time, this special place for the Jonelle Tan family could no longer exist due to rising sea levels. "It's scary as it's not that far away," she says.</p>
+            <p>The Philippines is the world's most vulnerable country to disasters caused by climate change. The country is hit on average by more than 20 typhoons each year, which cause severe flooding and large-scale destruction. These severe climate impacts are already changing Filipinos' Christmas experience. </p>
+            <p>In November last year, super typhoon Goni, the year's most powerful storm, hit the Philippines at 225km/h (140mph).</p>
+            <p>"People were stranded on rooftops and all the roads were flooded," recalls Jonelle Tan. "A few days before Christmas, we were still helping clean up the mud that had flooded the houses."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The celebrations for Christmas start early in the Philippines and can last for many months (Credit: Ryan Eduard Benaid/Getty Images)</figcaption>
+            </figure>
+            <p>The community spirit was incredible that year, she says. People brought food and gifts to the evacuation centres. "Christmas is a celebration of what we've gone through that year, together as a community," she says.</p>
+            <p>Jonelle Tan worries about what Christmas will be like in the future if storm surges and typhoons become more frequent.</p>
+            <p>"It is very scary because the area where my relatives live gets flooded very easily," she says. Flooding already means that many families can't put up their Christmas lights.</p>
+            <p>"We are fighting for our Christmas traditions to continue and to keep our family and community bonds," she says.</p>
+            <p><strong>Salvador Gómez-Colón, 19, Puerto Rico</strong></p>
+            <p>Puerto Ricans love Christmas, says 19-year-old Salvador Gómez-Colón. "Christmas is a spectacle. It's the biggest holiday in Puerto Rico." </p>
+            <p>During the festive period, families head into the mountains around the capital San Juan to gather at food trucks, called chinchorros. There they eat suckling pig and cod fritters. "It's very communal, you meet your neighbours and talk to strangers," says Gómez-Colón.</p>
+            <blockquote>I've never felt as vulnerable in my entire life. I was in a basement room with 10 others and lost communication with my dad and friends - Salvador Gómez-Colón</blockquote>
+            <p>One of his favourite Christmas traditions is the parranda: carolling in the streets and outside people's houses. "It's very lively," he says. "We sing folklore songs with cymbals and drums."</p>
+            <p>This tradition continued even during Puerto Rico's darkest days, after the country was hit by category 5 Hurricane Maria in September 2017.</p>
+            <p>Hurricane Maria dropped more rain on Puerto Rico than any storm to hit the country since 1956. A storm of such strength is five times more likely to hit now than in the 1950s due to climate change, a 2019 study found.</p>
+            <p>"I've never felt as vulnerable in my entire life," says Gómez-Colón. "I was [sheltering] in a basement room with 10 others and lost communication with my dad and friends. I saw cars being lifted and palm trees flying around."</p>
+            <p>Despite the terrible situation, Puerto Ricans managed to celebrate Christmas that year. "The parrandas happened. It was performative - to show that everything was fine," he says.</p>
+            <p>In January, when the island was still without power, people gathered to celebrate the Fiestas de la Calle San Sebastián, Puerto Rico's biggest annual festival marking the end of the holiday season. "There was live music and a lot of performances. It was a blast," he says.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Many churches in Puerto Rico used emergency generators to hold a "midnight mass" on Christmas Eve in the wake of the 2017 hurricane (Credit: Mario Tama/Getty Images)</figcaption>
+            </figure>
+            <p>During the Christmas period, much of Puerto Rico was still in complete darkness.</p>
+            <p>To help people rebuild their lives after Maria, Gómez-Colón started a crowdfunding campaign called "Light and Hope for Puerto Rico." Over 10 months, he raised almost $170,000 (£129,000) to support 3,500 families in Puerto Rico. With this money he bought hand-cranked washing machines as well as solar lamps for families without power.</p>
+            <p>"Santa couldn't come to homes that year, [but] the lights were gifts in themselves," he says.</p>
+            <p>"It's been four years since Maria but to many of us it feels like it was yesterday," he says. "You can repair bridges and street signs, but you can't repair the harm that has been done to the Puerto Rican mind."</p>
+            <p><strong>Daniel Holanda, 19, Brazil</strong></p>
+            <p>Daniel Holanda celebrates Christmas every year at his grandmother's house in the city of Anápolis in Brazil's central state, Goiás.</p>
+            <p>"Every year we get together on 24 December at my grandma's house. I have seven uncles and they each bring a dish for dinner. We eat turkey, chicken mayonnaise and rice," the 19-year-old says.</p>
+            <blockquote>We used to decorate the house with Christmas lights - now we can't do it anymore - Daniel Holanda</blockquote>
+            <p>Christmas starts early in Brazil, on 24 November when families gather to decorate the tree. Several years ago, Holanda's family house flooded while they were celebrating this festive tradition. "We had to stop the party and remove the water," he says.</p>
+            <p>Flooding is common in Holanda's home state of Goiás and such extreme weather is changing Christmas traditions in the region.</p>
+            <p>"Christmas has changed a lot since I was a child. We used to play a lot of different games outside. Now we can't do it anymore because of the flooding," he says. "Today children can't enjoy Christmas in the same way as they always have to be careful and prepared that something is going to happen."</p>
+            <p>Goiás is home to the Cerrado, a vast wooded savannah that contains thousands of rare species, including the jaguar and the giant anteater. Scientists have warned that this biodiversity hotspot may collapse in less than 30 years if temperatures continue to rise and large agricultural businesses rapidly convert forests into soy plantations. Besides flooding, the region has suffered from extreme drought in recent years.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Christmas in Brazil is filled with family festivities but flooding and wildfires have increasingly disrupting those</figcaption>
+            </figure>
+            <p>Christmas dinner is often candlelit as the flooding causes frequent power cuts at this time of year, says Holanda. "We used to decorate the house with Christmas lights - now we can't do it anymore," he says."We have to adapt and improvise."</p>
+            <p>Wildfires are also a major problem in Goiás. Months after the peak fire season between June and September, people can still feel the effects. "We can smell sulphur from our homes," says Holanda. "Sometimes it is difficult to breathe."</p>
+            <p>Despite the challenges, people find a way to gather and give back at Christmas time, he says. "On Christmas Eve, we give food to people in need, especially old people."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

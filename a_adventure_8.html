@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_adventure_8" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Adventure</mark>
+                <h2>Is the Pilbara the oldest place on Earth?</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Dating to around 3.6 billion years ago, the Pilbara region of Western Australia is home to the fossilised evidence of the Earth's oldest lifeforms.</h3>
+            <p>In recent years, science has confirmed what Aboriginal Australians, the world's oldest continuous living culture, always knew: the Pilbara region of Western Australia is among the oldest places on Earth.</p>
+            <p>The Pilbara began to form more than 3.6 billion years ago and its vast landscape of deep pindan reds and endless panoramas, which stretches from the west coast to the Northern Territory border, is an ancient, forbidding place. For those travelling to the region for the first time, the initial sense of space and solitude can be daunting: it's roughly double the size of Great Britain, but with a population of just 61,000, it is one of the most sparsely populated regions on Earth.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Credit: Dan Avila</figcaption>
+            </figure>
+            <p><strong>The world's most ancient crust</strong></p>
+            <p>Scientists have determined that the Pilbara's vast formations of iron-rich rock, formed prior to the existence of oxygen and life itself, is the best-preserved example of the world's most ancient crust. While other global iron deposits are thought to have formed at a similar time, the surface of the Pilbara remains unburied and undisturbed by geologically cataclysmic events.</p>
+            <p>"The unique thing about the Pilbara landscape is not just its age, but its incredible state of preservation," said Martin Van Kranendonk, professor of geology at The University of New South Wales, who has spent years mapping and studying the Pilbara.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Credit: Pete West</figcaption>
+            </figure>
+            <p><strong>The Earth's oldest lifeforms</strong></p>
+            <p>According to Van Kranendonk, Pilbara rock is so ancient that it contains no fossils within its structure, yet stromatolites, the fossilised evidence of the Earth's oldest lifeforms, are found upon it.</p>
+            <p>In 1980, 3.45-billion-year-old fossil stromatolites were found near Marble Bar (pictured above) in the Pilbara. These microbial cyanobacteria communities first existed when conditions on Earth could not support any other form of life, building bulbous reef-like structures as they released oxygen through photosynthesis.</p>
+            <p>Incredibly, just south of the Pilbara at Hamlin Pool near Shark Bay, the world's most extensive living stromatolites system is still thriving, even fizzing, as it produces oxygen in the hypersaline bay. This is one of just two places on Earth where living marine stromatolites exist.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Credit: Dan Avila</figcaption>
+            </figure>
+            <p><strong>Exploring the Red Planet</strong></p>
+            <p>In 2019, Nasa scientists conducted investigations in the Pilbara with Van Kranendonk to better prepare them for their journey to Mars. "Many of them had never personally seen evidence of ancient life and that's what they were going to Mars to look for," said Van Kranendonk. "So, for them, it was really an eye-opening experience, to see and understand the details and texture of the fossilised stromatolites to get a better understanding of what signatures to look for as they search the surface of Mars for evidence of life."</p>
+            <p>More than just its age, the chemical similarities of the rock composition mean the Pilbara is highly relevant to the scientists' preparation for the Mars mission. "The composition of those rocks and the amount of iron in the Pilbara is amazing and similar to Mars," said Van Kranendonk, "which is why it is known as the Red Planet."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Credit: Dan Avila</figcaption>
+            </figure>
+            <p><strong>An underground surprise</strong></p>
+            <p>The Pilbara can be unforgiving, extreme and sometimes dangerous for the ill-prepared. It is also hauntingly beautiful and captures the imagination of visitors from around the world.</p>
+            <p>Although the area looks like semi-arid desert, within it is one of the world's most beautiful national parks. Carved out of the land by billions of years of slow erosion, Karijini National Park's otherworldly splendour lies deep in its ancient gorges and sheer-sided chasms, where dramatic waterfalls and crystal-clear waterholes are set among the striated rock.</p>
+            <p>For visitors, this is a paradise of cool rock pools fed by underground springs, lush vegetation and abundant wildlife. For scientists, the canyons at Karijini offer unparalleled access to naturally excavated cross sections of layered rock that reveal much about the Earth at the time this ancient land was formed. "It is such a beautiful thing; those gorges allow you to look down through the layers of time," said Van Kranendonk.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Credit: Dan Avila</figcaption>
+            </figure>
+            <p><strong>A natural spa pool</strong></p>
+            <p>The permanent flowing waterfalls, waterholes and oases found here are made only more awe-inspiring given the conditions on the harsh Pilbara exterior.</p>
+            <p>Like an ancient, secret cistern, Spa Pool has been hewn from the rock by the constant flow of water at the head of Hamersley Gorge. The bath-like formation is almost completely enveloped in multi-hued, smooth rock wall. The gentle burbling of the stream constantly replenishing the pool is the only sound in one of Karjini's most intimate hideaways.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Credit: Dan Avila</figcaption>
+            </figure>
+            <p><strong>Australia's hidden secret</strong></p>
+            <p>The only accommodation in the national park is the indigenous-owned Karijini Eco Retreat. Early mornings at the retreat are special. The cool, predawn air is energising, and the low light filtered through suspended iron-rich dust saturates the landscape in colour before the full sun of the late morning washes away this intensity until sunset.</p>
+            <p>At night, when there is a confluence of clear skies and no moon, Karijini is a dark sky wonderland for stargazers and astro-photographers alike. The dry air and lack of light pollution provide for a dazzling display of detail in the Milky Way.</p>
+            <p>"Karijini is a unique and iconic Australian destination," said co-owner Marnie Shields, explaining that guests are often overcome by the beauty, accessibility and diversity of Karijini. "While the magnificent region is being revealed to the rest of the world, it's still one of Australia's most spectacular hidden secrets."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Massive Fig Tree, Dale Gorge, near Fern Pool</figcaption>
+            </figure>
+            <p><strong>A shocking world of contrasts</strong></p>
+            <p>According to Karijini guide Pete West, the stark shift in microclimate, fauna and flora shocks most visitors as they descend from the arid surface into the lush, verdant gorges.</p>
+            <p>"It becomes apparent very quickly that there's a distinct micro-environment in the gorges," he said. "The flora is remarkably different from the surface, like melaleucas, which are the biggest trees in the Pilbara. You just don't get it on the surface, you only ever see them in creek beds. Then there [are] the delicate ferns, moss and the big leaf fig tree (pictured above). It's such a contrast, in and out of the gorge."</p>
+            <p>The presence of permanent water in the gorges is the fundamental building block of the gorge microenvironment that supports fish, flying foxes and a range of predators taking advantage of the optimal conditions. The abundance of reptiles is astounding, from small desert dragons to pythons up to 5m in length.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Credit: Dan Avila</figcaption>
+            </figure>
+            <p><strong>Important women's place</strong></p>
+            <p>Karijini is also a place of important cultural significance to indigenous people, with certain locations in the park recognised as women's-only places and others that are strictly for men. "There are places, for instance, women would go if they wanted to get pregnant and places they would visit if they wanted to have twins," explained anthropologist Dr Amanda Harris, who has worked across the Pilbara with traditional owners.</p>
+            <p>Fern Pool (pictured above), located in a terrarium-like environment at the genesis of Karijijni's Dale's Gorge, is an important women's place to the local Banjima people, yet unlike other indigenous destinations that prohibit interference, such as Uluru's climbing ban and a prohibition on photography at areas within the Kunku-Breakaways near Coober Pedy, Karijini traditional owners welcome all guests, asking only that visitors be respectful and walk lightly.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Credit: Dan Avila</figcaption>
+            </figure>
+            <p><strong>A place of respite</strong></p>
+            <p>Scientists believe that the Banjima people and their forebears have been using Karijini, which means "hilly place" in local Aboriginal languages, as a meeting location for 30,000 to 40,000 years. Nomadic tribes of the Pilbara maintained life in a challenging environment with daily resource gathering essential for survival. Karijini offered a place of respite and security of resources, shelter and permanent water.</p>
+            <blockquote>"Karijini is referred to by all the neighbouring tribes as a meeting place, as an ancient place where business is conducted, families get together, marriages are arranged, lore is passed. This still goes on today," said West.</blockquote>
+            <p>Mount Bruce (pictured above), Western Australia's second-tallest peak, stands at the entry to Karijini and holds both geological and indigenous significance. Known as Punurrunha to indigenous people, the mountain is a sacred site and highly significant in Aboriginal Law. To Banjima, this is strictly a male-only site, with some female elders refusing to even set eyes on the peak as they pass by. Visitors, however, are not restricted from photographing or even ascending to the summit.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Credit: Dan Avila</figcaption>
+            </figure>
+            <p><strong>Ancestral knowledge</strong></p>
+            <p>The Pilbara is still revealing new secrets about early conditions on Earth and the life of the region's first inhabitants. While new discoveries about how long the Pilbara has been continuously inhabited surprise scientists, to indigenous people, it is something they have always known.</p>
+            <p>"Because we know life, as a people we've always known [human] life started here," said Yindjibarndi and Ngarluma elder and indigenous Pilbara tour guide Clinton Walker. "The world began here, everything began here. So, from our perspective, we've never believed we came from anywhere else except here and that we were created in this landscape by beings much more advanced than us, who also taught us all our knowledge."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Credit: Dan Avila</figcaption>
+            </figure>
+            <p><strong>Records of extinct macropods</strong></p>
+            <p>Earlier this year, Walker was exploring at low tide and found ancient rock etchings that depict kangaroo footprints in the intertidal zone of the Pilbara's Burrup Peninsula. He believes this is the first such underwater find of its kind anywhere in Australia, garnering significant scientific interest. He explained that the current theory of origin is that this etching was likely made after the last ice age when the water levels were more than 100m lower, between 7,000 and 18,000 years ago.</p>
+            <p>Walker delights in showing guests local rock art containing important imagery such as extinct macropods (pictured above) and believes that many discoveries, both underwater and on land, are yet to be made.</p>
+            <p>"It's so funny, even when I'm doing tours, I'll still find lots of new rock art at the same places I have been many times," said West. "But even the guests are finding things I haven't seen before either, you know. It's exciting for everyone."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Credit: Dan Avila</figcaption>
+            </figure>
+            <p><strong>A magical place</strong></p>
+            <p>The magic of the Pilbara lies in its ancient roots. There are no crowds, fences, buildings or other impositions of modernity. Just a place as old as time and its custodians that welcome you to make your own journey of discovery.</p>
+            <p>"This place is for seekers, you know. For photographers, for artists, for painters, geologists, lovers of nature," said West. "I see this in people that come to Karijini in particular. As you walk through those gorges, guaranteed you'll be running your hands along the oldest rocks you'll ever touch. When you think about this, our problems, our concerns, our ambitions are all almost irrelevant. It gives you a true sense of perspective. I think that's super cool."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

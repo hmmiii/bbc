@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_how-we-work_3" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>How We Work</mark>
+                <h2>The taboo of 'selling out' for a better-paying job</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>These days, swapping a passion role for a less-interesting job with better pay and benefits could well make sense. Is it time to end the stigma of 'selling your soul'?
+            </h3>
+            <p>Molly, a US tech worker in her 30s, used to work at a company whose mission she was deeply invested in. “It was part of my identity,” she says. But when the pandemic hit, bringing rolling redundancies, uncertainty, long hours and burnout, Molly decided it was time to change jobs.</p>
+            <p>The move came with trade-offs; while her new role paid better and offered more remote work, Molly didn’t click with the company’s mission, and she wasn’t particularly interested in the sector. Though she initiated the move, she felt conflicted. “I felt like I was selling out,” says Molly, whose full name is being withheld for job-security concerns. Even though she was burnt out, it “felt like I was very at war with my inner values”.</p>
+            <p>In an age in which workers have been conditioned to follow their passions and find roles that are meaningful, the idea of pivoting from a fulfilling job to a boring one with better conditions is, to some, practically taboo. This dilemma can be particularly acute for younger workers; studies show that nearly half of millennial and Gen Z workers want a role at a company that aligns with their personal ethics; 15% reported they made values-based career decisions during the pandemic.</p>
+            <p>It’s clear, however, that the global pandemic has left employees questioning every aspect of work - from pay levels to flexibility to those all-important work-life boundaries. Many people want to change how they work, to find better ways of accommodating professional duties and personal lives. After so much uncertainty over the last two years, some workers are also more conscious of how precarious financial stability can be.</p>
+            <p>For some, swapping a lower-paid, potentially long-hours passion role for a less-interesting job with better pay and benefits could well make sense. And, with salaries rising across sectors, companies offering new work models and awareness of work-related mental health issues at an all-time high, now might just be a good time for people to seek out a role that sets them up for the life they want to lead. Perhaps calling this kind of transition ‘selling out’ isn’t quite right anymore.</p>
+            <p><strong>‘Going to the dark side’</strong></p>
+            <p>Multiple factors triggered Molly’s decision to switch roles, including wanting more stability amid a wave of pandemic redundancies, a desire to protect her mental wellbeing and better pay. A crucial factor was her wish to continue working remotely; her previous employer was pushing staff to come to the office as much as possible.</p>
+            <p>Yet, despite her valid reasons for leaving, Molly says her colleagues judged her when she disclosed her new role; there was a sense she was “going to the dark side”, she says. “There’s some expectation of what is a ‘good switch’; [for example], if you’re going to a very mission-driven company or starting your own business. It kind of bummed me out that I wasn’t able to be like, ‘I’m going here’, and have people be like, ‘Oh, I’m so proud of you, that’s amazing’.”</p>
+            <blockquote>There’s no need for judgmental views ever, and surely not when one is taking care of their needs and commitments, financial and any other - Anat Lechner</blockquote>
+            <p>At issue is the fact that many workers, especially millennials like Molly, have absorbed the idea they should be in ‘dream jobs’ that align with their values. Catherine Shea, assistant professor of organisational behaviour and theory at Carnegie Mellon University, US, says this is a long-standing dilemma: do you want “a job where you find meaning, or do you find meaning somewhere else and a job funds that?”</p>
+            <p>Work people are passionate about, she points out, often comes with a penalty; a 2019 study showed that many organisations exploit workers’ passion to pay them less or allocate them menial tasks. So-called dream jobs can also feed into toxic ‘hustle culture’ that convinces workers they need to work all hours to prove their passion and commitment to others as well as themselves.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>We often stigmatise 'selling out' for a job we're not passionate about for better perks or pay - a misguided belief, experts say (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>Yet, it’s still seen as a badge of honour to choose a passion-based job - it’s a sign that a worker has stayed true to their values despite obstacles; opting for a less interesting, potentially higher-paid role means they sold their soul to take the easy way out.</p>
+            <p>But Shea suggests that the pandemic may have caused some ‘passion workers’ to feel disenchanted with their roles. Workers, she suggests, may see “the limits of the feel-good emotions that their organisations can give them, particularly when working remotely. A passion job may have been fun in an interactive office setting, which could have compensated for the lower pay. Now that everything is on Zoom, why not get paid more?”</p>
+            <p>“It’s not so much selling your soul, I think,” adds Shea. “It’s now flipping passion on its head and seeing the negative aspects” of a job you otherwise care about.</p>
+            <p><strong>‘It’s very easy for me to let go’</strong></p>
+            <p>Experts say there’s no data yet to suggest that more people are ‘selling out’ in the pandemic. But, says Anat Lechner, clinical associate professor of management and organisations at New York University, any time of great uncertainty makes people say to themselves, “‘I need to maximise the opportunities that I can get, because God knows what tomorrow will look like’.”</p>
+            <p>Repeated trauma over the last couple of years, add Lechner and Shea, has led workers to seize the opportunity to go for higher salaries and more flexible perks - jumping for the better deal on the table right now - since the future is generally uncertain.</p>
+            <p>It's not just insecurity driving workers to assess their employment options, however. During the pandemic, many workers have had an opportunity to take stock of priorities and decide what they want from their jobs, whether work flexibility, more money or an ability to draw firm boundaries between professional and personal lives. While every job has its stressors, taking that step to match a role to your particular priorities can pay off. “’I’m not selling my soul - I’m actually repositioning myself so I can have a better life’,” says Lechner.</p>
+            <p>In Molly’s case, prioritising comfort and wellbeing over passion in her employment has been rather freeing. “One of the pros is since you don’t care about that industry, you’re not going to take it home with you. It’s very easy for me to let go, and let things roll off of me,” she explains.</p>
+            <p>And for workers later in their careers, the money and stability that comes with swapping passion for a less inspiring role may be less about ‘going to the dark side’, and rather just a case of pragmatism. Workers might have kids, want to buy a house or review their pension and realise, quite simply, that they need to earn more.</p>
+            <p>“Reality can hit you with a brisk wind,” says Lechner. “It’s one thing to pursue beautiful ideals when one is a relatively agent, and a whole different game to continue with that pursuit when you a have a couple of little ones needing to be fed.”</p>
+            <p>These days, the experts suggest, judging a former colleague for ‘selling out’ is unwarranted. “There’s no need for judgmental views ever, and surely not when one is taking care of their needs and commitments, financial and any other,” says Lechner.</p>
+            <p>Since moving jobs, Molly hasn’t looked back. “The energy [at the new job] is much more positive - it’s not bleak. I actually am very content. I’m not burnt out anymore,” she says. In her career, she says, she’s always wanted to go for the sexier companies. But now? “I’ve learned that’s not a requirement.”</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

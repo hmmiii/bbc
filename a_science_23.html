@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_science_23" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Science</mark>
+                <h2>Climate change and farming driving insect decline</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Insect numbers have plunged by half in some parts of the world due to climate change and intensive agriculture, a study has found.</strong></p>
+            <p>The combined pressures of global heating and farming are driving a "substantial decline" of insects across the globe, according to UK researchers.</p>
+            <p>They say we must acknowledge the threats we pose to insects, before some species are lost forever.</p>
+            <p>But preserving habitat for nature could help ensure vital insects thrive.</p>
+            <p>Lead researcher, Dr Charlie Outhwaite of UCL, said losing insect populations could be harmful not only to the natural environment, but to "human health and food security, particularly with losses of pollinators".</p>
+            <p>"Our findings highlight the urgency of actions to preserve natural habitats, slow the expansion of high-intensity agriculture, and cut emissions to mitigate climate change," she added.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Livestock grazing can reduce biodiversity</figcaption>
+            </figure>
+            <p>Plummeting populations of insects around the world - a so-called "insect apocalypse" - have caused widespread concern.</p>
+            <p>However, scientific data gives a mixed picture, with some types of insects showing drastic declines, while others are staying steady.</p>
+            <p>In the latest study, the researchers pulled together data on the range and number of nearly 20,000 insect species, including bees, ants, butterflies, grasshoppers and dragonflies, at about 6,000 different locations.</p>
+            <p>In areas with high-intensity agriculture and substantial warming, insect numbers have plunged by 49% and the number of different species by 27%, compared with relatively untouched places that have so far avoided the most severe impacts of climate change, according to the research, published in Nature.</p>
+            <p>But the researchers said there was some cause for hope in that setting aside areas of land for nature created a refuge for insects, which need shade to survive in hot weather.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Insects are important for human health and wellbeing</figcaption>
+            </figure>
+            <p>"Careful management of agricultural areas, such as preserving natural habitats near farmland, may help to ensure that vital insects can still thrive," said Dr Tim Newbold, also of UCL.</p>
+            <p>Potential solutions include:</p>
+            <ul>
+                <li>Avoiding intensive agriculture
+                </li>
+                <li>Planting a wide range of crops
+                </li>
+                <li>Preserving natural habitat near farmland, such as hedgerows and patches of forest.
+                </li>
+            </ul>
+            <p>Study researcher, Peter McCann, added: "We need to acknowledge how important insects are for the environment as a whole, and for human health and wellbeing, in order to address the threats we pose to them before many species are lost forever."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

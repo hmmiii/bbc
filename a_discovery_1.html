@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_discovery_1" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Discovery</mark>
+                <h2>Jungholz: A ski town stuck in the wrong nation</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>An afterthought on the map of Austria, the exclave of Jungholz has carved out its own identity, even if the reality for those living there is far from straightforward.</h3>
+            <p>There is a mountain in the Allgäu Alps that is probably the most ludicrous in all of Europe. It is called the Sorgschrofen, it is 1,636m high, and it is marked by a Gipfelkreuz, or summit cross, which stands above a sheer-sided cliff face of white-webbed rock.</p>
+            <p>Formed from reef limestone, the knuckle looms above the triangle-shaped village of Jungholz in the western Tirol of Austria. While it pales in significance to other mightier Alpine peaks, it fires the mind of cartophiles for a wholly unusual reason.</p>
+            <p>For the cross at its top - an almost abstract feature on any map - marks the only geographical point where the Tirolean village and the rest of Austria meet. And almost unbelievably, this strip of connecting land is less than 1m wide.</p>
+            <p>No matter the absurdity, it is utterly necessary. Because Jungholz, population 302, is as Austrian as Vienna or Salzburg - yet it is surrounded by Germany on all sides, with no road connection to Austria. The only way Austrians in the exclave can reach their homeland is via Bavaria.</p>
+            <p>Jungholz had never crossed my mind prior to this winter, and it is highly likely you have never heard of it either. Many Austrians are also unfamiliar with the mountain village; before making the trip, I asked locals in the Tirolean towns of Kitzbühel and Innsbruck what to expect and no one was any wiser than I. My interest in its incongruous geography deepened.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The cross atop Sorgschrofen marks the only geographical point where Jungholz and the rest of Austria meet (Credit: Marc Boettcher/Alamy)</figcaption>
+            </figure>
+            <p>It is also very common to meet tourists from the nearest German cities of Munich and Stuttgart who aren't aware of its geographic complexity. On a busy winter's day, some 3,000 of them journey to the exclave to ski Jungholz's modest collection of chairlifts and T-bars, besieging the village in helmets and with ski poles. The paradox, of course, is that most of them think they are still in Germany.</p>
+            <p>Even Elze-Jan Hoek, a Dutch transplant who came from outside Utrecht with his wife to set up a farm and raise his children, was first brought to Jungholz by accident. "My parents loved southern Bavaria and we used to drive down from the Netherlands for long summer holidays in nearby Pfronten," he told me, wistfully. "So it felt natural to decide to move to Germany - but almost by mistake we found a B&B just over the border in Jungholz instead."</p>
+            <p>Today, it is guesthouse owners like Hoek, as well as the ski lift company, who keep the Austrian village alive. It is extraordinarily tiny and from the top of its highest T-bar lift at 1,390m it is possible to see all of Jungholz, from the atypical Tirolean church to the multi-winged Berghotel Tirol, in one swift head turn.</p>
+            <blockquote>I drive 20km from Austria, up and over the Oberjoch Pass and through Germany, then back into Austria to work every day</blockquote>
+            <p>"So many oddities exist here," said Arnold Holl, managing director of the ski lift company, as we stood absorbing what little there was of the panorama. "Locals speak with a German dialect and have a German way of thinking. The staff are mostly from Germany. And I drive 20km from Austria, up and over the Oberjoch Pass and through Germany, then back into Austria to work every day. I'm a Tiroler, and for me this is not the Tirol."</p>
+            <p>Nonetheless, on arrival into Jungholz, a different message is proclaimed vividly in Germanic script on a gable-end mural on one of the first farmhouses visitors see when crossing the German-Austrian border. "Grüß Gott im Land Tirol," it reads. "May God bless you in the Land of Tirol."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>To get to the rest of Austria, villagers must drive through Bavaria (Credit: Mike MacEacheran)</figcaption>
+            </figure>
+            <p>The fault lines that carved out Jungholz's place in history can be traced in the village's archives at the bottom of the main chairlift. And it is here that an outsider can learn how the land first changed hands on 24 June 1342, from Hermann Häselin, a farmer from Wertach in Germany, to Heinz Lochpyler, an Austrian taxman from nearby Tannheim. Also here, one can learn how the tiny exclave was ruled by Austria over the next half millennium, despite feudalism fizzling out in medieval Europe and the modern borders of Germany and Austria tightening their grip around Jungholz's edges.</p>
+            <p>The last thing I read is how, on 3 May 1868, a state treaty between Austria and Bavaria enveloped the rural backwater into the German economic area - meaning, unlike the rest of Austria, Jungholz traded freely with its close neighbour for almost 90 years before the European Economic Community was created and a century before the European Union came into being.</p>
+            <p>The village might have felt constricting after a day had it not been for its fascinating history and spirited locals. When they told me how complex life could be here, they didn't just mean its bizarre geography.  They meant that most people are born in Germany (since the nearest Austrian hospital is too far away), but everyone gets an Austrian passport. That food and drink comes from Germany, but telephone and internet from Austria. That they have two different postal codes and, until the 1990s, two telephone codes. That they use doctors and dentists in Germany because there are none in Jungholz. That there is no secondary school, but an agreement that lets children go to a German school, 40 minutes away in Bavaria.</p>
+            <p>It was a lot to take in.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A sign on a Jungholz farmhouse welcomes visitors to the "Land of Tirol" (Credit: Mike MacEacheran)</figcaption>
+            </figure>
+            <p>Chief among recent challenges has been how the Covid pandemic has further isolated the exclave from the rest of Austria. As well as all the closest testing and vaccination centres being in Germany, border control was introduced at the end of the village by Bavarian State Police, meaning residents were effectively cut off from the outside world.</p>
+            <p>It was a move that strengthened their resolve and, when the second of four national lockdowns in Austria was announced in November 2020, Mayor Karina Konrad negotiated an exemption for residents to essentially be treated as German citizens.</p>
+            <blockquote>I grew up in Jungholz and it was normal for us that we weren't normal</blockquote>
+            <p>"We've always had problems because of our geographical situation, so this was yet another example of how we're treated in a different way from other Austrians," Konrad told me. "I grew up in Jungholz and it was normal for us that we weren't normal. In Germany, they said we weren't German and in Austria they said we weren't Austrian. In daily life we are neither Austrian, nor Tirolean, but Jungholzer."</p>
+            <p>Small-town affection aside, there is another extraordinary element about Jungholz: thanks to a legal loophole and tax technicality, the village once had the highest density of banks in the world. This El Dorado of the banking scene became Bavaria's "off-shore" banking capital and gave German investors lucrative tax benefits. At the height of Jungholz banking in 2008, the village's Volksbank, Sparkasse and Raiffeisenbank Reutte had more than €4bn in their vaults - significantly more than the entire Tirolean state budget at the time. Indeed, it became a sort of Alpine Wild West, with cars arriving in the dead of night piled with suitcases full of black money.</p>
+            <p>"Switzerland was famous for its banking secrets, but Jungholz has the same history," said Hoek, who saw his guesthouse booked almost every night. "Bagmen would arrive with suitcases handcuffed to their wrists, enter their room, lock the door and never leave until the banks opened. It happened all the time."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Due to a legal loophole, Jungholz was once Bavaria's "off-shore" banking capital (Credit: dpa/Alamy)</figcaption>
+            </figure>
+            <p>Much has changed since then. The EU demanded greater levels of transparency, and cross-border tax evasion was placed under greater scrutiny in 2014, putting an end to Jungholz's status as an "offshore" capital. In turn, the billions invested in Jungholz vanished almost overnight and the banking exodus began. Now, the investors are gone, tourism has filled the void and the banks have been repurposed. One is a self-catering apartment block, while another hosts a permanent art exhibition, with a mural painted by Thierry Noir, the first artist to paint the Berlin Wall in the 1980s. The last building is still for sale.</p>
+            <p>An unusual village, in unusual circumstances, in unusual times. Before I left, I asked Conny Lochbihler, owner of visitor shop Conny's Ski Alm, what it is about Jungholz that had kept her in this pocket kingdom for all of her life.</p>
+            <p>"This is a place where you can see everything from every point," she said. "The world is often too big, but here you can never get lost."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_family-tree_3" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Family Tree</mark>
+                <h2>The adult 'boomerang kids' moving home to their parents</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>With costs of living increasing, a ‘boomerang’ period of moving back in with parents could be the norm, not the exception, for people in their 20s and 30s.</h3>
+            <p>In early March 2020, Sheridan Block, 30, had just finished a year abroad in Marseilles, France, as a volunteer English teacher to refugees. She flew home to Jacksonville, Florida, to spend time with her maternal grandparents - her grandfather was recovering from health issues at the time. Her plan was to stay a few months to help care for them while also saving money, paying off some student debt and credit card bills before returning abroad.</p>
+            <p>Then, the pandemic hit. “It was kind of a spiral,” says Block.</p>
+            <p>In exchange for living rent-free, she helped drive her grandparents to appointments, ran errands, cooked and did chores around the house. She ended up staying nearly two years. “I was able to save enough money to pay off all those debts that I had, to finance a car and then ultimately to move out,” she explains. It was beneficial financially, she says, and good to be close to family, but it required her to adjust her ideas of what adulthood should look like.</p>
+            <p>Block is among a growing group of ‘boomerang kids’ - adult children who return to their parents or grandparents’ homes after moving out. This group of adults is on the rise - and not just because of the pandemic. In July 2020, 52% of young adults in the US resided with one or both of their parents, according to a Pew Research Center analysis - the highest percentage the United States has seen since the end of the Great Depression, in 1940. In the UK, the proportion of single, child-free 20-to-34-year-olds living with their parents went up 55% between 2008 to 2017, according to research from Loughborough University.</p>
+            <p>In Western cultures particularly, moving away from home has traditionally been considered a crucial step in becoming an independent adult. But as the number of boomerang kids continues to rise in countries such as the US, UK and Canada, this may be set to change - and with it, our notion of what the stages of adult independence look like.</p>
+            <p><strong>An upward boom</strong></p>
+            <p>When she moved in with her grandparents, Block noticed she was far from alone among her peers.</p>
+            <p>“I found that a lot of friends, and even some dates I went on, were kind of in the same boat,” she says. “I had met one guy [on a date] who moved from San Francisco back in with his mom in Jacksonville. That’s just a reality now, to do whatever you’ve got to do to save money.”</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>After returning from teaching abroad in France, Sheridan Block, 30, moved back home with her family during the pandemic (Credit: Courtesy of Sheridan Block)</figcaption>
+            </figure>
+            <p>There are many reasons for young people to move back home, says Joanne Hipplewith, family therapist at the Institute for Family Therapy in London. The primary reason is the high cost of living in major cities, though university tuition is another factor in the US and UK.</p>
+            <p>“There is a trend to staying at home longer, because everything is so expensive,” says Hipplewith. Staying home, for many, means financial support from family as they prepare for advanced degrees or starting a career. And it’s becoming increasingly normal: “[Young people are] prepared to go back home," says Hipplewith. </p>
+            <p>Though the ‘boomerang’ stage has been on the rise for at least the last decade, the pandemic has added a few new contributing factors: many who planned to go away for college could not -  university campuses closed across the world - and others who might have otherwise moved for a job after college delayed leaving home because in-office work has not been available.</p>
+            <p>For many, the boomerang phase is temporary. But it still may last many months - or even years, like it did for Block - to enable boomerangers to pay off student debt, save for a down payment or establish themselves in a career without concurrently worrying about high rents, tuition and student debt.</p>
+            <p>“It’s temporal - a one-year, two-year or five-year plan," says Jenna S Abetz, associate professor of communication at the College of Charleston, US. “This is just a transition chapter.”</p>
+            <p><strong>Redefining the milestones of adulthood</strong></p>
+            <p>For many, a return home after living away - or directly after university - can feel like a regression and loss of recently won independence. </p>
+            <p>“You learn to become an adult [in university],” says Hipplewith. “You have friends. You’re doing what you want to do. So, it can be really quite devastating because you’re coming back under someone else’s rules.”</p>
+            <blockquote>I expected something very different from adulthood - Sheridan Block</blockquote>
+            <p>Boomeranging forces adults in their 20s and 30s to face assumptions about independence, and this can come with anxiety. Beyond feeling they ‘regressed’ by moving home, many adult children returning home experience a trickle-down effect to other life milestones. Abetz says that 20- and 30-somethings living with their parents are getting married later and also delaying having children, which can leave them feeling even more “behind”.</p>
+            <p>“I expected something very different from adulthood,” agrees Block. By her 30s, she says, she had once thought she’d have a successful career, own a home, be married and have a family, along with a solid savings and retirement plan. “Unfortunately, that didn’t happen,” she says. At times, living with her grandparents made her feel “like a failure not having those adulthood dreams checked off”. </p>
+            <p>Still, there are benefits to boomeranging, say experts. Many of these adults are finding an increased ability to do work they find meaningful, rather than take a job that simply pays the bills, says Abetz. During Covid-19, this has also meant some boomerangers have been able to choose jobs with lower risk factors, though this is largely dependent on their socioeconomic situation.</p>
+            <p>Socially, boomerang kids also have an opportunity to strengthen relationships with their parents at a time when they typically would have been establishing ties with new friends. It’s an unexpected “opportunity for mutual support and closeness with families,” says Abetz, that could lead to boomerang kids developing strong family support networks in the long-term. “Parents sometimes like to have kids back home for a little while,” says Abetz. "They view that as a special time they wouldn’t necessarily have gotten.”</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>For some boomerang kids, moving back in with their parents means delaying life milestones - but it can also bring them closer to their families (Credit: Getty Images)</figcaption>
+            </figure>
+            <p><strong>Another new normal</strong></p>
+            <p>Abetz and Hipplewith both believe this is not just a pandemic-induced trend, and foresee an increasing number of adults bunking with parents as costs of living continue to rise. In the future, after moving away for university or college, says Abetz, life paths may be a little “less linear. It might be back and forth. It might be, after college, you’ll be home for six months or a couple of years”.</p>
+            <p>Hipplewith hopes that as boomerang stages become more common in Western cultures, young adults will feel less pressure to conform to societal expectations of going to university, moving out and finding a job. Hipplewith encourages young people to view a return to home, or remaining home, as "informed decision-making”. She says, “Let’s move away or de-link becoming an adult with the act of moving away.”</p>
+            <p>And some research indicates perceptions have already begun to change. Block agrees boomerang moves are a new reality for her generation, and one that can potentially re-frame an unhelpful mindset.</p>
+            <p>“When I was traveling, my friends from other countries, especially those where family is super close, like in Asia, would say how funny it was that Americans are so obsessed with moving out at 18. Even my grandma, who is from the Philippines, would make comments about it,” she says. </p>
+            <p>“I think my generation is learning to be OK with the idea that not everyone’s path is meant to look the same, and success is all about perception,” continues Block. “Adulthood is really just being old enough to have responsibilities and pay bills; that doesn’t go away if you move in with parents again.”</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

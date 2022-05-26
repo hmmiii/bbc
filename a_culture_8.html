@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_culture_8" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Culture</mark>
+                <h2>The hermit of Socotra Island</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>He fishes by hand, lives alone in a remote cave and is a living testament to the way residents once lived on this far-flung island in Yemen.</h3>
+            <p>Standing on a rocky outcrop on the north-western tip of the Yemeni island of Socotra, the only signs of life that I could see were shoals of fish undulating beneath me in the turquoise water. To the west, the horizon shimmered pink over the ocean, a phenomenon caused by the dusty Arabian atmosphere. From the east rising towards the north, jagged granite peaks framing 80m-high sand dunes fell away into the shallows.</p>
+            <p>In the far distance, I noticed a tiny figure in the surf. I asked my guide and island expert Matteo Zanella who it was. "That is Ellai and this is his home. I will take you to meet him tomorrow." I looked around perplexed. Aside from our makeshift camp, I saw no evidence that anyone else had ever lived here.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>That tiny dot on the beach is Ellai, who lives all alone in the vast Detwah Lagoon (Credit: Geri Moore)</figcaption>
+            </figure>
+            <p>Zanella explained that fishing is the foundation of livelihoods here, and Socotri have always lived close to the sea. While most Socotri now live in small coastal villages and towns, more than 30 caves have been discovered on the island. And here in the north, those such as Hoq Cave, the largest on Socotra, have historically provided safe shelter from both the unforgivingly high summer temperatures and strong monsoons in winter. </p>
+            <p>Despite living only 2km from the town of Qalansiyah, Ellai still chooses to live in a cave, and in many ways, Zanella explained, he is something of a living testament to the way ancient Socotri once lived on this far-flung island. </p>
+            <p>Marooned between Somalia and Yemen where the Arabian Sea and Indian Ocean meet, the Socotra archipelago is one of the most isolated continental fragments on Earth - a piece of Africa adrift at sea. The high proportion of endemic flora here have led some to label this Unesco World Heritage site the "Galapagos of the Indian Ocean". More than one-third of Socotra's 825 plant species and 90% of its reptile species don't live anywhere else in the world, and gazing up at the islands' surreal, umbrella-like dragon's blood trees and down at thousands of bright blue and red freshwater crabs that scurry in the twilight, it can feel like you're on another planet.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>More than one-third of Socotra's plant species are endemic (Credit: John M Lund Photography Inc/Getty Images)</figcaption>
+            </figure>
+            <p>The most north-westerly point of the main island, where I stood, is where you will find the Detwah Lagoon and Ellai's home. The next day as Zanella and I pitched our tents on the lagoon's beach, Ellai appeared unannounced to offer a helping hand. He embraced Zanella as an old friend, with a light kiss on each cheek, before introducing himself to me. "I'm known by [most people] as Abdullah the Caveman, but my Socotri friends call me Ellai." </p>
+            <p>Ellai isn't sure of his exact age: Socotra's first hospital didn't open until 2012 so no official records of his birth exist, but thinks that he is around 60 years old. He has had 12 children, but due to malnutrition and the lack of modern healthcare and vaccinations, only six of them survived childhood, which isn't uncommon in Socotra. Today, his children are looked after by his wife who prefers to live in the relative comforts of Qalansiyah. Ellai still spends most of his time in his cave, fishing daily to support his family. </p>
+            <p>"Come," Ellai said, beckoning towards the cliffs on the far side of the lagoon. "I'm going to show you my home."</p>
+            <p>Wading through the lagoon, Ellai paused before momentarily submerging himself in the knee-deep water. I could see two tentacles wrapped around his legs. "I see her almost every day," he said, pulling an octopus out with his hands. As he continued walking through the lagoon, he gently raised stingrays, pufferfish and a turtle weighing roughly 30kg from the water. He explained how he fishes for food like this, with his bare hands, as his Socotri ancestors did before him.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Ellai fishes with his bare hands in the ocean the way others might shop at a supermarket (Credit: Geri Moore)</figcaption>
+            </figure>
+            <p>As I watched, Ellai collected squid and shellfish to be cooked over an open fire that evening, as if nonchalantly deciding which groceries to pick from a supermarket shelf. </p>
+            <p>I couldn't help but smile as we approached the entrance to Ellai's cave home. A succession of whale ribs had been placed upright, their natural curve creating a frame around a small mound of earth that led up towards the mouth of the cave. The entranceway then opened into a massive chamber that felt instantly cooler and darker - a welcome retreat after hours in the scorching sun.</p>
+            <p>Ellai said that a long time ago, a sperm whale carcass washed ashore. Eager to find the precious ambergris found in sperm whales' intestines that is used in perfumes, the authorities pulled the whale into the lagoon. But after no luck in their search for ambergris, the authorities left the carcass to decompose near Ellai's cave. "I had to look [at the whale carcass] every day. After a few months I went to remove some parts of the skeleton [to decorate the entrance of my cave] when by chance I found a pocket of ambergris hidden behind the jaw. I sold if for a small fortune! They call it floating gold, you know?" </p>
+            <p>The money enabled him to buy a small house in Qalansiyah for his family, and I asked him why he still chose to live in the cave after his family moved away. "My heart is like the sea," he replied. "Sometimes it is stormy. Sometimes it is calm … For me, this cave is my soul, my source of life. I love listening to the ocean."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A series of whale ribs mark the entrance to Ellai's cave home (Credit: Geri Moore)</figcaption>
+            </figure>
+            <p>Ellai was born in this cave, as was his mother before him. Unusually in Socotra, where men are traditionally the providers, Ellai's mother took on the role of fisherman for the family. "I still feel her presence inside the cave," he told me. She taught him how to survive, where to find dates, potatoes and tomatoes - some of the only edible food on the island - as well as which plants to use for medicine and where to find fresh water high up in the mountains. Ellai says his life hasn't changed much in the last 60-odd years, except he now proudly owns an "old-fashioned" mobile phone and has the luxury of bottled water. </p>
+            <p>In 2015, Cyclone Chapala ripped through Yemen and the Horn of Africa. Most of nearby Qalansiyah was torn to pieces. Yet, Ellai followed his instincts and brought his family to the cave from Qalinsiyah, seeking refuge in its deeper caverns. The ensuing storm, he described, sounded like "the gods fighting with all the Earth's elements", and after a few days he emerged thinking he might have been the only man left on Socotra. "My cave was our saviour and it withstood more than the man-made buildings." </p>
+            <p>He explained that there is a network of deep tunnels and caverns connected to his cave. In the early 2000s, a Belgian archaeological team, the Socotra Karst Project, approached Ellai in his cave, asking if they could excavate some of these deeper tunnels. One 8m-long tunnel, which was so small Ellai could barely squeeze through it, opened into a huge chamber where the team found cave paintings that archaeologist Julian Jansen van Rensburg believed could be 2,000 years old, as well as human skulls and ancient pottery. </p>
+            <p>"Socotra's history doesn't belong to books," Ellai said. "It belongs to memories, art and objects, and this cave has been a living record for longer than I can imagine."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Today, Ellai is one of the last Socotri to live in a cave (Credit: Geri Moore)</figcaption>
+            </figure>
+            <p>Later that evening, Ellai seasoned the seafood he'd caught using salt from nearby salt pans, before barbecuing it over a fire of driftwood. Paired with fire-baked potatoes, the seafood was perfectly charred and so tender that it melted in my mouth. </p>
+            <p>Seemilgly happy that he'd shared a tiny glimpse into his life with me, Ellai bid us farewell and then waded into the darkness of the lagoon.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

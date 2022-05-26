@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_discovery_2" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Discovery</mark>
+                <h2>Canada's rare new skiing adventure</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>A world-renowned guide has put together the most eco-friendly, self-propelled ski adventure possible, teaching travellers to lower their carbon footprint along the way.</h3>
+            <p>A world-renowned guide has put together the most eco-friendly, self-propelled ski adventure possible, teaching travellers to lower their carbon footprint along the way.
+            </p>
+            <p>"It seems like at least a quarter of the trees up here are dead now," he said, explaining how worsening pine beetle outbreaks are a sign of climate change, as winters haven't been cold enough or long enough to keep them out.</p>
+            <p>If it seemed like a pedantic conversation for a guided ski trip, it was intentional. This was day one of a unique new adventure; one of the most sustainable ski trips on offer right now in this era of conscious climate travel. Hill, also a professional athlete and activist known for walking the climate talk in the ski industry, offers the trips through the new site 57 Hours that connects adventure seekers with certified guides all over the world. He tailors four-day guided ski touring in Revelstoke's surrounding mountains complete with electric transportation, coordinates locally sourced meals and stays in greener accommodations, and - perhaps most critically - helps guests understand their own carbon footprint and teaches them how to lower it.</p>
+            <p>In 2010, Hill became famous for climbing and skiing two million vertical feet in a single year of ski touring, a feat that spanned 71 mountains across two hemispheres. He's set other vertical and speed records since. Along the way, though, a realisation formed: a widening gap yawned between the abundance he received from spending time in nature - joy, peace, exhilaration, balance, solitude - and how he approached nature.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Greg Hill has been working to lower his own carbon footprint and inspire others to do the same (Credit: Angela Percival/Arcteryx)</figcaption>
+            </figure>
+            <p>Although the majority of his adventuring was human-powered ski touring, he still drove to trailheads in his diesel truck and often used a snowmobile from there. He flew to other countries to access terrain with a helicopter, staying in lodges with hot tubs and saunas and food flown in from across the globe. All of it left clouds of spent fossil fuels in his wake.</p>
+            <p>In 2014, he was caught in an avalanche on a ski trip in Pakistan. He was lucky to emerge from the accident with only a broken leg, but as he lay couch-bound and healing, he couldn't escape the thought: what if he had died right then?</p>
+            <p>"What would my legacy have been? What would my kids have remembered me for?" he told me. "I loved pushing the limits of adventure and inspiring people to follow their dreams. But there was no real care for the world in that."</p>
+            <p>Hoping to lead by example through the platforms he'd created as a pro athlete, Hill completely overhauled his skiing in addition to other lifestyle changes. He sold his snowmobile and started leaving his truck at home. For a stretch of time, he cycled to all of his ski objectives. But few people wanted to join him, he said, "because who wants to bike 15km, hike for 6,000ft, ski, and bike another 15km? But there were no other real options available then." And that's a crucial thing he's realised, he said: people will only take action when there are accessible options to make it easier.</p>
+            <blockquote>I loved pushing the limits of adventure and inspiring people to follow their dreams
+            </blockquote>
+            <p>When it became available, Hill bought an electric car: a two-wheel drive Chevy Bolt. The tiny hatchback is wildly out of place amidst the SUVs and trucks common to ski towns with deep snowfalls. Hill jokes that he's looking forward to the release of affordable electric trucks to match rugged mountain pursuits, but with a roof box to hold gear and careful driving on the slippery roads, he makes the Bolt work. In his 2019 film, Electric Greg, that chronicled his quest to climb and ski 100 summits without fossil fuels, he called the car "a vehicle for the idea of adventuring sustainably". Now, it's a key part of these new trips he's leading as a way to scale up his efforts to affect change - and give people an easy option for affecting their own.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The new guided ski trip includes electric transportation, eco-hotels and locally sourced meals (Credit: Chris Rubens)</figcaption>
+            </figure>
+            <p>When guests book this trip with Hill, he gives skiers the choice to either rent an electric car in Kelowna (the nearest airport to Revelstoke) so they can try out the experience of driving one on their own, or he'll pick them up in the Bolt. My ski touring group chose the Bolt, and on our way to Rogers Pass earlier, while expertly navigating the semi-trucks and slush on the highway, Hill explained how often he charges it (the Bolt usually gets two round trips to the pass before it needs to be plugged in) and how he installed his own electric home hookup - a simple 240-volt outlet on the outside of his house, the same that a washer and dryer needs.</p>
+            <p>Midway up our climb through the snow, we stopped to fuel our own systems. We pulled out sandwiches and snacks we procured from Terra Firma's Kitchen, a café Hill chose as the morning's meeting point; it's owned by a local farm that supplies much of its own food. It was a precursor to the next night, when Hill would facilitate what he calls a "100-mile dinner", with as many ingredients as possible sourced from within that radius. While we ate, our guide asked if we had done our homework.</p>
+            <p>Prior to the trip, Hill requested that we perform a carbon calculation for our normal lifestyles. Rather than be overwhelmed by how big the numbers are - "Don't be hard on yourself, we have a large footprint as North Americans... but we also have a lot we can do about it," he said — the snapshot was a good starting point for where we could do better. "The goal is to aim toward progress, not perfection."</p>
+            <blockquote>We have a large footprint as North Americans... but we also have a lot we can do about it</blockquote>
+            <p>Perfection in this arena on a personal level is nearly impossible; it would require sweeping systemic change to cut plastics from production, to use green energy sources across the board, to overhaul public transportation, and more. That's overwhelming, to say the least. But personal changes give us a sense of agency in the face of the climate crisis, Hill said. And added up, all our personal agencies can catalyse that sweeping change.</p>
+            <p>The rest of our climb was dedicated to some ideas for lowering our daily footprints, like weekday vegetarianism; a 2019 report by the Intergovernmental Panel on Climate Change found that cutting meat, which takes more carbon to produce than vegetables and fruit, could more than halve the world population's greenhouse gas emissions. Or consumers can look into "green pricing" from their power companies, which allows people to pay a small premium to source renewable energy for their homes. And these kinds of market solutions - where people leverage the power of their dollars - can often lead to faster change than political solutions.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Hill suggests starting out with the simple idea of slowing down and localising how we travel (Credit: Greg Hill)</figcaption>
+            </figure>
+            <p>And, of course, there's the fact of us opting for this kind of ski trip versus the typical carbon-heavy ski vacation. A day of heli-skiing for a single person is slightly less than the carbon footprint of an economy seat on a flight from New York to Los Angeles; and the armies of snowcat machines used to groom ski resorts go through five gallons of diesel per hour - each. Given that over the remaining days on this trip, Hill would transport skiers to other local mountains in the Bolt for full days of human-powered guided touring in the deep powder that the Revelstoke region is known for, as well as facilitate local food components for breakfast, bagged lunches, apres and dinner, there was no question we were lowering our carbon footprints in choosing this kind of ski adventure.</p>
+            <p>As we topped out in a powdery glade and began stripping climbing skins from skis in preparation for the descent, I asked Hill whether he thinks these sustainable adventures he's offering will catch on to become more of a trend.</p>
+            <p>"You know that cartoon, of the two kids sitting on their grandfather's knee and asking him what he did in the war against climate change?" he said by way of reply. "I want to be able to say to my grandkids what I did. And I hope others think that, too, because we need you in this."</p>
+            <p>As we skied through the forest, the cold smoke of powder marking our passage, it was easy to appreciate that slowing down and localising the way we travel might help to protect this deep heart of winter.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

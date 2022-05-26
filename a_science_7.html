@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_science_7" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Science</mark>
+                <h2>'Alien-like' life thrives on dead matter in Arctic deep</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Scientists say they've solved the mystery of how giant sponges flourish in the deep, icy waters of the Arctic.</strong></p>
+            <p>The sea sponges survive by feeding on the remains of worms and other extinct animals that perished thousands of years ago, they suggest.</p>
+            <p>Sponges are very simple ancient animals found in seas across the world, from deep oceans to shallow tropical reefs.</p>
+            <p>They have been found living in large numbers and to impressive size at the bottom of the Arctic Ocean.</p>
+            <p>These massive "sponge gardens" are part of a unique ecosystem thriving beneath the ice-covered ocean near the North Pole, said Dr Teresa Morganti from the Max Planck Institute for Marine Microbiology in Bremen, Germany.</p>
+            <p>"We have found massive sponges - they can reach up to one metre in diameter," she said.</p>
+            <p>"This is the first evidence of sponges eating ancient fossil matter."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Arctic is one of the most affected regions by climate change</figcaption>
+            </figure>
+            <p>By dangling a camera deep beneath the ice, researchers were able to photograph the collections of sponges that form a garden on the sea floor.</p>
+            <p>At the time, they were mystified over how the primitive animals survived in the cold, dark depths far from any known food source.</p>
+            <p>More recently, after analysing samples from the Arctic expedition, they found the sponges were on average 300 years old.</p>
+            <p>And they survive by snacking on the leftovers of an extinct community of animals - with the help of friendly bacteria that produce antibiotics.</p>
+            <p>"Where the sponges like to live, there is a layer of dead material, said Prof Antje Boetius of the Alfred Wegener institute in Bremerhaven, who led the expedition to the Arctic.</p>
+            <p>"And finally it occurred to us that this might be the solution to why the sponges are so abundant, because they can tap into this organic matter with the help of the symbionts."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The sponges act as ecosystem engineers, maintaining the health of the environment</figcaption>
+            </figure>
+            <p>The discovery shows we have much more to learn about Planet Earth and there may be more life forms waiting to be discovered beneath the ice, she added.</p>
+            <p>"There is so much alien-like life and especially in the ice-covered seas where we barely have the technology to access, to look around and to make a map," she said.</p>
+            <p>But with Arctic sea ice retreating at an unprecedented rate, the researchers warn that this unique web of life is coming under increasing pressure from climate change.</p>
+            <p>According to scientific measurements, both the thickness and extent of summer sea ice in the Arctic have shown a dramatic decline in the past 30 years, which is consistent with observations of a warming Arctic.</p>
+            <p>"With sea ice cover rapidly declining and the ocean environment changing, a better knowledge of hotspot ecosystems is essential for protecting and managing the unique diversity of these Arctic seas under pressure," said Prof Boetius.</p>
+            <p>The study is published in the journal Nature Communications.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

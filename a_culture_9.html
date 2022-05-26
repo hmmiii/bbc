@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_culture_9" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Culture</mark>
+                <h2>Kongthong: The Indian village where your name is a song</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>In a remote Meghalaya village, residents have three names: a regular name, a distinct melody and a shorter tune that is akin to a nickname.</h3>
+            <p>A piercing chorus of cicadas reached my ears from the dense subtropical jungles as my car precariously navigated its way through the narrow road carved into the steep hills. Around a bend, a different tune floated across the valley - this one softer, melodious, almost eerie. A few more perilous turns later, the first houses of Kongthong came into sight, accompanied by more melodies wafting in the air as one villager called out to another.</p>
+            <p>Nestled amidst the verdant East Khasi Hills in the state of Meghalaya in India's remote north-east, the village of Kongthong is only accessible by a three-hour drive from the state capital, Shillong. Civilisation is sparse in these parts, and the village is surrounded by magnificent high ridges and dizzyingly deep gorges. It's also home to a unique tradition called jingrwai iawbei, which has been flourishing here for centuries. According to this tradition, each newborn in Kongthong is assigned both a regular name and a distinct melodious tune at birth by their mother. While their name is only used for official purposes, this tune becomes their identity to which they respond throughout their lives. Once a person dies, their tune dies with them, never to be repeated for anyone else ever.</p>
+            <p>"It is an expression of a mother's unbridled love and joy at the birth of her child. It's like a mother's heart song, full of tenderness, almost like a lullaby," said Shidiap Khongsit, a woman belonging to the Khasi tribe - one of the three tribes of Meghalaya and the one that inhabits Kongthong. She wore a simple jainsem (traditional sarong-like attire) and her warm smile was laced with red betelnut juice as she invited me to her modest dwelling for a cup of tea.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A longer tune is used to call people out in the fields, while a shorter version is used at home (Credit: Satarupa Paul)</figcaption>
+            </figure>
+            <p>Inside the one-room hut with a sloping thatch roof, we sat cross-legged on the wooden floor. In a corner, Khongsit and her husband Bring Khongjee busied themselves lighting the fire. In between nudging the timber to flame by blowing air through a long pipe, Khongsit talked of her four children and sang their tune names for me - each 14 to 18 seconds long and markedly distinct from the other. "These are the longer, original versions that we sing out in the fields, when one needs to call for someone across the hills and valleys," she explained.</p>
+            <p>In the past, the melodies were used to keep track of one another in the forest while hunting, and also "to ward off evil spirits". "We believe that bad spirits that dwell in the forests cannot distinguish our tunes from each other or from animal calls. Hence, no harm comes to you when you're called by your tunes in the forest," Khongsit said. She explained that there's a shorter version too, an extract of the long tune that is akin to a nickname, which is sung when its bearer is closer within earshot, say at home or in the playground. When heard from afar, the tunes sound like whistles, which is why Kongthong has been dubbed the "Whistling Village".</p>
+            <p>As Khongsit handed me a cup of piping-hot red tea, served without milk and with a generous helping of sugar, I asked her about the origin of this practice. "Nobody can say for sure when it began, yet most agree that it has been around ever since Kongthong came into being," she replied. "Kongthong itself has been here even before the kingdom of Sohra was established by our people and by those from other villages in the area."</p>
+            <p>Considering that the kingdom of Sohra was founded in nearby Cherrapunji, famous for once being the wettest place on Earth, sometime in the early 16th Century, it places the village's age - and by extension, the practice's origin - at more than 500 years. Yet, in all this time, the custom was never documented, until recently.</p>
+            <p>Dr Piyashi Dutta was born and brought up in Shillong and is currently an assistant professor at the Amity School of Communication in Noida, near Delhi. She learned about Kongthong while researching the topic of matriliny for her PhD. "Meghalaya is a matrilineal society, where the matrilineal principles, ethos, traditions and customs are deep seated into the system and orally handed down generations," she said. "Kongthong is no exception. Here the practice of tunes or songs as names is rooted in their cultural ethos and passed down orally. It is also a manifestation of their matriliny."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Rothell Khongsit has plans to develop Kongthong as a heritage village (Credit: Satarupa Paul)</figcaption>
+            </figure>
+            <p>Jingrwai iawbei means a melody (jingrwai) sung in honour of the root ancestress or the first mother of the clan (iawbei). "So, a symbolic connotation is attached to the practice as well - that you're not just assigning a tune to a newborn, but also paying respect to and seeking blessings of your root ancestress."</p>
+            <blockquote>You're not just assigning a tune to a newborn, but also paying respect to and seeking blessings of your root ancestress</blockquote>
+            <p>In fact, Dutta's paper on Kongthong published in the Indian Sociological Bulletin in 2016, is the first documentation of the practice. In the same year, award-winning Indian filmmaker Oinam Doren released a 52-minute documentary titled "My Name is Eeooow" on Kongthong and its unique tradition. The film, which won the Tangible Culture Prize at the 15th RAI Film Festival in Bristol, explores what happens to this maternal expression of love when children fly the nest to bigger cities and are exposed to modern lifestyles.</p>
+            <p>Until recently, moving from the village to Shillong or other towns was practically unheard of in Kongthong, even though it only has education facilities to upper primary level. But recently, increasing numbers of youngsters have been leaving for higher studies and job opportunities, and many are losing touch with their traditions. "That is something that the community has to address," said Dutta. "Perhaps they can have community sessions where the significance of the age-old practice is discussed and options weighed as to how to continue it even when you're living elsewhere." For a largely agrarian society, creation of employment in other sectors such as tourism may also help the village retain or lure its youth back.</p>
+            <p>While I was in Kongthong, I met Rothell Khongsit who had moved to Shillong for higher education and to get a coveted government job, only to give it up and move back to the village - much to his mother's chagrin. Now he is chairman of the Kongthong Village Development Committee and secretary of the village's Indigenous Agro Tourism Co-operative Society. "I wasn't content with the good government job in the big city," he said. "My heart was here with my village, and I was passionate about promoting our culture."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A traditional-style homestay has been built to accommodate the increasing numbers of travellers (Credit: Satarupa Paul)</figcaption>
+            </figure>
+            <p>Until recently, Rothell said, the villagers weren't aware that their unique practice could be a drawcard for visitors. "For us, it's ingrained in our DNA. A woman isn't taught how to compose a tune, it comes naturally to her after childbirth. We learn the tunes assigned to us as well as to our family members and friends, just like we learn our mother tongue - by listening to them since birth."</p>
+            <blockquote>A woman isn't taught how to compose a tune, it comes naturally to her after childbirth</blockquote>
+            <p>Lately though, with a growing interest in the place among outsiders due to increased access and attention, the village is starting to realise its tourism potential. In 2014, a road was built to Kongthong that replaced the previous hiking trail through the mountains; and a year earlier, a homestay was built in the village in the traditional style using local materials such as bamboo. The village has since seen a slow trickle of travellers from across India. This September, it was nominated for the UNWTO's Best Tourism Village award, which recognises "villages taking innovative and transformative approaches to tourism in rural areas in line with the Sustainable Development Goals".</p>
+            <p>As I walked through the village, I was taken by how appealing it was. Winding lanes were bordered with flowering plants dotted with colourful butterflies. Thatched huts were casually scattered all over, as if by design. The village was also exceptionally clean and litter-free. As Rothell guided me to the football field and later to a viewpoint, both offering stunning panoramas of the surrounding ridges, he told me his plans to develop Kongthong as a heritage village.</p>
+            <p>"This place isn't for people who just want to do sight-seeing; honestly, besides the natural scenic beauty, there isn't much to see," he said. "Kongthong is for those with discerning tastes, those who want to experience the rare, unique culture we have here, those who will care to listen, understand and appreciate what they can find only here and nowhere else."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

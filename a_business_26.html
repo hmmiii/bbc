@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_business_26" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Business</mark>
+                <h2>The engineers battling to stop global warming ruining roads</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Australia's floods of 2010-11 spread devastation and damage across Queensland, with 33 people losing their lives and causing billions in losses across the state. The floods also damaged 19,000km of roads, including those needed for emergency and delivery vehicles.</strong></p>
+            <p>It was a stark lesson in the importance of weather-proofing Queensland's most vulnerable roads, to ensure that future flooding would lead to fewer people being cut off.</p>
+            <p>Since then, Queensland has been using a process called foamed bitumen stabilisation. This injects small amounts of air and cold water into hot bitumen, the sticky dark substance typically used for road surfaces.</p>
+            <p>The bitumen then expands and forms a water-resistant layer. The result is a stronger yet flexible road surface or pavement that is better able to withstand flooding.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Climate change and global warming is an increasing threat for transport networks in places like Queensland in Australia</figcaption>
+            </figure>
+            <p>"This was actually tried and tested on Queensland's roads during Tropical Cyclone Debbie in 2017," says Caroline Evans, chair of the climate change and road network resilience committee for the World Road Association (PIARC).</p>
+            <p>"When the waters receded the pavements were still intact, so they didn't need to be fully rehabilitated afterwards."</p>
+            <p>Foam bitumen stabilisation has also been applied to other roads as part of Queensland's move to makes its roads more flood-resistant, and is proving more cost-effective than traditional asphalt.</p>
+            <p>Queensland faces considerable challenges as it has the longest state-controlled road network of any Australian state or territory with over 33,300km of roads. So far it has built 1,000km of foamed bitumen road surfaces and is "continuing to develop foamed bitumen techniques", according to its transport department.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>So far, Queensland has built 1,000km of foamed bitumen road surfaces</figcaption>
+            </figure>
+            <p>This is one of many technologies that authorities are testing on streets around the world. From landslide-blocked roads in Nepal, washed-out coastal highways in the US, collapsed bridges in Kenya to melting ice roads in Canada - an increasingly volatile global climate is threatening to disrupt essential transport networks.</p>
+            <p>Yet it is also inspiring a great deal of innovation.</p>
+            <p>One of the biggest problems with roads is their vulnerability to high temperatures. Extreme heat can soften pavements, leading to more cracks, buckling and rutting or surface depressions.</p>
+            <p>The exact effects depend on local conditions, says Refiloe Mokoena, a research engineer at South Africa's Council for Scientific and Industrial Research (CSIR).</p>
+            <blockquote>"There are so many variables that determine a road failure and the road can actually fail in many different ways."</blockquote>
+            <figure>
+                <img src="" alt="">
+                <figcaption>There are many ways for a road to fail, says research engineer Refiloe Mokoena</figcaption>
+            </figure>
+            <p>One solution is heat shields. These are special coatings and tiny hollow ceramic particles that lighten the colour of streets and reflect solar radiation.</p>
+            <p>"Some of these heat-shield pavements could reduce the surface temperature by up to 10°C," says Ms Evans.</p>
+            <p>This can also help reduce "heat island" effects, she adds, where cities are much warmer than surrounding regions because airflow can be blocked by buildings and there is often a lack of greenery.</p>
+            <p>Ahead of the 2020 Olympics, Tokyo trialled solar-blocking paint coating developed by construction firm Nippon Corporation, a member of the Cool Pavement Society. It says that by the end of 2020, solar heat blocking paint had been applied to nearly three million square metres of the country's road surfaces.</p>
+            <p>While such coatings might protect the road surface, they could make life more uncomfortable for pedestrians. Research carried out in the US showed that reflective road coatings radiated significant amounts of heat upwards.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Japan has used solar blocking to protect its roads from heat</figcaption>
+            </figure>
+            <p>The cost of doing nothing will be steep. If steps to combat rising temperatures and increased rainfall are not taken, then the bill for repairing and maintaining roads across Africa could reach $183bn by 2100, according to University of Colorado research.</p>
+            <p>Ms Evans believes that while there is widespread international interest in alternative technologies for roads, the difference between countries is in the level of funding available to invest in the technologies.</p>
+            <p>One way to keep costs in check would be "looking at targeted sections of vulnerable roads" rather than immediately seeking to upgrade an entire road network, she says. This might include increased preventative maintenance in certain areas - which would be cheaper than after-the-fact repairs.</p>
+            <p>Expensive, high-tech materials and processes are not always warranted. Roads with little traffic can be constructed out of low-emission materials like soil, and laid by human workers rather than heavily polluting machinery, Ms Mokoena says.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Expensive materials are not an option in some parts of the world</figcaption>
+            </figure>
+            <p>Low-volume roads also present "an opportunity to use recycled and waste materials for construction, which would otherwise be destined for landfills; these are typically associated with lower emissions."</p>
+            <p>Alternative materials are particularly important given the shortage of sand, which is commonly used in road construction.</p>
+            <p>"The use of waste and recycled material will likely present a cheaper locally available alternative material to modify bitumen to resist the distresses associated with… higher temperatures," says Georges Mturi, a senior research scientist at South Africa's CSIR.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

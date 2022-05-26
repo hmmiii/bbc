@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business - BBC News</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="business" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>News</li>
+                <li>Business</li>
+            </ul>
+        </div>
+    </section>
+    <section class="viewBox newsSubTop">
+        <div>
+            <h2 class="heading large">Business</h2>
+            <div class="views">
+                <input type="button" class="btn_list active" value="List View">
+                <input type="button" class="btn_grid" value="Grid View">
+            </div>
+        </div>
+        <ul class="listView x3 column">
+            <li class="display large">
+                <img src="images/thumb_business_2.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_2.html">Heineken to put up beer prices as costs soar</a></h3>
+                    <p>The brewer blames rising inflation, adding that people may drink less beer as a result.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_2.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="grid">
+                <img src="images/thumb_world_13.jpg" alt="Article Image">
+                <div>
+                    <mark>World</mark>
+                    <h3><a href="a_world_13.html">Paramount bets big on new streaming shows</a></h3>
+                    <p>Paramount+ reveals a huge slate of new shows and films - but do we need another streaming service?</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_world_13.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="grid">
+                <img src="images/thumb_business_3.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_3.html">Disney appoints executive to lead metaverse plans</a></h3>
+                    <p>Technology giants, including Meta and Microsoft, are pouring billions of dollars into the metaverse.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_3.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="grid">
+                <img src="images/thumb_business_4.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_4.html">How much Russian money is there in the UK?</a></h3>
+                    <p>The UK is considering sanctions against Russian interests, but what action can be taken?</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_4.html" class="readMore">Read More</a>
+                </div>
+            </li>
+        </ul>
+        <ul class="listView row">
+            <li class="plain vertical">
+                <img src="images/thumb_business_5.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_5.html">Airbnb: City travel almost at pre-pandemic level</a></h3>
+                    <p>Teaching people about achieving sexual pleasure can help sell safe-sex messages, say researchers from the World Health Organization.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_5.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_business_9.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_business_9.html">UK car industry calls for electric charge watchdog</a></h3>
+                    <p>Manufacturers call for a regulator to monitor electric car charging prices and charge point rollout.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_9.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_business_24.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_24.html">Can fitness apps be as good as a personal trainer?</a></h3>
+                    <p>A growing number of fitness apps use artificial intelligence software to personalise workouts.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_24.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_business_17.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_17.html">Is this city Europe's best kept cycling secret?</a></h3>
+                    <p>Rui Mendes says that when coronavirus first arrived, the business he helps to run had to slam on its brakes and skid to an immediate stop.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_17.html" class="readMore">Read More</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <div class="postCarouselBBox">
+        <div>
+            <h2 class="heading large">New Economy</h2>
+            <div class="controller">
+                <span class="btn_prev"></span>
+                <span class="btn_next"></span>
+            </div>
+        </div>
+        <ul class="gridView">
+            <li class="plain vertical">
+                <img src="images/thumb_business_10.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_10.html">'I have had more time, silence and solitude to write'</a></h3>
+                    <p>Why authors like Isabel Allende have moved the traditional book tour online.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_10.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_business_11.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_11.html">How streaming services left us with too much to watch</a></h3>
+                    <p>Multiple platforms streaming new TV shows and films risk leaving people overwhelmed by choice.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_11.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_business_12.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_12.html">The people moving from high to low-carbon careers</a></h3>
+                    <p>A growing number of people are changing to more environmentally-friendly jobs./p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_12.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_business_13.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_13.html">The people using YouTube to fund a French chateau</a></h3>
+                    <p>How chateaux owners are using advertising revenues from social media posts to earn a living.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_13.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_business_14.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_14.html">How more people got a taste for caviar during lockdown</a></h3>
+                    <p>Global producers of caviar say that demand has soared since the first lockdown.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_14.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_business_15.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_15.html">What will happen to all that leftover turkey?</a></h3>
+                    <p>The amount of food that's still edible but ends up being binned soars over the holiday period.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_15.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_business_16.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_16.html">The people changing jobs so they can make a difference</a></h3>
+                    <p>A growing number of people are deciding to switch to a career that has a positive impact.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_16.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_business_17.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_17.html">Is this city Europe's best kept cycling secret?</a></h3>
+                    <p>Rui Mendes says that when coronavirus first arrived, the business he helps to run had to slam on its brakes and skid to an immediate stop.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_17.html" class="readMore">Read More</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="postCarouselBBox">
+        <div>
+            <h2 class="heading large">New Tech Economy</h2>
+            <div class="controller">
+                <span class="btn_prev"></span>
+                <span class="btn_next"></span>
+            </div>
+        </div>
+        <ul class="gridView">
+            <li class="plain vertical">
+                <img src="images/thumb_business_18.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_18.html">Bionic eye tech aims to help blind people see</a></h3>
+                    <p>Several firms are working on artificial eye tech that incorporates wireless, embedded sensors.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_18.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_business_19.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_19.html">The airport tech helping to prevent delayed flights</a></h3>
+                    <p>Surveillance software and face ID systems can speed up airports, but at what cost?</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_19.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_business_20.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_20.html">True story? Lie detection systems go high-tech</a></h3>
+                    <p>A number of teams are working on advanced ways to tell more accurately if someone is lying.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_20.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_business_21.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_21.html">The people deciding to ditch their smartphones</a></h3>
+                    <p>The smartphone users who are ditching their handsets to take back more control of their lives.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_21.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_business_22.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_22.html">How delivery apps created a 'Netflix of food ordering'</a></h3>
+                    <p>Innovative food delivery apps offer everything from multiple restaurant orders to home chef cuisine.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_22.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_business_23.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_23.html">The AI that helps create your own hit music tracks</a></h3>
+                    <p>Artificial intelligence is now smart enough to write tracks that earn streaming service royalties.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_23.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_business_24.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_24.html">Can fitness apps be as good as a personal trainer?</a></h3>
+                    <p>A growing number of fitness apps use artificial intelligence software to personalise workouts.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_24.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_business_25.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_25.html">Why holograms may soon replace video calls</a></h3>
+                    <p>When Swiss watch boss, Christoph Grainger-Herr, was unable to fly to a global trade show in China because of Covid-26 restrictions, he decided to beam in Star Trek-style instead.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_25.html" class="readMore">Read More</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="postCarouselBBox">
+        <div>
+            <h2 class="heading large">Technology of Business</h2>
+            <div class="controller">
+                <span class="btn_prev"></span>
+                <span class="btn_next"></span>
+            </div>
+        </div>
+        <ul class="gridView">
+            <li class="plain vertical">
+                <img src="images/thumb_business_6.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_6.html">How nurseries are keeping track of their toddlers</a></h3>
+                    <p>Childcare centres have embraced apps to monitor kids but not all parents are convinced of the benefits.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_6.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_business_26.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_26.html">Making roads more resistant to climate change</a></h3>
+                    <p>Climate change is putting roads under stress but research is finding ways to make them more durable.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_26.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_business_27.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_27.html">Microsoft's mega-deal worries small video game makers</a></h3>
+                    <p>ndie games developers are nervous they will be squeezed out if the big firms' dominance grows.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_27.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_business_28.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_28.html">Can fitness apps be as good as a personal trainer?</a></h3>
+                    <p>A growing number of fitness apps use artificial intelligence software to personalise workouts.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_28.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_business_29.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_29.html">How to store excess wind power underwater</a></h3>
+                    <p>A growing number of fitness apps use artificial intelligence software to personalise workouts.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_29.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_business_30.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_30.html">Can fitness apps be as good as a personal trainer?</a></h3>
+                    <p>A growing number of fitness apps use artificial intelligence software to personalise workouts.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_30.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_business_31.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_31.html">Can fitness apps be as good as a personal trainer?</a></h3>
+                    <p>A Dutch company is testing an underwater system that can store excess energy from wind farms.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_31.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_business_32.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_32.html">Why cows may be hiding something but AI can spot it</a></h3>
+                    <p>Farmers are using artificial intelligence to spot lameness in their herd before it gets serious.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_business_32.html" class="readMore">Read More</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <section class="viewBox mV">
+        <div>
+            <h2 class="heading large">More around the BBC</h2>
+            <div class="views">
+                <input type="button" class="btn_list active" value="List View">
+                <input type="button" class="btn_grid" value="Grid View">
+            </div>
+        </div>
+        <ul class="listView x3 column">
+            <li class="display medium">
+                <img src="images/thumb_science_10.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_10.html">74% of ransomware revenue goes to Russian hackers</a></h3>
+                    <p>Crypto-currency researchers say more than $400m of cyber-crime funds go to Russian gangs.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_10.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_world_20.jpg" alt="Article Image">
+                <div>
+                    <mark>World</mark>
+                    <h3><a href="a_world_20.html">Eccentric sewage rebels head for the big screen</a></h3>
+                    <p>When a group of middle-aged swimming friends from Scarborough became worried about sewage in the sea in the 1980s, they started staging eccentric stunts to highlight their cause, and even took on the government. Now, their story is being turned into a film.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_world_20.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_business_6.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_6.html">How nurseries are keeping track of their toddlers</a></h3>
+                    <p>Misty Ardouin set up her nursery, Nestlings, in Cardiff City centre in 2019. At the end of each day, they would have a "good sit down" in the playroom with parents to catch-up on everything the children had been doing.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="/a_business_6.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_science_6.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_6.html">Record high deforestation of Amazon in January</a></h3>
+                    <p>The number of trees cut down in the Brazilian Amazon in January far exceeded deforestation for the same month last year, according to government satellite data.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_6.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_science_8.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_8.html">Lessons in pleasure boost good safe sex</a></h3>
+                    <p>Teaching people about achieving sexual pleasure can help sell safe-sex messages, say researchers from the World Health Organization.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_8.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_world_21.jpg" alt="Article Image">
+                <div>
+                    <mark>World</mark>
+                    <h3><a href="a_world_21.html">White House left behind as states drop Covid rules</a></h3>
+                    <p>The White House is facing pressure to revise its position on mask wearing as pandemic restrictions are eased in a number of US states.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_world_21.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_science_9.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_9.html">James Webb telescope begins to focus its 'big eye'</a></h3>
+                    <p>It's a confusing but amazing image.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_9.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_science_11.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_9.html">How Taiwan used simple tech to help contain Covid-19</a></h3>
+                    <p>In Taiwan, finding someone who will talk about their Covid experience is harder than you might think.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_11.html" class="readMore">Read More</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

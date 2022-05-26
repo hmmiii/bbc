@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_in-pictures_23" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>In Pictures</mark>
+                <h2>Coronavirus: When home is both prison and sanctuary</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Like most of us, photographer Jo de Banzie spent the spring of 2020 in lockdown, living at home with her family - a time that was overshadowed by the loss of her brother-in-law, who contracted the virus while working as an NHS paramedic.</strong></p>
+            <p>Jo de Banzie captured the impact of the pandemic through a series of photographs made on an antique camera. Here, she recalls those weeks.</p>
+            <p>As infection sweeps across the UK. My brother-in-law, Peter Hart, becomes seriously ill, having contracted the virus during the course of his work as an NHS paramedic. His admission to ICU brings the crisis close to home and provides the impetus to shake off the creative paralysis encountered after 'normal' life shudders to a halt.</p>
+            <p>Restricted to one brief daily excursion outdoors, I am reminded of the early female pioneers of photography, tethered to home by an exacting chemical process and the social conventions of the time.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Exercise hour</figcaption>
+            </figure>
+            <p>Lady Clementina Hawarden's 'contained' interior portraits of her children, the world beyond home a mere suggestion glimpsed through a window, are echoed in my domestic studies. In time, inertia gives way to a new rhythm, as the household adjusts to confinement.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Lady Clementina Hawarden's 'contained' interior portraits of her children, the world beyond home a mere suggestion glimpsed through a window, are echoed in my domestic studies. In time, inertia gives way to a new rhythm, as the household adjusts to confinement.</figcaption>
+            </figure>
+            <p>Home is both prison and sanctuary; we become food-focused, planning our meals, risking missions to collect supplies, orbiting the fridge and stove. Time expands and shrinks. We have time to sleep, to read, to re-engage with the domestic in baking and gardening; we socialise over zoom quizzes, seek privacy for work calls and team meetings.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Zoom call</figcaption>
+            </figure>
+            <p>Days, then weeks, slide seamlessly into each other as we forget how we have spent that once precious commodity. An altered future and the stasis of imposed confinement leave the household struggling to find motivation.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Lie-in</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Lazy bath</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Finals</figcaption>
+            </figure>
+            <p>In Finals, a university degree peters to a close in a last examination. We wrestle with home-working, in finding purpose in furlough, the dwindling of income and increasing uncertainty.</p>
+            <p>Throughout this time, the global catastrophe of pandemic is made painfully personal in the unfolding of our own family tragedy.</p>
+            <p>On 12 May, after thirty days on a ventilator, Peter passes away on his 52nd birthday. Symbolising love and protection, a May tree, the native Hawthorn in full blossom, seems a fitting emblem to memorialise his birth, his life and his passing.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>May Tree</figcaption>
+            </figure>
+            <p>The same afternoon, with tea and cake in the garden, we celebrate the birthday of another of our household; birth and death poignantly present on this one unforgettable day in May.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Rosa’s birthday</figcaption>
+            </figure>
+            <p>In making the work, I attempt to embrace the historical context of pandemic and emphasise a sense of life stilled.</p>
+            <p>Images are shot with an antique Kodak 3A Brownie, a camera in general use during the Spanish Flu pandemic of 1918, using wet collodion-coated plates. The emulsion of this 1850s process is slow to record light, often requiring exposures of several minutes, suitably fitting, given the newly-slowed tempo of our daily lives.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Chilli Peppers</figcaption>
+            </figure>
+            <p>Despite the static poses, the gentle blur resulting from ponderous exposures records subtle signs of life, whilst all around remains motionless, halted.</p>
+            <p>Over time the chemistry expires, contaminated from over-use, and - with new supplies difficult to obtain - the project necessarily embraces happenstance. Chemical contagion creeps across the plates, striking arbitrarily, belatedly and in varying degrees; it is insidious, sometimes lethal, whilst at other times it leaves an image unscathed.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Barney’s haircut</figcaption>
+            </figure>
+            <p>In Haircut, a once healthy plate develops a creeping rash, a wound is torn across a tree in Daily Walk, but in a London park on the morning of 12 May, May Tree emerges unblemished.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Quiet time</figcaption>
+            </figure>
+            <p>The physical and emotional damage inflicted by the virus and its seemingly random prognosis, is echoed in the fragile seeping of the emulsion, the scarred and weeping edges of the plates, their unexpected outcomes.</p>
+            <p>Spring has slid into summer and our freedom to roam and resume our lives is now tantalisingly close. But for now, home remains our sanctuary and the wounds of trauma and loss will long be felt.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Clementine with Kindle</figcaption>
+            </figure>
+            <p><strong>All photographs courtesy Jo de Banzie</strong></p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

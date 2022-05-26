@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_world_41" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>India</mark>
+                <h2>Karnataka hijab controversy is polarising its classrooms</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>How do you sit in a classroom with people who shouted slogans against your right to wear a hijab?</strong></p>
+            <p>That's the question troubling Saima, whose name has been changed on request. Last week, the 20-year-old was one of several hijab-clad Muslim women who watched anxiously as hundreds of Hindu students protested against Islamic headscarves. They were wearing saffron scarves and turbans, and yelling Jai Shri Ram or "victory to Lord Ram" - the chant and the colour are commonly associated with the Hindu right-wing.</p>
+            <p>Saima, the only Muslim woman in her class, says she saw many of her classmates among the protesters.</p>
+            <p>The hijab has become the subject of a fierce debate in India. It all began last month when six teenagers at a government-run college in Karnataka's Udupi district began protesting after they were barred from classes for wearing headscarves.</p>
+            <p>The issue quickly turned divisive with Hindu students turning up in colleges wearing saffron shawls, and right-wing groups on both sides making provocative statements. Fearing violence, the state government shut down high schools and colleges.</p>
+            <p>The question of whether Muslim girls and women in Karnataka can wear the hijab in school and college will be decided by the state's high court which is currently hearing the matter.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>It's not unusual to find women students with headscarves in India</figcaption>
+            </figure>
+            <p>As they prepare to return to classes on Wednesday, young people on both sides of the divide are struggling to understand their classmates and friends.</p>
+            <p>"I worry that this will obviously create an environment of hate in the class," says Saima.</p>
+            <p>"We will start thinking that he is a Hindu and that's why he stood against me, and they will think that she is a Muslim and that's why she was against me."</p>
+            <p>Aakanksha Hanchinamath, who goes to Saima's college, was one of the saffron-wearing protesters last week.</p>
+            <p>The protest was the result of a "collective decision" by Hindu students, Ms Hanchinamath said.</p>
+            <p>"We wanted to show them what will happen if you bring religion into it," she said.</p>
+            <p>This part of Karnataka has long seen radicalisation among student groups - be it the student wing of the Hindu nationalist Bharatiya Janata Party (BJP), which is currently in power in Karnataka, or the Campus Front of India (CFI), the student wing of the radical Islamic group, Popular Front of India.</p>
+            <p>In this case, the CFI supported the girls protesting in Udupi - and as the issue snowballed, the BJP's student wing led marches with students sporting saffron shawls.</p>
+            <p>"If communal organisations like the CFI support Muslim students, then why should we and our girls watch silently?" says Raghupathi Bhat, a BJP lawmaker from Udupi.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Aakanksha Hanchinamath participated in protests wearing saffron scarves</figcaption>
+            </figure>
+            <p>This isn't the first time the hijab has sparked protests in Karnataka's polarised coastal belt, where Hindu and Muslim right-wing groups have been established for decades.</p>
+            <p>But in the past such issues were quickly resolved, says Prof Phaniraj K, who belongs to a civil society group that tracks communal incidents in the state.</p>
+            <p>He points to a similar protest in Mangalore 15 years ago, where college authorities and students found a "middle ground" in five days.</p>
+            <p>"Sporadic incidents of questioning hijab and skull caps inside educational institutions have continued but they never blew up like this," he says.</p>
+            <p>But increasing polarisation has led to differing rules around the hijab across colleges.</p>
+            <p>Many private colleges, like the one Saima attends, allow the hijab in classrooms.</p>
+            <p>Government-run colleges revise the rules every year. Decisions over uniforms rest with the Development Committee headed by a local legislator.</p>
+            <p>In the Udupi college, where protests first broke out, the man in charge was Mr Bhat, the BJP lawmaker. But talks between him, the protesting girls' parents and college authorities ended in a stalemate.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The hijab row sparked counter-protests from Hindu students</figcaption>
+            </figure>
+            <p>Rashmita Shetty, who studies at a private college in Udupi, says she and her Muslim friends watched in horror as the situation escalated in recent weeks.</p>
+            <p>Several Muslim students attend her college, which did not witness any counter-protests by Hindu students. Yet, she says things have certainly changed.</p>
+            <p>"We had never even noticed if a girl wore a hijab or not. Sometimes they would remove it because it was hot. This was never an issue," she adds.</p>
+            <p>"My Muslim friends have told me that this will always remain in their minds, that they were denied their rights at such a young age and that they will be looked at differently now."</p>
+            <p>The situation, she says, was worsened by provocative comments by political leaders - while one BJP leader asked Muslim students to go to Pakistan if they wanted to wear a hijab, another said the hijab had to be opposed in colleges so that Karnataka wouldn't become a "Taliban state".</p>
+            <p>Ms Hanchinamath says she never looked at religion while making friends but is determined not to back down now.</p>
+            <p>"I know it will change things among us, because they think we are opposing them, but we are only asking for discipline and equality, that everyone should wear the same uniform," she says.</p>
+            <p>Ms Shetty, however, says she will support her Muslim friends as she feels their demand to wear headscarves is justified.</p>
+            <p>"It continues to bother me that I did not raise slogans with Muslim girls. But how do I do it in this atmosphere? It is such a dilemma," she says.</p>
+            <p>"I choose to stay silent and support my friends. That is my protest."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_business_14" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Business</mark>
+                <h2>Caviar sales soar as more people get a taste for posh fish eggs</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>When high-end restaurants around the globe had to close their doors during the Covid lockdowns, things didn't look good for the world's caviar producers.</strong></p>
+            <p>Add glitzy events being cancelled, and cruise liners not being able to leave port, and you might think that it spelled disaster for the sellers of wincingly expensive fish eggs.</p>
+            <p>But the reality has been very different. Online sales are booming as the well-heeled increasingly eat their caviar at home.</p>
+            <p>"I think people in lockdown wanted to enjoy themselves, and everybody decided to spend money on caviar, either at home, or in restaurants [when they were able to open again]," says Carla Sora, general manager of Italy's Agroittica Lombarda, Europe's largest caviar farm.</p>
+            <p>But what exactly is caviar? It is the salt-cured eggs of numerous species of the sturgeon fish. Long considered a delicacy, the industry was historically centred on wild stocks in the Caspian Sea, which is today surrounded by Russia, Kazakhstan, Turkmenistan, Iran and Azerbaijan.</p>
+            <p>But by 2006, severe overfishing in the Caspian led to a ban on the global sale of almost all wild caviar from the sea. This is still enforced by the Switzerland-based Convention on International Trade in Endangered Species of Wild Fauna and Flora.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Sturgeon are one of the oldest families of fish, having existed since as long as 200 million years ago</figcaption>
+            </figure>
+            <p>The ban led to a big growth in the farming of sturgeon around the world specifically for the production of caviar. As a result, almost all of the caviar sold legally worldwide is now from farmed stocks - sturgeon reared in man-made lakes and ponds.</p>
+            <p>This global farmed sturgeon industry was worth €750m ($848m; £640m) in 2019, according to the most recent figures from Norwegian firm Kontali, which monitors the worldwide fish farm sector. Meanwhile, the European Union estimated that global caviar volumes reached 380 tonnes in 2018, its most up to date figures.</p>
+            <p>Ms Sora says that sales at Agroittica Lombarda soared last year, especially in the US, where they doubled.</p>
+            <p>Meanwhile, US firm Sterling Caviar, owner of four farms in California, and the largest caviar producer in the country, said its sales were up 10% in 2021. In the UK one of the two producers, Exmoor Caviar, sold out of all of its then stock at the end of 2020.</p>
+            <p>Kontali analyst, Maren Boe, says that online sales have "been the saving grace" for producers since the arrival of the coronavirus pandemic.</p>
+            <p>"By selling smaller tins of caviar, both in shops and online, producers have been able to sell to consumers looking to increase everyday luxury by buying caviar to consume at home," she says.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Agroittica Lombarda operates more than 150 sturgeon ponds across a 60 hectare site near Lake Garda</figcaption>
+            </figure>
+            <p>Sterling owner, Eugene Fernandez, says that its online sales soared 60% last year, helped by launching a new website in August. He thinks that caviar fans now want to eat it on a more regular basis.</p>
+            <p>"I think going forward the caviar market will probably be less of an occasional product for holidays, and more something that's bought regularly," he says.</p>
+            <p>Ms Sora adds that producers in the US and Europe have also benefitted from less caviar exports coming from China, whose farms account for 70% of global production. China's domestic consumption of caviar has soared in recent years, at the same time as there might have been some staff shortages caused by the pandemic.</p>
+            <p>But why is caviar so expensive? At Exmoor, its cheapest tin costs £14, but that only gets you 10 grams - less than a teaspoon's worth. By contrast, its most expensive costs £4,800 for one kilogram.</p>
+            <p>Much of the high cost is down to the fact that female sturgeon take a long time to reach egg-laying maturity. For the Siberian sturgeon, the main species farmed at Exmoor, this takes between four and five years. For the white sturgeon at Agroittica Lombarda the females don't start laying eggs until they are 14 years old.</p>
+            <p>Critics of sturgeon farms, such as People for the Ethical Treatment of Animals, argue that farming any fish is cruel, as it keeps them in an artificially confined space. The female sturgeons are also generally killed before their eggs are harvested.</p>
+            <p>"Caviar is something no-one needs," says Sascha Camilli, Peta's senior PR coordinator. "On fish farms, sturgeons are smashed together to swim in crowded, barren tanks, or netted areas polluted with the waste from thousands of fish."</p>
+            <p>The caviar industry counters that the sturgeon meat is also sold for eating, that farmed stocks can bolster critically endangered wild numbers, and that the welfare of the fish has to be their main priority.</p>
+            <p>Exmoor's chief executive Kenneth Benning says that, despite the recent boom, there is no certainty that caviar sales will continue to rise so strongly because demand for the expensive premium product is greatly affected by economic uncertainty.</p>
+            <p>"The reality is that disposable income is [likely] going to be less, particularly in the UK," he says. "There's a lot of people out there in the world who basically cannot justify spending £20 on a 10 gram tin.</p>
+            <p>"We've been on an upward trajectory, but I think that that's from the marketing perspective, and from building customers who've come back to buy the product again."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Kenneth Benning is cautious about the future rate of growth of caviar sales</figcaption>
+            </figure>
+            <p>By contrast, Mr Fernandez expects growth to continue to grow rapidly, and Sterling intends to acquire a further 240 acres of land to expand its existing farms.</p>
+            <p>"We'll do a roll up of another five or 15 farms over the next three to four years and take the company public," says Mr Fernandez. "This is going to be a hot sector for the next five to 10 years - at least."</p>
+            <p>At Exmoor, the plans for the future are more high tech - it has filed a patent for the development of lab-grown caviar from sturgeon stem cells. This technology is already under development for other fish, such as tuna.</p>
+            <p>"With cellular aquaculture, we believe we can produce the egg we need within 40 days," says Mr Benning. "If we had excess demand, we could meet it in a moment.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Caviar is a popular ingredient for starters in expensive restaurants</figcaption>
+            </figure>
+            <p>"In a room that is less than 300 square meters, we can produce more caviar than the entire annual global production. If you can provide the products, it's the same genetic material and it doesn't involve the captivity or killing of an animal - it's a no-brainer."</p>
+            <p>If all goes to plan, Exmoor - which is working with partners in Switzerland, Germany and Eastern Europe - intends to launch its cell-cultivated caviar in 2023.</p>
+            <p>But would this mean the end of the farmed sturgeon industry? Mr Benning doesn't think so. He says that some people will always want to buy natural rather than lab-grown caviar.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

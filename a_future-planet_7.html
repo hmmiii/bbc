@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_future-planet_7" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Future Planet</mark>
+                <h2>The rhino that became an icon for peace</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>In a pocket of north Indian wilderness, the rhino is helping to bring peace and pride back to a community healing from ethnic conflict.</h3>
+            <p>The call came at midnight on 1 September 2008. One of the first greater one-horned rhinos, brought 400km (250 miles) from Kaziranga National Park to Manas National Park in Assam, India, was heading towards a village on the outskirts of the jungle. Any conflict with humans could spell doom for the entire rhino reintroduction programme there. </p>
+            <p>"My heart sank when I found over 500 villagers gathered to see the rhino," recalls Deba Kumar Dutta, then a junior rhino researcher with the World Wide Fund for Nature  (WWF) who was monitoring the two animals.</p>
+            <p>But as Dutta came closer, he saw what the villagers were doing. "They'd collected its dung as they believed it was auspicious," he says. At that moment, as he watched the gathered crowd mark each rhino footprint with bamboo sticks, Dutta realised the quest for a rewilded Manas was not just a pipe dream. Far from the conflict he had feared, the villagers were embracing the presence of the rhino in a way he could scarcely have hoped for.</p>
+            <p>Fourteen years later, the rhino reintroduction at Manas National Park offers lessons for similar reintroduction projects elsewhere. The close bond between local people and the rhinos has helped lead both away from a precarious past.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The high regard that locals in Manas have for their rhinos has been key to supporting their growing population (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>"Since 2003, the Assam government has regularly extended the area of Manas and adjoining forests," says Vivek Menon, executive director of the Indian conservation organisation Wildlife Trust of India (WTI). Expansion of the park has huge conservation significance for the 283,700 hectare (1,100 square mile) landscape, says Vivek, who is also a senior advisor to the International Fund for Animal Welfare (IFAW), an international animal welfare and conservation charity.</p>
+            <p>Orphaned baby rhino, swamp deer, black bear and elephant have been rescued, hand-reared, rehabilitated and released here by the WTI, IFAW and the Assam forest department. Wild rhinos have also been reintroduced in the park from other parts of Assam. The rewilding of Manas has been so successful that in 2011, Unesco removed Manas from its list of World Heritage Sites in Danger.</p>
+            <p>"Going forward, species reintroductions - whether they be of cheetahs, clouded leopards or even tigers - will look to the Manas model," says Dhriti Banerjee, director of the Zoological Survey of India.</p>
+            <p>It was not always like this.</p>
+            <p><strong>A turbulent past</strong></p>
+            <p>The earliest settlers of Assam, the Bodo tribe, live in the forests on the north bank of the Brahmaputra River, below the foothills of Bhutan. Ethnically and linguistically distinct from the rest of the state, their demand for a separate state, Bodoland, took a violent turn by the late 1980s. Armed separatist groups such as the Bodoland Liberation Tigers and National Democratic Front of Bodoland hid inside Manas. </p>
+            <p>"Forest protection, development work and economic opportunities ceased here," recalls Mahesh Moshahary, secretary of New Horizon, a local conservation outfit. "Deforestation and poaching became the sole means of livelihood." </p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Feeding rhino calves by hand has helped increase numbers of the species in Manas (Credit: Rajib Bordoloi/IFAW-WTI)</figcaption>
+            </figure>
+            <p>All 100 rhinos in Manas disappeared, and local populations of elephant, bear and clouded leopard declined significantly. Seven years after it had entered Unesco's list of World Heritage sites, Manas, and the Bodo who inhabited it, became India's only entry on the list of World Heritage Sites in Danger in 1992. In 2003, when Bodoland Territorial Council (BTR) was formed as a result of a tripartite peace agreement with the central government, Assam state government and the BTR, Manas was a shadow of itself. </p>
+            <p>"We were humiliated and guilt-stricken that the entire world blamed Bodo people for the destruction of Manas," recalls 54-year-old Kampa Borgoyary, BTR's deputy chief and minister in charge of forests and education at the time. "The imperative of restoring Manas to its former glory became deeply linked with the resurgence of our own ethnic pride." </p>
+            <p><strong>Route to rewilding</strong></p>
+            <p>In 2006, Menon was researching pygmy hogs in Manas when he came face-to-face with a king cobra, the world's longest venomous snake which is found only in dense, undisturbed jungles in South and Southeast Asia.  The presence of this elusive reptile suggested to him that the habitat of Manas was still robust and viable for rewilding. He realised there was scope for reintroducing lost animal species in this forest and grassland landscape, as it was ideal habitat for greater one-horned rhinos and elephants.</p>
+            <blockquote>Manas is our mother, for it has sustained us with food, water and firewood for generations - Kampa Borgoyary</blockquote>
+            <p>"From a rewilding perspective, as long as one can minimise livestock pressure on them, grasslands regenerate fast," says Menon.</p>
+            <p>Menon and collaborators started a community-based conservation project to develop non-forest livelihoods for local residents, protect the forest and restock it with rhinos, elephants, swamp deer, clouded leopard and wild buffalo. Hand-reared orphan rhino calves and black bear cubs from their Centre for Wildlife Rehabilitation and Conservation in Kaziranga, 250 miles further east, were carefully released in Manas. Simultaneously, WWF began translocating adult rhinos from other parts of Assam to Manas. However, the real heroes of Manas' revival were the Bodo themselves.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The pygmy hog is one of several endangered species to be reintroduced to Manas in the wake of the Bodo conflict (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>"Manas is our mother, for it has sustained us with food, water and firewood for generations," says Borgoyary. "While we were perhaps responsible for its destruction, we wanted to also be responsible for its revival." </p>
+            <p>The first task at hand was to provide alternative livelihoods. Thirty-five-year-old local Radhika Ray recalls how women in her village used to depend on the forest for fuel, forest produce and meat. Not so now, as women weave and sell the local dress, Dokhona, shawls, towels and more from silk and cotton bought at local markets. "Our generational bond with the forest remains unshakeable," she says. "But now, like so many other women in my community, I make a living from weaving and no longer need to deplete its resources to survive."</p>
+            <p>The results of this shift are visible as she looks around the forest. "It is greener and more beautiful than before," she smiles. A fellow weaver, 40-year-old Rohila Ray echoes this, adding that the income from weaving has made them independent of the forest as well as their menfolk.</p>
+            <p><strong>Life after poaching</strong></p>
+            <p>Simultaneously, BTR and other organisations have convinced more than 400 poachers to become protectors of the forest by offering monthly stipends. Maheshwar Basumatary, affectionately called Ontai (rock, in the local language), is one of them. Now an award-winning animal keeper in Manas, he too had turned to poaching in the 1980s as it offered easy money when few opportunities existed. Basumatary surrendered his weapons to the local administrative authority BTR in 2005 and assisted in the pioneering rehabilitation of two orphaned clouded leopard cubs as part of the Greater Manas Conservation Project. Since then, he has helped catch poachers, seize illegal products, conduct wildlife surveys and hand-rear orphan rhino calves in Manas.</p>
+            <p>"I have fed so many rhino calves and other baby animals through bottles, like I would my own children," he says. "My heart fills with pride to see that some have now successfully had babies of their own in the wild." Today, the man who formerly helped track rhinos for poachers feels conflicted when it is time to release the animals under his care into the wild. But in the end optimism wins. "Every animal that we rescue, rear and return to the wild enriches its habitat," he says. </p>
+            <p>Other erstwhile poachers have joined the several local conservation outfits that have mushroomed around Manas, including Manas Maozigendri Ecotourism Society, where they volunteer as patrollers with the Assam forest department. "Their tracking skills really come in handy for this," Rustom Basumatary, general secretary of the society comments. "We dream of Manas becoming a sustainable tourist destination so that local people have an even greater stake in its conservation."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Women in Manas have received training in weaving to create an alternative source of income that doesn't rely on depleting the forest (Credit: Geetanjali Krishna)</figcaption>
+            </figure>
+            <p>The benefits of tourism for species and environmental conservation are hotly contested. However Banerjee and other conservationists believe that sustainable tourism, and the income it provides, could create a virtuous feedback loop for Manas. "Locals also realise that over-exploiting natural resources in their environs could lead to not only reduced tourism revenues but greater policing by the government," she remarks. "That is a serious disincentive." </p>
+            <p>In a state with a per capita GDP of roughly £820 ($1,120) a year, reviving Manas has cost IFAW an estimated $2.5m (£1.9m) so far. Menon says it has been worth it. As "mega-herbivores", rhinos indicate the health of the Manas grasslands: their presence suggests the habitat is in good ecological condition, providing water, clean air and carbon sequestration. Grassland regeneration has also helped conserve species like the endangered pygmy hog and the world's rarest bustard, the Bengal florican.</p>
+            <p>In 2003 when the Bodo Peace Accord was signed, Manas had lost its entire population of rhinos and swamp deer. In 2021 Manas was home to 52 rhinos, 48 tigers, more than 1,000 wild elephants and a number of endangered animals such as clouded leopards, pygmy hogs, hispid hares and Bengal florican.</p>
+            <p>The Manas model has been proposed as a best practice for World Heritage conservation and management in Unesco, and is spurring conservationists to identify more areas for rewilding elsewhere. "The Rann of Kutch (Gujarat), Sundarbans (West Bengal) or the Western Ghats of Central India could benefit from similar projects," Banerjee says, provided such projects have the required intensive community support and financial resources.</p>
+            <p>Meanwhile, with his trusty binoculars and tracking gear in hand, Ontai sets off in pouring rain to track the three rhino calves that were released in April 2021. "Manas is my home," he says. "If it thrives, we thrive. If it goes, we go."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

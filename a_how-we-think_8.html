@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_how-we-think_8" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>How We Think</mark>
+                <h2>Why overly kind and moral people can rub you up the wrong way</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>‘Do-gooders’ are often judged harshly. Why do we resent their acts of altruism or question their motives?</h3>
+            <p>Have you ever come across someone who is incredibly kind and morally upright - and yet also deeply insufferable? They might try to do anything they can to help you or engage in a host of important, useful activities benefiting friends and the wider community. Yet they seem a little bit too pleased with their good deeds and, without any good reason to think so, you suspect that there’s something calculated about their altruism.</p>
+            <p>Finding yourself taking such an uncharitable attitude towards people who are only trying to make the world a better place might feel uncomfortable. Yet this scepticism is a known behaviour, described by psychologists as “do-gooder derogation”. And while the phenomenon may seem to be wholly irrational, there are some compelling evolutionary reasons for being wary of unreciprocated altruism.</p>
+            <p>With an understanding of our innate suspicion around overt acts of kindness, we can identify the specific situations in which generosity is welcomed and when it is resented - with some important lessons for our own behaviour. </p>
+            <p><strong>No good deed goes unpunished</strong></p>
+            <p>One of the earliest and most systematic examinations of do-gooder derogation comes from a global study by Simon Gächter, a professor of psychology at the University of Nottingham in the UK. </p>
+            <p>Like many studies into altruism, his experiment took the form of a “public goods game”. The participants were divided into groups of four, and each person was given tokens representing a small sum of money. Participants were then given the possibility of contributing some of that income to a communal pool in each round of a game. Once everyone had placed their investment, each person would receive 40% of the total sum invested by the group. </p>
+            <p>If the participants play fairly, each round should provide a reasonable return on investment for each person. Those who are very stingy, however, can game the system by paying very little themselves and reaping the rewards of others’ investments. It’s easy to see how resentments could build. After 10 rounds, the researchers therefore gave the participants the option of penalising other players by deducting some of the income they received.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>An apparent act of generosity that seems to be driven by self-interest can make others who aren't doing the same deed bristle (Credit: Getty Images)
+
+                </figcaption>
+            </figure>
+            <p>Given classic economic theory, you might expect the stingy free-riders to receive those punishments - and that was indeed the case. Amazingly, however, the most altruistic participants were also targeted - even though they were contributing more than their fair share to the others’ riches.</p>
+            <p>The finding has now been replicated in many other experiments. In a similar public goods game, for instance, participants were asked whether they would like to kick members out of their group. Astonishing, they expelled the extreme altruists as often as the worst free-riders. Somehow, selfishness and selflessness were considered to be morally equivalent.</p>
+            <p>Strikingly, this tendency seems to emerge early in life - at around the age of eight. And while the size of the effect may vary depending on the context, it seems to be present to some degree in most cultures - suggesting it may be a universal tendency.</p>
+            <p><strong>Reciprocity and reputation</strong></p>
+            <p>To understand the origins of this seemingly irrational behaviour, we need to consider how human altruism emerged in the first place.</p>
+            <p>According to evolutionary psychology, hardwired human behaviours should have evolved to improve our survival and our ability to pass on our genes to another generation. In the case of altruism, generous acts could help us to foster good relationships within the group which, over time, help to build social capital and status. </p>
+            <p>“Gaining a good reputation can lead to benefits such as occupying a more central position in the social network,” says Nichola Raihani, a professor in evolution and behaviour at University College London and author of The Social Instinct. This could mean that we have more help ourselves when we need it. “And it’s also linked to reproductive success.”</p>
+            <p>Importantly, however, reputation is “positional” - if one person rises, the others fall. This can create a strong sense of competition, which means that we’re always alert to the possibility that other people are getting ahead of us, even if they are achieving their status through altruism. We’ll be especially resentful if we think that the other person was only looking for those reputational benefits, rather than acting out of a genuine interest in others, since it may suggest a cunning and manipulative personality more generally.</p>
+            <blockquote>Reputation is ‘positional’ - if one person rises, the others fall</blockquote>
+            <p>All this means that altruistic behaviour can make us walk a metaphorical tightrope. We need to balance our generosity perfectly, so that we are seen as cooperative and good, without arousing the suspicion that we are acting solely for the status.</p>
+            <p>Reports from the public goods games seemed to show as much, says Raihani. “When you ask the teammates why they want to exclude someone, they often give ‘positional’ answers like, ‘Oh, that guy, no one's doing what he's doing - he makes us all look bad’.” Studies of social media, says Raihani, show that people tend to be less impressed by an altruistic act if the person announces the event on Facebook, for example, than if they had kept it quiet.</p>
+            <p>Raihani’s own research of online fundraising pages has found evidence that some people are aware of the potential for a hostile reaction to their generosity. Analysing posts on BMyCharity, she found it’s often the highest (as well as the lowest) givers who choose to remain anonymous. They seem to know a showy act could result in feelings of resentment from the other people observing the page, and so they’d rather hide it. </p>
+            <p><strong>Ulterior motives</strong></p>
+            <p>Ryan Carlson, a graduate student at Yale University, agrees that altruistic behaviours are often appraised from multiple angles besides the generosity of the act itself. “We don’t just value altruism - we value integrity and honesty, which are other signals of our moral character,” he says. An apparent act of generosity that seems to be driven by self-interest could therefore lead us to score rather badly on those other qualities. </p>
+            <p>For one recent study, he presented participants with various vignettes and asked them to rate the perceived altruism of the character - where -5 was extremely selfish and +5 was extremely altruistic.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Hearing about someone's altruistic deed can rub you up the wrong way - especially if you feel their act is making you personally look bad (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>In general, the participants didn’t mind if the characters in the vignettes received accidental benefits from their actions. If the character went to give blood - a modestly altruistic act - and happened to impress their friend, for example, the participants still viewed them positively. Similarly, if the character was given a gift card for their trouble, the participants didn’t care - provided that it was an accidental bonus.</p>
+            <p>The penalty came if they were told that those benefits had been part of the original motive. This flipped the perceived altruism scores from positive to negative. Even though they were undoubtedly still doing a good act, they were considered to be selfish.</p>
+            <p>As Raihani points out, we are constantly trying to second-guess the reasons for others’ actions - and we punish people harshly when we suspect that their motives are impure. Those instinctive suspicions may or may not be true, of course. We often base our judgements on intuition rather than hard facts.</p>
+            <p><strong>Rules for life</strong></p>
+            <p>These findings are worth remembering whenever we find ourselves questioning the behaviours of the people around us. If there’s no good evidence to suggest that their acts of generosity are self-serving, we may choose to give them the benefit of the doubt, knowing that our uncharitable intuitions may be fuelled by our own fears of losing status. </p>
+            <p>The research might also help us to avoid accidental faux pas when we act altruistically ourselves. At the very least, the research shows that you should avoid noisily broadcasting your good deeds. “And if people bring them up, you should downplay them,” says Raihani. Even if you think that you are simply sharing a bit of uplifting news about a cause that you care about, you should err on the side of modesty.</p>
+            <blockquote>We are constantly trying to second-guess the reasons for others’ actions - and we punish people harshly when we suspect that their motives are impure</blockquote>
+            <p>And if you do happen to gain from an altruistic act, it’s best to be upfront about the fact. Imagine, for instance, that a perfectly innocent act of kindness in the office happened to get the attention of a manager, who then put you forward for promotion. You may be seen more favourably if you acknowledge that outcome, rather than allowing others to ruminate on the idea that you had somehow planned it in advance.</p>
+            <p>“If we happen to reap some benefits from an act of kindness, it makes sense to be transparent,” Carlson says. Otherwise, it may look as if you were deliberately managing your reputation to gain status.</p>
+            <p>Ultimately, the only fool-proof way to avoid do-gooder derogation may be to do your best deeds in complete secret. And if others happen to discover the truth, despite your attempts to hide it - well, the good reputation that follows is simply a bonus.</p>
+            <p>Oscar Wilde may have put it best more than a century ago. “The nicest feeling in the world is to do a good deed anonymously - and have somebody find out.”</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

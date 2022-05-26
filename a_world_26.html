@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_world_26" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>UK</mark>
+                <h2>Boris Johnson sent Downing Street lockdown party questionnaire by police</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Boris Johnson has received a questionnaire from the Metropolitan Police as part of the inquiry into parties at Downing Street and Whitehall during the Covid lockdowns.</strong></p>
+            <p>No 10 confirmed that the prime minister had been contacted by the police and said he would "respond as required".</p>
+            <p>Police are sending the questionnaire by email to more than 50 people.</p>
+            <p>The Met has said the questionnaires will ask what happened and "must be answered truthfully".</p>
+            <p>The force said on Wednesday its email must be responded to within seven days - and the documents ask for an "account and explanation of the recipient's participation in an event".</p>
+            <p>But being contacted does not mean a fine would always be issued, the Met added.</p>
+            <p>The questionnaire has the same status as information given in an interview under caution.</p>
+            <p>The prime minister has come under pressure over the allegations of parties during lockdowns, with several Tory backbenchers calling for him to resign and submitting letters of no confidence in his leadership.</p>
+            <p>Mr Johnson has previously said he was looking forward to the police investigation being concluded and has apologised "for the things we simply didn't get right" over the party row.</p>
+            <p>Both Mr Johnson and his wife Carrie were expected to be among those emailed, although it has not yet been confirmed if Mrs Johnson has received one.</p>
+            <hr>
+            <h3>Analysis: A damaging situation</h3>
+            <p><strong>By Ione Wells, BBC political correspondent</strong></p>
+            <p>The fact Boris Johnson has received one shows the police believe he now needs to account for his actions, and what he was doing at these events, to see whether or not he has broken the law.</p>
+            <p>Getting a questionnaire doesn't necessarily mean the police will issue him with a fine, or find him to have broken the law.</p>
+            <p>Allies expect him to draw on how Downing Street is both the prime minister's workplace and private residence. Remember, he previously apologised for being at the 20 May 2020 drinks in the Downing Street garden by claiming he "believed implicitly that this was a work event."</p>
+            <p>But politically this is an incredibly damaging situation to be in for a serving prime minister regardless.</p>
+            <p>While some allies have said they would support him even if he received a fixed penalty notice, many Tory MPs think his position would be untenable if he's found to have broken the law.</p>
+            <hr>
+            <p>On Friday evening, Business minister Lord Callanan told BBC Radio 4's Any Questions the prime minister should continue in his role and would have his support even if he received a fixed penalty notice.</p>
+            <p>But former Conservative leader Sir Iain Duncan Smith has said it would be "very tough" for Mr Johnson to cling on to power if he is fined.</p>
+            <p>"It will be difficult, he knows that," the senior MP told the i newspaper.</p>
+            <p>Sir Iain added: "If you've set the laws, and you break them and the police decide you have broken them... and then there's the unredacted [Sue Gray] report - the two things will come together."</p>
+            <p>Meanwhile, former minister Tobias Ellwood - one of the Conservative MPs to have submitted a letter of no confidence in the PM - said the matter needed to be "resolved".</p>
+            <p>He told BBC Newsnight: "The nation is looking at this. There's a massive level of trust to be regained. We need to move forward, this is a mess."</p>
+            <p>The investigation, Operation Hillman, is examining 12 gatherings on eight dates - some of which the PM has already said he attended - to see if Covid regulations were broken.</p>
+            <p>Outgoing Metropolitan Police Commissioner Dame Cressida Dick earlier this week suggested that some "but probably not all" of those being contacted by officers will end up with fines.</p>
+            <p>The initial findings of a separate inquiry by senior civil servant Sue Gray criticised "failures of leadership and judgement" over the gatherings in Downing Street and Whitehall.</p>
+            <p>Detectives investigating the parties have been handed more than 500 documents and 300 images gathered as part of Ms Gray's inquiry.</p>
+            <p>Of the dates being investigated by the police, Mr Johnson is known to have been present at three gatherings:</p>
+            <ul>
+                <li>20 May 2020 in the Downing Street garden</li>
+                <li>19 June 2020 in the Cabinet Room, on his birthday</li>
+                <li>13 November 2020. on the departure of a special adviser</li>
+            </ul>
+            <p>The Met has said it would review a decision not to investigate a Christmas quiz at No 10 after a picture of the prime minister was leaked to the press showing him next to a bottle of fizzy wine.</p>
+            <p>Amid the fallout from the row, five Downing Street aides have resigned, with Mr Johnson promising MPs he would shake up his No 10 team as a result.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

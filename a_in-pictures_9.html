@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_in-pictures_9" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>In Pictures</mark>
+                <h2>Your pictures of the year 2021</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Throughout 2021 we asked our readers to send in their pictures on a variety of themes. Here is a selection of the best of those we received from around the world.</strong></p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Ryan Ketterer took this picture for the theme 'under the stars' from Mount Graham in Arizona, USA.</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Justin Saculles: "Summer the whippet expressing her happiness in lockdown, by catching her favourite treats."</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Tara Lowry: "Some summertime fun with Spanish sunflowers in Andalusia."</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Ravi Ranjan: "Art on the beach - twisting a champagne bottle cork and muselet into a 3D doodle."</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Kelley J Curran: "Fun shooting with my pal Rachel, flashback to the 80s!"</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Kathy Williams: "A scarab beetle makes tracks through the dunes of the Erg Chebbi desert in Morocco."</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Alex Bond took this picture, Escaping Bubbles.</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Oliver Kupferschmidt: "A freshly-hatched lizard explores the outskirts of Berlin in early summer. Photographed in a girl's hand."</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Annie Roper called this photo Mini-me-lism: "Inspired by stories like The Borrowers, this image is created by superimposing a self-portrait into a small-scale scene. Made in the height of lockdown last year, this project allowed me to go on big adventures in my suddenly tiny world."</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Alexander Henshaw: "When you've travelled as far as land can take you, just sit and soak it in, that's all there is to do."</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Natasha Everson-Williams: "I can't get enough of my favourite food - pasta. Here is a plate of lemon, courgette and crispy caper pasta for a lockdown lunch."</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Stuart Harrison: "We adopted Stevie from a cat rescue centre during the pandemic in June 2020, and he has settled, as this recent picture shows."</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Hamish Couper: "Long-tailed tit fledglings quarrelling on a branch in a north Oxford woodland. The range of expressions is striking, as they tussle for best position to receive food from their parents/carers."</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Patrick Dixon: "A squirrel on the DIY bird feeder my son made."</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>James Buttenshaw: "Ladybirds sheltering in the top of an old fence post by the side of a corn field in Hertfordshire."</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Leah Burton: "A family Covid catch-up while sheltering from the sea air blowing over the seafront in Weston."</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Chris Lee: "A lone figure strolls along Bregagh Road, Northern Ireland."</figcaption>
+            </figure>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

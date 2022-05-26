@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_how-we-work_7" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>How We Work</mark>
+                <h2>The jobseekers boosting their applications with video CVs</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>As hiring shifts towards virtual interviews, an increasing number of candidates are jumping in front of the camera to boost their odds of winning a job. Should you do the same?</h3>
+            <p>Sam Shepler was not surprised the first time he was asked to make a video resume in 2021. The US-based 32-year-old had noticed the trend growing in the previous year, and was applying for a video-editing role. He assumed the company wanted to see him demonstrate those skills and do a quick cultural-fit check at the same time.</p>
+            <p>Not having made a video resume before, he says: “I did what I would normally do in an interview; tried to just be myself and speak naturally, and focus more on being relaxed.”</p>
+            <p>Still, the process felt awkward. The role did not require any public speaking, and Shepler had no experience talking about himself on camera. Even though he got the job, the hiring process felt more onerous than usual. “I honestly prefer the old-fashioned resume and interview, even if the interview is via Zoom,” he says.</p>
+            <p>Virtual recruiting has grown in popularity since the start of the pandemic, with one global survey across industries showing 65% of companies having hired a new candidate without ever meeting them in person. Along with video interviews, new tech solutions are increasingly making video resumes part of the recruitment process.</p>
+            <p>Early in 2021, LinkedIn launched the Cover Story feature, giving users the option of uploading a 30-second introduction video to their profile page. In July the same year, TikTok partnered with brands in the US to launch a trial that allowed users to send video resumes directly to recruiters and hiring managers. Independent platforms dedicated to the process have also joined the field, offering one-stop solutions for recording, editing and submitting video resumes.</p>
+            <p>The demand for video resumes looks set to grow. A LinkedIn survey from March 2021 showed that 79% of hiring managers thought that video had become “more important” than before for vetting candidates, and 61% of job seekers thought “a recorded video could be the next iteration of the traditional cover letter”. As remote work has made video an increasingly common part of life at work, are video resumes the future - whether candidates want them to be or not? </p>
+            <p><strong>A human connection in a crowded field</strong></p>
+            <p>Chloe Chioy, 22, believes a video resume was crucial in helping her secure her first job after university.</p>
+            <p>“It was a spontaneous decision on my part to submit a video resume,” says the Taipei-based digital marketing coordinator, who works remotely for a UK-based company. The job advert only stated that a resume was required and didn’t specify the seniority level of the role she was applying for. “I assumed that people of all ages would apply, and that submitting a video resume would be an effective way to stand out.”</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Some candidates are choosing to submit video CVs on top of paper documents in order to get their applications surfaced from the pile (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>The language used in the job advert was casual, and the “fun” benefits on offer - including weekly Nintendo Switch competitions - gave Chioy an indication of the tone to take in her video. “Being a fresh graduate, I knew that I had the major disadvantage of having less professional experience than other applicants. I think showing my personality and attitude in the video helped my application.” She also made sure to emphasise skills relevant to the role, including screenshots of articles she had written, clips of her public speaking and, of course, showing off her video-editing abilities.</p>
+            <p>Chioy had an extra reason to believe that sending a video resume would be to her advantage. The job she was applying for was with CV Genius, an online platform that helps job-seekers format and optimise their written resumes. Her own written document was “average at best”, she says. “[It was] created in Word, and only included horizontal lines for formatting. I thought to myself, they’re experts on written CVs, but they won’t be able to vet me using the same criteria if I gave them a video resume.”</p>
+            <p>Chioy’s video resume was the first the company had ever received, and hiring team were impressed by her “very Gen Z” application, she says. The gamble paid off.</p>
+            <p>Her approach harnessed some of the distinct benefits of video resumes, says recruitment specialist Jan Tegze, author of the Full Stack Recruiter, a guide for sourcing talent. “They’re a unique chance to stand out, and they show your personality, creativity and editing skills.”</p>
+            <p>This can be particularly helpful for applicants with little experience applying in competitive fields who need an extra edge to secure a role. “If I was a job seeker, I would use absolutely every tool available to me to stand out,” says recruitment facilitator Katrina Collier, author of The Robot-Proof Recruiter. </p>
+            <p>As well as sending a written resume, this could include sending video resumes, personal email and LinkedIn connection requests to employers - anything to help create a human connection in an overcrowded field. But of these methods, there is evidence that video resumes are especially effective. While PDF and paper resumes may get lost in the crowd, a 2021 study by Canadian research institute Cirano found two-thirds of employers opened and watched spontaneous video resume submissions, and video resumes increased call-back rates by more than 10%.</p>
+            <p><strong>Making the right impression</strong></p>
+            <p>Tyler Wall, CEO of precious-metals dealer SD Bullion, based in Ohio, US, has used video resumes to recruit employees in the past, looking for candidates who use their video to discuss skills and experience relevant to the role as well as people who can present in an engaging way.</p>
+            <p>For the right candidate, this could be a moment to shine ­- but as Tegze says, “a very small portion of people are comfortable recording themselves”.</p>
+            <blockquote>79% of hiring managers thought that video had become “more important” than before for vetting candidates</blockquote>
+            <p>Glossophobia, or fear of public speaking, affects people around the globe in staggering numbers, and even speaking on camera to an empty room can cause feelings of stage fright. During the pandemic, researchers have connected feelings of Zoom fatigue to the anxiety of speaking on camera due to stressors such as feeling hyper-aware of one’s appearance and non-verbal gestures, feeling trapped in the camera view and difficulty reading the non-verbal reactions of others. </p>
+            <p>Candidates recording video have to deal with the eeriness of presenting to an absent audience, the endless potential to re-record and the pressure of a high-stakes outcome as a result of the video. “Sitting down and talking to a camera about myself is something I never thought I would do. The process just felt goofy to me, and I honestly found making the video extremely awkward,” says Shepler.</p>
+            <p>There is also the question of which candidates really need to submit video resumes. One 2016 survey of 100 US employers suggested that just 3% of companies preferred to receive a video resume over other resume formats (just 2% did in 2013). But experts say there’s a likelihood that number is changing, as video-savvy Gen Z’ers are beginning to apply for jobs, and the nature of recruiting is increasingly digital.</p>
+            <p>So, if video editing, creativity, public speaking or high self-confidence are important aspects of the role on offer, a video resume could be an effective way to test these skills. But is it fair to expect candidates for jobs not requiring these skills to create and star in their own videos?</p>
+            <p>“Absolutely not,” says Tegze. Moreover, he believes companies risk losing out on good, qualified candidates if they do so. “Videos just don’t provide enough information. [Companies that use them] are not trying to understand the background of the people and their skills and experience, they’re just getting an impression based on a few seconds of video.”</p>
+            <p><strong>A flawed selection proecess</strong></p>
+            <p>Even if they are only a few seconds long, videos can make an instantaneous impression - and they can also stoke biases in hiring.</p>
+            <p>Many companies use AI systems to help reduce subjectivity in the screening process. Tegze says companies “are using tools to remove photos, names, even names of the universities, when recruiters and sources are searching for candidates on LinkedIn and from other sourcing tools”.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>22-year-old Chloe Chioy scored her first job out of university by sending along a video resume to her now-employer (Credit: Courtesy of Chloe Chioy)</figcaption>
+            </figure>
+            <p>But as video resumes cannot be filtered in the same way, candidates can leave themselves open to a more human selection process that is potentially flawed. “They raise the chance that your resume will create some kind of bias, and you will be discriminated against based on age, race or ethnicity,” says Tegze.</p>
+            <p>The Cirano study showed that while using video resumes increased call-back rates for all candidates by 10%, wheelchair users were still less likely to be called to interview, and prospective employers were more likely to stop watching their videos when it was revealed the candidate had a disability; for example, when their wheelchair came into view, even in workplaces where accessibility was ensured. The researchers concluded “call-back rates are at their highest when the applicant uses a video resume without revealing a disability”.</p>
+            <p>Getting rejected as a job seeker is never a pleasant experience, but a rejection as a result of a video resume can leave candidates with uncomfortable questions. Were they discriminated against? Were they rejected on the basis of their personality or appearance? Or for not having video production skills that may not even be relevant to the role they were applying for? “If companies are going to ask a candidate to make video resumes, then I would really like that candidate to receive proper feedback and proper closure,” says Collier.</p>
+            <p><strong>The new standard?</strong></p>
+            <p>Despite the challenges of making and submitting video resumes, Collier believes we will see them used more in the future, for one simple reason: many people don’t know how to write effective CVs.</p>
+            <p>This difficulty leaves a window open for video resumes and other tools that can boost candidacies, rather than replacing written documents altogether. Whatever else job adverts might ask for, “recruiters are still going to want that document”, she says. Wall agrees; while a video resume can give some valuable insight into a candidate, “they’re definitely not make-or-break”. </p>
+            <p>Tegze, too, cannot see the video resume replacing its written counterpart any time soon, largely because many companies are investing heavily to remove bias from their hiring processes. He also sees the interview as crucial. “Recruitment really hasn't changed for decades. We are using different tools that are a little bit faster, but it's still about human interaction,” he says.</p>
+            <p>For candidates who shudder at the thought of speaking to camera, or feel embarrassed at their lack of video editing skills, this might be some comfort. Instead of spending hours putting together the perfect promotional clip, it might be time to go back to basics and face a task that brings its own challenges: writing the perfect resume.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

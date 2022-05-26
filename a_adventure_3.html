@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_adventure_3" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Adventure</mark>
+                <h2>The Alaska Highway: A subarctic road to prevent invasion</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Winding 1,387 miles through some of North America's most extreme environments, it was the most ambitious construction project since the Panama Canal and built to defend a continent.</h3>
+            <p>March 2022 marks the 80th anniversary of the start of construction on the Alaska Highway. Considered one of the most scenic highways in Canada, the 1,387-mile highway attracts more than 300,000 road trippers from around the world every year.</p>
+            <p>Beginning in Dawson Creek, British Columbia, and winding north-westerly 613 miles through BC into Yukon, and then another 577 miles to the US border, the road passes from the Rocky Mountains to subarctic alpine tundra to the jagged peaks of Kluane National Park and Reserve before ending at Delta Junction, Alaska. Along the route, parks, campsites, resorts and small towns welcome visitors while locals relish the opportunity to share stories about life in the northern frontier.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The 1,387-mile Alaska Highway attracts more than 300,000 road trippers each year (Credit: John Zada/Alamy)</figcaption>
+            </figure>
+            <p>Dawson Creek, a remote farming community located in the rolling foothills of the Northern Rockies near the Alberta border, might seem like an odd place for the start of an international highway. The town wasn't much more than a 600-person rail terminus when Canada and the US first began discussing plans to build a road connecting the lower 48 states with the far-flung northern outpost in 1929. Until 1930, Alaska was only accessible by boat from the contiguous US, and as US relations cooled with Japan, the isolated territory seemed especially at risk against a potential Japanese attack against the North American mainland, as Alaska's Aleutian Islands are just 750 miles from the closest Japanese military base.</p>
+            <h3>It's a bucket list road trip with jaw-dropping scenery</h3>
+            <p>Several options were considered, but on 7 December 1941, the day the Japanese attacked the US' Pacific Fleet at Pearl Harbor, the debate became urgent. The criteria - a route to send defensive supplies to northern military bases should mainland US or Canada be attacked, far enough inland that enemy planes couldn't reach it - made the proposed route starting from Dawson Creek the top contender. Three months after the attack, thousands of US troops and an armada of heavy equipment arrived by rail at the little blip of a town to begin one of the US' most expensive construction projects of World War Two.</p>
+            <p>Originally known as the Alaska Military Highway, Alcan or Canadian-Alaskan Military Highway, the stunning $138m (the equivalent of $2.55bn today) feat of engineering is simply called the Alaska Highway today. Its initial military purpose began to fade from memory as soon as the route opened to the public after the war in 1948. Almost immediately, Greyhound buses braved the wilderness track, and before the end of the first year, some 2,000 tourist vehicles would follow in their dust. From there, the legend only grew - the story about an impossible-to-build highway that could take visitors across some of the roughest and most beautiful land imaginable.</p>
+            <p>It's a "bucket list road trip with jaw-dropping scenery", said Maya Lange of Destination BC.</p>
+            <p>Leaving Dawson Creek, the Alaska Highway meanders past farmlands, forests and rivers to Fort Nelson, BC. It was here, while driving the highway last year with a group in search of winter's Northern Lights, that I first got a sense of the effort involved in building the highway, which was considered the biggest and most challenging engineering project undertaken since the building of the Panama Canal.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The late Marl Brown created the Fort Nelson Heritage Museum (Credit: Diane Selkirk)</figcaption>
+            </figure>
+            <p>At the Fort Nelson Heritage Museum, located about 280 miles north of Dawson Creek, an old-timer named Marl Brown (who sadly passed away in June 2021) told me he used to worry about the loss of the highway's history. As a mechanic for the Canadian Army at mile 245 in the 1950s, back when much of the now-paved track was still gravel, Brown noticed that some of the 174 steam shovels, 374 blade graders, 904 tractors and 5,000 trucks used to build the road had been discarded and were rusting away.</p>
+            <p>"They were working so fast, when a bulldozer, grader or truck broke, it was pushed out of the way and they kept going," he explained.</p>
+            <p>Brown started collecting the old machinery. Pretty soon people were dropping all manner of highway-related items at his door. "They knew I was collecting these things, so after a while I decided we needed a place for them." Raising money for the museum was an enormous effort for the small town; Brown even auctioned off shaving rights for his locally famous long beard. But for the gifted mechanic, preserving the story of the highway was a worthy goal. "Visitors were interested in driving it for the challenge and the scenery," he said. "But people should know what went on before they came, how the highway came about."</p>
+            <p>From Fort Nelson, the highway winds west into the Northern Rockies. We peered out the windows at frozen waterfalls suspended from rugged cliffs and marvelled at lakes and rivers turned into vast skating rinks. In the low angle winter light, the wild expanse turned monochromatic as the black spruce of the boreal forest contrasted with the snow-covered mountains.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>In the winter, much of the landscape along the Alaska Highway turns monochromatic (Credit: Diane Selkirk)</figcaption>
+            </figure>
+            <p>Pulling off to the side of the road, we decided to try a hike on one of the frozen rivers. Up close, the ice was milky blue and walkable when going uphill - but when coming back, some patches were so slippery we sat down and slid. Cold, with my breath hanging in the air, rugged landscape all around me, it was possible to imagine the 16,000 US and Canadian soldiers and civilians working through some of the region's coldest temperatures on record. Historical accounts say drinking water froze solid, diesel thickened, and ice could lock up the wheels of a truck if it stood still for more than a few seconds.</p>
+            <p>Back on the road, traffic was light; a moose wandered out of the forest ahead of us then faded into the swirling snow. A few miles further on, a timber wolf watched from a hill as we drove by. Later we were forced to stop when a herd of wood bison took over the road, seemingly appreciating the easy path across the wintery landscape.</p>
+            <p>One summer, on an earlier trip, my husband and I loaded our daughter and a couple of friends from California into a borrowed car and trailer. We were eager to see how far north we could get and crossed the Yukon border at historical mile 635. Over the years, the highway has been straightened, widened and paved, shaving miles off, but the historical mileposts tell the story of how the road builders searched in vain for an easy path through the rugged territory. Their solution was to seek out Indigenous guides who showed them the overland gold rush trails, which overlaid the ancient Indigenous grease trails and trade routes of the Dane-Zaa, Dene (Slavey), Tse'Kene, Tahltan, Kaska, Tagish, Tlingit, Northern and Southern Tutchone and Upper Tanana peoples who still call the region home.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The highway was the biggest engineering project undertaken since the Panama Canal (Credit: PA Lawrence, LLC/Alamy)</figcaption>
+            </figure>
+            <p>Out on the land, the muskeg, stunted boreal forests, craggy rocks and sparkling jade lakes of the Yukon formed a panorama so vast and ancient I could see how it would have resisted taming. A recruitment notice from the time let workers know: "Temperatures will range from 90F degrees above zero to 70F degrees below zero. Men will have to fight swamps, rivers, ice and cold. Mosquitoes, flies and gnats will not only be annoying but will cause bodily harm."</p>
+            <p>Camping at the Marsh Lake Campground at historical mile 890, the notorious mosquitos made an appearance. By morning, the inside of our trailer looked like a crime scene with bloody mosquito carcasses splattered on every surface. My daughter, who was five at the time, refused to remove her bug jacket to eat for two days. She took solace in the idea that the true purpose of mosquitoes might be to keep land wild by chasing humans away.</p>
+            <p>Incredibly, it only took 10 months to build the Alaska Highway (it took 10 years to complete the Panama Canal). With the extra daylight of the midnight sun, crews worked double shifts in the summer, and 400 miles of road were laid in July 1942 alone. Crossing 129 rivers and 8,000 mountain streams, the highway was built in sections by seven US Army regiments. This meant there were a few places where the builders met and linked their sections of road together. One of the last sections to be linked was Beaver Creek near the Alaska-Yukon border. It was decided that the opening ceremonies should take place at a more scenic spot though, and on 20 November 1942 at historical mile 1061, the highway officially opened to military traffic at a place called Soldier's Summit in what's now Kluane National Park.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Kluane National Park is one of the highway's many highlights (Credit: Alan Majchrowicz/Alamy)</figcaption>
+            </figure>
+            <p>Kluane is a place where many visitors slow down, stopping to hike or to base themselves for a rafting trip on the Alsek River. We chose a few short hikes, always with the hope of capturing a glimpse of an elusive mountain goat. One morning we were rewarded with a distant sighting of curled-horn Dall sheep. Another day brought a grizzly bear sighting. But the goat still remained a goal.</p>
+            <p>At historical mile 1,221, drivers reach Port Alcan and pass from Canada into the US. From here, the road continues along the winding Tanana River. Framed by the famed Alaska Range, the rugged landscape gradually gives way to farmland, seemingly echoing the way the highway began. The endpoint is at Delta Junction, mile 1,387 (historical mile 1,422), a small 993-person town at the confluence of the Delta and Tanana Rivers.</p>
+            <p>Delta Junction has an end-of-highway monument where you can snap a photo proving you made the drive. The sign tells the road's story in numbers: 77 contractors; 15,000 soldiers; 11,000 pieces of equipment. It can be easy to get lost in these staggering figures and miss a more subtle point. Eighty years ago, when facing a threat, two countries came together in friendship to build an impossible road to prevent an attack that never came.</p>
+            <p>And as you drive through the highway's vast mountain ranges and over raging rivers, past ancient forests and deep lakes, and through traditional Indigenous villages and friendly small towns, there's plenty of time to dream about the other impossible things we could choose to accomplish next.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Today, the highway stands as a testament to the collaboration of the two countries that built it (Credit: Randy Quong/Getty Images)</figcaption>
+            </figure>
+            <blockquote><strong>EDITOR'S NOTE:</strong> A previous version of this article incorrectly stated that the Alaska Highway was the US' most expensive construction project of World War Two. This has now been corrected.</blockquote>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_business_17" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Business</mark>
+                <h2>Why this city is Europe's best kept cycling secret</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Rui Mendes says that when coronavirus first arrived, the business he helps to run had to slam on its brakes and skid to an immediate stop.</strong></p>
+            <p>Mr Mendes is a director at a Portuguese firm called Rodi, one of Europe's largest manufacturers of bike wheels.</p>
+            <p>"At the pandemic's onset many clients [bike firms] started to postpone orders, fearing what might happen," he says. "We ended up stopping production."</p>
+            <p>To try to save jobs and salaries, the 300 employees agreed to immediately take a three-week holiday. But then a month later things dramatically changed for the better, as millions of people across Europe took up cycling during the pandemic.</p>
+            <p>"From April things turned completely," says Mr Mendes. "Orders doubled, the market just exploded. Apprehension gave way to relief as the employees realised that the pandemic wasn't going to threaten their jobs."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Rui Mendes says that he and colleagues went from despair to relief within a month</figcaption>
+            </figure>
+            <p>Portugal is the largest manufacturer of bikes in the European Union, a fact many people outside of the country might not know. Last year, more than 2.6 million bikes were made in Portugal, according to official EU figures.</p>
+            <p>That was more than one fifth of the total 12.2 million bicycles produced. Italy was in second place on 2.1 million, and Germany ranked third with 1.3 million.</p>
+            <p>Portugal doesn't have any big bike brand names, instead it mainly does manufacturing for foreign companies. For example, one of its largest producers - RTE - makes bicycles for French giant Decathlon. Another - FJ Bikes Europe - is owned by Taiwan's Fritz Jou Manufacturing.</p>
+            <p>The industry is concentrated around one small city - Agueda in central Portugal, some 75 km (47 miles) south of Porto. In addition to the businesses that build full bikes, there are also firms, such as Rodi, that make bike parts or accessories.</p>
+            <p>In total, there are more than 60 factories, and almost 8,000 people employed in the sector in and around Agueda.</p>
+            <p>João Filipe Miranda says that his business will post a revenue figure of €27m ($30m; £23m) this year, "our best since the company's foundation" in 1940.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>João Filipe Miranda says that gear parts maker Miranda has enjoyed its best-ever year</figcaption>
+            </figure>
+            <p>The company - Miranda - makes components for bicycle gears, including those for electric bikes.</p>
+            <p>Mr Miranda says that while Portugal's bike industry is "known for its quality", it also benefits from offering its European customers much shorter supply chains than rival manufacturers based in Asia. Portugal is further helped by the continuing tariffs put on Chinese bike imports in to the European Union.</p>
+            <p>These extra fees or duties currently stand at up to 48.5% for standard bikes, and as high as 79.3% for electric ones.</p>
+            <p>Yet, Gil Nadais, secretary general of the trade body for the Portuguese cycling sector - Portugal Bike Value - says the pandemic was the main driving force behind the industry's continuing boom.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The popularity of cycling has soared across Europe since the start of the pandemic</figcaption>
+            </figure>
+            <p>"Covid brought a new opportunity to the sector, since it ended up incentivising healthier lifestyles [across Europe]."</p>
+            <p>Mr Nadais adds that industry is expected to see total exports rise between 20% and 30% this year.</p>
+            <p>But have Portuguese people themselves got more into cycling since Covid? That does appear to be the case, even in the capital Lisbon and second city Porto, where people were traditionally seen as adverse to cycling due to the steep and often cobbled roads in both areas.</p>
+            <p>In Lisbon the use of bikes, including electric ones, to help get up all the hills, has risen by a quarter since the start of the pandemic, according to one report.</p>
+            <p>And Fernando Chicarini, the owner of Lisbon's oldest bike shop - Armazéns Airaf, which was founded in 1951 - says his sales have soared by 40% since the start of the pandemic. He has also seen a big rise in the number of people wanting him to fix their old bikes.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Miranda supplies bike gear parts to a number of bicycle firms</figcaption>
+            </figure>
+            <p>"People who already owned bicycles, but didn't use them regularly, or at all, showed up for repairs, revisions, and restorations," he says.</p>
+            <p>Back at the Rodi parts factory, Mr Mendes says they sold 500,000 bike wheels and three million wheel rims in 2020, a combined 35% hike compared with 2019.</p>
+            <p>"We were lucky that those of us in the bicycle sector didn't suffer as much as workers in other industries," he adds.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

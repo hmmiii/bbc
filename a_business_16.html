@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_business_16" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Business</mark>
+                <h2>'I thought I'd forever regret not taking the opportunity'</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Like millions of people around the world, the pandemic spurred Joe Flynn to reassess his career.</strong></p>
+            <p>The 34-year-old from Worcestershire had spent 10 years selling mortgages, but during the lockdowns of the past 21 months he started to re-evaluate what he wanted to do with his life.</p>
+            <p>"The buy-to-let mortgage sector wasn't something I ever thought I wanted to do, but it was a good career with strong personal development," he says.</p>
+            <p>"I realised that I instead wanted a career where I felt I could make a difference about something I cared about."</p>
+            <p>Inspired by some previous volunteering work, Mr Flynn found a website called CharityJob, which lists vacancies in the sector. A role at The Vegan Society caught his eye.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Working from home made many people realise that the only thing they liked about their job was socialising with colleagues</figcaption>
+            </figure>
+            <p>"It was perfect, being vegan myself for eight years," he says.</p>
+            <p>Now three months into his managerial role, Mr Flynn is enthusiastic about his new employer. "Everyone is so passionate here, and wants to push the organisation forward. It's really motivating.''</p>
+            <p>However, he admits that taking a "significant pay cut" did make him question whether it was the right move. "But I thought about what my ethics are, and what I want to be doing," he says.</p>
+            <p>"I thought I'd forever regret not taking the opportunity. You can't put a value on job satisfaction when you're dealing with an organisation where the morals and ethics align with your own."</p>
+            <p>With more focus than ever on topics such as climate change, sustainability, and equality, younger generations in particular are more intent on finding a career with a positive social impact.</p>
+            <p>Throw the pandemic into the mix, and the trend towards a purpose-led career has accelerated.</p>
+            <p>Seven out of 10 people say that coronavirus has made them re-evaluate their career path, according to new report by Escape the City, an organisation that helps people leave the corporate sector.</p>
+            <p>Its study also found that 89% of respondents now "wanted a career with a strong sense of purpose". That compares with 71% in the pre Covid-19 world.</p>
+            <p>Skye Robertson, chief operating officer at Escape the City, says the pandemic has shifted people's desires for their careers.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Skye Robertson says it is possible to find a new job that has a positive impact, without taking a cut in salary</figcaption>
+            </figure>
+            <p>"It's been a period of reflection for people to think about their lives and work, and what matters to them," she says. "People are flocking to purposeful careers."</p>
+            <p>Ms Robertson adds that with many people having got used to working from home since March 2020, the social aspect that kept many people tied to their jobs has significantly weakened.</p>
+            <p>Habiba Islam is a career advisor at 80,000 Hours, a not-for-profit organisation that provides resources on how individuals can make the most social impact during their working life.</p>
+            <p>"For most people, their career is the biggest way they can have a positive impact," she says. "The pandemic, and the changes it made to work, prompted people to think about their career choice, and what they want to do.</p>
+            <p>"But there were other factors at play. The other aspect is facing a global catastrophe. That turns people's attention to bigger world problems, thinking that maybe they could be working on preventing the next Covid, perhaps."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Habiba Islam works for 80,000 Hours, which helps people find jobs that can help tackle society and the world's problems</figcaption>
+            </figure>
+            <p>Yasmina Kone, 27, was managing graduate recruitment at a law firm when Covid struck.</p>
+            <p>"The pandemic was an interesting time," she says. "There was so much time sitting behind a screen, which made me focus on who was benefiting from my work, and how I was using my skills.</p>
+            <p>"There was widespread suffering as a result of the pandemic, and I started to realise that I wanted to have a more direct impact on vulnerable communities."</p>
+            <p>So in May 2021, Ms Kone quit her job to become a manager at Beam, a social enterprise helping homeless people find jobs.</p>
+            <p>She says her new role has been motivating when the world has felt like "a dark place... now I'm changing people's lives,"</p>
+            <p>Ms Kone admits she did take a pay cut for the role. However, she says it's been worth it. "Every day I get to help people. That's mental motivation, plus there's unlimited holiday, and share options."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Yasmina Kone is now helping unemployed people find work</figcaption>
+            </figure>
+            <p>Ms Robertson insists that it is possible for a person to move to a more socially purposeful job without having to see his or her wages go down.</p>
+            <p>"We have heard people say that there's a 'moral tax' [when leaving a corporate job for one with purpose], with massive salary cuts or having to work to the bones at a charity but that's not the case anymore," says Ms Robertson.</p>
+            <p>She points to the growth of so-called "B Corps" businesses - firms of all sizes that have pledged to balance profit with purpose, and to consider their impact on both the wider community and the environment.</p>
+            <p>"There's now hundreds of B Corps... offering purposeful careers," says Ms Robertson.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

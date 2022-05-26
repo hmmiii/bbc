@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_how-we-think_3" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>How We Think</mark>
+                <h2>How thinking about 'future you' can build a happier life</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>We should think more about whom we'll be in the future - because doing so has profound consequences for our health, happiness and financial security.</h3>
+            <p>Take a moment to imagine yourself in 10 years. Depending on your age, you might have a few more grey hairs and wrinkles, and you might hope for some changes to your material circumstances, too. But does the person you imagine feel, fundamentally, very close to the person you are today? Or do they feel like a stranger?</p>
+            <p>According to a wealth of psychological studies from the past decade, people’s responses often vary widely - and their answers reveal surprising things about their behavioural tendencies.</p>
+            <p>Some people have a vivid sense of their future self, which feels very close to their current identity. These people tend to be more responsible with their money and more ethical in their treatment of others; they are keen to act in a way that will make life easier in the years ahead.</p>
+            <p>Many other people struggle to imagine their future self as a continuation of the person that they are today, and they tend to be far less responsible in their behaviours. It’s almost as if they see their future self as a separate person that has little connection to their present identity - and, as a result, they are far less worried about the long-term consequences of their actions.</p>
+            <p>You could almost think about your future self as a relationship that needs to be nurtured and cultivated. Fortunately, there are some simple strategies to strengthen your empathy and compassion for the person you will become - with some profound consequences for your health, happiness and financial security. </p>
+            <p><strong>Philosophical origins</strong></p>
+            <p>The inspiration for the recent psychological research on the future self can be found in the writings of philosophers such as Joseph Butler, in the 18th Century. “If the self or person of today, and that of tomorrow, are not the same, but only like persons, the person of today is really no more interested in what will befall the person of tomorrow, than in what will befall any other person,” Butler wrote in 1736.</p>
+            <p>The theory was later expanded and championed by the British philosopher Derek Parfit, whose work caught the attention of a young researcher called Hal Hershfield. “It was just such a compelling idea,” says Hershfield, who is an associate professor of marketing, behavioural decision making and psychology at the University of California, Los Angeles. He suspected that a disconnection from our future selves might explain many irrational elements of human behaviour - including our reluctance to set aside savings for our retirement.</p>
+            <p>To find out, Hershfield first had to find a way to measure someone’s “future self-continuity”. He settled on a simple graphic that presented pairs of circles representing the current self, and a future self (see below). The circles overlapped to varying degrees, and the participants had to identify which pair best described how similar and how connected they felt to a future self 10 years from now.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Hershfield's diagram of pairs of circles representing the current self and future self (Credit: Hal Hershfield, published in Judgement and Decision Making, 2009)</figcaption>
+            </figure>
+            <p>He then compared these responses to various measures of financial planning. In one experiment, the participants were presented with various scenarios in which they could either receive a smaller reward soon or a larger reward later. As expected, participants who felt a greater connection to the future were much more willing to delay their gratification and wait for the bigger sum.</p>
+            <p>To check whether this tendency for sound financial planning corresponded with real-life behaviour, Hershfield next looked at his participants’ real-life savings. Sure enough, he found that the more the participant felt connected to their future self, the more money they had already squirrelled away.</p>
+            <p><strong>Back to the future</strong></p>
+            <p>Hershfield’s later research has examined the phenomenon in many other areas of life. In 2018, for instance, he found that people’s future self-continuity could predict their exercise behaviours and overall fitness. It seems if you identify strongly with your future self, you are more willing to look after your body to make sure that it experiences better health in the years ahead.</p>
+            <p>Other experiments suggest that people who score highly on the future self-continuity measure have higher moral standards than the people who struggle to identify with their future selves. They were less likely to cheat in tests, for example. “If people are better connected to their future selves, then they're going to have an enhanced ability to recognise the consequences of their present-day decisions on their future selves,” says Hershfield. “And that's going help them put the brakes on these behaviours.” </p>
+            <p>In 2020, Hershfield confirmed that someone’s (in)ability to identify with their future self can have long-term consequences for their overall wellbeing. The longitudinal study, which tracked more than 4,000 participants for a decade, found someone’s future self-continuity at the beginning of the study could predict their life satisfaction 10 years later.</p>
+            <p>Importantly, this was true even when he controlled for their initial wellbeing. This helped to eliminate the possibility that the people who felt connected with their future selves had simply started the study with higher life satisfaction, and then remained that way. Instead, it seems likely that the greater satisfaction at the end of the study was the result of all those positive behaviours - like financial saving and increased exercise - that together resulted in a more comfortable life.</p>
+            <p><strong>Future vision</strong></p>
+            <p>On the back of these results, neuroscientists have started to take a closer look at the brain processing behind these phenomena - and the reason that so many people find it hard to identify with their future selves.</p>
+            <p>Meghan Meyer, an assistant professor at Dartmouth College in New Hampshire, US, recently asked participants to estimate the future-self continuity overlap at various time points. In one of these tests, participants had to estimate the similarity in their current and future selves by controlling the overlap of two circles - much like Hershfield’s experiments.  They repeated the task multiple times, while imagining themselves in three months, six months, nine months and a year into the future.</p>
+            <blockquote>If you identify strongly with your future self, you are more willing to look after your body to make sure that it experiences better health in the years ahead</blockquote>
+            <p>In line with Hershfield’s results, Meyer found that the average participant’s concept of their future self diverged from their concept of the current self fairly rapidly - with a large sense of disconnection already appearing at the three-month point. Interestingly, however, this change started to plateau as they considered the later time points. As such, there was little difference between the nine-month and year time points - and we can guess that the same would have been true if they’d considered even later dates. Meyer suggests that their vision of their future self was becoming “blurrier” and less nuanced. </p>
+            <p>This was also reflected in results from functional MRI scans, which offered some intriguing evidence that, at the neural level, we really do start to think of our future selves as a different person. Besides considering themselves at various points in the future, the participants were also asked to think about a stranger, such as the politician Angela Merkel. As the participants moved further along the timeline - imagining themselves from around six months onwards - the brain activity concerning themselves started to resemble the response to thoughts of the politician. </p>
+            <p>“As you move farther out into the future, the way you represent yourself isn't so different from the way you represent Angela Merkel,” says Meyer. “It’s consistent with this philosophical idea that you treat your distant future self like a stranger.”</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>We struggle to imagine ourselves old, but if we could, it would be to our advantage (Credit: Getty Images)</figcaption>
+            </figure>
+            <p><strong>The things I wish I’d known</strong></p>
+            <p>Given the many benefits for our financial security, health and overall happiness, it’s natural to wonder whether we can strengthen our sense of connection to our future selves.</p>
+            <p>Hershfield’s research offers a couple of suggestions. In one series of experiments, his participants entered a virtual reality environment with personalised avatars that simulated how they may look aged 70. As hoped, they reported feeling a greater connection to their future self, and in subsequent measures of decision making, they showed more financial responsibility. They reported being more likely to set aside money for retirement, for example. Many photo editing apps already allow you to prematurely age your selfies, and this kind of technology could be incorporated into educational programs that encourage people to think more carefully about their future wellbeing. </p>
+            <p>For a low-tech intervention, you might consider a simple imaginative exercise - in which you write a letter to yourself 20 years from now, describing what is most important for you now and your plans for the coming decades. Like the sight of the aged avatars, this encourages people to feel a greater sense of connection with their future self - and, as a result, primes them for positive behavioural change. Hershfield’s studies have shown that the task increased the amount of time that people spent exercising over the following week - a sign that they had started to take their long-term health seriously. (If you are keen to try this out, he suggests that you could amplify the effects by writing a reply from the future, since that will force you to adopt a long-term perspective.)</p>
+            <p>As you might expect, Hershfield applies his research to his own life. When dealing with the stresses and frustration of parenting, for example, he tries to put himself in the shoes of his future self to imagine how he might look back on his own behaviour. “I try to think whether he would be proud of the way that I handled myself,” he says.</p>
+            <p>It might seem eccentric to start a “conversation” with an imagined entity - but once your future self becomes alive in your mind, you may find it much easier to make the small personal sacrifices that are essential to preserve your wellbeing. And in the years ahead, you’ll thank yourself for that forethought.   </p>
+            <p>David Robson is a science writer and author based in London, UK. His latest book, The Expectation Effect: How Your Mindset Can Transform Your Life, is published on 6 January 2022 in the UK and 15 February 2022 in the US. He is @d_a_robson on Twitter.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

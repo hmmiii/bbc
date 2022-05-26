@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_food_3" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Food</mark>
+                <h2>Hercules Posey: George Washington's unsung enslaved chef</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>In the late 18th Century, Philadelphia was a city of high-end cuisine; however, few know that many of its culinary masters were of African descent like Hercules Posey.</h3>
+            <p>Each year, Philadelphia, Pennsylvania, sees millions of heritage-seeking tourists who traipse the reconstructed brick pathways of the old city, eager to see the sites that birthed ideas of American liberty such as Independence Hall, where the Declaration of Independence was signed in 1776, and the iconic Liberty Bell. But like its ties to democracy, Philadelphia's connection to great American food culture has roots that reach into the distant past, roots that until recently have been obscured in the history books.</p>
+            <p>Much of the fledgeling nation's culinary excellence was achieved in the homes of its Founding Fathers like George Washington and Thomas Jefferson, where high-end cuisine was perfected not by white cooks but by enslaved chefs of African descent. These highly skilled chefs were influenced by the city's bountiful European, Caribbean and Native American exchange of culinary ideas and techniques, as well as their own heritage.</p>
+            <blockquote>A mix of West African, European, Native American foodways collided in the colonies, by force</blockquote>
+            <p>According to Dr Kelley Fanto Deetz, author of Bound to the Fire: How Virginia's Enslaved Cooks Helped Invent American Cuisine, a mix of West African, European, Native American foodways collided in the colonies, by force," she said, "and this collision found a world stage in places like Washington's dining room table in Philadelphia."</p>
+            <p>Preparing the food that made its way to Washington's tables was the unsung haute culinarian Hercules Posey. Posey was unique among his peers in that he was famous in his own time and was acknowledged by white society. He had a larger than life persona, and, as head chef, a position of power in the household, as well as some quasi-freedoms like the ability to leave the house on his own when he was not working and to earn money selling leftovers from the kitchen.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Hercules Posey would have been familiar with Philadelphia's City Tavern in his time (Credit: John Greim/Getty Images)</figcaption>
+            </figure>
+            <p>I spent a dozen years researching on Posey for my novel The General's Cook, piecing together the details of his remarkable life through painstaking research of Washington's household accounts, letters to and from his Philadelphia steward and personal secretary, census documents and other ephemera. Unlike the lives of their white contemporaries, the life events of enslaved people are not well recorded in the public record, appearing only as property footnotes in the files of their enslavers, making reconstruction of their lives incredibly difficult.</p>
+            <hr>
+            <figure>
+                <img src="" alt="">
+                <figcaption>HERCULES POSEY'S PHILADELPHIA</figcaption>
+            </figure>
+            <p>The vestiges of Hercules Posey's life in Philadelphia remain tantalisingly within reach for visitors who know where to look.</p>
+            <p>Steps away from the Liberty Bell, tourists can visit the President's House, where Posey lived and worked. The open-air site is interpreted through the lives of those George Washington enslaved there.</p>
+            <p>Cross the street to visit the Declaration (Graff) House where Posey's contemporary Chef James Hemmings lived with his enslaver Thomas Jefferson during his time in Philadelphia.</p>
+            <p>In the Germantown section of the city, the Deshler-Morris house, also known as the Germantown White House, was where George Washington spent the summer of 1794 to avoid the yellow fever epidemic raging in the city. Posey cooked in this kitchen.</p>
+            <p>City Tavern and Man Full of Trouble tavern (now a private home) on Spruce Street are places with which Posey would have been familiar in his time.</p>
+            <p>The Reading Terminal Market offers the energy and flavour of the open-air markets of Posey's day, featuring goods from around the region and world.</p>
+            <hr>
+            <p>Because Posey was notable in his own time, there are more records of his life than of others like him - although this information is still incredibly sparse. However, Washington's step grandson, George Washington Parke Custis, chose to immortalise the chef in an biographical sketch in his book Reflections and Private Memoirs of Washington. Much what we know about Posey's towering persona is gleaned in Custis' single description. Recalling his childhood in the presidential mansion, he wrote about Posey as "a culinary artiste" and "dandy", with "great muscular power" and a "master spirit", whose "underlings flew to his command" (among those underlings were paid white servants).</p>
+            <p>Posey was possibly a teenager when he came to Mount Vernon, Washington's estate in Virginia, about 150 miles south-west of Philadelphia. He apprenticed there under the enslaved cooks Doll and Nathan, who managed the kitchen for many decades, and he mastered his craft so well that Washington brought him to cook at the President's House in Philadelphia in 1790. It was here in Philadelphia that Posey was exposed to and inspired by ingredients and cooking techniques from throughout the nation - and the world.</p>
+            <p>In the time the chef resided in Philadelphia, the city was positioned ideally in the middle of the nation, and thanks to the wide, navigable Susquehanna, Delaware and Schuylkill rivers, regionally produced vegetables, fruits, meats and dairy products like milk and butter arrived regularly at its open-air High Street Market. The rest of nation supplied what wasn't available locally. From the north came salted New England codfish and prized Connecticut onions along with upstate New York cheese. From the south there was Carolina rice and indigo, as well as tobacco from Virginia and Maryland.</p>
+            <p>Furthermore, by the 1760s, Philadelphia's merchants had come to realise there was an untapped secondary market in the Caribbean (outside of the sugar, molasses and rum that went to ports like New York and Boston), and the city came to lead the nation in imports of ginger, allspice and black pepper, while controlling half of all coffee imports. Nutmeg, limes, pineapples, coconuts also made their way to Philadelphia as part of this robust West India Trade, and all were on offer in the city's ports for export, as well as its public markets and many taverns.</p>
+            <p>And, where the High Street Market sheds met the Delaware River, the harbour was jammed with trading ships loaded with olive oils from Spain; wines and oranges from Portugal, France and Germany; and tea from China - all part of the vast commercial network that made Philadelphia the busiest port on the American continent.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Hercules Posey cooked in the kitchen for George Washington's home at Mount Vernon (Credit: David Stuckel/Alamy)</figcaption>
+            </figure>
+            <p>"Philadelphia was the gateway to the Atlantic, a city that was central to the foundation of our nation and our understanding of what American food is," said Deetz, who is also the director of Collections and Visitor Engagement of Stratford Hall (the Virginia birthplace of confederate Civil War general Robert E Lee).</p>
+            <p>While none of Posey's recipes survived, period accounts detail meals with each course featuring a dizzying variety among dishes like roasted beef, veal, turkeys, ducks, fowls and ham as well as puddings, jellies, oranges, apples, nuts, figs and raisins. Depending on the season, there were oyster stews, other soups and pottages, as well as fruit pies, ice cream and seasonal fish. All were accompanied by various wines and were elegantly presented.</p>
+            <p>Understanding Posey lies in understanding his milieu. He moved to Philadelphia, a city that was a crossroads of culture, language, commerce and cuisine - much the way we think of New York City, London or Hong Kong today. Third and fourth generation European Americans with English or French ancestry - like George Washington - joined their Dutch- and Swedish-descent counterparts on the brick pavements of Philadelphia developed by William Penn on unceded indigenous Lenape land. In 1791, following the successful revolt of the enslaved on the Caribbean Island of St Domingue (now Haiti), French-speaking white refugees flooded the city, dragging their Creole-speaking enslaved in tow.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>1770s Colonial-era American dish of baked stuffed striped bass garnished with lemon potato parsley (Credit: ClassicStock/Alamy)</figcaption>
+            </figure>
+            <p>These varied throngs gathered at Philadelphia's theatres, circuses and taverns, which according to Washington's household accounts, were also frequented by Posey. After his work was done, the presidential chef went out in the evening dressed to the nines with a gold pocket watch and gold headed cane, likely purchased with money he earned selling the usable scraps from Washington's kitchen that had value on the secondary market for uses like animal feed or fertiliser.</p>
+            <blockquote>The presidential chef went out in the evening dressed to the nines with a gold pocket watch and gold headed cane</blockquote>
+            <p>But while Posey experienced some autonomy, he wasn't free like his brethren in Philadelphia's Free Black community, which comprised nearly all of the 5% of the city's residents of African descent. Most had gained liberty thanks to Pennsylvania's 1780 Gradual Abolition Law that emancipated enslaved persons remaining in the Commonwealth for more than six months. However, Washington took great pains to subvert the Pennsylvania law and keep Posey and nine other enslaved Africans with him in Philadelphia in a condition of bondage. He did this by rotating Posey and the others out of the city into pro-slavery states like New Jersey across the Delaware River or back to Virginia, thereby continually resetting their time in the city. </p>
+            <p>Nonetheless, constant interactions with successful free food service workers, oystermen and farmers would have likely influenced Hercules' view of the world. He would have seen the path to another life - one in which his skill could sustain him if he were able to escape Washington's grasp.</p>
+            <p>According to Mount Vernon research historian Mary Thompson, the quasi liberty in which Posey lived - and his status in the kitchen - often confuses people into believing that he had an easier life than those who worked in the field.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A small dining room is set at George Washington's Mount Vernon Estate in Virginia (Credit: Joe Raedle/Getty Images)</figcaption>
+            </figure>
+            <p>"For some people, his 'status' might have made his story harder to understand. They think: why would he have wanted to leave, when he was working for one of the most important men of that time period and had the opportunity to be at, arguably, the summit of his profession as a cook?" said Thompson, who was among the few early scholars studying George Washington's enslaved people. </p>
+            <p>This confusion frustrates not only historians like Thompson but living history interpreters like Dontavius Williams who portrays Caesar, the highly skilled chef and master chocolatier enslaved at Stratford Hall in Virginia. In his interpretive work, Williams strives to make it clear that whatever limited autonomy or "pride of place" cooks like Posey were allowed, it did not make up for the fact that their labour and liberty were stolen.</p>
+            <p>"The work for all who were enslaved was gruelling in its own way. However, the work of the cook was extremely taxing mentally and emotionally. Working in extreme conditions under the scrutinising eye of his master and mistress, the enslaved cook had to perform at a high level at all times. There was no room for mistakes," said Williams. "Enslaved cooks had to hold it together and manage a staff while meeting the high standards of the family who owned them, and they worked even during those few times that other enslaved labourers didn't. It was literally a 24/7 job."</p>
+            <blockquote>Chef Hercules is America's first celebrity chef, full stop</blockquote>
+            <p>The importance of Philadelphia and its rich opportunities for free African Americans - and for cooks in particular - was becoming clear to Washington by the end of his time there. And so, after spending the summer of 1796 at Mt Vernon, he returned to Philadelphia leaving Posey behind believing he was planning to escape, thus cutting off his access to the city and its strong abolitionist network. But as George Washington Park Custis wrote, Posey was an extraordinary man, and on 22 February 1797, he walked away from Mount Vernon only to be seen once more, four years later in New York City.</p>
+            <p>The details of what happened after Posey's self-emancipation remained murky for 218 years until I and a research colleague of mine, Sara Krasne, found his gravesite, and we later discovered that he used the surname "Posey" (surnames were not common among enslaved people). He worked as a cook and caterer until his death on 15 May 1812. The discovery was the apex of all my years of research.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Colonial-style turkey pot pie at City Tavern restaurant in Philadelphia, Pennsylvania (Credit: dbtravel/Alamy)</figcaption>
+            </figure>
+            <p>Although Posey spent nearly three times as long in New York as he did in Philadelphia, it is Philly where he made a name for himself. And his story is a testament to the standard for presidential dining, even now, but also to black contributions to American culinary history. As American chefs over the centuries sought to mimic what Posey created for the president's table, a style of haute American cuisine was born, one that highlighted local ingredients prepared in an elegant, though not lavish, style that was judiciously seasoned with the best additions the world market could offer.</p>
+            <p>"Chef Hercules is America's first celebrity chef, full stop," said Deetz. "His story of climbing the ranks in Washington's kitchen, to his flamboyant fashion style, rigid management style and his eventual escape from bondage, elevate his story to nothing short than legendary. He is an American hero."</p>
+            <p>Ramin Ganeshram is the author of The General's Cook a novel about the life of Hercules Posey. She is the Executive Director of the Westport Museum for History and Culture where, along with her colleague Sara Krasne, she was able to solve the 218 year old mystery of Chef Hercules Posey's life after self-emancipation from George Washington's Mount Vernon.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

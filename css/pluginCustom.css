@@ -1,0 +1,9 @@
+.bx-wrapper{
+    box-shadow: none;
+    border: none;
+    background: none;
+    margin-bottom: 0;
+}
+.bx-next, .bx-prev{
+    text-indent: -9999px;
+}

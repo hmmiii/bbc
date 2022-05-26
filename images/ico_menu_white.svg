@@ -1,0 +1,7 @@
+<svg id="ico_menu_white" xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16">
+  <g id="menu" transform="translate(-2 -4)">
+    <path id="패스_2" data-name="패스 2" d="M20,10H4a2,2,0,0,0,0,4H20a2,2,0,0,0,0-4Z" fill="#fff"/>
+    <path id="패스_3" data-name="패스 3" d="M4,8H16a2,2,0,0,0,0-4H4A2,2,0,0,0,4,8Z" fill="#fff"/>
+    <path id="패스_4" data-name="패스 4" d="M16,16H4a2,2,0,0,0,0,4H16a2,2,0,0,0,0-4Z" fill="#fff"/>
+  </g>
+</svg>

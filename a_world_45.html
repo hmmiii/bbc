@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_world_45" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Asia</mark>
+                <h2>Tonga PM counts mental health 'cost' of disasters</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Tonga's Prime Minister Hu'akavemeiliku Siaosi Sovaleni says his island nation is trying to rebuild the lives of its people and not just its infrastructure, in the wake of the devastating volcanic eruption and tsunami.</strong></p>
+            <p>In an exclusive interview with the BBC, the Prime Minister said his people are still struggling to get over the traumatic experience.</p>
+            <p>The devastation from the tsunami and the volcano is thought to have damaged about 18.5% of Tonga's GDP, which the Tongan leader called "a big hit."</p>
+            <p>And while the financial costs are piling up, the mental health cost for his people is also formidable.</p>
+            <p>"Most of their houses were destroyed. The main thing is to actually make sure they are safe," he said.</p>
+            <p>"But relocation comes with its own challenges. It's not an easy choice - trying to decide whether you stay in a vulnerable place or move to a very new place - leaving behind all the memories. We're looking at whether we relocate them over here, or rebuild where they were.</p>
+            <p>"We recognise that even though we might start rebuilding some of the houses like next month or so, the mental side of it will take a bit longer."</p>
+            <p>It's only been a few months since Tonga's Prime Minister was appointed to the top job. Within weeks, he had to face a crisis on an unimaginable scale.</p>
+            <p>Reliving the moment, the Tongan leader seemed visibly shaken by his memories.</p>
+            <p>"We were at home that night, and you know that explosion was like nothing - I mean I haven't heard something like that. It was terrible - and then all of a sudden, it was nightfall."</p>
+            <p>According to Nasa, the volcanic eruption in Tonga was hundreds of times more powerful than the atomic bomb the US dropped on Hiroshima during World War Two.</p>
+            <p>According to Nasa, the volcanic eruption in Tonga was hundreds of times more powerful than the atomic bomb the US dropped on Hiroshima during World War Two.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>According to Nasa, the volcanic eruption in Tonga was hundreds of times more powerful than the atomic bomb the US dropped on Hiroshima during World War Two.</figcaption>
+            </figure>
+            <p>Tonga says more than four-fifths of the population has been affected by the tsunami and falling ash.</p>
+            <p>"Going through the tsunami that night…moving from daylight to darkness, in over half an hour because of the ash fall, we recognise that's a problem," he told me in an interview for the BBC's Newsday programme.</p>
+            <h3>Covid cases rising</h3>
+            <p>The Tongan leader is also grappling with an outbreak of Covid cases, which have stalled recovery and foreign aid efforts.</p>
+            <p>The Tongan leader is also grappling with an outbreak of Covid cases, which have stalled recovery and foreign aid efforts.</p>
+            <p>He added that the strict containment measures the island nation has taken to prevent Covid cases from rising is taking a toll on relief efforts.</p>
+            <p>"Right now we have 139 covid cases, that's over the last week," he told me.</p>
+            <p>"It would have been nice to actually have those extra hands…to actually help us with some of the efforts," he told me over a Zoom line from his office. "It definitely has some effect on how we are supporting the affected communities."</p>
+            <p>One of the countries that has been offering assistance, besides the US and Australia, has been China, which this week is sending warships with aid.</p>
+            <p>Tonga owes more than a hundred million dollars in debt to China - a small amount for many countries, but for the poor Pacific island state, it's a fortune.</p>
+            <p>"We are discussing how we can move forward addressing the debt we have not just with China, but also our developing partners," he said.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

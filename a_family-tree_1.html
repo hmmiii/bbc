@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_family-tree_1" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Family Tree</mark>
+                <h2>Could on-site childcare lure parents back to the workplace?</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>On-site childcare can cut down on parental stress, up worker engagement and help keep mums in the labour market. Why doesn't everyone offer it?</h3>
+            <p>After almost nine months working remotely due to the pandemic, Jessika, a 35-year-old living in Asheville, North Carolina, US, has been called back to the office - and she has no idea how she’s going to manage childcare.</p>
+            <p>She’s seven-and-a-half months pregnant and has a five-year-old daughter in Kindergarten. Her soon-to-be new-born is on seven different year-long waiting lists for local childcare centres, and her husband, a beer brewer, can’t work from home. Before her April due date, Jessika and her husband have to figure out who can watch the baby while they’re at work.</p>
+            <p>It’s important Jessika keeps her job as an impact associate at a private health trust, since she is the primary breadwinner in the family. “Mine is the income we can’t lose,” she says. What she wants is employer-sponsored on-site childcare. A dedicated space for her baby at the office would give her a way to breastfeed during the day, reduce her out-of-pocket expenses and cut down on extra commuting. Jessika says this set-up would radically reduce her stress, while allowing her to feel excited about going back to the office.</p>
+            <p>“It’s hard to even fathom,” she says, but on-site childcare is “the dream”.</p>
+            <p>As employees continue to quit jobs en masse in search of better ones, employers are scrambling to retain talent and fill empty seats. This has given many workers leverage over both existing and prospective employers to negotiate benefits that better suit their priorities, many of which were reshuffled amid the pandemic.</p>
+            <p>Looking after kids has been particularly difficult to navigate over the last two years, due to school and day-care closures. Among the slew of possible family benefits is a growing demand for on-site childcare - an employer-sponsored day-care centre located in the workplace.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>On-site childcare could help workers get back into the workforce, keep more employees at their jobs and make employers more competitive for candidates (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>Although Jessika’s employer is not currently planning on introducing the benefit, increasingly, some companies are considering - and even opting in - to make her dream a reality. “Now that employers are calling their employees back to the office, we are seeing an uptick in interest for on-site childcare services,” says Stephen Kramer, CEO of US-based childcare provider Bright Horizons.</p>
+            <p>New childcare services could have multiple positive effects, like keeping more working parents with their current employers; enabling primary caregivers of all types who stepped away from the workforce a path to returning; and better positioning companies to retain and attract new talent in a contracted labour market. Now, the question is: will employers heed the writing on the wall and roll out on-site childcare or is it still a pipe dream?</p>
+            <p><strong>A perk that matters most for parents</strong></p>
+            <p>No matter what their employment situation is - remote, hybrid or in-office - working parents have to manage childcare. “It’s absolutely the most important thing on their minds right now,” says Sarah Damaske, an associate professor of sociology, labour and employment relations and women’s studies at Pennsylvania State University, US. This is particularly the case for those with younger kids. </p>
+            <p>Historically, especially in the US, where there aren’t public options for kids under five, parents have largely had to arrange care on their own. And securing a place for children has only become more difficult during the pandemic, with childcare centres forced to close in droves due to capacity limits and a haemorrhaging of workers. </p>
+            <p>Now parents want expanded childcare benefits, says Abakar Saidov, CEO of London-based recruitment platform Beamery. In a September 2021 survey of 5,000 UK and US professionals (at least 56% of them parents), Beamery found the desire for employer-sponsored care benefits outranked “gym memberships, mental wellbeing programs, and even enhanced parental leave pay”. And, according to a 2021 survey commissioned by New York City-based childcare provider Vivvi, 40% of respondents were considering looking for a new job or even leaving the workplace altogether if they couldn't access reliable options.</p>
+            <p>The value of employer-sponsored childcare is well documented. A 2010 Bright Horizons survey of 3,100 parents who had access to on-site facilities showed that they were able to concentrate better at work, were more likely to remain at a job, and could more effectively balance their work and family commitments.  Though these findings are not new, the pandemic has brought them into sharp focus, says Kramer: “In order to be engaged and productive in their jobs, parents need their children to be well cared for.”</p>
+            <blockquote>In order to be engaged and productive in their jobs, parents need their children to be well cared for - Stephen Kramer
+            </blockquote>
+            <p>Another important way that on-site facilities help reduce parental stress is by cutting down on cost and commute. They “don’t have to drive all over for it”, says Damaske, and it “feels safe” because their kids are nearby.</p>
+            <p>And perhaps most importantly, employer-provided on-site facilities can help reduce the burden parents face when trying to find quality care - and quality care that they can actually afford - a factor that has contributed to mothers dropping out of the workforce in record numbers during the pandemic. “One of the things that parents report is that, when childcare is easily accessible and they know it’s high quality, it keeps them, especially mums, in the labour market,” says Damaske. </p>
+            <p><strong>A benefit for employers as well</strong></p>
+            <p>Employers who are currently scrambling to hire and retain talent also stand to gain, Kramer says, by using the benefit to recruit workers, draw employees back to the office and keep their current staff from leaving.</p>
+            <p>These kinds of results don't just apply to full-time salaried workers, either. Damaske says on-site childcare is a move that’s especially impactful when it’s available to workers in all kinds of employment arrangements. Saidov adds accessible, on-site childcare allows hiring managers to consider a larger talent pool, one that ordinarily might not be able to apply due to childcare costs and obligations.</p>
+            <p>Dixie Benca has seen these positive effects in action at her restaurant, McGee's Scot-Irish Pub, in South Carolina, US. After struggling to hire back part-time hourly workers when the pandemic forced her to shut shop for three months, Benca - whose own son is almost three - introduced on-site childcare in July 2021. Now, the business is fully staffed, with applicants on a waiting list for new job openings. Benca checks in with her team regularly, and says that for the parents using the program, “not one of them has even considered going somewhere else to work since they’ve been here.”.</p>
+            <p>She’s also noticed the staff taking advantage of this perk seem more productive, because they’re not worried about what’s going on at home. And when something inevitably does happen, they don’t necessarily need to leave work mid-shift. “One child got a bloody nose recently,” says Benca. “Mom went into [the nursery] to handle it, and in 10 minutes she was back to work.”   </p>
+            <p>For rural families, the need for childcare is particularly acute. The reduction in capacity most day-cares are experiencing is only exacerbating a supply and demand issue that existed in many communities prior to the pandemic, says Kramer - not only do they face the challenge of locating operating care centres, but they also typically have to drive far out of their way to use them.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Dixie Benca (second from right) has implemented on-site childcare her restaurant, McGee's Scot-Irish Pub, in South Carolina, US (Credit: Courtesy of Dixie Benca)</figcaption>
+            </figure>
+            <p>At manufacturing company AriensCo in Brillion, Wisconsin, US, at least 60% of the 1,300 production workers drive in from out of town for their shifts, says Executive Vice President of Administration Steve Servais. Like many in their sector, AriensCo is struggling with hiring and employee turnover. As an incentive to keep them coming to work, the company built its Brillion Early Learning Center less than a mile from the factory in September last year - open from 0445 until 1830 so that production workers on first and second shifts are covered. Services are available to employees at a 50% subsidy and at full cost to the public. </p>
+            <p>The facility has been such a success for parents on staff - who Servais says are notably more energised and engaged with the company - and the wider Brillion community that they’re already considering expansion. “The building was designed in a kind of L-shape format so we could build off the wings if we needed to,” he says. And as AriensCo’s internal employee waiting list grows “that starts to become an easy decision”, especially as the company is actively looking to recruit at least 200 employees across various different roles. “[On-site childcare] is absolutely a differentiator for us,” says Servais.</p>
+            <p><strong>Not a perfect solution (yet)</strong></p>
+            <p>While some companies have begun to offer on-site childcare, many may baulk at the cost and debate the benefit to parents working remotely.</p>
+            <p>Like off-site childcare centres, company-run day-cares (larger than a certain size, determined by state or local governments) must be licensed, insured and staffed with trained caretakers. AriensCo partnered with childcare provider KinderCare to handle most of the operations behind their multi-million-dollar facility, and have had to budget $500,000 (£370,000) annually to cover employee subsidies - costs that could be untenable for many smaller businesses.</p>
+            <blockquote>One child got a bloody nose recently - mom went into [the nursery] to handle it, and in 10 minutes she was back to work - Dixie Benca</blockquote>
+            <p>For others, establishing and maintaining these facilities doesn’t yet make sense from a logistical standpoint, especially when return-to-office dates are still in flux, and some workers may not return at all. Flexible benefits - like paid access to online care-finder platforms, subsidised back-up care (for when babysitters cancel or private day-cares close) and cash allowances to parents - might make more sense for many offices right now, says Saidov.</p>
+            <p>While on-site childcare would certainly ease the transition for parents returning to the office or re-entering the labour market, says Damaske, it’s not a standalone solution. “The problem is tied up in the need for more paid parental and family leave, and more sick days,” too, she says. “As long as there are going to be exposures [from Covid-19 and other illnesses], even in-business childcare centres are going to have to close. Then what happens?”</p>
+            <p>Still, Kramer argues on-site childcare is worth the financial investment regardless of return-to-office plans. At Bright Horizons, he’s seeing both employers with in-office and remote staff offer the benefit. “The fact is, all working parents need childcare,” he says, even if they’re at home for part of the week. And employers need to make sure that “over the long term, they’re solving for those challenges”.</p>
+            <p><strong>‘It’s solved the childcare problem in spades’</strong></p>
+            <p>If workers continue to leave jobs en masse, employers dragging their feet over on-site childcare might be forced to reconsider adding the perk as part of an overall recruiting, retention and return-to-office tool, says Saidov. </p>
+            <p>Looking to the future, Kramer believes on-site childcare is going to become more commonplace. “Employees’ expectations have changed,” he says, and company leaders should really be “thinking about how they can create a more sustainable work environment” going forward. </p>
+            <p>Benca also hopes more companies can find a way to work the cost of childcare into their business plans, like she has. “It’s certainly better financially than to continue to lose good workers,” she says. And while her on-site nursery hasn’t fixed every pandemic struggle the pub has faced, “it’s solved the childcare problem in spades”. </p>
+            <p>In Asheville, Jessika is focusing on the positives: a job she loves, a flexible and understanding boss, and a new baby on the way. Once that day comes, however, her family is going to have to make some tough decisions. </p>
+            <p>“I just keep hoping that we'll get lucky, and that [the baby] will get off the waiting lists for day-care,” she says. “My husband and I have been trying to figure out what would happen if not; maybe he does quit his job.” But if on-site childcare were to become a reality, she’d opt in - “100%, without hesitation”.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

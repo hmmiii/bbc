@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_immune-response_7" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Immune Response</mark>
+                <h2>The disease-resistant patients exposing Covid-19's weak spots</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Some people are unusually resilient to the coronavirus, so scientists are now searching their genes and blood in the hope of finding the pandemic's Achilles' heel.</h3>
+            <p>As a young man, Stephen Crohn could only watch helplessly as one by one, his friends began dying from a disease which had no name. When his partner, a gymnast called Jerry Green, fell desperately ill in 1978 with what we now know as Aids, Crohn simply assumed he was next.</p>
+            <p>But instead as Green became blind and emaciated as the HIV virus ravaged his body, Crohn remained completely healthy. Over the following decade, dozens of friends and other partners would meet a similar fate.</p>
+            <p>In 1996, an immunologist called Bill Paxton, who worked at the Aaron Diamond Aids Research Center in New York, and had been looking for gay men who were apparently resistant to infection, discovered the reason why. When Paxton tried to infect Crohn's white blood cells with the HIV virus in a test tube, it proved impossible.</p>
+            <p>It transpired that Crohn had a genetic mutation - one which occurs in roughly 1% of the population - which prevents HIV from binding to the surface of his white blood cells. Over the following decade, scientists developed an anti-retroviral drug called maraviroc, which would transform the treatment of HIV by mimicking the effect of this mutation. It has proved crucial in helping to control the virus in infected people.</p>
+            <p>While Crohn died in 2013 at the age of 66, his story left a legacy that has stretched well beyond HIV. Over the past two decades, it has inspired a whole new realm of medical science, where scientists look to identify so-called "outliers" like Crohn, who are either unusually resilient or susceptible to disease, and use them as the basis for discovering new treatments.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Studying people who show unusual levels of resistance or susceptiblity to Covid-19 may lead to new treatments (Credit: Ernesto Benavides/Getty Images)</figcaption>
+            </figure>
+            <p>As a geneticist at the Icahn School of Medicine in New York, Jason Bobe has spent much of the past decade studying people with unusual traits of resilience to illnesses ranging from heart disease to Lyme disease. So when the first wave of Covid-19 struck, his initial instinct was to wonder whether there were people out there who the virus was unable to infect.</p>
+            <p>"It just made me think of Stephen Crohn, and that somebody ought to be looking for these outliers in Covid," he says.</p>
+            <p>Bobe's idea was to try and find entire families where multiple generations had suffered severe cases of Covid-19, but one individual was asymptomatic. "Having a whole family together makes it easier to understand the genetic factors at play, and identify genetic factors behind resilience," he says.</p>
+            <p>In the past, identifying such families might have taken years or even decades, but the modern digital world offers ways of reaching people that were inconceivable at the height of the HIV pandemic. Since June 2020, Bobe has been working with the coordinators of Facebook groups for Covid-19 patients and their relatives such as Survivor Corps to try and identify candidate families. He has also created an online platform, where anyone who has had an asymptomatic case of Covid-19 can complete a survey to assess their suitability for inclusion in a study of Covid-19 resilience. </p>
+            <p>Over the coming months, Bobe hopes to sequence the genomes of people who display signs of resilience to Covid-19, to see whether there are any common mutations that appear to help them evade the virus. If so, this may provide inspiration for antivirals which can protect against both Covid-19, and also future coronavirus outbreaks.</p>
+            <blockquote>The idea is to find why some people who are heavily exposed to the virus do not develop Covid-19 and remain serum negative with no antibodies - Mayana Zatz</blockquote>
+            <p>There are some clues already. Researchers have identified an association between type O and rhesus negative blood groups, and a lower risk of severe disease. But while scientists have hypothesised that people with certain blood types may naturally have antibodies capable of recognising some aspect of the virus, the precise nature of the link remains unclear.   </p>
+            <p>But Bobe is far from the only scientist attempting to tease apart what makes Covid-19 outliers unique. Mayana Zatz, director of the Human Genome Research Centre at the University of São Paulo has identified 100 couples, where one person got Covid-19 but their partner was not infected. Her team is now studying them in the hope of identifying genetic markers of resilience. "The idea is to try and find why some people who are heavily exposed to the virus do not develop Covid-19 and remain serum negative with no antibodies," she says. "We found out that this is apparently relatively common. We received about 1,000 emails of people saying that they were in this situation."</p>
+            <p>Zatz is also analysing the genomes of 12 centenarians who have only been mildly affected by the coronavirus, including one 114-year-old woman in Recife who she believes to be the oldest person in the world to have recovered from Covid-19. While Covid-19 has been particularly deadly to the older generations, elderly people who are remarkably resistant could offer clues for new ways to help the vulnerable survive future pandemics.</p>
+            <p>But while cases of remarkable resilience are particularly eye-catching for some geneticists, others are much more interested in outliers at the other end of the spectrum. Over the past couple of months, studies of these patients have already yielded key insights into exactly why the Sars-CoV-2 virus can be so deadly.</p>
+            <p><strong>Disrupting the body's alarm system</strong></p>
+            <p>Last summer, Qian Zhang had arrived for a dental appointment when her dentist turned to her and asked, "How come some people end up in intensive care with Covid-19, while my sister got it and didn't even know she was positive?"</p>
+            <p>As a geneticist working at The Rockefeller University, New York, it was a question that Zhang was particularly well equipped to answer. Over the past 20 years, Rockefeller scientists have probed the human genome for clues as to why some people become unexpectedly and severely ill when infected by common viruses ranging from herpes to influenza. "In every infectious disease we've looked at, you can always find outliers who become severely ill, because they have genetic mutations which make them susceptible," says Zhang.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Pelageya Poyarkova, from Moscow, Russia, turned 100 last year and is one of a few very elderly people to have contracted Covid-19 and recovered (Credit: Valery Sharifulin/Alamy)</figcaption>
+            </figure>
+            <p>When the Covid-19 pandemic began, it soon became clear that the elderly, especially those with underlying health conditions, were disproportionally affected. But the Rockefeller scientists were more interested in the unusual cases, such as the apparently healthy 30-year-olds who ended up on ventilators. In April, they launched an international collaboration called the Covid Human Genetic Effort, partnering with universities and medical centres from Belgium to Taiwan with the aim of identifying the cause.</p>
+            <p>Even as the project began, Zhang already had a culprit in mind. In the 1960s, scientists discovered that our cells have an inbuilt alarm system to alert the rest of the body when it's being attacked by a new virus. "When a virus enters a cell, the infected cell makes proteins called 'type one interferons', which it releases outside the cell," explains Zhang. "All the surrounding cells receive that signal, and they devote everything to preparing to fight that virus. If the infection is serious, then cells will make enough type one interferon that it's released into the bloodstream, and so the entire body knows that it's under attack."</p>
+            <p>But sometimes genetic flaws mean that this system malfunctions. In 2015, Rockefeller scientists identified mutations in young, otherwise healthy people which led to them developing severe pneumonia from influenza. The mutations meant that the interferon response was non-existent. "If the alarm is silenced, then the virus can spread and proliferate much faster within the body," says Zhang.</p>
+            <p>It appears this also plays a role in making some people unexpectedly vulnerable to Covid-19. A series of scientific papers published in September 2020 compared 987 outliers - Covid-19 patients who developed severe pneumonia who were either younger than 50, or older than 50 and without any co-morbidities - to asymptomatic patients. Around 3.5% had a major gene mutation which made it impossible for them to generate an interferon response.</p>
+            <blockquote>There's accumulating evidence that a significant fraction of patients with severe disease are making unusual amounts and types of autoantibodies - Ignacio Sanz</blockquote>
+            <p>Another 10% were found to have self-targeted antibodies in their blood, known as autoantibodies, which bind to any interferon proteins released by cells and remove them from the bloodstream before the alert signal can be picked up by the rest of the body. According to Ignacio Sanz, an expert in immunology at Emory University, this confirms other findings that suggest autoantibodies play a key role in serious cases of Covid-19 by shutting down the body's ability to defend itself against viruses. "There's accumulating evidence that a significant fraction of patients with severe disease are making unusual amounts and types of autoantibodies," he says.</p>
+            <p>Rockefeller scientists now want to use this information to detect people who might have an invisible vulnerability to Covid-19, as well as other respiratory viruses such as seasonal influenza or a new coronavirus pandemic. Zhang explains that anyone who is known to have a genetic mutation impairing their interferon response can be treated with type one interferons, either as a preventative measure or in the early stages of infection. "Since doing the study, we've had three patients in Paris, who already knew they had these genetic mutations," she says. "After testing positive for Covid-19, they received an injection of interferon, and all three outcomes were very good. No severe illness."</p>
+            <p>They are also collaborating with blood banks around the globe to try and identify the true prevalence of autoantibodies which act against type one interferon within the general population. If there is a significant percentage, then tests could be developed that can screen people to find out whether they are unknowingly at much greater risk from a viral infection. "We need to find out just how many people are walking around with these autoantibodies," says Zhang. "Because many of the people in our study looked totally normal, and had no other problems, until they got Covid."</p>
+            <p><strong>Susceptibility genes</strong></p>
+            <p>But autoantibodies and mutations that directly block interferon only seem to account for around 14% of unusually susceptible patients. For the remaining 86%, geneticists believe their vulnerability arises from a network of genetic interactions, which affect them in direct ways when a virus strikes.</p>
+            <p>"Only a small number of people get severely infected because they have a mutation in one main gene," says Alessandra Renieri, professor of medical genetics at the University of Siena. "The majority of patients are following a more complex model in which many genes are co-operating between them, leading to susceptibility to severe Covid-19."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Early in the pandemic doctors began to notice patterns between certain patient blood types and the severity of disease (Credit: Naveen Sharma/Getty Images)</figcaption>
+            </figure>
+            <p>To try and tease this apart, scientists at the University of Edinburgh have studied the genomes of 2,700 patients in intensive care units across the UK, and compared them with those of healthy volunteers. They found that people vulnerable to Covid-19 have five genes - linked to interferon response and susceptibility to lung inflammation - which are either strikingly more or less active than the general population. "This combination means that the virus is able to spread more easily through their body, and they are more likely to incur lung damage as a result," says Erola Pairo-Castineira, one of the geneticists who led the study.</p>
+            <p>Pairo-Castineira predicts that this knowledge will change the kind of first-line treatments that are offered to patients during future pandemics. In particular baricitinib - an anti-inflammatory typically used to treat rheumatoid arthritis was predicted to be an effective Covid-19 treatment by AI algorithms in February 2020. It is known to be effective at suppressing the activity of at least one of the genes driving lung inflammation. In December, a clinical trial showed that a combination of baricitinib and the antiviral remdesivir reduces recovery times in Covid-19 patients.</p>
+            <p>Both the Rockefeller and Edinburgh scientists are now looking to conduct even larger studies of patients who have proved surprisingly susceptible to Covid-19, to try and identify further genetic clues regarding why the virus can strike down otherwise healthy people. This may yield explanations for why those with type A blood groups seem to have a higher risk factor for severe disease.</p>
+            <p>Studying the Covid-19 outliers is also providing insights into other major mysteries of the pandemic, such as why men are markedly more susceptible than women.</p>
+            <p>"These studies have given us a number of ideas about that," says Renieri. "They have shown us how important the interferon response is. This is interesting because after puberty, men experience an increase in testosterone, and testosterone is able to downregulate all the interferon genes. So, for men who already have a defect in these genes, this is going to make them far more vulnerable to a virus."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Finding the genetic variations that give some people high levels of resistance to Covid-19 could benefit those with less resistance (Credit: Dominikus Toro/Getty Images)</figcaption>
+            </figure>
+            <p>While many of these answers are coming too late to make much of a difference during the current pandemic, understanding what makes people unusually resilient or vulnerable will almost certainly save lives during future outbreaks. As the Sars, H1N1, Ebola, and Mers epidemics of the past 20 years have shown us, it is inevitable that novel viruses will continue to spill over from nature, making it all the more vital to develop new ways of identifying those most at risk, and ways to treat them.</p>
+            <p>With this in mind, Zatz's study of Covid-19 resistant centenarians is not only focused on Sars-CoV-2, but other respiratory infections. Her team is using stem cells to convert blood samples from these centenarians into lung tissue, which they will then infect in the lab with multiple other viruses to see whether their genetic mutations also offer protection against these infections. If so, this could potentially yield completely new antiviral drugs, just like the study of Stephen Crohn's white blood cells, all those years ago.</p>
+            <p>"Our aim is to identify genetic variants that confer resilience, not only to Covid-19 but also to other viruses or adverse conditions," says Zatz. "We hope that if we identify protective variants, and find out their role it could open new avenues for treatment."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

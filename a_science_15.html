@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_science_15" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Science</mark>
+                <h2>Climate change: 'We're making wine in Norway'</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Norwegian winemaker Bjørn Bergum talks to his grapevines.</strong></p>
+            <p>"You have to have a connection with them. When I woke up this morning, there was 3cm of snow. I was saying to them: 'Don't be afraid - it will be nice in the afternoon.'"</p>
+            <p>Perhaps Bjørn's plants do need a little extra encouragement; they're growing at 61 degrees north of the equator - far outside the 30-50 degrees latitude traditionally considered optimum for wine production.</p>
+            <p>But climate change is pushing vineyards further north and south towards the poles.</p>
+            <p>The trends are absolutely clear, according to Dr Greg Jones, a climatologist who specialises in grape production and wines and is himself the owner of a winery, Abacela, in Oregon in the US.</p>
+            <p>"A lot of our cool climate limits have changed. They've gone further north in the northern hemisphere, and further south in the southern hemisphere.</p>
+            <p>Slinde Vineyard, which Bjorn runs with his partner Halldis, is at the furthest reaches of these new limits. Positioned by the Sognefjord, Norway's longest and deepest fjord, the vines grow on slopes which catch the sun while facing snow-capped mountains.</p>
+            <p>Bjørn remembers the fjord freezing over in winter during his childhood, but he says that never happens now. He's noticed other changes in the weather over the years.</p>
+            <p>"I can see when it's raining, it's raining more, but when it's warm, it's warmer too."</p>
+            <p>While he worries about the state of the planet and in own country, he acknowledges that, as a wine producer, climate change is working in his favour.</p>
+            <p>That said, it is still a challenge to produce wine this far north.</p>
+            <p>Bjørn says it takes a particular kind of hard work and dedication.</p>
+            <p>"I do everything for my 2,700 babies. I'll stay up in the night if I need to, to help them to survive if a frost is coming."</p>
+            <p>He works with a variety of grapes to create blends that have tropical notes and a minerality that he says comes from the clay soil.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>GETTY IMAGES</figcaption>
+            </figure>
+            <p>A secret ingredient is the special quality of the light this far north.</p>
+            <p>"We have got a lot of light here. That's our advantage. And we have chilly nights. And we have also got the sun from the reflections from the fjord into the steep hillside.</p>
+            <p>"So the grapes, the leaves, take up a lot of aromas and absorb them into the skin and we take them out again, to make nice wines."</p>
+            <p>But it's not easy convincing everyone that Norwegian wine is worth sampling, Bjørn says.</p>
+            <p>"We have got some people telling us: 'Don't tell anyone, but I have never tasted a wine like this. It's really good - maybe the best I've ever tasted.'</p>
+            <p>"But they don't dare to tell it when they go back to Germany or other countries because I think they want to mingle with the society within wines, and then it's not very good to tell they've tasted a really good Norwegian wine."</p>
+            <p>Having won gold medals in Norwegian wine competitions Bjørn is keen to try for some international medals, but says he suspects he'll only stand a chance if the judging is blind.</p>
+            <p>"If they knew the wine came from Norway, they would probably not taste it at all. But when it's blind tasting they have to taste it and you will get what you deserve, I think."</p>
+            <p>Bjørn and Halldis plan to go commercial this year. It's early days and they still have a lot to prove, but Bjørn believes they're forging a whole new wine-making frontier in Norway - with five growers existing within a 20km radius.</p>
+            <p>"We have now established a winegrowing team here in Sognefjord. It's only 20,000 vines, but it's starting up and I think within five or 10 years, we will probably have a little wine district."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Dr Greg Jones says temperatures are rising in all the main wine growing areas</figcaption>
+            </figure>
+            <p>But while climate change may be providing an opportunity for producers in previously unchartered territory, it's providing a serious challenge for those in many of the world's more established wine-making regions.</p>
+            <p>"I did an analysis of 25 of the top places in the world, growing grapes, looking at their long term historical temperature data," says Dr Jones "And every single place warmed during their growing season. And during the winters, there were no places that were not warming, there were no places that were cooling."</p>
+            <p>In Bordeaux, this changing climate is palpable, according to the owner of Chateau George 7 in Fronsac, Sally Evans.</p>
+            <p>"We've had three spring frosty periods in the last five years since I've been here. And before that, probably they hadn't had one for 20 or 30 years. So these extreme climatic events seem to be more and more common. And that is what is difficult."</p>
+            <p>She says global rising temperatures can also be tasted in a glass of wine.</p>
+            <p>"When you've got warmer temperatures, the fruit ripens and there's a lot more sugar in the grapes, which gives you higher alcohol when you ferment. The alcohol in wine probably has increased by about two degrees over the last 30 years.</p>
+            <p>"The sun and the warmth also impacts the acidity of the wine. You need the acidity for the freshness and the overall balance."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Sally Evans says rising temperatures are going to change the taste of wines</figcaption>
+            </figure>
+            <p>Hot, dry summers can also impair the flavour of the fruit, she says.</p>
+            <p>The Bordeaux wine region has introduced new grape varieties which are more suited to these conditions, but Sally says they will take a generation to grow and mature.</p>
+            <p>In the meantime, she says winemakers are adapting - pruning late to avoid Spring frosts and managing the leaf canopy to shade grapes from the hot sun.</p>
+            <p>And she says consumers and producers alike will have to accept that some established wines will have a different character in the future.</p>
+            <p>"What is typical in 30 years may not be worse, in terms of quality - it may even be better - but it may not be the same profile as a wine now."</p>
+            <p>Climate change means producers need to adapt to survive, she says.</p>
+            <p>"I think we'll be seeing in the next five or 10 years, just how that is impacting people and their livelihoods here in Bordeaux.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

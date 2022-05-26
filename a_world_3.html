@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_world_3" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Europe</mark>
+                <h2>Ukraine crisis: Biden and Johnson say still hope for diplomatic agreement</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>The US and UK leaders have said not all hope is lost for a diplomatic solution to the Ukraine crisis but warned the situation remained fragile.</strong></p>
+            <p>In a 40-minute call, Joe Biden and Boris Johnson agreed a deal was still possible despite a chorus of warnings of imminent Russian military action.</p>
+            <p>Russia has always denied plans to invade Ukraine, despite massing more than 100,000 troops on the border.</p>
+            <p>On Monday its foreign minister said diplomacy was "far from exhausted".</p>
+            <p>As part of diplomatic efforts to ward off a possible invasion, Germany's Chancellor Olaf Scholz is to meet Russia's President Vladimir Putin later on Tuesday.</p>
+            <p>After being criticised for a slow initial response, Mr Scholz met the Ukrainian president in Kyiv on Monday, saying there was "no reasonable justification" for the Russian military build-up.</p>
+            <p>More than a dozen nations have urged their citizens to leave Ukraine, and the US has said aerial bombardments could begin "at any time".</p>
+            <p>But in their conversation, Mr Biden and Mr Johnson said there remained a "crucial window" for diplomacy and for Russia to step back from its threats towards Ukraine, according to a Downing Street statement.</p>
+            <p>"The leaders emphasised that any further incursion into Ukraine would result in a protracted crisis for Russia, with far-reaching damage for both Russia and the world," the statement added.</p>
+            <p>Mr Johnson reportedly said that the UK was prepared to do everything it could to help, to which Mr Biden responded: "We're not going anywhere without you pal."</p>
+            <p>Mr Johnson is expected to hold a Cobra meeting on Tuesday to discuss the UK's response to the pressures.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Watch: The 78-year-old Ukrainian grandmother preparing for a Russian invasion</figcaption>
+            </figure>
+            <p>In a defiant speech to the nation on Monday, Ukraine's President Volodymyr Zelensky declared 16 February - a date cited by US officials as a possible day on which Russia could attack - a "day of unity", and praised the strength of the Ukrainian military.</p>
+            <p>"We have something to respond with. We have a great army... this is an army many times stronger than eight years ago."</p>
+            <p>But he said he wanted to resolve all issues through negotiations and diplomacy.</p>
+            <p>The Ukrainian president ended his speech on an optimistic note: "Now you may think it's darkness all around. But tomorrow the sun will rise again over our peaceful sky."</p>
+            <p>In other developments:</p>
+            <ul>
+                <li>The US is urging all Americans in Belarus and the Russian-backed Moldovan breakaway region of Trans-Dniester to leave immediately, citing unusual and concerning Russian military activity around Ukraine</li>
+                <li>The Pentagon said Russia was increasing military deployments near the Ukraine border and that President Vladimir Putin had many options available if he wanted to use military force</li>
+                <li>The US embassy in Kyiv is being completely evacuated and relocated to the western city of Lviv</li>
+                <li>The Russian defence minister told Mr Putin that some of the country's military drills near Ukraine's border had already ended and others were coming to a close</li>
+                <li>Russia's envoy to the European Union, Vladimir Chizhov, said Russia would respond if its citizens started being killed, including in Ukraine's rebel Donbass region. Russia has granted citizenship to more than 700,000 people in Donbas</li>
+                <li>And asked whether there was a chance for agreement with the West, Russia's Foreign Minister Sergei Lavrov said the "possibilities are far from being exhausted, they certainly should not continue indefinitely, but I would suggest continuing and ramping them up".</li>
+            </ul>
+            <p>Mr Lavrov's comments, made in a meeting with Mr Putin, are being seen as a clear concession that talks could ease the tensions. But analysts say that without either side moving over the thorny issue of Ukraine potentially joining Nato, there is still deadlock.</p>
+            <p>The Kremlin says it cannot accept that Ukraine - a former Soviet republic with deep social and cultural ties with Russia - could one day join Nato, and has demanded that this be ruled out. Nato's members have rejected this request.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Where Russia's troops are positioned</figcaption>
+            </figure>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

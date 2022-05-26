@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_science_3" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Science</mark>
+                <h2>Natural History Museum confirms stick insect is male and female</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>A pet stick insect surprised its owner when she noticed it was half male and half female - known as a gynandromorph.</strong></p>
+            <p>Charlie, a green bean stick insect, showed its true colours after it shed its skin at home in Suffolk to reveal the bright green body of a female and brown wings of a male.</p>
+            <p>Experts at the Natural History Museum confirmed it was the "first reported gynandromorph" in that species.</p>
+            <p>Charlie was also a "particularly impressive specimen", they said.</p>
+            <p>Owner Lauren Garfield has donated her pet to the museum in London for scientific research.</p>
+            <p>Charlie, a Diapherodes gigantea, originally looked just like the other stick insects Mrs Garfield keeps and breeds at her home in Waldringfield.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Its owner posted a number of pictures of Charlie on her Facebook page</figcaption>
+            </figure>
+            <p>Stick insects moult several times and when Charlie shed its skin, everyone began to notice the unusual creature.</p>
+            <p>Mrs Garfield's photos of it, with its half bright green female body, together with the brown wings of a male, were spotted by Felixstowe Radio after she wrote a "weird post alert" on her Facebook page about her stick insect.</p>
+            <p>She told the BBC: "I don't usually get attached to the stick insects, but Charlie is different."</p>
+            <p>She said her son was so excited, she took the stick insect into school to show to the other children.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Lauren Garfield photographed a male (l) and female (r) stick insect to show the size and colour differences</figcaption>
+            </figure>
+            <p>Mrs Garfield then got in touch with Paul Brock, an insect expert at the Natural History Museum, and after exchanging photographs, she agreed to carefully post Charlie to them to be examined.</p>
+            <p>Mr Brock said: "It's the first time a gynandromorph has been reported in Diapherodes gigantea - but they are known in culture stocks of some other species."</p>
+            <p>He described Mrs Garfield's stick insect as "noteworthy".</p>
+            <p>"Many rearers of stick insects never see a gynandromorph," he said.</p>
+            <p>"In 1958, an author showed a likelihood of 0.05% for the occurrence of gynandromorphs for the laboratory stick insect Carausius morosus, kept in culture in Europe and elsewhere since 1901.</p>
+            <p>"Lauren's specimen has a largely brown (male) body form on the right hand side, with full length hind-wings. The left hand side is not as broad as a typical adult female, but broader than a normal male and mainly apple green, as in a normal female.</p>
+            <p>"In a gynandromorph, including this individual, the genitalia are not properly formed so although male-like, it would not be able to mate properly with a female."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Charlie has a body length of about 10cm (4in)</figcaption>
+            </figure>
+            <p><strong>Green bean stick insect</strong></p>
+            <ul>
+                <li>Diapherodes gigantea is commonly known as the giant lime green stick insect or green bean stick insect</li>
+                <li>The species is native to three Caribbean islands - St Vincent, Grenada and St Lucia</li>
+                <li>In the wild they feed on the leaves of plants and trees in rainforest areas</li>
+                <li>In more cultivated parts of the islands they feed on guava, cinnamon trees, cashew trees and native herbs</li>
+                <li>In captivity, they are considered relatively easy pets to keep, feeding on the leaves of brambles, eucalyptus or oak</li>
+                <li>The body length of the male is typically between 9cm (3.5in) and 13cm (5in), while females grow to between 14cm (5.5in) and 18cm (7in)</li>
+                <li>Lifespan in captivity is up to one year</li>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

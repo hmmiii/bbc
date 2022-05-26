@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_food_1" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Food</mark>
+                <h2>Is America's best restaurant in Puerto Rico?</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Rooted in the rural tradition of cocinaos (casual cookouts), Bacoa takes rustic whimsy and elevates it into culinary excellence and once-in-a-lifetime meals.</h3>
+            <p>In the wee hours of a debauched night at La Factoría, the world-renowned bar in the Old San Juan neighbourhood of the Puerto Rican capital, one of its owners, Leslie Cofresi, swung his arm around my neck in a half-hug, half-headlock. "Tomorrow," he said, "I will take you to real Puerto Rico. Be ready."</p>
+            <p>The following afternoon we bounced along dirt roads in his Jeep through the countryside's lush tropical hills and mountains for an hour before coming to a red-roofed farmhouse in a clearing by a pond. The restaurant, Bacoa, opened in August 2019; by October of that year, humanitarian chef José Andrés was already visiting and shooting a television show there with Spanish adventurer Jesús Calleja.</p>
+            <p>In January 2022, Lucas Sin, one of Food & Wine's best new chefs of 2021, took a $100 taxi from San Juan straight to a nearly four-hour dinner at Bacoa (then another $100 taxi back), describing the restaurant as "seriously one of the most special restaurants in America".</p>
+            <p>"That was my favourite meal in a long time - maybe the last two years - and certainly probably one of those meals I'm going to remember for the rest of my life, on par with insane technical achievements at fine-dining tasting menus," said Sin, also comparing Bacoa to New York's Blue Hill at Stone Barns, often cited as one of America's best restaurants.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Bacoa has been described as "seriously one of the most special restaurants in America" (Credit: Richard Morgan)</figcaption>
+            </figure>
+            <p>Indeed, the owners jokingly called Bacoa "Finca Azul" (Blue Farm) as, cocktail in hand, I got a tour of their greenhouse, vegetable garden and chicken coop and learned more about the restaurant.</p>
+            <p>Bacoa's trio of chefs divide up the menu: Raúl Correa on desserts and vegetables; René Marichal on fish and meat; and Xavier Pacheco on Creole stews and rice dishes. Although all three are accomplished, food lovers may hold Pacheco in particularly high esteem given he and the late Anthony Bourdain shared three meals together, including one where Pacheco cooked wahoo escabeche (fried wahoo fish marinated in a vinegary sauce) with guanimes (similar to corn tamales) for Bourdain on a boat.</p>
+            <p>Such rustic whimsy is the heart of the restaurant's rough-and-ready charm. "Bacoa is the type of restaurant everyone wants to run and the type of restaurant everyone wants to eat at because it's such fulfilling cooking," said Sin. "Because they're cooking primarily for locals, they don't have to cook through the lens of outsiders who don't know the culture."</p>
+            <p>Rural life in Puerto Rico is built around casual cookouts called cocinaos, often with hogueras (bonfires). They are commercialised as chinchorros, roadside shacks making savoury snacks (such as alcapurrias and empanadas) cooked with a fogón (a hearth or contained fire). A weekend ritual is a chinchorreo, a kind of pub crawl from chinchorro to chinchorro (almost all serve alcohol).</p>
+            <blockquote>For us, keeping it casual is part of the greatness</blockquote>
+            <p>"Most people call Bacoa a glorified chinchorro and I like it that way," said Marichal. "For us, keeping it casual is part of the greatness."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Bacoa’s fogón uses imported oak and local guayabo, mango, and quenepa woods (Credit: Bacoa/Rafael N Ruíz Mederos)</figcaption>
+            </figure>
+            <p>Bacoa's kitchen amplifies its fogón with a burén, traditionally a clay and stone griddle used by the island's native Taíno people. Menus are seasonal, of course, but may include rabbits from a neighbouring farm; brined, smoked, grilled and served in lettuce wraps. Or perhaps a wedge of roasted chayote or pumpkin lashed with olive oil and swaddled in fermented cashew ricotta. And hopefully cazuela, a sweet potato dessert that nods to the island's African roots (I hate sweet potato but could've eaten that dessert all night).</p>
+            <p>Bacoa's continuation and re-popularisation of burén cooking is a win for Puerto Rico and its tourists, according to the most venerated chef on the island, María Dolores de Jesús, who runs a burén restaurant of mostly pre-contact Taíno dishes. "I feel very satisfied to see younger generations connect with older traditions and older realities, older truths," she told me.</p>
+            <p>Bacoa's most winsome metrics are also its most imprecise: the pitter-patter as children scamper and the decibels of their delight. Unlike most fine dining or hipster haunts, Bacoa is for families and other large parties because it serves feasts, not meals.</p>
+            <p>"Any family can go there. It's not $200. It's affordable even though it's a very cool experience," said Crystal Díaz, who runs El Pretexto, a Bacoa-like bed-and-breakfast in the mountains.</p>
+            <p>On my visit, I gorged on morcilla (blood sausage) sandwiches and cod fritters served with "crack" ketchup (lifted by cilantro and slow-cooked garlic), along with gulps of crab funche, a grits-like stew, and crunches of chicharrón (fried pig skin) with citrus horseradish gremolata. I scribbled a note at dinner: "Bacoa puts the epic in epicurean."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Chefs René Marichal, Xavier Pacheco and Raúl Correa opened Bacoa in 2019 (Credit: Bacoa/Rafael N Ruíz Mederos)</figcaption>
+            </figure>
+            <p>"So much of Puerto Rican food is comfort food that has gotten way too comfortable," explained Correa. "It doesn't have to be rice and beans every time. It can be local white beans with shellfish and white wine. Let's try it with oranges. Maybe charred eggplant. It doesn't always have to be the same hearty stew with sausage. It can have a nice local snapper. Maybe goat cheese with smoked cold cucumber. Very simple. Very local. Not very traditional, but still very Puerto Rican."</p>
+            <blockquote>It will probably be the most perfect whole fish you've ever eaten because they're so intentional about technique and ingredients</blockquote>
+            <p>Von Diaz, author of Coconuts and Collards: Recipes and Stories from Puerto Rico to the Deep South, agrees. "Puerto Rican cuisine has been sort of stuck in time for a really long time," she told me. "When you go [to Bacoa] you feel like you've suddenly arrived in another world… You eat something simple - a whole grilled fish - and it will probably be the most perfect whole fish you've ever eaten because they're so intentional about technique and ingredients."</p>
+            <p>Despite Puerto Rico's second-class status as a US colony, Correa sees Bacoa as an act of culinary equality. "In the mainland, you go to Houston and there's a cuisine. You go to Seattle and there's a cuisine. Why should Puerto Rico be any different?" he asked. "We want to experience what everyone else is experiencing, too."</p>
+            <p>Correa has been inspired by yoghurt-marinated lamb in Tel Aviv. Marichal by lamb skewers on a recent visit to Kochi, the Michelin-starred Korean restaurant in New York. And Pacheco by simple bread with tomato in Barcelona. For a while, Bacoa served fried rennet, typically a Brazilian dish.</p>
+            <p>"We get flavours and techniques from all over the world. That doesn't mean our food is global," said Marichal. "It's Puerto Rican with an education. It's Puerto Rican with a passport, with a life in the 21st Century. We just want to get away from what people usually think."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Dishes such as beetroot with walnut and cucumbers and roasted pumpkin dip with pickled peppers are designed to celebrate Puerto Rico (Credit: Bacoa/Rafael N Ruíz Mederos)</figcaption>
+            </figure>
+            <p>Giovanna Huyke, the Boston chef widely regarded as "the Julia Child of Puerto Rico", called such novel thinking Bacoa's "essential escape". Deriding popular Puerto Rican prepared seasonings and bouillon, she complained that "everything tastes the same" before setting Bacoa apart: "Bacoa touches Puerto Rican flavour before tourism. It is finding our character away from our caricature."</p>
+            <p>That character was exemplified in the green plantain tostones served with dewy dollops of caviar that I wolfed down, a frequent appetiser at Bacoa that began when María Mercedes Grubb, another prominent Puerto Rican chef, kept bringing tubs of the delicacy for her hangout sessions with Bacoa's chefs - what she called "the perfect setup".</p>
+            <p>Grubb flagged that chickens, coconuts, plantains, pigs and rice are all invasive species. "When people say 'Puerto Rican', what do they mean?" she asked. "Or what do they think they mean? If you want to have a conversation about authenticity, it will be over a meal of fish and yucca and that's about it. People need to take authenticity with a grain of salt and realise there's so much more [to Puerto Rican cuisine] than mofongo."</p>
+            <p>For me, Bacoa's power lies in its approach to the traveller's quixotic quest for connection despite fleeting itineraries. The day of my visit, I had made plans for later that evening, but as hours passed, my interest in being elsewhere dwindled and then vanished, like a romance.</p>
+            <p>As my afternoon with Cofresi tipped into night, swirls of cigar smoke added to the sense that this was gastronomic Brigadoon, a once-in-a-lifetime meal for me and a Sunday for him. I wondered: what if the best US restaurant is in the Puerto Rican rainforest?</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Casual, unpretentious and affordable, Bacoa is ideal for families (Credit: Richard Morgan)</figcaption>
+            </figure>
+            <p>"I can't believe this place is real," I told Pacheco, as the island's tiny iconic tree frogs, the coquis, sang their signature lullaby from the moonlit woods around us.</p>
+            <p>"Bacoa is an idea but it's also real," Pacheco replied. "If that makes you confused or uncomfortable, that's OK. Have fun going back in time to a year when you would be more comfortable. But the future is for us. And I can tell you a secret: the present is for us, too."</p>
+            <p>BBC.com's World's Table "smashes the kitchen ceiling" by changing the way the world thinks about food, through the past, present and future.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

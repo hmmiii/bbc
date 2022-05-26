@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_future-planet_1" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Future Planet</mark>
+                <h2>The animals that detect disasters</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>For millennia, people across the globe have reported alarmed animal behaviour in the run-up to natural disasters. Could these signals be used to warn us of impending catastrophes?</h3>
+            <p>In 2004, a tsunami triggered by a 9.1 magnitude undersea quake off Indonesia decimated coastal communities around the Indian Ocean, killing at least 225,000 people across a dozen countries. The huge death toll was in part caused by the fact that many communities received no warning.</p>
+            <p>Local manmade early warning systems, such as tidal and earthquake sensors, failed to raise any clear alert. Many sensors were out of action due to maintenance issues, while many coastal areas lacked any tsunami siren warning systems. Haphazard communication also failed to provide warnings, with many text messages failing to reach mobiles in threatened areas or going unread.</p>
+            <p>Yet in the minutes and hours before surging walls of water up to 9m (30ft) high smashed through coastlines, some animals seemed to sense impending peril and make efforts to flee. According to eyewitness accounts, elephants ran for higher ground, flamingos abandoned low-lying nesting areas, and dogs refused to go outdoors. In the coastal village of Bang Koey in Thailand, locals reported a herd of buffalo by the beach suddenly pricking their ears, gazing out to sea, then stampeding to the top of a nearby hill a few minutes before the tsunami struck.</p>
+            <p>"Survivors also reported seeing animals, such as cows, goats, cats and birds, deliberately moving inland shortly after the earthquake and before the tsunami came," says Irina Rafliana, previously part of an advisory group for the United Nations International Strategy for Disaster Risk (UNISDR) and now a researcher at the German Development Institute in Bonn. "Many of those who survived ran along with these animals or immediately after."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>According to eyewitness accounts, elephants ran for higher ground ahead of the 2004 Indian Ocean tsunami (Credit: CHAIDEER MAHYUDDIN/Getty)</figcaption>
+            </figure>
+            <p>Rafliana recounts similar stories tied to her field work around other disasters, such as the 2010 tsunami generated by a subsea quake near Sumatra, which killed nearly 500 people on the Mentawai Islands. Here too, however, some animals, such as elephants, were reported to have responded as if possessing some kind of early knowledge of the event. Just days ago, a newly re-released turtle made a sudden U-turn two days before January's volcanic eruption in Tonga.</p>
+            <p>Early warning systems do not exist in many areas struck regularly by natural disasters. In 2017, the World Meterological Organisation found that the governments of around 100 countries still lack early warning systems for natural disasters to which they were prone.</p>
+            <p>But these accounts about animal behaviour before disasters have prompted some researchers to devote serious scientific attention to the theory that animals may have inbuilt systems which alert them to impending natural disasters. It raises an intriguing question - could animals provide natural early warning systems for humans?</p>
+            <blockquote>Survivors also reported seeing animals, such as cows, goats, cats and birds, deliberately moving inland shortly after the earthquake and before the tsunami came - Irina Rafliana</blockquote>
+            <p>The earliest recorded reference to unusual animal behaviour prior to a natural disaster dates back to 373 BC, when the Greek historian Thucydides reported rats, dogs, snakes and weasels deserting the city of Helice in the days before a catastrophic earthquake. Other reports dot history. Minutes before the Naples quake of 1805, oxen, sheep, dogs and geese supposedly started making alarm calls in unison, while horses were said to have run off in panic just prior to the San Francisco earthquake of 1906.</p>
+            <p>Even with advanced technology it can be difficult to detect many kinds of impending natural disasters. In the case of earthquakes, for example, seismic sensors lurch into jolted squiggles only as the earth-juddering shocks are actually happening. Making reliable predictions requires precursor signals - and, as yet, scientists haven't found any signals that seem to occur consistently before big quakes. Hence the growing willingness of some scientists to consider more unorthodox warning signals - such as animal behaviour.</p>
+            <p>"Even with all the technology available today, we are not able to properly predict earthquakes or most natural catastrophes," says Charlotte Francesiaz, leader of an ornithological team at the French Biodiversity Office (OFB), and part of the Kivi Kuaka project, which is examining how migratory birds crossing the Pacific seem able to dodge storms and other hazards.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Horses were said to have run off in panic ahead of San Francisco earthquake of 1906 (Credit: Bernard Friel/Getty)</figcaption>
+            </figure>
+            <p>One of the most important investigations into how animals could predict disasters was carried out five years ago by a team led by Martin Wikelski from the Max Planck Institute of Animal Behavior in Germany. The study involved recording the movement patterns of different animals (cows, sheep and dogs) - a process known as biologging - on a farm in the earthquake-prone region of the Marches in central Italy. Collars with chips were attached to each animal, which sent movement data to a central computer every few minutes between October 2016 and April 2017.</p>
+            <p>During this period, official statistics recorded over 18,000 quakes in the region, from tiny tremors measuring just 0.4 magnitude up to a dozen quakes notching 4 or above - including the devastating magnitude 6.6 magnitude Norcia earthquake.</p>
+            <p>The researchers found evidence that the farm animals began to change their behaviour up to 20 hours before an earthquake. Whenever the monitored farm animals were collectively 50% more active for more than 45 minutes at a stretch, the researchers predicted an earthquake with a magnitude above 4.0. Seven out of eight strong earthquakes were correctly predicted in this way.</p>
+            <p>"The closer the animals were to the epicentre of the impending shock, the earlier they changed their behaviour," Wikelski said in 2020 when the study was released. "This is exactly what you would expect when physical changes occur more frequently at the epicentre of the impending earthquake and become weaker with increasing distance." </p>
+            <p>"The closer the animals were to the epicentre of the impending shock, the earlier they changed their behaviour," Wikelski said in 2020 when the study was released. "This is exactly what you would expect when physical changes occur more frequently at the epicentre of the impending earthquake and become weaker with increasing distance." </p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Scientist Martin Wikelski tagged goats to see if they could detect volcanic eruptions at Mount Etna (Credit: Christian Ziegler/MPI-AB)</figcaption>
+            </figure>
+            <p>Over in South America, behavioural ecologist Rachel Grant - now at London South Bank University - has found similar results. She carried out biologging of animal movement patterns using motion-triggered cameras inside Yanachaga National Park in the Peruvian Andes over a period which included the magnitude 7.0 Contamana earthquake in 2011.</p>
+            <p>"The number of animals recorded on the camera traps started to decrease about 23 days before the earthquake - with the decrease accelerating eight days prior to the earthquake," Grant said in her 2015 paper on the research. "On days 10, six, five, three and two prior to the earthquake - and on the day of the earthquake - no animal movements were recorded, which is highly unusual."</p>
+            <p>Crucially, Grant also found evidence of what might be triggering the changes in local animal behaviour, in the shape of a series of strong perturbations in local atmospheric electric charges every two to four minutes, starting two weeks before the earthquake. A particularly large fluctuation was recorded around eight days before the Contamana earthquake - coinciding with the start of the second stage of the animals disappearing from view. </p>
+            <blockquote>Even with all the technology available today, we are not able to properly predict earthquakes or most natural catastrophes - Charlotte Francesiaz</blockquote>
+            <p>Scientists are now exploring whether these electromagnetic perturbations in the atmosphere prior to earthquakes could be a warning sign of impending quakes which animals may be sensing.</p>
+            <p>Earthquakes are invariably preceded by a period when severe stresses arise in deep rock - stresses known to create electronic charges called "positive holes". These highly mobile electronic charge carriers can flow quickly from the crust to the Earth's surface, where they ionise air molecules above where they appear. Such ionisation has been noted prior to quakes across the globe. As these positive holes flow, they also generate ultra-low frequency electromagnetic waves, providing an additional signal that some animals may be able to pick up.</p>
+            <p>"Earthquake precursors aren't well documented scientifically," says Matthew Blackett, associate professor in physical geography and natural hazards at Coventry University. But some scientists theorise that animals could have evolved a seismic escape mechanism, he says. "Perhaps they detect pressure waves before earthquakes arrive, perhaps they detect changes in electric field as fault lines when rock starts to compress. Animals also contain a lot of iron, which is sensitive to magnetism and electric fields."</p>
+            <p>Positive holes could also cause certain toxic chemicals to appear before quakes. For example, if they come into contact with water, they can trigger oxidation reactions which create the bleaching agent hydrogen peroxide. Chemical reactions between the charge carriers and organic matter in the soil could trigger other unpleasant products such as ozone.</p>
+            <p>Meanwhile, days before the 7.7 magnitude Gujarat earthquake in India in 2001, a surge in carbon monoxide levels was picked up by satellites over a 100 square kilometre (39 sq mile) region centred on what turned out to be the epicentre of the eventual quake. Scientists have suggested that carbon monoxide gas could be forced out of the earth due to the build-up of stress in rocks as quake pressure builds.</p>
+            <p>Many animals, of course, are equipped with highly developed sensory apparatus that can read an array of natural signals on which their lives may depend - so it seems perfectly possible that some animals may be able to pick up any earthquake precursors. Unpleasant chemicals could be sniffed out, low frequency waves picked up, and ionised air sensed by sensations in fur or feathers.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A US navy helicopter flies over Sumatra, Indonesia after the 2004 tsunami (Credit:Jordon R. Beesley/US Navy/Getty)</figcaption>
+            </figure>
+            <p>With earthquakes so difficult to anticipate, these findings beg the question: could humans actually predict earthquakes by animal observations, and thus be able to warn people they are coming?</p>
+            <p>In a 2020 paper, Wikelski and his colleagues set out a prototype for an earthquake early warning system using animal activity monitoring sites, based on data from his research in Italy. He estimated that farm animals above the point of origin of the imminent earthquake which were able to perceive it in some way would show activity 18 hours before it hit. Animals situated 10km (6.2 miles) away from the epicentre should show warning signs eight hours later, followed by animals at farms 20km (12.4 miles) away a further eight hours later. "If correct, this would indicate an earthquake is imminent within the next two hours," he says.</p>
+            <p>Researchers will need to observe a larger number of animals over longer periods of time in different earthquake zones around the world before they can be used to predict earthquakes. For this, Wikelski and others are turning to the global animal observation system Icarus on the International Space Station to gather movement data for animals globally.</p>
+            <blockquote>With earthquakes so difficult to anticipate, these findings beg the question: could humans actually predict earthquakes by animal observations, and thus be able to warn people they are coming?</blockquote>
+            <p>Icarus (International Cooperation for Animal Research Using Space) is an initiative set up by a global collaboration of scientists in 2002. It aims to provide an accurate global observation system for an array of tagged small animals (such as birds) to provide data and clues about interactions between the planet's animal life and its physical systems.</p>
+            <p>China, meanwhile, has already created a Quake Alert system based at its earthquake bureau in Nanning, monitoring the behaviour of animals much closer to the ground - specifically, snakes in farms across a wide quake-prone region. Snakes possess a powerful array of sensory mechanisms geared to detecting tiny changes in aspects of their environment, and it was in part sudden changes in the behaviour of snakes and other animals which prompted authorities to evacuate the Chinese city of Haicheng in 1975, just before a major quake struck - an action that saved countless lives.</p>
+            <p>"Of all the creatures on the earth, snakes are perhaps the most sensitive to earthquakes," Jiang Weisong, then director of the Nanning bureau, told China Daily in 2006. "When an earthquake is about to occur, snakes will move out of their nests, even in the cold of winter."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Jiang Weisong, director of the Earthquake Bureau at Nanning, China holding one of the snakes that he thinks may help to predict earthquakes (Credit: BBC Horizon)</figcaption>
+            </figure>
+            <p>Jiang Weisong, director of the Earthquake Bureau at Nanning, China holding one of the snakes that he thinks may help to predict earthquakes (Credit: BBC Horizon)</p>
+            <p>In 2014, scientists tracking golden-winged warblers in the US recorded a startling example of what's known as an evacuation migration. The birds suddenly took off from their breeding ground in the Cumberland Mountains of eastern Tennessee and flew 700km (435 miles) away - despite having just flown 5,000km (3,100 miles) in from South America. Shortly after the birds left, a terrifying swarm of over 80 tornadoes struck the area, killing 35 people and causing over $1bn (£740m) in damage.</p>
+            <p>The suggestion seemed clear - the birds had somehow sensed the twisters coming from more than 400km (250 miles) away. As to how, initial focus is on infrasound - low frequency background sounds inaudible to humans, but present throughout the natural environment.   </p>
+            <p>"Meteorologists and physicists have known for decades that tornadic storms make very strong infrasound that can travel thousands of kilometres from the storm," Henry Streby, a wildlife biologist at the University of California, Berkeley, said at the time. He further noted that infrasound from severe storms travels at a frequency the birds would have been well attuned to hearing.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Kivi Kuaka project fits birds with GPS trackers to observe how they respond to natural hazards (Credit: Kivi Kuaka)</figcaption>
+            </figure>
+            <p>Detecting variation in infrasound is also thought to be the mechanism by which migrating birds seem able to dodge storms on vast ocean crossings - an idea now being tested by the ongoing Kivi Kuaka study in the Pacific Ocean.</p>
+            <p>This study was inspired by a radio programme French navy officer Jérôme Chardon listened to about a bird called the bar-tailed godwit, which every year migrates 14,000km (8,700 miles) between New Zealand and Alaska. As an experienced coordinator of rescue operations across Southeast Asia and French Polynesia, Chardon knew how treacherous this journey would be. Fierce storms frequently lash the Pacific and its diaspora of isolated island communities. So how were bar-tailed godwits seemingly able to make their annual journeys without being hindered by these ever-present stormy hazards?</p>
+            <p>Set up in January 2021, the project involves a team from France's National Museum of Natural History fitting 56 birds of five different species with GPS trackers to follow the routes they take across the ocean. The International Space Station provides oversight, receiving signals from the birds as they fly - and observing how they respond to natural hazards en route. Their tags also collect meteorological data to help improve climate modelling and weather forecasting across the Pacific.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Kivi Kuaka project is tracking birds movements to understand whether their behaviour could warn against hazards like tsunamis (Credit: R Lorrilliere/Kivi Kuaka)</figcaption>
+            </figure>
+            <p>Kivi Kuaka will also look at whether bird behaviour could warn against more infrequent hazards like tsunamis, which are known to generate distinctive infrasound patterns that race ahead of the actual waves. The project aims to test birds' possible contribution to an early warning system informing the imminent arrival of a typhoon or tsunami, says Francesiaz. The team is currently in the process of retrieving GPS tags on curlews to examine whether they reacted to an infrasound wave registered by French meteorological balloons in the Pacific a few hours after the recent volcano eruption in Tonga.</p>
+            <p>Samantha Patrick, a marine biologist at the University of Liverpool, is also examining infrasound as a method by which birds can detect and avoid natural hazards - and, by extension, perhaps alert humans too. "I think we can say it is possible that birds can sense changes in infrasound," she says. Patrick is currently looking at whether albatrosses show a preference for areas of high or low infrasound, although the analysis is not yet complete.</p>
+            <p>Not all experts think that animal early warning systems are a viable option for predicting disasters. And even if they do help, animal movements alone are unlikely to be enough to provide: people will need to rely on a combination of early warning signals to get the full picture.</p>
+            <p>Still, while we may not be able to talk to animals quite yet, perhaps it's time to pay more attention to their warnings.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

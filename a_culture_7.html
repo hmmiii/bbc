@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_culture_7" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Culture</mark>
+                <h2>As-Salt: The Middle East's city of tolerance and generosity</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>This small Jordanian city where minarets and church towers share the skyline was deemed a "place of tolerance and urban hospitality" by Unesco.</h3>
+            <p>The dawn call to prayer echoed through a still sleepy valley before the first rays of sun started illuminating golden limestone houses clustered on the slopes of three mountains.</p>
+            <p>"Allahu Akbar" ("God is great"), the voice of the muezzin rose up above the domes of the city. "Hayya 'ala-s-salah" ("Hurry to the prayer"), called loudspeakers from the minarets that dot the rugged landscape.</p>
+            <p>Moments later, the city's winding streets filled with the ring of church bells announcing the morning mass.</p>
+            <p>We were in As-Salt, the Middle East's newest Unesco World Heritage site. This small Jordanian city where minarets and church towers share the skyline was deemed a "place of tolerance and urban hospitality".</p>
+            <p>Located at the crossroads of trade and pilgrimage between the Mediterranean Sea and the Arabian Peninsula, As-Salt grew into a thriving town in the late 19th Century during a period of reforms intended to "modernise" the Ottoman Empire.</p>
+            <p>In the city's historic centre, hundreds of heritage limestone buildings - dating to the late 19th and the early 20th Centuries - with arched doorways, carved columns and high windows glowed in the sun.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Thaira Arabiyat embroiders the hems of a scarf in her shop (Credit: Marta Vidal)</figcaption>
+            </figure>
+            <p>"The yellow stone buildings are important, but they're not the reason why As-Salt is so unique," said Thaira Arabiyat, a shop owner who trains local women in traditional needlework, as she poured me a cup of coffee fragrant with cardamom.</p>
+            <p>We sat surrounded by embroidered dresses and scarves at her small shop in the city centre, where I first found her sewing the knotted fringes of a shemagh, a traditional Jordanian scarf. She interrupted her work to tell me more about her hometown.</p>
+            <blockquote>What makes this city so special is the people here, their kindness</blockquote>
+            <p>"What makes this city so special is the people here, their kindness," said Arabiyat after filling my cup a second time. She then asked me, "Did you have breakfast? Come eat with me."</p>
+            <p>While exploring the city's winding streets and narrow alleys, I received repeated invitations for lunch, coffee or tea. Traditions of hospitality and generosity towards visitors have deep roots in As-Salt.</p>
+            <p>For centuries, the city was an important stop for merchants and pilgrims on their way to Jerusalem, Damascus, Baghdad or Mecca. Residents would welcome visitors and offer them food and lodging.</p>
+            <p>In the 19th Century, As-Salt became the region's administrative headquarters, attracting merchants from different religious and cultural backgrounds. Many ended up settling in the hillside town, creating prosperous neighbourhoods where local Bedouin tribes mixed with Levantine traders and craftsmen.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>As-Salt has about 650 significant historical buildings exhibiting a blend of European and Ottoman styles (Credit: Marta Vidal)</figcaption>
+            </figure>
+            <p>"As-Salt became a meeting place between east and west, between the desert and the urban centres," said Ayman Abu Rumman, former director of tourism at the local Balqa governorate (one of Jordan's 12 governorates), adding that the city's diversity is reflected in its architecture.</p>
+            <p>The best example of the city's blend of Ottoman styles, European influences and local traditions might be the sumptuous Abu Jaber House, built in local limestone with Italian frescoed ceilings, Art Nouveau stained glass windows, ornamented columns and ceramic tiles from Syria. The house belonged to Abu Jaber, a wealthy merchant family who settled in As-Salt at the end of the 19th Century. In 2009, the building was converted into a museum that takes visitors through the history and traditions of the Ottoman town.</p>
+            <p>When Amman was chosen the capital of the Emirate of Transjordan in 1928, As-Salt lost its regional importance. Spared the intense urbanisation of Amman, As-Salt has managed to retain its character.</p>
+            <p>For Jordanian architect Rami Daher, who prepared the city's nomination file for World Heritage listing, the city is unique not just because of the historic limestone buildings, but also because of the way it has preserved traditions of hospitality and tolerance over the centuries.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>As-Salt residents put up a sofa on the road where they meet to play manqala, a popular board game (Credit: Marta Vidal)</figcaption>
+            </figure>
+            <p>"The topography of the city has fostered a sense of community and proximity. Neighbours live very close to each other and support each other in many different ways," he said.</p>
+            <p>A network of interlinked stairways, shared courtyards and public squares has encouraged the development of a tolerant, multi-faith society and brought a sense of belonging to a shared space. Most of the traditional buildings feature communal courtyards or terraces where neighbours can cook, eat and drink together.</p>
+            <p>"People here still live like they are part of the same family, there is no segregation between them," said Abu Rumman as we sat together in a room at the Abu Jaber museum with a panoramic view of the city's mountains.</p>
+            <p>He gestured towards the square across from the museum, where elderly men from different backgrounds meet every day to play rounds of backgammon and manqala, an ancient board game popularised by the Ottomans. He then pointed to the mosque and church in front of it.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Hammam street is a busy alleyway full of shops and is named after old Turkish baths (Credit: Marta Vidal)</figcaption>
+            </figure>
+            <p>"The church is facing the mosque and they share the same entrance," he said. "Muslims and Christians participate in each other's celebrations. They share what they have with their neighbours."</p>
+            <p>This is perhaps most evident in the city's oldest church. Built in 1682 around a cave where it is said Saint George appeared to a shepherd, the church is known in Arabic as Al-Khader, an Islamic figure syncretised with Saint George in the region.</p>
+            <blockquote>Christians and Muslims both go there to pray, everyone is welcome</blockquote>
+            <p>The church's vaulted stone interior is full of icons and mosaics that depict Saint George slaying dragons, and what remains of the cave is visited by people from different background who come to light candles and leave handwritten wishes.</p>
+            <p>"Christians and Muslims both go there to pray, everyone is welcome," said Sabreen Dababneh, who works in the neighbouring Orthodox Church, Dormition of Virgin Mary.</p>
+            <p>Dababneh told me this interfaith harmony is what makes As-Salt so special.</p>
+            <p>"The church keeper who works with me, Ali, is a Muslim," she said. "There are no differences between us. We live here as brothers and sisters."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

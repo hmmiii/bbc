@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_in-pictures_5" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>In Pictures</mark>
+                <h2>Conor McDonnell: 'One gig changed the trajectory of my life'</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Photographer Conor McDonnell has captured many memorable moments in music, nature and pop culture.</strong></p>
+            <p>Countless tours with Calvin Harris. Documenting artwork for Sir David Attenborough. The wedding of Kim Kardashian and Kanye West.</p>
+            <p>But it all started in 2008 when, as a 16-year-old, he turned up to a gig at the Manchester Academy with a basic camera in his hand.</p>
+            <p>McDonnell grew up in Lydiate in Sefton, Merseyside, and initially wanted to become a professional swimmer, but when an injury thwarted his plans, he took a dive into the photography world instead.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Photographing The Subways gave McDonnell a taste of the career path he wanted to follow</figcaption>
+            </figure>
+            <p>Getting no success with getting access to live shows, he contacted his favourite band, The Subways.</p>
+            <p>The group gave him a press pass for their gig in Manchester and he got started.</p>
+            <p>"Looking back, some of those photographs were really bad," he said.</p>
+            <p>"They were so blurry."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>McDonnell has become known for capturing unique moments at shows</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>He now regularly works with some of the biggest names in music</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>McDonnell has now expanded into the wider field of entertainment, capturing the likes of James Corden and David Beckham</figcaption>
+            </figure>
+            <p>However, the experience had him hooked and he said the show "changed the trajectory of my life into this crazy world".</p>
+            <p>"I genuinely do not know what I would be doing with my life if it was not for the band giving me that pass," he added.</p>
+            <p>As his experience grew, he gradually began getting paid and photographing festivals and bands at bigger venues, capturing the likes of Ellie Goulding, Niall Horan, Arctic Monkeys, Red Hot Chilli Peppers and Mac Miller along the way.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>DJ Calvin Harris has had McDonnell join him on tour since 2014</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Working so closely with Harris has allowed McDonnell to capture some intimate moments off stage too</figcaption>
+            </figure>
+            <p>In 2013, he took another chance on a direct approach and emailed Calvin Harris, asking if he could take pictures of the DJ's headline show at Creamfields festival.</p>
+            <p>"Amazingly, he said yes... and the photographs ended up in his album," the London-based photographer said.</p>
+            <p>He has accompanied Harris on every tour since, because, as the DJ said, McDonnell had "an interesting way of capturing the moment without it looking contrived or manipulated".</p>
+            <p>"And most importantly, [he] got my good side," Harris joked.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Working with Sir David Attenborough has taken McDonnell across the world</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>As a WWF ambassador, McDonnell has travelled to remote areas such as Nome in Alaska</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>McDonnell said it was an "absolute honour and privilege" to work with Sir David</figcaption>
+            </figure>
+            <p>Away from music, McDonnell has turned his focus to wildlife photography and become an ambassador for the WWF conservation charity.</p>
+            <p>This led to him have the "absolute honour and privilege" of working with Sir David Attenborough on the Netflix documentary series Our Planet.</p>
+            <p>The broadcaster and McDonnell have since completed further trips for conservation work, which the photographer said has been "incredible".</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Nature photography has pushed McDonnell, although he said it shares some similarities with gig photography</figcaption>
+            </figure>
+            <p>And though photographing musk oxen in the wilds of Alaska may seem a long way from the front of a sweaty gig, he says his experience with live music has given him the skills needed to capture wildlife.</p>
+            <p>"With a band on stage, I am totally at their mercy with lighting and movement," he said.</p>
+            <p>"It is exactly the same with nature photography."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_business_23" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Business</mark>
+                <h2>The AI software that could turn you in to a music star</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>If you have ever dreamed of earning money from a stellar music career but were concerned you had little talent, don't let that put you off - a man called Alex Mitchell might be able to help.</strong></p>
+            <p>Mr Mitchell is the founder and boss of a website and app called Boomy, which helps its users create their own songs using artificial intelligence (AI) software that does most of the heavy lifting.</p>
+            <p>You choose from a number of genres, click on "create song", and the AI will compose one for you in less than 30 seconds. It swiftly picks the track's key, chords and melody. And from there you can then finesse your song.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Boomy app can be used on the move</figcaption>
+            </figure>
+            <p>You can do things such as add or strip-out instruments, change the tempo, adjust the volumes, add echoes, make everything sound brighter or softer, and lay down some vocals.</p>
+            <p>California-based, Boomy, was launched at the end of 2018, and claims its users around the world have now created almost five million songs.</p>
+            <p>The Boomy website and app even allows people to submit their tracks to be listed on Spotify and other music streaming sites, and to earn money every time they get played.</p>
+            <p>While Boomy owns the copyright to each recording, and receives the funds in the first instance, the company says it passes on 80% of the streaming royalties to the person who created the song.</p>
+            <p>Mr Mitchell adds that more than 10,000 of its users have published over 100,000 songs in total on various streaming services.</p>
+            <p>"Eighty-five per cent of our users have never made music before," Mr Mitchell tells the BBC. "And now we've got people who were paying their rent, and augmenting their income, with $100 (£74) or $200 a month from Boomy during Covid."</p>
+            <p>But, how good are these Boomy created songs? It has to be said that they do sound very computer generated. You wouldn't mistake them for a group of people making music using real instruments.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>There are a number of playlists of Boomy created songs on Spotify</figcaption>
+            </figure>
+            <p>However, using AI to help compose music isn't exactly new: US classical composer, David Cope, developed such a software system back in the 1980s, following some episodes of writer's block.</p>
+            <p>One day he set it up to write compositions similar to those by Johann Sebastian Bach. Mr Cope then popped out for a sandwich, and returned to find that the computer had composed 5,000 Bach-inspired chorales. These were later released on an album called Bach by Design.</p>
+            <p>More recently, in 2019, Berlin-based US electronic music composer, Holly Herndon, made an album called Proto in collaboration with an AI system called Spawn that she had co-created. Ms Herndon is an expert in this field, and has a doctorate in music and computing from Stanford University in the US.</p>
+            <p>Mr Mitchell says that what has changed in recent years is that technological advancements in AI have meant song-writing software has become much cheaper.</p>
+            <p>So much so that Boomy is able to offer its basic membership package for free. Other AI song creator apps, such as Audoir's SAM, and Melobytes, are also free to use.</p>
+            <p>While AI composition inevitably grabs the headlines because of its novelty, new tech is continuing to change many other aspects of the wider music industry.</p>
+            <p>When the City and County of San Francisco imposed strict lockdowns back in 2020, Matthew Shilvock says that keeping an opera company going proved "extremely challenging".</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Matthew Shilvock says that the San Francisco Opera needed a video conferencing system that allowed the singers and musicians to perform together remotely in real time</figcaption>
+            </figure>
+            <p>He is general director of the San Francisco Opera, and it could no longer have "two singers, or even a singer and pianist, in the same room".</p>
+            <p>But when he tried running rehearsals with his performers online, "traditional video conference platforms didn't work", because of the latency, or delays in the audio and video. They were out of sync.</p>
+            <p>So, Mr Shilvock turned to a platform called Aloha that has been developed by Swedish music tech start-up Elk. It uses algorithms to reduce latencies.</p>
+            <p>Elk spokesman, Björn Ehler, claims that while video platforms like Zoom, Skype, and Google Meet have a latency of "probably 500 to 600 milliseconds", the Swedish firm has got this down to just 20.</p>
+            <p>Mr Shilvock says that, when working remotely, Aloha has "allowed me to hear a singer breathe again".</p>
+            <p>He adds that looking to wider tech to help solve problems is only natural for an opera house with Silicon Valley on its doorstep. "The energy and the drive to find solutions through technology is just so much part of the DNA of this city."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Aloha allows musicians to play together with very little delay to the sound and video</figcaption>
+            </figure>
+            <p>Meanwhile in Paris, Aurélia Azoulay-Guetta says that, as an amateur classical musician, she "realised how painful it is to just carry, store, and travel with a lot of physical sheet music for rehearsals, and how much time we waste".</p>
+            <p>So she and her fellow co-founder "decided to junk our jobs" and launch a start-up called Newzik, which allows music publishers and composers to digitally distribute their sheet music to orchestras.</p>
+            <p>Ms Azoulay-Guetta says that her solution replaces the stress of musicians having to turn physical, paper pages with their hands during performance or rehearsal. Instead, they now turn a turn a digital page via a connected pedal.</p>
+            <p>And if the arrangement of a concerto or other composition is tweaked - which can be done by using an electronic pen on the app screen - this will update on every orchestra member's copy of the electronic music sheets.</p>
+            <p>Ms Azoulay-Guetta says that this feature particularly helped when concerts finally resumed after lockdowns, because orchestras and ensembles faced last minute programme changes - for instance, if musicians were absent, self-isolating.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Newzik allows users to update the sheet music with an electronic pen</figcaption>
+            </figure>
+            <p>Other tech firms are focusing on helping musicians more effectively deal with their paperwork. One such company is Portuguese start-up Faniak.</p>
+            <p>Founder and chief executive, Nuno Moura Santos, describes its app as "like a Google Drive on steroids", allowing musicians - who are often freelancers -to more easily do their admin all in one place, "so they can spend more time writing and playing music".</p>
+            <p>Back at Boomy, Mr Mitchell is himself a classically-trained violinist. He says that the firm's users are now popping-up everywhere.</p>
+            <p>"We have Uber drivers creating albums and playing them during their drives," he says. "And [last year] I woke up to a frantic call from my head of engineers, asking if we were under attack.</p>
+            <p>"There was tons of traffic from Turkey, and we don't have a Turkish version. It was just a YouTuber in Turkey, who did a video about Boomy, and [from that] we have tens of thousands of users there."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

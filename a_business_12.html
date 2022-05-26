@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_business_12" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Business</mark>
+                <h2>The people moving from high to low-carbon careers</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Watching the Red Arrows jet across the sky as a young boy, Todd Smith knew that flying was what he wanted to do when he was older.</strong></p>
+            <p>After five years' training, costing £100,000, followed by two years working as a flying instructor, he finally landed his dream job in his late twenties - working as an airline pilot.</p>
+            <p>But in 2019, the travel firm he was working for - Thomas Cook - collapsed.</p>
+            <p>By this time Mr Smith had become increasingly concerned about the growing threat of climate change, and the aviation sector's carbon emissions.</p>
+            <p>"I started connecting the dots, and was met with an uncomfortable conflict," he says.</p>
+            <p>"I wanted to get involved in [environmental protest group] Extinction Rebellion, but knew it would be career suicide, and I had a lot of debt. It would be easier to return to the industry and pay off the debt."</p>
+            <p>Yet with the pandemic grounding aircraft, Mr Smith, who lives in the Berkshire town of Reading, decided to quit his high-flying career for good.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>It had previously been Mr Smith's long-held dream to become a pilot</figcaption>
+            </figure>
+            <p>"Of course I prefer flying and visiting exotic destinations, and earning a decent salary," says the 32-year-old. "But when confronted with the climate and ecological emergency, how could I possibly prioritise my needs, when we need to think collectively about how to tackle the biggest existential threat to humanity?"</p>
+            <p>Mr Smith is now a climate activist. He acts as a spokesperson for Extinction Rebellion and is the co-founder of Safe Landing, a movement of climate-conscious aviation sector workers.</p>
+            <p>Giving up his dream job was a tough decision, he says. "I'm doing this out of desperation, not out of choice. Financially I've been really struggling, I'm in a huge amount of debt, it's been challenging."</p>
+            <p>But he adds: "Taking action has been cathartic and eased my anxiety."</p>
+            <p>Mr Smith's campaigning comes as a United Nation's climate change panel warned last summer that the world faced increasingly extreme heatwaves, droughts and flooding.</p>
+            <p>UN secretary-general António Guterres said the study was "code red for humanity". Last October, the UK pledged to achieve net-zero greenhouse gas emissions by 2050. This target will require big growth and investment in the low-carbon economy.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The UN has warned that the impact of climate change will mean more flooding, heatwaves and droughts</figcaption>
+            </figure>
+            <p>Mr Smith is far from the only person to leave a previous job due to concerns about the environment.</p>
+            <p>After working in the oil and gas industry in Denmark for 10 years, Nader Beltaji has moved to a low-carbon career. He now works as a project manager at renewable energy giant RWE.</p>
+            <p>"I actually did my master's thesis on solar power and I wanted to go into that direction, but at the time there weren't many opportunities that caught my attention," says the 33-year-old who now lives in Wiltshire. "Now the landscape has completely changed."</p>
+            <p>Currently working on the construction of an offshore wind farm off north east England, Mr Beltaji says he has more job satisfaction these days.</p>
+            <p>"Climate change is certainly very much in the news, and offshore wind is part of the UK's big energy strategy, so it's good to be part of that, and know you're working on delivering the targets," he says. "Oil and gas feels like quite a dying industry."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Nader Beltaji has swapped working in oil and gas for renewable energy generation</figcaption>
+            </figure>
+            <p>Rachel Bowcutt used to work in the UK's dairy industry, Globally this sector is seen as very carbon intensive. The UN estimates that the dairy sector's global carbon dioxide emissions total some 1.7bn tonnes annually. That is more than the aviation sector's pre-pandemic 915m tonnes.</p>
+            <p>However, UK public body Agriculture & Horticulture Development Board counters that in the UK the dairy sector only accounts for 3% of total carbon emissions, compared with 7% for the country's aviation industry.</p>
+            <p>Previously, Ms Bowcutt was operations manager for the Royal Association of British Dairy Farmers for two years, before quitting to take up a job at perhaps the organisation's nemesis - The Vegan Society.</p>
+            <p>She went vegan after reading reports, such as this from Oxford University, saying that a vegan diet "is probably the single biggest way to reduce your impact on planet Earth".</p>
+            <p>This study was widely reported, although others do say that going car-free or flying less have more of an impact.</p>
+            <p>Ms Bowcutt says she had also started to feel uncomfortable about the dairy industry and its practices after watching a session at a work conference about the optimum time to take calves away from their mothers.</p>
+            <p>"It all felt a bit unnecessary in terms of animal welfare and the environmental impact. It got to the point where I thought this isn't for me anymore, and I wondered if there was an equivalent organisation for vegans - and the job came up."</p>
+            <p>Ms Bowcutt, who lives in Leamington Spa, in Warwickshire, started at the Vegan Society last year. "I have much more confidence about the work I'm involved in. I can see the benefits, it's easier to promote and a subject matter I really believe in."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Ms Bowcutt has put dairy products behind her and embraced veganism</figcaption>
+            </figure>
+            <p>The move to low-carbon jobs is urgently needed, argues Friends of the Earth climate campaigner Denis Fernando.</p>
+            <p>"There is a climate emergency, and we need drastic action to make things happen, so we'll [need to] see more of a push towards green workforces," he says. "Green jobs create jobs. Everyone wins.</p>
+            <p>"There's a strong understanding towards moving towards green and low-carbon jobs, and an overall trend of people who want to do it, but we are deficient in terms of green skills.</p>
+            <p>"There's intention, but government policy could do more to quickly get more apprentices so they can start building skills. It can't be done to scale unless the government gives more resources to local councils."</p>
+            <p>A government spokesperson says: "The UK is capitalising on the green industrial revolution, with over 56,000 clean jobs created and supported in the UK's green industries since the launch of the prime minister's Ten Point Plan.</p>
+            <p>"These range from electric vehicle manufacturing in Sunderland, hydrogen facilities in Teesside, to new floating offshore wind farms and factories in Wales and Scotland.</p>
+            <p>"To build on this, we are ensuring people have the right skills for employment in Britain's new low carbon industries, through measures ranging from green skills boot camps, to dedicated apprenticeships, as we support new British industries, green jobs and economic growth."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The UK government says 56,000 clean jobs have recently been created in the country's green industries</figcaption>
+            </figure>
+            <p>Mr Fernando says green jobs have multiple benefits, including reducing the impact on the climate and restoring nature, and can involve millions of us.</p>
+            <p>"Green jobs could be anything from working on renewable wind turbines or ecology, but also bicycle repair, customer service at a railway station or a warehouse manager for a freight warehouse going by rail rather than air.</p>
+            <p>"We really need try to think of the big agenda which everyone can participate in."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

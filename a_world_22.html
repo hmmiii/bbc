@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_world_22" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>World</mark>
+                <h2>Canada protests: After police cleared bridge, is this the end?</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>A police raid has finally put an end to the costly bridge blockade at Windsor, Ontario, with the crossing reopening for traffic on Sunday night after a six-day protest. But with the demonstrations in Ottawa still going strong, is any end in sight for the anti-mandate movement?</strong></p>
+            <p>This was the moment the protesters had dreaded.</p>
+            <p>"I was hoping it wasn't going to end like this, I was hoping the police would allow us to continue to peacefully protest," Tyler Kok told the BBC as he left the site.</p>
+            <p>The officers arrived by the bus load on Sunday morning - in balaclavas and carrying long guns, ready to oust the last few protesters blocking the roads leading to the Ambassador Bridge.</p>
+            <p>A week-long stalemate was about to come to an end.</p>
+            <p>About 100 vehicles had been parked along a 2km (1.25 miles) stretch of the road for days on end.</p>
+            <p>There were pickups, SUVs and even a dog-grooming van, festooned with Canadian flags, anti-vaccination slogans and anti-Trudeau epithets, as well as some heavy commercial trucks.</p>
+            <p>The people were a mix of evangelical Christians, anti-mask mums, vaccine sceptics and local residents who are tired of lockdowns and vaccine passports.</p>
+            <p>The Freedom Convoy, as it's been called, began as a protest against a mandate requiring truckers who cross the US-Canada border to be vaccinated against Covid.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Police detain a protester as they clear the bridge</figcaption>
+            </figure>
+            <p>But the group is not united by any one occupation - rather, they share a distrust of vaccines, a concern for government overreach and a general dislike of Prime Minister Justin Trudeau.</p>
+            <p>Similar blockades have also popped up at other border crossings across the country - four people were arrested at one in British Columbia on Sunday.</p>
+            <p>But the biggest one in Windsor is no more. The police began stage one of their clearance operation on Saturday and only a few dozen remained by Sunday morning after a bitterly cold night.</p>
+            <p>That meant police could make their final and decisive move. Dozens of officers descended on the two remaining encampments located about a kilometre apart on the single road leading to the bridge.</p>
+            <p>They erected cement barricades and flanked them on all sides.</p>
+            <p>But while in France officers had fired tear gas to keep similar protests at bay, Windsor Police said they prioritised safety over speed.</p>
+            <p>A court-ordered injunction had been in place since Friday, but police waited over 36 hours, mindful that there were many children among the demonstrators.</p>
+            <p>"I think that's something that speaks to our Canadian society," Sergeant Steve Betteridge told the BBC.</p>
+            <p>Police made about 12 arrests but the majority of protesters voluntarily left the area and drove their vehicles home. Clearly outnumbered, they honked their horns - a swan song to the blockade that had gone on far longer than anyone had anticipated.</p>
+            <p>Canada has a 90% vaccination rate, far higher than the US, and in many parts of the country you need to show proof of vaccination to access bars, gyms and restaurants.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Truckers 'don't have the right to hold us hostage'</figcaption>
+            </figure>
+            <p>About 750km (466 miles) east of the Ambassador Bridge, the protest group that has taken over the nation's capital was showing no signs of slowing down on Sunday.</p>
+            <p>But then came news of a breakthrough - an apparent deal struck by the city of Ottawa that would mean the convoy of trucks relocating away from residential areas. However protest leaders later said no deal had been agreed.</p>
+            <p>Unlike the Windsor crowd, which was limited to one major road, the Ottawa protest has essentially taken over the centre of a major city, with thousands of people flooding the streets with Canadian flags.</p>
+            <p>Barbecues are set up on the street with food being handed out to hungry demonstrators, while people play street hockey to the sounds of dance music, honking horns and chants of "freedom".</p>
+            <p>"This is not an anti-vax movement; this is a freedom movement. It's for choice," said Justin Smith, who was enjoying Beavertails - a Canadian pastry - with his wife Brandy Lawrence on the sidelines of the protests on Saturday evening. Both were wearing Canadian flags as capes.</p>
+            <p>"This nation is through and through my heart, I love Canada like you wouldn't believe," said Mr Smith.</p>
+            <p>They say they hate what mandates have done to their family, including their five children aged six to 16.</p>
+            <p>"I want my kids to go into a store and see a smile on someone's face. That's the saddest thing," said Ms Lawrence.</p>
+            <p>This wasn't the couple's first time in the Ottawa "red zone" - they came to support the convoy in its first weekend, and drove the five hours from their home in southern Ontario to be there a second time.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A demonstrator in Ottawa cooks breakfast</figcaption>
+            </figure>
+            <p>There is a police presence - but mostly on the margins.</p>
+            <p>A court order silenced loud honking from the trucks earlier this week, granting respite to downtown residents aggravated by the noise.</p>
+            <p>But some residents fed up with the noise and the disruption have accused police of idling by and allowing an occupation. Some businesses - including a major shopping centre - have closed their doors or have seen a drop in traffic.</p>
+            <p>While many of the demonstrators have been peaceful, residents have told the BBC they have been shouted at for wearing masks, and had trouble getting to and from work.</p>
+            <p>"We don't terrorise people and confront people wearing masks or barge into businesses try to harass and intimidate the staff," says Marika Morris. "This is not what we do to express our political views."</p>
+            <p>If the Ottawa protest has caused maximum community disturbance, then the Windsor protest caused maximum economic disruption by shutting down one of the country's major trade arteries, the Ambassador Bridge linking Windsor with Detroit, Michigan.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>GETTY IMAGES</figcaption>
+            </figure>
+            <p>More than $323m (£238m) in goods crosses that bridge every day, and for nearly a week, not a dollar has made it to the US or back.</p>
+            <p>Almost half of that is from the trade of car parts, says Flavio Volpe, president of the Automotive Parts Manufacturers Association.</p>
+            <p>He does not mince words when it comes to the protest.</p>
+            <p>"In Windsor we have at its core, several dozen people who are macroeconomically illiterate and absolutely disrespectful of their own community, that they would imperil the economy of the region to make a point," he said.</p>
+            <p>"Never has a tantrum cost so many people so much."</p>
+            <p>After the clearance operation, police remained behind. The bridge will reopen on Sunday or Monday.</p>
+            <p>But Volpe said the harm to the auto-parts industry will last much longer than that, because it will take three to four days to get the supply chain fully functional. The total cost of lost production and shipments he estimates at about C$1b ($790m, £580m).</p>
+            <p>He also said the damage to Canada's reputation with its US trading partner is devastating, especially as American politicians push for protectionist policies.</p>
+            <p>In a statement, Windsor police say there will be "zero tolerance" for any illegal activity. But how they will stop further blockades from springing up, while still keeping the bridge open, remains to be seen.</p>
+            <p>Sergeant Betteridge said he hopes the occupants feel they were heard and realise that further disruption is not required.</p>
+            <p>"The protesters came wanting to get a message across, and I think they did get a message across," he said.</p>
+            <p>"If anyone is thinking of breaking the law, they've seen what has happened here."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

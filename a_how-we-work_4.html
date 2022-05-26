@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_how-we-work_4" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>How We Work</mark>
+                <h2>The salary ignorance that keeps many workers underpaid</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>People significantly underestimate what other people make for the same work, which keeps them in poorly paying jobs - and disadvantages many workers.</h3>
+            <p>For many people, wanting a bigger salary is a major motivating factor for looking for a new job. While it’s not the only consideration, if you can earn more money doing the same work elsewhere, it’s worth at least exploring your options. But to do that, you first need to believe in the possibility of being paid more for the same work. </p>
+            <p>According to a recent study, most people significantly underestimate what people are earning in similar jobs elsewhere. The researchers argue this holds back people from seeking better paid jobs or higher pay for their current role, and that it particularly disadvantages the lowest earners. They suggest that if workers were more aware of salary disparities, at least 10% of low-paying jobs would simply not be viable at current pay rates. </p>
+            <p>What exactly stops us from believing that the grass might be greener on the other side? </p>
+            <p>Although people are increasingly aware of the benefits of salary transparency, particularly as a means of reducing the gender pay gap, in general we remain reluctant to talk about pay openly. There are also powerful reasons people don’t seek out salary information. Yet, it’s clear that in many cases, it would be to our advantage to be more informed about pay. With workers in greater demand than ever amid the upheavals of the pandemic, developing a little more salary curiosity could well pay dividends.    </p>
+            <p><strong>Pessimistic beliefs</strong></p>
+            <p>Nina Roussille, an economist at the London School of Economics, was part of a team from US, UK and German universities who set out to explore how workers view their “outside options” when it comes to pay. Their study, carried out in 2019 and 2020 in Germany, surveyed 516 people who were broadly representative of the working population “to try to measure first, people’s beliefs about what they could make elsewhere” and then see “how it compares to what they could actually make”, says Roussille.</p>
+            <blockquote>That really self-fulfils the prophecy of low-paying firms being able to further lower wages to people that are misinformed about the job market - Nina Roussille</blockquote>
+            <p>Participants were asked whether, if they had to move to a similar job in a different company within the next three months, they would earn more, less or about the same. About half said they believed they’d earn pretty much the same salary. But when those beliefs were compared to the actual salaries being earned by some of their former colleagues it was clear these beliefs about potential future salaries were distinctly pessimistic. Most of their former colleagues actually reported seeing “large positive wage changes” on moving jobs, according to the paper.  </p>
+            <p>Additionally, about half of those surveyed believed they were earning roughly the median pay for their occupation, but in reality only 20% of people were. The others were earning far more or far less and, strikingly, people in the lowest-paying firms were also the least likely to believe they could earn more elsewhere. </p>
+            <p>“That really self-fulfils the prophecy of low-paying firms being able to further lower wages to people that are misinformed about the job market,” says Roussille. If those workers knew they were being so radically underpaid, “they would decide potentially to start looking elsewhere”.  </p>
+            <p>Roussille and her co-authors go on to calculate that if all workers had access to accurate market salary data, “between 10% and 17% of employment relationships would not be viable at current wages”, because workers would simply demand more. </p>
+            <p><strong>Why we don’t do more research</strong></p>
+            <p>The study did not look at why exactly people were so ill-informed about salary levels elsewhere. But research suggests that while most employees do want more information on pay so they can make better choices, they are actually very reluctant to share or ask for that information themselves. </p>
+            <p>In one study of a large international finance firm, for example, 89% of respondents said they would be uncomfortable asking a colleague what they earned, and 38% would not share their own salary, even if they would be paid a small bonus to do so.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>People often find it hard to ask co-workers or former colleagues what they're earning - but they should (Credit: Getty)</figcaption>
+            </figure>
+            <p>Tamara Montag-Smit, assistant professor of management at Manning School of Business, University of Massachusetts Lowell, US, says her own research suggests this reluctance stems from people’s concerns about “what it might mean for their relationships with others”. This is particularly the case for workers who felt they might be earning much more or much less than their colleagues, she says, and fear that if people knew what they earned it might damage their status within the workplace. </p>
+            <p>But she says whether or not people even wanted salary data was also strongly linked to how they viewed their employer. In a study of American workers, Montag-Smit found that if someone felt “pretty comfortable with the status quo” and believed their employer or the job market were rewarding them fairly for their work, they simply weren’t as interested in understanding what those around them are earning. </p>
+            <p>On the flip side, having doubts about the fairness of the system led workers to question whether they might also be being misled about pay, which made them “more likely to seek that information, and maybe do something about that”. This is where corporate policies around pay secrecy can backfire, she says, because secrecy can just cause workers to assume rewards are being unfairly distributed. </p>
+            <p>Of course, structural inequalities ensure some people are more likely to believe they can earn better elsewhere than others. A recent survey in the UK showed that ethnic minority professionals were far less likely that white employees to negotiate for pay, because they didn’t believe they would be successful. And if they did, they were indeed far less likely than white colleagues to win. In the US, black workers are disproportionately concentrated in low-paying jobs. Men are also more likely than women to both ask for and win a raise. </p>
+            <p>Both Roussille and Montag-Smit say that, in the case of women at least, being informed goes a long way towards denting these disparities. Montag-Smit’s ongoing research suggests that in companies with wage transparency, men and women are equally likely to negotiate for better pay. Likewise, Roussille says the so-called “ask gap” - which sees women asking for less pay than their similarly skilled male counterparts - is eliminated, if people are told the median salary for a role before sharing their own salary expectations. </p>
+            <p><strong>Workers with the upper hand?</strong></p>
+            <p>Overall, however, Montag-Smit has observed a “slow trend” towards greater transparency around salaries in recent years. “Even the idea of sharing things like the median pay or the highest-earning employee just weren't really something that HR departments would talk about 10 years ago,” she says. “But now it seems to be much more the norm.” </p>
+            <p>That’s driven in part by the proliferation of sites like Glassdoor, where people anonymously share their own salary data. Montag-Smit says workers have been “using that to their advantage” and approaching salary negotiations with at least some awareness of their market value. There also appears to be a generational shift at play, she adds, with her research suggesting that “younger people are more inclined to both seek and share pay information”, a trend she expects to continue.</p>
+            <blockquote>Even the idea of sharing things like the median pay or the highest-earning employee just weren't really something that HR departments would talk about 10 years ago - Tamara Montag-Smit</blockquote>
+            <p>“I think because of the ‘Great Resignation’ and where we are, that you might see people using that information with more leverage, because employees just generally have the upper hand right now in most sectors right now,” she adds.  </p>
+            <p>Roussille says she and her co-authors are hopeful their research will be of use to workers. She advises people to spend time on pay comparison websites to “get a sense of the distribution of wages”, but also suggests going against those taboos and directly asking former colleagues what they’re earning now. “You're probably going to learn something about your outside options that you don't know right now,” she says. </p>
+            <p>She acknowledges the limitations of encouraging people to seek out salary data. Finding the right information takes effort and time, and even before then, you need to believe that there are opportunities for you and that you have a good earning potential. That 10% of workers who are most likely to get trapped in low-paying jobs are “the people we really want to reach”, she says, but they are also the least likely to have the time and resources to get better informed. </p>
+            <p>“If you’re anchored in your belief that you’re not going to make more elsewhere, how do we trigger you to look for the information?” she says. “Our research currently doesn’t have the answer, but hopefully that is the direction we are going to take.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

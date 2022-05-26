@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_future-planet_8" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Future Planet</mark>
+                <h2>Lithium batteries' big unanswered question</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>As the world looks to electrify vehicles and store renewable power, one giant challenge looms: what will happen to all the old lithium batteries?</h3>
+            <p>As the quiet whirr of electric vehicles gradually replaces the revs and noxious fumes of internal combustion engines, a number of changes are set to filter through our familiar world. The overpowering smell of gas stations will fade away into odourless charge stations where cars can re-juice their batteries as needed. Meanwhile, gas-powered generator sites that dot the horizon may be retrofitted to house massive batteries that could one day power entire cities with renewable energy.</p>
+            <p>This electrified future is much closer than you might think. General Motors announced earlier this year that it plans to stop selling gas-powered vehicles by 2035. Audi's goal is to stop producing them by 2033, and many other major auto companies are following suit. In fact, according to BloombergNEF, two-thirds of the world's passenger vehicle sales will be electric by 2040. And grid-scale systems the world over are growing rapidly thanks to advancing battery storage technology.</p>
+            <p>While this may sound like the ideal path to sustainable power and road travel, there's one big problem. Currently, lithium (Li) ion batteries are those typically used in EVs and the megabatteries used to store energy from renewables, and Li batteries are hard to recycle.</p>
+            <blockquote>As demand for EVs escalates, as it's projected to, the impetus to recycle more of them is set to barrel through the battery and motor vehicle industry</blockquote>
+            <p>One reason is that the most widely used methods of recycling more traditional batteries, like lead-acid batteries, don't work well with Li batteries. The latter are typically larger, heavier, much more complex and even dangerous if taken apart wrong.</p>
+            <p>In your average battery recycling plant, battery parts are shredded down into a powder, and then that powder is either melted (pyrometallurgy) or dissolved in acid (hydrometallurgy). But Li batteries are made up of lots of different parts that could explode if they're not disassembled carefully. And even when Li batteries are broken down this way, the products aren't easy to reuse.</p>
+            <p>"The current method of simply shredding everything and trying to purify a complex mixture results in expensive processes with low value products," says Andrew Abbott, a physical chemist at the University of Leicester. As a result, it costs more to recycle them than to mine more lithium to make new ones. Also, since large scale, cheap ways to recycle Li batteries are lagging behind, only about 5% of Li batteries are recycled globally, meaning the majority are simply going to waste.</p>
+            <p>But as demand for EVs escalates, as it's projected to, the impetus to recycle more of them is set to barrel through the battery and motor vehicle industry.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Extracting and processing lithium requires huge amounts of water and energy, and has been linked to environmental problems near lithium facilities (Credit: Alamy)</figcaption>
+            </figure>
+            <p>The current shortcomings in Li battery recycling isn't the only reason they are an environmental strain. Mining the various metals needed for Li batteries requires vast resources. It takes 500,000 gallons (2,273,000 litres) of water to mine one tonne of lithium. In Chile's Atacama Salt Flats, lithium mining has been linked to declining vegetation, hotter daytime temperatures and increasing drought conditions in national reserve areas. So even though EVs may help reduce carbon dioxide (CO2) emissions over their lifetime, the battery that powers them starts its life laden with a large environmental footprint.</p>
+            <blockquote>We can no longer treat the batteries as disposable - Shirley Meng</blockquote>
+            <p>If the millions upon millions of Li batteries that will give out after around 10 years or so of use   are recycled more efficiently, however, it will help neutralise all that energy expenditure. Several labs have been working on refining more efficient recycling methods so that, eventually, a standardised, eco-friendly way to recycle Li batteries will be ready to meet skyrocketing demand.</p>
+            <p>"We have to find ways to make it enter what we call a circular lifecycle, because the lithium and the cobalt and nickel take a lot of electricity and a lot of effort to be mined and refined and made into the batteries. We can no longer treat the batteries as disposable," says Shirley Meng, professor in energy technologies at the University of California, San Diego.</p>
+            <p><strong>How to recycle Li batteries</strong></p>
+            <p>A Li battery cell has a metal cathode, or positive electrode that collects electrons during the electrochemical reaction, made of lithium and some mix of elements that typically include cobalt, nickel, manganese and iron. It also has an anode, or the electrode that releases electrons to the external circuit, made of graphite, a separator and an electrolyte of some kind, which is the medium that transports the electrons between cathode and anode. The lithium ions travelling from the anode to the cathode form an electric current. The metals in the cathode are the most valuable parts of the battery, and these are what chemists focus on preserving and refurbishing when they dismantle an Li battery.</p>
+            <p>Meng says to think of an Li battery like a bookshelf with many layers, and the lithium ions rapidly move across each shelf, cycling back each time to the top shelf - a process called intercalation. After years and years, the bookshelf naturally starts to break down and collapse. So when chemists like Meng dismantle an Li battery, that's the sort of degradation they see in the structure and materials.</p>
+            <p>"We can actually find the mechanisms, [and] either using heat or some kind of chemical treatment method, we can put the bookshelf back [together]," says Meng. "So we can let those recycled and refurbished materials go back to the assembly line to the [Li battery] factories to be made into new batteries."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Lithium batteries are more internally complex than lead-acid batteries, composed of many carefully assembled parts (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>Improving Li battery recycling and ultimately making their parts reusable will reinfuse value into the Li batteries already out there. This is why scientists are advocating for the direct recycling process Meng describes - because it can give the most precious parts of Li batteries, like the cathode and anode, a second life. This could significantly offset the energy, waste and costs associated with manufacturing them.</p>
+            <p>But disassembling Li batteries is currently being done predominantly by hand in lab settings, which will need to change if direct recycling is to compete with more traditional recycling methods. "In the future, there will need to be more technology in disassembly," says Abbott. "If a battery is assembled using robots, it is logical that it needs to be disassembled in the same way."</p>
+            <p>Abbott's team at the Faraday Institution in the UK is investigating the robotic disassembly of Li batteries as part of the ReLib Project, which specialises in the recycling and reuse of Li batteries. The team has also found a way to achieve direct recycling of the anode and cathode using an ultrasonic probe, "like what the dentist uses to clean your teeth," he explains. "It focuses ultrasound on a surface which creates tiny bubbles that implode and blast the coating off the surface." This process avoids having to shred the battery parts, which can make recovering them exceedingly difficult.</p>
+            <p>According to Abbott's team's research, this ultrasonic recycling method can process 100 times more material over the same period than the more traditional hydrometallurgy method. He says it can also be done for less than half the cost of creating a new battery from virgin material.</p>
+            <p>Abbott believes the process can easily be applied to scale, and used on larger grid-based batteries, because they typically have the same battery cell structure, they just contain more cells. However, the team is currently only applying it to production scrap, from which parts are easier to separate, because they're already free of their casings. The team's robotic dismantling tests are ramping up though. "We have a demonstrator unit that currently works on whole electrodes and we hope in the next 18 months to be able to showcase an automated process working in a production facility," says Abbott.</p>
+            <p><strong>Degradable batteries</strong></p>
+            <p>Some scientists are advocating for a move away from Li batteries in favour of ones that can be produced and broken down in more eco-friendly ways. Jodie Lutkenhaus, a professor of chemical engineering at Texas A&M University, has been working on a battery that is made of organic substances that can degrade on command.</p>
+            <p>"Many batteries today are not recycled because of the associated energy and labour cost," says Lutkenhaus. "Batteries that degrade on command may simplify or lower the barrier to recycling. Eventually, these degradation products could be reconstituted back into a fresh new battery, closing the materials life-cycle loop."</p>
+            <p>It's a fair argument considering that, even when a Li battery is dismantled and its parts are refurbished, there will still be some parts that can't be saved and become waste. A degradable battery like the one Lutkenhaus' team is working on could be a more sustainable power source.</p>
+            <p>Organic Radical Batteries (ORBs) have been around since the 2000s, and function with the help of organic materials that are synthesised to store and release electrons. "An Organic Radical Battery has two of these [materials], both acting as electrodes, that work in concert to store and release electrons, or energy, together," explains Lutkenhaus.</p>
+            <p>The team uses an acid to break their ORBs down into amino acids and other byproducts, however, conditions need to be just right for the parts to degrade properly. "Eventually we found that acid at elevated heat worked," says Lutkenhaus.</p>
+            <p>There are a number of challenges ahead for this degradable battery though. The materials needed to create it are expensive, and it has yet to provide the amount of power required for high-demand applications like EVs and power grids. But perhaps the greatest challenge degradable batteries like Lutkenhaus's face is competing with the already well-established Li battery.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>As demand for electric vehicles surges in the coming decades, the need for a way to recycle their batteries will grow too (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>The next step for scientists pushing direct recycling of Li batteries forward is working with battery manufacturers and recycling plants to streamline the process from build to breakdown.</p>
+            <p>"We are really encouraging all the battery cell manufacturers to barcode all the batteries so with robotic AI techniques we can easily sort out the batteries," says Meng. "It takes the entire field to cooperate with each other in order to make that happen."</p>
+            <p>Li batteries are used to power many different devices, from laptops to cars to power grids, and the chemical makeup differs depending on the purpose, sometimes significantly. This should be reflected in the way they're recycled. Scientists say battery recycling plants must separate the various Li batteries into separate streams, similar to how different types of plastic are sorted when recycled, in order for the process to be most efficient. </p>
+            <p>And even though they face an uphill battle, more sustainable batteries are slowly but surely coming onto the scene. "We can already see designs entering the market which make assembly and disassembly easier, and it is probable that this will be an important topic in future battery development," says Abbott.</p>
+            <p>On the production side, battery and car manufacturers are working on cutting down on the materials needed to build Li batteries to help reduce energy expenditure during mining and the waste each battery creates at the end of its life.</p>
+            <p>Electric car manufacturers have also begun to reuse and repurpose their own batteries in a number of different ways. For example, Nissan is refurbishing old Leaf car batteries and putting them in automated guided vehicles that bring parts to its factories.</p>
+            <p><strong>Speed bumps ahead</strong></p>
+            <p>The steadily increasing market demand for EVs already has companies across the automobile industry spending billions of dollars on increasing the sustainability of Li batteries. However, China is currently the largest producer of Li batteries by far, and subsequently ahead when it comes to recycling them.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>So far, China produces the most lithium batteries, and it also has more capability to recycle them than other producers (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>Widely adopting standardised methods for recycling Li batteries that include sorting streams for the different types will get them a big step closer. Meanwhile, using AI technology to refurbish the most useful parts, such as the cathode, could help countries with small supplies of Li battery components to not have to rely so much on China.</p>
+            <p>Developing new batteries that might rival the Li battery will also likely shake up the industry by creating some healthy competition. "I do think it does the world better if we diversify the portfolio for battery storage, particularly for grid storage," says Meng.</p>
+            <p>The advent of a less complex, safer battery that is cheaper to make and easier to separate at the end of its life is the ultimate answer to the current sustainability problem with EVs. But until such a battery makes an appearance, standardising Li battery recycling is a significant move in the right direction.</p>
+            <p>And in about 2025, when millions of EV batteries reach the end of their initial life cycles, a streamlined recycling process will look much more appealing to economies the world over. So perhaps, by the time EVs become the predominant form of transport, there will be a good chance their batteries will be gearing up for a second life.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

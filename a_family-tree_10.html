@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_family-tree_10" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Family Tree</mark>
+                <h2>The secret of Arctic 'survival parenting'</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>For centuries, Sámi reindeer herders have used a unique parenting philosophy to prepare their children for survival in the Arctic. Here's what we can learn from them.</h3>
+            <p>Every year in June or July, under the Arctic midnight sun, Sámi reindeer-herding families in northern Finland, Norway and Sweden come together for one of the biggest social events of the year: "earmarking", which involves marking the new reindeer calves to identify them.</p>
+            <p>On foot, in all-terrain vehicles and even helicopters, they gather the semi-wild reindeer from vast areas stretching out dozens of square kilometres. Even young children are expected to join in. The youngest boys and girls help catch the calves. From the age of about 10, they take their own earmarking knives, grab a calf, and mark both ears with a unique pattern of notches. Children receive their own personal earmark pattern at birth, and use it to mark their herds for the rest of their lives.</p>
+            <p>Among the Sámi, an indigenous people spread across the northernmost regions of Norway, Sweden, Finland and Russia's Kola Peninsula, children not only participate in herding work, but are also encouraged to act independently in most other areas of life. They have a say in deciding when to eat, when to sleep, and what to wear, even at temperatures of -30C (-22F). To outsiders, that independence can be surprising. Missionaries who visited the Arctic in the 18th Century and later, wrote in their diaries that it seemed like Sámi children could do whatever they liked, and that they lacked discipline altogether.</p>
+            <p>However, as research increasingly reveals, the seemingly rule-free Sámi way of child-rearing has its own intricate structure and philosophy. Over time, this unique parenting style has evolved to prepare children to cope with the extreme challenges of life in the Arctic - and foster a particular kind of resilience.</p>
+            <p>One of its guiding principles is that rather than following a fixed schedule, the whole family adapts to whatever tasks need to be carried out, be that earmarking, travelling or other joint activities. Within that framework, children make their own choices.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Many elements of Sámi parenting evolved as part of the daily work of reindeer herders (Credit: Paadar Images)</figcaption>
+            </figure>
+            <p>"They eat when they are hungry and go to bed whenever they are tired," says Tytti Valkeapää, a mother of six children, ranging in age from 8 to 18, who lives in the northern Finnish village of Kuttanen, by the border with Sweden.</p>
+            <p>While Valkeapää is not Sámi herself, she adapted to the local way of life after marrying into a Sámi reindeer-herding family. Like the vast majority of Sámi, her family is no longer fully nomadic, instead travelling widely by snow-mobile, which has transformed the lives of reindeer herders and allowed them to become more settled. But although they mainly live in a house, traditional activities such as the earmarking ritual still shape the family's rhythm.</p>
+            <blockquote>We have been lucky enough to live on our children's terms - Tytti Valkeapää</blockquote>
+            <p>The earmarking process takes several weeks and is only carried out at night, when it is still bright but cooler than during the day. This makes it less stressful for the reindeer and their calves. To be able to carry out the work together, the entire family switches sleep cycles, reversing night and day. Children are up and awake working and playing all night, for weeks at a time, together with their extended families and fellow herders. They nap during the day, curling up and dozing off whenever they feel like it.</p>
+            <p>"Me and the children can nap on an all-terrain vehicle, snow mobile, under a rain cover in a trailer or our van," Valkeapää says. "You just need to be able to rest and eat whenever you can. During the earmarking, children used to like to sleep in a lávvu (tent) although nowadays we have a little hut there."</p>
+            <p>For Valkeapää, cultivating flexible sleep habits from the start is the best way to help children cope with the extreme Arctic seasons. In fact, residents of the Arctic generally sleep less during the summer and longer in the dark, long winter, when levels of melatonin, a sleep-inducing hormone, rise.</p>
+            <p>"Changing their sleep rhythm comes naturally for children with seasonal changes. I never had to try and force it, because we have been lucky enough to live on our children's terms," she says. "During the earmarking, children take part in the work and when they don’t, they play outside by the corral. I guess they don’t get sleepy when there is so much to do, and they want to be involved."</p>
+            <p>However, the busy summer nights sometimes make her yearn for the dark autumn evenings: "It is easier now that they have grown up a bit but still there has never been a situation where all the children would go to bed at the same time."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Sámi babies and children learn to be flexible in their sleep habits, as in this archive photo from the 1930s (Credit: Finnish Heritage Agency)</figcaption>
+            </figure>
+            <p>In the summer, during the bright Arctic nights, it is also normal for older children of 12 or so to go fishing with their friends at night, and only come home in the early morning hours.</p>
+            <p>This autonomy contrasts with the kind of time-intensive, intensely child-centered parenting style that has been on the rise in many societies around the world. But even when compared with nearby communities, such as non-Sámi Norwegians, Sámi families are distinct.</p>
+            <p>One comparative study in Norway found that Sámi children were "more socially independent than their Norwegian peers", and that "self-regulation of food and sleep were commonly practiced in the Sámi, but not in the Norwegian families". Sámi children were also expected to regulate and control their own emotions, a pattern that is common in circumpolar communities, according to the study. Another study identified independence and hardiness as core values of Sámi parents, among others.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Arctic seasons shape the lives of reindeer-herding families (Paadar Images)</figcaption>
+            </figure>
+            <p>"In Sámi pedagogics, it is a central thought that adults don’t do everything ready for children," says Rauni Äärelä-Vihriälä, an associate professor of Sámi pedagogics Sámi University of Applied Sciences in Norway, Guovdageaidnu, and Sámi mother of two. "In Western thinking it is often expected that adults give the tasks and assignments, whereas for us, the action is based on freedom, whether the question is about changing sleeping cycles, choosing hobbies or something else. The adults can’t just tell [the children what to do] and set the boundaries. Also, we don’t plan things that much. Things happen when they happen [in nature]."</p>
+            <blockquote>A common saying among Sámi parents is "you know it yourself", meaning, the child will discover if their decision is right</blockquote>
+            <p>Time is an important part of this philosophy: "We believe that children must be given time to think and express their opinions, and they also need to fail to learn." She quotes a Northern Sámi expression: "Gal dat oahppá go stuorrola", meaning "He/she will learn when he/she grows up."</p>
+            <p>Another common saying among Sámi parents, "ieš dieđát", meaning, "you know it yourself", also encapsulates that mindset. Sámi parents may for example say this when a child insists on going out into the cold in light clothing, as the child will discover for themselves whether they should put on more layers.</p>
+            <p>Asta Mitkija Balto, a professor emerita of pedagogy at the Sámi University College in Norway, argues in a research paper that the main goal of Sámi child-rearing is to "prepare children for life and develop independent individuals who can survive in a given environment, and to give the children self-esteem and zest for life and joy."</p>
+            <p>Part of this is a Sámi concept called "birget", meaning to cope or to manage both independently, and with others. The strategies used are often indirect, avoiding confrontation, argues Balto, who is Sámi. Sámi parents, and especially fathers, may for example wait for a moment when the joint focus is on something else, such as gazing into a fire, in order to discuss a difficult subject without creating a sense of confrontation.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The freedom of Sámi children has long surprised visitors to the Arctic, but it is governed by complex hidden norms (Credit: A.O. Väisänen / Finnish Heritage Agency)</figcaption>
+            </figure>
+            <p>However, despite this independence, a set of social norms and duties shapes Sámi life from the start.</p>
+            <p>"Traditionally, a child gets to take responsibility in many kinds of work relating to reindeer herding and feel proud about it. Primarily, one is not an individual but a member of an extended family that one has responsibility for," says Äärelä-Vihriälä.</p>
+            <p>Sámi children learn to use sharp knives, make a fire, and orient themselves in nature, skills that are essential for survival in the Arctic, but also have a social dimension. They must also be able to mark and identify reindeer. Some especially respected reindeer herders are known for remembering and recognising thousands of earmarks.</p>
+            <p>"Surviving or doing well in life, in the eyes of the community, has nothing to do with making money or a fine career but more with the survival skills. Besides surviving in nature, one must also get along with different kinds of people in different kinds of environments. A Sámi child grows into thinking that people are all different and one must always be inventive. I would say it is very tolerant," explains Rauni Äärelä-Vihriälä.</p>
+            <p>Today, these ancient skills can still be useful. One study suggests that knowing the Sámi language, and being connected to their extended families and cultural traditions, is linked to greater resilience and wellbeing in Sámi children and young people. More generally, research suggests that developing problem-solving and self-regulation skills with the support of a caring family, can foster resilience in children. </p>
+            <p>One way of subtly enforcing cultural norms is a Sámi parenting practice called nárrideapmi, a kind of playful teasing. This has also been observed in other indigenous circumpolar peoples, such as the Inuit, but not in mainstream Scandinavian cultures. The purpose of nárrideapmi is to boost a child's self-esteem, and encourage them to control themselves better and not take themselves too seriously. Nárrideapmi is usually practised by close family members such as aunties and uncles, not necessarily the parents. They must know the child well and ensure they never say something really hurtful, or bully the child, explains Rauni Äärelä-Vihriälä.</p>
+            <p>"For a teenager it can be something about girlfriends or boyfriends, whereas for smaller children it could relate to dressing up, for instance. If I notice that my child has not worn enough warm winter clothes, I can ask her whether she is going to the tropical beach or something. Then you kind of expect a child to react and joke something similar back to you. That also makes the child realise herself what she needs to do, and it encourages to think for herself. It is again quite indirect," she says.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Traditionally, Sámi children are encouraged to be independent and self-reliant (Credit: Angeli Reindeer Farm)</figcaption>
+            </figure>
+            <p>Some Sámi parenting traditions are embedded in the Sámi languages, a group of related languages still spoken by about 25,000-35,000 people.</p>
+            <p>Sámi languages still use the dual form, a form that was also once known in Old English, Ancient Greek and Old Church Slavonic. It refers to two people doing something, as in the Northern Sámi phrase "Moai manne", "we two go". According to Äärelä-Vihriälä, Sámi parents often use the dual form: "If a child pees himself, we might say that: 'Oh, did we (two) pee ourselves, shall we (two) clean this up?' Or we can say: 'Oh we (two) are not used to doing this'. In that way we can turn the child’s attention elsewhere without blaming and criticising."</p>
+            <p>Even as more Sámi adapt to urban life, some retain certain ancestral parenting principles.</p>
+            <p>Laura Kallioinen, a teacher and a mother of three, is a Sámi woman who grew up in the northernmost village of Finland, Nuorgam, on the border with Norway. Today she lives with her family in Jyväskylä, a city in the western part of the Finnish lake district. The family tends to spend every holiday in Nuorgam, where the children stay up until the morning if they want to.</p>
+            <p>Asked about her about their routines, Kallioinen laughs: "Oh what, routines? We don’t have any." This sets her apart from her non-Sámi neighbours in the lake district: "I don’t think I know any other family in this area who don’t have a fixed dinner time." She emphasises that her children never go hungry, and there is always food available - they just don't follow a schedule: "Sometimes I try, but it just doesn’t work."</p>
+            <p>She also feels that her more southern neighbours draw a distinction between different family activities in a way that doesn't exist in Sámi culture: "One thing I have also noticed is that here people really invest into the 'quality time' they spend with their family. I don’t really understand that, for us it means like going to the forest to pick berries or going ice fishing, normal things."</p>
+            <p>Yet she admits the city environment has made them adapt their ways. "My daughter just said she would like to wear comfortable outdoor clothes what people wear all the time in Nuorgam, but she does not know if she is too embarrassed to do that here. I don’t really care about what people think, I always wear according to the weather anyway."</p>
+            <p>For Kallioinen, supporting her children's Sámi language skills has been the most important way to stay connected to her homeland, culture and relatives, and raise children with a strong Sámi identity.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>In the past, Sámi children and their families roamed widely with their reindeer, as in this scene from the 1940s (Credit: Finnish Heritage Agency)</figcaption>
+            </figure>
+            <blockquote>One needs that kind of survival attitude. That sort of, 'don’t mess with me' attitude - Tytti Valkeapää</blockquote>
+            <p>Even for those who still make a living from reindeer herding, life is changing. Climate change is making snow and ice conditions less predictable, and making it harder for the reindeer to find food. Logging is destroying old forests where reindeer find moss to eat. Many reindeer-herding cooperatives no longer gather free-roaming reindeer from afar for the earmarking tradition, but instead keep the calves close to home.</p>
+            <p>For Valkeapää, the mother of six who married into a reindeer-herding family, the fact that the earmarking ritual takes place during the children's school holidays, helps follow the ancient rhythm. "Sometimes I feel like some people might think my children are lazy if they sleep until late afternoon, but is that really a problem? Perhaps it is just our society’s problem."</p>
+            <p>And while she is proud that her children are already participating in the family's work, ultimately, even the decision of whether to continue the legacy will be left to them.</p>
+            <p>"Of course, it is a beautiful thought that our children would carry on herding reindeer. But they get to decide by themselves. You also need to want this, and you do need a certain kind of character to be able to do this," Valkeapää says. Asked what kind of character, she replies: "Well, you know, one needs the confidence and that kind of survival attitude. That sort of, 'don’t mess with me' attitude."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

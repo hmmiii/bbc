@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_science_21" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Science</mark>
+                <h2>How high-profile scientists felt tricked by group denying climate change</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>A dozen scientists, politicians, and campaigners say they have been tricked into participating in online events promoting climate-change denial.</strong></p>
+            <p>The events were organised by the Creative Society, an international activist group that denies global warming is being caused by human activity.</p>
+            <p>The overwhelming majority of scientists agree greenhouse gases - which trap the Sun's heat - are causing a rise in global temperatures.</p>
+            <p>But the Creative Society alleges, without any credible evidence, a conspiracy and condemns what it calls the "CO2 fraud".</p>
+            <p>The group told BBC News it "provides a platform for all ideas to be expressed" and rejected allegations it tricked anyone into participating in its events.</p>
+            <h3>From 'cosmic pulses' to 'corrupted scientists'</h3>
+            <p>The Creative Society says it has supporters in more than 100 countries but seems to be most popular in Eastern and Central Europe.</p>
+            <p>The group runs a network of more than 200 accounts - with hundreds of thousands of followers - across all major social media platforms.</p>
+            <p>And through them, bad information about global warming is being spread.</p>
+            <p>BBC News has seen dozens of posts denying elementary facts of climate change.</p>
+            <p>The group has uploaded videos on YouTube falsely describing greenhouse gases as "the scam of the century".</p>
+            <p>On TikTok, it links - without credible evidence - the melting of glaciers to "cosmic pulses of galactic interactions".</p>
+            <p>And on Facebook, it has paid to promote videos wrongly describing renewable energies as a "scam".</p>
+            <p>It also tweeted memes about "corrupted scientists... lying about the causes of climate change".</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>TWITTER</figcaption>
+            </figure>
+            <p>Asked why it was using social media to promote climate denial, Alexey Prudkov, coordinator of the Creative Society project in Switzerland, told BBC News: "Climate denialism is a very catchy and at the same time totally misleading term."</p>
+            <p>But asked whether global warming was being primarily caused by human activities - such as the burning of fossil fuels - he replied: "No, it's not.</p>
+            <p>"CO2 is only 0.04% of the total gases in our atmosphere."</p>
+            <p>This figure is accurate but fails to show how effective carbon dioxide is in trapping the Earth's heat.</p>
+            <p>"The problem with 99% of scientific literature is that it only studies one factor," Mr Prudkov said.</p>
+            <p>"We call for true science that studies the problem from all angles."</p>
+            <p>TikTok, Meta, which owns Facebook and Instagram, Twitter, and Google, which owns YouTube, said they had opened investigations into Creative Society accounts, after being contacted by BBC News.</p>
+            <h3>11 hours to find 'the truth'</h3>
+            <p>On social media, the organisation drums up support for its online conferences, featuring sharp-looking volunteers speaking from their carefully lit living rooms.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Footage of natural disasters was edited into cinematic sequences and shown at the conferences</figcaption>
+            </figure>
+            <p>They also include short films depicting footage of natural disasters, played over loud, apocalyptic tracks.</p>
+            <p>The group's last two conferences went on for more than 11 hours.</p>
+            <p>Broadcast in dozens of languages, they have amassed thousands of views online.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Creative Society's Alexey Prudkov participated in the group's recent conferences</figcaption>
+            </figure>
+            <p>In these videos, the Creative Society promises to reveal "the truth" about the climate crisis.</p>
+            <p>They offer testimonies from high-profile guests from around the world - all seemingly backing the group and its ideas.</p>
+            <p>But several told BBC News they regretted participating.</p>
+            <p>Some said they had been unaware of the group's views on climate change, others their interviews had been manipulated.</p>
+            <h3>The invitations</h3>
+            <p>"I have been tricked," Dr Saleemul Huq, director of the International Centre for Climate Change and Development, in Bangladesh, said.</p>
+            <p>Dr Huq has contributed to major reports by the Intergovernmental Panel on Climate Change, a UN body considered to set the gold standard for climate science.</p>
+            <p>When Creative Society volunteers invited him for an interview, he simply "didn't think very much about it".</p>
+            <p>He had been told the footage would be shown at an international conference, he said, but had not asked who the other contributors would be.</p>
+            <p>And only after it aired, last year, did he realise something was amiss.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Dr Saleemul Huq (top right) describes the Creative Society as a "denialist group"</figcaption>
+            </figure>
+            <p>"I got a message from a couple of people saying, 'Do you know who these people are and what they believe in?'" Dr Huq said.</p>
+            <p>"That's when I looked into it - and saw they were not what I had thought they were."</p>
+            <p>The Creative Society denies it deceived any of its guests.</p>
+            <p>"It was a certain lack of due diligence [from the guests]," Mr Prudkov told BBC News.</p>
+            <p>Information about the group and links to its website had been included in each invitation.</p>
+            <p>"We have been actively communicating about climate change for several years," he said.</p>
+            <p>"We always openly stated our position.</p>
+            <p>"Before any interview recording, we have a pre-call via Zoom where we explain what we are talking about and who the other participants are.</p>
+            <p>"We took the time to reach out to every contributor after the conferences aired, asking them to share their impressions."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>One of the invitations sent out by Creative Society volunteers in Germany</figcaption>
+            </figure>
+            <p>BBC News has seen several of the invitations.</p>
+            <p>They clearly identify climate change as one the topics of these conferences. But there is no mention of the group's views or denial of human-driven climate change.</p>
+            <p>Dr Huq has asked the Creative Society to stop using his interview in online materials.</p>
+            <p>In response, Mr Prudkov told BBC News, it would not include Dr Huq's footage "in any future material".</p>
+            <p>And the interview has been removed from the group's website and most social-media accounts.</p>
+            <h3>Selective editing and 'manipulation'</h3>
+            <p>Several others invited to contribute to Creative Society conferences last year told BBC News they had been unaware of the group's views on climate change when they had accepted an interview request.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Juraj Smatana was one of the politicians featured at one of the Creative Society's conferences</figcaption>
+            </figure>
+            <p>The office of Juraj Smatana, a State Secretary at Slovakia's Ministry of Environment, said his pre-recorded contribution had been "manipulated" to give the impression he agreed with the views presented at the conference. Mr Smatana is one of the ministry's highest ranking officials.</p>
+            <p>It told BBC News legal action against the Creative Society was being considered.</p>
+            <p>Other guests have also suggested their pre-recorded contributions were misrepresented.</p>
+            <p>Portuguese Euro-MP Carlos Zorrinho said he had been "urged several times" during his interview to praise the work of the Creative Society.</p>
+            <p>"That did not please me," he told BBC News.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Portuguese MEP Carlos Zorrinho hopes his experience will serve as a "warning" for others</figcaption>
+            </figure>
+            <p>Jeff Masters, a US meteorologist who studies extreme weather events, said: "They were definitely selective about what I said.</p>
+            <p>"They did not include any of the parts where I talked about human-caused climate change."</p>
+            <p>The Creative Society denies accusations of manipulation or coaching.</p>
+            <p>"Media outlets edit the material to fit the time constraints and present the viewers with only the most essential information," Mr Prudkov said.</p>
+            <p>And the group was promoting "truthful information about the true causes" of climate change.</p>
+            <p>Anyone unhappy with their appearance on the videos should contact the society, which will "accommodate their requests", it says.</p>
+            <p>But why would the group interview people it fundamentally disagrees with?</p>
+            <p>It did not target anyone in particular and believed in allowing a platform for a wide spectrum of opinions, Mr Prudkov said.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>US meteorologist Jeff Masters says the Creative Society was "selective" about what he said</figcaption>
+            </figure>
+            <p>But some of the guests told BBC News its real intent was to gain credibility.</p>
+            <p>"They're drawing on the legitimate voices but then debunking what we are saying, in the overall impression that they are giving information," Dr Huq said.</p>
+            <h3>The star factor</h3>
+            <p>Mr Prudkov told BBC News "thousands of people" had been invited to Creative Society conferences.</p>
+            <p>In online posts, volunteers can be seen handing invitations to Hollywood stars including Johnny Depp, Javier Bardem and Elijah Wood.</p>
+            <p>None of them attended and there is no suggestion any back the group or its ideas - but it has allowed it to feature stars in its videos.</p>
+            <p>Another conference is scheduled in May.</p>
+            <h3>Pseudoscience and conspiracy links</h3>
+            <p>The Creative Society calls itself as a "project of all humanity" that, Mr Prudkov said, was "aiming to take our civilization out of this deadlock of self-destruction".</p>
+            <p>But its structure and finances are opaque.</p>
+            <p>And while it claims to have no leaders, one man features prominently in the group's social-media posts.</p>
+            <p>Igor Mikhailovich Danilov, a soft-spoken chiropractor, is also a leading figure in the AllatRa Ukrainian spiritual movement, whose members are among the founders of the Creative Society.</p>
+            <p>Mr Prudkov told BBC News Mr Danilov described himself as a "participant, a volunteer" of the Creative Society.</p>
+            <p>AllatRa is known for promoting pseudoscience and wild conspiracy theories involving aliens and secretive powerful elites that sacrifice children.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Soft-spoken chiropractor Igor Danilov seen in a video promoting the Creative Society</figcaption>
+            </figure>
+            <p>In 2017, the Ukrainian Orthodox Church of the Kyiv Patriarchate warned against AllatRa's "destructive activities", describing it as an "occult para-religious organisation".</p>
+            <p>Three years later, the Church's Chelyabinsk diocese, in west-central Russia, said it was concerned about what it considered a "psychocult".</p>
+            <p>The AllatRa movement did not respond to BBC News requests for comment.</p>
+            <p>It remains unclear how the Creative Society is funded but Mr Prudkov insists members are volunteers devoting their free time to the cause.</p>
+            <p>"We don't have any external funding," he said.</p>
+            <p>"This is all done by people themselves.</p>
+            <p>"There is no oil funding, or any other sources of income.</p>
+            <p>"We are not sponsored by any government or any institution."</p>
+            <p>With additional reporting from Ilona Hromliuk (BBC Ukrainian)</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

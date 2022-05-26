@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_in-pictures_21" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>In Pictures</mark>
+                <h2>Your pictures on the theme of 'into the blue'</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>We asked our readers to send in their best pictures on the theme "into the blue". Here is a selection of the photographs we received from around the world.</strong></p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Sandra Gibson: "Irregular-shaped raindrops formed on the shiny surface of a new dog poo bin."</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Jane Elle: "My friend, Corinna, in Sardinia. You can just make out the Isola di Tavolara, as well as some drinks, reflected in her sunglasses."</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Eliza Dutton: "I came upon this tree while camping in Michigan's upper peninsula. I instantly fell in love with how its veiny roots stretched for the clouds. In the hazy blue sky you can see the beginnings of a turbulent thunderstorm which drenched us in our tent that night."</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Jade Blue: "After months travelling in a van, we retreated to my parents' place in Wales for the first lockdown. The days were brighter for these wellies that my stepmom gifted me to match my name."</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Harald Loeffler: "Staring into the gas fire pit one evening during a lull in conversation as the fuel was turned low, I tried to capture the blue flame on the glass rocks, waiting for both the flame and discussion to change intensity."</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Richard Wagstaff: "It was mid-afternoon, and the way the sunlight illuminated the glacier was stunning. The guy on the rock was about 500m (0.3 miles) away from it."</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Karim Shokair: "In celebration on Mother's Day, my partner floating freely in the blue at the beautiful North Coast in Egypt."</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Patty Schoina: "The picture was taken from an abandoned building of an old sulphur mine on Milos, Greece. The water turns from warm yellow to deep blue leaving no trace. Two time frames reflected on a window."</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Madeleine Garner: "My daughter organises her art supplies by colour; blue is her favourite."</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Paul Griffiths: "A P-47 Thunderbolt World War Two American fighter at Southport Air Show, September 2019."</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Louise Sherratt: "To me, flowers are happiness."</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Guhesh Ramanathan: "This was the beginning of a night dive in the Andaman Islands, the play of the light in the deep water was fantastic."</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Nadia Badinelli: "One of the frequent visitors to our allotment."</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Laura Booth: "A blue tit against a blue sky on a cold winter's morning."</figcaption>
+            </figure>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

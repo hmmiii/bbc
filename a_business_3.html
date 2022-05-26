@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_business_3" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Business</mark>
+                <h2>Disney appoints executive to oversee metaverse strategy</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Mike White will lead Disney's metaverse strategy</figcaption>
+            </figure>
+            <p><strong>Disney has appointed an executive to specifically lead the entertainment giant's strategy for the metaverse.</strong></p>
+            <p>Mike White, who has been with the firm for more than 10 years, will oversee a team that includes senior leaders.</p>
+            <p>In a memo to staff, which has been seen by the BBC, chief executive Bob Chapek said the metaverse is "the next great storytelling frontier" to be explored.</p>
+            <p>Technology giants, including Facebook owner Meta and Microsoft, are pouring billions of dollars into the metaverse.</p>
+            <p>In the memo, Mr Chapek described the metaverse as a "perfect place to pursue our strategic pillars of storytelling excellence, innovation, and audience focus".</p>
+            <p>"Teams across the company are exploring this new canvas, and I have been blown away by what I've seen," he said.</p>
+            <ul>
+                <li>Is this the world's largest virtual fashion show?</li>
+                <li>Apparently, it's the next big thing. What is the metaverse?</li>
+            </ul>
+            <p>Mr White will become Disney's senior vice president for Next Generation Storytelling and Consumer Experiences.</p>
+            <p>In the newly-created role he will allocate resources, explore partnerships and encourage knowledge sharing on the metaverse, the company said.</p>
+            <p>He will also lead a team with skills including technology, strategy and storytelling.</p>
+            <p>Disney said it sees the metaverse as the next evolution of its almost 100-year-old storytelling tradition.</p>
+            <p>"Today, we have an opportunity to connect those universes and create an entirely new paradigm for how audiences experience and engage with our stories," Mr Chapek said in the memo.</p>
+            <p>Last week, Disney said sales at its theme parks in the US had climbed above pre-pandemic levels.</p>
+            <p>It also announced that its Disney+ streaming service had added 11.8 million subscribers in the last three months of 2021, taking the total to almost 130 million worldwide.</p>
+            <p>A metaverse is an online world where people can game, work and communicate in a virtual environment, often using VR headsets.</p>
+            <p>It is being touted by some of the world's biggest technology companies as a key development in the next generation of the internet.</p>
+            <p>The company formerly known as Facebook has made the biggest bet so far on the metaverse.</p>
+            <p>Last year, Facebook changed its corporate name to Meta Platforms and said it planned to spend more than $10bn (£7.4bn) to develop virtual reality software and hardware.</p>
+            <p>Meanwhile, Microsoft has said it was adding 3D virtual avatars and environments to its Teams chat system, as part of its push towards the metaverse.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

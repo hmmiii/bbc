@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_future-planet_6" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Future Planet</mark>
+                <h2>The environmental case for buying a coal mine</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Why would those who care about climate change choose to buy up coal mines or oil drilling rights? There's one surprisingly good reason, writes Richard Fisher.</h3>
+            <p>One day, the Swedish energy company Vattenfall decided to divest itself from a particularly dirty form of coal extraction in Germany, so it advertised that its mines were for sale. It would get an offer from a totally unexpected party.</p>
+            <p>At Vattenfall's lignite mines in Germany, enormous excavators had for years been clawing at mounds of brown coal, tearing off chunks with giant scooped teeth. Lignite is not especially profitable, and the scars it leaves behind on the landscape are brutal and dystopian.</p>
+            <p>Vattenfall's involvement in such a destructive form of mining had become a controversial issue back home in Sweden, because the company is state-owned. So, in 2014, it asked for bidders who would be willing to take over its German lignite operations.</p>
+            <p>The call came to the attention of Martina Krueger and her colleagues, who decided to submit an expression of interest. But Krueger wasn't an energy executive, nor was her organisation a mining firm - she was the acting director of the Nordic arm of Greenpeace</p>
+            <blockquote>People were starting to fall in love with the idea of us actually doing something as outrageous as that - Martina Krueger</blockquote>
+            <p>Why on Earth would an environmental campaigning organisation like Greenpeace want to take over a coal mine? It wasn't a stunt: Krueger and her colleagues were serious, conducting extensive economic calculations and making plans for how the takeover would work.</p>
+            <p>"One of my colleagues had been saying we should use this as a media opportunity," recalls Krueger. "I said, 'no, no, no, we don't do these kinds of stunts'. If we're doing this, let's do it for real. And then people were starting to fall in love with the idea of us actually doing something as outrageous as that."</p>
+            <p>Greenpeace's goal was not to continue mining, but to shut it all down, and leave all the coal in the ground.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A Vattenfall employee holds a clump of lignite coal in the Welzow Sued open-pit lignite coal mine (Credit: Sean Gallup / Getty Staff)</figcaption>
+            </figure>
+            <p>It is an idea that has slowly gained traction around the world. A growing number of campaigners, economists and legal scholars now believe that there is an environmental case for getting involved in the fossil fuel market: buying up coal mines and acquiring drilling rights, in order to do, well, nothing. It might even work out cheaper than other efforts to cut carbon emissions. It's a counter-intuitive proposal, not without significant legal and political obstacles, but could it actually work?</p>
+            <p>The environmental case for buying fossil fuels can be traced back at least a decade to the economist Bard Harstad of the University of Oslo.</p>
+            <p>Harstad had come across a little-known paper from 1993 arguing that climate-concerned nations would need to do something about the problem of "carbon leakage" in the fossil fuel market, if they wanted their climate treaties to work.</p>
+            <p>To understand what carbon leakage means, imagine you and almost everyone in your town agreed to switch to more climate-friendly electric cars - apart from one or two rogue neighbours. To their delight, those bad neighbours might discover that the gas-guzzling, polluting trucks at the local dealer had gone on sale, due to lower demand in the area. So, they take advantage: they buy the truck and "free-ride" off the back of everyone else's decision to go electric, amping up their carbon footprint in the process.</p>
+            <p>Carbon leakage is a bit like this, but on an international scale. If a group of nations decide to sign a treaty that rolls back their reliance on coal, thereby reducing global demand, then it can benefit the rogue countries that haven't joined stringent climate pledges. Lower demand reduces the price of coal, so these hold-outs soon learn that they can cheaply amplify the amount of fossil fuel they extract and burn, rather than investing in, say, wind or solar.</p>
+            <p>Carbon leakage is a particularly pernicious type of free-rider problem, where the countries making the least contribution to a global good end up behaving worse because of the sacrifices of the rest.</p>
+            <p>Harstad proposed that there could be a more proactive way of influencing the fossil fuel market, so such carbon leakage became less likely. What if climate-concerned nations clubbed together to buy up coal mines at the margin of profitability?</p>
+            <p>It sounds like a massive investment, which would put millions into fossil fuel pockets. But these mines need not be expensive to acquire. "Some of them are just making a tiny profit," explains Harstad, because their coal is expensive to extract, and the broader industry is losing steam. You might even find sellers who want the sites off their hands. In 2015, Vattenfall was not looking to make a heavy profit by off-loading their German lignite mines - it was part of a broader strategic move towards cleaner forms of energy production.</p>
+            <blockquote>Buying a coal mine and leaving the coal in the ground looks like a cost-effective way of sequestering carbon dioxide - Alex Tabarrok</blockquote>
+            <p>Having acquired all those cheap mines and shutting down their own, a coalition of climate-concerned nations could then leave thousands of tonnes of coal in the ground - and simply wait. As the reserves of easier-accessed coal elsewhere dwindled and the price started to rise again, the market would have nowhere to go. "It would no longer lead to the opening up of [previously low-profit] coal mines, because those are the exact coal mines you have already purchased," says Harstad. </p>
+            <p>The plan would work best, he argues, if many nations acted together, on a large scale, buying up mines all over the world. Holding the keys to all these sites would mean a coalition could reduce their own extraction without having to fear that new mines will open up elsewhere. This would strengthen existing international treaties, he concluded in a 2019 paper co-authored in Science.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Plants grow in an old fan at Zollverein coking plant in Essen, Germany. (Credit: Jochen Tack / Alamy)</figcaption>
+            </figure>
+            <p><strong>A smart buy</strong></p>
+            <p>Since then, a number of other analysts and economists have lent support to the idea of buying up mines, in the US and elsewhere. In 2015, The Atlantic suggested that it could be an effective tactic for climate-concerned billionaires.</p>
+            <p>And in October last year, the economist Alex Tabarrok at George Mason University spotted that a coal mine in West Virginia was on sale for $7.8m (£5.7m/€6.8m), so decided to perform some back-of-the-envelope calculations to see if it would be a cost-effective buy for an environmentally minded purchaser</p>
+            <p>Based on rough figures, Tabarrok pointed out that this West Virginia mine was expected to produce around 25,000 tonnes of carbon dioxide (CO2) per month, an amount that could cost around $2.5m (£1.8m/€2.2m) to sequester for a long time. Therefore, the mine would pay for itself in just over three months. "It's time to reup the idea of buying coal mines and shuttering them," he wrote. "Buying a coal mine and leaving the coal in the ground looks like a cost-effective way of sequestering carbon dioxide."</p>
+            <p><strong>Barriers to overcome</strong></p>
+            <p>So, what's stopping environmental organisations or nations buying into coal to shut it down? There are a number of obstacles.</p>
+            <p>Greenpeace's Krueger and colleagues encountered a few of them when they expressed interest in taking over Vattenfall's lignite mines.</p>
+            <p>One thing was clear from the start: it wasn't possible to just let the mines rot. They would have a moral responsibility to the site and its workers, as well as legal obligations to cultivate and clean up the land over the longer-term. The goal was to make the shutdown a just transition. "We thought we could actually play a role in this," says Krueger.</p>
+            <p>Greenpeace brought in expert teams to calculate the value of the assets and the longer-term obligations. This concluded that Vattenfall would need to offer funding for the clean-up, because the mine would no longer be making money, and that some form of governmental support would also be needed. Clearly, it wasn't going to be simple, but Greenpeace envisaged a foundation that would manage the shutdown, provide retraining for workers, and evolve the site into a new, cleaner landscape.</p>
+            <p>Greenpeace's offer was rejected. "They just threw us out of the bidding process," says Krueger, claiming that Vattenfall and the sub-contractor hired to manage the bidding never took Greenpeace's expression seriously.</p>
+            <p>The winning bid came from EPH, a Czech company that is part of the PPH energy group, but since then, controversy has followed about who is responsible for the long-term clean-up costs.</p>
+            <p>A spokesperson for Vattenfall told BBC Future: "After a thorough due diligence and the evaluation of all bids, Vattenfall’s board of directors came to the conclusion that EPH and PPF Group had submitted the overall best offer including meeting the criteria for a new reliable owner." They declined to comment on why Greenpeace’s offer was turned down.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Giant excavators extract lignite coal at the Jaenschwalde open-pit coal mine in Germany (Credit: Sean Gallup / Getty Staff)</figcaption>
+            </figure>
+            <p><strong>The right to non-use</strong></p>
+            <p>Over in the US, other environmental groups have attempted to buy fossil fuel rights ­- but were unsuccessful for different reasons.</p>
+            <p>In 2016, the US Bureau of Land Management (BLM) were offering oil drilling rights for 450 hectares of land in Utah. A company called Tempest Exploration successfully bid $2,500 (£1,840/€2,200), and started paying rental fees.</p>
+            <p>The company had been set up by Terry Tempest Williams, an environmentalist and writer who teaches at Harvard University. She had no intention of drilling, and wanted to keep the oil in the ground. When the BLM discovered this, they cancelled her leases.</p>
+            <p>Why? The reasons date back to laws and norms that were established in the frontier era of the US, hundreds of years ago.</p>
+            <p>When the US government was encouraging settlers to move out west in the 19th Century, they introduced "use it or lose it" rules for potential exploiters to encourage local investment, explains legal scholar Temple Stoellinger of the University of Wyoming. "It was about economic development. This was at a time where we were trying to expand westward and trying to encourage development of these western lands. And so we wanted people who are going to make use of those resources."</p>
+            <p>There was also good financial reason: when the federal government leased the land to a private company, they'd get a cut of the profits, boosting public coffers.</p>
+            <p>So, when the federal government today encounters an environmentalist that wants to bid against a fossil fuel company for rights, they are applying norms and rules from a different age.</p>
+            <p>That's why Stoellinger - along with seven other legal and environmental scholars - recently co-authored a paper in the journal Science arguing for a change in the law.</p>
+            <p>Non-governmental organisations and environmentalists like Tempest Williams say they should be allowed to bid for "non-use" (or conservation) rights for publicly owned US federal land.</p>
+            <p>"The fundamental problem that we were trying to highlight is that if you're going to allocate these public resources, based on auctions, then you should allow the conservation community to get in the game," says co-author James Salzman, a professor of environmental law at the University of California, Los Angeles. "We're in the 21st Century. The conservation and the outdoor recreation movements have grown enormously since the initial rules were put in place, but they're not allowed a seat at the table when these auctions are happening."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Protestors march against the Jaenschwalde-Nord lignite strip mine in Germany in 2012 (Credit: dpa picture alliance / Alamy)</figcaption>
+            </figure>
+            <p>To clarify, the US government is unlikely to stick their oar in if a coal mine or drilling rights were passing between private hands, but a sizeable proportion of exploitation deals involve public land. "These assets are owned by the federal government, as a public good and trust for the citizens of the United States. And, thus, as the evolution of citizens' thinking about how we should utilise these resources has changed, so should the laws change," says Stoellinger.</p>
+            <p>Ultimately, though, they acknowledge that a law change would be a highly political project. There are myriad deterrents for the US politician who would seek to allow non-use or conservation on exploitable federal land: communities that would object to the loss of fossil fuel jobs, not to mention the loss of revenue from royalties.</p>
+            <p>And some environmentalists may even object to the idea of having to pay to conserve public lands. Why, they might ask, couldn't the government just ban drilling or mining?</p>
+            <p><strong>Keeping it in the ground</strong></p>
+            <p>However, the idea of pro-active purchasing for conservation does have precedent in other areas of environmentalism, so it's not impossible to change attitudes, rules and laws.</p>
+            <p>Various groups have acquired land or negotiated water rights in order to preserve habitats for wildlife. Others have directly acquired grazing permits so that land is not used for climate-intensive agriculture. Some campaigners have even outbid logging companies for timber leases in Montana, or successfully acquired trawling permits and vessels from fishermen in California.</p>
+            <p>As Harstad put it in his original paper a decade ago, "paying for the conservation of a territory is not unrealistic". Millions of dollars are already spent by environmental groups on political engagement and campaigning, and climate-concerned governments are already investing heavily in carbon reduction and alternative energy.</p>
+            <p>Buying up relatively cheap coal mines on a large scale could be one more tool that the world has to ensure a just transition away from fossil fuels, and to keep thousands of tonnes of the black stuff from ever being combusted.</p>
+            <p>So, while Greenpeace Nordic may have been rejected in their attempt to acquire the desolate landscapes of Germany's lignite mines, it may just be a matter of time before someone else shows that it can work.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

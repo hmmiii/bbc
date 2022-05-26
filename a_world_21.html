@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_world_21" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>World</mark>
+                <h2>White House left behind as states drop Covid rules</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>The White House is facing pressure to revise its position on mask wearing as pandemic restrictions are eased in a number of US states.</strong></p>
+            <p>The governors of New York, Illinois and Massachusetts have said they will end certain mask mandates in their states.</p>
+            <p>Earlier this week, New Jersey, Connecticut, Delaware and Oregon unveiled plans to lift mask rules.</p>
+            <p>Impatient governors have been urging the White House to release guidance for dropping the use of face coverings.</p>
+            <p>But the US Centers for Disease Control and Prevention (CDC) reiterated on Wednesday that it was not yet time to lift US mask requirements.</p>
+            <p>And White House press secretary Jen Psaki said Americans should follow the CDC guidelines rather than less-restrictive state or local rules.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>President Joe Biden is facing pressure from Democratic governors over mask rules</figcaption>
+            </figure>
+            <p>Governors, however, are not waiting around for the go-ahead from medical experts in Washington.</p>
+            <p>All of the governors dropping restrictions this week - with the exception of the one in Massachusetts - are Democrats like US President Joe Biden. Mask rules have already been eased or were never adopted in most Republican-led states.</p>
+            <p>On Wednesday, the governors of New York and Illinois announced they would end their Covid-19 mandates requiring face coverings in most indoor public settings, but keep it for schools.</p>
+            <p>New York Governor Kathy Hochul said her state would stop requiring people to wear a mask or prove they had received a Covid-19 vaccine when entering most indoor public places from Thursday.</p>
+            <p>But in New York City the office of Democratic Mayor Eric Adams said people would still be required to show proof of vaccination to enter indoor public places.</p>
+            <p>In Massachusetts, students and teachers will no longer be required to wear masks in schools after 28 February, said the liberal state's Republican Governor Charlie Baker.</p>
+            <p>"It's time to give our kids a sense of normalcy," Mr Baker said.</p>
+            <p>Boston Public Schools, the state's largest school district, said it was still deciding how to respond to Mr Baker's move to relax mask rules.</p>
+            <p>State leaders are crediting a fall in Covid-19 cases as the winter Omicron wave recedes for the easing of restrictions.</p>
+            <p>But sceptics have accused them of following polling data as frustration grows among a pandemic-weary public and November's mid-term elections loom.</p>
+            <p>In Algonquin, a suburb of Chicago, Illinois, dozens of parents protested outside a school on Tuesday against their district's decision to continue to require masks.</p>
+            <p>"I'm standing up for my kids," one parent told WGN News. "Everyone's had time to get vaccinated, the masks haven't made a difference with cases, the studies are shown and enough is enough."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

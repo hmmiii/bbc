@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_how-we-work_6" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>How We Work</mark>
+                <h2>The small cities and towns booming from remote work</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>The new world of remote jobs has small towns and cities exploding with growth as workers explore alternatives to big metropolitan areas. Is this good or bad?
+            </h3>
+            <p>At the tail end of a strict five-month-long lockdown in Santiago, Chile, a sprawling city of about seven million residents, Gonzalo Fuenzalida finally reached his breaking point with urban living. As the owner of Chile Nativo, a travel company that specialises in adventure, he’d always wanted his family to live closer to nature. So, in December 2020, they took a one-month exploratory trip to the woodsy resort town of Pucón, which lies in the shadow of a puffing volcano 780km (485mi) south of the Chilean capital. </p>
+            <p>Three months later, Fuenzalida rented a house in Pucón near Lake Villarrica, where he and his wife now spend their free time biking, hiking and stand-up paddleboarding. Their seven-year-old son attends school in the neighbouring city of Villarrica, where Fuenzalida rents a two-metre by three-metre office to work. </p>
+            <p>“In all senses,” he says, “our life has been better.” </p>
+            <p>Of course, the move has not been without its challenges. The 56-year-old says internet speeds are nowhere near as fast as in Santiago, making it difficult to run his company from his home, which he says “lies in a black hole”. And he hasn’t exactly escaped from traffic, either, which can back up for hours during the area’s peak summer tourism season, especially now that the number of permanent residents has skyrocketed. </p>
+            <p>Like Fuenzalida, more than 380,000 people migrated away from the Chilean capital during the first year of the pandemic. Most ended up in small towns and secondary cities like Pucón, with more space and greater natural amenities. It’s a phenomenon that has played out around the world, as workers shun major metropolitan areas - and their high costs of living - for less expensive rural areas that are more conducive to their lifestyles. </p>
+            <p><strong>Big-city problems?</strong></p>
+            <p>With the pandemic decoupling work and place, it’s now possible to live in areas that haven’t historically offered jobs for certain professionals. For some secondary cities and smaller towns, this presents an opportunity to reverse brain drain, counter aging populations and inject money into city coffers. </p>
+            <p>But for others, this new trend has distorted housing markets, priced-out working-class residents and brought big city problems to small cities that were wholly unprepared for them.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>House prices have risen as remote workers have arrived in Boise, with knock-on impacts on existing local residents (Credit: Getty)
+
+                </figcaption>
+            </figure>
+            <p>The latter scenario has been particularly prevalent in America’s Intermountain West, which is home to the three states with the highest growth percentages between 2020 and 2021: Idaho, Utah and Montana. Oxford Economics recently named Boise, Idaho, the most unaffordable city for US homeowners, thanks to an influx of new remote workers from high-cost coastal cities such as Seattle and San Francisco. The median home price in this city of 235,000 is now $534,950 (£395,000) - 10 times higher than the median income. </p>
+            <p>A similar study from Florida Atlantic University, US, showed that three cities in neighbouring Utah - Ogden, Provo and Salt Lake City - were also among America’s top 10 most overvalued housing markets. Danya Rumore, a researcher at the University of Utah and founder of the Gateway and Natural Amenity Region (GNAR) Initiative, lives in the latter. “We used to call it Small Lake City,” she says, “But it’s really starting to feel a lot more like a big city, with the dynamics of the community changing notably.” </p>
+            <p>Big-city problems like gentrification, homelessness and air pollution are all on the rise, adds Rumore, while the overheated housing market (exacerbated by short-term rentals) has made it difficult for businesses in the service industry to maintain staff, since employees can’t afford rent. Rumore notes that Salt Lake City, which has a population of about 200,000, is emblematic of other urban centres in the Intermountain West, which are known for having ample natural amenities, good recreation opportunities, access to open space and a high quality of life.</p>
+            <blockquote>That’s a major transition that happened overnight that really takes years and years for markets and communities to adjust to - Danya Rumore</blockquote>
+            <p>“With the shift that’s been going on over the last year, we are seeing wealth move into these communities,” she says, noting that many new residents still earn their income in a high-earning area but now live in a lower-earning area. “That’s a major transition that happened overnight that really takes years and years for markets and communities to adjust to.” </p>
+            <p>Rumore believes this transition can play out in one of two ways. In the more idealistic scenario, the new arrivals plug into the community, while their wealth and resources lift everyone up. In the scenario she worries may be more common, however, the new arrivals extract from the community, they drive up prices and their purchasing power overwhelms those whose jobs are tied to local companies. </p>
+            <p><strong>An opportunity</strong></p>
+            <p>This trend of migration out of major cities has been somewhat contentious in the US, but it’s taken a different tone across the Atlantic. With a median age of 42, Europe is the oldest continent in the world. For decades, low birth rates and mass migrations to urban centres such as London, Paris and Madrid have left small towns and secondary cities shrinking. For many of them, the pandemic offers a glimmer of hope.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The suddent influx of higher-earners into Salt Lake City has disrupted the local economy, one expert says (Credit: Getty)</figcaption>
+            </figure>
+            <p>“There is an unprecedented chance in Europe to save many rural areas,” says Marcus Andersson, CEO of Future Place Leadership, a Stockholm-based consultancy that studied the implications of remote work and new relocation patterns. “Many of them are on the brink of bankruptcy - they can’t survive as functioning places or functioning administrations - and this is a really great opportunity … because they are now attracting the very people they need to attract: those that have kids or are on the way of starting a family.” </p>
+            <p>Ireland, where the rural-urban divide dominates politics, has seized the moment like nowhere else in Europe. It made a major push last March to decentralise away from Dublin with a new rural development policy that Rural and Community Development Minister Heather Humphreys said was "the most ambitious and transformational policy for rural Ireland in decades”. </p>
+            <p>The plan includes €2.7 billion (£2.3bn, $3.1bn) to roll out superfast broadband across the nation. The idea is to turn dying pubs into working hubs, giving declining villages a new lease on life. The initiative also offers millions of euros in financial support for regional authorities to turn vacant properties into a network of more than 400 remote working facilities as well as tax breaks for individuals and companies that support homeworking. </p>
+            <p>Japan (the oldest country in Asia, with a median age of 47) took a similar approach last April, offering a ¥1 million (£6,430, $8,725) incentive for workers to move to rural areas while logging on remotely for jobs based in greater Tokyo, which holds 30% of the population. The rural revitalisation plan also provides up to ¥3 million for those who set up new IT businesses in the countryside. </p>
+            <p><strong>Will they stay or go?</strong></p>
+            <p>Of course, the question in Japan and around the world remains the same: will those who relocate to small towns and secondary cities stay once the pandemic subsides?</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Gonzalo Fuenzalida says relocating has given his family the life they wanted (Credit: Gonzalo Fuenzalida)</figcaption>
+            </figure>
+            <p>Andersson thinks creating the right ecosystem will be key to capitalising on this opportunity since remote workers don’t just work from home; they work in coffee shops, cafes, co-working spaces and community centres. </p>
+            <p>“What these places need to do is to create meeting spaces for people and networks where they can interact, learn from each other and grow together,” he says. “They need to become a little bit of what the big cities used to be for people, for companies and for innovation.” </p>
+            <p>In general, Andersson believes those who have moved away from major metropolitan areas will stay in their new homes, but they may also maintain a link to the place from which they came, such as a smaller flat or co-living place. “We’re coming from a situation where it was either-or,” he explains. “Now, you can be in both places.” </p>
+            <p>Rumore says that, in the US, she’s seen anecdotal evidence that some big-city workers who relocated to small resort towns last year are now on the move once again. Yet, they aren’t necessarily going back home. “When you realise you don’t want to live in small town Utah, but Salt Lake’s got really good outdoor access, too, you think, ‘I should just move there instead of Seattle or Silicon Valley’,” she explains, noting that this may put even more strain on cities in the Intermountain West. </p>
+            <p>As for Fuenzalida in Chile, he has no plans of giving up his new life in the resort town of Pucón anytime soon. He’s tapped into a strong community of outdoor enthusiasts, found work-arounds for his internet issues and purchased a plot of land in the forest to build a new home and office. “For a family like ours that is really connected with nature,” he says, “this is exactly the life we wanted.” </p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_food_8" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Food</mark>
+                <h2>Teh tarik: Malaysia's frothy 'national drink'</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Mixing Indian, Chinese and British influences, teh tarik embodies Malaysia in a glass and has long helped bring the diverse nation together.</h3>
+            <p>An arc of piping-hot tea streamed high above my head as the waiter poured the frothy concoction from one tin cup to another, increasing the distance with each pass. In an act that seemingly defied physics, he angled the stream further over my table and channelled the miniature waterfall flawlessly into my glass.</p>
+            <p>Looking up from the tableside spectacle across the smoky room, I noticed the other diners around me: a young Indian family returning from the temple across the street; a meeting of sleek-looking bankers hunched over spreadsheets; Muslim students wearing traditional songkok hats; and a few uniformed street cleaners taking a break from their morning work. It was as if a microcosm of Malaysia was summoned here, drawn by the allure of this bubbly drink.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The quality of teh tarik is measured by its theatrical, aerial "pull" (Credit: Matt Stirn)</figcaption>
+            </figure>
+            <p>Teh tarik, or "pulled tea" in Malay, is commonly drunk in Southeast Asia, but it's the unofficial national drink of Malaysia, where it was invented. It's a relatively simple mixture of strong black tea, condensed milk and ample sugar, and if you wander through any Malaysian city at any time of day, you'll spot locals of all backgrounds crowded around plastic tables outdoors, sipping mugs of the mocha-coloured drink while chatting about anything and everything.</p>
+            <p>Each family-run stall has their own closely guarded recipe, and the quality of teh tarik is measured by its "pull", a theatrical display that aerates the liquid, enhances its deep flavour and helps it develop its quintessential froth that sets it apart from any other tea. Whoever can master this feat becomes a local celebrity with a devout following.</p>
+            <blockquote>Teh tarik is something that can connect people from different races, cultures and religions</blockquote>
+            <p>While its sweet, earthy taste is reason enough for teh tarik's popularity, its cultural significance runs much deeper, and the drink is essentially a metaphor for the country's strong sense of tolerance and diversity.</p>
+            <p>"In Malaysia, we have had many years to familiarise ourselves with living in a multicultural society," said Salma Nasution Khoo, an author and social activist from Penang. "[Despite our differences] everyone is aware of the importance of reverting to a state of equilibrium and mutual respect."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Malaysia is a cultural crossroads of many Asian cultures (Credit: Matt Stirn)</figcaption>
+            </figure>
+            <p>Just as Malaysia is a cultural melting pot of indigenous Malay, Chinese, British and South Indian influences, teh tarik is a liquid fusion of its cultures and customs. Black tea was first introduced by the Chinese in the 1830s; the craft of pulling was developed by South Indian street cooks after 1850, and milk and sugar were introduced nearly 100 years later during the end of British colonialism (1867-1957). Because many of the country's cultures contributed to the creation of teh tarik, most Malaysians, regardless of ethnicity, feel attached to it today.</p>
+            <p>"Teh tarik is something that can connect people from different races, cultures and religions," said Mohd Azmi, a cartoonist, author and ex tea puller from George Town. "We can all still sit together in one place, have the same drink and briefly ignore our differences."</p>
+            <p>I first heard about this tea while in Singapore with Khim Fam, a close friend from Kuala Lumpur. While eating at a Malaysian food stall, he handed me a cup of teh tarik, exclaiming, "This is my entire country in one glass." Perhaps it was my training as an anthropologist, or just my body craving the sugar, but as Fam described the history of the tea, I was enamoured and knew that I needed to learn - and taste - more. A few months later, we sat in the front seats of Fam's car, bouncing down a jungle-covered highway on the start of a 10-day road trip across Malaysia following the trail of teh tarik and its important place in the nation's history.</p>
+            <p>Our journey began in the coastal city of Malacca, known for its bustling night markets and brightly painted buildings overlooking the Malacca Straight. It was near here that the Portuguese colonised the region 1511, followed by the Dutch in 1641 and eventually the British, who took control in 1824. In addition to subjugating local Malays, each newcomer also contributed to a butterfly effect of cultural exchange that would eventually shape the country we see today.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A few of the many teh tarik drinks the author ordered during his 10-day road trip to trace the tea's origins (Credit: Matt Stirn)</figcaption>
+            </figure>
+            <p>Interestingly, the origins of Malaysian tea and the invention of teh tarik find their roots in the rubber industry. In 1877, the director of the Singapore Botanic Garden, Henry Nicholas Ridley, imported the first rubber tree from Brazil and British Malaya quickly became the world's largest producer of rubber, relying on imported labour from China and South India to manage tens of thousands of trees. These South Indian immigrants, mostly from Chennai, brought with them a lively enterprise of selling pulled chai, which at the time, was served without milk and made from Chinese black tea. As the Indian-spiced tea became increasingly popular among rubber plantation workers, factory chai stands evolved from a place to find a quick drink to a refuge where vendors, known as mamaks ("uncle" in Tamil), welcomed tired labourers to relax and talk amongst friends. Here, the first hints of teh tarik had begun to simmer, but it would be decades before the next piece of teh tarik's origin story began to brew in the mountainous rainforest of central Malaysia. </p>
+            <p>After Malacca, we drove north into the mountains of the Cameron Highlands and the landscape changed. Flat fields of oil palms gave way to dense tropical jungle where batik-style bamboo houses peeked out of the foliage and rusty road signs warned of tigers in the area. Suddenly our view transformed as tropical ferns were replaced by fields of perfectly manicured tea bushes. As we drove through small villages of English Tudor-style houses and shops, the British influence across the highlands was unmistakable. </p>
+            <p>Fifty years after South Indian merchants first began hawking tea at Malaysian rubber factories, British-born businessman Archibald Russell discovered that the highlands of Central Malaysia were a perfect environment for growing tea. Russell imported plants from China and founded the first Malayan tea plantation in the late 1920s. Malayan tea production rapidly expanded to serve the international market, even withstanding a bloody guerrilla campaign in the region during World War Two. </p>
+            <p>As the area rebuilt its economy after the end of Japanese occupation in 1945, demand for fine Malayan tea was so high that local chai sellers could no longer afford to buy the high-grade leaves from the nearby plantations. They turned to sarabat, the lowest quality dust and fragments left over from processing, which was much more affordable but had an astringent taste. Adopting the British practice of adding milk and sugar to their brew, South Indian merchants turned to condensed milk to mask the tea's bitterness. Out of desperation and creativity, teh tarik was born. Next, it needed somewhere to grow.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The rolling hills of the Cameron Highlands in central Malaysia offer ideal conditions to grow tea (Credit: Matt Stirn)</figcaption>
+            </figure>
+            <p>The seaside city of George Town, a historical trading port and the largest city on Penang Island, is considered by many Malaysians to be where teh tarik exploded in popularity shortly after World War Two. Strolling through its streets is like a whistle-stop tour of Malaysia itself: towering minarets sit next to brightly painted Hindu statues that sit opposite Buddhist temples. It's a cohesive jumble of diversity, and the perfect place for a drink born from multiculturalism to thrive.</p>
+            <p>"Teh tarik is taken very seriously here," said Fam, as we drove over the bridge connecting the mainland to Penang. "If Malaysia is its home, this is its heart."</p>
+            <p>Today, the city is arguably the best place to sample the tea, and it can be tasted at some of the country's most renowned mamak stalls and roti shops, like Roti Canai Transfer Road and Roti Canai Jalan Argyll, or at Malaysia's only tea-pulling competition, which was originally born in Penang and now attracts thousands of spectators to the island and other rotating venues each year. As we drove into the Little India neighbourhood near Queen, Chulia and Market streets, I could see tea being majestically pulled on every street corner.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>George Town is arguably the best place to sample teh tarik (Credit: Matt Stirn)</figcaption>
+            </figure>
+            <p>While the story of teh tarik may culminate in the cafes and stalls of George Town today, its story and impact on Malaysian culture is far from over. The drink has recently experienced a new wave of popularity as a symbol for navigating conflict. Stemming from its historical ability to unify disparate groups, organisations throughout Malaysia have begun hosting "Teh tarik sessions" in which participants identify common ground and embrace diversity to discuss important issues - much as they would in mamak stalls. The meetings have since been utilised by schools and nonprofits to facilitate conversations among students, and even by the national government to resolve political impasses.</p>
+            <p>"Multiculturalism is the future of all cities and countries," said Khoo, "and in the words of anthropologist AB Shamsul, this is an era of 'talk conflict and walk cohesion'." In other words, people must learn to get along in order to cope with the changing world, and teh tarik might just be able to show us how.</p>
+            <p>Since my return from Malaysia, I have often found myself reminiscing about the important lessons that teh tarik can teach. When the news gets depressing or the state of global affairs seems too polarised to reconcile, I find comfort in opening my carefully horded bag of Malaysian black tea and pouring a sweet cup of the soothing beverage. While I've never quite mastered the pull, I can still create a few encouraging bubbles, which remind me that sometimes all it takes is one small commonality and a spoonful of condensed milk to bring people back together.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

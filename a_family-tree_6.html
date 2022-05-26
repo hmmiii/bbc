@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_family-tree_6" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Family Tree</mark>
+                <h2>Is having a favourite child really a bad thing?</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Although it may be uncomfortable to admit, many parents play favourites among their children. Is that 'bad' parenting?</h3>
+            <p>Joanna knew she had a favourite child from the moment her second son was born. The Kent, UK-based mum says she loves both of her children, but her youngest child just “gets” her in a way that her first-born doesn’t.</p>
+            <p>When Joanna’s first baby was delivered, he was rushed away from her due to a health concern, and she couldn’t see him for 24 hours. Missing this valuable bonding period was, she believes, the start of a long-lasting preference for her second son, whom she was able to spend time with immediately after he was born.</p>
+            <p>“To sum our relationships up: I have to make an appointment to speak to my eldest,” says Joanna, whose full name is being withheld to protect her children. “With my youngest, I could call him at 0230 and he’d drive miles to meet me. My youngest is the nicest guy on the planet. He’s caring, generous, courteous and friendly. He’s the kind of person who would help anyone out.”</p>
+            <p>Though she battled her feelings for years, Joanna says now she’s in a place of acceptance. “I could write a book on why I love one more than the other,” she says. “It’s been hard, but I haven’t got any guilt.”</p>
+            <p>Unlike Joanna, most parents’ favouritism is subtle and goes undiscussed. Having a favourite child might be the greatest taboo of parenthood, yet research shows that the majority of parents do indeed have a favourite.</p>
+            <p>With plenty of evidence to suggest that being the least-favoured child can fundamentally shape the personality and lead to intense sibling rivalries, it’s no wonder that parents might worry about letting their preferences slip. Yet research also shows that most kids can’t tell who their parents’ favourite child really is. The real issue, then, is how parents manage their children’s perception of favouritism.</p>
+            <p><strong>Playing favourites</strong></p>
+            <p>“Not every parent has a favourite child, but many do,” says Jessica Griffin, an associate professor of psychiatry and paediatrics at the University of Massachusetts Medical School, US. “Data suggests that mothers, in particular, show favouritism to children who have similar values to them and that engage more with family, over qualities such as being highly ambitious or career driven.”</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Sometimes, parents play favourites more towards younger children, possibly because they feel more confident as child-raisers after having done it already (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>Regardless of the reason, some research shows many parents almost certainly do have favourites - whether they admit to it or not. In one study, up to 74% of mothers and 70% of fathers in the UK have been shown to exhibit preferential treatment towards one child.</p>
+            <p>Yet for most, the topic remains off-limits. In other research, when parents were surveyed, just 10% admitted to having a favourite child, suggesting that for most mothers and fathers, feelings of favouritism remain a tightly held family secret.</p>
+            <p>When parents do admit to having a preferred child, research suggests birth order plays an important part in who they favour. According to the same YouGov survey, parents who admitted having a favourite child showed an overwhelming preference towards the baby of the family, with 62% of parents who have two children opting for their youngest. Forty-three percent of parents with three or more children prefer their last-born, with a third selecting a middle child and just 19% leaning towards their eldest.</p>
+            <p>Dr Vijayeti Sinh is a clinical psychologist at Mount Sinai Hospital in New York City. She says that a favouritism towards a youngest child is often to do with the social and emotional skills associated with birth order - as parents gain more practice in child-rearing, they have a better idea of how they want to shape their offspring’s childhood, and what attributes are most important to pass on.</p>
+            <blockquote>I could write a book on why I love one more than the other. It’s been hard, but I haven’t got any guilt - Joanna</blockquote>
+            <p>“Parents tend to favour a child that is most like them, reminds them of themselves, or represents what they view as a success of parenting,” she says. “Younger children are most likely to have been raised by a parent who, over time and experience, is more confident and skilled in their child-raising.”</p>
+            <p><strong>‘Bad’ parenting?</strong></p>
+            <p>Though parents do often have a favourite, many are racked with guilt, knowing that showing a preference will have a long-lasting impact on their child’s sense of self-worth. The concern is not entirely unfounded.</p>
+            <p>“Children who grow up in families where they feel that they are treated unfairly may experience a deep sense of unworthiness,” says Sinh. “They might feel that they are unlovable in some way, or do not possess the special traits and characteristics needed to be loved by others. Feeling like the black sheep of the family can lead to fears and insecurities - children might become self-protective and try to be overly nice and agreeable around others.”</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Often, children aren't good at gauging who the 'preferred' child actually is, even if they believe a parent's favouritism is obvious (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>But for most parents, their worries are misplaced. Evidence suggests that unless preferential treatment is very extreme, most children are not impacted by being the least favourite child.</p>
+            <p>“Sometimes parents are blatantly obvious in their demonstration of love and affection,” says Sinh. “But when parents are mindful and thoughtful and do their best to ensure that any feelings of closeness or likeability factor aren’t plain and clear, then children don’t feel unworthy of their parents’ love and support.”</p>
+            <p>In fact, in most cases children might not even know that their parents prefer their sibling in the first place. In one study, when people who stated that their parents had a favourite child were probed, a staggering four out of five claimed that their sibling was favoured over them - a seemingly improbable statistic. Other studies have shown that children incorrectly identify who the favourite child is more than 60% of the time.</p>
+            <p>Of course, it’s possible that parents are doing a much better job of disguising their preferences than you would expect. Or - as Griffin suggests - we’re simply very bad at guessing who the favourite child really is.</p>
+            <p>“Although you might think that children instinctively know whether their parent has a favourite child and who that child is, the data is surprising,” she says. “Children might assume that the first-born or the ‘baby’ of the family is the favourite, or the child who is an overachiever in the family and causes less parenting stress. Whereas in actuality, the parent might have different and varied reasons for the favouritism - such as favouring the child who struggles the most, or the child that is most similar to them.”</p>
+            <blockquote>In the majority of cases, children have no idea which sibling their parent or parents prefer</blockquote>
+            <p>Griffin argues that it’s perfectly OK - and even expected - for parents to have favourites, and that parents shouldn’t feel guilty if they find themselves feeling closer to one child over another. She says that although children who believe they are the least-favoured child tend to have lower self-esteem and higher rates of depression, in the majority of cases, children have no idea which sibling their parent or parents prefer.</p>
+            <p>Perhaps who the favourite child really is isn’t so important after all.</p>
+            <p><strong>No less love</strong></p>
+            <p>Griffin has found that the favourite-child conundrum has shown up in both her professional and personal lives: her three children constantly joke about who the ‘favourite’ child must be.</p>
+            <p>Although she recommends parents or children who find that favouritism is affecting their relationships or mental health should speak to a paediatrician or mental health provider, she believes most imbalances can be addressed with simple tactics that demonstrate care and attention.</p>
+            <p>Griffin says that although parents might not readily admit to favouritism, they certainly won’t be alone if they find themselves feeling closer to one child over another. Most mothers and fathers have favourites - and that’s OK.</p>
+            <p>“There are going to be days when we prefer to be around one child over another, for a number of different reasons,” she says. “The important thing to remember is that having a favourite child does not mean that you love your other children less.”</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

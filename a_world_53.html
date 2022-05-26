@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_world_53" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Africa</mark>
+                <h2>How old Ugandan negatives are bringing families back to life</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Ntare Guma Mbaho Mwine has made it his mission to preserve and exhibit the work of the late Ugandan studio photographer Kibaate Aloysius Ssalongo, who recorded the lives of people from the rural town of Mbirizi.</strong></p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Mwine has not established the names of the wedding couple or the date this picture was taken. "It's as if time is slowly fading them away," he says</figcaption>
+            </figure>
+            <p>Or sometimes people hang on to the memory of the photograph itself being taken, the print having been lost in the packing and unpacking of possessions that comes with moving.</p>
+            <p>All these feelings are captured in this retrospective of Ssalongo's work.</p>
+            <p>A keen photographer, Mwine, who was born in the US but has roots in Uganda, came across Ssalongo's studio by chance in 1999. His car had broken down in Mbirizi and he had some time to kill.</p>
+            <p>He was invited inside and in the darkroom the Ugandan pulled out one of several sacks full of hundreds of deteriorating negatives.</p>
+            <p>This was a visual archive of the local residents dating back to the 1960s.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Tax collector Abdul Lule was pictured with his wife Robinah Nanswera but Mwine has not yet confirmed the year the photo was taken</figcaption>
+            </figure>
+            <p>"I was astounded because his work was just stunning," Mwine told the BBC's Focus on Africa radio programme.</p>
+            <p>As Mbirizi town was several hours' drive from the bustling capital, Kampala, "he was the only person for miles around who had a camera. So he was famous because everyone who wanted a picture had to come to his studio."</p>
+            <p>And the people featured were not wealthy.</p>
+            <p>"They were the farmers and local tradesmen. It's remarkable to see a window into that world and the pride that people had in their work and how Kibaate [Ssalongo] depicted and captured moments of intimacy between people."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Mutesi Hajarah came to Ssalongo's studio with a man called Sunday, who was a mechanic</figcaption>
+            </figure>
+            <p>Mwine struck up a lasting friendship with the photographer and promised to restore and exhibit his images.</p>
+            <p>Ssalongo died in 2006 at the age of 67 but the project continued. It culminated in Memories of Love Returned, a roadside exhibition of more than 5,000 prints recently shown, for the first time, in Mbirizi.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Thousands of local people came to look at the images displayed for the first time in public in Mbirizi</figcaption>
+            </figure>
+            <p>The boards displaying the pictures stretched for more than 100m and people came from across the area to find out if they could see themselves or their friends and relatives.</p>
+            <p>"It's the return of memories lost or memories from the past that they'd forgotten," Mwine said.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Johnson Makanga's father Ephraim Ssejjoba was pictured with his wife (R) Rosemary Nabyanzi and his sister (L) Victoria Nambuusi in this 1975 photograph</figcaption>
+            </figure>
+            <p>One visitor to the exhibition, Johnson Makanga, had no visual memory of his father as he had died when he was very young. But his uncle spotted the long-lost picture (above), which also featured his mother and aunt, who are both now also dead.</p>
+            <p>"Johnson was just blown away that he was seeing his father for the first time."</p>
+            <p>There was a sense of loss but also of gratitude as he "could see himself in his father".</p>
+            <p>Two other men, brothers Kukumba Emmanuel and Katerega Isaac Muguzi, discovered a picture of their father who had just become an MP for the local area when it was taken in 1962.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Lubyayi Martin Onesmus Muguzi sat for Ssalongo in 1962 shortly after becoming an MP</figcaption>
+            </figure>
+            <p>Lubyayi Martin Onesmus Muguzi (above) was the first MP for the Lwengo constituency, which included Mbirizi. The picture was taken by Ssalongo on the day that Muguzi received his first pay cheque for being a legislator.</p>
+            <p>His sons "were astounded to see their father as a young man", Mwine says.</p>
+            <p>And Nalongo Teddy recognised her lost wedding photograph from 40 years ago.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Nalongo Teddy pictured with her late husband Gerald Majera Kato Ssalongo in 1978</figcaption>
+            </figure>
+            <p>She also found a picture of her daughter who she had brought to the studio. She did not have enough money to buy the print at the time.</p>
+            <p>As with anyone who recognised themselves or a relative in a picture, Mwine gave her the prints once the exhibition had finished.</p>
+            <p>As people spent time looking at the exhibition, Mwine could see that they were reconnecting with the past.</p>
+            <p>"Sometimes people can pass and they become distant memories, so what's been great from the exhibition is that the memories have returned in many ways and that's been really heart-warming to see."</p>
+            <p>Over the last few years, Mwine himself has been photographing the community as a way to mark changes by recreating some of Ssalongo's images.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Ssalongo shot Immaculate Nakabuye and her husband John Mbabali with their daughter in 1983, Mwine recreated the picture in 2017</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Ssalongo shot Juliet Batenga and Joseph Muteesasira on their wedding day in 1974 and Mwine photographed them in 2017</figcaption>
+            </figure>
+            <p>He wanted to bring Ssalongo's work back to Mbirizi so that it could be where the exhibition was seen first but now he has ambitions to take it abroad. He is also planning a documentary and a book.</p>
+            <p>People in Europe and the US will obviously have a different relationship to the pictures but Mwine hopes that the images "will offer mysterious glimpses of memories of love that Ssalongo skilfully captured on film.</p>
+            <p>"These are the stories and intimate portraits that have too often been lost when writing the history of Uganda."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Mwine photographed Ssalongo outside his studio in 2001</figcaption>
+            </figure>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_science_11" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Science</mark>
+                <h2>How Taiwan used simple tech to help contain Covid-19</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>In Taiwan, finding someone who will talk about their Covid experience is harder than you might think.</strong></p>
+            <p>The island has maintained some of the lowest case rates in the world throughout the pandemic - lasting more than 200 days in 2020 without a single case.</p>
+            <p>During its worst outbreak in May 2021, its daily case load amounted to several hundred local cases per day.</p>
+            <p>Since the Omicron variant hit Taiwan in early January, local case numbers have remained relatively low, in single figures or low double digits each day.</p>
+            <p>Given these numbers there is some stigma attached to catching the virus. The BBC spoke to one Taiwanese man who caught Covid-19 at the end of January, but he would not reveal his name, or many details, for fear of negative reactions or disapproval from other people.</p>
+            <p>He tells us after testing positive from a home test and then again at the hospital, he was sent to an isolation ward. The police then investigated his movements for 14 days prior to testing positive - based on self-reported information and his past QR scans at restaurants, and other venues.</p>
+            <p>That sophisticated tracing system emerged from a relatively low-tech and crowd sourced development process.</p>
+            <p>G0v, pronounced 'gov zero': a largely anonymous collective of tech workers - designers, programmers, activists - has been key in originating ideas.</p>
+            <p>The collective is best known for bi-monthly hackathons and "forking" - a concept taken from programing, where existing open source software is redesigned into a new product.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Digital Minister Audrey Tang credits crowd sourced solutions for supporting Taiwan's Covid response</figcaption>
+            </figure>
+            <p>When Covid-19 reached Taiwan in early 2020, g0v began to crowd source solutions to emerging problems thrown up by the crisis, such as mass contact tracing and mask rationing.</p>
+            <p>The best ideas were then brought to Taiwan's digital minister, Audrey Tang (also a g0v contributor), who would share them with Taiwan's cabinet.</p>
+            <p>G0v worked through several proposals to create a robust contact tracing system - from Google-based forms, to webpages and apps, but they all proved to be too cumbersome.</p>
+            <p>Eventually, the group came up with a hybrid-solution. The system uses quick response (QR) codes and a corresponding 15 digit code, that can be texted for free, without a smartphone, to the 1922 hotline at Taiwan's Central Epidemic Command Centre (CECC).</p>
+            <p>The QR-based system was originally designed for public transport only, explains Ms Tang, but was quickly embraced much more widely.</p>
+            <p>More than two million businesses, from shops and cafes, to its famous night markets, hung QR codes up on their walls in the first week of rollout. Customers must scan them every time they enter a business, text 1922, or fill in an old fashioned pen and paper form (kept on file) in case of a community outbreak.</p>
+            <p>These QR codes have allowed local health authorities to work backwards in order to retrace a person's movements when a positive case is detected - a labour-intensive, painstaking procedure that is only possible thanks to some of the lowest case rates in the world.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Tawian's QR code system at many public venues from cafes to markets proved popular and successful</figcaption>
+            </figure>
+            <p>Despite strict border controls, authorities have still investigated six million potential contacts, according to data from the Central Epidemic Command Centre (CECC).</p>
+            <p>Since Taiwan's first confirmed positive Covid-19 case in January 2020, there have been a further 20,156 confirmed cases.</p>
+            <p>Taiwan's cell phone networks were also used in contact tracing to find and contact individuals who may have been exposed to the virus.</p>
+            <p>For instance, In early 2020, health authorities texted more than 627,000 people who may have come in contact with covid-positive passengers after they disembarked in northern Taiwan from a Japanese cruise ship.</p>
+            <p>While easy to use, contact tracing has raised some important questions over an individual's data privacy in many countries, a concern that Ms Tang says was factored into the creation of Taiwan's own systems.</p>
+            <p>Cell phone tower data, for example, was chosen over global positioning system data (GPS) because it can only provide an approximate (as opposed to exact) user location, Ms Tang says. While contact tracing data is also purposely decentralised, deleted after 28 days and kept out of the hands of prosecutors.</p>
+            <p>She says the phone company, venue and QR code maker only have fragmented data about each individual.</p>
+            <p>"So, these different parties are storing only part of the piece of the puzzle, and without piecing them together, a cybersecurity breach or something does not actually reveal anything useful."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Tough travel restrictions helped protect Taiwan with early measures including mandatory quarantine</figcaption>
+            </figure>
+            <p>Strict travel restrictions barring most foreigners have largely remained in place since early 2020, keeping the virus locked out of Taiwan and its outlying islands. The few visitors who do arrive are tracked.</p>
+            <p>Their travel data is sent in batches to the National Health Insurance Administration - Taiwan's answer to the UK's National Health Service - to be stored for a period of time, following their arrival.</p>
+            <p>They must also undergo mandatory quarantine: 14 days in a quarantine hotel, or at home, followed by 7 days of "self-health management." Over the 21-day period, they receive calls and texts about their health status from the CECC and local police station.</p>
+            <p>While vaccines became widely available in countries like the US and UK in 2021, Taiwan faced major vaccine shortages due to Covax production delays and the slow development of a home grown alternative jab.</p>
+            <p>When Taiwan was then hit by its worst Covid outbreak in a year, in May 2021 after months without a single local case, vaccine donations from the US, Japan, Lithuania, Slovakia, and the Czech Republic arrived. But working out how to efficiently distribute them was the next challenge</p>
+            <p>Taiwan's government initially followed a vaccine rationing system based on age, occupation and other health risks to ensure as many people as possible received their first dose, before moving onto the second and later boosters.</p>
+            <p>Here again, g0v stayed involved, as members helped develop a centralised website, to find nearby vaccination centres (although vaccine registration could also be found on individual hospital websites.)</p>
+            <p>Cofacts, an existing g0v project to fact check fake news also began to publish posts debunking a surge in disinformation about Covid-19 and various vaccines.</p>
+            <p>Despite this wave of disinformation Taiwanese people have been largely receptive to immunisation. Vaccination rates top 80% for the first dose, upwards of 75% for the second dose, and now more than 30% for a third booster shot, as of mid-February.</p>
+            <p>Jabs are recorded in vaccine booklets, although simple QR-based digital certificates can also be printed out, or added to apps like Apple Wallet.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Vaccine take-up has been high in Taiwan</figcaption>
+            </figure>
+            <p>Taiwan's Covid success would not be possible without 'buy-in' from a society that has continued to use QR-based tracking and carefully follows other government guidelines like mask wearing and social distancing.</p>
+            <p>"Most people in the United States do not want to get tracked, but in Taiwan, if you say we're tracking you for pandemic purposes, most people will accept that," says Jason Wang, Professor of Paediatrics and Health Policy at Stanford University, who has published academic work on Taiwan's contact tracing and Covid-19 response.</p>
+            <p>Mr Wang says a key factor driving willingness to cooperate is that many Taiwanese lived through severe acute respiratory syndrome (SARS) 20 years ago. So, when Covid-19 emerged, both the government and society were more prepared and willing to act than most places.</p>
+            <p>"People were scared of what happened during SARS, and there's a sense of self-preservation and social solidarity from that [experience]," she says.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

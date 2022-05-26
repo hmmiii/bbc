@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_in-pictures_8" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>In Pictures</mark>
+                <h2>The English Riviera during the 2021 UK staycation</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Last summer, photographer David Hares made a brief visit to Paignton where he got chatting to a man taking his parrots for a ride on his mobility scooter along the promenade. Hares's curiosity was sparked, so this summer he returned once more to the English Riviera. This is what he found.</h3>
+            <p>I had an inkling it would be a fertile place for photography, because more people than usual would be here on staycations.</p>
+            <p>Holidaymakers were in high spirits, happily posing for portraits or letting me unobtrusively capture a snapshot from their day out.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Bride-to-be Suzanne (centre) laughs with her bridesmaids and friends on her hen weekend in Torquay</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A couple eating lunch on Paignton Sands</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Ladies brave the wet August weather</figcaption>
+            </figure>
+            <p>Lots had come down the M5 from the Midlands, choosing Torbay over Spain this year, making the most of the seaside resort and putting on a brave face despite the weather.</p>
+            <p>Saying that, the sun did shine on some days, people swam in the sea, and munched on fish and chips while seagulls watched like hawks.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Seagulls fighting for a burger</figcaption>
+            </figure>
+            <p>Across the bay floated huge but empty cruise ships, awaiting the time for when they would be viable holiday destinations again. They watched almost enviously as tourists flooded into the seafront cafes and amusement arcades and sat licking ice creams on their deckchairs.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Ziggy getting ready to do a 1.8 mile (3km) swim in the sea in Paignton</figcaption>
+            </figure>
+            <p>I met Ziggy, a retiree who was about to swim 1.8 mile (3km) with her friends in Paignton. I chatted to twins from Teddington at the Torquay funfair, and photographed a bride-to-be with her hen party sunbathing with cocktails on the beach.</p>
+            <p>I especially enjoyed talking to Warren, who was relaxing in his inflatable dinghy beached firmly on the sand. He was from Southend-on-Sea - it amused me that despite living by the sea, he was still keen for a beach holiday!</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Warren in his boat on the beach in Torquay</figcaption>
+            </figure>
+            <p>I took a portrait of a lady in a van, who I naively assumed lived as a free spirit, touring the West Country. In fact, she only lived a mile away, but her daughter had caught Covid-19, and she was shielding in her van.</p>
+            <p>Another day, I headed to Hope's Nose near Babbacombe, expecting to capture beautiful coastal views and perhaps a few ramblers. Instead, I was greeted by hordes of fishermen, casting off from the rocks.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Fishermen on the rocks at Hope's Nose, near Babbacombe</figcaption>
+            </figure>
+            <p>I loved watching the trawlers of Brixham landing crabs, and visitors boarding packed boat trips across the bay.</p>
+            <p>It was a snapshot of a bumper year for the English Riviera - an unexpected renaissance of its former heyday - and for the businesses reliant on tourism, they will hope it will continue. Either way, it made for a poignant photo story, capturing the British on their imposed staycations, who looked like they had sent a very happy postcard home.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A man carries his children's inflatable lilos from the beach</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Gervan plays catch with his son on the beach at Goodrington Sands</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>An Elvis impersonator sings during Elvis week at Paignton's Geo Park Cafe</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A family enjoying a cricket match on a beach in Torquay</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Simon and his son head out to sea on their paddleboards</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A couple enjoying fish and chips at dusk in Paignton</figcaption>
+            </figure>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

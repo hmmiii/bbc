@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_world_31" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>World</mark>
+                <h2>PJ O'Rourke: US conservative satirist dies at 74</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p>PJ O'Rourke, a best-selling American satirist, columnist and political commentator, has died at the age of 74.</p>
+            <p>He defied the leftward trend of American humour - particularly the "gonzo" style of irreverent journalism popularised by writers like Hunter S Thompson - by offering a more conservative, but equally cutting and iconoclastic, critique of the nation's culture and politics.</p>
+            <p>He wrote over 20 books, including two best-sellers, A Parliament of Whores and Give War a Chance.</p>
+            <p>A member of the Baby Boom generation, he first debuted on the national stage as editor of the storied humour magazine National Lampoon in the 1970s.</p>
+            <p>O'Rourke went on to work as a freelancer for Atlantic Monthly, Esquire and Vanity Fair, and serve as foreign-affairs desk chief for Rolling Stone.</p>
+            <p>"How many unsuspecting Bruce Springsteen fans had been spared a life of brain-dead liberalism by his foreign dispatches and mockery of left-wing pieties?" David Harsanyi writes of O'Rourke in the conservative National Review.</p>
+            <p>O'Rourke's rapier wit frequently cut across the US political divide. Although he was a conservative with a libertarian bent, his humour was not solely the province of the right.</p>
+            <h3>O'Rourke's wry musings for the BBC</h3>
+            <p>One of his more memorable lines was that Democrats promise that government will make you "smarter, taller, richer, and remove the crabgrass on your lawn", while Republicans say that government doesn't work - then get elected and prove it.</p>
+            <p>He was a fellow at the conservative Cato Institute, but also a regular guest on the left-leaning MSNBC news network and a panellist on the National Public Radio's faux-game show, Wait, Wait Don't Tell Me. He frequently criticised Democratic presidents, but in 2016 endorsed Democrat Hillary Clinton over Republican Donald Trump.</p>
+            <p>In the 1990s, he starred in a British Airways advertising campaign, where he poked fun at national traditions like tea-drinking, cricket and gardening while ultimately acknowledging that "17 million of us Johnny Foreigners would rather fly your airline than any of our own".</p>
+            <p>"I guess you should be proud of that, but that wouldn't be very British, would it?" he quipped.</p>
+            <p>His publisher, Grove Atlantic, said in a statement that O'Rourke, who died of complications from lung cancer, was "one of the major voices of his generation".</p>
+            <p>"His insightful reporting, verbal acuity and gift at writing laugh-out-loud prose were unparalleled," said CEO Morgan Entrekin.</p>
+            <p>O'Rourke was born in Toledo, Ohio, and attended college at Miami University, with a graduate degree in English from Johns Hopkins University in Baltimore.</p>
+            <p>He was married twice and had three children.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

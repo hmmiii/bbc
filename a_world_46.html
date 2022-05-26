@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_world_46" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Australia</mark>
+                <h2>Working with assertive China a must - New Zealand PM Jacinda Ardern</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>New Zealand has been aware for some time now of a "growing assertiveness" and a "growing interest" in its region - explicitly from China, according to Prime Minister Jacinda Ardern.</strong></p>
+            <p>But Ms Ardern also spoke of the need to work together with China, on areas of "natural mutual interest".</p>
+            <p>Speaking to the BBC in an exclusive broadcast interview, she stood by what she called her country's "mature relationship" with Beijing, but still expressed her "disappointment" that the Solomon Islands had cemented a security deal with China, fuelling fears Beijing could set up a military base on the island.</p>
+            <p>There is already an agreement signed by Pacific Island forum members called the "Biketawa" declaration, she said - which sets an expectation these countries provide for their own security needs together as a region.</p>
+            <p>"One of the reasons we've expressed this disappointment [is]... Australia and New Zealand both have heeded the call of the Solomons for support during recent disruption," she said.</p>
+            <p>"And we've again highlighted that should any extended need exist, we are there to help and support. So… what gap remains that requires such an agreement with China?"</p>
+            <h3>Not time to join Aukus, yet...</h3>
+            <p>Despite her reservations however, Ms Ardern rejected the idea that it was time for New Zealand to join the US, UK, and Australia in the Aukus security alliance to help ward off China's influence in the region.</p>
+            <p>"Our call on Aukus is simply that yes, it is to our benefit when we have greater engagement," she said.</p>
+            <p>"We've asked the US to take an interest in the economic architecture of our region, it can't just be about defence and security arrangements," she said.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Solomon Islands has seen rioting and political unrest in recent months</figcaption>
+            </figure>
+            <p>"It should be about the wellbeing of the region as a whole. And you're starting to see a response from the US on that front."</p>
+            <p>New Zealand has been criticised for not taking a harder line on China.</p>
+            <p>Ms Adern's administration's position has been that New Zealand will form its own bilateral relationship with China - which critics say is because of economic dependence.</p>
+            <p>Most recently the government came under fire for agreeing to extradite Kyung Yup Kim, a New Zealand permanent resident accused of murdering a young woman in Shanghai in 2009.</p>
+            <p>But Ms Ardern defended Wellington's relationship with Beijing.</p>
+            <p>"China is a very important trading partner for us, but it's also a mature relationship for us. Where there are areas we can work together, we will - but there will always be areas in which we will not necessarily agree and when those areas arise, we are very forthright and clear on our position."</p>
+            <h3>'Ukraine war is solely Russia's fault'</h3>
+            <p>One of the areas where New Zealand has been particularly vocal internationally has been the war in Ukraine.</p>
+            <p>It has sent military and financial aid, and imposed sanctions on Russia.</p>
+            <p>Ms Ardern says that's because small nations need to rely on the international order to be upheld, and that when the international order is threatened - it "threatens everyone, including New Zealand".</p>
+            <p>But it isn't useful to turn this into a war of ideology, she said - refusing to frame it as a conflict between autocracies and democracies.</p>
+            <p>"Let's not be quick to create a binary situation between two differing schisms in the world. It is Russia, who has perpetrated this, it is Russia who must be spoken firmly against, and let's do everything we can diplomatically to ensure that that doesn't grow beyond Russia."</p>
+            <h3>Pandemic response</h3>
+            <p>Separately the prime minister also defended New Zealand's Covid response, saying that it was the "best possible health response" at the time - given that New Zealand has had some of the lowest death rates amongst developed OECD economies.</p>
+            <p>But Ms Ardern has been criticised by her political opponents - her policies have been called "bumbling" and her government has accused of being "asleep at the wheel" - for failing to move the country out of lockdown faster.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>New Zealand has had some of the tightest Covid restrictions in the world</figcaption>
+            </figure>
+            <p>That's led in recent surveys to her lowest approval ratings since she was elected.</p>
+            <p>Ms Ardern was non-plussed - saying that the lower ratings were perhaps a price she had to pay, to keep New Zealanders safe, "to ultimately make sure that we've made the right decisions along the way, and that we can sleep at night".</p>
+            <h3>'I'm just being myself'</h3>
+            <p>Ms Ardern's leadership style has been the subject of much debate - her fans say she is the real deal, authentic and empathetic, just what a politician should and can be. Her critics however, say it's more talk than action, more style than substance - and that she struggles to manifest the commitments she's made to her people.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Ms Ardern (right) told the BBC she didn't have a lot of time to plan a wedding...</figcaption>
+            </figure>
+            <p>The New Zealand leader's response was characteristically straightforward.</p>
+            <p>"I'm just being myself," she said. "I want to the best of my ability, model the traits that I consider important enough to teach my own daughter… like kindness, gratitude."</p>
+            <p>"I would like to think that we can see a new range of leadership traits being modelled where kindness isn't seen as weakness, where empathy is actually how we understand our decisions impact on our people. And when we start to model those, I hope then that within the public, they see a little bit more of themselves."</p>
+            <p>And what about wedding bells?</p>
+            <p>As a world leader grappling with the pandemic, she's had to put off her wedding because of her job.</p>
+            <p>Ms Ardern is honest about the pressures of public life.</p>
+            <p>"Travelling again, doesn't mean there's a lot of time for wedding planning," she said. "So, no set date. Just intention. And that's, I think, when you live together, have a child together - just intention is enough."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_Using-the-BBC_BBC-Privacy-Policy" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Using The BBC</mark>
+                <h2>BBC Privacy Policy</h2>
+                <time datetime="2021-07-01">July 2021</time>
+            </div>
+        </div>
+        <ol>
+            <li>
+                <h3>What's in this policy?</h3>
+                <p>This policy tells you:</p>
+                <ul>
+                    <li>what information we might collect about you</li>
+                    <li>how we might use that information</li>
+                    <li>when we might use your details to contact you</li>
+                    <li>what information of yours we might share with others</li>
+                    <li>your choices about the personal information you give us</li>
+                </ul>
+            </li>
+            <li>
+                <h3>What does this policy cover?</h3>
+                <p>This policy covers the services that are offered by the British Broadcasting Corporation.</p>
+                <p>And sometimes it covers services offered by parts of our organisation that operate as separate companies. Such as:</p>
+                <p>BBC World Service, BBC Studios, BBC Studioworks, BBC Global News, BBC Media Applications Technology, BBC World Service Trading and TV Licensing and BBC charities.</p>
+                <p>But only when those services link to this policy or tell you it applies.</p>
+                <p>It’s up to you to decide how much detail you want to know. We have just-in-time explanations that appear when we ask you to input your personal information. As well as what’s in this Policy, a service might have a short privacy notice. In that privacy notice you can find key information on what we do with your personal information when you use that service. And if you’re after more detail have a look at these topics.</p>
+                <p><strong>What's not covered in this policy?</strong></p>
+                <p>Our services sometimes link to services run by other companies' services, like opening a track from BBC Sounds on another music service such as Spotify. Those companies have their own privacy and cookies policies, so remember that the information you give them will follow their rules and not ours.</p>
+                <p>Sometimes you can access our services from other places, like a BBC Radio 1 YouTube page or the BBC iPlayer app on your connected TV. Make sure to check their privacy policy so you know how they will use your information.</p>
+            </li>
+            <li>
+                <h3>How do you protect my personal information?</h3>
+                <p>We're strongly committed to keeping you and your family's information safe. And to do this we design our services with your safety in mind. We also have dedicated teams to look after your information security and privacy.</p>
+                <p>At the same time, no service can be completely secure - if you have any concerns that your BBC account or personal information has been put at risk, for example if someone could have found out your password, please get in touch straight away.</p>
+                <p><strong>Where we store your information</strong></p>
+                <p>Some companies that provide services to us run their services from outside the UK and the European Economic Area. We only let that happen if we are satisfied with their levels of security. Keep in mind that when you give us personal information it could be being transferred, stored or processed in a location outside the UK and the EEA.</p>
+            </li>
+            <li>
+                <h3>What types of personal information does the BBC collect about me?</h3>
+                <p>We'll give you details about why we need your personal information and how we'll use it before you begin, unless it's obvious.</p>
+                <p><strong>a. Information that you give us</strong></p>
+                <p>We might ask for your name and contact details, your date of birth or financial details, depending on what you're doing. If you apply to take part in a programme on politics, for example, we might ask you about your political opinions. Information you give us might include information in a creation you share with us, such as people's names that appear in the creation.</p>
+                <p>When you register for a BBC account, or update your details or settings we ask for some personal information, like your email address and age.</p>
+                <p><strong>b. Device information</strong></p>
+                <p>Devices are lots of things like:</p>
+                <ul>
+                    <li>your computer</li>
+                    <li>your mobile</li>
+                    <li>your TV</li>
+                    <li>your tablet</li>
+                    <li>your voice-enabled device</li>
+                </ul>
+                <p>We automatically collect some technical information from these devices and web browsers even when you're not signed into to a BBC account. This might include:</p>
+                <ul>
+                    <li>IP (internet protocol) address</li>
+                    <li>device ID</li>
+                    <li>app ID</li>
+                    <li>vendor ID</li>
+                    <li>advertising ID</li>
+                </ul>
+                <p><strong>c. Location Information</strong></p>
+                <p>We collect information about your location when you use our products and services. This helps us to determine whether you’re somewhere where are services are available, helps us to ensure we are fulfilling our Charter obligations and to offer additional features whilst using our products and services, such as a weather forecast for your location.</p>
+                <p>Your location can be determined at a town or city level by:
+                </p>
+                <ul>
+                    <li>GPS</li>
+                    <li>IP address</li>
+                    <li>Information about nearby cell towers and Wi-Fi access point information</li>
+                </ul>
+                <p>What type of location data (for example Country, Region, City or Town) is collected depends on the product or service your using, the device you're using (for example Apple or Android) and your devices settings (whether permissions are enabled or disabled). You can change your permissions on or off any time in your device’s settings. You can read more about how our apps capture your data on our explainers.</p>
+                <p><strong>d. Information on your activities outside the BBC when you talk about us</strong></p>
+                <p>Like if you've mentioned us in a Twitter post, we'll collect your Twitter handle.</p>
+                <p><strong>e. Information on how you use our services</strong></p>
+                <p>Like the articles you read and the programmes you watch.</p>
+            </li>
+            <li>
+                <h3>How long will the BBC keep my personal information?</h3>
+                <p>When you give us any personal information we'll let you know how long we'll hold it for. And always stick to these principles:</p>
+                <ul>
+                    <li>we only hold your information for as long as we do the activities we told you about or have a valid reason to keep it</li>
+                    <li>we think about what type of information it is, the amount collected, how sensitive it might be and any legal requirements</li>
+                    <li>we design our services so that we don't hold your information any longer than we have to</li>
+                    <li>we may close your BBC account if you haven't used it in the last year. We'll send you an email to tell you that we plan to do this before we delete anything, so please check to see if we've sent you any emails about this</li>
+                </ul>
+            </li>
+            <li>
+                <h3>How can the BBC use my personal information?</h3>
+                <p>We have to have a valid reason to use your personal information. It's called the "lawful basis for processing". Sometimes we might ask your permission to do things, like when you subscribe to an email. Other times, when you'd reasonably expect us to use your personal information, we don't ask your permission, but only when:</p>
+                <ul>
+                    <li>the law says it's fine to use it, and</li>
+                    <li>it fits with the rights you have</li>
+                </ul>
+                <p>We use your information for these types of things:</p>
+                <p><strong>a. to deliver our services and to provide you with information about them</strong></p>
+                <p><strong>b. to deal with your requests, complaints and enquiries</strong></p>
+                <p><strong>c. to check if you're using BBC iPlayer and to keep the licensing database accurate and up to date</strong></p>
+                <p><strong>d. to personalise services and give you things more tailored to your tastes</strong></p>
+                <p>Your BBC account lets you personalise your BBC online experience. To do that, “Allow Personalisation” is set to on when you create an account. If you’re under 13 and create an account your personalisation is set to off. Information about how you use our online services is then connected with other information you give us to personalise your experience.</p>
+                <p>If you don’t want us to do this, you can always turn personalisation off in your account settings. If you’re under 13 you don’t need to do anything.</p>
+                <p><strong>e. to show you relevant advertising on another company's site</strong></p>
+                <p><strong>f. to help us understand what kind of services you might use</strong></p>
+                <p>And sometimes how you might share things with other people</p>
+                <p><strong>g. to recommend things we think might interest you</strong></p>
+                <p><strong>h. to show you advertising when you access a BBC service from outside the UK</strong></p>
+                <p>Some of this advertising might be tailored to you.</p>
+                <p><strong>i. to research and innovate</strong></p>
+                <p>You're not a guinea-pig here, but knowing how you use our services could lead to the next big technology breakthrough.</p>
+                <p><strong>j. to contact you about various things</strong></p>
+            </li>
+            <li>
+                <h3>When will the BBC use my information to contact me?</h3>
+                <p>We might use your information to contact you about different things, like:</p>
+                <ul>
+                    <li>to update you on any changes to the BBC’s policies, practices and Terms of Use</li>
+                    <li>to check with you about any service or activity you’ve signed up for. For example, we might tell you if your BBC account hasn't been used in a long time. Or it might be about creating a child account</li>
+                    <li>to contact you about a creation you sent us, like things you’ve sent in to School Report news day</li>
+                    <li>to answer you when you’ve contacted us, or to respond to a comment or complaint</li>
+                    <li>to invite you to take part in surveys about BBC services, which are always voluntary</li>
+                    <li>for marketing purposes</li>
+                    <li>to send you notifications on your device depending on your settings</li>
+                </ul>
+                <p>We’ll only contact you when we need to or when you’ve given us permission.</p>
+                <p>We’ll never contact you to ask for your BBC account password.</p>
+            </li>
+            <li>
+                <h3>Will I be contacted for marketing purposes?</h3>
+                <p>We'll only send you marketing emails or contact you about BBC programmes, services and your views on issues about the BBC if you've agreed to this.</p>
+                <p>Keep in mind, even if you unsubscribe, we may still contact you.</p>
+                <p><strong>Will my personal information be used when the BBC advertises with other companies?</strong></p>
+                <p>If you have a BBC account we might use information that we hold about you to show you relevant and targeted advertising for BBC services through other companies’ sites, like Facebook, Google, Snapchat or Twitter for example. This could be showing you a BBC sponsored message where we know you have a BBC account and have used BBC services.</p>
+                <p>Where we do this, we will share your data in a hashed format with these providers so that, where you have an account on the same platform, you will see adverts from the BBC. In these scenarios, we are joint controllers with these companies because we jointly determine the purposes and means of processing your personal data.</p>
+                <p>We also assess certain characteristics of our audience members in order to find others who are similar to them to provide advertising to those individuals. </p>
+                <p>If you don’t want to see our targeted advertising, you can set ad preferences in your social media companies’ settings. Also, you can visit your BBC account and turn this off.</p>
+            </li>
+            <li>
+                <h3>When does the BBC share my personal information with others?</h3>
+                <p>We'll never sell your personal information. We do share it with others in these ways:</p>
+                <p><strong>a. When you make something public</strong></p>
+                <p>Like post a comment which the public can see.</p>
+                <p><strong>b. When we use other companies to power our services</strong></p>
+                <p>In order for us to give you quality experiences and to understand how you're using our services we often use other companies to process your personal information on our behalf. For example, sending you emails about things we think might interest you, to ask you what you think about our services, or to analyse data on how people use our digital services so we can improve them.</p>
+                <p>We make sure that your personal information is looked after as if we were handling it directly. We carefully select these companies, only share with them what they need to do the work and we make sure they keep your information secure.</p>
+                <p><strong>c. When we share personal information with companies in the BBC family</strong></p>
+                <p><strong>d. When you use another company's service that connects to us, like voice-enabled devices and connected TV</strong></p>
+                <p>You can access our services through a voice-enabled device, like Amazon Alexa, or a connected TV. You’ll need to sign in to your BBC account to use BBC services on your connected TV. When you do this we’ll share an identifier for your BBC account with the company who runs the service you are using. Make sure to check that company’s privacy policy so you know how it will use your information. The BBC isn’t responsible when you access a BBC service through another company’s services. It’s up to you if you want to access the BBC in this way.</p>
+                <p><strong>e. When we do collaborative research</strong></p>
+                <p>We do research activities and sometimes collaborate with research partners. Every now and then we share our content and data with them. This might include information we’ve collected about you. But we’re careful about what we share and what our research partners can do with it.</p>
+                <p><strong>f. TV Licensing</strong></p>
+                <p>We share some personal information with TV Licensing, to check if you’re using BBC iPlayer and to keep the licensing database accurate and up to date.</p>
+                <p><strong>g. Sometimes by law we have to pass on your information to other organisations</strong></p>
+                <p>We might also share your information if we have to by law, or when we need to protect you or other people from harm.</p>
+            </li>
+            <li>
+                <h3>What's different for kids and teens?</h3>
+                <p>The BBC has services that are kid-friendly and for teens.</p>
+                <p>Here's what happens when you use them.</p>
+                <p><strong>a. Why do we collect information about you in the first place?</strong></p>
+                <p>We keep information about you so that we can</p>
+                <ul>
+                    <li>get the right services for you</li>
+                    <li>plan and improve our services</li>
+                    <li>keep in touch with you</li>
+                </ul>
+                <p><strong>b. We'll always tell you why we're collecting your personal information</strong></p>
+                <p>We’ll explain why and how we use it and for how long. It’s called a “privacy notice”. And if we need your parent or guardian's permission we'll give you clear details about what's needed at the time.</p>
+                <p><strong>c. We can only use your personal information if we have a valid reason</strong></p>
+                <p><strong>d. We share personal information about you to others but we follow some rules</strong></p>
+                <p>The main rule is we will never sell your personal information to anyone.</p>
+                <p><strong>e. We might ask you to tell us your age</strong></p>
+                <p>To make sure you use the parts of the BBC that are suitable for you. For example:</p>
+                <ul>
+                    <li>so that adults don't post comments on kid's message boards</li>
+                    <li>when you want to get a BBC account</li>
+                    <li>When you're watching a programme, like on BBC iPlayer, and it's a bit edgy</li>
+                </ul>
+                <p><strong>Sometimes we'll ask to get your parent or guardian's consent</strong></p>
+                <p>You'll see a notification. We might also ask for some details from them, so that we can contact them. Other times we may contact your parent or guardian:</p>
+                <ul>
+                    <li>so you can get notifications from us</li>
+                    <li>so we can show you more things we think you'll like, based on what you do</li>
+                    <li>so you can post comments</li>
+                    <li>so you can upload your contribution to us</li>
+                </ul>
+            </li>
+        </ol>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

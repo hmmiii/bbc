@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_how-we-think_4" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>How We Think</mark>
+                <h2>Why workplace frenemies are our most stressful colleagues</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>You and your colleague have a love-hate relationship. Why does this this friendly-ish, ambivalent grey area make you so anxious?</h3>
+            <p>Among immediate colleagues, it’s easy to spot two groups of people: genuine friends, who make each workday a little brighter; and sworn enemies - the people who will deliberately make your life hard for no reason. But what about all those people in the middle? </p>
+            <p>These colleagues may offer a sympathetic ear to your woes, but then go and gossip about them behind your back. Or they’ll defend you from criticism, but then take sole credit for a joint project, erasing your contributions without a backward glance. They help and they hurt in equal measure; they are frenemies, or “ambivalent relationships”. </p>
+            <p>In the past, workplace psychologists had tended to take a black and white view of our relationships with our colleagues, while ignoring the many grey areas of our social networks. Yet the latest research shows that our frenemies are equally, if not more, important than the people at either extreme of the spectrum - with unique consequences for our health, wellbeing and our behaviour in the workplace. And by understanding their complexities, we can all learn to navigate office politics more wisely - as well as potentially reduce the stress they cause. </p>
+            <p><strong>The good, the bad and the ugly</strong></p>
+            <p>There is no doubt true friends bring enormous benefits to our overall health and wellbeing. A huge scientific literature now shows our social connections can raise our self-esteem and help us to recover from stress more quickly. This not only reduces our risk of mental illness , but also reduces risk of physical disease and death. Unsurprisingly, the wholly negative relationships in our lives have the opposite effects: research shows that psychologically abusive colleagues or family members can be enormously detrimental to our overall health. </p>
+            <p>It is only within the past decade or so that scientists have started to look at those people in between - the ambivalent relationships that may have good and bad sides - and the effects that they have on our lives. To do so, they have developed simple questionnaires that ask participants to rate how helpful, and how upsetting, their friend is on a scale of 1 (not at all) to six (extremely). </p>
+            <p>Depending on the answers to each question, the researchers can establish whether the relationship is supportive, aversive or ambivalent. According to Julianne Holt-Lunstad, a professor of psychology and neuroscience at Brigham Young University, US, a supportive friend would score 2 or more on the positive trait, and 1 on the negative trait, where an aversive friend would be the opposite. An ambivalent relationship - or frenemy - would score at least 2 on both measures. </p>
+            <p>Using these categories, researchers like Holt-Lunstad have then been able to identify how our reactions to frenemies differ from the other kinds of relationships.</p>
+            <blockquote>There is still underappreciation of how relationships with both positive and negative aspects can influence health and wellbeing - Julianne Holt-Lunstad</blockquote>
+            <p>Naively, you might expect the effects of ambivalent friendship to fall between the supportive and aversive relationships: the good and bad simply cancel each other out, so that the overall impact is neutral. But this is not the case. In multiple experiments throughout the past 10 years, Holt-Lunstad has shown that interactions with frenemies can heighten our stress responses - compared to both supportive and aversive relationships. And over the long term, that seems to provoke worse cardiovascular health. </p>
+            <p>The problem lies in the inherent uncertainty of their responses. We may crave their approval or support, but we know it may not be forthcoming - so we are constantly on tenterhooks. And if they do respond badly, their offensive behaviour - or their simple lack of interest - will hurt us so much more than the behaviour of someone we simply dislike. </p>
+            <p>Holt-Lunstad estimates that the average person has as many frenemies as friends. Despite this research, however, many sociologists and psychologists continue to ignore them.  “While there is greater recognition of the importance of relationship quality, there is still the perception that it is just about negativity versus positivity,” says Holt-Lunstad, who recently published a review article outlining her findings. “But there is still underappreciation of how relationships with both positive and negative aspects can influence health and wellbeing.” </p>
+            <p><strong>Frenemies at work </strong></p>
+            <p>If frenemies, in general, have been understudied, then their role in workplace politics is even less well understood. This is a shame, since many job environments may be particularly ripe for the creation and maintenance of ambivalent relationships. </p>
+            <p>“Organisations often force us into interactions with people we wouldn’t choose to have in our social networks,” says Shimul Melwani, an associate professor of organisational behaviour at the University of North Carolina at Chapel Hill, US.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Relationships with frenemies can be even more stressful than aversive ties, experts say (Credit: Getty)</figcaption>
+            </figure>
+            <p>In some cases, it is the sense of professional competition that injects negativity into the working relationship. You may find your colleague to be very likeable, for example, and you would happily go for a drink with them. Yet you feel betrayed when they apply for the same promotion as you. “It’s normal that people want to get ahead but also get along with their colleagues at the same time,” says Naomi Rothman, an associate professor of management at Lehigh University at Bethlehem, Pennsylvania, US. </p>
+            <p>Melwani and Rothman recently teamed up on a series of studies that examined these dynamics in more detail, the results of which were published in September 2021. </p>
+            <p>For one experiment, they first asked participants to engage in a “Fast Friends Procedure” that involve answering a series of personal questions to a complete stranger, such as listing their proudest achievements. </p>
+            <p>Previous research had shown that this procedure can quickly build feelings of emotional connection. After a few minutes, however, Melwani and Rothman spiced things up. While a third of participants could continue in a purely positive vein - describing what they liked about each other - another third had to say what they didn’t like about the other person, inserting some distinct negativity. The rest were given a more ambiguous task - to evaluate each other’s achievements and compare them to their own - which created a sense of competition. </p>
+            <p>After these initial conversations, the participants were asked to write a blog post about their institution, which their partner then edited. They were then given the opportunity to provide written feedback about the partner’s performance - both to that person directly, and privately to the researchers. </p>
+            <p>As expected, the initial conversations shaped the nature of the fast-formed relationships. The questions that encouraged positive or negative talk created supportive or aversive relationships, while the competitive interactions triggered ambivalent feelings between the partners. </p>
+            <p>And that, in turn, shaped their behaviour in interesting ways. The “frenemies” made more effort with the editing of each other’s writing than both the aversive groups and the supportive groups, for instance. “They really went above and beyond what they were asked to do,” says Melwani. Yet they were also more likely to pass on negative feedback to the researchers - essentially tarnishing their partner’s reputation in the eyes of the scientists. </p>
+            <p>It’s easy to understand why aversive partners made the least effort to edit each other’s work - they simply didn’t care - whereas the frenemies had at least formed some feelings of goodwill. The fact that the ambivalent partners also made more effort than the purely supportive partners is surprising, however. Surely the newly-formed BFFs should have been the most co-operative?</p>
+            <blockquote>The more people wanted to establish a connection with their frenemy, the more likely they were to both help and hinder their partner in their work</blockquote>
+            <p>Melwani suspects that the extra helpfulness may help the frenemies to resolve the inherent tension in the ambivalent relationships - the wish to maintain cordiality even in the face of annoyance and upset. “They don’t want this relationship to become entirely negative,” she says, and so they make up for their bad feelings by making the additional effort to improve their partner’s work. </p>
+            <p>Melwani and Rothman’s next study questioned US retail employees about their colleagues. She found that the nature of the ambivalent relationships depended on people’s desires for closeness. The more people wanted to establish a connection with their frenemy, the more likely they were to both help and hinder their partner in their work. </p>
+            <p>In other words, the positive intentions meant that every element of the relationship - good and bad - was more intense. “It makes the ambivalence more salient,” explains Melwani. </p>
+            <p><strong>Clearing the mess</strong></p>
+            <p>Managers might take note of these findings, says Melwani. Bosses could look for measures to reduce the feeling of competition among colleagues, for example, which may root out one of the causes of ambivalence, and ensure that relationships remain more supportive. </p>
+            <p>For the individual, Melwani hopes greater awareness of these dynamics could help us to manage our more difficult colleagues. We have quite short memories, she says, which means our feelings for our work frenemies can be easily swayed by our colleague’s latest actions, without necessarily recognising that the ambivalence is a long-lasting pattern and one of the core characteristics of the relationship. Once we realise this, we might then assess whether the benefits outweigh the potential for upset, and whether we are perhaps being a bit too needy for their respect or affection. </p>
+            <p>Remember that Melwani’s research shows that your desire for closeness will amplify the ambivalent feelings. And so, if you are starting to feel too stressed by the relationship, you might aim to become bit more realistic in your expectations of what your frenemy will provide, without necessarily cutting them out of your life altogether</p>
+            <p>Sometimes we have to accept that while someone will never be a close friend, they are worth holding onto nonetheless  - at a distance.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_family-tree_14" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Family Tree</mark>
+                <h2>Why festive gatherings can be so toxic</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Christmas is a time of love, warmth - and often, huge family arguments. Here's how to decode the primal forces that can cause painful rows, and enjoy a more peaceful season.</h3>
+            <p>"A happy family," so the saying goes, "is but an earlier heaven" - which must surely make an unhappy family a living hell.</p>
+            <p>As we enter the holiday season, many of us will be steeling ourselves for potential tension and argument. Whether it's quiet disapproval over the quality of the cooking, a simmering resentment over alleged favouritism, or a fierce argument about our political and social values, family gatherings often bring out the worst in us. That's if we choose to see our families at all - for many, there is no choice but to spend the holidays apart.</p>
+            <p>While family strife may be a source of entertainment in dramas like Succession, the real-life consequences are no joke.</p>
+            <p>"A really common consequence of estrangement is feeling isolated," in addition to feelings of shame and being judged, says Lucy Blake, a developmental psychologist at the University of the West of England and author of the forthcoming book No Family Is Perfect: A Guide to Embracing the Messy Reality.</p>
+            <p>There is no easy cure to heal fractured relationships. But a better understanding of our family dynamics can help prepare us for the inevitable flashpoints and reveal ways to cope with the stress.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Social media can help some people feel even more isolated during festivities like Christmas (Credit: Javier Hirschfeld)
+
+                </figcaption>
+            </figure>
+            <p>People are often reluctant to talk about unhappy gatherings and family estrangement - which can make those of us who experience it feel like we are somehow unusual. We may even assume that there is something wrong with us to have such poor relations. Social media networks can contribute to our sense of isolation, says Blake. "We often see a 'performance' of family, which can then make you feel more and more alone." Few people are going to post a picture of a bust-up - you're much more likely to see the gurning faces before a meal than the tears after a row.</p>
+            <p>Data from anonymous surveys suggests that fractious family relationships are astonishingly common, however. Blake points to one study, from the US, that questioned 633 middle-aged adults about their relationships with their own parents and their own children. In almost a third of the relationships studied, there was little ongoing contact, though most of these people felt some emotional ties - reporting both good and bad feelings about their kin. Of those who were more regularly in touch, many considered their relationships "conflicted" or "ambivalent". Only 28% of the parent-child ties were engaged and harmonious.</p>
+            <p>Another paper, published earlier this year, examined data from a huge longitudinal study in Germany to try to identify the prevalence of estrangement. The researchers considered a parent and child to be estranged if they either had no contact, or if they had less-than-monthly contact combined with low emotional closeness. According to these criteria, around 20% of people experienced estrangement from their fathers, and 9% experienced estrangement from their mothers.</p>
+            <p>Not all clashes lead to such deep rifts, but even mild family rows can be very wounding - and tend to share some common causes.</p>
+            <p><strong>A shared history</strong></p>
+            <p>While any relationship has the potential for tension, family arguments often arise from clashing interpretations of the past, which even the slightest off-hand comment can then bring to the fore. And unlike friendships outside the clan, the emotional stakes are extraordinarily high.</p>
+            <p>"In families, there's an almost primal sense that my most important loyalties are being challenged - that my love is being challenged," says Terri Apter, a psychologist based in the UK and the author of numerous books about strained familial relationships, including Difficult Mothers and The Sister Knot. "There's always the threat of a loss of status in the family, and a loss of connection."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Even mild family rows can cause damage to relationships - and sometimes the effects can be longlasting (Credit: Javier Hirschfeld/Getty Images)
+
+                </figcaption>
+            </figure>
+            <p>The triggers of those frustrations, and the ways they are expressed, will of course depend on your relative positions within the family tree. A parent may still believe that they have the authority to give guidance to an adult child - whether it's about their appearance, career decisions, or romantic relationships. Their well-meaning comments may, however, remind their child of constant unfair criticisms from their adolescence.</p>
+            <p>Among siblings, meanwhile, there may have been rivalries for who gets the most attention from the parents, or who feels most dominant. A grating comment from a big brother may give you the impression that he still thinks he knows everything, or your little sister's bad mood may be a sign that she is "acting up" to be in the spotlight.</p>
+            <p>Among siblings, meanwhile, there may have been rivalries for who gets the most attention from the parents, or who feels most dominant. A grating comment from a big brother may give you the impression that he still thinks he knows everything, or your little sister's bad mood may be a sign that she is "acting up" to be in the spotlight.</p>
+            <p>"It doesn't take a lot, in the present, to reawaken patterns that felt uncomfortable in the past," says Apter. "And the fact that you don't particularly like your own responses to the behaviour can compound the discomfort and tension."</p>
+            <p><strong>Clashing family cultures</strong></p>
+            <p>Interacting with in-laws presents its own set of challenges, Apter says - since one family's rules of behaviour can seem alien to another. Certain actions - such as who volunteers to do the dishes, or how you address the different relatives - can be taken for granted, and what passes as a friendly joke in one household may seem like an insult in another.</p>
+            <p>In some ways, stepping into another family is like learning to live in a new country; it's going to take time to translate their behaviours and ways of expressing themselves into a language you can understand. As a result, simple gestures can be lost in translation, leading to conflicts that may escalate over time.</p>
+            <p>If the inevitable friction leads you or the in-laws to take offence, and your partner doesn't take your side, it only adds to the hurt. It may be that, having lived the family script for so long, your partner simply cannot see your point of view, or that - because of the accepted roles within the family - they feel unable to intervene, but that doesn't make it any easier to bear. You may feel completely abandoned in this unfamiliar territory. "Betrayal is often not too harsh a word, in these circumstances," says Apter.</p>
+            <p>Apter emphasises that many disagreements are often unspoken. "Sometimes you feel silenced. And that leads to a sense of great discomfort and discontent - that you can't be yourself or be spontaneous."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Stressing about how the event will go may make it more likely that you react badly to situations (Credit: Javier Hirschfeld/Getty Images)
+
+                </figcaption>
+            </figure>
+            <p><strong>Great expectations?</strong></p>
+            <p>It may take a miracle to resolve all your family tensions this Christmas, but Apter suggests some steps to ease relations.</p>
+            <p>One positive move could be to avoid alcohol. "People sometimes drink a lot in the hope that that will make them better able to tolerate the tensions," says Apter. "But it often makes them less able to moderate their irritation and to put it in context."</p>
+            <p>You might also try to shift your expectations of the event. In many cases, our fear of tension, and our desire for the "perfect" day, can itself heighten our stress levels, which then makes arguments more likely.</p>
+            <p>"You have what psychologists would call high arousal, in which you're hyper vigilant for certain dangers," Apter explains. "And so the pressure for it to be a 'good' event can contribute to it being a very bad event."</p>
+            <p>For this reason, it may be healthier to accept that some disagreement is inevitable, but that it needn't "ruin" the event. "If you can get to that point where you can mend an argument easily, then that's very helpful," says Apter.</p>
+            <p>As part of this more accepting attitude, you could try to be more compassionate to yourself when you do feel irritated or upset, and make sure that you give yourself the necessary space for self-care. "You might recognise that you've got to have private time, maybe in another area in the house or outside the home, where you can breathe, and get back your sense of self," says Apter.</p>
+            <p>Learning to adopt that mindset may be especially important this year, as many families around the world are reuniting after more than a year of pandemic-induced lockdowns and forced separation. "Expectations may be even higher because we missed Christmas last year, and there may be a little loss of memory for how uncomfortable it can be," Apter says.</p>
+            <p>Ultimately, there is no perfect family, and there will be no perfect Christmas - or Diwali, Chanukah, Chinese New Year, or any other festive get-together. But a recognition of our own and each other's flaws, and the potential for discord, may - ironically - help us all to have a more relaxed celebration.</p>
+            <p>David Robson is a science writer and author based in London, UK. His next book, The Expectation Effect: How Your Mindset Can Transform Your Life will be published by Canongate and Henry Holt in early 2022. He is @d_a_robson on Twitter.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_science_19" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Science</mark>
+                <h2>Huge volume of water detected under Antarctic ice</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Vast quantities of water have been detected in sediments that underlie a part of the West Antarctic ice sheet.</strong></p>
+            <p>The volume is equivalent to a reservoir that is several hundred metres deep.</p>
+            <p>The water was detected below the Whillans Ice Stream, but its presence is likely replicated elsewhere across the White Continent.</p>
+            <p>That being the case, it could be an important influence on how Antarctica reacts to a warmer world, researchers tell the journal Science this week.</p>
+            <p>Water at the base of glaciers and ice streams generally works to lubricate their movement.</p>
+            <p>The transfer of water into or out of this deep reservoir has the potential therefore to either slow down or speed up ice flow.</p>
+            <p>Models that simulate future climate impacts will now have to account for it.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>South Pole</figcaption>
+            </figure>
+            <p>The detection was made by a team led by Dr Chloe Gustafson from the Scripps Institution of Oceanography in San Diego, US.</p>
+            <p>She said the deep sediments were ancient ocean muds and sands that became saturated with salty seawater thousands of years ago when the West Antarctic Ice Sheet was much less extensive than it is today.</p>
+            <p>"These sediments I like to think of as a giant sponge," she explained.</p>
+            <p>"If you could squeeze out all that water and pool it on the surface, the water would range anywhere from about 220m in depth all the way up to 820m.</p>
+            <p>"For comparison, the Empire State Building is about 440m tall. So at the shallowest, this water would go halfway up the Empire State Building, and at the deepest it would almost submerge two Empire State Buildings," the postdoctoral researcher told BBC News.</p>
+            <p>Dr Gustafson made her measurements during a six-week expedition on the Whillans Ice Stream, an 800m-thick, 100km-wide convoy of fast moving ice that feeds into the Ross Ice Shelf.</p>
+            <p>The technique she deployed is called magnetotellurics. This records variations in the the Earth’s natural electric and magnetic fields to determine the properties of deeply buried materials, be that rock, sediments, ice or water.</p>
+            <p>"You get a resistivity pattern and you have to invert that to work out how much water is present, and it's huge," said Scripps glaciology professor, Helen Fricker.</p>
+            <p>"People had long suspected this groundwater was there, but this is the first time we've really been able to measure it."</p>
+            <p>Prof Fricker used satellite observations in the 2000s to describe the dynamic hydrological system under Whillans. From the way the ice surface rose and fell over weeks and months, she could tell there were melt rivers filling and draining water from lakes that lay directly under the ice at its interface with the sediments.</p>
+            <p>This newly discovered groundwater is held further down, in the pore spaces of the 500m-2,000m of ancient muds and sands that are sandwiched between the ice stream and basement rock.</p>
+            <p>The key question being asked is: to what extent can the groundwater add to or subtract from the network of freshwater rivers and lakes just under the ice, to aid lubrication? And the inference in the measured changes in the saltiness of the upper part of the ground reservoir is that there is exchange.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Scripps-led team would like to take its investigations to other areas</figcaption>
+            </figure>
+            <p>Dr Tom Jordan conducts geophysical investigations of the deep structures of Antarctica.</p>
+            <p>He said the groundwater was potentially relatively warm because of the heat of basement rocks.</p>
+            <p>"If you then dump that warm water at the ice-bed interface, it could accelerate the flow of ice," the British Antarctic Survey scientist told BBC News.</p>
+            <p>The Scripps-led team wants to repeat its work at Thwaites Glacier. At roughly the size of Great Britain or Florida, Thwaites is much, much bigger than the Whillans Ice Stream. It is currently the subject of intense study by US and UK researchers because of its melt rate.</p>
+            <p>Thwaites' outflow speed has doubled in the past 30 years and there is concern that future ice losses could add significantly to global-sea level rise.</p>
+            <p>Dr Jordan said his data suggested there were large sediment basins under Thwaites that could hold impressive volumes of groundwater, but there were also places where the glacier ice was directly in contact with bedrock. This meant the Scripps would likely find a mixed picture if it pursued its investigations, he added.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

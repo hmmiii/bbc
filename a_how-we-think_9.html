@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_how-we-think_9" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>How We Think</mark>
+                <h2>Why you say yes to requests - even if you shouldn't</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>People have a hard time saying no, for fear of disagreement. Influencers can use this power for good - or bad.</h3>
+            <p>While working as a graduate student in New York City, Vanessa Bohns was given the dreaded job of collecting survey data in Penn Station as part of an academic research project. Each time she approached a passer-by, she expected to hear a sigh of exasperation or a muttered insult. Yet the bad responses rarely came; many more people were willing to answer the questionnaires than she had expected.</p>
+            <p>Was it possible, she wondered, that most of us underestimate others’ willingness to respond to our requests?  Over the following decade, she conducted multiple studies that confirmed that this was indeed the case: in many different situations, people are often far more likely to cooperate than we assume.</p>
+            <p>Superficially, her results seemed to provide a refreshingly optimistic view of human nature. “It started as a positive thing, like, isn't it great that people are more likely to do things for you than you think?” Bohns has since come to appreciate that her results reflect a broader tendency for us to underestimate how much influence our words can have over others, whether we’re asking them to perform good actions or bad ones. Often, people are only complying with us because they find it too awkward to say no, even when they feel uncomfortable with our requests.</p>
+            <p>Understanding this can help us understand how our requests might affect other people - particularly in the workplace - and adjust them accordingly, in ways that respect people’s boundaries.  </p>
+            <p><strong>Testing our helpfulness</strong></p>
+            <p>Bohns’ work - which she’s now turned into a new book, You Have More Influence Than You Think - builds on research by Ellen Langer at Harvard University from the 1970s. In her study, participants attempted to jump the queue for the photocopier at the university library. As you might hope, a large number agreed if the person making the request had a good excuse. Ninety-four per cent of people allowed them to go ahead if the participant said they were “in a rush” - compared to 60% when the person offered no reason for their request. </p>
+            <p>Strikingly, however, almost as many people - 93% - allowed the participant to go forward if they said that they “need[ed] to make some copies”, which is really no excuse at all. The experiment suggested that people don’t pay attention to the details of what someone says, and they can therefore be swayed by a superficial explanation. “As long as something follows a general script, we're not necessarily going to process whether it makes sense. We just go along with it,” says Bohns, who is now a professor in organisational behaviour at Cornell University, US.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>In Vanessa Bohns's research, she found a large majority of people would let others cut in line for photocopies, even without a good excuse (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>Bohns’s own research on influence and compliance began in the late 2000s. The first experiment attempted to replicate her own experience in Penn Station: the participants had to approach strangers on the university campus and ask them to complete a survey. All they could say was “Will you fill out a questionnaire?” To get five responses, most people estimated that they’d need to ask at least 20 people. In practice, that number was closer to 10.</p>
+            <p>In another experiment, the participants leaving the lab had to ask a stranger to walk them to a nearby gym, explaining that they couldn’t find it. On average, the participants assumed that they’d have to approach about seven people before someone would agree to take the detour. When they performed the task, however, they found that around one in every two people offered to go out of their way to help. “They would go out looking scared and sometimes kind of angry that they had to do this,” says Bohns. “And then they would return much earlier than expected, and bounce back into the lab.”</p>
+            <p>To test the phenomenon in a natural setting, among a more diverse group of participants who were not university students, Bohns questioned people raising money for the Leukaemia and Lymphoma Society. On average, the volunteers predicted that they’d need to ask around 210 people to meet their fundraising goals of between $2,100 and $5,000. In reality, they were able to contact just 122 people to reach their target.</p>
+            <p><strong>Avoiding awkwardness</strong></p>
+            <p>It is easy to understand why Bohns and her colleagues were so excited about these initial results: knowing about people’s willingness to help could give us more confidence when managing work projects, for example.</p>
+            <p>A few years into the research, however, she decided to test whether we might also use our influence unethically, without realising how easily others would be swayed by our demands, or how uncomfortable they would feel saying no.</p>
+            <p>For one experiment, she gave participants fake library books. The participants were asked to approach strangers with the following request: “Hi, I’m trying to play a prank on someone, but they know my handwriting. Will you just quickly write the word ‘pickle’ on this page of this library book?”</p>
+            <p>Bohns suspected that very few people would agree, and the participants were similarly sceptical. But, as with the questionnaire study, those predictions proved to be wrong. Despite raising some objections, more than half the people that the participants approached agreed to commit the small act of vandalism.</p>
+            <blockquote>We may fear that by saying no, we are somehow suggesting that the other person is themself immoral or selfish</blockquote>
+            <p>This was not an isolated incident; another of Bohns’s studies found people were willing to falsify academic documents upon a simple request from a stranger. And she found similar patterns using an online platform, in which participants had to consider their reactions to various scenarios. The subjects reported they would be more comfortable committing an unethical act if someone told them to do so. Yet, they consistently underestimated how much their own words could influence someone else’s decision. </p>
+            <p>Why would this be? Bohns now suspects that people often comply with our requests due to a fear of disagreement. “We’re a social species, and we don't want to do things that risk damaging our relationships,” she says. In particular, we may fear that by saying no, we are somehow suggesting that the other person is themself immoral or selfish, leading them to lose ‘face’ - a phenomenon known as ‘insinuation anxiety’. “It would make it really awkward for both people,” says Bohns. “So, we might hint that we don't feel comfortable with something, but it's a lot harder to actually come out and say no, I'm not going to do it.” </p>
+            <p>This is the reality. When we are asked to predict how someone will react to a request, however, we discount their fear of embarrassment and assume the other person would be more courageous than they really are - which leads us to underestimate our potential power to persuade others to act against their better nature.</p>
+            <p><strong>Leave room for refusal</strong></p>
+            <p>Bohns believes that our tendency to underestimate our influence is very relevant in the workplace. If you ask a colleague to do you a favour by cutting corners in their work, for example, you may assume that they can just refuse, but their fear of creating awkwardness could prevent them from doing so.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Our tendency to underestimate our influence is very relevant in the workplace - and we can convince colleagues to do things like cut corners (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>It’s worth emphasising that these are general patterns. Individual differences in people’s influence, and their perception of that power, will of course depend on many factors and the specific context of the situation.</p>
+            <p>In Bohns’s studies, the participants were almost always of equal stature. Clearly power dynamics will play an important role, though: by definition, people of higher status should have more influence over people of lower status within a hierarchy. Importantly, Bohns’s research suggests that these people may not realise how uncomfortable someone will feel about saying no to their demands. The upshot is that they may end up asking too much of their junior colleagues without even meaning to abuse their position.</p>
+            <p>Bohns believes that in many situations we should actively create opportunities for others to disagree with us. This may mean that we change the medium through which we make our requests. People are more likely to respond positively to your request if you ask them in person or over the phone, whereas they could feel more comfortable turning you down by email.</p>
+            <p>You may still decide that you’d like to make the request face to face, of course - perhaps it feels more polite or will allow you to explain your case in more detail - but you could at least give the person the time to mull it over and to respond at a later point. “You can give the person a little more space to gather their thoughts,” she says.</p>
+            <blockquote>We might hint that we don't feel comfortable with something, but it's a lot harder to actually come out and say no, I'm not going to do it - Vanessa Bohns</blockquote>
+            <p>Ian MacRae, a work psychologist and author of the recent book Dark Social: The Darker Side of Work, Personality and Social Media, says he is very interested in Bohns’s research. He agrees that allowing room for disagreement is essential. In his opinion, managers should be especially wary about making a request in public, since that will make it even harder for the employee to say no. “That’s going to build up resentment and have negative consequences later on.”</p>
+            <p>And if you’re the worker who ends up having to decline a request, MacRae suggests that you might dissipate the awkwardness by thanking your colleague for the opportunity and by giving a constructive reason for your refusal. Imagine your boss has sprung a last-minute task on you that is going to be nearly impossible to complete without a huge amount of stress. “You might say that you’re really glad they thought you were capable of doing the task, and that in the future you’d be happy to do it, but you’d need ‘X’ days’ notice, or that you’d need extra resources to do so effectively,” says MacRae. “That way it’s not so much of a rebuff - it’s a conversation about how you can get it done.”</p>
+            <p>With the publication of her book, Bohns hopes that we’ll all become more aware of the ways our words affect others - and our tendency to underestimate the difficulty of refusal - so that we’re more readily respectful of their boundaries. “If we want genuine agreement, we should always be thinking of the ways that we can make it easier for others to say no.” </p>
+            <p>Our influence may often be invisible to us, but with a bit of training we could all wield that power with more compassion and responsibility.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

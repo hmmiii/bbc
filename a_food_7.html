@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_food_7" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Food</mark>
+                <h2>Bokit: The fried food that defines an island</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Although the curry-spiced stew, porc-colombo, is the national dish of Guadeloupe, it's the humble bokit that has captured the hearts of the Caribbean archipelago.</h3>
+            <p>In the sun-scorched streets of Pointe-a Pitre, Guadeloupe, buzzy energy bubbled up from the narrow lanes and the scent of spices and frying dough mingled with the sea breeze. The first time I arrived on the archipelago, I was struck by the chaotic mix of old world and new: crayon-coloured 18th-Century buildings next to storefront mannequins dressed in patterned leggings and tanks; a graffiti artist spray painting a crumbling 19th-Century warehouse.</p>
+            <p>All my senses were activated as l sipped fresh sugarcane juice and strolled around the waterfront. I understood immediately why Guadeloupe is known for la belle la vie, or the beautiful life. The zest for living is woven into every aspect of the islands' lifestyle, from the joyful rhythms of local zouk music to the record numbers for Champagne drinking, but it's especially evident in the devoted preparation of food. I sampled complex dishes like feroces d'avocat, a spicy avocado salad with cassava and codfish, as well as the creole stew of breadfruit, plantains and tripe called be'bele. But nothing seemed to be as ubiquitous and beloved as the source of that fried dough aroma, the almighty bokit.</p>
+            <p>The ultimate Guadeloupan street food, bokit is a hefty sandwich fashioned from fried dough and a creative range of ingredients that's sold from stands, trucks and cafes that dot the island. I entered a tiny eatery with a faded sign and a few tables and chairs. A mind-numbing list of ingredient choices - including lamb, lobster, conch, curried chicken, pepper sauce, cheeses, curry sauce and ketchup - lined a wall over a grill where the owner was frying two long pieces of dough.</p>
+            <p>I ordered saltfish with sweet peppers and Creole sauce (made of scotch bonnet peppers, onions, parsley, garlic and lime) and watched him stuff the ingredients between the fried bread and wrap it in foil. I took a bite and the flavours danced around my mouth, forming a happy mix. The satisfying blend of fat and freshness along with the array of fillings made it the perfect symbol of Guadeloupe's multicultural influences. The bokit is so much more than a sandwich; it's a portable feast and cultural symbol.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A taco-like version called bokitos is popular (left), as are bokit dough skewers (right) (Credit: Bokit Center)</figcaption>
+            </figure>
+            <p>An overseas department of France located in the Eastern Caribbean between Antigua and Dominica, Guadeloupe is composed of five islands, with Grande Terre and Bass Terre the largest. After the abolition of slavery in 1848, indentured workers from South India were brought to the archipelago for cheap labour, creating a vibrant culture that combines African, French, indigenous and Indian influences. The simple preparation and varied fixings of bokits perfectly reflect this cultural mix, resulting in a bountiful and flavourful dish paired with the creativity of French cooking techniques.</p>
+            <p>"The bokit is a festive sandwich. It is a dish that unites," said Naike' Claudeon, owner of Bokit Center, a stylish restaurant that serves healthy, gourmet versions of bokit in Pointe-a-Pitre."When we think of a bokit, we often associate it with a family outing after visits to the cemetery or at the carnival. We also have to talk about the dankit (simple fried bread) from which the bokit is inspired."</p>
+            <p>She added: "It is a dish that has evolved a lot throughout its history. It's a dish that is not set in stone. Everyone can create their own. You may find a way to make it in Basse-Terre that you won't find in Grande-Terre. The bokit is very versatile."</p>
+            <p>The history of the bokit stretches back to the 19th Century, around the time of the abolition of slavery in Guadeloupe. Simple fried dough is typically called johnnycakes throughout most of the Caribbean, where the indigenous practice of cooking corn cakes on hot stones was adopted by enslaved Africans. The fried dough is called dankit in Guadeloupe, and stuffing it with whatever meat, cheese, or vegetables were on hand developed into a hearty meal for poor workers who needed a cheap and filling dish to sustain them during the long work day.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Bokits are even served up as dessert, sweetened with chocolate and powdered sugar (Credit: Bokit Center)</figcaption>
+            </figure>
+            <p>"Our very resourceful enslaved ancestors created the bokit because at that time they did not have an oven or the necessary means, but they had to eat and they had water, flour and oil," said Claudeon. "Hence the idea of ​​frying the dough instead of baking it. Most Caribbean islands have their version of bokit with a different name."</p>
+            <p>The evolution of the bokit mirrors the story of Guadeloupe. As the island developed more industries besides agriculture and the towns grew bigger with commerce, the bokit acquired more sophistication and variations. "Originally the bokit was made without yeast and was called dankit. [But] over the years the recipe evolved and yeast was added to it [inspired by the prevalence of French bread] and it then became the bokit that we know today," explained Colette Chicot, owner of Bokaraibes, a bokit cafe in Basse Terre.</p>
+            <blockquote>Bokit is to Guadeloupe what the baguette is to mainland France or what the naan is to India</blockquote>
+            <p>"Bokit is to Guadeloupe what the baguette is to mainland France or what the naan is to India," she added. "The bokit is truly a sandwich that has evolved so much and is still evolving. For example, I'm known for making bokits with breadfruit flour."</p>
+            <p>Indeed, I have savoured many exciting bokit variations. One option showcased the keen skills of French technique, with stewed pork topped with julienned cabbage and carrots. Sprinkled with local sugar cane syrup, the result was a sweet and savoury dish that reflected the French appreciation of a mix of flavours and textures.</p>
+            <p>Another time, sitting in the shade of a lush sea grape tree on the golden sands in Sainte Anne, a popular beachfront town in Grande Terre, I enjoyed a an Indian-inspired bokit bursting with chickpeas, cabbage and potatoes and dressed with turmeric and tamarind sauce. As I licked the sauce from my fingers, I leaned against the trunk and watched an eager queue of patrons line up at the small truck for bokits stuffed with everything from aubergine to mutton.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>(Credit: Walter Bibikow/Getty Images)</figcaption>
+            </figure>
+            <p>"The bokit was first marketed as a food truck sandwich," said Claudeon. "Mothers would sell bokits in food trucks to make money to feed their children. At the time, we had two types of bokit: the bokit stuffed before frying; and the bokit stuffed after frying."</p>
+            <p>"The bokit was first marketed as a food truck sandwich," said Claudeon. "Mothers would sell bokits in food trucks to make money to feed their children. At the time, we had two types of bokit: the bokit stuffed before frying; and the bokit stuffed after frying."</p>
+            <p>Although the curry-spiced stew, porc-colombo is the national dish of Guadeloupe, bokits have captured the hearts of the Caribbean island for their versatility and easy accessibility. "Friday is bokit day in Guadeloupe, " said Chicot. "It's the weekend, everybody is looking for comfort food and the bokit is practical; it's food on the go."</p>
+            <p>She added: "The bokit is ours. It truly represents our history, our soul, our genes. To make bokits is to revive one of the most beautiful symbols of the island.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

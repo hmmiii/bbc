@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_business_9" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Business</mark>
+                <h2>Car industry calls for electric charge watchdog</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>The UK car industry has called for a watchdog to oversee electric car charging prices and the availability of charge points.</strong></p>
+            <p>The growth in electric vehicles sales is outstripping the rollout of charging points, the Society of Motor Manufacturers and Traders (SMMT) said.</p>
+            <p>It said a regulator is needed to monitor the market.</p>
+            <p>The government said it was providing £1.3bn to expand the charging network.</p>
+            <p>Over the decade between 2011 and 2021 the number of charge points in the UK jumped from about 1,500 to more than 48,000, according to industry figures.</p>
+            <p>But between 2019 and 2021 the number of electric cars on the road increased much faster than charge points were being rolled out.</p>
+            <p>Moreover, the charge point rollout was uneven, going faster in the south of England than in the north, the industry body said.</p>
+            <p>The SMMT called on the government to set up a new regulator called "Ofcharge" - the Office of Charging - to monitor the market.</p>
+            <p>Public charging points "remain critical to consumer confidence and are still relied upon by many commercial fleets, as well as the third of British households that do not have designated off-street parking," the SMMT added.</p>
+            <h3>Electric car sales soar</h3>
+            <p>Electric vehicles are seen as a way to cut greenhouse gas emissions from transport, which became the largest emitting sector in the UK in 2016.</p>
+            <p>But while there is soaring interest in electric cars, this hasn't yet translated into vehicles on the road.</p>
+            <p>In 2020, the number of battery electric cars on the road increased by 114% to a record high of just under 200,000, while the number of plug-in hybrids jumped 35% to just under 240,000.</p>
+            <p>There has also been a sharp increase in interest in second-hand electric cars.</p>
+            <p>However, electric cars remain a tiny fraction of the cars on UK roads, representing just 1.3% of the total.</p>
+            <p>Businesses have been leading the way with fleet purchases, but the car industry is pushing for consumers to buy into electric cars too.</p>
+            <p>However, many people have concerns about electric cars, with two of the main ones being the cost of buying a car, and whether there are enough charge points, including for longer journeys, the car industry says.</p>
+            <p>Last summer MPs also raised concerns about the cost of public charging, saying it was far more expensive than charging a car at home. Energy prices have soared since then.</p>
+            <ul>
+                <li>Electric car charging prices 'must be fair' say MPs</li>
+            </ul>
+            <p>Mike Hawes, SMMT chief executive, called for "clear targets" and more government support for rolling out charge points.</p>
+            <p>A Department for Transport spokesperson said the government was providing more than £1.3bn "to support the continued roll-out of charge points at homes, businesses and on residential streets across the UK, levelling up our charge point provision while supporting the deployment of rapid charge points on motorways and major A roads in England".</p>
+            <p>The government will publish its electric vehicle infrastructure plan soon, the spokesperson said, adding: "We continue to work with local authorities to ensure they are engaged in the transition, and are encouraging them to make use of the on-street residential charge point scheme which last year committed £20m for the rollout of public charge points in residential areas."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

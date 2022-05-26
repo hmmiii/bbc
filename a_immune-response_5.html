@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_immune-response_5" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Immune Response</mark>
+                <h2>Covid-19: How effective is a third vaccine dose?</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>From squandering global vaccine supplies to the possibility of undermining immunity from the first two doses, booster programmes are a surprisingly complicated business.</h3>
+            <p>The turning point came just after 6:30 on a Tuesday morning.</p>
+            <p>It was the 9 December 2020 and 91-year-old Margaret Keenan and 81-year-old William Shakespeare - who delighted the world by hailing from Warwickshire, like the poet - had just become the first people to ever receive an initial dose of a Covid-19 vaccine outside clinical trials.</p>
+            <p>The entire room burst into applause. The day was named "V-day", and the atmosphere was giddy. One British newspaper celebrated with the whimsical headline "The taming of the flu" - while footage of a particularly charismatic early vaccine recipient, who was more concerned about his "rather nasty lunch" than the needle went viral on Twitter. The pandemic was far from over, but this was the first step on the way out. </p>
+            <p>Nine months later, around 5.7 billion doses of various vaccines have now been administered worldwide - with 41.8% of the global population at least partially protected. But the list of unknowns is growing by the day.</p>
+            <p>"One ghastly thing about this pandemic is that people get cross with us [scientists]," says Danny Altmann, professor of immunology at University College London, "because we change our minds, because it's such a moving target."</p>
+            <p>Now that it's clear the world is likely to be riddled with Covid-19 - and its many variant successors - for years to come, the next big question is whether two doses of each vaccine is enough.</p>
+            <p>Altmann explains that not that long ago - in April and May - he was writing articles and giving interviews saying that most vaccinated people had immunity that was so stupendous, there was no need to worry about booster doses.</p>
+            <p>"The expression I used was 'protective headroom'," says Altmann. "That you've got lots of protective headroom and even if variants come along that drop the effectiveness of your vaccine 10 times, say, because you've got a 1,000 times excess of antibodies, it wouldn't do any harm." The strong antibody response was initially reflected in their efficacy, too - while the World Health Organization (WHO) recommended approving any over 50%, in reality it was orders of magnitude higher.</p>
+            <p>Then the Delta variant came rampaging - and though most people still have high levels of antibodies, breakthrough infections are not rare events. "We're seeing breakthrough infections in the face of quite decent levels of neutralising antibodies," he says.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Israel was the first country in the world to double-vaccinate the majority of its population (Credit: Alamy)</figcaption>
+            </figure>
+            <p>But are we likely to start seeing significant numbers of deaths? How effective are booster doses anyway - and what's the best way to administer them? From radically diverging immunity in different groups of people to the - small - hypothetical possibility that third doses of certain vaccines could actually decrease the amount of immunity we have, there are many scientific reasons that booster programmes are a very different endeavour to the initial vaccine rollout.</p>
+            <p>"At the beginning, it was very simple concepts - do we test or don't we? Do we have antibodies, or don't we?" says Altmann. "Now it's much more complex."</p>
+            <p><strong>A fourth wave</strong></p>
+            <p>Take Israel - a country that vaccinated its population so widely and so early, the chief scientific officer at Pfizer recently called it "a sort of laboratory". By mid-March - when the rest of the world was still scrambling for first doses - over 50% of the country's population was already fully vaccinated.</p>
+            <p>In May, the country had among the lowest rates of infection anywhere in the world. Things looked so good that a month later, the government began to dramatically scale back restrictions. There was no longer any limit to the size of gatherings. Restaurants and other cultural venues opened up to both vaccinated and unvaccinated citizens. People were no longer required to wear masks outdoors.</p>
+            <p>But there was a major problem on the horizon - the arrival of the Delta variant. It snuck across the border sometime around early July - the first case was detected on 7 July - and soon cases were building to an alarming level. Within weeks, they numbered in the hundreds. Later that month, they were clocking several thousand.</p>
+            <p>By the time the country's Jewish majority began to prepare for the religious festival Yom Kippur in mid-September, there were at least 10,000 cases each day - per person, this was more than anywhere else on Earth.</p>
+            <p>To begin with, the new variant was given most of the credit for this rapid unravelling. Then data emerged which creased the brows of experts around the world.</p>
+            <p>When a team of Israeli researchers looked at infections among vaccinated people in the country, they found that though they were significantly less likely to develop severe Covid-19 than unvaccinated individuals, the immunity had become less potent over time. For example, those received their second dose in January were 1.7 times more likely to develop severe Covid-19 than those who had both vaccines just two months later.</p>
+            <p>"Luckily it's not a death dataset, simply because if you've vaccinated the population, you have far, far fewer deaths. So it's all about protection from symptomatic disease," says Altmann, "…but there are lots of symptomatic cases, and the curves and the statistical values and things are very striking."</p>
+            <p>Today the fourth wave has spread across much of the world. In recent weeks, the virus has surged to record levels in Scotland, Japan, and the Philippines, while many European countries have seen cases creep up again. And the evidence is mounting that waning immunity could be a global problem.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The WHO has criticised the scramble for third Covid-19 vaccine doses when fewer than 2% of the population has been vaccinated in some poorer nations (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>One study in the UK found that two doses of the Pfizer/BioNTech vaccine were 88% effective after one month, compared to 74% after five or six months. Meanwhile, the Oxford/AstraZeneca version declined from being 77% to 67% effective.</p>
+            <p>The research is mirrored by analyses from Moderna and Pfizer, which have not yet been peer-reviewed. Moderna found that cases among fully vaccinated people jumped from 88 out of 11,431 people who received their second dose between December and March to 162 out of 16,747 people vaccinated five months earlier - a jump of around 36%. Meanwhile, Pfizer revealed that its vaccines decline from being 96% to 83.7% effective at preventing symptoms after four months.</p>
+            <p>Just like the protection gained through natural infection, it looks like vaccine-induced immunity gradually wears off - though it's not yet clear whether this matters (more on this later).</p>
+            <p><strong>Another vaccine scramble</strong></p>
+            <p>Enter booster vaccination programmes, which are rapidly springing up across the globe.</p>
+            <p>In Israel, third doses are already old news - they were approved for over-60s in late July, and the government has been gradually making them available to more and more people. The extra shot is currently available to everyone over the age of 12, as long as it's been at least five months since they were vaccinated with the second dose.</p>
+            <p>The list of countries following suit is growing daily. The UK recently announced a booster programme for all over-50s and those with severely weakened immune systems, which is due to start next week - as did Singapore (but for the immunocompromised and over-60s).</p>
+            <p>In the US, hundreds of thousands of extra doses have been given to clinically vulnerable people since 13 August, and the Biden administration has plans to provide them for all American adults once six months have elapsed since their second dose. Other nations with booster programmes include Italy, China, and Russia.</p>
+            <p>But is this really necessary?</p>
+            <p>"This is a reminder:" one doctor recently warned on Twitter, "if you have high risk folks at home who were vaccinated during the start of 2021, it is worth being extra careful around them." They went on to explain that they had treated several elderly and immunocompromised people in the last week who had been double vaccinated. Some of them had gone on to become seriously ill.</p>
+            <p>It's an alarming observation, but the wider picture may not be as dire as it sounds.</p>
+            <p>In the US, hospitalisations recently rose above 100,000 for the first time since January - and though there were 29 times as many unvaccinated as vaccinated people affected, inevitably some immunised people became seriously unwell because of the sheer numbers of cases. It's not yet clear whether there was indeed a higher probability of being hospitalised among people who were vaccinated earlier rather than later, as in Israel - however even if there were, there are a number of possible explanations other than waning immunity. For example, most countries vaccinated their most vulnerable citizens first.</p>
+            <p>However, what is obvious is that the vaccines are still highly effective at shielding people from death, regardless of when you were inoculated - and it helps that the risk of vaccinated people being killed by Covid-19 was extremely small to start with. In the UK, there were just 256 fatalities linked to the virus among fully immunised people between January and July 2021, out of more than 51,000. These "breakthrough deaths" overwhelmingly occurred in the most vulnerable groups, such as elderly people with weakened immune systems.  </p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>In the future, Covid-19 booster doses might be updated each year to match the main viral variants in circulation, just like flu vaccines (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>As it happens, this is where a booster programme might be at its most useful. For example, a study of organ transplant recipients - who usually need to take drugs to suppress their immune system and prevent it from attacking the donated organ - found that some vaccinated patients had strikingly low antibody levels, which may not have been enough to protect them from Covid-19.</p>
+            <p>So, there is not yet any evidence that waning immunity is leading to more deaths in healthy people - though in some parts of the world it might put pressure on health services, if more people become seriously unwell.</p>
+            <p>Maria Elena Bottazzi, professor of paediatrics, virology, and microbiology at Baylor College of Medicine in Texas, takes the view that current rates of hospitalisation provide a stronger argument for increasing vaccination rates overall, rather than providing third doses.</p>
+            <p>"I think the real question, in the context of the fact that certain areas of the world are still needing first and second doses," says "is what is the real evidence that indicates that we should start adding a third dose - and when is it appropriate, which populations should we prioritise."</p>
+            <p>So, what evidence is there that booster shots work?</p>
+            <p>Again, it helps to turn to the Israel, which experimented with booster doses long before the rest of the world. One study of fully vaccinated over-60s found that those who had received a booster dose five months after their second shot had much more potent immunity - they were over 11 times less likely to be infected with Covid-19, and 19 times less likely to develop severe illness than those who had not received the third dose.</p>
+            <p>Likewise, Pfizer's own data shows that booster shots can restore their vaccine's efficacy to 95%. And there are other scraps of evidence from around the world.</p>
+            <p>In a recent trial of booster shots in organ transplant recipients, an international team of scientists found that providing an extra dose of the Moderna vaccine led to a significant jump in several markers of immunity, compared to receiving a placebo.</p>
+            <p>"As far as I know, it's the only randomised-controlled trial to look at a third dose," says Atul Humar, a senior scientist at Toronto General Hospital Research Institute. "And it showed a very convincing benefit." Though the study didn't track the patients' disease outcomes, 60% of those who received the third dose reached the threshold for protective levels of neutralising antibodies, versus just 25% in the placebo group.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>In just nine months, the global population has received around 5.7 billion doses of the Covid-19 vaccines (Credit: Alamy)</figcaption>
+            </figure>
+            <p>Another hint at the immunological benefits of a third exposure to the Covid-19 spike protein comes from India, where a study of vaccinated healthcare workers - which is yet to be peer-reviewed - recently found that their levels of antibodies declined significantly after four months, unless they had been infected with the virus naturally - which the researchers suggest may have acted as a kind of booster (though of course, this is not recommended).</p>
+            <p><strong>An (even more) complicated picture</strong></p>
+            <p>However, even if waning immunity is a major global problem that booster shots can help to overcome it, there are still many things left to work out. In fact, the more you look at the detail, the more complicated it all becomes.</p>
+            <p>For example, what should a booster programme look like?</p>
+            <p>In Israel, where most people's first two vaccinations were by Pfizer, this is the vaccine that has been used so far for booster doses. The UK government is also currently planning to exclusively use the Pfizer version - however, the majority of the population received the Oxford/AstraZeneca for their first and second doses.</p>
+            <p>For first and second doses, studies suggest that mixing and matching different Covid-19 vaccine technologies can provide superior immunity to having the same one twice. However, though the UK began a trial on mix-and-match booster vaccines back in May, there is not yet any data to confirm that this works or is a good idea.</p>
+            <p>"Again, it's like so many other things - you know that expression, we're trying to build the aeroplane while we fly it, and doing it all as fast as we possibly can," says Altmann.</p>
+            <p>While Altmann suspects that boosting with mRNA-based vaccines such as Pfizer and Moderna - which sneak mRNA containing the instructions to make the Covid-19 spike protein into cells, showing them what to look out for - work well, he does have mild concerns about the wisdom of boosting with another kind - the viral vector.</p>
+            <p>In contrast, vaccines like the Oxford/AstraZeneca rely on a virus - in this case, a chimpanzee adenovirus - to smuggle the code for the Covid-19 spike protein into our bodies. And there's a theoretical possibility that reinfecting yourself with an (inactivated) virus several times could be a bad idea.</p>
+            <p>"We've never been there before… there's quite a big chance that you're going to induce inhibitory antibodies against the vaccine itself, and stop the vaccine working," says Altmann, who explains he's curious to know whether the UK's vaccine advisory committee - the JCVI - have taken this into consideration.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Philippines has recorded over two million Covid-19 cases since the pandemic began, and is now well into its fourth wave (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>Another question is whether the immunity we gain from booster programmes might last longer if they were designed with updated versions of the vaccines - such as those that can recognise new variants like Delta.</p>
+            <p>"You know, again, you could write a whole PhD on this sort of stuff," says Altmann, "You have a complex world out there, you've got all these different people and all these different patterns of protective immunity." To begin with, we were all either people who had been infected or not infected - but out paths are rapidly diverging, and this makes vaccine development more complicated.</p>
+            <p>Altmann explains that one person walking down the street might have been infected with the original Covid-19 variant, then received two doses of the Pfizer vaccine… then been reinfected with the Delta strain. Meanwhile, another person may have received a different brand of vaccine, and been infected with a different variant - such as the Alpha strain first identified in Kent.</p>
+            <p>"So how am I going to guess which spike sequence or mutations to stick into my vaccine to make something that might be useful for the next year or two?" says Altmann. "It's so incredibly not as simple as saying 'which is the last variant you last heard of, bung that one in' - it's so not as simple as that."</p>
+            <p>In an ideal world, Altmann would like to see governments taking this variability in a population's immunity into account - and perhaps even testing people's antibody levels to see if they actually need a third dose at all. </p>
+            <p>Other lingering questions include how large the third dose should be - the UK is planning to experiment with giving people less vaccine in the booster shot, to make more doses available to developing countries - and how long after the second it should be administered. For example, while Israel has run with a five-month gap, the US plans to wait eight months between them.</p>
+            <p><strong>A booster future</strong></p>
+            <p>However, perhaps the most pressing question of all is how long a person's newly restored immunity from their booster shot will last - and here at least, there is a strong suspicion of what is to come.</p>
+            <p>"I don't think we know that," says Humar. "But I think that that's a very real possibility. That's what it's starting to look like, especially as we see the waning antibodies and the decreased effectiveness against variants."</p>
+            <p>Altmann could also see booster programmes eventually evolving into annual ones, however he's unsure whether the science would back it up. "I think that would be a managerial logistics decision, not an immunological decision," he says, explaining that it seems unlikely population immunity - with all the antibodies and T cells that involves - would be low enough to justify it.</p>
+            <p>"But I could easily imagine Department of Health planners saying 'well, the easiest thing is to do it at the same time every autumn. So let's just fire up more doses in the world and do it'," says Altmann.</p>
+            <p>It looks like Israel is already close to such a scenario. No sooner had they announced that they were providing third doses to all eligible citizens, than the country's "virus czar", Salman Zarka, suggested they should start preparing for fourth shots.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

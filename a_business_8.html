@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_business_8" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Business</mark>
+                <h2>How Elon Musk might change Twitter</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Twitter is usually awash with topics for discussion, but over the past couple of days one has stood out on the platform above others - what does the future hold for Twitter itself?</strong></p>
+            <p>With Elon Musk set to purchase the site - subject to shareholders' approval - for $44bn (£35bn), tweeters across the world have been offering their opinions.</p>
+            <p>No-one knows exactly what the billionaire entrepreneur has planned, with even Twitter boss Parag Agrawal acknowledging the future is uncertain. But the world's richest man has given some clues.</p>
+            <h3>1. Bring back banned accounts?</h3>
+            <p>A self-described "free speech absolutist", Mr Musk has long been vocal in his criticism of the platform's content policies, raising questions after the company banned former US President Donald Trump.</p>
+            <p>He has also called for more transparency over how the platform presents tweets to users, a system that currently allows some to be promoted and given wider audiences.</p>
+            <p>Exactly how Mr Musk - who has blocked people on the platform who have criticised him or his companies in the past - will alter Twitter's practices remains unclear.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Witch companies is Elon Must known for?</figcaption>
+            </figure>
+            <p>If the billionaire does loosen Twitter's content moderation rules, he could be in for a "rude awakening", says Jeffrey Howard, associate professor at University College London.</p>
+            <p>Twitter could be "easily weaponised" by criminals, bots and people using it for "malicious purposes" and to "incite hate and violence", Mr Howard warns.</p>
+            <p>"I think Elon Musk is relatively naïve on the actual challenges involved in content moderation. He will learn as a result of this you cannot simply have a laissez-faire approach to content management."</p>
+            <ul>
+                <li>Who is Elon Musk?</li>
+                <li>Elon Musk wins 'pedo guy' defamation case</li>
+            </ul>
+            <p>With tough new regulation to tackle online abuse on the horizon, such as the UK government's Online Harms Bill, it is unclear what changes Mr Musk will be able to make.</p>
+            <p>But news of the buyout has already generated a political firestorm.</p>
+            <p>In the US, people on the right, who feel unfairly targeted by social media platforms, have welcomed the deal. Those on the left have been more critical, with Democrat Senator Elizabeth Warren calling it "dangerous for our democracy".</p>
+            <p>Overseas, both the UK government and European Commission have reminded Mr Musk of his duty to protect the rights of Twitter users.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Elon Musk pictured leaving the courtroom in LA after winning a defamation case</figcaption>
+            </figure>
+            <p>Peter Vidlicka, media expert and co-founder of the public relations website Newspage, said that while Mr Musk could help Twitter "get its mojo back", "in the current socio-cultural climate, we can expect fireworks in the months ahead".</p>
+            <h3>2. Push users to pay?</h3>
+            <p>After becoming Twitter's largest shareholder earlier in April, Mr Musk posted a series of now-deleted tweets describing possible changes to Twitter's premium subscription service Twitter Blue, like getting rid of adverts and lowering its cost.</p>
+            <p>The hope would be to make subscriptions a more reliable source of income for the company, reducing its reliance on advertising.</p>
+            <p>"The power of corporations to dictate policy is greatly enhanced if Twitter depends on advertising money to survive," Mr Musk wrote.</p>
+            <p>But analyst Rachel Foster-Jones at GlobalData says that Elon Musk might need to "balance his dreams of a free debate space unfettered by advertising with the harsh realities of Twitter's core business model".</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Getty Image</figcaption>
+            </figure>
+            <p>Adverts currently account for about 90% of its income. The company has not disclosed subscriber numbers for Twitter Blue, which launched last year in a handful of countries, including the US and Australia.</p>
+            <p>"Musk will need to seriously revamp Twitter's subscription model, Twitter Blue, if he wants to pivot away from advertising," Ms Foster-Jones adds.</p>
+            <h3>3. Crackdown on bots?</h3>
+            <p>Twitter has long had an issue with automated, fake accounts being used to relentlessly post unhelpful or misleading content.</p>
+            <p>Mr Musk has called for "defeating the spam bots" - but the task may prove harder than he thinks, warns Robin Mansell, professor of new media and the internet at the London School of Economics.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Getty Image</figcaption>
+            </figure>
+            <p>There will "always be errors" in the authentication of users by humans or algorithms, she says.</p>
+            <p>"Anyone who offers certainty in this space is full of hype or wishful thinking," Prof Mansell says.</p>
+            <p>"When Musk gets immersed in the business he'll realise there are more constraints and governance arrangements to which these companies have to pay respect when they operate internationally."</p>
+            <p>If Mr Musk were successful, it would have widespread implications, says Jamie Moles, senior sales engineer at cybersecurity firm ExtraHop.</p>
+            <p>"The methods used by Twitter to eliminate bots from the platform may generate new techniques that improve the detection and identification of spam emails, spam posts and other malicious intrusion attempts" more widely, he says.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

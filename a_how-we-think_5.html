@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_how-we-think_5" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>How We Think</mark>
+                <h2>Awe: The 'little earthquake' that could free your mind</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Intentionally seeking the feeling of awe can improve memory, boost creativity and relieve anxious rumination.</h3>
+            <p>Whenever Ethan Kross finds himself in a mental rut of worrying and negative self-talk, he walks five blocks to his local arboretum and contemplates one of the magnificent trees in front of him, and the astonishing power of nature.</p>
+            <p>If he can’t get to the arboretum, he spends a few moments thinking about the astonishing possibilities of aeroplanes and spacecraft. “I think about how we went from struggling to start fires, just a few thousand years ago, to being able to land safely on another planet,” he says. </p>
+            <p>The aim, in each case, is to evoke awe - which he defines as “the wonder that we feel when we encounter something that we can’t easily explain”. </p>
+            <p>Kross’s habits are founded in scientific evidence. As a professor of psychology at the University of Michigan, he knows feelings of awe can have a truly profound influence on the mind - enhancing our memory and creativity as well as inspiring us to act more altruistically to the people around us. It can also have a profound impact on our mental health, by allowing us to put our anxieties into perspective.</p>
+            <p>Because most of us only experience awe sporadically, we remain unaware of its benefits. When we’re feeling down, we may be more likely to look for light relief in a comedy, for instance - seeking feelings of amusement that are not nearly so powerful. Yet generating awe can trigger a great mental shift, making it a potentially essential tool to improve our health and wellbeing. And there are many ways for us to cultivate the emotion in our daily lives. </p>
+            <p><strong>Little earthquakes</strong></p>
+            <p>Michelle Shiota, a professor of social psychology at Arizona State University, US, was one of the early pioneers to discover the benefits of awe. She has a particular interest in the ways it can remove our “mental filters” to encourage more flexible thinking.</p>
+            <p>Consider memory. If someone tells us a story, we typically remember what we think we should have heard, rather than the specific details of the event. This can mean that we miss unexpected or unusual elements that add much-needed clarity and specificity to what happened. We may even form false memories for events that did not happen, but which we assume are likely to have occurred in that kind of situation.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>When we feel wonder at something truly incredible and grand, “we perceive ourselves as smaller and less significant in relation to the rest of the world" (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>A few years ago, Shiota decided to test whether eliciting a feeling of awe could prevent this from occurring. She first asked the participants to view one of three videos: an awe-inspiring science film that took viewers on a journey from the outer cosmos to sub-atomic particles; a heart-warming film about a figure skater winning an Olympic gold medal; or a neutral film about the building of a cinder-block wall.</p>
+            <p>Participants then listened to a five-minute story describing a couple going out for a romantic dinner and answered questions about what they had heard. Some of these questions concerned the things you would typically expect at any meal - “Did the waiter pour the wine?” - while others concerned atypical information, such as whether the waiter wore glasses. As Shiota had hypothesised, the participants who had seen the science film were more accurate at remembering the details of what they had heard than those who had seen the heart-warming or neutral films. </p>
+            <p>Why would this be? Shiota points out the brain is constantly forming predictions of what will happen next; it uses its experiences to form mental stimulations that guide our perception, attention and behaviour. Awe-inspiring experiences - with their sense of grandeur, wonder and amazement - may confound those expectations, creating a “little earthquake” in the mind that causes the brain to reassess its assumptions and to pay more attention to what is actually in front of it. </p>
+            <p>“The mind dials back its ‘predictive coding’ to just look around and gather information,” she says. Besides boosting our memories for details, this can improve critical thinking, she points out - as people pay more attention to the specific nuances of an argument, rather than relying on their intuitions about whether it feels persuasive or not.</p>
+            <p>This capacity to drop our assumptions and see the world and its problems afresh might also explain why the emotion contributes to greater creativity. Take a study by Alice Chirico and colleagues at the Catholic University of the Sacred Heart in Milan, Italy, published in 2018. Participants who took a walk through a virtual reality forest scored higher on tests of original thinking than those who viewed a more mundane video of hens wandering in the grass. The awe-inspired participants were more innovative when asked how to improve a child’s toy, for example. </p>
+            <p><strong>The Attenborough Effect</strong></p>
+            <p>Awe’s most transformative effects may concern the way we view ourselves. When we feel wonder at something truly incredible and grand, “we perceive ourselves as smaller and less significant in relation to the rest of the world”, says Shiota. One consequence of this is greater altruism. “When I am less focused on myself, on my own goals and needs and the thoughts in my head, I have more bandwidth to notice you and what you may be experiencing.”</p>
+            <p>To measure these effects, a team led by Paul Piff at the University of California, Irvine asked a third of their participants to watch a five-minute clip of the BBC’s Planet Earth series, composed of grand, sweeping shots of scenic vistas, mountains, plains, forests and canyon. (The rest watched a five-minute clip of funny animal videos, or a neutral video about DIY.)</p>
+            <blockquote>When you are in the presence of something vast and indescribable, you feel smaller, and so does your negative chatter - Ethan Kross</blockquote>
+            <p>The participants then rated the extent to which they agreed with four statements, such as “I feel the presence of something greater than myself” and “I feel small and insignificant”. Finally, they took part in an experiment known as the “dictator game”, in which they were given a resource - in this case, 10 raffle tickets for a $100 gift voucher - that they could choose to share with a partner, if they so wished.</p>
+            <p>The feelings of awe produced a significant change in their generosity, increasing the number of tickets that the participants shared with their partners. Through subsequent statistical analyses, the researchers were able to show that this came through the changes to the sense of self. The smaller the participants felt, the more generous they were.</p>
+            <p>To replicate the finding in a more natural setting, one of the researchers took students on a walk through a grove of Tasmanian eucalyptus trees - which grow to more than 200 feet (60 metres). As the students contemplated the plants’ splendour, the researchers “accidentally” dropped the pens they were carrying - and noted whether the participant offered to pick them up. Sure enough, they found that the participants were more helpful, during this awe-inspiring walk, than students who had instead spent the time contemplating a tall (but not very majestic) building.</p>
+            <p><strong>Gaining perspective</strong></p>
+            <p>Last, but not least, are the enormous benefits for our mental health. Like the boosts to our generosity, this comes from the shrunken sense of self, which seems to reduce ruminative thinking.</p>
+            <p>This is potentially very important, since rumination is a known risk factor for depression, anxiety and post-traumatic stress disorder. “You're often zoomed in so narrowly on the situation that you're not thinking about anything else,” says Kross, whose book Chatter explores the effects of this negative self-talk. Awe forces us to broaden our perspective, he says, so that we break free of the ruminative cycle of thinking. “When you are in the presence of something vast and indescribable, you feel smaller, and so does your negative chatter,” he says.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Whether through nature, music, art or sport, it's possible to find awe-inspiring moments in all different places (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>As evidence, Kross points to one extraordinary experiment by researchers at the University of California, Berkeley. The participants were military veterans and youth from underserved communities, many of whom were suffering serious life stress. (Some were even experiencing the lingering symptoms of PTSD.)</p>
+            <p>They had all previously signed up for a white-water rafting trip on Utah’s Green River, sponsored by a charitable organisation. Before and after the trip, they were questioned about their general psychological wellbeing - including their feelings of stress and their capacity to cope with life’s challenges. After each day of rafting, the participants were asked to complete a questionnaire that measured their feelings of awe, amusement, contentment, gratitude, joy and pride.</p>
+            <p>As you might hope, the trip was generally very enjoyable for most of the participants. It was the feelings of awe, however, that predicted the biggest improvements in their feelings of stress and their overall wellbeing. </p>
+            <p>Clearly, these were exceptional circumstances - but the researchers noted very similar effects in a second study that examined students’ everyday contact with nature. Once again, they found that experiences of awe had a far greater impact on the students’ long-term wellbeing, compared to contentment, amusement, gratitude, joy and pride.</p>
+            <p><strong>Awesome or awful?</strong></p>
+            <p>Before we become too awestruck by this research, Shiota warns scientists still need to explore whether this potent emotion has any negative sides. She suspects that awe may explain the appeal of many conspiracy theories, for example - with their intricate and mysterious explanations of the world’s workings.</p>
+            <blockquote>Experiences of awe had a far greater impact on the students’ long-term wellbeing, compared to contentment, amusement, gratitude, joy and pride</blockquote>
+            <p>In general, however, the benefits of awe are worth considering whenever we feel that our thinking has become stuck in an unproductive or unhealthy groove. “The capacity to step outside of ourselves is a really valuable skill,” says Kross. While he finds walking in his local arboretum, and thoughts about space travel, to bring the necessary feelings of wonder and reverential respect, he suggests that we will all have our personal preferences. “Try to identify what your own triggers are,” he suggests.</p>
+            <p>For Shiota, the possibilities are as infinite as the universe. “Stars in the night sky remind us of the universe beyond our experience; the sound of the ocean reminds us of its enormous depths; vivid sunsets remind us how vast and thick the atmosphere surrounding our planet is,” she says. That’s not to mention the sublime experiences offered by music, film or art. “It's all about choosing to experience and attend to the extraordinary in our world, rather than that which is, for us, routine.”</p>
+            <p>David Robson is a science writer and author based in London, UK. His latest book, The Expectation Effect: How Your Mindset Can Transform Your Life, is published on 6 January 2022 in the UK and 15 February 2022 in the US. He is @d_a_robson on Twitter.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

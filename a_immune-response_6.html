@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_immune-response_6" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Immune Response</mark>
+                <h2>Why some people don't want a Covid-19 vaccine</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Social media is rife with posts disparaging the vaccine hesitant - but these reactions to a complex and nuanced issue are doing more harm than good.</h3>
+            <p>As we head towards the end of another extraordinary year, BBC Future is taking a look back at some of our favourite stories for our "Best of 2021" collection. Discover more of our picks here.</p>
+            <p>There should be no doubt about it: Covid-19 vaccines are saving lives.</p>
+            <p>Consider some recent statistics from the UK. In a study tracking more than 200,000 people, nearly every single participant had developed antibodies against the virus within two weeks of their second dose. And despite initial worries that the current vaccines may be less effective against the Delta variant, analyses suggest that both the AstraZeneca and the Pfizer-BioNTech jabs reduce hospitalisation rates by 92-96%. As many health practitioners have repeated, the risks of severe side effects from a vaccine are tiny in comparison to the risk of the disease itself.</p>
+            <p>Yet a sizeable number of people are still reluctant to get the shots. According to a recent report by the International Monetary Fund, that ranges from around 10-20% of people in the UK to around 50% in Japan and 60% in France.</p>
+            <p>The result is becoming something of a culture war on social media, with many online commentators claiming that the vaccine hesitant are simply ignorant or selfish. But psychologists who specialise in medical decision-making argue these choices are often the result of many complicating factors that need to be addressed sensitively, if we are to have any hope of reaching population-level immunity.</p>
+            <p><strong>The 5Cs</strong></p>
+            <p>First, some distinctions. While it is tempting to assume that anyone who refuses a vaccine holds the same beliefs, the fears of most vaccine hesitant people should not be confused with the bizarre theories of staunch anti-vaxxers. "They're very vocal, and they have a strong presence offline and online," says Mohammad Razai at the Population Health Research Institute, St George's, University of London, who has written about the various psychological and social factors that can influence people's decision-making around vaccines. "But they’re a very small minority."</p>
+            <p>The vast majority of vaccine-hesitant people do not have a political agenda and are not committed to an anti-scientific cause: they are simply undecided about their choice to take the injection.</p>
+            <p>The good news is that many people who were initially hesitant are changing their mind. "But even a delay is considered a threat to health because viral infections spread very quickly," says Razai. This would have been problematic if we were still dealing with the older variants of the virus, but the higher transmissibility of the new Delta variant has increased the urgency of reaching as many people as quickly as possible.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Fear of needles is a leading reason why many are reluctant to take the vaccine, research suggests (Credit: Jasmine Merdan/Getty Images)</figcaption>
+            </figure>
+            <p>Fortunately, scientists began studying vaccine hesitancy long before Sars-Cov-2 was first identified in Wuhan in December 2019, and they have explored various models which attempt to capture the differences in people's health behaviour. One of the most promising is known as the 5Cs model, which considers the following psychological factors:</p>
+            <p>Confidence: the person's trust in the vaccines efficacy and safety, the health services offering them, and the policy makers deciding on their rollout</p>
+            <p>Complacency: whether or not the person considers the disease itself to be a serious risk to their health</p>
+            <p>Calculation: the individual's engagement in extensive information searching to weigh up the costs and benefits</p>
+            <p>Constraints (or convenience): how easy it is for the person in question to access the vaccine</p>
+            <p>Collective responsibility: the willingness to protect others from infection, through one's own vaccination</p>
+            <p>In 2018, Cornelia Betsch at the University of Erfurt in Germany and colleagues asked participants to rate a series of statements that measured each of the 5Cs, and then compared the results with their actual uptake of relevant procedures, such as the influenza or the HPV vaccine. Sure enough, they found that the 5Cs could explain a large amount of the variation in people's decisions, and consistently outperformed many other potential predictors - such as questionnaires that focused more exclusively on issues of trust without considering the other factors.</p>
+            <blockquote>It is useful to examine the various cognitive biases that are known to sway our perceptions</blockquote>
+            <p>In currently unpublished research, Betsch recently used the model to predict people's uptake of the Covid-19 vaccines, and her results so far suggest that the 5Cs model can explain the majority of the variation in people's decisions.</p>
+            <p>There will be other contributing factors, of course. A recent study from the University of Oxford suggests that a fear of needles is a major barrier for around 10% of the population. But the 5Cs approach certainly seems to capture the most common reasons for vaccine hesitancy.</p>
+            <p><strong>Confirmation bias</strong></p>
+            <p>When considering these different factors and the ways they may be influencing people's behaviour, it is also useful to examine the various cognitive biases that are known to sway our perceptions.</p>
+            <p>Consider the first two Cs - the confidence in the vaccine, the complacency about the dangers of disease itself.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Most people hesitant about taking the vaccine do not have anti-scientific views like the small minority of anti-vaccine protesters (Credit: Tolga Akmen/AFP/Getty Images)</figcaption>
+            </figure>
+            <p>Jessica Saleska at the University of California, Los Angeles points out that humans have two seemingly contradictory tendencies - a "negativity bias" and an "optimism bias" that can each skew people’s appraisals of the risks and benefits.</p>
+            <p>The negativity bias concerns the way you appraise events beyond your control. "When you're presented with negative information, that tends to stick in your mind," says Saleska. The optimism bias, in contrast, concerns your beliefs about yourself - whether you think you are fitter and healthier than the average person. These biases may work independently, meaning that you may focus on the dangerous side effects of the vaccines while simultaneously believing that you are less likely to suffer from the disease, a combination that would reduce confidence and increase complacency.</p>
+            <blockquote>It is easy to dismiss someone else's decisions if you don't understand the challenges they face in their day-to-day lives</blockquote>
+            <p>Then there's the famous confirmation bias, which can also twist people's perceptions of the risks of the virus through the ready availability of misinformation from dubious sources that exaggerate the risks of the vaccines. This reliance on misleading resources means that people who score highly on the "calculation" measure of the 5Cs scale - the people who actively look for data - are often more vaccine hesitant than people who score lower. "If you already think the vaccination could be risky, then you type in 'is this vaccination dangerous?', then all you are going find is the information that confirms your prior view," says Betsch. </p>
+            <p>Remember that these psychological tendencies are extremely common. Even if you have accepted the vaccine, they have probably influenced your own decision making in many areas of life. To ignore them, and to assume that the vaccine hesitant are somehow wilfully ignorant, is itself a foolish stance.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Health authorities need to produce simple, easy to understand information which shows the vaccine is safe (Credit: Tang Ming Tung/Getty Images)</figcaption>
+            </figure>
+            <p>Nor should we forget the many social factors that might influence people's uptake - the "constraints/convenience" factor in the 5Cs. Quite simply, the perception that a vaccine is difficult to access will only discourage people who are already sitting on the fence. When we spoke, Betsch suggested that this might have slowed the uptake in Germany, which has a very complicated system to identify who is eligible to receive the vaccine at any one time. People would respond much more quickly, she says, if they received automatic notifications.</p>
+            <p>Razai agrees that we need to consider the question of convenience, particularly for those in poorer communities who may struggle with the time and expense of the journey to a vaccination centre. "Travelling to and from that may be a huge issue for most people who are on minimum wage or unemployment benefits," he says. That's why it's often best for the vaccines to be administered in local community centres. "I think there has been anecdotal evidence of it being more successful in places of worship, mosque, gurdwaras, and churches."</p>
+            <p>Finally, we need to be aware of the context of people's decisions, he says - such as the structural racism that might had led certain ethnic groups to have lower overall trust in medical authorities. It is easy to dismiss someone else's decisions if you don't understand the challenges they face in their day-to-day lives.</p>
+            <p><strong>Opening a dialogue</strong></p>
+            <p>So what can be done?</p>
+            <p>There is no easy solution, but health authorities can continue to provide easy-to-digest, accurate information address the major concerns. According to a recent report by Imperial College London's Institute of Global Health Innovation (IGHI), the major barriers continue to be patient's concerns about the side effects and the fears that the vaccines haven’t been adequately tested.</p>
+            <blockquote>I would urge governments to stop thinking they can reach the mass of niches out there with one mass-market vaccine message - Sarah Jones</blockquote>
+            <p>For the former, graphics showing the relative risks of the vaccines, compared to the actual disease, can provide some context. For the latter, Razai suggests that we need more education about the history of the vaccines' development. The use of mRNA in vaccines has been studied for decades, for instance - with long trials testing its safety. This meant the technique could be quickly adapted for the pandemic. "None of the technology that has been used would be in any way harmful because we have used these technologies in other areas in healthcare and research," Razai says.</p>
+            <p>Sarah Jones, a doctoral researcher who co-led the IGHI report, suggests a targeted approach will be necessary. "I would urge governments to stop thinking they can reach the mass of niches out there with one mass-market vaccine message, and work more creatively with many effective communications partners," she says. That might involve closer collaborations with the influencer role models within each community, she says, who can provide "consistent and accurate information" about the vaccines' risks and benefits.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Making vaccine centres easy for locals to get too - like this one in India - makes them more likely to be used (Credit: Sunil Ghosh/Hindustan Times/Getty Images)</figcaption>
+            </figure>
+            <p>However they choose to deliver the information, health services need to make it clear that they are engaging in an open dialogue, Razai says - rather than simply dismissing them out of hand. "We have to listen to people's concerns, acknowledge them, and give them information so they can make an informed decision."</p>
+            <p>Saleska agrees that it's essential to engage in a two-way conversation - and that's something that we could all learn as we discuss these issues with our friends and family. "Being respectful and recognising their concerns - I think that could actually be more important than just spitting out the facts or statistics," she says. "A lot of the time, it's more about the personal connection than it is about the actual information that you provide."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

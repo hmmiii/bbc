@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science - BBC News</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="science" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>News</li>
+                <li>Science</li>
+            </ul>
+        </div>
+    </section>
+    <section class="viewBox newsSubTop">
+        <div>
+            <h2 class="heading large">Science</h2>
+            <div class="views">
+                <input type="button" class="btn_list active" value="List View">
+                <input type="button" class="btn_grid" value="Grid View">
+            </div>
+        </div>
+        <ul class="listView x3 column">
+            <li class="display large">
+                <img src="images/thumb_science_2.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_2.html">More than eight million trees lost in UK winter</a></h3>
+                    <p>How eight million trees have already been brought down this winter, with thousands more threatened by storms.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_2.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="grid">
+                <img src="images/thumb_science_3.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_3.html">'Impressive' stick insect is both male and female</a></h3>
+                    <p>Charlie the pet stick insect is revealed to be both male and female after moulting.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_3.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="grid">
+                <img src="images/thumb_science_1.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_1.html">Drugs in rivers threaten world health - study</a></h3>
+                    <p>Paracetamol, nicotine, caffeine and epilepsy and diabetes drugs were widely detected, research finds.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_1.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="grid">
+                <img src="images/thumb_science_4.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_4.html">Rocket part set to hit Moon 'not from SpaceX'</a></h3>
+                    <p>Astronomers no longer believe a rocket stage that's due to hit the Moon was from Elon Musk's SpaceX.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_4.html" class="readMore">Read More</a>
+                </div>
+            </li>
+        </ul>
+        <ul class="listView row">
+            <li class="plain vertical">
+                <img src="images/thumb_science_5.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_5.html">Modern star maps hint at famous wreck's location</a></h3>
+                    <p>Today's precise knowledge of the sky could aid the discovery of Ernest Shackleton's Endurance ship.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_5.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_science_6.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_6.html">Record high deforestation of Amazon in January</a></h3>
+                    <p>The number of trees cut down in the Brazilian Amazon in January far exceeded deforestation for the same month last year, according to government satellite data.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_6.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_science_9.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_9.html">James Webb telescope begins to focus its 'big eye'</a></h3>
+                    <p>It's a confusing but amazing image.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_9.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_science_27.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_27.html">Buried treasures threatened by climate change</a></h3>
+                    <p>Climate change is threatening to destroy treasures buried in the UK as the soils that protect them dry out.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_27.html" class="readMore">Read More</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <div class="postCarouselBBox">
+        <div>
+            <h2 class="heading large">Climate Change</h2>
+            <div class="controller">
+                <span class="btn_prev"></span>
+                <span class="btn_next"></span>
+            </div>
+        </div>
+        <ul class="gridView">
+            <li class="plain vertical">
+                <img src="images/thumb_science_24.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_24.html">Sir David Attenborough named Champion of the Earth by UN</a></h3>
+                    <p>Sir David Attenborough has been named a Champion of the Earth by the UN's Environment Programme.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_24.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_science_15.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_15.html">'We're making wine in Norway as climate changes'</a></h3>
+                    <p>Vineyards are moving further north, but new winemakers say they struggle to be taken seriously.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_15.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_science_25.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_25.html">Mexico's Maya train: Work halted over cave concerns</a></h3>
+                    <p>A judge in Mexico has ordered the temporary suspension of works on a stretch of the Maya train project, citing a lack of environmental permits.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_25.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_science_26.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_26.html">Climate change: Key UN finding widely misinterpreted</a></h3>
+                    <p>A key finding in the latest IPCC climate report has been widely misinterpreted, according to scientists involved in the study.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_26.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_science_19.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_19.html">Climate change: Pledge of $100bn annual aid slips to 2023</a></h3>
+                    <p>A key pledge ahead of an upcoming climate change conference has still not been met and the money is not sure to be available before 2023.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_19.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_science_17.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_17.html">Climate change: What do scientists want from COP26 this week?</a></h3>
+                    <p>As the COP26 climate summit enters its second week, negotiations in Glasgow have hit a critical phase.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_17.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_science_18.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_18.html">Climate change: Airlines miss all but one target - report</a></h3>
+                    <p>UK airlines have missed all climate targets set since 2000 except for one, a new report claims.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_18.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_science_14.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_14.html">No silver-bullet solutions for saving used planet</a></h3>
+                    <p>Scientists issue a stark warning over the need to make hard choices about the way we use the land.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_14.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_science_15.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_15.html">'We're making wine in Norway as climate changes'</a></h3>
+                    <p>Vineyards are moving further north, but new winemakers say they struggle to be taken seriously.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_15.html" class="readMore">Read More</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="postCarouselBBox">
+        <div>
+            <h2 class="heading large">Space</h2>
+            <div class="controller">
+                <span class="btn_prev"></span>
+                <span class="btn_next"></span>
+            </div>
+        </div>
+        <ul class="gridView">
+            <li class="plain vertical">
+                <img src="images/thumb_science_28.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_28.html">Astronomers stand up to big satellite networks</a></h3>
+                    <p>Astronomy is finally putting up a co-ordinated front to defend its interests as thousands of satellites are placed in the sky.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_28.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_science_29.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_29.html">First US robot lunar rover on track for launch</a></h3>
+                    <p>William "Red" Whittaker may not be a household name, but he should be.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_29.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_science_30.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_30.html">Space station to crash down to Earth in 2031</a></h3>
+                    <p>The International Space Station (ISS) will continue working until 2030, before plunging into the Pacific Ocean in early 2031, according to Nasa.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_30.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_science_31.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_31.html">Musk's SpaceX rocket on collision course with moon</a></h3>
+                    <p>A rocket launched by Elon Musk's space exploration company is on course to crash into the Moon and explode.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_31.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_science_32.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_32.html">James Webb telescope reaches final position</a></h3>
+                    <p>Thirty days after it was launched, the James Webb telescope has arrived at the position in space where it will observe the Universe.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_32.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_science_33.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_33.html">First all-private crew launches to space station</a></h3>
+                    <p>Four astronauts have left Earth on the first all-private mission to the International Space Station (ISS).</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_33.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_science_34.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_34.html">'Single star' detected at record-breaking distance</a></h3>
+                    <p>They've nicknamed it "Earendel" and it's the most distant, single star yet imaged by a telescope.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_34.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_science_35.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_35.html">James Webb telescope instrument goes super-cold</a></h3>
+                    <p>It is perhaps the very definition of cool. The Mid-Infrared Instrument on the James Webb Space telescope is now at its super-low operating temperature.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_35.html" class="readMore">Read More</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <section class="viewBox mV">
+        <div>
+            <h2 class="heading large">More around the BBC</h2>
+            <div class="views">
+                <input type="button" class="btn_list active" value="List View">
+                <input type="button" class="btn_grid" value="Grid View">
+            </div>
+        </div>
+        <ul class="listView x3 column">
+            <li class="display medium">
+                <img src="images/thumb_science_10.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_10.html">74% of ransomware revenue goes to Russian hackers</a></h3>
+                    <p>Crypto-currency researchers say more than $400m of cyber-crime funds go to Russian gangs.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_10.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_world_20.jpg" alt="Article Image">
+                <div>
+                    <mark>World</mark>
+                    <h3><a href="a_world_20.html">Eccentric sewage rebels head for the big screen</a></h3>
+                    <p>When a group of middle-aged swimming friends from Scarborough became worried about sewage in the sea in the 1980s, they started staging eccentric stunts to highlight their cause, and even took on the government. Now, their story is being turned into a film.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_world_20.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_business_6.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_6.html">How nurseries are keeping track of their toddlers</a></h3>
+                    <p>Misty Ardouin set up her nursery, Nestlings, in Cardiff City centre in 2019. At the end of each day, they would have a "good sit down" in the playroom with parents to catch-up on everything the children had been doing.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="/a_business_6.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_science_6.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_6.html">Record high deforestation of Amazon in January</a></h3>
+                    <p>The number of trees cut down in the Brazilian Amazon in January far exceeded deforestation for the same month last year, according to government satellite data.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_6.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_science_8.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_8.html">Lessons in pleasure boost good safe sex</a></h3>
+                    <p>Teaching people about achieving sexual pleasure can help sell safe-sex messages, say researchers from the World Health Organization.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_8.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_world_21.jpg" alt="Article Image">
+                <div>
+                    <mark>World</mark>
+                    <h3><a href="a_world_21.html">White House left behind as states drop Covid rules</a></h3>
+                    <p>The White House is facing pressure to revise its position on mask wearing as pandemic restrictions are eased in a number of US states.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_world_21.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_science_9.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_9.html">James Webb telescope begins to focus its 'big eye'</a></h3>
+                    <p>It's a confusing but amazing image.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_9.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_science_11.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_9.html">How Taiwan used simple tech to help contain Covid-19</a></h3>
+                    <p>In Taiwan, finding someone who will talk about their Covid experience is harder than you might think.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_11.html" class="readMore">Read More</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

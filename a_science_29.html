@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_science_29" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Science</mark>
+                <h2>Iris: Student-built robot rover on track to explore the Moon</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>William "Red" Whittaker may not be a household name, but he should be.</strong></p>
+            <p>The robotics professor has been leading the development of a tiny wheeled robot called Iris, which could become the first uncrewed rover sent by the US to explore the Moon.</p>
+            <p>Iris has not been built by experienced engineers at Nasa or a large aerospace company, but by students at Whittaker's home institution of Carnegie Mellon University (CMU) in Pittsburgh. The robot was recently secured to its lunar lander, ahead of a launch scheduled for 2022.</p>
+            <p>The project represents a dream come true for the robotics pioneer, whose work has spanned cleaning up nuclear accidents to building driverless cars.</p>
+            <p>On 28 March 1979, the Three Mile Island nuclear power plant near Harrisburg, Pennsylvania, experienced a partial meltdown in one of its reactors. Radioactive gases were released into the environment and the reactor building became too contaminated for people to enter.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Iris is made largely of carbon fibre and will use "bottle cap" wheels designed to reduce its weight</figcaption>
+            </figure>
+            <p>Red Whittaker, who had just been awarded his PhD, built three robots to explore and clean up the reactor's radioactive basement. This, he explains, was "revolutionary" because, at the time, "there were no nuclear work robots".</p>
+            <p>The robotics professor, who is in his 70s, has since been behind many major advances in robotics. After the nuclear clean-up machines, Whittaker worked on robots designed to automate agricultural processes (he's a keen farmer) and explore disaster zones such as mine collapses.</p>
+            <p>He later built forerunners of today's driverless cars - winning a 2007 challenge sponsored by the US military's research agency Darpa. According to Intel, the self-driving car sector could have a projected value of $7tn by 2050.</p>
+            <p>Exploring the Moon was the result of a clear-minded goal he set himself more than three decades ago. "I formulated my own vision, way back in the 80s that, besides developing, securing, feeding planet Earth, I would explore worlds beyond."</p>
+            <p>And, he adds: "Once you say it, you'd better do it."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Red Whittaker (top) and colleagues pose with Workhorse, the last of three robots built to clean up Three Mile Island</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Whittaker led the development of a driverless car called Sandstorm, shown competing in the 2004 Darpa Grand Challenge</figcaption>
+            </figure>
+            <p>Just four uncrewed rovers have ever explored the Moon - the two Lunokhods launched by the Soviet Union in the 70s and the Yutu robots sent by China within the last decade. The next few years could increase that tally considerably, as repeated flights to the Moon are made by private firms.</p>
+            <p>Getting to this point has not been easy. In 2007, Whittaker co-founded a space company called Astrobotic with the intention of winning the Google Lunar X-Prize, which had offered $20m to the first privately-funded team to land a rover on the Moon.</p>
+            <p>The money went unclaimed when none of the finalists was able to secure a launch contract by the deadline. But during the 2010s, many of the previous, lofty barriers to space exploration started to collapse.</p>
+            <p>And in 2016, US President Donald Trump's administration shifted the focus for human exploration at Nasa from Mars back to the Moon.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Ms Duvall says students are often willing to experiment with new designs</figcaption>
+            </figure>
+            <p>The space agency set up a programme called CLPS (Commercial Lunar Payload Services), designed to encourage private companies to send robot landers to the Moon. Contract winners would carry Nasa experiments to the surface in support of human missions, but they could sell unused space on the lander to other customers.</p>
+            <p>"I would have gone to my grave without a lunar opportunity if there had not been an inflection point. if there had not been New Space [the emerging wave of private space companies] and a new view of the Moon," Red Whittaker explains.</p>
+            <p>Iris will take advantage of one of these flight opportunities aboard a lander built by Astrobotic. The 2kg, shoebox-sized rover is battery-powered and will operate on the surface for 72 hours.</p>
+            <p>The challenges of packing the required technology into such a small space were considerable - including miniaturising the electronics. "It is so highly specialised and integrated, the degree of difficulty and the challenges that had to be overcome were incredible," says Prof Whittaker.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Red Whittaker and Raewyn Duvall with members of the Iris team</figcaption>
+            </figure>
+            <p>Of working with CMU students on the project, he says: "It's not really okay to pick a favourite project, or robot, any more than a family picks a favourite child. But the Iris team is just so inspirational and competent, capable and committed."</p>
+            <p>Raewyn Duvall, deputy programme manager for Iris at Carnegie Mellon, told BBC News: "Students are so much more willing to take risks and try entirely new designs."</p>
+            <p>Once Iris reaches the lunar surface, it will be actively driven by operators on the ground who will send the rover commands. Onboard cameras will send images of the terrain to Earth, helping team members plan driving routes.</p>
+            <p>Ms Duvall says she "can't imagine" what it's going to be like for operators at CMU realising for the first time that they are controlling a machine on the Moon, but she expects it to be "mind-blowing".</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Houston-based Intuitive Machines plans to send its Nova-C lander to the Moon this year (artwork)</figcaption>
+            </figure>
+            <p>Data will travel back to Earth at 50 kilobits per second, meaning low quality images from the Moon, used to help drive the rover, will take a minute to get to Earth. High-quality images, used for science, will take about 10 minutes.</p>
+            <p>"Honestly, I think it's going to feel like a very old, retro computer game," Duvall explains.</p>
+            <p>Iris will travel to Lacus Mortis, a lava plain on the north-east part of the Moon's near side. While the location is relatively flat, "we are tiny", says Duvall, adding: "A small rock for a person to step over can be a larger obstacle for us."</p>
+            <p>The robot will be joined on Astrobotic's Peregrine lander by a set of small rovers built by the Mexican Space Agency (AEM).</p>
+            <p>This year should also see the launch of India's Chandrayaan-3 mission, which will deploy an advanced mobile robot, and another CLPS flight for a lander built by Houston-based Intuitive Machines. Its Nova-C spacecraft will carry science instruments for Nasa and other customers but no rovers at present.</p>
+            <p>Alongside Iris, Whittaker has also been building a bigger, more capable rover called MoonRanger. This is scheduled to be launched on a lander built by Mojave-based company Masten Systems in 2023.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Artwork: MoonRanger, developed at CMU, should launch to the Moon in 2023</figcaption>
+            </figure>
+            <p>While the student-built rover will be entirely directed by commands from Earth, MoonRanger will be capable of autonomous driving, allowing it to roam beyond the radio communications range of its lander.</p>
+            <p>While the student-built rover will be entirely directed by commands from Earth, MoonRanger will be capable of autonomous driving, allowing it to roam beyond the radio communications range of its lander.</p>
+            <p>Improved onboard chips that can better handle the large amounts of data collected by rovers would also be transformative.</p>
+            <p>Whatever the future holds, it's an exciting time for lunar exploration and those on the Carnegie Mellon team. From a personal perspective, says Prof Whittaker, "I've had such a good run of it, [building] robots for land, the sea, in the air, underwater and underground. Now my frontier is the high frontier".</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

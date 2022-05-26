@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_world_12" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>UK</mark>
+                <h2>Covid: How to cope in a winter lockdown, from those who've done it</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>It's hard to stay positive during lockdown, particularly in the winter months. You might be feeling just as frosty, gloomy and miserable as the UK's weather forecasts. But last year, millions of people across the world experienced coronavirus lockdowns in snowy and sometimes sub-zero conditions - so what can we learn from them?</strong></p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>China</figcaption>
+            </figure>
+            <p>Lockdown began in January 2020 in Wuhan, when the city saw lows of -3.6C and a top temperature of 14C.</p>
+            <p>Yilang Zeng experienced the first city-wide lockdown of the pandemic after travelling to visit her parents in Wuhan for Chinese New Year in January.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Yilang Zeng enjoyed spending time with her parents during lockdown in Wuhan but won't miss giving home haircuts: "Luckily my dad cannot see from the back"</figcaption>
+            </figure>
+            <p>The Emirates airline cabin crew member, aged 28, relished the extended "holiday" with her parents, because she had been living in Dubai, since 2016.</p>
+            <p>Yilang says the cold and wet Wuhan weather made it tempting to leave the heating on all day - but she suggests putting on a jumper and throwing open a window, to get some fresh air inside.</p>
+            <p>And while the two-month lockdown meant Yilang could really settle into family time, she also made a point of bringing her cabin crew etiquette home with her. "Always compliment the one who cooks," she says, because otherwise, "it might be the longest holiday together with your family".</p>
+            <p><strong>Yilang's top winter lockdown tips:</strong></p>
+            <ul>
+                <li>Apply hand cream straight after using hand sanitiser, to protect your skin from drying out in the cold</li>
+                <li>Wear lots of clothes rather than putting the heating on - it also saves money</li>
+                <li>Buy fruit and vegetables with a long shelf life to cut down on chilly trips to the supermarket</li>
+            </ul>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Russia</figcaption>
+            </figure>
+            <p>Lockdown in Russia began in March 2020. In the city of Murmansk, in the far north-west of the country, temperatures can drop well below -10C at that time of year.</p>
+            <p>"Remote learning" takes on whole new levels of meaning for teacher Anna Turkina and her family, who spent last March's lockdown deep in the Arctic Circle in Murmansk - almost 2,000km (1,200 miles) north of Moscow.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Anna Turkina and her family loved baking - and eating - bread together during lockdown in their home in the Arctic Circle</figcaption>
+            </figure>
+            <p>For Anna, 36, the stay-at-home order to curb coronavirus infections meant being cooped up in her flat with her husband and two children, then aged four and 11.</p>
+            <p>She would wrap the children up warm and persuade them to go out and play on the small balcony to breathe the "really fresh and very nice air" - but only for 15 minutes at a time. "We have really severe winters and it was -15C," she adds. The nippy playtimes were part of Anna's strict schedule, which she says must be kept to to avoid "going mad in such hard times".</p>
+            <p><strong>Anna's top tips:</strong></p>
+            <ul>
+                <li>Buy some houseplants - they look nice and make the air fresher</li>
+                <li>Learn a new skill - we love baking bread together</li>
+                <li>Air your home once an hour (no matter how cold the outside air!)</li>
+            </ul>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Norway</figcaption>
+            </figure>
+            <p>Lockdown in Tromsø began in March 2020, when the average temperature was -1.1C, with lows of -8.9C. It rained or snowed almost every day.</p>
+            <p>Ida Solhaug says coping with a winter lockdown is all about mindset.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Ida Solhaug says going outside during lockdown is important, and even Norway's sub-zero temperatures are manageable if you have enough clothes</figcaption>
+            </figure>
+            <p>The mindfulness researcher at the University of Tromsø says my line of questioning - about how to "get through" the cold months - is a big part of the problem. She says Brits often see winter as "something to endure" rather than "really embracing winter for what it's worth".</p>
+            <p>She says adopting a "positive winter mindset" could help us cope with the stresses of a lockdown at this time of year. For example, instead of moaning about not being able to meet up in big groups, be grateful that we can wrap up warm and go on a winter walk with one person from another household, Ida says.</p>
+            <p>Cycling to work in the snow or meeting friends outside (at -8C) with a flask of coffee were two ways Ida coped with "the long Covid winter" - but she says people in the UK can do far less extreme things to enjoy winter during lockdown.</p>
+            <p><strong>Ida's top tips:</strong></p>
+            <ul>
+                <li>Get a winter wardrobe (she says British rain coats aren't enough, so layer up!)</li>
+                <li>Light candles to give yourself a comforting break from the darkness outside</li>
+                <li>Try to take notice of nature and small things around you, like a tree or a ray of sunshine</li>
+            </ul>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Australia</figcaption>
+            </figure>
+            <p>Melbourne entered a three-month lockdown during Australian winter in July 2020, when temperatures reached lows of 3.1Cand highs of 17.4C.</p>
+            <p>The luxury of a hot bath helped Rowan Bruce to face the mental pressures of a 112-day lockdown in Melbourne.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Bubbles in the bath: Rowan enjoying his top tipple</figcaption>
+            </figure>
+            <p>Rowan found that running a bath, pouring a glass of wine and watching a film or TV programme - all at the same time - became one of the highlights of his week. He particularly enjoyed watching travel shows presented by the celebrity chef, Anthony Bourdain: "If I can't travel, I'll travel with him instead."</p>
+            <p>"It's something I'd never really done before, and now it's my favourite thing to do every Saturday," says Rowan, 36, who works at a local brewery. "It's got to the point where everyone knows that between 3:30pm and 4:30pm every Saturday, I'm probably in the tub." He says the ritual provided structure to his day and became the perfect way to spend a cold afternoon in lockdown.</p>
+            <p>Rowan's friend, Gillian Nix, agrees routine is important - such as dragging her young children out for a daily morning walk - but she says trying to think of fun activities to fill the time can lead to burnout.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Gillian Nix (right) says she and her husband Chris (left) have felt "pure fatigue" when trying to think of fun indoor activities with their children while in lockdown in Melbourne</figcaption>
+            </figure>
+            <p>Gillian says she and her husband, Chris, were full of energy and ideas at the beginning of lockdown. They would organise "country days" with their children Alice, six, and Otis, three, where they cooked food, dressed up, and watched films from a different country each week. But the couple began to feel exhausted by thinking of new things to do.</p>
+            <p>In her lowest moments in lockdown, Gillian, 39, said it was important to be kind to herself. "Allowing yourself to have a bad hour where you just put on kids' TV or YouTube or whatever, that's fine. This isn't your normal parenting style.</p>
+            <p>"Before lockdown we would go on day trips, to the beach, or to art galleries, and go out, [but] you can't judge yourself on now because it's not the normal thing. So take it hour by hour."</p>
+            <p><strong>Gillian and Rowan's top tips:</strong></p>
+            <ul>
+                <li>Make winter treats (like hot baths and pizza nights) part of your weekly routine</li>
+                <li>Don't be too hard on yourself</li>
+                <li>Take the kids out for walks (whatever the weather)</li>
+            </ul>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Canada</figcaption>
+            </figure>
+            <p>Toronto's average temperature in March 2020, when people were first urged to stay at home due to Covid, was 4.0C, with lows of -7.7C. Snow lay on the ground most days.</p>
+            <p>"I think it's important not to pressure yourself with the notion of going outside," says Ashwini Selvakumaran.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Ashwini Selvakumaran after an online Zumba session at her parents' home in Milton, Ontario</figcaption>
+            </figure>
+            <p>When Canada's prime minister urged people to stay inside and the country went into lockdown, the third-year student at the University of Toronto decided to move out of her flat in the city to stay with her parents in the nearby town of Milton. Ashwini's parents repeatedly encouraged her to go for runs in the bracing cold, but she shrank away from the cold air and snow.</p>
+            <p>"I love dancing and moving my body to music, and online there were so many videos and free Zumba tutorials and I just did those," the 20-year-old says.</p>
+            <p>"Not only did it increase my ability to be active inside the house, but it also made me feel happy just being able to relate back to that passion that I love."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

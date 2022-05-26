@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_how-we-live_1" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Lovelife</mark>
+                <h2>Why people still believe in the 'soulmate myth'</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>The allure of ‘The One’ stretches across time and cultures. Why do some people continue to believe in finding the perfect person?</h3>
+            <p>Hannah Miller says she’s always believed in soulmates. She remembers being a child, hearing that seahorses have one partner forever. She loved the idea there might be just one person for her, too.</p>
+            <p>When she was 10, she was introduced to Sam, a friend of her sister’s, at a group outing to a theme park. She remembers him holding her hand on the scariest rides and her sister teasing her, saying she and Sam were going to get married. “It’s a bit embarrassing, but I did fall head over heels that day,” says Miller, 45, from Birmingham, UK. “I went on the school bus on Monday and told all my friends about the older boy who held my hand.”</p>
+            <p>She didn’t cross paths with the boy from the theme park again until she was 18, but once she did, things moved quickly. Weeks later, Sam told Hannah that he was falling in love with her, and the two were married just before her 20th birthday. “Commitment felt like it came easily - this was it, we were meant to be together, so why wait,” she says. “We knew that there was no reason not to get married, because we were soulmates.”</p>
+            <p>An astonishing number of people believe in soulmates, according to one 2021 survey; the idea of ‘The One’ carries across many other cultures, too. There are many reasons why people are hopeful that their perfect person is out there, and during the last 50 years, the idea has only increased in popularity. Experts believe that whether or not we believe in soulmates is deeply rooted in our personal circumstances and psychology - but it’s possible that those hoping to find a pre-destined partner might be dooming their relationships from the start.</p>
+            <p><strong>A brief history of soulmates</strong></p>
+            <p>The Greek philosopher Plato wrote that humans once had four arms, four legs and two faces. He explained that Zeus split us in half as a punishment for our pride, and we were destined to walk the Earth searching for our other half.</p>
+            <p>Our understanding of love and relationships might have evolved since 385 BCE, when Plato penned Symposium, but the idea of having an ‘other half’ still endures for many, and has lasted across numerous cultures throughout history. Some Hindu traditions hold the idea that people have a karmic connection with certain souls; in Yiddish, there is a term for an ideal or predestined marriage partner - your ‘bashert’ - which loosely translates to destiny. Thirteenth-century Persian poet and Islamic scholar Rumi posed the idea that lovers do not finally meet, but that they are somehow in each other all along. And from Romeo and Juliet to Heathcliff and Cathy, Western literature is replete with examples of lovers who were meant to be together.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>"We knew that there was no reason not to get married, because we were soulmates" - Hannah Miller (Credit: Courtesy of Hannah Miller)</figcaption>
+            </figure>
+            <p>But although the concept of a soulmate might have existed for thousands of years, the actual term was probably only introduced in the 19th Century. Its first recorded use is in 1822, in a letter written by poet Samuel Taylor Coleridge. “To be happy in Married Life...  you must have a Soul-mate,” he wrote. Coleridge’s own love life was unhappy - he married mostly due to social pressures and spent most of the union apart from his wife, before they eventually separated for good.</p>
+            <p>Yet despite Coleridge’s inability to find a true soulmate, the idea persisted, rocketing in popularity, especially in recent decades. Brad Wilcox, a professor of sociology and director of the National Marriage Project at the University of Virginia, US, notes  a rise in the appeal of soulmates since the 1970s, when the advent of what he calls the “me decade” and a culture of individualism shifted our approach to relationships.</p>
+            <p>“People are now more likely to look for relationships that make them happy and fulfilled,” he says. “It’s also facilitated by unprecedented prosperity in the West, which made people less dependent on marriage for economic survival. There was a shift from a pragmatic approach to marriage to a more expressive, soulmate model of marriage where people’s expectations are more psychological and less material.”</p>
+            <p><strong>The enduring nature of the soulmate myth</strong></p>
+            <p>There are plenty of reasons to be sceptical about the idea of a perfect person being predestined for you. After all, most people don’t stray far when finding their partner, with the majority of Americans marrying someone from the same state as them, and 43% marrying someone who they went to high school or college with.</p>
+            <p>On a planet of nearly eight billion people, it’s quite a coincidence that so many peoples’ soulmates are just in the next classroom. Yet the idea of a soulmate has persisted across numerous societies and time periods - what is it about the concept of The One that people find so irresistible?</p>
+            <p>Bradley Onishi, an associate professor of religion at Skidmore College, US, has used his background in the history of ideas to try and understand the enduring nature of soulmate mythology. He believes that there is something innate in our desire to believe in soulmates.</p>
+            <blockquote>The soulmate myth promises that amidst the dizzying and often confusing landscape of dating apps there is one match out there that will make sense of it all - Bradley Onishi</blockquote>
+            <p>“The soulmate myth promises fulfilment,” says Onishi. “It says that the isolation and loneliness that are so often part of the human experience are only temporary - that someday there will be a happily ever after in which we are united with The One who understands us at every level, protects us from harm and gives our life overwhelming significance.”</p>
+            <p>He points out that, for many of us, believing in a soulmate is a way of constructing a cohesive narrative from the oftentimes chaotic and unpredictable experience of looking for love. “The soulmate myth is really good at taking all the bad first dates, the breakups, the dashed hopes and disappointments and putting them into a story that says ‘someday all of this will fall into place’,” he says.</p>
+            <p>This is particularly true when it comes to modern dating, perhaps explaining how the soulmate idea has evolved over time. In recent years, the term ‘twin flame’ has surged in popularity, a more spiritual way of understanding the idea that there might be someone that you are simply supposed to be with.</p>
+            <p>“We live in a time of overwhelming uncertainty - politically, environmentally and socially,” explains Onishi. “The soulmate myth promises that amidst the dizzying and often confusing landscape of dating apps there is one match out there that will make sense of it all. It promises an anchor to modern life that many find appealing.”</p>
+            <p><strong>Practical expectations?</strong></p>
+            <p>Practically, looking for a soulmate may not be the best approach, however. “Soulmate marriages are more fragile because feelings fluctuate,” Wilcox says. “Having a less soulmate-based approach is linked to more stability.”</p>
+            <p>Research into hundreds of relationships has showed having an expectation of finding a soulmate actually leads to dysfunctional patterns of behaviour and even makes you more likely to breakup with your partner. This is because people who believe in soulmates tend to have what is known as a ‘destiny’ mindset. Since they are holding out for a perfect person, they are more likely to doubt their relationship, or view a hiccup in the road as a dealbreaker - perhaps this just wasn’t their person after all.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Even if soulmates don't exist, there's a lot of comfort in believing people can find The One (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>On the other hand, soulmate sceptics tend to have a ‘growth’ mindset. They believe that relationships take work and compromise, and are motivated to find solutions to problems.</p>
+            <p>“An expectation that something will be instantly and everlastingly perfect only leads to disappointment and resentment, because this simply isn’t realistic,” says Ruth Micallef, a specialist BACP-registered counsellor who works with many patients experiencing relationship struggles. “Some of the most successful relationships are couples who have spent years supporting each other through all of the personal changes that they are going through, and never expect each other to be ‘perfect’ or ‘everything’.”</p>
+            <p>The idea of finding your soulmate might be a balm after a bad date, or create a sense of structure and narrative to your own love story. But ultimately, actually believing that you’ve found your soulmate might not be a good thing - and experts say that you certainly shouldn’t worry about looking for one.</p>
+            <p>“None of us is perfect - not you, and not your future mate,” says Wilcox. “So, focus on the non-negotiables - the virtues that will sustain a good marriage, shared values and some common interests. But don’t expect to check every box in a future spouse, unless you wish to be a permanent bachelor or bachelorette.”</p>
+            <p>Yet for some, believing in the soulmate myth simply seems to work. Hannah has now been married to Sam for 23 years, and the pair have three children together.</p>
+            <p>“It might well be the thing I am most proud of,” she says of her relationship. “So much of life is uncertain, but I can say with confidence that we have grown up together, and will continue to grow old together, forever soulmates.”</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

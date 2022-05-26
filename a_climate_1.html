@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_climate_1" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Climate</mark>
+                <h2>Climate change: Flooding is 'the new reality' in Wales</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Record-breaking flooding is becoming "the new reality" for communities, according to Natural Resources Wales (NRW).</strong></p>
+            <p>Two years after storms wreaked havoc across Wales, the environmental watchdog warned urgent action was needed to prepare for climate change.</p>
+            <p>"The need to act now to prepare for climate impacts is more pressing than ever," it said.</p>
+            <p>Eleri Griffiths, Plaid Cymru councillor for the Rhondda ward in Rhondda Cynon Taf where 44 houses were flooded, said people had been traumatised by the impact of the storms, just before the pandemic hit Wales.</p>
+            <p>"Large parts of Rhondda Cynon Taf were completely unrecognisable... and of course the clean-up operation took months, into the period where we entered the Covid lockdowns," she said.</p>
+            <p>"So it was certainly a time of extreme trauma for many people."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Flooding in the 2020 storms destroyed people's homes</figcaption>
+            </figure>
+            <p>Ms Griffiths told BBC Radio Wales Breakfast people in her own ward who had been flooded were still "none the wiser" about any measures taken to make sure it would not happen again.</p>
+            <p>"Trehafod people are still waiting for answers. I spoke to one resident in Trehafod yesterday who was flooded and he described to me how him and his wife worry and have anxiety every time it's raining.</p>
+            <p>"The children are worried. They have conversations about whether should they move half of the furniture upstairs whenever there's any sort of flood alert.</p>
+            <p>"And he said 'Well we still haven't had answers, have we? What's changed? Nothing's changed'."</p>
+            <p>She added that public bodies needed to "react a lot smarter and a lot quicker to the climate changing".</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A family is rescued from flooding in Nantgarw</figcaption>
+            </figure>
+            <p>"We know that there's risks of this happening again, as Natural Resources Wales reported," she said.</p>
+            <h3>'A deeply personal tragedy'</h3>
+            <p>Storms Chiara, Dennis and Jorge resulted in record rainfall and river levels across Wales, and some of the most significant and devastating flooding seen since the 1970s with 3,130 properties affected across the country.</p>
+            <p>NRW said these and subsequent storms experienced in Wales since, serve as "a stark warning that record-breaking flooding is becoming a harsh new reality for Welsh communities in the future".</p>
+            <p>It warned that "the need to act now to prepare for climate impacts is more pressing than ever".</p>
+            <p>The news from NRW came as Wales was braced for Storm Dudley and Storm Eunice, with winds of 70mph (113km/hr) expected to cause "significant disruption".</p>
+            <p>Chief executive Clare Pillman said: "Flooding is a deeply personal tragedy, and our thoughts continue to be with those still recovering and rebuilding.</p>
+            <p>"But as more and more communities affected by flooding each year count the cost of lost belongings, ruined homes and businesses, and as people live with lingering fears of future storms, we know that so much more needs to be done to prepare ourselves to face our future reality."</p>
+            <p>She added that COP26 and the 'code red' signals from the Intergovernmental Panel on Climate Change report gave" renewed impetus for governments to tackling this pressing issue".</p>
+            <p>"The central focus given to climate change in the Welsh government's programme for government, and the emphasis placed on mitigating future flood risk in the Co-operation Agreement between Labour and Plaid Cymru are all welcome strides forward.</p>
+            <p>"But while progress has certainly been made, the climate problem has also accelerated. Which is why our thinking and our actions to help mitigate and adapt to its impacts needs to go further and faster if we're to secure the improved flood-risk outcomes we need for the people of Wales."</p>
+            <p>NRW said it has continued to invest in flood defences and response teams, inspecting and repairing where needed, and carrying out maintenance work to increase resilience to future floods.</p>
+            <p>"Climate scientists have underlined that record floods are not anomalous, they are the beginning of a new normal, and the new records will continue to be exceeded, year after year," Ms Pillman added.</p>
+            <p>"That is why it's crucial that people trust in the data and the knowledge we share, to understand their flood risk and understand the actions they can take to lessen the impacts should the waters start to rise.</p>
+            <p>"While we welcome the additional funding NRW has received to increase our own capacity to prepare for and respond to these eventualities, we accept that we will never win the war against the forces of nature alone.</p>
+            <p>"But by working together, we have greater potential to mitigate against the impacts. Difficult decisions will need to be made, and it will take time, significant effort and a cultural and a behavioural shift to make the difference required."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_science_13" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Science</mark>
+                <h2>Renewables auctions to be held annually in green energy push</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>The government has re-stated its faith in green technologies with a decision that it says will create a steady stream of renewable energy projects.</strong></p>
+            <p>Energy Secretary Kwasi Kwarteng says renewable power is the best way to shield the UK from volatile gas prices.</p>
+            <p>He announced that auctions to supply low-carbon electricity will now happen every year, instead of every two.</p>
+            <p>He says this will bring more certainty to firms planning to invest in wind turbines and solar panels.</p>
+            <p>The renewables industry is delighted - especially after a week that's seen the government's energy policy under fire from some MPs and commentators who believe the costs of the drive to eliminate carbon emissions by 2050 are too high.</p>
+            <p>Mr Kwarteng said: "We are hitting the accelerator on domestic electricity production to boost energy security, attract private investment and create jobs in our industrial heartlands.</p>
+            <p>"The more clean, cheap and secure power we generate at home, the less exposed we will be to expensive gas prices set by international markets."</p>
+            <p>His colleague, Energy Minister Greg Hands, added: "The UK is already leading the world in renewable energy and today's announcement will take us even further.</p>
+            <p>"This will help provide cheaper energy to consumers, guaranteeing more of our energy is produced at home and reducing our dependence on fossil fuels."</p>
+            <h3>Reassuring signs</h3>
+            <p>The new government announcement concerns auctions that guarantee the winning firms a minimum price for electricity.</p>
+            <p>That cuts their investment risk and allows them to borrow money more cheaply.</p>
+            <p>The auctions - invented by an unknown civil servant - have been copied round the globe, and have helped drive down the price of offshore wind by 65% in the UK in a decade.</p>
+            <p>They have saved billions of pounds worldwide.</p>
+            <p>A renewable industry spokesman, Rob Norris, said it was reassuring that despite demands to restart fracking for shale gas, ministers have instead backed power from the wind and the sun.</p>
+            <p>In order to hit UK targets, the offshore industry must now quadruple its current annual rate of installation.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>What does it take to live on renewable energy?</figcaption>
+            </figure>
+            <p>Similar increases in onshore wind, solar and other clean power sources are vital too, as well as ramping up the rollout of innovative technologies like floating wind, "green" hydrogen from excess wind energy, and marine power.</p>
+            <p>The government has decided to stick with auctions for support to build onshore wind and solar power after these technologies were previously left without support.</p>
+            <p>The industry is confident that new offshore wind, onshore wind and solar will produce power more cheaply than the current wholesale electricity price.</p>
+            <p>Morag Watson, director of policy at Scottish Renewables, said: "By 2050 demand for electricity will have almost doubled, and the vast majority of that electricity must come from renewable sources if we are to meet net-zero [emissions].</p>
+            <p>"The [auction] mechanism plays a central role in facilitating that, and increasing the frequency of auctions is essential if we are to tackle climate change."</p>
+            <h3>The path to net zero</h3>
+            <p>The race towards renewables has been criticised by a 19-strong group of MPs called the Net Zero Scrutiny Group, which argues for an end of support for renewables, because it adds to current energy bills.</p>
+            <p>It says the UK should produce its own gas by fracking, although experts say this wouldn't affect the consumer price much because prices are set by the international market.</p>
+            <p>Mr Kwarteng is steering a careful course through the debate over gas use. Many scientists and the International Energy Agency say new drilling for fossil fuels should be halted because enough fossil fuel has already been discovered to wreck the climate.</p>
+            <p>But the minister is approving further drilling in the North Sea because he says the fuel will be needed as the UK makes the transition to the low-carbon economy.</p>
+            <p>Craig MacKinlay, the organiser of the NZSG, fears the impact of energy bills on households and argues that the UK should improve energy supplies by encouraging a free-market approach. He was not available for comment on the government's renewables move.</p>
+            <p>Jim Watson, professor of energy policy at UCL, who is writing a history of energy policy, told BBC News that deregulating energy over the decades had been shown to fail.</p>
+            <p>"I don't see how deregulation would solve the current crisis", he said.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

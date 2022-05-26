@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_adventure_5" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Adventure</mark>
+                <h2>A discovery of Northern Ireland's lost holy relic</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>While searching for a new path in life, two former nuns created a wondrous "Coastal Camino" that is bringing travellers to an otherwise neglected part of Northern Ireland.</h3>
+            <p>The phrase "Lockdown baby" is, I confess, not one I ever thought I'd hear coming from a nun. But standing on the edge of Strangford Lough in County Down, Northern Ireland, around 50 miles from the capital city of Belfast, Elaine Kelly is showing me her new, wondrous creation.</p>
+            <p>It is not an actual baby, of course, rather a walk in the form of a one-day pilgrim path called St Patrick’s Coastal Camino that takes in key ecclesiastical sections of the Lecale Coast on the country's eastern edge.</p>
+            <p>I say nun, but actually Kelly and her co-guide Martina Purdy are former nuns - though not by choice.</p>
+            <p>"We were informed in 2019 - before we were able to make our final vows in 2023 - that our congregation had grown too small to make our vocations viable," explained Kelly, when I met her at the St Patrick Centre in Downpatrick, the only permanent exhibition in the world dedicated to Ireland's patron saint.</p>
+            <p>"We were stripped of our habits, congregation, way of life and home in a single moment," Purdy added, "it would have been so easy to lose faith."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The former nuns say this wild coastline healed them after being made to leave their convent (Credit: Phoebe Smith)</figcaption>
+            </figure>
+            <p>It was not the first time these two women's lives had dramatically changed. Kelly is a former barrister who used to specialise in family law; while Purdy was a leading political correspondent for the BBC who grilled many politicians, gaining a reputation as a no-nonsense journalist during her coverage both of The Troubles and the eventual signing of the Good Friday Agreement, which saw peace finally come to Northern Ireland in 1998.</p>
+            <p>"While interviewing politicians I realised increasingly that I was thinking more and more that this person needs a lot of prayer," she explained. "Then in 2014 I decided to take the plunge and give up my career to devote my life to God."</p>
+            <p>Based in Belfast, the Sisters of Adoration are a Catholic order founded in 1848, but as with most religious organisations, waning bums on seats and with them donations, mean that money is tight - and that's even before counting the cost of Brexit and the Covid pandemic on people's incomes.It was during the latter that, while searching for answers as to what to do with their lives now they'd quite literally lost their way, they stumbled across another path - on a map.</p>
+            <p>Look at an Ordnance Survey map of this section of the coast, running between Killian Point to the north and Newcastle to the south, and there's a marked trail named the Lecale Way.</p>
+            <p>"But it wasn't always called that," said Kelly, as we took a minibus to a place called Ballyhoran Bay and stepped down onto the beach where the waves pulled and pushed the small pebbles on the shore.She took out her own well-used Ordnance Survey map and pointed to several broken lines that indicated walking trails close to where we were. Sure enough, the words "St Patrick's Way" (not to be confused with the 82-mile St Patrick's Way founded in 2015 by artist Alan Graham that runs between Armagh and Downpatrick) were printed in black ink - though no longer seemed to form a coherent trail with many sections petering out.</p>
+            <p>“Colloquially it was called the St Patrick’s Way or The Pilgrim’s Way because of its close links with Patrick,” she explained.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>St Patrick is believed to be buried in Downpatrick in the graveyard at Down Cathedral (Credit: Jmci/Getty Images)</figcaption>
+            </figure>
+            <p>After losing their positions at the convent, the women were asked by Dr Tim Campbell, director at the Downpatrick Centre, to come on board as walking guides sharing their passion and knowledge about the patron saint. At first, they took people to sites around Downpatrick, including the cathedral, his gravestone and the largest statue of him in the world that sits atop Slieve Patrick.</p>
+            <p>They had already worked on the idea of connecting those sites on a 27km trail they named The Pilgrim Walk, Downpatrick. But during the restrictions on groups meeting during the first lockdown in March 2020, the tours were postponed. Both seeking thinking space, they headed to the Irish Sea a short drive away to visit the site where Patrick was said to have landed at Strangford Lough in 432 - and their new walk was born.</p>
+            <p>The coast here feels incredibly wild. Scouring from the last Ice Age has created sections of cleaved cliffs and smooth rocks topped by long grass and wildflowers. Islands are peppered in the water just steps from the mainland where gannets dart below the surface and seals bob above the waves.</p>
+            <p>When Ireland's soon-to-be patron saint came here, it was not his first visit. Surprisingly he wasn't actually from the country himself, but rather Roman Britain - though whether his home was actually Wales, England or Scotland is still a much-debated issue. At the age of 16, he was kidnapped by slave traders and sold to an owner who set him to work on Slemish Mountain in County Antrim (50 miles north of Downpatrick) as a shepherd. While there, it's believed he dreamed of escaping and, after God visited him in a dream, managed to realise his wish thanks to some sailors who he - legend has it - converted to Christianity on the journey home to be reunited with his family.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The ancient holy well where St Patrick baptised his first converts is one of the stops on the route (Credit: Phoebe Smith)</figcaption>
+            </figure>
+            <p>He'd certainly be forgiven for choosing never to step foot in the place again, yet he wrote in his Confessions - itself the oldest piece of writing to come out of Ireland - that he was compelled to return on a mission to unite the Celtic Pagans at this land "at the end of the world" by spreading the word of God.</p>
+            <p>"He walked where we are walking now," said Purdy, as the wind whipped the froth off the top of the waves and a near-Biblical grey mist descended all about us. "Yet as Northern Ireland became secularised the more neutral Lecale Way was used officially [as the route's name], but we think people need to be reminded of the ancient connections - even if they are not religious or Christian."</p>
+            <p>That’s why they christened their hike St Patrick’s Coastal Camino, which sees hikers also visit an ancient holy well, whose presence can be traced back more than 1,000 years.</p>
+            <h3>We think people need to be reminded of the ancient connections - even if they are not religious or Christian</h3>
+            <p>"Wives of fishermen and farmers would come here to ask for a bountiful harvest," explained Kelly, as we summitted a high sand dune to reveal a large crucifix above a stone-encircled water hole. "It's where Patrick baptised his first converts, and many people believed it could cure all ailments."</p>
+            <p>For Purdy, the discovery of the well - which she stumbled across while taking in the coastal highlights - proved something of a cure for the loss of direction in her life since being forced out of the Sisterhood. It allowed her to link together several Patrician heritage sites to create this new spiritual pathway to share with others. The route includes the well, the ruins of Ardtole Church and the medieval fishing village of Ardglass - where this seven-mile pilgrimage ends before a bus takes walkers back to Downpatrick to see the reputed grave of the saint outside the cathedral by the Saint Patrick Centre where we began.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The seven-mile pilgrimage ends at the charming medieval port of Ardglass (Credit: Shawn Williams/Getty Images)</figcaption>
+            </figure>
+            <p>"The first pilgrims who came on our walk were locals," she explained, "but then we found we had nurses and doctors signing up too - as a way to get a break from everything they were dealing with. They loved it and some decided to sign up for more."</p>
+            <p>They weren't the only ones. Since the mini-pilgrimage launched, numbers have been steadily growing - despite Covid. And, off the back of the success of the Coastal Camino, Purdy and Kelly have launched other St Patrick-themed experiences, including a Camino and Canoe Adventure - reflecting the fact that the saint himself arrived here on the water - as well as a bilingual walk conducted in both English and Irish and a tour that combines important Pagan sites with Christian ones.</p>
+            <p>Not long after I left Northern Ireland,I heard that Purdy and Kelly's prayers were answered; they had been accepted as Sisters of Poor Clare in County Louth and could complete their vows as nuns. Giving Purdy time - as she said - to finally pray for all the politicians.</p>
+            <p>But they won't turn their backs on their lockdown baby. They have confirmed they will come back to guide on their beloved Camino in the summer. And, for futurepilgrims hoping to follow them, I'm sure they will thank St Patrick for that.</p>
+            <p>Slowcomotion is a BBC Travel series that celebrates slow, self-propelled travel and invites readers to get outside and reconnect with the world in a safe and sustainable way.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

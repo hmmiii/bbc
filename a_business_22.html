@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_business_22" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Business</mark>
+                <h2>How delivery apps created 'the Netflix of food ordering'</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Husband and wife, Emre Uzundag and Yonca Cubuk, say they are now "living their small dream", all thanks to a food delivery app.</strong></p>
+            <p>The Turkish couple moved to New York in 2020, and due to coronavirus they found themselves stuck in their small apartment in Brooklyn.</p>
+            <p>Homesick, they started to cook more and more Turkish food, to help them cope with the stresses of lockdown. "Which was a mental necessity during the pandemic," says Ms Cubuk.</p>
+            <p>They then moved on to cooking meals for friends around the city, and Ms Cubuk says the feedback was incredibly positive.</p>
+            <p>"They started to tell us that we should turn it into a career."</p>
+            <p>Despite neither of the pair having worked as a professional chef before, last year they decided to take the plunge, and signed their business up to a new food delivery app called Woodspoon.</p>
+            <p>While the huge market-leading delivery apps, such as Just Eat, Deliveroo, Uber Eats and DoorDash (the biggest in the US) now list many large restaurant chains, Woodspoon's business model is entirely different.</p>
+            <p>It was launched at the start of 2020 to link home cooks - people literally cooking from the kitchen in their house or apartment - to customers who want a fresh, homemade takeaway, rather than something from a chain restaurant.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>BanBan Anatolian Home Cooking also offers dishes of Armenian, Persian, Arab and Jewish influence</figcaption>
+            </figure>
+            <p>You order via the Woodspoon app, which sends the details to the relevant home chef. Then, when the food has been cooked, it is picked up and delivered by a Woodspoon driver.</p>
+            <p>Currently available across New York City and into New Jersey, with more than 120 cooks currently on its books, it will soon expand to Philadelphia.</p>
+            <p>Emre Uzundag and Yonca Cubuk's BanBan Anatolian Home Cooking is now available via the app four days a week, while on the other three days they work on new recipes. Ms Cubik says that they are so busy that they recently had to work on their fourth wedding anniversary.</p>
+            <p>Yet, thanks to Woodspoon, they don't have to go to the expense of renting a commercial premise.</p>
+            <p>"Woodspoon gives us a platform and a voice to tell our story," she adds. "And we are more than just kebabs and pilaf [a rice dish]... our best-selling dishes are the lentil soup and the orange spinach stew, both are vegetarian, the latter one is vegan."</p>
+            <p>Woodspoon's co-founder, Lee Reschef, says that launching at the same time as the start of the pandemic actually proved to be helpful. "We were fortunate enough to help a lot of restaurant workers that needed to find a new line of income," she says.</p>
+            <p>Before home chefs are accepted by Woodspoon they have to show proof of food safety training, and the company sends someone out to carry out an inspection of their kitchen.</p>
+            <p>The chefs also have to register their business with the relevant local authority, and be subjected to official food hygiene tests.</p>
+            <p>While Woodspoon is currently focused on US expansion the concept could also work in the UK, where it is also legal to run a food business from a residential property.</p>
+            <p>With the pandemic closing restaurants for long periods of time, the past two years has been boom time for takeaway delivery apps. The UK's largest, Just Eat, saw its revenues hit £725m in 2020, up 42% from 2019, while those at DoorDash jumped more than threefold to $2.9bn (£2.1bn).</p>
+            <p>Yet, while many of us are increasingly using these types of apps, people often cite one frustration - that you cannot order from multiple restaurants at the same time, and get all the different dishes delivered together.</p>
+            <p>That is, however, now changing, with a small but growing number of apps starting to offer that service.</p>
+            <p>One of those at the forefront is US app, Go By Citizens, which is run by restaurant and takeaway group C3. It allows its customers to order from a number of its brands at the same time, such as Umami Burger, Krispy Rice, Cicci di Carne, and Sam's Crispy Chicken.</p>
+            <p>To ensure that the food is all cooked and ready for delivery at the same time, C3 says it operates 800 so-called "dark" or "ghost" kitchens across the US - warehouse cooking facilities that house a number of kitchens under the same roof, all making delivery-only meals.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>C3 now runs 800 ghost kitchens across the US</figcaption>
+            </figure>
+            <p>"Our app allows consumers to pick, choose and group their favourite menu items [together] from an array of C3 brands in a single order," says C3 chief executive Sam Nazarian. He describes it as "the Netflix of food ordering".</p>
+            <p>In addition to C3 brands, the company is inviting other people's restaurants and food businesses into its ghost kitchens and tech platform, including California's Soom Soom Fresh Mediterranean and Florida's Cindy Lou's Cookies.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>C3's Go by Citizen app allows customers to order from a number of its brands, including Sam's Crispy Chicken</figcaption>
+            </figure>
+            <p>Meanwhile, US ghost kitchen business, Kitchen United, also now lets its customers order from a number of different restaurant brands at the same time, via its app Kitchen United Mix.</p>
+            <p>"Everything is delivered, or available for pick-up, at the same time and on the same bill," says Kitchen United, chief executive, Michael Montagano. "So, if someone in the household wants sushi, but another wants pizza, that's entirely doable."</p>
+            <p>Kitchen United Mix is available in 10 US locations, with another eight currently in development.</p>
+            <p>In the UK, Deliveroo also runs a number of dark kitchens, called Deliveroo Editions - where takeaway businesses are invited to set up shop rent free. However, a Deliveroo spokeswoman confirmed that, currently, the food from each offering still has to be ordered separately via its app.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Kitchen United currently offers its Mix service in 10 US locations</figcaption>
+            </figure>
+            <p>Whether it's a focus on home cooks, or allowing customers to order from more than one restaurant at once, does the continuing growth of delivery apps put more pressure on physical restaurants and takeaways already struggling to stay afloat?</p>
+            <p>UK food and restaurant critic, Andy Hayler, says he thinks some people might find it off-putting that an app allows you to order food from two or more restaurants at once.</p>
+            <p>"If I saw a menu offering two to three different things, this would suggest to me this is just some generic catering company, which is banging out industrial foods," he says.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>There are always times when members of a household are in disagreement over what takeaway to order</figcaption>
+            </figure>
+            <p>Mr Hayler adds that certain foods, such as curry are well suited for delivery. While others, such as French and Japanese cuisine, struggle in takeaway form because the dishes are supposed to be well presented on a restaurant plate, and not bashed about in transit in a plastic container.</p>
+            <p>"Half of the experience [of French and Japanese restaurants] is looking at the food there," he says.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

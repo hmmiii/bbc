@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_adventure_2" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Adventure</mark>
+                <h2>Britain's miraculous, life-saving garden shed</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Before the pandemic, Dr Jenner's House - where the world's first vaccine was given - was an obscure tourism site. Post-Covid, it could become a major international attraction.</h3>
+            <p>An elegant period home hidden among trees next to the church in a quiet English village houses a little-known medical museum. More than 200 years ago, this whitewashed Queen Anne building was the home of a humble country doctor. With its simple collection of artefacts displayed in traditional glass cabinets, it sounds like a tourist attraction doomed to semi-obscurity.</p>
+            <p>But as Britain's museums tentatively prepare to re-open after Covid restrictions, Dr Jenner's House in Berkeley, on the edge of the Gloucestershire Cotswolds, is expected to face a massive influx of visitors.</p>
+            <p>That's because this is where the science of vaccination began. You can step into the garden shed where Edward Jenner gave the world's first vaccination to his gardener's eight-year-old son in 1796. It's the very crucible of the science that has helped in the global fight against Covid.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>This small garden shed is the home of the first life-saving jab (Credit: The Jenner Trust/Jessica Greenwood)</figcaption>
+            </figure>
+            <p>Before the pandemic, the house was ranked the village's third most popular sight (after the medieval castle where Edward II was murdered and a family farm park). Post-Covid, it could become a major international attraction.</p>
+            <p>Visitors will be able to see the candle-lit study behind the staircase where Jenner's scientific notes and drawings scratched out with an ivory dip pen sit on his round baize-covered desk. This is where he created the word "vaccine". On the wall is a contemporary oil painting of Blossom the cow. She was so central to his experiments that Jenner used vacca, the Latin for "cow", to describe what he had discovered: vaccination. Blossom, a large brown Gloucester dairy cow, was the source of the original infection of cowpox used to create the world’s first vaccines.</p>
+            <h3>It's the very crucible of the science that has helped in the global fight against Covid</h3>
+            <p>The story is heroic in simplicity. Village legend tells that Jenner was very concerned with local smallpox outbreaks. It was one of the most dangerous viruses humans have faced, with a death rate of around 30% and terrible permanent disfigurement of survivors. The churchyard alongside his garden houses graves of many contemporary victims.</p>
+            <p>It is said that a milkmaid told Jenner she wasn't worried about catching smallpox - because she'd already caught the much milder "cowpox" from her cows. Local milkmaids knew that once you had cowpox you never got smallpox.</p>
+            <p>At the time, the medical profession was wrestling with emerging theories of inoculation. This simply involved injecting a dose of an actual disease, like a modern chickenpox party - where parents bring their toddlers together to deliberately pass the infection at an early age and infer immunity against later cases, which can have much more serious consequences. The early inoculators simply gave the full disease to patients when they were young and strong. They hopefully survived… and then would be immune.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Eight-year-old James Phipps, Jenner's first patient, survived the expiremental vaccine (Credit: DEA Picture Library/Getty Images)</figcaption>
+            </figure>
+            <p>Jenner was inspired by the milkmaid's comments to devise a much better solution: a harmless but effective injection to confer immunity. He hypothesised that if he gave mild cowpox to people, it would stimulate some sort of internal safety system to protect people against smallpox. In an era of blood-letting leeches and purgatives of mercury, this was a revolutionary concept. No-one then knew about immune systems. In many ways, Jenner was centuries ahead of his time.</p>
+            <p>It is not known whether his first subject, James Phipps - the gardener's eight-year-old son - volunteered or even knew what he was in for, but Jenner didn't take his contribution lightly.</p>
+            <p>The boy survived the process, was thereafter immune to the deadly disease circulating in the area and proved a theory that has gone on to save millions. Jenner demonstrated the world's gratitude to James by giving him a house. Visitors can walk down a leafy path from Jenner's home to see Phipps Cottage, now a private home marked by a plaque in Church Lane.</p>
+            <p>In the corner of his own garden, Jenner playfully named the shed where he'd given James' injection "The Temple of Vaccinia" and characterised himself as the "faithful priest of vaccination". Somewhat amazingly, this quirky structure of stone, bark and thatch survives. Perhaps it should become a shrine to the millions that immunisation has saved from many diseases since, including smallpox (now completely eradicated thanks to vaccines), polio, and, of course, Covid.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The first anti-vaxxers feared taking the shot would turn them into cows (Credit: Granger Historical Picture Archive/Alamy)</figcaption>
+            </figure>
+            <p>When word of Jenner's miraculous cure for smallpox spread, queues of poor farmworkers stretched from the shed right into the churchyard. Jenner gave life-saving jabs for free, declaring it would be "immoral" to profit from them.</p>
+            <p>Spotting his flute, poetry books and drawings of cuckoos, visitors can't escape the impression that Jenner, the eighth son of Berkeley's vicar, was an inquisitive, well-meaning and downright eccentric Georgian man. For example, he met his future wife when he accidentally crash-landed his hot air balloon in her garden. He also secretly took a cutting from a grapevine belonging to Capability Brown, a famous 18th-Century English gardener and landscape architect, at Hampton Court to plant in his greenhouse, which is now completely filled by the flourishing vine.</p>
+            <p>Somewhat predictably, Jenner was ridiculed by wealthy London medical "experts" who couldn't believe a rural doctor had made such a major medical breakthrough. Contemporary satirical cartoons showed injected people turning into cows. The world's first anti-vaxxers protested against the new science.</p>
+            <p>It took a while for the establishment to realise the significance of his work. Parliament eventually erected Jenner's statue in Trafalgar Square in 1858 - but after anti-vaxxing protests, it was moved to the more secluded Kensington Gardens four years later.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Crowdfunding saved Jenner's house from shuttering due to Covid-19 (Credit: Christopher Jones/Alamy)</figcaption>
+            </figure>
+            <p>The private charitable trust that runs the house almost admitted defeat when Covid lockdown ended their revenue. "We were threatened with complete loss of income indefinitely," said museum manager Owen Gower, the only full-time employee. A hastily arranged online crowdfunding campaign struck a chord with well-wishers around the world and quickly raised more than £40,000 in donations. It was enough to keep the house running.</p>
+            <p>We may still have anti-vaxxers today but the importance of Covid jabs mean that Jenner is starting to be remembered more than ever.</p>
+            <h3>Jenner gave life-saving jabs for free, declaring it would be "immoral" to profit from them</h3>
+            <p>"We've been overwhelmed by the generosity of people around the world," said Gower. "Individual donations are still coming in. It has enabled us to start making plans to shape a real vision for the future.</p>
+            <p>"The pandemic raised the profile of vaccination. We want to not only refresh the displays and refurbish the house - but develop our educational programme and open up an online international presence."</p>
+            <p>The trust has no regular government funding and relies on entry fees. A team of 35 local volunteers maintains and operates the house and garden. A large part of the house is rented as a private flat to provide income. That includes Dr Jenner's old bedroom.</p>
+            <p>The success of crowdfunding galvanised the trust to re-think the future of the humble historical attraction. It can now afford to engage consultants and approach large sponsors. Gower says the dream is to take Jenner's house forward in a more meaningful direction.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Cotswolds has long drawn tourists, who come to explore the region's outstanding natural beauty (Credit: James Osmond/Getty Images)</figcaption>
+            </figure>
+            <p>"We could do so much with this," said the history graduate from Berkeley. "The crowdfunding was overwhelming, but we can't rely on individual donations forever. Now we need to approach big funders."</p>
+            <p>Future plans include creating an international centre inspiring development of vaccination theory. That includes an ambitious programme of outreach, archive and scientific get-togethers.</p>
+            <p>Museum trustee Gabriella Swaffield sees a positive future for the site. "In five years time, it will no doubt be a thriving museum which welcomes visitors from all over the world to tell the important story of the beginnings of vaccination and its pioneering founder Edward Jenner.</p>
+            <p>Swaffield, a museum manager at the historical Charterhouse in London, applied to be a Trustee of The Jenner Trust, in the height of the pandemic in June 2020. "It seemed like the opportune time to combine my passion for museums and spreading the important message of vaccinology," she said.</p>
+            <p>"It deserves more recognition. It's a fascinating museum with beautiful gardens, which tell such an incredible story which has affected every single person in one way or another over the past few years."</p>
+            <p>Once the world started realising how important Jenner's invention was, the praise began to roll in. Although he never seemed to have profited from the vaccine, perhaps he valued some of the comments more than any riches. Then US president Thomas Jefferson wrote directly to Jenner from America in 1806 saying that "mankind can never forget that you have lived". Gower and the Berkeley villagers are trying to make sure they maintain a site that ensures that never happens.</p>
+            <p>Places That Changed the World is a BBC Travel series looking into how a destination has made a significant impact on the entire planet.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

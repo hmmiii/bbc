@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_world_32" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>US & Canada</mark>
+                <h2>Abortion protests: Security tightened around court justices</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>US law enforcement agencies are beefing up security for Supreme Court justices after a leak suggested they may overturn legalised abortion.</strong></p>
+            <p>The US Marshals Service said on Monday it was helping the agencies normally tasked with the judges' protection.</p>
+            <p>A protest was held on Monday night at Justice Samuel Alito's house in Alexandria, Virginia. Activists chanted: "Abort the court!"</p>
+            <p>Rallies were held outside the homes of two other justices this weekend.</p>
+            <p>On Saturday night, a group of about 100 people marched from the home of Justice Brett Kavanaugh to Chief Justice John Roberts' house nearby in Chevy Chase, Maryland.</p>
+            <p>Shut Down DC, the left-wing group behind Monday's demonstration outside Justice Alito's house, said the plan was to "hold a moment of silence for the rights we know are ours".</p>
+            <p>Separately, an anti-abortion centre suffered an arson attack on Sunday.</p>
+            <p>On Monday, the US Senate unanimously passed a bill that would provide police protection to the immediate families of the nine Supreme Court justices and other officers of the court, if deemed necessary by the Marshals Service. The bill will still need to go before the US House of Representatives.</p>
+            <p>The White House said earlier on Monday that demonstrations should never include "violence, threats or vandalism".</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Protesters outside the home of Supreme Court Justice Brett Kavanaugh on Saturday night</figcaption>
+            </figure>
+            <p>"[President Biden] strongly believes in the constitutional right to protest," said a statement from his press secretary Jen Psaki.</p>
+            <p>"But that should never include violence, threats, or vandalism. Judges perform an incredibly important function in our society, and they must be able to do their jobs without concern for their personal safety."</p>
+            <p>On Monday, the US Marshals Service announced it was helping the police agencies normally tasked with the security of the Supreme Court's nine justices.</p>
+            <p>The US Marshals Service said the decision to back up the justices' security detail came "in response to increased security concerns stemming from the unauthorised release of the draft opinion".</p>
+            <p>A draft opinion leaked last week suggests a majority of the Supreme Court would overturn US women's federally protected right to abortion.</p>
+            <p>Such a move would hand the issue of abortion rights over to individual US states, many of which are planning laws to ban the procedure.</p>
+            <p>The court's final ruling is expected in June.</p>
+            <p>The leaked document, penned by conservative Justice Alito, called the 1973 Roe v Wade decision - which legalised abortion across the US - "egregiously wrong from the start".</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The message at Wisconsin Family Action's building in Madison</figcaption>
+            </figure>
+            <p>Meanwhile, vandals set fire on Sunday morning to the headquarters of Wisconsin Family Action, an anti-abortion group, in what police called a targeted attack.</p>
+            <p>A message was spray-painted outside the building: "If abortions aren't safe then you aren't either." A Molotov cocktail was thrown into the building.</p>
+            <p>A non-profit organisation in Texas that provides pregnant women with free health assistance and encourages them not to get abortions was also targeted by spray-paint over the weekend.</p>
+            <p>According to the Denton Record-Chronicle, the words "not a clinic" and "forced birth is murder" were daubed outside the entrance.</p>
+            <p>If Roe is overturned, a ban on almost all abortions would go into effect in 13 states straight away, with others expected to follow. Abortion would still be legal in around half of US states, it is forecast.</p>
+            <p>Lawmakers in New York announced new legislation to expand abortion access on Monday. Several other left-leaning states have taken similar actions.</p>
+            <p>New York also said it plans to offer funding to groups that help people travel to the state for abortions.</p>
+            <p>Both pro- and anti-abortion protesters have rallied at the steps of the Supreme Court in Washington DC since the leak.</p>
+            <p>In scenes reminiscent of the unrest following the attack at the US Capitol last year, 8ft high fencing has been erected around the building.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

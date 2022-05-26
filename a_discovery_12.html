@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_discovery_12" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Discovery</mark>
+                <h2>The UK island waiting to be discovered</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Unadorned, unkempt and unloved, Ulva is the Scottish island no one wanted to live on. But now an era-defining community buy-out is behind its welcome resurrection.</h3>
+            <p>From the summit of Ben More, above the landslips and cliffs of Loch na Keal, the Isle of Mull's complex coastal geography becomes clearer.</p>
+            <p>To the south-west, across a sheltered Atlantic sound, lies the holy isle of Iona, where Irish missionary St Columba sailed in 563 AD to bring the Christian faith to the pagan Scots. To the immediate north-west lies a strew of islets, including Little Colonsay, an inspiration for the children's book and film series How to Train Your Dragon; and Gometra, a cove-nibbled clump owned by a millionaire environmentalist. Next to that, crumpled between land and sea, is a forgotten nook that has an even more extraordinary story waiting to be told.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Ambitious plans aim to turn Ulva into a sustainable Scots utopia (Credit: Hemis/Alamy)</figcaption>
+            </figure>
+            <p>Almost lost in the fold of the map, Ulva is Scotland's Inner Hebrides at its most enigmatic. Ordinarily, travellers to this part of the Argyll region would seek to hike, birdwatch or join a whale watching safari, scanning the murky Atlantic for some 19 cetacean species that patrol the waters. But Ulva offers something very different.</p>
+            <p>Here there are no cars, no shops, no tours, no postcards nor cheery guides. Instead, the rewards are closeness to nature and longed-for notions of freedom and space. Rugged heathlands burst with floral heather; deer-filled forests cluster on the eastern shore; and what was once home to 604 people is now a time capsule of forgotten island life. It is all but empty, inhabited by ghosts and creaking with history.</p>
+            <p>And yet, over the past few years, Ulva has begun to evolve.</p>
+            <p>In 2018, rather than face extinction, the six-strong Ulva community in partnership with the North West Mull Community Woodland Company took matters into their own hands, shaping a successful community buy-out. That followed a late bid, backed by the devolved government's Scottish Land Fund (which supports communities to become more sustainable through land ownership) to pay £4.4m towards the purchase from a private landowner.</p>
+            <p>Now, ambitious plans are underway to revitalise the island from the ground up. Abandoned properties will be renovated, new communities will be resettled in affordable housing and a kind of sustainable Scots utopia will be created. The opening of a cultural heritage centre with far-reaching global appeal is on the horizon, too. No wonder there's talk of a rebirth.</p>
+            <p>During my visit last year, the island's ferry was largely at anchor, only running to the pontoon on Mull for a grocery run or to shuttle Ulva's two children to school in the tiny hamlet of Ulva Ferry. In understatement typical of self-sufficient island communities, the only sign there is a ferry at all is a small, unadorned honesty box and sign that reads "passenger ferry on demand". Turn up on a whim and you could stand on the end of the pontoon for the rest of the day.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Boathouse will reopen to welcome visitors and new residents (Credit: Tom Richardson Scotland/Alamy)</figcaption>
+            </figure>
+            <p>"I have a kayak to get me to Mull when I need to," said island resident and Ulva's development manager Wendy Reid, when she agreed to meet on the quayside for an autumn morning's walk. "But journeys like that help me feel more connected with the seasons. There's an earthiness about living here. I go foraging for berries and mushrooms - things I would never do living in a city."</p>
+            <p>Joining us on our explorative circuit - a loop from dilapidated, unoccupied houses to the eerily vacant Thomas Telford-designed church - was lifelong Mull resident Colin Morrison. Operator of whale watching company Turus Mara, Morrison works as a boat skipper, community activist and as chairman of the North West Mull Community Woodland Company, and his ideal is to repopulate the island and, eventually, encourage greener tourism.</p>
+            <p>"It's a little like stepping back in time, but you can see the modern potential," Morrison said, as we began our walk through a smirr of light rain. "Ulva once supported 600 people in 16 small villages, so everywhere you go there's evidence of human habitation. It's got variety and opportunity and it's unspoiled. Just not in a guidebook way."</p>
+            <p>To residents, it's also about further integrating Ulva into the north-west Mull community, a scenario that taps into the wider narrative of the Scottish Government's National Islands Plan. Set up in December 2019, the strategy aims to stimulate population growth and throw a lifeline to the most vulnerable, at-risk island communities - and already green shoots of renewal are in evidence on Ulva.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The island once supported 600 people in 16 small villages - and is now looking for around 50 new residents (Credit: Mike MacEacheran)</figcaption>
+            </figure>
+            <p>"To get on in life you traditionally had to leave an island like this, and Ulva's story reflects those of Scottish islands in general," said Morrison. "Fifty years ago, communities were sustained by farming and that lifestyle is just not there anymore - so now we envisage a different future driven by tourism and the digital economy." Tellingly, Ulva has 4G, broadband, Netflix and Amazon.</p>
+            <p>For now, the reason for visitors to come is to appreciate the simple life. Crooked trails contour past copses of native hazel and vacant farmhouses with their doors unlocked. There are coves to swim or kayak around every corner and the days are uncomplicated for the island's solitary family and two single residents. To stay overnight, visitors must hike inland to one of two bothies (basic shelters), both of which are a two-hour walk west across terrain where no roads venture.</p>
+            <p>From The Boathouse, a closed seafood cafe previously run by the island's family, we walked to the island's oldest blackhouse (an antiquated Scots cottage), built with drystone walls and thatched roof, and once shared by both farmer and animals. The ramshackle hut, named Sheila's Cottage after its last resident in the 1950s, stood almost just as it was left, with grisly whale bones flanking the doorway and a straw-matted floor, box-bed and grubby sideboard beyond that. Inside, the smell was of damp earth and peat-smoke, but renovations were underway to revive the historical timepiece into a visitor centre.</p>
+            <p>To the south and at the centre of Ulva's past life is Storas Ulbha, or Ulva House, its roof capped with ornamental urn finials. For those who once lived here, the post-war mansion house was the seat of the Clan Macquarrie, one of the four oldest Highland clans, and the home of Jamie Howard, who owned the island prior to the takeover.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Visitors come to kayak, swim, hike and appreciate the simple life (Credit: Vincent Lowe/Alamy)</figcaption>
+            </figure>
+            <p>Now it is being repurposed to sit at the heart of the new community project. Instead of the dusty library bookshelves and still-furnished Regency-era rooms left in stasis, an interpretation and education centre will shed light on some of the island's forgotten characters and show their impact on Scotland and the world. Indeed, among the histories are those of the grandfather of Scottish explorer David Livingstone as well as Lachlan Macquarie, who left Ulva in the 18th Century to become governor of New South Wales in Australia.</p>
+            <blockquote>Almost lost in the fold of the map, Ulva is Scotland's Inner Hebrides at its most enigmatic</blockquote>
+            <p>"There's plenty of romance to it all," said Reid. "The story of Macquarie has really put us on the map in Australia, while we've had plenty of requests from Scots diaspora around the world tracing their lineage. One, surprisingly, recently arrived from Reunion Island."</p>
+            <p>Ulva has been here for centuries, of course, with a human story that stretches back some 7,500 years. It was once part of the Norse kingdom after being captured by Vikings in 800AD; while Mesolithic hunter-gathers once collected limpets and winkles from the foreshore in front of Livingstone Cave - acknowledged as a national treasure because of the wealth of archaeological material found at the site. And yet, despite this historically rich backstory, no one has really ever championed Ulva, and it's only starting to fight for its rightful place on the map now.</p>
+            <p>By the time we'd crossed the manor's overgrown garden, passed a seam of empty cottages and stopped at an abandoned farm populated by Hebridean sheep, I'd learned far more about this brave new world.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Sheila’s Cottage, named after its last resident in the 1950s, is a historical timepiece (Credit: Gary Cook/Alamy)</figcaption>
+            </figure>
+            <p>Cattle have arrived as the first step of the land management process. The Boathouse will reopen to help accommodate global interest, which saw annual visitor numbers rise from 4,000 in 2017 to 7,000 pre-pandemic as Ulva's ­profile rose following the buyout. The church will be restored as a community building. Ardallan House, an old shooting lodge, is to be turned into a bunkhouse and campsite. An oyster farm has been touted. The island is looking for around 50 new residents, who would be expected to be able to live sustainably on the island, perhaps by starting their own business. An initial survey, undertaken before the pandemic, shows 500 people are willing to move here from 26 countries, and every week new enquiries continue to drop into Reid's inbox.</p>
+            <p>It was a great deal to take in.</p>
+            <p>"People have a romantic notion of coming to live on a remote Scottish island," said Reid, as we headed back towards the ferry. "And with everything going on right now in the world, this is an attractive lifestyle to many people. But we're still a community on an island off an island, so life isn't easy for socio-economic reasons. We're further behind the times here, but that's mainly because Ulva has been ignored for so long. Now, it's simply waiting to be rediscovered."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

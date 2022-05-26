@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_adventure_6" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Adventure</mark>
+                <h2>Saving the night sky: New Zealand's craziest experiment yet?</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>The Pacific nation's audacious bid to become the world's first dark sky nation might provide a blueprint for the rest of the world.</h3>
+            <p>If Becky Bateman had to pick just one star out of the 3,000 you can typically see in the New Zealand night sky, she'd pick Arcturus, the brightest star in the Boötes constellation. It shines orange, for one thing. And, because of that, is statistically most likely to have life orbiting around it.</p>
+            <p>Most nights for the past two years, the astronomy guide has used a green laser pointer and collapsible Dobsonian telescope to show people around the night skies of the Wairarapa, a rural wine region in the south-eastern corner of the North Island. Year-round, the nomadic guide meets people in public parks, backyards and on the wild beaches of the South Wairarapa coast. During New Zealand's clement summer months, as wine tourism peaks, she can be found waving her pointer, like a Jedi, high above the bushy, green vines of the region's popular vineyards surrounded by stargazers sipping pinot noir.</p>
+            <p>Tours begin with an introduction to the Southern Cross and Milky Way and generally extend to chat about the origin of the universe and the fleeting time in which humans have occupied planet Earth. These days, as one of the Wairarapa's leading voices on the benefits of stargazing, Bateman is just as likely to end up urging guests to get behind the country's bid to protect the night sky. To her, a clear night's sky free from light pollution is one of the last wilderness frontiers facing the threat of extinction - and now is the time to act.</p>
+            <p>Bateman is not alone in thinking this way. In late 2019, the Pacific nation announced a plan to become the world's first dark sky nation at the New Zealand Starlight Conference in Tekapo. Conference delegates from around the world were concerned about the world's increasing light pollution and its proven negative effects on human health and nocturnal wildlife but were heartened by the exceptional quality of starry nights in New Zealand and the country's growing appetite for dark sky conservation. They agreed the plan was audacious but believed if New Zealand could pull off such a crazy experiment, it just might provide a blueprint for the world.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Well-positioned for stargazing, Whitimanuka Retreat in the Wairarapa is kitted out with binoculars and books on what to see in the night sky (Credit: Jacqui Gibson)</figcaption>
+            </figure>
+            <p>On a recent winter evening, Bateman set up her telescope on the frosty porch of Whitimanuka Retreat. I'd hired her to join me at an off-grid cabin I'd rented in the hills of a working sheep and beef farm about an hour's drive from my hometown of Wellington.</p>
+            <p>As the clouds cleared, Bateman unpacked and assembled her manual telescope, laid out half a dozen glass jars hand-painted red and filled with fairy lights (to subtly light our way while not obliterating our night vision) and set to work revealing the evening's constellations. Minutes into a description of where to find the Southern Cross (first, look for a kite-shaped constellation in the Milky Way), a shooting star flew across the sky.</p>
+            <h3>To me, the dark skies are humankind's last true natural wilderness. Potentially, they won't be with us in years to come</h3>
+            <p>"Oh, wonderful. Did you see that?" asked Bateman enthusiastically. "I see 10 or so shooting stars every few hours I'm out here. Lately, though, I'm seeing more and more man-made pollution like Elon Musk's SpaceX satellite. To me, the dark skies are humankind's last true natural wilderness. Potentially, they won't be with us in years to come. It worries me - there's so much to lose in the world's obsession with space tourism and so many reasons to preserve what's here."</p>
+            <p>When it comes to dark sky preservation on the world stage, the International Dark-Sky Association (IDA) is the organisation responsible. Set up in 1988, it runs a dark sky conservation programme that recognises the quality of the world's dark skies using a five-pronged certification system. Within the system, dark sky sanctuaries rank highest as the most remote and often darkest places in the world, followed by reserves, parks, communities and urban night sky places.</p>
+            <p>To achieve IDA certification, a dark sky must meet a range of criteria, including protection from light pollution, accessibility to visitors and wide-ranging support from residents.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The six-inch refractor telescope at Mount Cook Lakeside Retreat's observatory can be fitted with a DSLR camera for astrophotography (Credit: Mount Cook Lakeside Retreat)</figcaption>
+            </figure>
+            <p>In 2012, New Zealand's Aoraki Mackenzie community successfully applied to the IDA to become an accredited dark sky reserve. An inland plain region about 180km south-west of Christchurch, where large country sheep stations have been the norm for more than a century, Aoraki Mackenzie is rugged, isolated country dominated by mountain and lake scenery.</p>
+            <p>Today, Aoraki Mackenzie's 4,300sq km dark reserve is the only one of its kind in the Southern Hemisphere and just one of 18 in the world. Two New Zealand communities, Great Barrier Island and Rakiura Stewart Island, have since become sanctuaries, with Wai-iti, a 135-hectare hunk of council land in Tasman District, now an IDA-certified dark sky park. Another 20 New Zealand dark sky communities - including the Wairarapa — are looking to follow suit and gain some form of certification.</p>
+            <p>In 2019, it was Dark Skies Group Director at the Royal Astronomical Society of New Zealand, Steve Butler, who daringly announced the country's plans to become the world's first dark sky nation. "It was more of an aspirational rather than a hard-and-fast goal," he told me recently. "The IDA doesn't yet have an official dark sky nation designation. But when it does New Zealand will be first in line."</p>
+            <p>"Are we obsessed as a people? Probably. We're definitely uniquely advantaged," he explained. "Look, Kiwis are an outdoor people with easy access to the natural dark skies of the Southern Hemisphere. Very few of us have grown up without being awed by New Zealand's night skies, particularly those you see in national parks like Aoraki Mackenzie or Rakiura Stewart Island. Sure, not all of us know how to find the Southern Cross, but we're a far cry from 80% of the world's population who can't even see the stars of the night sky."</p>
+            <p>That's why when New Zealanders were asked to comply with the IDA's rigorous requirements to restrict outdoor lighting and switch to low-powered yellow lighting in regions such as Aoraki Mackenzie and elsewhere, by-and-large they were up for it, Butler explained. It's why Butler is confident even the country's urban centres, over time, will find ways to limit artificial light spilling into natural areas and reduce light use generally. It's also why more and more New Zealanders are joining the global chorus to save the world's night skies.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Data cited by the United Nations Environment Programme suggests artificial light is increasing globally by at least 2% every year (Credit: Lingxiao Xie/Getty Images)</figcaption>
+            </figure>
+            <p>Every two years, for example, New Zealand hosts the New Zealand Starlight Conference attracting hundreds of dark sky proponents from overseas and around the country. Dark sky associations eager to achieve IDA status are sprouting from Kiwi townships like weeds. Local mayors are talking about changing national planning and building regulations to keep lighting low. Even government entities like Waka Kotahi, New Zealand's transport agency, are looking to install IDA-compliant lighting on state highways that fall within dark sky areas.</p>
+            <p>Some New Zealanders, like Kaye and Luke Paardekooper, owners of Mount Cook Lakeside Retreat, have taken matters into their own hands. In 2015, the pair added a wine cellar and observatory to their 66-hectare luxury resort on the clifftop of Lake Pūkaki in Aoraki Mackenzie.</p>
+            <p>Initially, it was aimed at overseas tourists wanting an intimate, upmarket astrotourism experience to complement the kind of larger group tour they might experience at the Dark Sky Project. Based in the nearby township of Tekapo, the Dark Sky Project promotes the dark skies of the region, sharing both Māori and Western ideas about astronomy, and taking visitors to the University of Canterbury Mt John Observatory.</p>
+            <p>But the couple admit they too love to rug up, open the roof and simply gaze at the quiet blackness overhead. The ability to do that is what they want to hold on to.</p>
+            <h3>The kind of sleep you get here, particularly during the long nights of winter, honestly, is second to none</h3>
+            <p>On a recent overnight stay, Kaye told me the country's bid for dark nation status, to them, was about much more than the likely boost to tourism. "Dark skies are great for wellbeing - that's what we tell anyone who'll listen. Research by the Royal Society [of New Zealand] on the effects of blue light, for example, shows too much blue light at the wrong time of day can disrupt our sleep, our immunity, our hormonal balance and even our mood," said Kaye, who's spent more than six years on her local dark sky association board.</p>
+            <p>"We don't have that light pollution here, which is why it needs preserving. Without the dominance of blue light, it's much easier to return to your natural circadian rhythms. The kind of sleep you get here, particularly during the long nights of winter, honestly, is second to none."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Dark Sky Project promotes the dark skies of the region and shares both Māori and Western ideas about astronomy (Credit: Jacqui Gibson)</figcaption>
+            </figure>
+            <p>For Aoraki Mackenzie Dark Sky Reserve Board member Victoria Campbell, of Ngāi Tahu tribal descent, the country's growing obsession with the night sky is encouraging for other reasons.</p>
+            <p>"It's made Kiwis curious about their night sky heritage and the cultural traditions that underpin it," she said. "New Zealanders come from a long line of astronomers, starting with Polynesian explorers like Rākaihautū who discovered Aotearoa (New Zealand) in an ocean-going waka (canoe) using the stars, sun and moon. British explorer James Cook used the same night sky to get here. In pre-colonial times, Māori used a unique calendar — one that began each year with the rising of the Matariki star cluster — to reflect on the year that had gone and plan for the year ahead."</p>
+            <p>On 24 June 2022, thanks to a 2020 pre-election promise by Prime Minister Jacinda Ardern, New Zealanders will celebrate Makariki - the mid-winter constellation that marks the Māori New Year - as a public holiday for the first time. About an hour before sunrise, people from all walks of life will come together, remember loved ones who have passed and look to the stars for hope and inspiration before sharing kai (food) and a hot cup of tea.</p>
+            <p>For many, like Campbell, the revival of Matariki may be the country's boldest, best expression of dark sky nationhood yet.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

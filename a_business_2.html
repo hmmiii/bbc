@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_business_2" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Business</mark>
+                <h2>Cost of living: Heineken to put up beer prices as costs soar</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Heineken (GETTY IMAGES)</figcaption>
+            </figure>
+            <p><strong>Heineken, the world's second largest brewer, has warned that it will increase the price of its beers due to the impact of inflation.</strong></p>
+            <p>The firm, which sells brand including Strongbow cider, Amstel and Europe's best-selling lager, Heineken, blamed soaring ingredient and energy costs.</p>
+            <p>It comes after the founder of Cobra beer also said its prices will rise because of "vicious" cost pressures.</p>
+            <p>Neither firm has said how much their prices will go up by.</p>
+            <p>Heineken's chief executive Dolf van den Brink said: "These kind of price increases and inflation, I think we have not seen in a generation."</p>
+            <p>He added that putting up prices could lead to "softer beer consumption" as drinkers reined in their spending due to soaring living costs.</p>
+            <ul>
+                <li>Beer prices will have to rise, says Cobra founder</li>
+                <li>Why are prices rising so quickly?</li>
+                <li>Living costs at 30-year high as households squeezed</li>
+            </ul>
+            <p>Inflation in the UK hit a new 30-year high in January as energy prices, fuel and food costs continued to rise. The cost of living is now rising faster than wages and is expected to climb above 7% this year.</p>
+            <p>Marmite-maker Unilever, the bakers Greggs and sandwich chain Pret a Manger have all warned on price rises as their costs rises.</p>
+            <p>Heineken said its input costs were now set to rise by a mid-teens percentage due to the price of barley doubling compared to a year ago and aluminium prices going up by around 50%.</p>
+            <p>Transport and energy costs have also risen for the business.</p>
+            <h3>'Uncertain year'</h3>
+            <p>It comes after a strong year for the Dutch brewer, when consumers splashed out on alcohol during the pandemic.</p>
+            <p>Heineken said that its net revenues increased by 11.3% to 21.9 billion euros (£13.4 billion) in 2021, with sales of its Heineken-branded beer up by 17.4%.</p>
+            <p>The brewer's profits rose by 80%, although it said the coming year remained "uncertain" due to "inflationary challenges".</p>
+            <p>Huw Dixon, Professor of Economics at Cardiff University and the National Institute of Economic and Social Research, questioned the brewer's decision to put up prices.</p>
+            <p>"Heineken's strong sales seem to indicate that their profit margins aren't being squeezed even though there might be certain costs that are rising," he told the BBC.</p>
+            <p>"It's very hard for us as experts to say whether Heineken's increased production costs are wholly reflected in higher prices for customers."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_culture_10" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Culture</mark>
+                <h2>Saudi's lineage of interior stylists</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>In the remote, mountainous region of 'Asir, women's ingenuity can be seen in a 200-year-old artform that's passed from mother to daughter.</h3>
+            <p>If you walk through Rijal Almaa heritage village in the heart of 'Asir province in south-western Saudi Arabia, you'll soon notice how different this remote region is from the rest of the country. Instead of a monochromatic desert landscape, there is colour everywhere, from the green mountains that surround the village to the brightly hued flower wreaths that 'Asiri men wear on their heads.
+
+            </p>
+            <hr>
+            <p><strong>Why do you love the world?</strong></p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>50 REASONS TO LOVE THE WORLD - 2021</figcaption>
+            </figure>
+            <p>"Because when I meet people through my travels or when foreigners from different regions of the world come to my studio [in 'Asir]… it is a beautiful coincidence that there are great similarities in heritage," - Afaf bin Dajem Al Qahtani, artist</p>
+            <hr>
+            <p>Up until the late 20th Century, autonomous tribes lived in "hanging villages" across 'Asir - settlements in the rugged highlands that were only accessible by rope ladders. The harsh terrain, geographic isolation and limited access to resources gave birth to a unique self-sustaining culture that is little-known to the outside world.</p>
+            <p>Perched on steep, verdant terrain, 10th-Century Rijal Almaa is a cluster of some 60 stone fortresses rising approximately 20m in height. Once a commercial trade centre between Yemen and Hejaz (and connected to the Levant by the Red Sea), the former hanging village is now a tourist attraction and a popular summer destination for locals when temperatures across the rest of Saudi Arabia run as high as 40C. During high season, visitors can enjoy traditional dance performances, a lightshow on the history of the region and local handicraft markets.</p>
+            <p>They can also marvel at a 200-year-old artform that is central to female 'Asiri identity: Al-Qatt Al-Asiri.</p>
+            <p>While men built the skyscraper-like houses typical to the region (and to neighbouring Yemen), women's ingenuity can be seen inside the homes, on stairway entrances and the interior walls of majlis (guest rooms) that are painted with colourful, geometric designs.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Now a heritage village, Rijal Almaa was once a regional trade centre between Yemen and Hejaz (Credit: Frizi/Getty Images)</figcaption>
+            </figure>
+            <p>Al-Qatt (from the Arabic word for "to write" and pronounced "gath") Al-Asiri is a creative process that's passed down from one generation of women to the next, and involves creating intricate shapes like triangles, squares, diamonds and dots using black crosslines set against white gypsum walls. These shapes - reminiscent of designs that can be found across Indian, North African and Latin American culture - are then coloured in with vivid green, ochre yellow and deep orange paints that were traditionally made from the indigenous resources - mountains, trees and flowers - of 'Asir.</p>
+            <p>Afaf bin Dajem Al Qahtani, a local artist and educator, creates Al-Qatt murals on canvas that are displayed at global exhibitions, including the ongoing Expo 2020 in Dubai. In her studio, located in the governorate of Sarat Ubaida, around 140km north of Rijal Almaa village, Al-Qatt designs adorn the walls in elaborate patterns of red inverted triangles and thick green horizontal lines. "When painting Al-Qatt, I find it to be an outlet…away from tension, problems and annoyances of the outside world," she said.</p>
+            <p>Al Qahtani grew up surrounded by Al-Qatt art. She recalls several aunts in her family who used to paint their house. But it was only in 2018, at a workshop organised by the Ministry of Culture, that she had an opportunity to reconnect with her roots and learn about the rich cultural significance of the artform.</p>
+            <p>While Al Qahtani now uses synthetic and acrylic paints, she told me how previous generations of women used only natural colours extracted from indigenous trees, rocks and vegetable gum. Her aunt, Mahra Al Qahtani, used three basic colours: black, red and white.</p>
+            <p>"Carbon from the flame of a candle was grinded and used to paint the outline of the design," she explained. "Red was obtained from two sources: Al Meshgah, ochre made from rocks found on 'Asir mountains; and carmine, the red pigment obtained from cochineal on tree branches."</p>
+            <p>White was created from limewash obtained from gypsum, also found on 'Asir mountains. Other hues like yellow, came from turmeric root or pomegranate peel, and green came from freshly cut grass.</p>
+            <p>"As trade routes developed, indigo was imported from India or Iran. With the advent of chemical colours, women resorted to using newer colours in their designs," she said.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Local artist Afaf bin Dajem Al Qahtani creates Al-Qatt murals that are displayed at global exhibitions (Credit: Afaf bin Dajem Al Qahtani)</figcaption>
+            </figure>
+            <p>As for the brush, her aunt used myrrh twigs or miswak (Salvadora persica twigs, commonly used in Muslim countries to clean teeth). "They chew at the tip of the branch and use it as a brush or add animal hair to the tip," she said. For bigger spaces like staircases, the brush was swapped for a piece of cloth.</p>
+            <p>While Al-Qatt paintings are freehand and spontaneous, certain specific patterns are replicated by all artists. Alkaf, for instance, are horizontal lines painted at the bottom of a wall and women use their fingers to measure the width of the design. Al Batra - with its wide vertical stripes and white spaces - are meant to break the repetitive designs and draw the viewers' attention to a specific section of the mural.</p>
+            <p>The motifs have names that are inspired by the landscape and life of 'Asir: Balsana is a mesh-like design with dots in the centre that signifies wheat bran, which is a staple crop here; while Al Mahareeb (plural of Mehrab) is the half-circle used to denote the direction of Mecca.</p>
+            <p>Jameela Matter, an artist and researcher from Abha, the capital of 'Asir, says that Al-Qatt painting is not something that you learn as an art, but something you grow up with. "Ever since I was a child, I saw my grandmother and mother doing it," she said. "Decorating their house and making it beautiful was a natural and necessary thing for them."</p>
+            <p>On Eid ul-Fitr, women would welcome guests to their newly painted or refurbished majlis. Matter remembers helping her mother. "She would draw the shape and give me instructions like 'Fill in yellow here or blue there.'"</p>
+            <blockquote>There is so much love and passion in creating this art, it's inspiring</blockquote>
+            <p>As well as a tradition passed on from mothers to daughters through practice and observation, Al-Qatt is also a source of pride for 'Asiri women. "The villagers would discuss amongst themselves 'Oh so and so, her house is very beautiful!'," Matter said.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Women traditionally painted their designs in natural colours derived from the landscape (Credit: Eric Lafforgue/Alamy)</figcaption>
+            </figure>
+            <p>Rehaf Gassas, head of the Heritage Department at the Saudi Heritage Preservation Society (an NGO that works closely with the Ministry of Culture) believes that Al-Qatt is more than just an artform. "It is a social practice that brings the community together and a way for grandmothers and mothers to pass on [knowledge] to their children."</p>
+            <p>"You can witness a sense of pride in local communities when they welcome you to a house decorated by them. There is so much love and passion in creating this art, it's inspiring," she added.</p>
+            <p>Despite Al-Qatt being inscribed on Unesco's list of Intangible Cultural Heritage of Humanity in 2017, Al Qahtani estimates that only around 50 women still practice it today. In an effort to preserve the artform, governmental bodies have been conducting training workshops and mentoring a new generation of female artists. In the private sector, cooperatives and individuals have set up museums in their ancestral homes and educate visitors on their family's lineage of Al-Qatt painters.</p>
+            <p>"We are very proud of Al-Qatt because it is our identity," said Matter. "It is a women's artform that has led the way in creating a [unique] identity for the 'Asir region; it not always easy for women."</p>
+            <hr>
+            <p><strong>WHERE TO SEE AL-QATT AL-ASIRI</strong></p>
+            <p>Since Al-Qatt Al-Asiri is generally found in private homes, visitors should head to the Rijal Almaa Museum, housed in Al Awan fort of the heritage village, where they can see restored Al-Qatt murals.</p>
+            <hr>
+            <p>She added that previously Al-Qatt might have been considered "old-fashioned" by younger generations, but since the Unesco designation, they too take immense pride in it. "They made tattoos and face masks [during Covid-19] with Al-Qatt designs," she said with a chuckle.</p>
+            <p>While knick-knacks like dallahs (Arabic coffee pots), incense burners and earthen pots with Al-Qatt designs have permeated local souqs, the designs have also found their way to high-end fashion where they are bought for their unique 'Asiri and Saudi identity. Hindamme, a luxury apparel brand and Tamashee, a high-end shoe brand both have Al-Qatt product lines.</p>
+            <p>Back in Sarat Ubaida, Al Qahtani explained that the women of 'Asir take pride in everything they have inherited and the legacy they pass on to the next generation. "'Asir means 'difficult' in Arabic," she said. "Just like the landscape, its women are resilient, creative and patient."</p>
+            <p>"Women of 'Asir love adornment, art and innovation. And it's not unusual, because our region is beautiful and inspiring."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

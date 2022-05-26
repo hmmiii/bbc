@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="home" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui" href="#">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <div class="infoBox">
+        <div class="infoContainer">
+            <div>
+                <section>
+                    <h3 class="heading small">Weather</h3>
+                    <ul>
+                        <li>
+                            <span>Yesterday</span>
+                            <strong>30°C</strong>
+                            <span>24°C</span>
+                        </li>
+                        <li>
+                            <span>Today</span>
+                            <strong>30°C</strong>
+                            <span>24°C</span>
+                        </li>
+                        <li>
+                            <span>Tomorrow</span>
+                            <strong>30°C</strong>
+                            <span>24°C</span>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3 class="heading small">Updated Articles</h3>
+                    <strong>1,520</strong>
+                </section>
+            </div>
+            <section>
+                <h3 class="heading small">COVID-19 Statistics</h3>
+                <ul>
+                    <li>
+                        <span>Coronavirus Cases</span>
+                        <strong>427,043,571</strong>
+                    </li>
+                    <li>
+                        <span>Deaths</span>
+                        <strong>5,912,762</strong>
+                    </li>
+                    <li>
+                        <span>Recovered</span>
+                        <strong>354,288,629</strong>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <section class="plainBox">
+        <h2 class="heading large">Welcome to BBC.com</h2>
+        <ul class="gridView x3 column">
+            <li class="display large">
+                <img src="images/thumb_world_1.jpg" alt="Article Image">
+                <div>
+                    <mark>World</mark>
+                    <h3><a href="a_world_1.html">Djokovic breaks silence over vaccine refusal</a></h3>
+                    <p>The tennis star says he's not against vaccination in principle but wants to be "in tune" with his body.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_world_1.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="grid">
+                <img src="images/thumb_world_2.jpg" alt="Article Image">
+                <div>
+                    <mark>UK</mark>
+                    <h3><a href="a_world_2.html">Andrew settles civil case but questions over payout</a></h3>
+                    <p>There are calls for clarity over Prince Andrew's role in public life and how he will fund a financial settlement, after settling the US civil sexual assault case brought by Virginia Giuffre.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_world_2.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="grid">
+                <img src="images/thumb_world_3.jpg" alt="Article Image">
+                <div>
+                    <mark>Europe</mark>
+                    <h3><a href="a_world_3.html">Still hope for Ukraine agreement, say US and UK</a></h3>
+                    <p>The US and UK leaders have said not all hope is lost for a diplomatic solution to the Ukraine crisis but warned the situation remained fragile.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_world_3.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="grid">
+                <img src="images/thumb_discovery_1.png" alt="Article Image">
+                <div>
+                    <mark>Travel</mark>
+                    <h3><a href="a_discovery_1.html">A ski town 'stuck in the wrong nation'</a></h3>
+                    <p>There is a mountain in the Allgäu Alps that is probably the most ludicrous in all of Europe. It is called the Sorgschrofen, it is 1,636m high, and it is marked by a Gipfelkreuz, or summit cross, which stands above a sheer-sided cliff face of white-webbed rock.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_discovery_1.html" class="readMore">Read More</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="overflowBox">
+        <div>            
+            <h2 class="heading large">News</h2>
+            <ul class="gridView">
+                <li class="plain vertical">
+                    <img src="images/thumb_world_4.jpg" alt="Article Image">
+                    <div>
+                        <mark>World</mark>
+                        <h3><a href="a_world_4.html">Trudeau vows to freeze protesters' bank accounts</a></h3>
+                        <p>Canada's prime minister says police will also be given "more tools" to imprison or fine demonstrators.</p>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_4.html" class="readMore">Read More</a>
+                    </div>
+                </li>
+                <li class="plain vertical">
+                    <img src="images/thumb_science_1.jpg" alt="Article Image">
+                    <div>
+                        <mark>Science</mark>
+                        <h3><a href="a_science_1.html">Drugs in rivers threaten world health - study</a></h3>
+                        <p>Paracetamol, nicotine, caffeine and epilepsy and diabetes drugs were widely detected, research finds.</p>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_science_1.html" class="readMore">Read More</a>
+                    </div>
+                </li>
+                <li class="plain vertical">
+                    <img src="images/thumb_world_5.jpg" alt="Article Image">
+                    <div>
+                        <mark>World</mark>
+                        <h3><a href="a_world_5.html">Ottawa police chief resigns amid protests</a></h3>
+                        <p>Canada's capital city has been paralysed by more than two weeks of anti-vaccine mandate protests. </p>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_5.html" class="readMore">Read More</a>
+                    </div>
+                </li>
+                <li class="plain vertical">
+                    <img src="images/thumb_world_6.jpg" alt="Article Image">
+                    <div>
+                        <mark>Europe</mark>
+                        <h3><a href="a_world_6.html">EU balance of power knocked by war in Ukraine</a></h3>
+                        <p>Freshly re-elected Emmanuel Macron chose 9 May to come to dinner in Berlin. An auspicious date in EU circles.</p>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_6.html" class="readMore">Read More</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="newsContainer">
+        <section class="plainBox">
+            <div>
+                <h2 class="heading large">What's News</h2>
+                <ul class="tab">
+                    <li class="active" data-tabName="tabWorld">WORLD</li>
+                    <li data-tabName="tabCoronavirus">COVID-19</li>
+                    <li data-tabName="tabBusiness">BUSINESS</li>
+                    <li data-tabName="tabScience">SCIENCE</li>
+                </ul>
+            </div>
+            <ul id="tabWorld" class="gridView x4 column active">
+                <li class="display large">
+                    <img src="images/thumb_world_14.jpg" alt="Article Image">
+                    <div>
+                        <mark>World</mark>
+                        <h3><a href="a_world_14.html">Ukrainians wary of Russian claims of withdrawal</a></h3>
+                        <p>Kyiv says it wants to see evidence that Russia really is moving troops away from the border.</p>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_14.html" class="readMore">Read More</a>
+                    </div>
+                </li>
+                <li class="rankRect">
+                    <img src="images/thumb_world_7.jpg" alt="Article Image">
+                    <div>
+                        <mark>Australia</mark>
+                        <h3><a href="a_world_7.html">Australia asylum seekers held 689 days on average</a></h3>
+                        <p>Teaching people about achieving sexual pleasure can help sell safe-sex messages, say researchers from the World Health Organization.</p>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_7.html" class="readMore">Read More</a>
+                    </div>
+                </li>
+                <li class="rankRect">
+                    <img src="images/thumb_world_8.jpg" alt="Article Image">
+                    <div>
+                        <mark>Asia</mark>
+                        <h3><a href="a_world_8.html">Teacher who raped 13 students gets life in jail</a></h3>
+                        <p>Teaching people about achieving sexual pleasure can help sell safe-sex messages, say researchers from the World Health Organization.</p>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_8.html" class="readMore">Read More</a>
+                    </div>
+                </li>
+                <li class="rankRect">
+                    <img src="images/thumb_world_9.jpg" alt="Article Image">
+                    <div>
+                        <mark>World</mark>
+                        <h3><a href="a_world_9.html">Families of Sandy Hook victims settle… with Remington</a></h3>
+                        <p>Teaching people about achieving sexual pleasure can help sell safe-sex messages, say researchers from the World Health Organization.</p>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_9.html" class="readMore">Read More</a>
+                    </div>
+                </li>
+                <li class="rankRect">
+                    <img src="images/thumb_world_10.jpg" alt="Article Image">
+                    <div>
+                        <mark>Europe</mark>
+                        <h3><a href="a_world_10.html">Hungary’s Orban faces toughest challenger so far</a></h3>
+                        <p>Teaching people about achieving sexual pleasure can help sell safe-sex messages, say researchers from the World Health Organization.</p>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_10.html" class="readMore">Read More</a>
+                    </div>
+                </li>
+            </ul>
+            <ul id="tabCoronavirus" class="gridView x4 column">
+                <li class="display large">
+                    <img src="images/thumb_coronavirus_1.jpg" alt="Article Image">
+                    <div>
+                        <mark>Coronavirus</mark>
+                        <h3><a href="a_coronavirus_1.html">I was nervous using a fake Covid-19 test certificate</a></h3>
+                        <p>Coronavirus has changed the way we travel but why are people buying fake Covid fake certificates?</p>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_coronavirus_1.html" class="readMore">Read More</a>
+                    </div>
+                </li>
+                <li class="rankRect">
+                    <img src="images/thumb_world_11.jpg" alt="Article Image">
+                    <div>
+                        <mark>Europe</mark>
+                        <h3><a href="a_world_11.html">Europe's oldest person survives Covid aged 116</a></h3>
+                        <p>Having battled coronavirus, French nun Sister Andre will celebrate her 117th birthday this week.</p>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_11.html" class="readMore">Read More</a>
+                    </div>
+                </li>
+                <li class="rankRect">
+                    <img src="images/thumb_world_12.jpg" alt="Article Image">
+                    <div>
+                        <mark>UK</mark>
+                        <h3><a href="a_world_12.html">Five countries, five winter lockdowns: Tips on coping</a></h3>
+                        <p>Tips on lockdown life in cold weather, from keeping your windows open to watching films in the bath.</p>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_12.html" class="readMore">Read More</a>
+                    </div>
+                </li>
+                <li class="rankRect">
+                    <img src="images/thumb_coronavirus_2.jpg" alt="Article Image">
+                    <div>
+                        <mark>Coronavirus</mark>
+                        <h3><a href="a_coronavirus_2.html">Young shielders: Vaccine is a ticket back to normal</a></h3>
+                        <p>Shielders have been receiving their first coronavirus jabs as part of the next stage of the rollout.</p>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_coronavirus_2.html" class="readMore">Read More</a>
+                    </div>
+                </li>
+                <li class="rankRect">
+                    <img src="images/thumb_coronavirus_3.jpg" alt="Article Image">
+                    <div>
+                        <mark>Coronavirus</mark>
+                        <h3><a href="a_coronavirus_3.html">Recordings show lockdown London quieter than 1928</a></h3>
+                        <p>Recordings of silent London streets during the lockdown are to become part of the collection of the Museum of London.</p>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_coronavirus_3.html" class="readMore">Read More</a>
+                    </div>
+                </li>
+            </ul>
+            <ul id="tabBusiness" class="gridView x4 column">
+                <li class="display large">
+                    <img src="images/thumb_business_2.jpg" alt="Article Image">
+                    <div>
+                        <mark>Business</mark>
+                        <h3><a href="a_business_2.html">Heineken to put up beer prices as costs soar</a></h3>
+                        <p>The brewer blames rising inflation, adding that people may drink less beer as a result.</p>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_business_2.html" class="readMore">Read More</a>
+                    </div>
+                </li>
+                <li class="rankRect">
+                    <img src="images/thumb_world_13.jpg" alt="Article Image">
+                    <div>
+                        <mark>World</mark>
+                        <h3><a href="a_world_13.html">Paramount bets big on new streaming shows</a></h3>
+                        <p>Paramount+ reveals a huge slate of new shows and films - but do we need another streaming service?</p>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_14.html" class="readMore">Read More</a>
+                    </div>
+                </li>
+                <li class="rankRect">
+                    <img src="images/thumb_business_3.jpg" alt="Article Image">
+                    <div>
+                        <mark>Business</mark>
+                        <h3><a href="a_business_3.html">Disney appoints executive to lead metaverse plans</a></h3>
+                        <p>Technology giants, including Meta and Microsoft, are pouring billions of dollars into the metaverse.</p>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_business_3.html" class="readMore">Read More</a>
+                    </div>
+                </li>
+                <li class="rankRect">
+                    <img src="images/thumb_business_4.jpg" alt="Article Image">
+                    <div>
+                        <mark>Business</mark>
+                        <h3><a href="a_business_4.html">How much Russian money is there in the UK?</a></h3>
+                        <p>The UK is considering sanctions against Russian interests, but what action can be taken?</p>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_business_4.html" class="readMore">Read More</a>
+                    </div>
+                </li>
+                <li class="rankRect">
+                    <img src="images/thumb_business_5.jpg" alt="Article Image">
+                    <div>
+                        <mark>Business</mark>
+                        <h3><a href="a_business_5.html">Airbnb: City travel almost at pre-pandemic level</a></h3>
+                        <p>Teaching people about achieving sexual pleasure can help sell safe-sex messages, say researchers from the World Health Organization.</p>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_business_5.html" class="readMore">Read More</a>
+                    </div>
+                </li>
+            </ul>
+            <ul id="tabScience" class="gridView x4 column">
+                <li class="display large">
+                    <img src="images/thumb_science_2.jpg" alt="Article Image">
+                    <div>
+                        <mark>Science</mark>
+                        <h3><a href="a_science_2.html">More than eight million trees lost in UK winter</a></h3>
+                        <p>How eight million trees have already been brought down this winter, with thousands more threatened by storms.</p>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_science_2.html" class="readMore">Read More</a>
+                    </div>
+                </li>
+                <li class="rankRect">
+                    <img src="images/thumb_science_3.jpg" alt="Article Image">
+                    <div>
+                        <mark>Science</mark>
+                        <h3><a href="a_science_3.html">'Impressive' stick insect is both male and female</a></h3>
+                        <p>Charlie the pet stick insect is revealed to be both male and female after moulting.</p>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_science_3.html" class="readMore">Read More</a>
+                    </div>
+                </li>
+                <li class="rankRect">
+                    <img src="images/thumb_science_1.jpg" alt="Article Image">
+                    <div>
+                        <mark>Science</mark>
+                        <h3><a href="a_science_1.html">Drugs in rivers threaten world health - study</a></h3>
+                        <p>Paracetamol, nicotine, caffeine and epilepsy and diabetes drugs were widely detected, research finds.</p>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_science_1.html" class="readMore">Read More</a>
+                    </div>
+                </li>
+                <li class="rankRect">
+                    <img src="images/thumb_science_4.jpg" alt="Article Image">
+                    <div>
+                        <mark>Science</mark>
+                        <h3><a href="a_science_4.html">Rocket part set to hit Moon 'not from SpaceX'</a></h3>
+                        <p>Astronomers no longer believe a rocket stage that's due to hit the Moon was from Elon Musk's SpaceX.</p>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_science_4.html" class="readMore">Read More</a>
+                    </div>
+                </li>
+                <li class="rankRect">
+                    <img src="images/thumb_science_5.jpg" alt="Article Image">
+                    <div>
+                        <mark>Science</mark>
+                        <h3><a href="a_science_5.html">Modern star maps hint at famous wreck's location</a></h3>
+                        <p>Teaching people about achieving sexual pleasure can help sell safe-sex messages, say researchers from the World Health Organization.</p>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_science_5.html" class="readMore">Read More</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="plainBox">
+            <h2 class="heading medium">Repoter's News</h2>
+            <ul class="gridView column">
+                <li class="rankCircle">
+                    <img src="images/thumb_repoter_1.jpg" alt="Article Image">
+                    <div>
+                        <mark>Business</mark>
+                        <h3><a href="a_business_1.html">US consumer prices rise at fastest rate since 1982</a></h3>
+                        <p>Teaching people about achieving sexual pleasure can help sell safe-sex messages, say researchers from the World Health Organization.</p>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_business_1.html" class="readMore">Read More</a>
+                    </div>
+                </li>
+                <li class="rankCircle">
+                    <img src="images/thumb_repoter_2.jpg" alt="Article Image">
+                    <div>
+                        <mark>World</mark>
+                        <h3><a href="a_world_15.html">How might Canada's trucker protest end?</a></h3>
+                        <p>Teaching people about achieving sexual pleasure can help sell safe-sex messages, say researchers from the World Health Organization.</p>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_15.html" class="readMore">Read More</a>
+                    </div>
+                </li>
+                <li class="rankCircle">
+                    <img src="images/thumb_repoter_3.jpg" alt="Article Image">
+                    <div>
+                        <mark>Science</mark>
+                        <h3><a href="a_science_7.html">'Alien-like' life thrives on dead matter in deep</a></h3>
+                        <p>Teaching people about achieving sexual pleasure can help sell safe-sex messages, say researchers from the World Health Organization.</p>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_science_7.html" class="readMore">Read More</a>
+                    </div>
+                </li>
+                <li class="rankCircle">
+                    <img src="images/thumb_repoter_4.jpg" alt="Article Image">
+                    <div>
+                        <mark>World</mark>
+                        <h3><a href="a_world_16.html">Why are certain books being banned in US?</a></h3>
+                        <p>Teaching people about achieving sexual pleasure can help sell safe-sex messages, say researchers from the World Health Organization.</p>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_16.html" class="readMore">Read More</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <div class="postCarouselBBox">
+        <div>
+            <h2 class="heading large">Editor’s Picks</h2>
+            <div class="controller">
+                <span class="btn_prev"></span>
+                <span class="btn_next"></span>
+            </div>
+        </div>
+        <ul class="gridView">
+            <li class="plain vertical">
+                <img src="images/thumb_how-we-work_1.png" alt="Article Image">
+                <div>
+                    <mark>Worklife</mark>
+                    <h3><a href="a_how-we-work_1.html">Workers have power - what comes next?</a></h3>
+                    <p>Workers have leverage now, but will it translate to long-term gains?</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_how-we-work_1.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_discovery_1.png" alt="Article Image">
+                <div>
+                    <mark>Travel</mark>
+                    <h3><a href="a_discovery_1.html">A ski town stuck in the wrong nation</a></h3>
+                    <p>Life for the locals is far from straightforward</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_discovery_1.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_world_18.png" alt="Article Image">
+                <div>
+                    <mark>News</mark>
+                    <h3><a href="a_world_18.html">Agatha Christie’s race problem</a></h3>
+                    <p>The trouble with adapting her classic crime novels for a modern age</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_world_18.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_future-planet_1.png" alt="Article Image">
+                <div>
+                    <mark>Future Planet</mark>
+                    <h3><a href="a_future-planet_1.html">The animal 'sixth sense' for disaster</a></h3>
+                    <p>For millennia, people across the globe have reported alarmed animal behaviour in the run-up to natural disasters. Could these signals be used to warn us of impending catastrophes?</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_future-planet_1.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_coronavirus_4.jpg" alt="Article Image">
+                <div>
+                    <mark>News</mark>
+                    <h3><a href="a_coronavirus_4.html">Camilla tests positive for coronavirus</a></h3>
+                    <p>The Duchess of Cornwall is now self-isolating, days after Prince Charles tested positive for Covid</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_coronavirus_4.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_world_19.jpg" alt="Article Image">
+                <div>
+                    <mark>News</mark>
+                    <h3><a href="a_world_19.html">America to begin Eurovision-style song contest</a></h3>
+                    <p>The rapper and the singer will anchor a US show modelled on the long-running Eurovision Song Contest</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_world_19.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_science_4.jpg" alt="Article Image">
+                <div>
+                    <mark>News</mark>
+                    <h3><a href="a_science_4.html">Rocket part set to hit Moon ‘not from SpaceX’</a></h3>
+                    <p>Astronomers no longer believe a rocket stage that's due to hit the Moon was from Elon Musk's SpaceX</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_4.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_discovery_2.png" alt="Article Image">
+                <div>
+                    <mark>Travel</mark>
+                    <h3><a href="a_discovery_2.html">Canada’s rare new adventure</a></h3>
+                    <p>It's a new brand of ski trip in a new era of conscious climate travel</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_discovery_2.html" class="readMore">Read More</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="fullSlideBox">
+        <ul class="fullSlide">
+            <li>
+                <div>
+                    <small>Future Planet</small>
+                    <h2><a href="a_future-planet_2.html">The country embracing life on water</a></h2>
+                    <time datetime="2022-01-01">today</time>
+                </div>
+                <img src="images/thumb_future-planet_2.png" alt="background image">
+            </li>
+            <li>
+                <div>
+                    <small>Future Planet</small>
+                    <h2><a href="a_future-planet_3.html">The climate benefits of tiny islands</a></h2>
+                    <time datetime="2022-01-01">today</time>
+                </div>
+                <img src="images/thumb_future-planet_3.png" alt="background image">
+            </li>
+            <li>
+                <div>
+                    <small>Future Planet</small>
+                    <h2><a href="a_future-planet_4.html">How a desert city hulds back its sand</a></h2>
+                    <time datetime="2022-01-01">today</time>
+                </div>
+                <img src="images/thumb_future-planet_4.png" alt="background image">
+            </li>
+            <li>
+                <div>
+                    <small>Future Planet</small>
+                    <h2><a href="a_future-planet_5.html">The puzzle of Mexico's ageing oaks</a></h2>
+                    <time datetime="2022-01-01">today</time>
+                </div>
+                <img src="images/thumb_future-planet_5.png" alt="background image">
+            </li>
+            <li>
+                <div>
+                    <small>Future Planet</small>
+                    <h2><a href="a_future-planet_6.html">The environmental case for buying a coal mine</a></h2>
+                    <time datetime="2022-01-01">today</time>
+                </div>
+                <img src="images/thumb_future-planet_6.png" alt="background image">
+            </li>
+            <li>
+                <div>
+                    <small>Future Planet</small>
+                    <h2><a href="a_future-planet_7.html">The rhino that became an icon for peace</a></h2>
+                    <time datetime="2022-01-01">today</time>
+                </div>
+                <img src="images/thumb_future-planet_7.png" alt="background image">
+            </li>
+        </ul>
+        <div>
+            <div class="controllerFS">
+                <span class="btn_prevFS"></span>
+                <span class="btn_nextFS"></span>
+            </div>
+            <ul class="thumbPagerFS">
+                <li>
+                    <a data-slide-index="0">
+                        <img src="images/thumb_future-planet_2.png" alt="Article Image">
+                        <strong>The country embracing life on water</strong>
+                        <time datetime="2022-01-01">today</time>
+                    </a>
+                </li>
+                <li>
+                    <a data-slide-index="1">
+                        <img src="images/thumb_future-planet_3.png" alt="Article Image">
+                        <strong>The climate benefits of tiny islands</strong>
+                        <time datetime="2022-01-01">today</time>
+                    </a>
+                </li>
+                <li>
+                    <a data-slide-index="2">
+                        <img src="images/thumb_future-planet_4.png" alt="Article Image">
+                        <strong>How a desert city hulds back its sand</strong>
+                        <time datetime="2022-01-01">today</time>
+                    </a>
+                </li>
+                <li>
+                    <a data-slide-index="3">
+                        <img src="images/thumb_future-planet_5.png" alt="Article Image">
+                        <strong>The puzzle of Mexico's ageing oaks</strong>
+                        <time datetime="2022-01-01">today</time>
+                    </a>
+                </li>
+                <li>
+                    <a data-slide-index="4">
+                        <img src="images/thumb_future-planet_6.png" alt="Article Image">
+                        <strong>The environmental case for buying a coal mine</strong>
+                        <time datetime="2022-01-01">today</time>
+                    </a>
+                </li>
+                <li>
+                    <a data-slide-index="5">
+                        <img src="images/thumb_future-planet_7.png" alt="Article Image">
+                        <strong>The rhino that became an icon for peace</strong>
+                        <time datetime="2022-01-01">today</time>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <section class="plainBox">
+        <h2 class="heading large">More around the BBC</h2>
+        <ul class="gridView x3 column">
+            <li class="display medium">
+                <img src="images/thumb_science_10.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_10.html">74% of ransomware revenue goes to Russian hackers</a></h3>
+                    <p>Crypto-currency researchers say more than $400m of cyber-crime funds go to Russian gangs.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_science_10.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_world_20.jpg" alt="Article Image">
+                <div>
+                    <mark>World</mark>
+                    <h3><a href="a_world_20.html">Eccentric sewage rebels head for the big screen</a></h3>
+                    <p>When a group of middle-aged swimming friends from Scarborough became worried about sewage in the sea in the 1980s, they started staging eccentric stunts to highlight their cause, and even took on the government. Now, their story is being turned into a film.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_world_20.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_business_6.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_6.html">How nurseries are keeping track of their toddlers</a></h3>
+                    <p>Misty Ardouin set up her nursery, Nestlings, in Cardiff City centre in 2019. At the end of each day, they would have a "good sit down" in the playroom with parents to catch-up on everything the children had been doing.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="/a_business_6.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_science_6.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_6.html">Record high deforestation of Amazon in January</a></h3>
+                    <p>The number of trees cut down in the Brazilian Amazon in January far exceeded deforestation for the same month last year, according to government satellite data.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_6.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_science_8.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_8.html">Lessons in pleasure boost good safe sex</a></h3>
+                    <p>Teaching people about achieving sexual pleasure can help sell safe-sex messages, say researchers from the World Health Organization.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_8.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_world_21.jpg" alt="Article Image">
+                <div>
+                    <mark>World</mark>
+                    <h3><a href="a_world_21.html">White House left behind as states drop Covid rules</a></h3>
+                    <p>The White House is facing pressure to revise its position on mask wearing as pandemic restrictions are eased in a number of US states.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_world_21.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_science_9.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_9.html">James Webb telescope begins to focus its 'big eye'</a></h3>
+                    <p>It's a confusing but amazing image.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_9.html" class="readMore">Read More</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <div class="progressSlideBox">
+        <ul class="progressSlide">
+            <li>
+                <div>
+                    <small>World in Picture</small>
+                    <h2><a href="a_in-pictures_1.html">Artist creates Valentine's Day light paintings</a></h2>
+                    <time datetime="2022-01-01">today</time>
+                </div>
+                <img src="images/thumb_in-pictures_1.jpg" alt="background image">
+            </li>
+            <li>
+                <div>
+                    <small>World in Picture</small>
+                    <h2><a href="a_in-pictures_2.html">Africa's top shots: Gap-toothed smiles and snail dye</a></h2>
+                    <time datetime="2022-01-01">today</time>
+                </div>
+                <img src="images/thumb_in-pictures_2.jpg" alt="background image">
+            </li>
+            <li>
+                <div>
+                    <small>World in Picture</small>
+                    <h2><a href="a_in-pictures_3.html">Underwater Photographer of the Year winner revealed</a></h2>
+                    <time datetime="2022-01-01">today</time>
+                </div>
+                <img src="images/thumb_in-pictures_3.jpg" alt="background image">
+            </li>
+            <li>
+                <div>
+                    <small>World in Picture</small>
+                    <h2><a href="a_in-pictures_4.html">Crossing the world's deepest lake</a></h2>
+                    <time datetime="2022-01-01">today</time>
+                </div>
+                <img src="images/thumb_in-pictures_4.jpg" alt="background image">
+            </li>
+        </ul>
+        <div class="pagerContainer">
+            <div class="oneFourth">
+                <span>progress</span>
+            </div>
+            <ol class="thumbPagerPS">
+                <li>
+                    <a data-slide-index="0">
+                        <img src="images/thumb_in-pictures_1.jpg" alt="Article Image">
+                        <strong>Artist creates Valentine's Day light paintings</strong>
+                        <time datetime="2022-01-01">today</time>
+                    </a>
+                </li>
+                <li>
+                    <a data-slide-index="1">
+                        <img src="images/thumb_in-pictures_2.jpg" alt="Article Image">
+                        <strong>Africa's top shots: Gap-toothed smiles and snail dye</strong>
+                        <time datetime="2022-01-01">today</time>
+                    </a>
+                </li>
+                <li>
+                    <a data-slide-index="2">
+                        <img src="images/thumb_in-pictures_3.jpg" alt="Article Image">
+                        <strong>Underwater Photographer of the Year winner revealed</strong>
+                        <time datetime="2022-01-01">today</time>
+                    </a>
+                </li>
+                <li>
+                    <a data-slide-index="3">
+                        <img src="images/thumb_in-pictures_4.jpg" alt="Article Image">
+                        <strong>Crossing the world's deepest lake</strong>
+                        <time datetime="2022-01-01">today</time>
+                    </a>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

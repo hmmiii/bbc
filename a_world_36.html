@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_world_36" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Europe</mark>
+                <h2>Kylian Mbappe: Paris St-Germain striker says he has not made a decision on his future</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Paris St-Germain striker Kylian Mbappe says he has not made a decision on his future after scoring a superb late winner against Real Madrid in the first leg of their Champions League last-16 tie at Parc des Princes.</strong></p>
+            <p>The France international ran between two defenders in the 94th before slotting home to secure a 1-0 win.</p>
+            <p>Mbappe is out of contract in the summer and has been linked with Real.</p>
+            <p>"I play for one of the best teams in the world," he told Movistar TV.</p>
+            <p>"I'm going to give it my all for the remainder of the season. I haven't decided on my future."</p>
+            <p>Tuesday night's game was widely billed as an audition for Mbappe but regardless of whether that was true or not he certainly made an impression.</p>
+            <p>The 23-year-old had PSG's only shot on goal in the first half and won a penalty in the 62nd minute when he was brought down inside the box, only for Lionel Messi to see his spot-kick saved.</p>
+            <p>French football journalist Julien Laurens believes Mbappe will leave it until the summer before making any definitive decisions on his future.</p>
+            <p>"It is fascinating to see he doesn't want to take any decision before the second leg," Laurens told BBC Radio 5 live.</p>
+            <p>"I believe he will wait until the end of this season. He can go wherever he wants as a free agent.</p>
+            <p>"PSG are really hoping that if they win this tie and qualify, they can say they we are a better team than Real Madrid. They have also said 'if you stay we are trying to sign Paul Pogba, trying to sign players to make this team better, so why not stay one more year?'.</p>
+            <p>"We know Mbappe's family is talking to the club and his dream is to play for Real Madrid."</p>
+            <h3>'I don't know how you defend against him'</h3>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Kylian Mbappe has scored 90 goals in 102 appearances for PSG</figcaption>
+            </figure>
+            <p>Mbappe's latest goal took his tally for the season in all competitions to 22 goals.</p>
+            <p>This was also the second time in a week that he had grabbed a late winner for his side, after scoring in the 93rd minute to secure a 1-0 victory against Rennes in Ligue 1 last Friday.</p>
+            <p>However, Mbappe seems to thrive in particular on the big European stage of the Champions League.</p>
+            <p>He has now scored 13 goals in his last 13 games in the competition, with this latest strike coming despite Real's attempts to nullify him by putting two players on him.</p>
+            <p>"He was brilliant from the off and I don't know how you defend against him as a manager, he's a genius," former Chelsea midfielder Joe Cole said on BT Sport.</p>
+            <p>Ex-Real Madrid and Liverpool striker Michael Owen added: "Let's be honest it wasn't the greatest game but the moments of class were from Kylian Mbappe. He looked dangerous from the start."</p>
+            <h3>Can Mbappe fire PSG all the way?</h3>
+            <p>Tuesday's victory gives PSG a slender advantage over Real Madrid, although with away goals no longer counting double the 13-time Champions League winners will believe they possess the experience to turn things around in the second leg, which takes place on Wednesday, 9 March.</p>
+            <p>PSG, meanwhile, are looking to win the competition for the first time and with Mbappe firing and Neymar back in action following a long spell out with injury, the signs are promising.</p>
+            <p>"[With PSG] having Messi and Neymar supplying Mbappe there's no reason why he can't get another five or six goals in the knockout stages and PSG win it," said Cole.</p>
+            <p>"It is possible. They are not my favourites, but it is possible."</p>
+            <h3>Pochettino needs Champions League win?</h3>
+            <figure>
+                <img src="" alt="">
+                <figcaption>PSG didn't win Ligue 1 last season but are 13 points clear at the top this term</figcaption>
+            </figure>
+            <p>After failing to lead PSG to the Ligue 1 title last season, boss Mauricio Pochettino will be determined to make his mark with Champions League success.</p>
+            <p>The former Tottenham manager has been linked with a move to Manchester United in the summer.</p>
+            <p>"This is Pochettino's last season," added Laurens.</p>
+            <p>"I can't see him staying because things haven't gone as we all thought it would.</p>
+            <p>"It hasn't really clicked - yes, they have been winning games in Ligue 1 but we have seen the flaws and weaknesses too many times.</p>
+            <p>"Unless he wins the whole thing, I think everything else will be a disappointment and the season will not be a full success."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

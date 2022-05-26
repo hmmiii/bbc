@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_science_2" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Science</mark>
+                <h2>More than eight million trees lost this winter in the UK</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>It is the untold story of the winter storms. More than eight million trees have been brought down and many are now threatened by another two named storms bearing down on Britain.
+
+            </strong></p>
+            <p>Forest managers warn that already "catastrophic" damage will be made worse by Storms Dudley and Eunice.</p>
+            <p>There are warnings that the heating climate is making our weather more severe and unpredictable, and that management and planting strategies must adapt more quickly.</p>
+            <p>Forest ranger Richard Tanner says that he's never seen a real battlefield, but the west shore of Windermere now reminds him of photographs he has seen.</p>
+            <p>"It looks like someone's set off a bomb."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Richard Tanner and a fallen tree</figcaption>
+            </figure>
+            <p>All around are the giant root plates of fallen trees, some the size of caravans, studded with rocks torn from the earth.</p>
+            <p>"There's three tonnes of tree and then five or six tonnes of earth maybe. And that's all got to be dealt with. We've lost thousands and thousands of trees just on this one property."</p>
+            <p>Mr Tanner has looked after the South Lakes property of the National Trust for a decade, which includes the crested beech at Wray Castle. It was a champion, with the biggest girth in Britain and Ireland. "But Arwen's 90mph winds were too much."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Beech Tree at Wray Castle, Lake District</figcaption>
+            </figure>
+            <p>We head south to the other end of Windermere, and Great Knott Wood. In November 2021 Storm Arwen knocked down over a third of it in one night, including dozens of ancient oaks and yew trees. It's still too dangerous to allow the public back in - thousands of trees are weakened and precariously balanced.</p>
+            <p>"Put it this way, we wouldn't be here if it was windy," says Heather Swift. She has cared for this site on behalf of the Woodland Trust for two decades.</p>
+            <p>"We did have this nice, dappled light and shade, but now all the spring plants that are trying to come up, they're stuck under this wet, dark blanket of fallen trees."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The broken skyline of Great Knott Wood</figcaption>
+            </figure>
+            <p>Kelvin Archer manages all the Trust's forests from the Scottish border, down to the Midlands, and across to both coasts.</p>
+            <p>He says almost a quarter of the charity's standing woods - hundreds of thousands of trees - have fallen.</p>
+            <p>"Climate change means that storms normally only seen in north-east Scotland are now hitting Northumberland and right across to Cumbria."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Kelvin Archer and his dog</figcaption>
+            </figure>
+            <p>He says that woods that were "firm and safe" are now getting blown over.</p>
+            <p>"We are now seeing damage to woods that have been here for generations that can't handle the new storm issues we are having."</p>
+            <p>Many species anchor roots, and woodlands shape themselves in a way to help them withstand our prevailing south-westerly winds. They weren't prepared for Storm Arwen, which barrelled in from the north.</p>
+            <p>"I'm a forester because I love woodlands," says Mr Archer. " I come out here because it's a safe space for me. And we're losing them."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Clearing fallen trees is dangerous, difficult and expensive</figcaption>
+            </figure>
+            <p>The storms are savaging Scotland with the greatest force.</p>
+            <p>After Storm Arwen in November, 4,000 hectares of woodland were blown down - estimated to be eight million trees.</p>
+            <p>Since then, Malik and Corrie have struck and the damage is now estimated to be 7,000 hectares - the equivalent of around 10,000 football pitches.</p>
+            <p>Doug Howieson is the head of Operational Delivery for Scottish Forestry. He says the number of storms this winter is "unprecedented". He warns that the winds have already "punched holes" in the forests, and Storm Dudley, expected to hit tonight, is likely to make them worse.</p>
+            <p>"It is critical that we plant in the right place and in the right time now, to shape our future forest's resilience to climate change."</p>
+            <p>A new citizen science app has been launched to help people on the ground to report damage.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Leaving fallen wood and stumps to rot can create new habitats for wildlife</figcaption>
+            </figure>
+            <p>However, the keepers of the woods do point out that it's not all bad. Mr Tanner picks at the earth-clogged roots of a fallen tree.</p>
+            <p>However, the keepers of the woods do point out that it's not all bad. Mr Tanner picks at the earth-clogged roots of a fallen tree.</p>
+            <p>Many of the felled trees can be sold for timber - although industry experts do say wind-blown trees are often harder to recover and tend to fetch a lower price. Some deadfall will be allowed to rot, creating new habitat. Different species can be planted in the gaps the fallen trees have left to create more diversity.</p>
+            <p>Mr Archer says that it's vital to keep planting trees - even though they can blow down.</p>
+            <p>"We've got to sink carbon, we've got to have places for people to enjoy, we need timber and we also need habitats for the wildlife that's around us. We will tidy this up and try to recover this wood for the next generation. It will take 40 to 50 years before anything is back here, but we are dedicated to doing it."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

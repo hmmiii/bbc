@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_science_1" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Science</mark>
+                <h2>Pharmaceuticals in rivers threaten world health - study</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Pollution of the world's rivers from medicines and pharmaceutical products poses a "threat to environmental and global health", a report says.</strong></p>
+            <p>Paracetamol, nicotine, caffeine and epilepsy and diabetes drugs were widely detected in a University of York study.</p>
+            <p>The research is among the most extensive undertaken on a global scale.</p>
+            <p>Rivers in Pakistan, Bolivia and Ethiopia were among the most polluted. Rivers in Iceland, Norway and the Amazon rainforest fared the best.</p>
+            <p>The impact of many of the most common pharmaceutical compounds in rivers is still largely unknown.</p>
+            <p>But it is already well established that dissolved human contraceptives can impact the development and reproduction of fish, and scientists fear the increased presence of antibiotics in rivers could limit their effectiveness as medicines.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>This section of the Nam Khan river in Laos generally has low concentrations of pharmaceuticals</figcaption>
+            </figure>
+            <p>The study sampled water from more than 1,000 test sites in more than 100 countries.</p>
+            <p>Overall, more than a quarter of the 258 rivers sampled had what are known as "active pharmaceutical ingredients" present at a level deemed unsafe for aquatic organisms.</p>
+            <p>"Typically, what happens is, we take these chemicals, they have some desired effects on us and then they leave our bodies," Dr John Wilkinson, who led the research, told BBC News.</p>
+            <p>"What we know now is that even the most modern efficient wastewater treatment plants aren't completely capable of degrading these compounds before they end up in rivers or lakes."</p>
+            <p>The two most frequently detected pharmaceuticals were carbamazepine, which is used to treat epilepsy and nerve pain, and metformin, used to treat type 2 diabetes.</p>
+            <p>High concentrations were also found of so-called "lifestyle consumables" like caffeine [coffee] and nicotine [cigarettes] as well as the painkiller paracetamol.</p>
+            <p>In Africa, artemisinin - used in anti-malarial medicine - was also found in high concentrations.</p>
+            <p>"We can say [the impact of the presence of such pharmaceuticals in rivers] is likely to be negative but you have to do individual tests with each one and there are relatively few studies," Dr Veronica Edmonds-Brown, an aquatic ecologist from the UK's University of Hertfordshire told BBC News.</p>
+            <p>"This is only going to get worse as we are increasingly using pharmacological solutions to any illness whether physical or mental."</p>
+            <p>The report says the increased presence of antibiotics in rivers could also lead to the development of resistant bacteria, damaging the effectiveness of medicines and ultimately posing "a global threat to environmental and global health".</p>
+            <p>The most polluted sites were largely in low- to middle-income countries, and in areas where there was sewage dumping, poor wastewater management and pharmaceutical manufacturing.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Nairobi River in Kenya - among the world's waterways most contaminated by pharmaceuticals</figcaption>
+            </figure>
+            <p>"We have seen contaminated rivers in Nigeria and in South Africa with very high concentrations of pharmaceuticals and this is basically down to the lack of infrastructure in wastewater treatment," said Dr Mohamed Abdallah, associate professor of emerging contaminants at the UK's Birmingham University.</p>
+            <p>"This is most concerning because you have the most vulnerable populations with the least access to healthcare exposed to this."</p>
+            <p>On the question of what can be done, the lead author of the report, Dr Wilkinson, has a somewhat depressing outlook.</p>
+            <p>"It's going to take many people who are a lot smarter than me to tackle the problem," he said. "One of the few things that could have an effect right now is the proper use of medicines."</p>
+            <p>That would mean making it harder to get hold of medicines like antibiotics, and tighter restrictions on doses.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

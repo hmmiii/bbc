@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_how-we-live_2" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Lovelife</mark>
+                <h2>Dry dating: The rise of sober love and sex</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Alcohol has long been a player in getting people together, but an increasing number of daters are trying romance without ‘liquid courage’.</h3>
+            <p>Naomi Bridgman started ‘dry dating’ by accident. During UK lockdowns amid Covid-19, “the usual route of going to a pub… was no longer an option”, says the 30-year-old social-service worker, from Sheffield. She and many other singles had to get “inventive” with their dates, opting for sober activities, like walks in the park.</p>
+            <p>Now that many pubs have re-opened their doors, however, Bridgman still prefers to avoid them for first dates. She’s cut down her alcohol consumption in general since the beginning of the pandemic, and says she’s happier dating without drinking. “I found myself feeling like I had more meaningful connections with people when at least the first date was sober,” she says. </p>
+            <p>For some singles, dry dating has become increasingly appealing amid the pandemic. According to a 2022 trends survey by dating app Bumble, seen by BBC Worklife, 34% of UK users said they’re more likely to go on a sober date now than they were before the pandemic, with 62% saying they think they’d “form a more genuine connection” on an alcohol-free date, and 54% aiming for more “mindful and intentional” dating. In May 2020, Canadian dating service Plenty of Fish surveyed 2,000 single adults in the UK, and found that 83% said they’d be “open” to trying a “dry date”.</p>
+            <p>There are several reasons alcohol-free romance is piquing interest in a new way. Many people re-evaluated their wellness habits during lockdown, lessening their drinking, or even taking it off the table entirely. As a new frontier of sober dating and sex emerges - taking the place of alcohol as the once ‘necessary’ component of getting to know someone - the way people form and maintain relationships may be changing along with it.</p>
+            <p><strong>A rise in creative dating</strong></p>
+            <p>Like Bridgman, many people stumbled into sober dating out of necessity, due to Covid-19 restrictions. “I don’t think sober dating started as an intention, but rather became a result of the current pandemic,” Russ Ross, a dating coach at The Social Collective in Sydney, Australia, says of the sober daters he has encountered during the past two years. </p>
+            <p>But the trend towards “sober curiosity” has been increasing throughout the past several years, says Laura Silverman, who writes about the “booze-free lifestyle” with the blogs Booze Free in DC (based in Washington, DC, US) and Zero Proof Nation.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Naomi Bridgman, 30, accidentally fell into sober dating during the pandemic, and has decided she will continue to be alcohol-free on dates (Credit: Kim Croxall)</figcaption>
+            </figure>
+            <p>She credits this in part to campaigns like Dry January, started in 2012 by the charity Alcohol Change UK, and the influence of Ruby Warrington’s 2018 book, Sober Curious, in which the author questions her relationship with alcohol, even though she doesn’t identify as an alcoholic. Rather, Warrington wanted to experience her life sober to discover the possible benefits. She found herself feeling less anxious, more present and better able to connect with others.</p>
+            <p>These perks have been increasingly appealing to people who may have found themselves drinking too much during the pandemic, or otherwise reevaluating their priorities while in lockdown. “I’ve absolutely noticed that these past two plus years … have drastically changed the playing field for dating, for socialising, for spending time with oneself,” says Silverman, 38. “People who would drink a bottle of wine on their own before, maybe now they’re having… a CBD beverage.” </p>
+            <p>Alongside this new interest in sober socialisation, Silverman says the non-alcoholic beverage industry has boomed during the past two years. Along with tens of new brands emerging across the globe as well as new alcohol-free products launching from existing manufacturers, non-alcoholic beverage sales increased 33% to $331 million in the US, between November 2020 and November 2021. Some forecasters expect the global non-alcoholic beverage market to reach into the billions in coming years. Additionally, non-alcoholic bars are also growing, such as Denver, Colorado’s Awake bar, which launched in 2021, despite Covid-19 generally putting a dent in brick-and-mortar businesses.</p>
+            <p>Overall, the pandemic has played a part in moving many people away from thinking of alcohol as the default ‘anchor’ of a first date activity, says Ross. “Due to the lockdown restrictions, all singles could really do was go on walks. So, the traditional thinking of meeting for a first date shifted from dinner and drinks to bushwalks, trails walks, dog walks and any other socially distanced outdoor activity.”</p>
+            <blockquote>We think we need liquid courage to have fun sex or be adventurous in bed, but it's really hindering our ability to feel our feelings and… physical touch - Tawny Lara</blockquote>
+            <p>The movement away from alcohol-centric dating has spurred “the start of very creative first dates”, he adds. “One woman in our market told us that she had organised an afternoon online cook-off with her potential date. They agreed on a dish, cooked it together over Zoom and then had lunch together while they chatted and got to know each other.” He also saw people co-watch movies (remotely) and take online painting classes together.</p>
+            <p>These types of dates, says Ross, also tend to make more sense as daytime activities, “which almost removed the expectation of alcohol and drinks”.</p>
+            <p><strong>Getting past the anxieties </strong></p>
+            <p>For many sober daters, however, transitioning from dates with social lubrication to those without any ‘Dutch courage’ hasn’t necessarily been easy. Removing alcohol from romantic situations can raise anxiety levels for some people, and even open them up to judgement from those who do drink.</p>
+            <p>Once they bypassed the initial awkwardness, though, sober daters who spoke with BBC Worklife expressed significant improvements in their dating life. Several mentioned being “more conscious” during dates, and being able to more efficiently evaluate whether the person was right for them, instead of moving through an otherwise unfit relationship with the assistance of rosy ‘beer goggles’. </p>
+            <p>“People think that drinking makes them more confident,” says London-based Caggie Dunlop, 32. But after sober dating a few times, she became “far more confident” because she wasn’t relying on any substance to try and present “the best version” of herself. “You are who you are and that’s it,” she says.</p>
+            <p>When Tawny Lara, 36, a writer and podcaster based in New York City, stopped drinking about six years ago, “even just mingling without alcohol scared the hell out of me, let alone having sex”, she says.  She found herself anxious, worried potential partners would judge her for not drinking.</p>
+            <p>Today, however, Lara is a happily sober dater and sexual partner. “We think we need liquid courage to have fun sex or be adventurous in bed,” she says, “but it's really hindering our ability to feel our feelings and… physical touch.” Now, she’s known as the “sober sexpert” (a nickname she got from Warrington) for the advice she doles out on sober dating and sexual encounters. Plenty of people are feeling similarly, she says - messages seeking her advice have increased big-time since the pandemic, and she’s recently brought on an assistant to help manage the new volume of communication.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>"Sober sexpert" Tawny Lara has seen inquiries about sober dating increase since the start of the pandemic (Credit: Robert Riese Photography)</figcaption>
+            </figure>
+            <p>Since sober dating has become more common since the pandemic - and with the wide embrace of sobriety-focused campaigns like Dry January - “a lot more people are open to [dry dates],” Bridgman has discovered. And finding them is easier; multiple dating apps let users specify their drinking habits upfront, like Bumble, which has a badge users can put on their profiles to signify they’re not drinking.</p>
+            <p>“In terms of navigating my options going forward, that's a really useful tool,” says Bridgman. For her, if someone isn’t up for a dry date, “that answers my question on whether I think there'll be a connection there or not”.</p>
+            <p><strong>The changing shape of dating?</strong></p>
+            <p>As life in the wake of the Covid-19 pandemic edges closer to some semblance of “normal”, it’s likely that many who’d been forced to consider sober dates during lockdowns will return to the bars for first meetings. But others may have had their perspectives on dating change more permanently.</p>
+            <p>“If anything, I think this unexpected change to alcohol-free dating has shifted our outlook from a culture of disposable dates and regrettably drunk ‘hook ups’ to one of potential connection,” says Ross. Singles reported to The Social Collective that dry dating resulted in less pressure to get physical during dates, better conversations, greater trust and an increased likelihood in second and third dates.</p>
+            <p>The youngest generation of daters may already be primed to embrace the clarity and focus on meaningful connections that come with sober dating. A 2018 report from Berenberg Research found that Gen Z was drinking alcohol 20% less per capita than millennials at their age.</p>
+            <p>Anecdotally, Lara has noticed younger people drinking less, too. “It’s honestly so inspiring,” she says. Even before the pandemic, many people who messaged her for advice on being sober while starting relationships were in their early 20s. She chalks this up to Gen Z being both more focused on interacting online as opposed to physical watering holes and the “globalisation of mindfulness”, wherein Eastern practices like meditation and yoga have migrated West.</p>
+            <p>More mindful dating has been a big improvement for Bridgman, who’s realised that she doesn’t “need the kind of encouragement” alcohol provides to put her best self forward on dates. She also could do without the next day fog, which clouds her perception of how well the date the night before actually went. </p>
+            <p>“I think I take dating a little bit more seriously now,” she says. “Going into it on a drunken first date isn't the right method for me.”  </p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

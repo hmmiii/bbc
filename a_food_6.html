@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_food_6" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Food</mark>
+                <h2>St Louis: The US city transformed by heartbreak</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Boasting the US' largest Bosnian population, St Louis, Missouri, has been shaped by the subtle but abundant influence of a community not found in such numbers outside Europe.</h3>
+            <p>The retro sign on top of the two-storey brick building in St Louis, Missouri, reads "Lemmons Fine Food" with a giant arrow pointing towards the door. At night, the sign's light casts red and green reflections on the windows, diverting attention from a mural of a can of beer covering the right side of the building.</p>
+            <p>Known for ice-cold beer and heaping plates of fried chicken, Lemmons is inextricably linked to St Louis' history, having been a fixture on this rough-around-the-edges stretch of Gravois Avenue in South City since the 1940s. And though beer remains on tap, when the Grbic family took ownership in 2014, a new history began: one with Bosnians deeply embedded into the fabric, changing the landscape of what a restaurant - and a city - can become.</p>
+            <p>Full of small, cosy brick houses packed tightly on narrow streets, the landscape in the South City neighbourhood known as Bevo Mill had shifted long before Sulejman and Ermina Grbic owned Lemmons. It was still shifting in 1998, when they purchased what is now Grbic - St Louis' longest-running Bosnian restaurant - just a few streets away. At that time, a dwindling population had left South City's business district a ghost town, with boarded-up windows and little hope that anyone would pump much-needed life into its economy.</p>
+            <p>But the revival came when Bosnian refugees began settling in St Louis after fleeing the former Yugoslavia during the Bosnian War, which lasted from 1992 to 1995, took the lives of an estimated 100,000 people and displaced more than two million more.</p>
+            <p>Many Bosnians settled in Bevo Mill so that they could be closer to the International Institute, an immigrant support organisation that, along with Catholic Charities USA, sponsored refugees, helping them learn English and find jobs and housing. St Louis' lower cost of living and support mechanisms allowed for greater success, and many Bosnians living in other parts of the country moved here too, for better opportunities. Today, St Louis boasts the US' largest Bosnian population, making up an estimated 50,000 to 70,000 of the city's 2.8 million metropolitan population.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Balkan Treat Box began with a food truck that travelled across the city, introducing more people to Balkan cuisine (Credit: Balkan Treat Box)</figcaption>
+            </figure>
+            <p>As a result of this influx, says Ben Moore, professor emeritus and senior researcher at the Center for Bosnian Studies at Fontbonne University, "the Bosnian community has had a subtle, but abundant influence, which has become deeply integrated into the fabric of St Louis."</p>
+            <blockquote>The Bosnian community has had a subtle, but abundant influence, which has become deeply integrated into the fabric of St Louis</blockquote>
+            <p>The most straightforward way to experience that influence is by exploring Little Bosnia in Bevo Mill. In the 1990s, when an area bank gave loans to Bosnian refugees with no credit, Little Bosnia grew into Bosnian-owned butcher shops, markets, coffee shops, auto shops, restaurants, trucking companies, an insurance agency and, until a few years ago, the largest US-based Bosnian language newspaper in the country. Across from the Chamber of Commerce, you'll also find an ornate wood and stone fountain replica of the Sebilj in Sarajevo's Baščaršija Square.</p>
+            <p>Not far past the Sebilj, you can pick up hurmašice - butter cookies soaked in sugar syrup till they become soft as cake - at Zlatne Kapi bakery and cafe; then visit Iriskic Brothers butcher shop next door, where you will find lamb and steak along with international grocery items. Europa Market, a block away, sells European chocolates, beverages, fruit preserves and ajvar, a condiment made of peppers and aubergine.</p>
+            <p>Down the road at Lemmons (which is temporarily closed due to pandemic-related challenges), Senada Grbic - a Cordon Bleu-trained chef and one of the Grbic's children - stayed true to the restaurant's fried chicken history by adding a Balkan twist: fried chicken schnitzel - buttermilk-brined chicken breast, pounded thin, then breaded and fried. Her pizza fusion - flatbread with the masterfully spiced ćevapi sausage, mozzarella and feta butter - is as creative as her chicken wings marinated in rakija, Bosnian plum brandy.</p>
+            <p>A few streets away at Grbic, Sulejman and Ermina serve up Bosnian comfort food like tarhana, a Balkan soup made of sourdough noodles, ground beef and vegetables in a bright tomato broth; ćevapi tucked into tender pieces of the Bosnian bread lepinja; and plates of steaming sarma, mildly pickled cabbage leaves wrapped around meat and rice.</p>
+            <p>"Grbic is one of the key centres of Bosnian culture in St Louis," said Moore, who has dedicated his career to documenting Bosnian war stories so that history will not be lost. "It's a restaurant as well as a music, graduation and wedding venue - having become a place where the Bosnian community has formed itself as such."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Little Bosnia is home to an ornate fountain replica of the Sebilj in Sarajevo (Credit: Stefanie Ellis)</figcaption>
+            </figure>
+            <p>In this profoundly beautiful space, with intricate brickwork and high, wooden ceilings, there's a nod to the city's Gateway Arch everywhere you look. Sulejman was so captivated by St Louis' famed landmark - the country's tallest monument and the tallest arch in the world - when he first arrived in the 1970s that he incorporated arches into the restaurant design.</p>
+            <p>Ermina - known by everyone as "Mama" - has been running Grbic's kitchen since it opened in 2002, offering warmth and hospitality to homesick Bosnians as well as those in the community for whom the cuisine is new. Before the pandemic, she could be seen flitting about the 260-seat dining room, handing out hugs and cookies, making everyone feel like guests in her home. Her walnut biscuits, which she still makes every weekend, are delicate and tender, perfumed by spices so familiar they curl like a smile around your tongue. Each bite melts as quickly as powdered snow but leaves behind a feeling of profound comfort, which is the exact effect Mama has on everyone she meets.</p>
+            <p>"She is made of love and compassion," said Senada, who has taken the reins from the now-retired Mama and runs the kitchen at Grbic alongside her brother, Ermin, while Lemmons is on pause.</p>
+            <p>Sulejman, who hired Bosnian carpenters and masons for Grbic's four-year construction, shares Mama's kindness. "When refugees started arriving in the '90s, my dad would tell me we were going to the airport to look for people who don't have a place to live," Senada recalled, explaining that because of their established life in St Louis, having settled here in the 1980s as some of the first Bosnians in St Louis, her parents were well prepared to support new immigrants.</p>
+            <p>Sulejman would hold up a sign that read "refugees welcome", and when people would come home with him, Mama would cook day and night, all while going to her full-time job at 03:30 each morning.</p>
+            <p>"We had just four bedrooms and one bathroom, but at one time, there were 20 of us in that apartment," said Senada. "We helped with translation and found people jobs, housing and doctor's appointments. One family would come through and move out, and people would call from Iowa and other places and ask if we'd accept them."</p>
+            <p>The answer, of course, was always yes.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Lemmons has added a Balkan twist to the restaurant's fried chicken history (Credit: Stefanie Ellis)</figcaption>
+            </figure>
+            <p>"In 1998, when Bosnian refugees who lived in Germany were told they had to go back, former US Secretary of State, Madeleine Albright, made arrangements for them to come to the US. By that point, St Louis had become an attractive destination for Bosnians," said Moore.</p>
+            <p>Edo Nalic, who runs the nationally acclaimed Balkan Treat Box with his wife, American chef, Loryn Nalic, was living with his family in Germany after the Bosnian War and came to St Louis through Albright's arrangement. The couple started with a food truck that travelled across the city, introducing more people to Balkan cuisine and becoming its ambassadors.</p>
+            <blockquote>It would have been easier for me to cook anything else, but I chose this. It's the food I love to cook</blockquote>
+            <p>"Right now, where we're at in food culture in [the US], Bosnian food is undiscovered, really," said Loryn. "It's comforting and familiar, yet just different enough to be intriguing. After you eat it, you think about it and want to have it again. It would have been easier for me to cook anything else, but I chose this. It's the food I love to cook."</p>
+            <p>While Bosnians patronise their community's restaurants, so too do non-Bosnian locals. Longtime restaurant critic Joe Bonwich so loved the Grbic family - and frequently wrote about the importance of their restaurant to St Louis - that when he passed away in 2017, his celebration of life was held in their restaurant.</p>
+            <p>Bonwich never wanted Little Bosnia to remain a secret. Its businesses are nondescript and scrappy - a part of the concrete jungle that is South City - and it can't compete with the fancy tree-lined streets full of boutiques and high-rises in other parts of St Louis. But if you wrote off this stretch of Gravois Avenue as just any other street, you'd be missing what Moore calls the subtle but abundant influence of a population not found in such numbers outside Europe.</p>
+            <p>"To understand the influence is like peeling an onion," he said. "The things Bosnians have brought us are very beautiful, like burek and the Sebilj, but beneath all that is tragedy. Therefore, the influence of Bosnians is complicated, and takes a while to understand. We haven't experienced what they've experienced, but they've changed us, and it has been infused into this city."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Grbic restaurant is one of the key centres of Bosnian culture in St Louis (Credit: Stefanie Ellis)</figcaption>
+            </figure>
+            <p>Even still, there will never be a bowl of goulash that could ever take the place of home for the thousands of Bosnians in St Louis who lost everything in the war. There is nothing that can erase the unspeakable tragedies they witnessed and the profound sense of loss that follows them every day of their lives.</p>
+            <p>"Everybody lost someone, and everybody lost their country in the war," said Moore. "To be able to create a new home in the face of such profound loss is the most remarkable thing I've ever witnessed in my entire life. It is an unbelievable testament to what Bosnians are capable of, and what human beings are capable of."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

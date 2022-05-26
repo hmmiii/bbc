@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_world_5" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>World</mark>
+                <h2>Ottawa police chief resigns amid anti-mandate protests</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Ottawa Police Chief Peter Sloly has resigned after weeks of criticism for his handling of anti-vaccine mandate protests that have paralysed the city.</strong></p>
+            <p>Protesters have occupied the centre of Canada's capital for 19 days, halting traffic and enraging residents.</p>
+            <p>The prime minister on Monday invoked the Emergencies Act as a "last resort" in response to the protests.</p>
+            <p>The Ottawa Police Services Board confirmed Mr Sloly's resignation at a public meeting on Tuesday.</p>
+            <p>In a statement on Twitter, Mr Sloly defended his policing record and said that he was stepping down "with a heavy heart".</p>
+            <p>"Since the onset of this demonstration, I have done everything possible to keep this city safe and put an end to this unprecedented and unforeseeable crisis," he said.</p>
+            <p>"I am confident the Ottawa Police Service is now better positioned to end this occupation," he added.</p>
+            <p>A former Canadian men's soccer player, Mr Sloly took over at the Ottawa Police Service in 2019, more than three decades after joining the Toronto police. His contract in Ottawa was due to end in 2024.</p>
+            <p>Throughout his career, he gained a reputation as a progressive reformer, dedicated to improving police-community relations.</p>
+            <p>However, his critics say he has not done enough to crack down on the "Freedom Convoy" protests. The city of Ottawa declared a state of emergency over a week ago in attempt to quell the protests.</p>
+            <p>As of last week Mr Sloly, 55, stood by his response, telling Newstalk 580 he had "absolutely no" intention to step down.</p>
+            <p>On Monday, Prime Minister Justin Trudeau took the unprecedented step of invoking the Emergencies Act, which he said would give local police "more tools" to deal with protesters. Members of the Royal Canadian Mounted Police (RCMP) and the Ontario Provincial Police (OPP) will be deployed to assist.</p>
+            <h3>Who will restore order to Ottawa streets?</h3>
+            <p><strong>By Robin Levinson-King, BBC News, Toronto</strong></p>
+            <p>Chief Sloly's resignation comes amid significant criticism from Ottawa residents who feel the police have not done their job at enforcing the law and containing the demonstrators.</p>
+            <p>Residents have described seeing police fist-bump demonstrators, ignore by-law infractions and allow fuel and other supplies to make it to their encampments.</p>
+            <p>Critics say protesters have been allowed to throw what at times resembled a party in the streets of Ottawa with minimal repercussion, complete with bouncy castles, barbeques and a hot tub.</p>
+            <p>To be fair, police have issued thousands of tickets and made dozens of arrests. But there is a growing sense among residents that their hearts might not be in it, especially after a video showed an OPP officer saying he supports the demonstrators "100%".</p>
+            <p>The OPP is not a part of Ottawa Police, but Ottawa Police have jurisdictional authority for the city and have been co-ordinating efforts of several police forces to contain the demonstrators.</p>
+            <p>Media reports have also hinted at tensions between Chief Sloly and the leadership on other forces, namely the OPP and RCMP.</p>
+            <p>Prime Minister Trudeau, who invoked emergency powers on Monday, has made it clear he does not want to send in the military or have the federal government take over the uphill battle of restoring order to Ottawa's downtown.</p>
+            <p>With Chief Sloly now gone, the question is: who will?</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

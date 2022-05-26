@@ -1,0 +1,455 @@
+body{
+    font-family: 'Montserrat';
+    background-color: #fff;
+}
+.shadow{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+}
+header{
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: inherit;
+    z-index: 2;
+    transition: box-shadow .3s;
+    box-shadow: 0 3px 6px rgba(0,0,0,0);
+}
+header .headerContainer h1 a{
+    display:block;
+    background-repeat: no-repeat;
+    background-image: url('../images/logo_black.png');
+    text-indent: -9999px;
+}
+header .headerContainer nav ul > li > a{
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+}
+header .headerContainer nav ul li ol{
+    display: none;
+    background-color: inherit;
+}
+header .headerContainer nav ul li ol li{
+    display: block;
+}
+header .headerContainer nav ul li ol li a{
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    color: #555;
+    position: relative;
+}
+header .headerContainer nav ul li ol li:hover a{
+    color: inherit;
+}
+header .headerContainer nav ul li ol li a::before{
+    transition: opacity .3s;
+    top: 2px;
+    position: absolute;
+    width: 3px;
+    height: 1em;
+    background-color:#3861F6;
+    content: '';
+    opacity: 0;
+}
+header .headerContainer div input{
+    float: left;
+    display: block;
+    border: none;
+    width: 16px;
+    text-indent: -9999px;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+header .headerContainer div input:first-child{
+    background-image: url('../images/ico_access.svg');
+}
+header .headerContainer div input:last-child{
+    background-image: url('../images/ico_search.svg');
+}
+header .headerContainer nav ul li ol li:hover a::before{
+    opacity: 1;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    padding: 24px 0;
+}
+footer h2{
+    width: 145px;
+    height: 42px;
+    background: url('../images/logo_white.png') no-repeat;
+    margin: 0 0 22px auto;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+footer div a{
+    color: inherit;
+    text-decoration: none;
+    font-weight: 600;
+}
+footer div a:first-of-type{
+    margin-right: 3.59%;
+}
+footer p{
+    font-weight: 300;
+    line-height: 1.5;
+}
+footer hr{
+    background-color: rgba(255,255,255,0.1);
+    border: none;
+    margin: 22px 0;
+}
+
+/* ALL USING */
+
+@media screen and (max-width:767px){
+    [class$=Container],
+    [class^=postCarousel],
+    footer div,
+    footer p,
+    [class*=Using-the-BBC] .content > ol,
+    .plainBox:not(.newsContainer .plainBox),
+    .viewBox,
+    .thumbPagerPS,
+    [class$=SlideBox] > :first-child ~ *,
+    header .headerContainer nav ul,
+    .content div,
+    .overflowBox > div{
+        max-width: 85.71%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header .headerContainer div input:first-child{
+        margin-right: 3.57vw;
+    }
+
+    footer div::after{
+        display: block; visibility: hidden; clear: both; content: '';
+    }
+    footer{
+        text-align: left;
+        line-height: 1.5;
+    }
+    footer div h2{
+        margin: 0 auto 22px;
+    }
+    footer div a:first-of-type{
+        float: left;
+    }
+    footer div a:last-of-type{
+        float: right;
+    }
+}
+
+/* Mobile */
+
+@media screen and (min-width:768px){
+    header .headerContainer div input:first-child{
+        margin-right: 1.72vw;
+    }
+}
+
+/* Tablet + Desktop */
+
+@media screen and (min-width:768px) and (max-width:1279px){
+    [class$=Container],
+    [class^=postCarousel],
+    footer div,
+    footer p,
+    [class*=Using-the-BBC] .content > ol,
+    .plainBox,
+    .viewBox,
+    .thumbPagerPS,
+    [class$=SlideBox] > :first-child ~ *,
+    header .headerContainer nav ul,
+    .content div,
+    .overflowBox > div{
+        max-width: 688px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer{
+        text-align: right;
+    }
+}
+
+/* Tablet */
+
+@media screen and (max-width:1279px){
+    body{
+        padding-top: 65px;
+    }
+    header .headerContainer .mui{
+        float: left;
+        cursor: pointer;
+        text-indent: -9999px;
+        display: block;
+        background-image: url('../images/ico_menu.svg');
+        width: 20px;
+        height: 65px;
+        background-repeat: no-repeat;
+        transform-origin: center;
+        background-position-y: center;
+    }
+    header .headerContainer .mui.opened{
+        width: 20px;
+        background-image: url('../images/ico_close.svg');
+    }
+    header .headerContainer h1{
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    header .headerContainer h1 a{
+        margin: 0 auto;
+        width: 70px;
+        height: 65px;
+        background-position: center;
+        background-size: 70px 20px;
+    }
+    header .headerContainer nav{
+        display: none;
+        border-top: 4px solid #3861F6;
+        position: absolute;
+        width: 100vw;
+        left: 50%;
+        top: 65px;
+        transform: translateX(-50%);
+        background-color: #fff;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    }
+    header .headerContainer nav ul{
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    header .headerContainer nav ul > li > a{
+        color: #555;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    header .headerContainer nav ul > li.active > a,
+    header .headerContainer nav ul > li:hover > a{
+        color: inherit;
+    }
+    header .headerContainer nav ul > li:not(:last-child){
+        margin-bottom: 22px;
+    }
+    header .headerContainer nav ul > li:not(:first-child)::before{
+        display: block;
+        float: right;
+        width: 12px;
+        height: 12px;
+        content: '';
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('../images/ico_plus.svg');
+        transition: transform .5s;
+        animation-name:rotateReverse;
+        animation-duration: .75s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(.24,.82,.4,.89);
+    }
+    header .headerContainer nav ul > li:hover:not(:first-child)::before{
+        animation-name:rotate;
+        background-image: url('../images/ico_minus.svg');
+    }
+    @keyframes rotate{
+        from{
+            transform:rotate(0deg);
+        }
+        to{
+            transform:rotate(360deg);
+        }
+    }
+    @keyframes rotateReverse{
+        from{
+            transform:rotate(360deg);
+        }
+        to{
+            transform:rotate(0deg);
+        }
+    }
+    header .headerContainer nav ul > li > a::before{
+        transition: opacity .3s;
+        left: -6px;
+        position: absolute;
+        width: 3px;
+        height: 1em;
+        background-color:#3861F6;
+        content: '';
+        opacity: 0;
+    }
+    header .headerContainer nav ul > li:hover > a::before, 
+    header .headerContainer nav ul > li.active > a::before{
+        opacity: 1;
+    }
+    header .headerContainer nav ul li:hover ol{
+        display: block;
+        transform: translateY(0);
+        font-size: 13px;
+        background-color: #fff;
+        margin: 20px 0 20px 16px;
+    }
+    header .headerContainer nav ul li ol li:not(:last-child){
+        margin-bottom: 20px;
+    }
+    header .headerContainer nav ul li ol li a{
+        transition: color 1s;
+        position: relative;
+    }
+    header .headerContainer nav ul li ol li a::before{
+        left: -6px;
+    }
+    header .headerContainer div{
+        float: right;
+        line-height: 65px;
+    }
+    header .headerContainer div input{
+        height: 65px;
+    }
+}
+
+/* Moblie + Tablet */
+
+
+@media screen and (min-width:1280px){
+    body{
+        padding-top: 86px;
+    }
+    [class$=Container],
+    [class^=postCarousel],
+    footer div,
+    footer p,
+    [class*=Using-the-BBC] .content > ol,
+    .plainBox,
+    .viewBox,
+    .thumbPagerPS,
+    [class$=SlideBox] > :first-child ~ *,
+    .content div,
+    .overflowBox > div{
+        max-width: 1164px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header .headerContainer .mui{
+        display: none;
+    }
+    header h1{
+        flex: 1;
+    }
+    .headerContainer{
+        display: flex;
+        justify-content: space-between;
+    }
+    header .headerContainer nav ul > li{
+        float: left;
+    }
+    header .headerContainer h1 a{
+        width: 145px;
+        height: 86px;
+        background-position: left center;
+    }
+    header .headerContainer nav{
+        flex: 3;
+        line-height: 86px;
+        position: relative;
+    }
+    header .headerContainer nav ul > li > a{
+        display: inline-block;
+        text-decoration: none;
+        position: relative;
+        color: inherit;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    header .headerContainer nav ul > li.active > a, header .headerContainer nav ul > li:hover > a{
+        color: #3861F6;
+    }
+    header .headerContainer nav ul > li:hover > a::before{
+        transform: scaleX(1);
+    } 
+    header .headerContainer nav ul > li > a::before{
+        position: absolute;
+        content: "";
+        height: 4px;
+        background: #2962ff;
+        left: 0;
+        bottom: .5px;
+        width: 100%;
+        transition: transform .5s;
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+    header .headerContainer nav ul > li:not(:first-child) > a{
+        padding: 0 1.2vw;
+    }
+    header .headerContainer nav ul > li:first-child > a{
+        padding: 0 1.5vw;
+    }
+    header .headerContainer nav ul > li:not(:first-child) > a::after{
+        display: block;
+        margin-left: 6px;
+        float: right;
+        width: 9px;
+        height: 86px;
+        content: '';
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('../images/bul_dropdown.svg');
+        transition: transform .5s;
+    }
+    header .headerContainer nav ul > li:not(:first-child):hover > a::after{
+        transform: rotate(180deg);
+    }
+    header .headerContainer nav ul li ol{
+        position: absolute;
+        border-radius: 0 0 2px 2px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    }
+    header .headerContainer nav ul li:hover ol{
+        display: block;
+        transform: translateY(0);
+        font-size: 13px;
+        padding: 25px 0;
+        background-color: #fff;
+    }
+    header .headerContainer nav ul li ol li:not(:last-child){
+        margin-bottom: 24px;
+    }
+    header .headerContainer nav ul li ol li{
+        line-height:initial;
+    }
+    header .headerContainer nav ul li ol li a{
+        display: block;
+        text-decoration: none;
+        font-weight: 500;
+        color: #555;
+        position: relative;
+        padding: 0 60px 0 22px;
+        white-space: nowrap;
+        transition: color 1s;
+    }
+    header .headerContainer nav ul li ol li a::before{
+        left: 14px;
+    }
+    header .headerContainer div input{
+        height: 86px;
+    }
+    
+    footer{
+        text-align: right;
+    }
+}
+
+/* Desktop */

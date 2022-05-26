@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_world_1" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>News</li>
+                <li>Coronavirus</li>
+                <li>The day Canada's bridge protesters had dreaded</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>World</mark>
+                <h2>The day Canada's bridge protesters had dreaded</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Novak Djokovic gave an exclusive interview to the BBC's Amol Rajan</figcaption>
+            </figure>
+            <p><strong>Novak Djokovic has said he would rather miss out on future tennis trophies than be forced to get a Covid vaccine.</strong></p>
+            <p>Speaking exclusively to the BBC, he said missing competitions, such as the French Open, over his jab status was "the price that I'm willing to pay".</p>
+            <p>The 20-time Grand Slam winner was deported from Australia last month after the government cancelled his visa in a row over his vaccine status.</p>
+            <p>Djokovic described the conditions while he was detained as "very hard".</p>
+            <p>He said he had not spoken out in the media at the time - despite wanting to - as he wanted to respect the legal process and the Australian Open.</p>
+            <p>The world's number one men's tennis player also said he should not be associated with the anti-vax movement, but supported an individual's right to choose.</p>
+            <p>He said he had obtained a medical exemption to enter the country to play in the Australian Open as he had recently recovered from Covid-19.</p>
+            <p>However, the country's immigration minister, Alex Hawke, personally cancelled the 34-year-old's visa, on the grounds that his presence could incite "civil unrest" and encourage anti-vaccine sentiment.</p>
+            <p>"I was never against vaccination," he told the BBC, confirming he'd had vaccines as a child, "but I've always supported the freedom to choose what you put in your body."</p>
+            <ul>
+                <li>Doubts over timing of Djokovic Covid test</li>
+                <li>Stance shows determination - however misguided you may think he is</li>
+            </ul>
+            <p>In a wide-ranging interview, his first since he was detained in Melbourne in January, Djokovic addressed speculation about the timing of his positive Covid case in December and discussed his own attitude towards the vaccine.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Djokovic was forced to leave Australia in January after the immigration minister personally cancelled his visa</figcaption>
+            </figure>
+            <p>Djokovic said he hoped vaccination requirements in certain tournaments would change, adding he was hoping he "can play for many more years".</p>
+            <p>But he also confirmed he was willing to forego the chance to become statistically the greatest male tennis player of all time because he felt so strongly. Djokovic's rival, Rafael Nadal, has won 21 Grand Slam singles titles - the most of any male competitor.</p>
+            <p>Asked why, Djokovic replied: "Because the principles of decision making on my body are more important than any title or anything else. I'm trying to be in tune with my body as much as I possibly can."</p>
+            <ul>
+                <li>What were the twists and turns of Djokovic's Australia mess?</li>
+            </ul>
+            <p>Djokovic said he had "always been a great student of wellness, wellbeing, health, nutrition," and his decision had been partly influenced by the positive impact factors such as changing his diet and his sleeping patterns had had on his abilities as an athlete.</p>
+            <p>He said he was "keeping [his] mind open" about the possibility of being vaccinated in the future, "because we are all trying to find collectively, a best possible solution to end Covid".</p>
+            <p>"I was never against vaccination. I understand that globally, everyone is trying to put a big effort into handling this virus and seeing, hopefully, an end soon to this virus," he said.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Novak Djokovic describe how his time in a detention centre in Australia left him feeling "powerless"</figcaption>
+            </figure>
+            <p>Djokovic told the BBC his experience in Australia was "tough".</p>
+            <p>"It was very, very hard. While I was still at the airport, I couldn't use my phone for three, four hours. I was lost, really, I didn't know what was happening."</p>
+            <p>He said he initially could not get in touch with his family but was later allowed to access his phone when he was inside the detention centre.</p>
+            <hr>
+            <h3>What more does he want to know?</h3>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Analysis By Fergus Walsh Medical editor</figcaption>
+            </figure>
+            <p>More than 10 billion doses of Covid vaccines have been administered and about six in 10 people globally have had at least one. So there is a wealth of information. Like all medicines, Covid vaccines have potential side effects, but their safety profile is excellent. They have saved countless lives, prevented serious illness, and may also be protective against long Covid.</p>
+            <p>These vaccines were developed in record time, but much of vaccine development usually surrounds funding delays. Scientists involved in the Covid vaccine trials, and the regulators who approved them, say no corners were cut on safety.</p>
+            <p>Some rare side-effects did only show up once the jabs started being rolled out among millions of people, which is why regulators keep monitoring safety week by week.</p>
+            <p>It is hard to know what more Novak Djokovic needs or wants to know. He says he doesn't have enough information about "the vaccine" as if there was just one Covid jab. There are many. As an elite athlete, he is at low risk from Covid. But not zero. He's had it twice, after all.</p>
+            <hr>
+            <p>While awaiting his first court hearing, Djokovic was free to train. "But it was not the regular kind of training days that I would normally have prior to the Grand Slam competition," he said.</p>
+            <p>"I had helicopters flying above every single training session that I had on Rod Laver Arena, cameras all over the place. Also, I felt that energy and that those looks from from my colleagues and people that were in the tennis facility... that really hurt me a lot.</p>
+            <p>"And obviously, I understand that they had a perception that was based on what they were seeing from media reports. And I wasn't going out in the media, because of what was previously said in respecting the legal process and respecting the Australian Open. But at that time, I really wanted to speak to everyone and give my explanation."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Djokovic said he was willing to sacrifice competing in more tennis tournaments in order to avoid the vaccine</figcaption>
+            </figure>
+            <p>In our interview, Djokovic also addressed speculation about the sequence of events ahead of the Australian Open in January.</p>
+            <p>Some had suggested it was convenient that Djokovic's positive Covid case in mid-December had occurred just in time for him to be granted a medical exemption to attend the tournament.</p>
+            <p>"I understand that there is a lot of criticism, and I understand that people come out with different theories on how lucky I was or how convenient it is," he acknowledged.</p>
+            <p>"But no-one is lucky and convenient of getting Covid. Millions of people have and are still struggling with Covid around the world.</p>
+            <p>"So I take this very seriously, I really don't like someone thinking I've misused something... in my own favour, in order to, you know, get a positive PCR test and eventually go to Australia."</p>
+            <p>Asked if he was aware of any attempt to tamper with either of the tests he had done for Covid - earlier this month, BBC research cast doubt on the timing of a positive test - he flatly said no.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Novak Djokovic: I'm not above the rules on vaccinations</figcaption>
+            </figure>
+            <p>Djokovic is, by any measure, a remarkable individual. Raised amid two wars in the former Yugoslavia, by parents who sold the family gold and negotiated with loan sharks to fund his ambitions, he is fluent in six languages, arguably the greatest player ever to pick up a racket; and - most pertinently - a deeply committed libertarian who believes strongly in individual autonomy.</p>
+            <p>He has clearly thought deeply about the conflict between individual autonomy and the collective good - and he feels that, as an elite sportsman, his body is his business - in both senses of that word. He says he has an open mind, but as things stand, he will not get the jab.</p>
+            <hr>
+            <h3>The key numbers on vaccine safety</h3>
+            <ul>
+                <li>4.88 billion people - more than 60% of the total world population - have been vaccinated against Covid</li>
+                <li>The rollout began 14 months ago and since then evidence has shown that serious side effects have rarely been reported</li>
+                <li>Experts estimate vaccines have already saved around half a million lives in Europe alone</li>
+                <li>All of the approved Covid-19 vaccines have undergone rigorous testing - including large clinical trials involving tens of thousands of people - and continue to be closely monitored</li>
+            </ul>
+            <hr>
+            <p>His medical exemption request was made anonymously, and it was accepted by two independent Australian panels. However there was a separate travel declaration, which included an error.</p>
+            <p>"Absolutely, the visa declaration error was not deliberately made," Djokovic said. "It was accepted and confirmed by the Federal Court and the minister himself in the Ministry for Immigration in Australia.</p>
+            <p>"So actually, what people probably don't know is that I was not deported from Australia on the basis that I was not vaccinated, or I broke any rules or that I made an error in my visa declaration. All of that was actually approved and validated by the Federal Court of Australia and the Minister for Immigration.</p>
+            <p>"The reason why I was deported from Australia was because the Minister for Immigration used his discretion to cancel my visa based on his perception that I might create some anti-vax sentiment in the country or in the city, which I completely disagree with."</p>
+            <p>Djokovic is set to return to action at the Dubai Duty Free Tennis Championships, which begin next week, where entrants do not need to be vaccinated.</p>
+            <hr>
+            <h3>What has the tennis world had to say?</h3>
+            <p>Five-time Wimbledon women's doubles champion Pam Shriver said she hoped the "right-trusted person" could sit down with Djokovic and "walk him through all of the steps that make the science and the medicine trustworthy".</p>
+            <p>She said him not getting the vaccine was "terrible for tennis" and said he was seen as a leader by many people both in Serbia and throughout the world.</p>
+            <p>Former British number one Tim Henman, who is on the committee of the All England Club which organises Wimbledon, told BBC Radio 4's Today programme he thought it was unlikely Djokovic would be stopped from playing there as the tournament was planning to follow government guidance.</p>
+            <p>But he said that by taking himself out of the chance to compete in some Grand Slams "he is certainly jeopardising his chances of being the greatest male player of all time".</p>
+            <p>He added: "I think that speaks volumes to his courage, conviction and belief that this is what is best for him."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

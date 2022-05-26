@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_business_25" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Business</mark>
+                <h2>How hologram tech may soon replace video calls</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>When Swiss watch boss, Christoph Grainger-Herr, was unable to fly to a global trade show in China because of Covid-19 restrictions, he decided to beam in Star Trek-style instead.</strong></p>
+            <p>Mr Grainger-Herr, the chief executive of luxury brand IWC, had been due to travel to the Watches and Wonders event in Shanghai back in April.</p>
+            <p>When that became impossible, instead, he decided to joined the show as a life-size, 3D hologram. Appearing in 4K resolution, he was able to talk to, and see and hear the people who were physically attending the event.</p>
+            <p>"We beamed him from his office in Schaffhausen, Switzerland, to the event in Shanghai," says David Nussbaum, the boss of US holograms firm Portl.</p>
+            <p>"He did his thing, chatted to other executives, and even unveiled a new watch, all in real time. And then we beamed him out again!"</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>David Nussbaum, right, showing how the Portl system works, with his hologram, left</figcaption>
+            </figure>
+            <p>With the coronavirus pandemic having put a stop to much global travel since March 2020, it has fuelled a growing interest in the use of holograms - 3D light projections of a person - as a more life-like, more immersive, more sensory alternative to video calls.</p>
+            <p>Los-Angeles-based Portl is one of the firms at the forefront of the technology, and Mr Nussbaum says "we can't make our portals fast enough".</p>
+            <p>Its portals are eight feet (2.5m) tall, glass-fronted, computerised boxes. Inside the booths a life-size hologram of a person appears.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Beam me up Scotty? Actor George Takei relives his teleportation days in Star Trek</figcaption>
+            </figure>
+            <p>The portals have built-in speakers, so that the hologram's 'voice' can be heard. They also include cameras and microphones so that the user of the hologram can see and hear the people in front of his, or her, projection.</p>
+            <p>Where the person is actually physically standing - and that can be on the other side of the world from the portal machine - he or she just needs a camera, a plain backdrop, and another set of speakers and microphones.</p>
+            <p>Portl's app-controlled software system then connects the person via the internet to wherever the portal or portals are - and you can connect to as many as you like.</p>
+            <p>"There is almost no latency [delay]," says Mr Nussbaum. "And were it not for the sheet of glass in front of the hologram you'd think the person was actually [standing] there. In fact, if there is no light on the glass so that you cannot see it reflecting, then you do think the person is actually there."</p>
+            <p>The Portl system is aimed at business customers, and is currently also being used by other firms such as Netflix and T-Mobile.</p>
+            <p>The portals cost from $60,000 (£45,000) each, so they are certainly expensive, although the company says they can be rented for considerably less.</p>
+            <p>"In a few years time, this is going to become a regular way of communicating between offices," adds Mr Nussbaum.</p>
+            <p>At Microsoft, its hologram communication technology is based around a headset called HoloLens 2. At $3,500 per unit they are considerably cheaper than Portl's system, but the 3D holograms are not lifelike.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Microsoft's hologram system requires the users to wear headsets</figcaption>
+            </figure>
+            <p>Instead, when two or more headset wearers call each other, their holograms are projected in front of each of them as somewhat cartoon-like avatars, that appear to be standing in the same room.</p>
+            <p>"It would appear that they are in the same physical space, and they could walk around a virtual table and collaborate on things," said Greg Sullivan, director of mixed reality at Microsoft.</p>
+            <p>Also aimed at business customers, German engineering group Thyssenkrupp is one firm putting the technology to practical use.</p>
+            <p>One of the world's largest manufacturers of lifts or elevators, it used to have to fly its technicians around the world to make any necessary repairs. Now these employees can instead use HoloLens 2 headset to connect in holographic form with a local technician, guiding him or her though the work that needs doing.</p>
+            <p>Meanwhile, Japan Airlines is using the headsets to help train engine mechanics and plane crews.</p>
+            <p>Other hologram firms are more focused on the consumer market, such as San Diego-based Ikin. Next year it is launching a device that you clip to your mobile phone, and it will project into the air a transparent 3D hologram of the person you have having a video call with.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Ikin's RYZ product will allow everyone with as smart phone to switch from video to hologram calls</figcaption>
+            </figure>
+            <p>Gordon Wetzstein, an associate professor of electrical engineering and computer science at Stanford University, says that holograms are a "more effective way" of communicating than video conferencing.</p>
+            <p>"[With holograms] you can create eye contact. You can read subtle cues like who's looking at whom, " he says.</p>
+            <p>Yet, he cautions that problems may occur in the future if these holographic images become so real that distinguishing them from an actual person will become impossible.</p>
+            <p>"If you can create digital or synthetic experiences that get closer and closer to how you perceive reality, you're more vulnerable to being manipulated," says Mr Wetzstein.</p>
+            <p>Back at Portl, one of the firm's earliest investors was Tim Draper, who was also an early backer of both Skype and Tesla. Portl's Mr Nussbaum says he is confident that hologram technology is going to replace standard video screens in video conferencing in "five years".</p>
+            <p>He also predicts that it will see off video information screens. "We'll replace every single digital display kiosk in every mall, in every lobby, in no time. This will be the new way that businesses will want to present their content whether live or recorded."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_in-pictures_16" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>In Pictures</mark>
+                <h2>Week in pictures: 15 - 21 January 2022</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>A selection of powerful news photographs taken around the world this week.</strong></p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Ash blankets the island of Nomuka after an underwater volcano erupted about 40 miles (64km) north of Tonga's capital Nuku'alofa. The Hunga Tonga-Hunga Haʻapai volcano sent a tsunami towards the Pacific island nation and was heard as far away as the US.</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Commuters travel on the London Underground after government advice to work from home was ended in England. Prime Minister Boris Johnson also announced that face coverings in public places and Covid passports would no longer be compulsory in England from 27 January.</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A man pours ice-cold water over himself during a purification ritual at Kanda Myojin shrine in Tokyo, Japan. The coming-of-age ceremony welcomes 20-year-olds into adulthood, and honours and pays homage to Daikoku, the deity of fortune.</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A man tries to start the engine of a school bus after heavy snowfall in Scarborough, Ontario, Canada.</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A dog is blessed by a priest at the Church of San Anton in Madrid, Spain. The annual tradition marks the feast day of San Anton, the patron saint of animals, and is celebrated throughout the country.</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The first full Moon of 2022 rises over Mow Cop Folly, in Cheshire. Often referred to as the "Wolf Moon", it is thought that the name refers to the time of year when wolves are more vocal, ahead of the February breeding season.</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Visitors throw printed money in the air while getting their photos taken at the Gaki Hip exhibition in Taipei, Taiwan. Interactive installations featuring everyday objects - such as bubble tea, claw-machines and pineapples - aim to encourage visitors to reconsider the definition of Taiwanese culture.</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Ethiopian Orthodox worshippers jump into the pool at Fasilides Bath during the celebration of Timkat, the Ethiopian Epiphany, in the city of Gondar.</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Burning of the Clavie ceremony takes place at Doorie Hill in Burghead, Scotland. The centuries-old local tradition, in which a burning barrel packed with tar-soaked sticks is set alight, is usually held on 11 January, but was rescheduled until after restrictions on outdoor events were lifted by the Scottish government.</figcaption>
+            </figure>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

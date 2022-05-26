@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_discovery_10" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Discovery</mark>
+                <h2>Spiro Mounds: North America's lost civilisation</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>A treasure lost to time: Looters destroyed America's largest collection of Native American relics. Now, many have been reunited in a new museum exhibit.</h3>
+            <p>In 1933 on the eastern edge of the US state of Oklahoma, a group of failed gold prospectors watched as their partner struck a pickaxe into clay. Witnesses say the air hissed as it escaped from a burial chamber that had been sealed for 500 years.</p>
+            <blockquote>Nothing like this had ever been discovered anywhere else in North America</blockquote>
+            <p>The compatriots pushed their way through the debris into a Native American mound, amazed by what they saw. Inside lay unimaginable treasure. Hundreds of engraved conch shells, thousands of pearl and shell beads, copper breast plates, large human effigy pipes and piles of brightly coloured blankets and robes. Newspapers would later call the find an American "King Tut's tomb".</p>
+            <p>"Nothing like this had ever been discovered anywhere else in North America," said Eric Singleton, curator of ethnology at the National Cowboy & Western Heritage Museum in Oklahoma City. But the treasure soon disappeared.</p>
+            <p>Spiro Mounds had been unearthed by a group of local men who called themselves the Pocola Mining Company. The artefacts they discovered were immediately sold around the globe. Spiro's bounty is now spread among more than 65 museums across the US, Europe and Asia, and researchers are still discovering additional galleries and people possessing its riches. Nearly a century later, the incident remains the worst looting of an archaeological site in US history.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Spiro was home to a ceremonial centre for a confederation of mound-building nations called the Mississippian Culture (Credit: Larry Bleiberg)</figcaption>
+            </figure>
+            <p>This year, 175 pieces were reunited in a travelling exhibition that set attendance records in Oklahoma City, and is drawing new attention to Spiro Mounds, one of the most important and least understood sites in pre-contact North America.</p>
+            <p>"I always heard a little bit about it, but we never really paid attention," said Wesley Cloud, a school track coach who grew up in the nearby town of Spiro, which gives the site its name.</p>
+            <p>In June, he brought a dozen summer school students 30 miles from their home in Stigler, Oklahoma, to tour the archaeological site. The mounds barely rate a mention in textbooks, he said, while noting that some years, nearly half his students have Native American heritage. "This is something they can have pride in."</p>
+            <p>The story of the long-forgotten Spiro settlement seems particularly timely. It tells of a people desperately trying to adapt to a changing climate that would ultimately destroy their society. And at a moment when interest in Indigenous communities is growing, it's a chance to marvel at the craftsmanship and sophistication of a forgotten nation whose trade routes snaked thousands of miles across the continent. Spiro's treasures include engraved conch shells from the Florida Keys, copper breastplates from the Great Lakes and beads from the Gulf of California.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Human head effigy plate from 1200-1450 AD found at the Spiro site in Oklahoma (Credit: Courtesy of the Ohio History Connection)</figcaption>
+            </figure>
+            <p>Many of the pieces are "mind-blowing", said Singleton, the exhibit curator. "You compare it to art from any culture at any time in the past, and you have to admit it's a masterwork."</p>
+            <p>The story behind the artefacts is just as compelling. Spiro was home to a ceremonial centre for a loosely aligned confederation of mound-building nations called the Mississippian Culture. Together it included about 3 million people from more than 60 tribes, speaking 30 different languages.</p>
+            <p>The other principal cities were in Etowah, Georgia; Moundville, Alabama; and Cahokia, Illinois, near St. Louis, which was the biggest. These settlements rose to prominence beginning in the 800s during a period of favourable weather patterns that allowed them to create stable, agriculture-based societies, said Dennis Peterson, an archaeologist and manager of the Spiro site. Traditionally, women tended crops like corn, beans, squash and sunflowers, while men hunted small game. Spiro, located on the Arkansas River, sat at a natural passage between the east and west, and grew as a trade centre.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Visitors to Spiro Mounds might not immediately sense the importance of the site (Credit: Larry Bleiberg)</figcaption>
+            </figure>
+            <p>As the nation prospered, a priest class evolved, which took responsibility for planting and harvest ceremonies, and marking the annual solstices and equinoxes that governed the growing seasons.</p>
+            <p>But around 1250, the rains became less predictable during a period known as the Little Ice Age. The cities began to crumble. To save itself, Spiro's priests made a desperate attempt to "restart the universe".</p>
+            <p>Archaeologists say the leaders rebuilt an existing royal burial mound, filling the hollow chamber with the most powerful ritual objects they had including rare minerals, feathered capes, axes and other weapons. The hope was that the ceremonial burying of sacred property would return the city to its previous state, bringing back the steady rains and long growing seasons that had let Spiro flourish.</p>
+            <p>But the drought cycle continued, and by 1450, the mound city was abandoned. The residents drifted off, their descendants joining today's Caddo Nation and the Wichita and Affiliated Tribes, whose territories once included parts of the US states of Louisiana, Texas, Arkansas, Oklahoma and Kansas.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>While some artefacts remain on site, Spiro's bounty is spread among more than 65 museums across the US</figcaption>
+            </figure>
+            <p>"The Spiros were family with us," said Chase Earles, a Caddo artist from Ada, Oklahoma, whose contemporary pottery and historical illustrations are included in the new exhibit.</p>
+            <p>He said museum curators worked closely with Native communities to ensure Spiro's story was properly interpreted. And while it's painful to see the artefacts outside of tombs where they belong, he's pleased that non-Natives are having a chance to learn about his culture.</p>
+            <p>"These pieces are sacred," he said. "The burial items carry the spirits of our ancestors with them." The exhibit just finished its run at the National Cowboy & Western Heritage Museum, and moves to the Birmingham Museum of Art in Alabama in October 2021, before making its final stop the following March at the Dallas Museum of Art in Texas.</p>
+            <p>But visitors to Spiro Mounds can be forgiven if they don't immediately sense the importance of the site, located off a quiet farm road that zig-zags by former cotton fields.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Spiro Mounds was unearthed by a group of local men in the 1930s who looted it (Credit: Larry Bleiberg)</figcaption>
+            </figure>
+            <p>The interpretive centre itself feels like a time warp, where a nearly 40-year-old introductory slide is shown by request. Other rooms hold modest galleries with replica artefacts.</p>
+            <p>The looting of Spiro, exhibits explain, was driven by the desperation of the Great Depression. A group of six local men hoped they could make money by selling Native American artefacts, and formed a company named after the nearby town of Pocola. They paid the owner of Spiro's largest mound $300 for temporary rights to dig it up, although the men had no idea what lay inside.</p>
+            <p>They soon unearthed bones, along with arrowheads, pipes and copper relics. As their finds began to interest collectors, word reached a University of Oklahoma professor who asked the diggers to stop. When the men refused, the scholar convinced the state legislature to pass one of the nation's first antiquities acts to protect archaeological sites in 1935.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>By 1450, the mound city of Spiro was abandoned (Credit: alantobey/Getty Images)</figcaption>
+            </figure>
+            <p>Even so, the men kept digging illegally, and in August 1935 with three months left on their lease, they broke into the burial chamber - and proceeded to plunder it. They removed thousands of objects, making no attempt to document the site or its holdings. Skeletons were tossed carelessly to the side, broken fragments of conch shells piled up like snow, and cedar poles used to build the chamber and carry the dead were burned as firewood.</p>
+            <p>Today, touring the scene of this cultural crime, it's hard to envision the powerful nation that ruled here. Spiro's 12 mounds resemble little more than bumps on the landscape, most covered with trees and brush.</p>
+            <blockquote>There would have been thousands of people here every day</blockquote>
+            <p>Peterson, the centre's manager and sole employee, said visitors must use their imagination.</p>
+            <p>"There would have been thousands of people here every day for trade, but also just to be here because this was the elite area. It would be smoky because everyone was burning fires. It would have been noisy with kids and animals," he said.</p>
+            <p>And on a June afternoon, as birds chirp in the nearby woods and a hawk glides silently above, a visitor can walk across a once-great city and, perhaps, just for a moment, catch a glimpse of its glorious past.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

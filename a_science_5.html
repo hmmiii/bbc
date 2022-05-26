@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_science_5" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Science</mark>
+                <h2>Shackleton's Endurance: Modern star maps hint at famous wreck's location</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>For many, the lost ship of Antarctic explorer Sir Ernest Shackleton is the greatest of all undiscovered wrecks.</strong></p>
+            <p>In part that's because of the extraordinary story that surrounds the 1915 sinking of the Endurance - an epic tale of 28 men who somehow survived and escaped the calamity of becoming stranded in the frozen wastes of the Weddell Sea.</p>
+            <p>But the allure also has something to do with the daunting challenge the wreck now presents to anyone who might consider trying to find it.</p>
+            <p>What remains of the Endurance is 3,000m down in waters that are pretty much permanently covered in thick sea-ice, the same sea-ice that trapped and then ruptured the hull of Shackleton's polar yacht.</p>
+            <p>You need a good strategy, immense skill and an enormous dollop of good luck just to get near the sinking location. A team of hopefuls is on its way to the Antarctic right now.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Endurance was crushed by the sea-ice and sank in 3,000m of water</figcaption>
+            </figure>
+            <p>There's an assumption we know well where the ship lies on the ocean bottom because Shackleton had a brilliant navigator on his ill-fated voyage, a man called Frank Worsley. Using a sextant and chronometer, he calculated the coordinates for the position where the punctured Endurance slipped below the floes on 21 November, 1915.</p>
+            <p>It's in his log book. 68°39'30" South; 52°26'30" West.</p>
+            <p>But how accurate is this? Three modern-day researchers - Lars Bergman, David Mearns and Robin Stuart - have long pondered this question.</p>
+            <p>They've tried to sum the various errors that may have crept into Worsley's measurements and have concluded in a new pre-print paper that the true sinking position may be several kilometres to the east of where the navigator computed it to be.</p>
+            <p>"There's a lot of things to consider; you cannot just take Worsley's position for granted and go right to that location. You've got to use your judgement," said David Mearns who's found many historic wrecks in his career.</p>
+            <p>Mearns and his two colleagues have submitted their paper to the Journal of Navigation but have taken the decision to publicly release it now because it could be useful to the search that is about to get under way.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Longitude was worked out by comparing local time with Greenwich Mean Time</figcaption>
+            </figure>
+            <p>The paper's central concern is the performance of the marine chronometers, or clocks, used by Worsley to get a longitude fix.</p>
+            <p>Previous work by Bergman and Stuart had suggested these were running much slower than the crew of the Endurance had realised or accounted for - an error that would put the sinking west of Worsley's recorded position. But Mearns has now picked up a really quite critical error in the clocks' calibration that pulls the location back and off to the east.</p>
+            <p>The investigation highlights the story of Reginald "Jimmy" James, the ship's physicist on Shackleton's Imperial Trans-Antarctic Expedition.</p>
+            <p>It was James who showed Worsley how he could work out the drift in the time-keeping of the chronometers from lunar occultations.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Last voyage of Shackleton's Endurance ship</figcaption>
+            </figure>
+            <p>There's a picture of the two men at the stern of the Endurance observing stars as they disappeared behind the Moon. The timing of these movements had been predicted and published in a nautical almanac. Its tables kept the chronometers honest. And it's fair to say that without the occultation observations, Shackleton's crew would have misjudged their location by many, many kilometres.</p>
+            <p>But here's the fascinating part in this story. Modern maps of the sky are remarkably precise, far more so than the catalogues used to compile the almanac employed by James and Worsley. Had the men been in possession of today's information, they'd have realised their clocks were actually running 22 seconds faster than they were accounting for. Just this error would have put the Endurance more than 3km east of Worsley's log coordinates.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The entire crew survived the ship's loss in the ice</figcaption>
+            </figure>
+            <ul>
+                <li>December 1914: Endurance departs South Georgia</li>
+                <li>February 1915: Ship is thoroughly ice-locked</li>
+                <li>October 1915: Vessel's timbers start breaking</li>
+                <li>November 1915: Endurance disappears under the ice</li>
+                <li>April 1916: Escaping crew reaches Elephant Island</li>
+                <li>May 1916: Shackleton goes to South Georgia for help</li>
+                <li>August 1916: A relief ship arrives at Elephant Island</li>
+            </ul>
+            <p>However, this is but one uncertainty that needs to be considered when examining the reliability of those coordinates. Not often recognised is that Worsley didn't get a fix on the expedition's position until fully 19 hours after the Endurance had gone down. On the day of the sinking, a view of the Sun, needed to make a navigational observation, was impossible because of thick cloud. And neither was it possible in the two days before the sinking. Worsley's coordinates rely on an estimate of the direction and speed of the shifting sea-ice during those three "missing" days.</p>
+            <p>Bergman, Mearns and Stuart are convinced, though, having looked at all the issues, that the real longitude is off to the east. Their latest paper, they say is "a more complete, accurate and reliable basis for determining the most probable sinking location of Endurance". It's been shared with the Endurance22 project which is currently headed into the Weddell Sea to look for the wreck with underwater robots.</p>
+            <p>The project's exploration director, the marine archaeologist Mensun Bound, said the paper had been read with interest, although he did not disclose whether its analysis would influence his team's thinking. Everyone must have their own assessment.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>US-Russian Ice Station Weddell (ISW) 1992</figcaption>
+            </figure>
+            <p>Interestingly, this past week has marked the 30th anniversary of the start of Ice Station Weddell (ISW). This was a joint US-Russian ice camp that came very close to the presumed sinking location.</p>
+            <p>"It was set up from the (Russian ice-breaker) Akademik Fedorov on a multi-year drifting ice floe near 71.4° South," recalls Laurie Padman from the Seattle-based Earth & Space Research institute.</p>
+            <p>"It was set up from the (Russian ice-breaker) Akademik Fedorov on a multi-year drifting ice floe near 71.4° South," recalls Laurie Padman from the Seattle-based Earth & Space Research institute.</p>
+            <p>"The camp's track paralleled the last days of Shackleton's Endurance in 1915. I spent several weeks at ISW, my first Antarctic 'cruise', as US Chief Scientist.</p>
+            <p>"We collected atmospheric, sea-ice and ocean data for about four months, before ISW was recovered near 66° South by the (US icebreaker) Nathaniel B Palmer," he told BBC News.</p>
+            <p>Beyond the crew of the Endurance and the Ice Station, very few people have ever ventured into the west-central Weddell Sea, one of the most inhospitable parts of Antarctica.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Ice Station Weddell passed very close to the presumed sinking location</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Russian icebreaker Akademik Fedorov set up the drifting ice camp</figcaption>
+            </figure>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

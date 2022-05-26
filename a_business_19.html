@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_business_19" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Business</mark>
+                <h2>The airport tech helping to prevent delayed flights</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Air travel comes with many annoyances, and one of the biggest is flight delays.</strong></p>
+            <p>You are sat in the departure lounge, growing ever more frustrated and checking the flight information display every minute for your late departure.</p>
+            <p>When the board finally tells you the gate number, it can be a 15-minute walk away. And then you may face an additional wait before you can board.</p>
+            <p>Delayed flights remain a common problem on both sides of the Atlantic. Official figures show 11% of UK flights were delayed in the second quarter of last year, while 16% of US flights took off late in 2021 as a whole.</p>
+            <p>There are often multiple reasons behind delays but could include ground crews running late with aircraft refuelling, the airport struggling to deal with the sheer volume of passengers or having to wait for the pilots, or bad weather.</p>
+            <p>One strategy to reduce delays is the increased use of high-tech monitoring technology, to help airports and airlines run more efficiently.</p>
+            <p>Israeli startup, IntellAct, is one such provider. The company says most departure delays are within an airline's control and many stem from so-called turnaround services - the aircraft being cleaned, refuelled and restocked, or luggage being removed and loaded.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The AI software of Israeli firm IntellAct keeps an eye on an airport's ground staff</figcaption>
+            </figure>
+            <p>Using airport operators and airlines' existing security and observation cameras, IntellAct's artificial intelligence (AI) software system can automatically detect delays in these turnaround services.</p>
+            <p>It can then highlight the problem to airport staff or ground crew and suggest a mitigation plan in real time. For example, if a fuel truck arrives late, IntellAct can detect this and recommend 'parallel boarding'. This is where passengers board while the aircraft is being fuelled - it requires a fire engine to be present as a safety precaution.</p>
+            <p>"The idea came while I was visiting a European airport that suffered from a low number of movements [flights] and was interested in increasing the volume, and hence the number of passengers in its airport," says IntellAct chief executive Udi Segall.</p>
+            <p>"When I asked the airport's head of operation what it would take to increase the volume of flights, he replied that if the airport could offer a shorter connection time, it would attract international airlines to the airport," says Mr Segall. "Shorter connection time depends primarily on managing the turnaround process effectively.</p>
+            <p>"And that is the origin of the idea to build an AI-based solution to monitor turnaround services."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>IntellAct's system uses an airport's existing network of cameras</figcaption>
+            </figure>
+            <p>IntellAct says its system is currently being evaluated by a number of airports in Europe, Asia and the Middle East - and that preliminary tests conducted by Israeli carrier, El Al, at the country's Ben Gurion Airport showed it could potentially cut turnaround times by 15%.</p>
+            <p>Yet, Prof Sandra Wachter, a senior research fellow in AI at Oxford University, says such high-tech staff monitoring systems at airports raises concerns.</p>
+            <p>"Monitoring how often employees take breaks, how fast they work and incentivising them to work as fast as possible is stressful and dehumanising," she says.</p>
+            <p>"In fact, a stressful work environment is more likely to lead to mistakes, oversights or accidents. And this is particularly problematic in air traffic where the stakes are so high."</p>
+            <p>When it comes to getting passengers through airports more quickly, travel industry expert, Paul Charles, says the pandemic has "brought us forward by around three years in terms of new technology" that can help do this.</p>
+            <p>He points out how Covid has made many of us more comfortable using our mobile phones not just for tickets, but to show personal information.</p>
+            <p>"Airlines are relying on more apps to display information, such as which gate your flight is departing from," says Mr Charles, who is chief executive of PC Agency. He adds that governments requiring proof of vaccination status has "sped up the adoption of digital certificates on smartphones", for example.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

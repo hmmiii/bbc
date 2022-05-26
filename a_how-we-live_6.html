@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_how-we-live_6" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>How We Live</mark>
+                <h2>Why tiny words like 'yup' can send you into a tailspin</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Seemingly innocuous spoken words - sure, OK, fine, yup, no prob, gotcha - feel like weapons in text. Why are we so sensitive?</h3>
+            <p>Thank you, great job</p>
+            <p>Seeing this simple phrase in an email should make me happy - yet, without the warmth of an exclamation point, I feel a twinge of panic, even sadness. I understand different work and social cultures have different communication norms, yet part of my brain is working double-time to parse the subtext of that great job, minus punctuation. Did I do something wrong to deserve a frigid response? Was it frigid at all?</p>
+            <p>Of course, I’m not alone in applying microscopic scrutiny to words or phrases and their punctuation over email and chat. The way we use written language changes constantly. Not every phrase is loaded, yet we often jolt when certain short words and phrases show up in our inbox or chat windows, unpunctuated: “sure”, “OK”, “fine”, “yup”, “no prob”, gotcha”, or even “yes”, “no”, “thank you”, and “sorry”.</p>
+            <p>What is it about these short, common words and phrases that lend themselves to such varied interpretation when written? Why, when they leave the realm of speech and show up in informal written messages, do they seem to carry so much weight? And can an emailed “OK” ever really be simply OK?</p>
+            <p><strong>Lost in translation</strong></p>
+            <p>There is a big difference between dropping a casual, “OK” or “sure” in an in-person conversation versus sending the same word in text.</p>
+            <p>This is because when we speak to others in person, we’re using and interpreting countless subtle cues. “In a face-to-face or synchronous conversation, where we have our voices and our faces to use, something like ‘sure’ would be paired with a facial expression or a tone of voice to give extra context cues,” says Michelle McSweeney, US-based linguist and author of The Pragmatics of Text Messaging. “We assume that our conversation partners know what we’re trying to say.”</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Without important contextual cues from conversation, our brains scramble to fill in the blanks when we get ambiguous messages (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>And there’s far more going on in our tone than most of us understand - which means we lose a lot of meaningful context when we transition to writing. “Non-verbal vocal utterances - sighs, screams, laughs and so on - are extremely rich,” says Alan Cowen, chief scientist and CEO of Hume AI, a research lab on human emotions. “Our science is uncovering much more meaning in these sounds than previously appreciated. We now know that they convey at least 28 kinds of emotional meaning, and counting. We bring these same sounds into speech.”</p>
+            <p>When we chat digitally, we also lose the cues of a shared physical environment. Even in a video call, “we don’t have full access to interpersonal cues such as a person’s clothing, posture, seating position or non-verbal cues, gestures, etc., that normally help us make a conversation coherent, smoothly flowing and help us decipher interpersonal meanings,” says Erika Darics, applied linguist at the University of Groningen in the Netherlands, and host of the Words and Action podcast.</p>
+            <p>Another important part of a conversation is “backchanneling” - signals we use to show that we’re following along and paying attention. These signals include saying things “aha, hmm, right, yup, OK” - some of the words that rattle us most in text - as well as using gestures like a nod or raised eyebrow.</p>
+            <p>Backchannel signals, says Darics, “are usually below the level of consciousness”. In other words, we don’t realise we’re using them. So, the same words we may over-analyse in text are often the things we barely notice when we speak - yet they feature front and centre, like any other word.</p>
+            <p>“What may cause trouble in these digitally mediated channels is timing,” adds Darics. “If you decide to send a ‘yep’, you may end up interrupting the flow of a speaker’s texts.” A “right” that shows understanding in face-to-face conversation falls flat when texted, or creates unnecessary ambiguity.</p>
+            <p><strong>‘Our brains naturally fill in these gaps’</strong></p>
+            <p>Not only do digitised conversations lack the visual, aural and situational cues of an in-person chat, certain short words really do lend themselves to more varied interpretation by virtue of being short.</p>
+            <p>When we’re speaking, we’re focused on making the phonetic sounds of each word. The shorter or simpler the word, the less work we’re doing to pronounce it, and the more we can focus on infusing it with a range of emotions, says Cowen. “We’re actually able to form much more precise vocal expressions when we’re not too busy speaking,” he adds. “This makes simpler words better vessels for rich emotional expressions.”</p>
+            <blockquote>What may cause trouble in these digitally mediated channels is timing - Erika Darics</blockquote>
+            <p>So, when we read these phonetically simple words, we expect rich emotional intonation. “We still imagine them having a wide range of emotional meanings,” says Cowen, “and our brains naturally fill in these gaps” - often erroneously. </p>
+            <p>Many of these words are actually designed to be ambiguous in the first place. They are “on a scale of agreement to disagreement”, says McSweeney. “‘Yes’ and ‘no’ are the polar ends of that scale, and everything in between is in between, and intended to be in between. Creating that ambiguity is actually the goal.” Naturally, this ambiguity lends itself to misinterpretation, particularly when we’re communicating digitally with people we don’t know well.</p>
+            <p>In our own curated communication circles (friends and family; the people we learned to speak from), we tend have a better understanding of the “ordering” of the scale of agreement-to-disagreement that short words like “sure” and “OK” sit on. But, says McSweeney, “this gets super hairy in the workplace, because we don’t necessarily all come from the same culture.” </p>
+            <p><strong>‘Internet People’</strong></p>
+            <p>One way we try to deal with the challenges of digital communication is by using additional markers to clarify our short-form chats. </p>
+            <p>“Punctuation signs (along with emojis) are a set of resources [we use] to try and inscribe subtle interpersonal meaning,” says Darics. The use of punctuation and emoji to infuse chats with emotion has become so normal we’ve come to expect it, which means we attach more weight to each little exclamation. And when it’s absent, our brains rush to explain why. </p>
+            <p>However, how we fill the in gaps often depends on our age and how we first used the internet. Everyone has grown up with a different relationship to the internet; some people saw the beginning, while others haven’t lived a moment of their lives without it.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Different generations of 'Internet People' use - and interpret - language in text differently (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>This has created different types of “Internet People”, according to internet linguist Gretchen McCulloch, author of Because Internet. A crucial difference among these types of Internet People is how they first used the internet, and subsequently learned its social etiquette - particularly, whether they learned from peers and socialising online versus whether they first used the internet purely functionally, say for checking email or looking up information. If you learned the internet by socialising, you are more likely to associate its slang with a tone of voice.</p>
+            <p>McCulloch asserts that this is key to the way certain messages - certain words and types of punctuation - will be interpreted differently by different people. Each set of Internet People have different norms: we are all consulting a different authorial editor in our heads as we punctuate and read informal text.</p>
+            <p>“The problems start when you combine multiple sets of norms,” writes McCulloch in Because Internet. She gives the example of a message like the below from an older relative to a teenager, or a boomer boss to a millennial employee:</p>
+            <p>This message, she writes, “reads quite differently depending on what you think of as neutral”. Some will see nothing wrong, while others, particularly those who have been reading tone of voice into short digital messages since they were kids, see it as riddled with ominous omission.</p>
+            <p>“The dot dot dot is especially perilous,” writes McCulloch. For people who are more used to writing offline, she continues, the punctuation mark is generic - just used to separate words. “But for internet-oriented writers, the generic separator is the linebreak [sic] or new message, which has left the dot dot dot open to taking on a further meaning of something left unsaid.” </p>
+            <p>What’s more, we don’t much acknowledge differences in tonal fluency when it comes to internet writing; we assume that because we are all people who use the internet in some form, we must all have the same tonal style guide.</p>
+            <p><strong>Learn to read the digital room</strong></p>
+            <p>Understanding why certain messages make us bristle can help us communicate more smoothly - and accrue fewer bruises to our egos. Ultimately, it’s all about differences in communication styles, and learning what constitutes politeness in any given (digital) room.</p>
+            <blockquote>We assume that because we are all people who use the internet in some form, we must all have the same tonal style guide</blockquote>
+            <p>This can certainly be the case in the workplace. “In my particular [office] culture,” says McSweeney, “we are fun, and I’m not that much fun. But I am so good at sending rainbow dancing emojis now because it’s the way to say to my co-workers, ‘Hey, I see you,’ and that’s the culture.”</p>
+            <p>By paying attention to and embracing digital culture codes - insomuch as we are comfortable and are not forfeiting our identities - we take some of the pressure off ourselves to infuse our informal messages with the exact right tone. If everyone is using exclamations and emoji to be polite, lean in. And if those marks are typically absent, relax, no one is mad at you - remember that there are so many things at play, you don't always have to overthink it.</p>
+            <p>But if a message really doesn’t sit right, you can always send a voice snippet. “Emotional communication in the voice is more biologically prepared, richer, more precise, harder to fake, and more culturally universal than emotional communication in text,” says Cowen. “I think sending voice snippets is a great way to break free of uncertainty in text conversations.”</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

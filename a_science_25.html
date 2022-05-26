@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_science_25" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Science</mark>
+                <h2>Mexico's Maya train: Work halted over cave concerns</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>A judge in Mexico has ordered the temporary suspension of works on a stretch of the Maya train project, citing a lack of environmental permits.</strong></p>
+            <p>The project to build a railroad in the Yucatán Peninsula is President Andrés Manuel López Obrador's flagship infrastructure programme.</p>
+            <p>But cavers warn that it threatens caverns dating back millions of years.</p>
+            <p>The judge ordered works to be halted until studies could be carried out about the works' environmental impact.</p>
+            <p>Cavers had joined forces with environmentalists to bring the case to court last month.</p>
+            <p>They argued that a change in the route of the train line linking the tourist hotspots of Cancún and Tulum, known as Section 5, would harm the jungle it will now run through and the network of caves which lies beneath it.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Speleologists have warned of the damage continued work could do to underground caves</figcaption>
+            </figure>
+            <p>Judge Adrián Novelo said building work on this 120km (75 mile)-stretch should be suspended because "a continuation of the works (...) implies the cutting down of trees, the destruction of flora and native species, and the perforation of the ground".</p>
+            <p>Environmentalists and speleologists had warned that construction work would damage the cave system which has been created over millions of years.</p>
+            <p>Aleira Lara, director of campaigns for Greenpeace Mexico, told the BBC that she welcomed the judge's decision and hoped it would result in a permanent suspension of construction work.</p>
+            <p>Ms Lara also praised the efforts of the cavers and their lawyers in getting their case heard in court.</p>
+            <p>She said that following the rerouting of Section 5, the obligatory environmental impact studies had not been carried out, meaning that the new route was in breach of environmental laws.</p>
+            <p>Ms Lara says that the caves are not only havens of biodiversity and home to animals such as bats and blind cavefish, but also act as places of refuge for jaguars who use them as a source of drinking water.</p>
+            <p>"The construction work is altering the ecosystem and that has a serious impact on biodiversity."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The caverns are home to blind cavefish</figcaption>
+            </figure>
+            <p>Judge Novelo agreed that a continuation of the works would entail "a high probability of a change in the ecosystem".</p>
+            <p>A decision on whether the suspension will be made permanent is scheduled to be taken on Friday.</p>
+            <p>The $9.8bn (£7.5bn) Maya train project is aimed at building a 1,500km-long railroad linking the south-eastern Mexican states of Chiapas, Tabasco, Campeche, Yucatán and Quintana Roo.</p>
+            <p>It has been controversial from the start. President López Obrador has argued that it will provide an environmentally friendly mode of transport for locals and tourists alike, as well as boosting development and employment in the underdeveloped region.</p>
+            <p>But critics say the megaproject has been rushed and environmental concerns have been overridden.</p>
+            <p>The president has dismissed warnings by activists labelling them as "pseudo-environmentalists" and questioning their motives for opposing the project.</p>
+            <p>Despite delays and protests, the president is adamant the project will be inaugurated in December 2023.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

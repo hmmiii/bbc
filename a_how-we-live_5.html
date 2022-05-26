@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_how-we-live_5" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>How We Live</mark>
+                <h2>Why some people are great at giving gifts</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Giving the right gift is an art that some people have mastered. What makes them so good at finding the perfect present?</h3>
+            <p>I know people who keep spreadsheets of everyone they need to buy gifts for during the holidays. They put them together weeks - if not months - in advance. Meanwhile, I scramble at the last minute, double-checking my Amazon purchase history to make sure I’m not embarrassingly giving someone a repeat gift.</p>
+            <p>I love giving gifts, but I get quickly overwhelmed - yet I know others who seem to thrive at it. Not only do they take care of the task well ahead of time, but the gifts they give are extremely thoughtful, specific and unique.</p>
+            <p>Why does planning presents come more naturally to some people, sometimes including those who may not be the warmest souls throughout rest of the year, yet knock it out of the park with presents? Psychologists say there’s a reason why Uncle George always knows exactly what you want.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Imagining the moment someone smiles as they open a present could motivate us to become more skilled gift givers (Credit: Getty Images)</figcaption>
+            </figure>
+            <p><strong>‘Pretty on top’ of life</strong></p>
+            <p>In my own life, I’ve found the best gifters tend to have their lives together: they’re often super competent, organised and seem to have ‘adulting’ down to an artform. Peggy Liu, associate professor of business administration at University of Pittsburgh, US, who’s studied the psychology of gift-giving, agrees.</p>
+            <p>Liu says skilled gifters who enjoy gifting will do things like keep track of what they got people the prior year, whether the recipients liked it and also have a set gifting formula for other people in their lives, like their kids’ teachers, colleagues or neighbours.</p>
+            <p>In Liu’s case, she generally knows what she needs to give - maybe a small gift like chocolates or a coffee mug - and plans ahead of time. She also knows she can give people the one thing they always really want and need - cash - but balance out the impersonal vibe with something like a nice handmade card. Skilled gift-givers may also stockpile throughout the year; when the holidays roll around, they draw from that stockpile right off the bat.</p>
+            <p>The people Liu knows to be good gift-givers “tend to be pretty on top of it” in life, she says. And while there’s not any formal research that pinpoints what types of personalities are better at giving gifts, Liu says the best gift givers tend to “have this feeling of achievement” buying and giving the perfect gifts - and these people may even view their ability to gift well as part of who they are.</p>
+            <p>For example, when others in their lives compliment or give them positive feedback for giving such great presents, it reinforces the ego and self-image of the gift giver, which encourages them to keeping spending all that extra time and care when giving gifts. That can heighten the enjoyment from the gift-giving experience, explains Liu.</p>
+            <blockquote>These people may even view their ability to gift well as part of who they are</blockquote>
+            <p>“People say, ‘oh, you’re so good at gift giving’. I think some [gifters] start to think of themselves as having an identity of being a good gift giver,” she says. This can build a sense of accomplishment, she says, and ultimately become part of how these gifters view themselves - a motivating factor that can make them strive to continually be good at gifting.</p>
+            <p>This can potentially work the opposite way, too, making bad gifters worse. Those who see themselves as being poor at picking presents as part of their identities can put themselves into a spiral of stress when it’s time to pick a present. This can kick off “this self-fulfilling cycle of getting worse and worse at it”, explains Liu.</p>
+            <p><strong>Social-bond builders</strong></p>
+            <p>Giving gifts is a clear-cut way of building social bonds as well as showing others we want to nurture a relationship with them. This can also fuel one’s enjoyment of gift-giving.</p>
+            <p>“We’re an extremely social species, and much of our success is due to the fact that we get along in groups by being able to co-operate with others,” says Daniel Farrelly, professor of psychology at University of Worcester, UK, who’s also studied the psychology of giving gifts. “One great way to do that is by exchanging gifts - incurring a cost to benefit another individual - and special times of the year like Christmas are such an opportunity.”</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>People who are good at giving gifts may have that skill because they view themselves as having the identity of a good gift-giver (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>Even some people who may seem somewhat surly or otherwise cold during the year can feed off this incentive to build a bond through gifting. It helps that “the rules of gift-giving are easier to follow perhaps than other social niceties”, says Farrelly, which makes using gifting to nurture relationships “particularly appealing” to otherwise not-particularly-warm personalities. In other words, these people could be surprisingly great at giving gifts because giving a present is “a nice unambiguous way” to build those social bonds.</p>
+            <p>Liu agrees, and says that showing someone you care is a big motivator for why people of all kinds go the extra mile to be skilled gifters. She points to studies that suggest people give gifts with a ‘smile-seeking motive’ - that most shoppers prefer to give gifts that will put a smile on someone’s face when they open it, versus a gift that fits the recipient’s preferences. That suggests a big motivator in why we give gifts is to build interpersonal relationships, instead of just crossing off items on a ‘To Buy’ list.</p>
+            <p>“The warm and nice feeling we get from giving gifts, and receiving them, is all part of our social ways,” which “motivates us to engage in gift-giving,” says Farrelly.</p>
+            <p>If you wish you were better at giving gifts, a good way to improve might be to channel the same things that motivate the best gifters: turn it into something fun you look forward to. Try pairing it with something enjoyable; for example, a cup of hot chocolate as you wrap gifts, says Liu. She also suggests asking good gifters whom you know for tips for those formulaic gift ideas, like chocolates or gift cards, that could make things easier.</p>
+            <p>But maybe the best motivator to improve is to think about that smile you’ll see on someone’s face when they receive your gift, and what Liu describes as “that warm glow”. After all, isn’t that the real reason we give gifts at all each holiday season?</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

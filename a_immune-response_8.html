@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_immune-response_8" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Immune Response</mark>
+                <h2>Can you still transmit Covid-19 after vaccination?</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>There's no evidence that any of the current Covid-19 vaccines can completely stop people from being infected - and this has implications for our prospects of achieving herd immunity.</h3>
+            <p>It was 17 June 2009. An 11-year-old boy returned to the US from the UK - and inadvertently brought something with him. Later that week, while attending a religious education programme in Sullivan County, New York, he developed a mysterious swelling of his salivary glands. He had mumps, a respiratory infection spread by contact with droplets in the air.</p>
+            <p>Meanwhile, the religious course continued. The 400 children in attendance spent hours each day engaging in prolonged face-to-face contact - specifically, a kind of Orthodox Jewish education involving facing a study partner, a chavrusa, across a narrow table, while analysing and debating text from the Talmud. By the time the programme ended, 22 others had been infected, along with three adults.</p>
+            <p>As the students went back to their homes, the virus spread to Brooklyn and Rockland County, then on to Ocean County and Orange County. In all, the outbreak lasted a year, and at least 3,502 people developed the disease.</p>
+            <p>When scientists analysed what had happened, they suggested that the chavrusa style of learning might have allowed for "particularly efficient transmission of mumps virus". What might seem most surprising in this case is that the accidental super-spreader had received a full course of the MMR (measles, mumps and rubella) vaccine. It's likely that he did have some immunity - like the other vaccinated children, he developed relatively mild symptoms with no complications - but he was still able to carry the virus and transmit it to others.</p>
+            <p>In fact, most vaccines don't fully protect against infection, even if they can block symptoms from appearing. As a result, vaccinated people can unknowingly carry and spread pathogens. Occasionally, they can even start epidemics. </p>
+            <p><strong>"Effective" or "sterilising" immunity</strong></p>
+            <p>There are two main types of immunity you can achieve with vaccines. One is so-called "effective" immunity, which can prevent a pathogen from causing serious disease, but can't stop it from entering the body or making more copies of itself. The other is "sterilising immunity", which can thwart infections entirely, and even prevent asymptomatic cases. The latter is the aspiration of all vaccine research, but surprisingly rarely achieved.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Occasionally, vaccinated people will inadvertently cause an outbreak of the Victorian-era illness mumps (Credit: Alamy)</figcaption>
+            </figure>
+            <p>Take meningitis as an example. For the kind caused by the bacteria Neisseria meningitidis, there are many vaccines available for the tens of different strains. The three given in the US - MCV4, MPSV4 and MenB - can together prevent 85-90% of disease cases. However, several have been shown to still allow people to "carry" the bacteria involved.</p>
+            <p>They can hide out in the nose or the back of the throat, from where they are able to infect others via sneezing, coughing, kissing, or sharing cigarettes or utensils. In one study of university students in the United Kingdom, the vaccine had no effect on the proportion of people harbouring the pathogen four weeks later.</p>
+            <p>"Two meningitis vaccines can have two very different effects on whether you can spread the disease," says Keith Neal, professor emeritus of epidemiology at the University of Nottingham. "But only a minority of those people who get the germ go down with meningitis [in well-vaccinated communities] because they have immunity to it."</p>
+            <p>It's also possible to be infected with pertussis, hepatitis B, mumps, and (often, but not always) influenza, regardless of whether you have been vaccinated - though all these immunisations are highly effective at preventing people from developing serious symptoms or needing to be hospitalised.</p>
+            <p><strong>How sterilising immunity works</strong></p>
+            <p>While effective immunity is usually provided by a combination of white blood cells - such as B and T cells - along with antibodies, sterilising immunity is typically all about the latter. In particular, it relies on neutralising antibodies, which defend the body from pathogens by sticking to their outer surface and preventing them from interacting with their intended targets, such as the cells that line the nose, throat or lungs.</p>
+            <p>In the case of Covid-19, neutralising antibodies that recognise the virus bind to the spike protein on its surface, which it uses to enter cells. To achieve sterilising immunity, vaccines must stimulate enough of these antibodies to catch any virus particles entering the body and immediately disarm them.</p>
+            <p><strong>What type of immunity do the Covid-19 vaccines provide?</strong></p>
+            <p>"In a nutshell we don't know, because they’re too new," says Neal.</p>
+            <p>So far, the available Covid-19 vaccines have not been judged primarily on their ability to prevent transmission - though this is now being evaluated as a secondary endpoint for many of them. Instead, their efficacy was assessed by whether they could prevent symptoms from developing. "This means that we set our targets kind of pragmatically," says Danny Altmann, professor of immunology at Imperial College London.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Israel had already vaccinated more than half of its citizens by the end of January, making it a useful place to study how the vaccines affect transmission (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>Scientists already know that the antibodies people develop after natural infections with Covid-19 don't always prevent them from being reinfected. One study of British healthcare workers found that people who had antibodies already when the study began - presumably from a first infection - had a 17% chance of catching it a second time. Around 66% of these cases were asymptomatic, but it's thought that you don't need to have symptoms to be at risk of passing the virus on to others. </p>
+            <p>"For a virus like this, I almost think that's asking too much of a vaccine," says Altmann. "It's really, really hard to do."</p>
+            <p>Happily, this isn't quite the end of the story.</p>
+            <p>There are some early hints that certain vaccines might be able to reduce transmission, even if they can’t eliminate it entirely. One way it might do this is by reducing the number of viral particles in people’s bodies. "It is quite likely that if the vaccines are making people less ill, they are producing less virus, and therefore will be less infectious, but that's just a theory," says Neal.  </p>
+            <p>Sterilising immunity is also notoriously tricky to prove.</p>
+            <p>Since most clinical trials didn't check whether the vaccines were preventing transmission, scientists are currently looking to see whether they are having an impact on infection rates in places where they have already been widely distributed. In the UK, you might expect that outbreaks in care homes - where vaccination efforts are being prioritised - would become less frequent, if the vaccines were having an effect.</p>
+            <p>But this is problematic. "There are two factors," says Neal. "We've got lockdowns and a vaccine. So, it's actually quite difficult to separate them out. Is it the vaccine? Is it the lockdown, or more likely a combination of both?"</p>
+            <p>Here's what we know so far about the current vaccines' ability to halt transmission. (But first - to avoid confusion, information about their ability to prevent symptoms or protect people from disease has not been included.)         </p>
+            <p><strong>Oxford-AstraZeneca</strong></p>
+            <p>Back in July last year, a study testing the efficacy of this vaccine in rhesus macaques - which have similar lung physiology to humans - provided some promising results. It found that while the monkeys were protected from serious illness, it did not prevent them from becoming infected with Covid-19 in the first place. Vaccinated monkeys were as likely to become infected as the unvaccinated ones, though they did have fewer viral particles in their lungs than the unvaccinated group.</p>
+            <p>The authors noted that their results suggested that the vaccine might not prevent the transmission of the virus, "however, it could significantly reduce illness".</p>
+            <p>Fast-forward to the phase III trials in humans, and the picture becomes a little more complicated. Unusually, the Oxford-AstraZeneca vaccine didn't just involve injecting the participants with two doses of either the new vaccine or a placebo - in this case, the meningitis vaccine - and then following up to see if they had developed any symptoms several weeks later. This trial also involved the additional step of asking them to complete a nose and throat swab each week, to test for asymptomatic infections.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>It's possible to carry certain strains of the bacteria that causes meningitis, even after being vaccinated (Credit: Alamy)</figcaption>
+            </figure>
+            <p>According to these results, published in January 2021, the vaccine was 59% effective at preventing infections in those who received a half dose, followed by a standard dose - a group that also happened to be younger than the average for the study overall. However, among those who received two full doses, that figure dropped to just 4%. The research did not look at whether the vaccine had any impact on the number of viral particles in the patients' lungs.</p>
+            <p>The authors explained that while the reduction in the number of infections - and therefore the potential for transmission - in the half-dose group was promising, further data was needed to confirm the findings.</p>
+            <p>The latest development is a new paper published in pre-print on 1 February, which revealed the results of a further month of studying the trial participants. The researchers found that the vaccine cut the number of cases with detectable virus by 67% after a single standard dose, and wrote that this shows "the potential for a substantial reduction in transmission".   </p>
+            <p><strong>Pfizer-BioNTech</strong></p>
+            <p>There isn't yet any conclusive evidence that the Pfizer-BioNTech vaccine can prevent people from being infected with the coronavirus - and therefore halt its spread. But there are some early signs that it might.</p>
+            <p>In early January, the chief executive of Pfizer, Albert Bourla, said animal studies found that it provided significant protection from transferring the virus, though this hasn’t been proven in humans.</p>
+            <p>Then a small Israeli survey found that, out of 102 medical staff who had received two doses of the vaccine, only two had developed "low" amounts of antibodies. The other 98% had more antibodies than people who had been infected with Covid-19. The results were released via a press release, which quotes the head of the study speculating that these powerful immune responses were likely to prevent people from becoming carriers or spreading the disease.</p>
+            <p>However, there are a number of reasons to be cautious about interpreting these results, such as the small sample size and the fact that the research was not published in a peer-reviewed journal.</p>
+            <p>More recently, the Israeli Ministry of Health (MoH) looked at the health records of a million people in the country, and found that - a week after being fully vaccinated - just 317 people out of 715,425 tested positive for the coronavirus.</p>
+            <p>Again, this was not a clinical trial - there was no unvaccinated control group, and the effect could be down to something else, such as the impact of a lockdown imposed in December. But the infection rate was considerably lower than elsewhere (0.04%, while it's estimated that 1.87% of people in England had the virus in the week ending 23 January).</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>So far, Covid-19 vaccines have not been primarily assessed based on their ability to stop the spread of Covid-19 (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>A study by the nation’s domestic healthcare provider - Maccabi Healthcare Services - found similarly encouraging results. Out of 163,000 people given a full course of the vaccine, just 31 were infected, compared to 6,500 infections in an equivalent group of unvaccinated people.</p>
+            <p><strong>Moderna</strong></p>
+            <p>Though the Moderna trial did not look specifically at whether the vaccine can prevent transmission, participants were checked for Covid-19 infection before they received their first and second doses - meaning it was possible to compare the rates of infection in these groups. In all, 14 people tested positive after having one shot, verses 38 who had received a placebo.</p>
+            <p>This suggests that the vaccine might be able to prevent two-thirds of asymptomatic cases after one shot. However, there were limitations to this provisional research - the number of people who tested positive was small, so the estimate may not be entirely accurate. It was published in a briefing submitted to the FDA, and has not yet been peer-reviewed.</p>
+            <p><strong>Novavax</strong></p>
+            <p>The vaccine hasn't yet been approved for use anywhere in the world - and like the others, it has not yet been comprehensively shown to prevent infections or transmission in humans.</p>
+            <p>But back in November, some early results got scientists excited.  </p>
+            <p>The company revealed that it prevented the virus spreading entirely during studies in rhesus macaques, when they were given a high enough dose. These results put it in an exclusive club of vaccines that are able to prevent asymptomatic transmission completely in other primates - seen as a promising sign, because they have similar respiratory physiology to humans.</p>
+            <p>Now scientists are waiting to find out if the vaccine can achieve sterilising immunity in vaccinated humans, too.</p>
+            <p><strong>Incomplete herd immunity</strong></p>
+            <p>Unfortunately, the ability of the vaccines to prevent transmission won't just have an effect on how long social distancing rules need to be followed - it will also have an impact on herd immunity.</p>
+            <p>“If the vaccines don't completely stop transmission, it will increase the amount of people we need to vaccinate to truly cross the herd immunity thresholds and drive down cases to somewhere near zero," says Michael Head, a senior research fellow in global health at the University of Southampton. He explains that it's not yet clear what the herd immunity threshold is, because it hasn't been reached either through natural infection or through vaccination.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>As more people are vaccinated, scientists expect to see fewer people testing positive for Covid-19 in care homes (Credit: Russell Cheyne/ Reuters)</figcaption>
+            </figure>
+            <p>Herd immunity is the indirect protection from an infectious disease that populations acquire when enough people are immune. The threshold needed to achieve it depends on many different factors, such as the reproduction number of the virus, or "R" - the number of further people infected by each carrier - which itself varies widely. Some factors that affect the latter include where in the world you live, the variant involved, and the conditions on the ground, such as lockdowns.</p>
+            <p>This means that, even when scientists do know more, there will be no set threshold for herd immunity that works everywhere - but it's possible to estimate roughly what it might be.</p>
+            <p>For example, one calculation suggests that for a vaccine that totally eliminates transmission, 60-72% of the population would need to have it, it order to accomplish complete herd immunity. But if the vaccine’s effectiveness were 80%, between 75 and 90% of people need to have it.</p>
+            <p>This is potentially higher than the vaccination ambitions of many countries. The UK is aiming to immunise every adult by September, which equates to around 51m out 67.5m people - 75% of the population in total. That's assuming that every adult in the country is willing to be vaccinated, and healthy enough to be eligible.</p>
+            <p>However, most scientists aren't expecting to eliminate the virus entirely. For the moment, the goal is to reduce its transmission as much as possible. "Even if you vaccinate, you've still got a fairly large number of susceptible people there,” says Head. "So, we will still see outbreaks happen. I think they would be fairly localised, but they would still cause concern and cause a burden of disease".   </p>
+            <p>Some scientists argue that the emphasis on preventing transmission is a red herring, because once enough people have been vaccinated, it doesn't matter if they are still able to spread the virus - everyone will have immunity.</p>
+            <p>However, it may prove crucial for those who are unable to be vaccinated, for example because they are pregnant, too young, or too unwell.</p>
+            <p>Until we have an answer, perhaps we should all keep in mind the story of the 11-year-old boy with mumps - and act as though we haven't been vaccinated, even if we have. </p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

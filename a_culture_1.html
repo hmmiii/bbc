@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_culture_1" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Culture</mark>
+                <h2>What the Nordics can teach us about having fun</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>The Scandi and Nordic attitude to play has had a big influence on current design and urban living. Clare Dowdy explores a world of mud, adrenaline and 'skrammellegepladser'.</h3>
+            <p>What do you get if you mix a love of foraging and the countryside with a child-centred mindset and a healthy attitude to danger? Answer: playgrounds that are the envy of the world. "Scandinavia is a special place for children, no doubt," says Brit Kieran Long, director of ArkDes, Sweden's national centre for architecture and design, "and Sweden has children at the heart of everything it does". He puts this, in part, down to "the amazing equality of gender between parents. Parenthood here is not women's work, it's much more equal, and there's huge amounts of parental leave". That creates an extreme demand for experience, and informs how public play is handled, he adds.</p>
+            <p>Since the 1940s, kids in the region have been getting muddy and wet and taking risks in well-designed play areas, and these once-pioneering ideas have spread. The idea of actually creating a playground with specifically designed equipment was conceived in 1850s Germany, with the first being built in Manchester, UK and then in Boston, USA.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A green park featuring playful elements is at the centre of a new development by White Arkitekter in Linköping, Sweden (Credit: White Arkitekter)</figcaption>
+            </figure>
+            <p>But the Scandi philosophy of play, around free - rather than structured - play, and plenty of it outdoors, led to more inspiring settings. It all began when Danish architect Carl Theodor Sørensen came up with the notion of skrammellegepladser or "junk playgrounds". His aim was to give urban kids the same chance to play as those in the countryside. He'd noticed that kids would rather play anywhere than in the playgrounds that he first designed, and in the 1930s was inspired by seeing resourceful kids turning construction sites into play areas.</p>
+            <blockquote>Play is something that everyone has a right to - it is a like a basic service of urban life - Hanna Harris</blockquote>
+            <p>Sørensen's first adventure playground opened in Emdrup on the outskirts of Copenhagen in 1943. He wrote: "Children's playgrounds are the city's most important form of public plantation." The playground was equipped with tools and building materials, so children could dig, construct and change their environment, and get together to create their own play space.</p>
+            <p>The 1940s and 1950s were a golden era for playgrounds in the region, believes Emelie Brunge, architect at Nyréns Arkitektkontor in Stockholm. "A new focus on children developed in urban planning with the advent of modernism."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A 1940s experimental adventure playground in Emdrup, Copenhagen, was the first example of a "junk playground" or skrammellegepladser (Credit: Getty Images)</figcaption>
+            </figure>
+            <p>These seeds were picked up and sown elsewhere. After visiting Emdrup, British landscape architect Lady Marjory Allen created around 35 adventure playgrounds back home in the 1960s and 1970s, with the motto "better a broken bone than a broken spirit".</p>
+            <p>Around four decades later, Sørensen's influence was felt in Glasgow, via Assemble Studio. In 2013, the Turner Prize-winning collective's Baltic Street Adventure Playground opened. Their design argues for the adventure playground as a counterpoint to the pressures of modern urban childhood. Mud is a key feature.</p>
+            <p>Back in the post-war Nordics, things continued to be radical. In October 1968, Gunilla Lundahl transformed Stockholm's Moderna Museet into a sprawling adventure playground - a hugely influential project that was free and accessible to all.</p>
+            <p>Coinciding with this emphasis on children's wellbeing was the notion that everyone should have access to play areas. In the 1950s, a series of parks was developed (known as "valley parks") in the new suburbs being built around Stockholm. Importantly, these were not just for children, but were places "where different generations and social classes could meet", says Brunge.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The legendary designer Isamu Noguchi created play equipment for Moerenuma Park, Japan (Credit: INFGM/ARS-DACS)</figcaption>
+            </figure>
+            <p>This sense of inclusivity has persisted, particularly in Denmark. Today, play in cities like Copenhagen is not restricted to specific areas or to children. The capital has put people first with its focus on cycling and walking - much of it courtesy of urban designer Jan Gehl. Play is integrated into the urban environment, with basketball courts in streets and slides built into hillsides.</p>
+            <p><strong>State of play</strong></p>
+            <p>Not all playground equipment needs to look like play equipment, says British architect Jake Ford of Sweden-based White Arkitekter, one of the biggest architecture firms in Scandinavia. "It could be subtle, like a bench that you can climb on so it becomes a stage, or trees that are climbable." Ford is part of the team working on the Gascoigne estate in London's Barking, where the Scandi influence will be felt, as play in the public realm is central to the design.</p>
+            <blockquote>Play doesn't just stop when you get older, if anything, you should make sure you can incorporate play even more - Guy Hollaway</blockquote>
+            <p>Likewise, in the Finnish capital, the undulating domes of new art museum Amos Rex designed by JKMM act as a public sphere, where visitors of all ages play, climb up and slide down. Hanna Harris, chief design officer of the City of Helsinki, explains the Finnish attitude to play. "It's something that everyone has a right to - it is a like a basic service of urban life."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The new skatepark and climbing centre in Folkestone, UK, is described by its creator as a "controlled adrenaline facility" (Credit: Matt Rowe/ F51)</figcaption>
+            </figure>
+            <p>Skateboarding appeals to a wide age range, and while some cities discourage it, in Malmö it's embraced. The Swedish city has a full-time skateboarding officer and myriad skate-friendly spots. The British seaside town of Folkestone is also making its mark. F51, an indoor, multi-storey skate park, is set to open there this spring. "Play doesn't just stop when you get older," says Guy Hollaway, F51's architect. "If anything, you should make sure you can incorporate play even more."</p>
+            <p>The idea behind these inclusive spaces is reflected in Pinterest's playful trend tipped for 2022. The image-sharing service predicts that "this year, generation X and boomers will be all over playful pastimes like indoor swings... because crafts and toys keep the big kids young at heart."</p>
+            <p>If playgrounds are designed to be exciting and unique, they can perform further roles. Malmö families cross town to visit its network of individually themed parks, making them a motor of social exchange, says Long at ArkDes. "This breaks down barriers between diverse communities".</p>
+            <p>However, in places with housing shortages, play areas can suffer. Brunge points out that even in some parts of relatively well-funded Scandinavia, playgrounds are under pressure. "In the new dense housing areas (of Sweden), it's hard to get a big enough space for things like kindergartens, schools, play areas and parks. The parks get smaller and with the dense exploitation, more people are using them. This has meant that we are having a hard time getting natural vegetation like lawns, flowers and shrubs to survive because of wear and tear." Long echoes this. "Now it's a watered-down version, of 'let's make some nice play equipment'. The radical past is not so alive now."</p>
+            <p>Brunge also worries that "we're increasingly moving towards the playgrounds being designed according to safety regulations, which of course is important. But I think we must be careful not to lose what it means to be a developing child at the cost of always keeping them safe". Guy Holloway feels similarly. "Despite in many ways the world becoming safer, we're shrouding our children in what feels like cotton wool to protect them all the time, and they are losing that ability to play without fear." He describes F51 as a "controlled adrenaline facility", adding "it is what young people need to be able to play properly".</p>
+            <p>Sørensen's designs reflected the modernist movement and included strong geometric shapes and graceful landforms. But it wasn't just the Scandinavian modernists who brought geometry into play. The late Japanese-American sculptor Isamu Noguchi's playground designs often referred to geometry and science, says Florence Ostende, curator of the Barbican's recent exhibition Noguchi. She cites "triangulated structures such as the tetrahedron, which [Noguchi's] close friend R Buckminster Fuller conceived as 'a minimum structural system of the Universe'".</p>
+            <p>His play equipment graced Japan's Moerenuma Park, and in 2019, Danish artist Danh Vo placed Noguchi's Play Sculpture - a red undulating loop of six large pipes - in the grounds of Pelican Estate in South London, creating somewhere for residents to play, climb and rest. "Noguchi's fundamental contribution to playground design lies in the free, open and unscripted nature of our relationship to space and the environment," adds Ostende, whose exhibition will tour to Cologne, Bern and Lille.</p>
+            <p>While space and funds for play areas may be under pressure, play areas that make even a nod towards their radical roots are much appreciated. The Nordics' love of foraging features in the design of some Helsinki playgrounds and youth centres, where edible plants have been grown.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The undulating domes of new art museum Amos Rex, Helsinki, act as a play area where visitors of all ages can climb and slide (Credit: Mika Huisman/ Amos Rex)</figcaption>
+            </figure>
+            <p>Meanwhile, Ford, who lives in Sweden, remembers his mother's reaction to his daughter's pre-school playground. "She was slightly horrified as it only had a waist-high fence, and there were huge rocks to jump off. There was mud and sand and bushes with berries to eat."</p>
+            <p>For Brunge, this type of space epitomises what makes a Scandi playground work: "It is not so important that the children's clothes stay clean and dry. More important is that they're challenged and have fun." Sørensen would approve.</p>
+            <p>If you would like to comment on this story or anything else you have seen on BBC Culture, head over to our Facebook page or message us on Twitter.</p>
+            <p>And if you liked this story, sign up for the weekly bbc.com features newsletter, called The Essential List. A handpicked selection of stories from BBC Future, Culture, Worklife and Travel, delivered to your inbox every Friday.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

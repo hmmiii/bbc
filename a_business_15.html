@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_business_15" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Business</mark>
+                <h2>The apps ready to deal with our Christmas food leftovers</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Tessa Clarke wants people to think carefully about only buying the quantity of food that they and their families actually need this Christmas.</strong></p>
+            <p>"We're encouraging people to plan for Christmas realistically," says Ms Clarke.</p>
+            <p>She is the founder and boss of Olio, a popular UK app that allows members of the public and businesses to share unwanted, but still in-date and edible food that would otherwise go to waste.</p>
+            <p>
+                "Christmas is an exceptionally busy time of the year for us [at Olio]," she says. "There are enormous amounts of surplus food.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Tessa Clarke says there is a risk that Covid will mean a big surge in the level of food that may go to waste</figcaption>
+            </figure>
+            <p>The quantity of food going to waste remains a huge global problem: some 1.3 billion tonnes is wasted around the world each year, one third of all the food produced, according to the United Nations data.</p>
+            <p>In the UK, the figure is said to be 6.6 million tonnes per annum, of which, three quarters was still edible when it was thrown out.</p>
+            <p>The problem is always at its worst during the festive period, when many households and hospitality venues buy in additional food for Christmas Day meals and other celebrations.</p>
+            <p>"At Christmas, everyone dials food waste up to 11," says Helen White, special advisor on household food waste at UK charity Wrap (Waste And Resources Action Programme).</p>
+            <p>Looking at just two festive food products, Wrap estimates that some two million turkeys and 74 million mince pies are wasted in the UK each December.</p>
+            <figure>
+                <figcaption>It is estimated that in the UK three quarters of all the food we throw out is still good to eat</figcaption>
+            </figure>
+            <p>This year, continuing uncertainty about the impact of the new Covid variant, Omicron, and potential social distancing rules, may lead to even more Christmas food waste than normal. This is because both homes, and pubs and restaurants, will be unsure of how much food to buy for guests.</p>
+            <p>Food redistribution apps such as Olio hope to help deal with any additional surpluses.</p>
+            <p>"This Christmas, we're gearing up to activate if there's a wider shutdown of hospitality, which would result in enormous quantities of food being wasted, unless it can be swiftly redistributed," says Olio's Ms Clarke.</p>
+            <p>Its app is free for households to use, while it charges supermarkets and restaurants a small fee.</p>
+            <p>Tesco supermarkets is one of Olio's customers, and in September 2020 the two launched a UK-wide initiative. Under the scheme, Olio volunteers, known as Food Waste Heroes, go to their local Tesco store to collect food that is nearing the end of its shelf life.</p>
+            <p>They then redistribute it locally, both to individuals in need, and community groups. The programme now connects 35,000 trained volunteers with other companies including sandwich shop chain, Pret a Manger and coffee firm Costa.</p>
+            <p>"In the past year alone, our partnership with Tesco's 2,700 stores has stopped more than five million meals from going to waste," says Ms Clarke.</p>
+            <p>She adds that, for the companies, the system is half the price of paying for the food to be taken away as waste.</p>
+            <p>Meanwhile, members of the public who wish to share food via the Olio app, upload a photo to make a listing. And then if another Olio user wishes to come and pick it up, they can message the other person via the app.</p>
+            <figure>
+                <img src="" alt="">
+                <figure>Users of the Olio app upload photos of the food items they wish to give away</figure>
+            </figure>
+            <p>"Olio's growth is a microcosm of what's happening across society," says Ms Clarke who sees a real drive towards change.</p>
+            <p>Marija Rompani, director of ethics and sustainability at Waitrose, says that society has become "far too casual about throwing away food". Yet its customers, at least, are now increasingly seeking to solve the problem.</p>
+            <p>Its recently released Food & Drink Report 2021-22 found that three-quarters of its shoppers were trying to reduce their food waste. This was up from half of its customers in a December 2019 study.</p>
+            <p>Another app helping firms reduce their food waste is Sweden's Karma. It allows restaurants and cafes to list and sell their surplus food for collection at a discounted price.</p>
+            <p>Ludvig Berling came up with the idea in 2016, when he realised that restaurants in Stockholm were throwing away perfectly good food at the end of the day. He agrees that food waste soars during December.</p>
+            <p>"The festive period is when food waste is at its worst," he explains. "And we're unsure about how this Christmas will look for our restaurant partners."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Karma allows restaurants to sell off food that would otherwise be binned</figcaption>
+            </figure>
+            <p>Karma makes its money in two ways. "For every order made through the app, we charge the business a percentage of the transaction," says Mr Berling. "We also add a small fee to the order, paid by the consumer.</p>
+            <p>"Businesses save food from being thrown away and get paid for it, the consumer gets great food for less - and both help save the planet. A true win, win, win!"</p>
+            <p>Karma now operates in Sweden, the UK and France, and it claims that its community of more than 10,000 businesses and two million users has now saved more than six million food items from being thrown away.</p>
+            <p>However, data from the app shows that 15% fewer people rescue food waste during the holiday period than at other times of year. Mr Berling says this is "the sad truth".</p>
+            <p>The assumption is that at Christmas people are spending more on buying in their food, and so less interested in hunting out bargains or doing their bit for the environment.</p>
+            <p>FoodCloud, an Irish social enterprise that tackles food waste, also found that people apparently care less about the issue over the holiday period.</p>
+            <p>"We conducted research among 1,000 adults in Ireland," says co-founder, Iseult Ward. "Approximately one third say they waste more food at Christmas compared to other times of the year."</p>
+            <p>It charges food retailers to donate any surplus via its app. Retailers upload details of excess food, then community groups are notified to collect it.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Iseult Ward says that it is not about stopping food waste, but how to effectively deal with it</figcaption>
+            </figure>
+            <p>FoodCloud has teamed up with more than 200 companies including Waitrose, Lidl, Aldi, Nestle, Coca-Cola, Mars and Kelloggs. It claims to have redistributed more than 140 million meals across Ireland and the UK since the app was launched in 2014.</p>
+            <p>Ms Ward says we shouldn't criticise the existence of food waste, and that instead we should simply try to tackle it. "There is often a stigma around surplus food, but waste occurs in the supply chain for so many reasons - seasonality, change in consumer trends, damaged packaging, over ordering, labelling mistakes," she says.</p>
+            <p>Yet, she also agrees that Covid could again complicate matters further this Christmas. "Will it be a large family Christmas dinner? Will there be parties? Will we eat out as much as we would over a normal Christmas?"</p>
+            <p>"Possible social restrictions and unease are once again likely to have a big impact on how consumers shop," she says.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

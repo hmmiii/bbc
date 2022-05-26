@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_world_28" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>UK</mark>
+                <h2>Covid: France suspends transit ban for UK nationals during Christmas period</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>UK nationals will be allowed to travel through France if they are going to their home in an EU country during the festive period.</strong></p>
+            <p>France suspended its Covid restriction after UK travellers faced difficulties reaching their country of residence.</p>
+            <p>Eurotunnel, which had earlier issued warnings to customers, said it was "delighted" by the move.</p>
+            <p>People from the UK are still largely banned from going to France unless they have a compelling reason.</p>
+            <p>Earlier this month, French ministers tightened travel rules for the UK, citing concerns about the spread of the Omicron variant.</p>
+            <p>Since 18 December, British citizens have needed an essential reason to travel to France, with some exemptions in place.</p>
+            <p>It had been thought that exemptions covered those crossing France in order to get to their home in another EU country.</p>
+            <p>However on Wednesday, both P&O and Eurotunnel said the French government had issued new rules meaning British people could "no longer transit France by road to reach their country of residence in the EU" unless they hold French residency.</p>
+            <p>The British government said it was "urgently" seeking clarification about any new restrictions that would affect UK nationals.</p>
+            <p>In response, the French government insisted that UK nationals who reside in another EU country are deemed to be "third country nationals" and are therefore not allowed to cross France to get home under the current Covid rules.</p>
+            <p>However, it noted that "a large number of British nationals residing in an EU country have travelled in good faith to the UK for the festive season and are experiencing difficulties in reaching their country of residence".</p>
+            <p>"Faced with this situation, instructions of tolerance have been sent to police officers at the borders with the United Kingdom, in order to allow these nationals to transit through France to reach their residence in a country of the European Union".</p>
+            <p>The French Ministry of the Interior added that, unlike UK citizens, EU nationals coming from the UK to their residence in the EU were not impacted by the transit ban and were free to travel through France.</p>
+            <p>Eurotunnel, the company which runs vehicle-carrying trains between Dover and Calais, said it was "delighted that the French government has responded positively to its requests for flexibility in travel rules".</p>
+            <p>On Twitter, the company said the flexibility for passengers would be "subject to their [initial] journey to the UK being completed before 28 Dec 2021".</p>
+            <p>A UK government spokesperson said: "British nationals who are currently in the UK, but resident in the EU, will be able to return to their home through France over the New Year period without disruption.</p>
+            <p>"We remain in close contact with the French authorities, and will update our own travel advice with the latest information."</p>
+            <p>The confusion over travel rules comes as France is experiencing record numbers of infections.</p>
+            <p>Meanwhile, Germany has said it will lift a ban on UK tourists entering the country from midnight local time on 4 January. Those who are fully vaccinated or have an important reason for travel will be allowed to enter the country when the ban, put in place earlier this month, is overturned.</p>
+            <p>Transport Secretary Grant Shapps said it was a "welcome development".</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

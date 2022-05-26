@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_climate_4" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Climate</mark>
+                <h2>COP26: What's the climate impact of private jets?</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>There has been criticism of the number of world leaders and other delegates who have travelled to the COP26 summit in private jets.</strong></p>
+            <p>How much environmental damage do they do - and did leaders have any choice?</p>
+            <h3>How many private jets have come to Glasgow?</h3>
+            <p>Plane spotters at Prestwick Airport in South Ayrshire have been enjoying the unusual range of aircraft arriving there.</p>
+            <p>And it hasn't just been those ferrying the leaders themselves - there have been cargo aircraft arriving, carrying helicopters and vehicles for motorcades.</p>
+            <p>We know, for example, that President Biden has one of his armoured vehicles, known as "The Beast", with him in Glasgow. He also had one in Rome on Sunday.</p>
+            <p>FlightRadar24, which tracks flights, has looked at the number of non-commercial flights into Glasgow, Prestwick and Edinburgh airports since 27 October, excluding cargo, regular or local journeys.</p>
+            <p>It has found that there were about 182 such flights, which is about double the total for the previous six days. That excludes some national chartered flights, such as President Biden's plane, Air Force One.</p>
+            <p>Aviation analytics company Cirium told the BBC there was a total of 76 flights involving private jets, or VIP flights, arriving in and around Glasgow in the four days leading up to 1 November.</p>
+            <p>Private jets have also been flying from Glasgow Airport, in Paisley, where they have dropped off passengers, to Glasgow Prestwick Airport, in Ayrshire, where they have been parking - a distance of about 41km.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Glasrow</figcaption>
+            </figure>
+            <h3>What is the carbon footprint of private jet travel?</h3>
+            <p>Flights produce greenhouse gases - mainly carbon dioxide (CO2) - from burning fuel. These contribute to global warming.</p>
+            <p>Emissions per kilometre travelled are known to be significantly worse than any other form of transport.</p>
+            <p>But this varies considerably depending on size, occupancy levels and efficiency. Private jets generally produce significantly more emissions per passenger than commercial flights.</p>
+            <p>There are many different models of private jet, but the Cessna Citation XLS - consistently one of the most popular - burns 189 gallons (857 litres) of aviation fuel an hour on average.</p>
+            <p>If we were to consider the journey from Rome to Glasgow on a private jet - a journey that some of the G20 leaders made to get to COP 26 - that would take around two hours and 45 minutes, requiring 2,356 litres of jet fuel.</p>
+            <p>The Department for Business, Energy and Industrial Strategy (BEIS) says 2.52kg of carbon dioxide is emitted for every litre of aviation turbine fuel burned. Therefore this flight would produce 5.9 tonnes of CO2.</p>
+            <p>However, BEIS recommends that to "capture the maximum climate impact" of flights, CO2 emissions figures should be multiplied by 1.9 to reflect the effect of non-CO2 emissions released by planes at high altitude, which, scientists say, increase the warming effect.</p>
+            <p>Therefore, the total emissions for this flight would be 11.3 tonnes of CO2 equivalent, and with a capacity of nine, each passenger would be responsible for 1.2 tonnes on their journey.</p>
+            <p>If, however, our world leaders had decided to take a commercial flight from Rome to Glasgow their emissions would have been a quarter of a tonne each. Even though a commercial flight uses more fuel per hour, it is able to fly far more passengers than a private jet and therefore produces fewer emissions per person.</p>
+            <p>"A huge amount of fuel is used during takeoff and landing of a plane, no matter how many people you have on board. So an already polluting mode of transport (commercial aviation) becomes even worse (with private jets)," said Dr Debbie Hopkins, an expert in decarbonising transport at University of Oxford.</p>
+            <h3>Why did they have to come in person?</h3>
+            <p>In April, US President Joe Biden hosted a virtual climate summit for world leaders, at which some commitments were made.</p>
+            <p>But several have been talking at this summit about the value of meeting in person.</p>
+            <p>The president of Sierra Leone said: "I have travelled extensively because I have to be there - we're talking about challenges and the environment in Sierra Leone. If I don't come here, how will they know?"</p>
+            <p>UK Foreign Secretary Liz Truss said face-to-face talks were needed for "crunch negotiations" such as this.</p>
+            <h3>Why did the G20 have to be in Rome?</h3>
+            <p>Another question being asked on social media is why the meeting of the G20 that happened right before COP26 had to be in Rome.</p>
+            <p>The G20 is a group of big economies plus the European Union.</p>
+            <p>It has a summit once a year, hosted by whichever country is holding the rotating presidency of the group.</p>
+            <p>If COP26 had been in November 2020, as originally planned, it would have been followed by the G20 summit in Riyadh, Saudi Arabia.</p>
+            <p>Update 3 November: The piece has been amended to change US gallons to UK gallons in the example of the Cessna plane.</p>
+            <h3>COP26 climate summit - The basics</h3>
+            <ul>
+                <li>Climate change is one of the world's most pressing problems. Governments must promise more ambitious cuts in warming gases if we are to prevent greater global temperature rises.</li>
+                <li>The summit in Glasgow is where change could happen. You need to watch for the promises made by the world's biggest polluters, like the US and China, and whether poorer countries are getting the support they need.</li>
+                <li>All our lives will change. Decisions made here could impact our jobs, how we heat our homes, what we eat and how we travel.</li>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

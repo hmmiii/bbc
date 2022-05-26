@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_discovery_7" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Discovery</mark>
+                <h2>The Chilean mycologist celebrating fungi's "hidden kingdom"</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>A chance encounter with a mushroom inspired Giuliana Furci to become a champion of these organisms that can feed, heal and even tackle climate change.</h3>
+            <p>Giuliana Furci was hiking through a temperate rainforest with an antenna strapped to her back in search of an elusive fox when she stumbled across the mushroom that would change her life. At the time she was a 19-year-old student on a field trip in Chiloé, a weather-beaten archipelago off the coast of Chile's Lake District. Her job was to set up traps to capture Darwin's foxes, tag these endangered creatures and then release them back into the wild.</p>
+            <hr>
+            <p><strong>Why do you love the world?</strong></p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>50 REASONS TO LOVE THE WORLD - 2021</figcaption>
+            </figure>
+            <p>"Because [fungi are] the coolest and most important organisms on Earth. Life on Earth wouldn't exist as we know it without [them]." - Giuliana Furci, mycologist</p>
+            <hr>
+            <p>"We were old school, so used radiotelemetry to track them," she said. "As I walked, I was passing so many mushrooms and a big orangey-red one on a tree stump caught my eye. I really wanted to know its name, but it was impossible to find out anything." The lack of information about Chilean fungi hit Furci, who was studying aquaculture during this period, like a "lightning bolt". "I suddenly thought, 'This is what I'm going to do [with my life]'," she said. "Nothing had happened previously with me and fungi, apart from trying psilocybin - magic mushrooms - at some point. But that wasn't the reason. It was just this one mushroom in the forest."</p>
+            <p>Since that moment in 1999, Furci has dedicated her life to studying, protecting and championing one of the planet's most important but least-known group of organisms. She became Chile's first female field mycologist (a biologist specialising in fungi), has written field guides and, in 2012, launched the Fungi Foundation, the first NGO dedicated to these organisms. The following year, thanks in large part to her work, Chile made history by becoming the first country in the world to include protection of fungi - organisms such as yeasts, moulds, mildews and lichens, as well as mushrooms - in its environmental legislation. </p>
+            <p>"My work is really about bringing justice to the fungi, acknowledging their essential and fundamental role," she said. "They're the coolest and most important organisms on Earth. Life on Earth wouldn't exist as we know it without them. But they're unacknowledged."</p>
+            <p>Speaking from her home in Santiago, Furci described herself as a "product of exile". She was born and brought up in London after her Chilean mother, a student and member of the Socialist party, was forced to flee by the brutal Pinochet dictatorship. After the return of democracy in 1990, the family moved to Chile when Furci was 15. "The children of exiles are a generation of unrooted people," she said with a smile.</p>
+            <p>Pausing periodically to sip mate tea, Furci explained that even as a teenager she was driven by the desire to have a positive impact on the world. "I was always interested in giving back, either to humanity or the Earth," she said. Although she came to fungi by chance, these essential but under-appreciated organisms were a natural fit. "Fungi are the recyclers, the decomposers; they make sure energy is ever flowing in ecosystems," she said. "Fungi allow plants to live outside of water [by providing nutrients and moisture in return for sugars produced from photosynthesis]. They allow animals to digest their food." Remarkably, fungi even enable plants to communicate with each another. Thin strands of mycorrhizal fungi connect different root systems and allow information and nutrients to be exchanged. These subterranean networks have been dubbed the "wood wide web".</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Giuliana Furci is Chile's first female field mycologist, has written field guides and launched the first NGO dedicated to fungi (Credit: Fungi Foundation)</figcaption>
+            </figure>
+            <p>Fungi are equally important to humans. Even though they often provoke squeamishness, disgust or even fear, these organisms are responsible for everything from bread to beer to antibiotics. "Fungi not only feed us, they also heal us," said Furci. "Statins, from which we get cholesterol-lowering compounds, are from mushrooms. Medicines like penicillin come from moulds." Fungi also have a vital role to play in addressing the climate crisis, thanks to their ability to sequester carbon and encourage biodiversity. There's even an Amazonian fungus that can break down plastics. "They are fundamental for maintaining the balance, in every sense, in the environment," she said.</p>
+            <p>There are few better places to study these organisms than Chile, which Furci describes as a "fungi hotspot". The north is covered by the world's driest desert outside the poles; the central regions have a Mediterranean-style climate; and the south is blanketed by rainforests, glaciers, fjords and tundra. It has one of the world's longest coastlines and biggest mountain ranges, as well as several subtropical islands.</p>
+            <blockquote>Every time I go into the field I find new species - it's a goldmine.</blockquote>
+            <p>"The diversity of these ecosystems translates directly into the diversity of the fungi," she said. "Every time I go into the field I find new species - it's a goldmine. In an hour I can collect more than 100 species of fungi without walking more than 30m. There's consensus in the mycological community that we only know about 5% to 10% of the fungal species on Earth."</p>
+            <p>In a room filled with hundreds of sample bags, mushroom-shaped ornaments and even a hat made from fungus, Furci said the richest hunting grounds are in Patagonia. This is largely thanks to the Bosque Valdiviano, a vast temperate rainforest dominated by Nothofagus trees, which are only found in southern Chile and Argentina and parts of Australasia. "We have seven species of Nothofagus, which associate with dozens of species of fungi that produce mushrooms specific to those trees." </p>
+            <p>These include the eye-catching Cytarria genus, bulbous, brain-like clusters that cling to trunks and branches. One common Cytarria species is known as llao llao or "Pan de Indio" (Indian bread) and has a slightly sweet taste; another, Cytarria drawinii, is orange or white and resembles golf balls.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Furci calls Chile a "fungi hotspot", noting that there are few better places on Earth to study these organisms (Credit: KiriMaroa/Getty Images)</figcaption>
+            </figure>
+            <p>Furci is particularly drawn to the swath of the Bosque Valdiviano in the isolated Aysén region of central Patagonia.</p>
+            <p>"My specialty - I would even say my fetish, it's really bad as that - is that I like to go where nobody's ever been before to look for fungi," she said. "So Aysén, it's hostile, really hostile - cold, windy, rainy, hail. There's no electricity or water. In terms of an expedition, it's very difficult. But the reward in fungal diversity is unique in the world."</p>
+            <p>Most of her expeditions last two or three weeks, limited only by the amount of food, equipment and samples she can carry. The terrain is challenging, and she has found herself in some dangerous situations, including, on one occasion, getting lost for two days.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Chile's many ecosystems support diverse fungi. "Every time I go into the field I find new species - it's a goldmine," said Furci (Credit: Alexis Gonzalez/Getty Images)</figcaption>
+            </figure>
+            <p>Indigenous peoples such as the Mapuche, who now live predominantly in the Araucanía region on the northern edge of Patagonia, have long use wild fungi for food and medicine. This is something Furci is keen to explore. The Fungi Foundation's Elders programme is mapping every known ancestral and traditional use of fungi in the world," she said. "We have co-evolved with fungi from the beginning of our existence. And we see that many of the problems of the Earth - for people and the planet - have solutions in the kingdom of fungi."</p>
+            <p>Yet while indigenous peoples have always taken advantage of the country's fungi, Furci has described Chile as a whole as "mycro-phobic". "I think it's not by total chance the Chileans are called 'the British of South America'," she said. "It's one of the more conservative countries. People are scared of eating the wrong mushroom, so there's a cautionary approach."</p>
+            <p>Furci is trying to change these attitudes, working closely with chefs and raising awareness about the country's mushrooms. "Chile shares its land ingredients - like meat - with Argentina, Paraguay, Uruguay, Brazil," she said. "It shares its marine ingredients with Peru. What makes our cuisine unique are the mushrooms that aren't found anywhere else. In the autumn, you can eat ones like the loyo, a huge native porcini, and the Grifola gargal, which is like the hen-of-the-woods. Come in the spring and you get to try the Cytarria and native morels."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Bosque Valdiviano is a temperate rainforest dominated by Nothofagus trees, which support dozens of species of mushrooms (Credit: Fotografías Jorge León Cabello/Getty Images)</figcaption>
+            </figure>
+            <p>Through the Fungi Foundation, Furci is trying to create a bigger domestic market for Chilean mushrooms. The organisation teaches producers about sustainable harvesting and packaging techniques, and helps chefs identify and source ingredients from eco-friendly suppliers. "It's a beautiful relationship," she said. "There's never been a penny traded between any of us. It's the mission of the foundation to bring justice to these organisms, and the chefs are doing their bit by using native ingredients."</p>
+            <p>Her efforts are bearing fruit, with Chilean mushrooms increasingly appearing on menus across the country. "Of the four Chilean restaurants that entered the Latin America's 50 Best Restaurants list [in recent years], three of them - Boragó, 99 Restaurante and Ambrosia - entered with mushroom dishes," she said.</p>
+            <blockquote>Wherever it says 'flora and fauna', we need it to say 'flora, fauna and funga' - it's the third F</blockquote>
+            <p>Looking to the future, Furci is plotting expeditions beyond Chile to search for new species of fungi, working on education projects to ensure children learn as much about the organisms as they do about plants and animals, and campaigning for fungi to be included in conservation agreements worldwide. "Wherever it says 'flora and fauna', we need it to say 'flora, fauna and funga' - it's the third F," she said. "And wherever it says 'plants and animals' in any regulation it should say 'plants, animals and fungi'. That's the mission we're on and we're relentless with it."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Torres del Paine National Park is one of 17 parks and reserves that make up Chile's 1,700-mile Route of Parks (Credit: Marco Bottigelli/Getty Images)</figcaption>
+            </figure>
+            <p>Travellers may struggle to replicate Furci's forays into the wilderness, but there are more accessible ways to explore the myriad fungal species of southern Chile. She highlights the Route of Parks, a 1,700-mile chain of 17 reserves that runs through Patagonia and Tierra del Fuego, as an "extraordinary opportunity to go out and look for fungi". In fact, Furci continued, the challenge in these pristine protected areas is how to avoid them. "The diversity is so high there are moments in autumn that you can't walk without stepping on a mushroom."</p>
+            <p>BBC Travel celebrates 50 Reasons to Love the World in 2021, through the inspiration of well-known voices as well as unsung heroes in local communities around the globe.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

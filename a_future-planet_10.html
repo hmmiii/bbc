@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_future-planet_10" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Future Planet</mark>
+                <h2>The industry creating a third of the world's waste</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Extracting materials is wreaking havoc on the planet. Could the world's growing mounds of waste hold the key to sustainable construction?</h3>
+            <p>We now smash, grab and pull some 100 billion tonnes of raw material out of the fabric of the planet in just a single year. That’s equivalent to destroying two-thirds of the mass of Mount Everest every 12 months.</p>
+            <p>Roughly half of the raw materials we extract go into the world’s built environment. Construction creates an estimated third of the world's overall waste, and at least 40% of the world’s carbon dioxide emissions. Compare that to the 2-3% caused by aviation, which people fret far more about. </p>
+            <p>The "waste" from the consumption of these raw materials is dumped in such vast quantities that its environmental imprint has helped to create a new epoch, dubbed the Anthropocene. Future archaeologists will dig through strata of manufactured detritus to discern how we lived.</p>
+            <p>But this stuff that we make and discard today also contains a treasure trove of materials we could be using to our benefit. It's been calculated that one tonne of mobile phones contains 300 times more gold than a tonne of the best quality gold ore, as well as significant quantities of silver, platinum, palladium and rare earths - all things we scar the earth to get more of by ongoing mining. The vast quantities of copper inside billions of cables worldwide is a far more concentrated source of reusable metal than the less than 1% in top-grade ore. </p>
+            <p>This all gives rise to an obvious question - why don't we re-use what we've already extracted, rather than gouging the planet for ever more raw materials? This thought has spurred a growing band of architects and building firms to look at how to re-use the huge range of materials already hiding within our built environment, from concrete and wood to the metallic bounty within electronic waste.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>'Waste' plastic cups are being turned into bus shelter roofs in Italy (Credit: Folke Kobberling/Martin Kaltwasser)</figcaption>
+            </figure>
+            <p>In 2005, Rotterdam-based architecture firm Superuse laid down a marker for a new vision of construction by completing Villa Welpeloo, the world's first contemporary house to be made with a majority of waste construction materials. Steel from old textile machinery and timber from damaged industrial cable reels are among the total 60% of second hand materials used.</p>
+            <p>Then in 2013, UK architect Duncan Baker-Brown outdid Superuse by using over 90% waste materials to build the Brighton Waste House. Baker-Brown combined various different materials from used denim to plastic DVD cases and discarded toothbrushes to make the wall cavity insulation, and old bicycle inner tubes to provide sound and impact floor insulation. Around 10 tonnes of chalky soil destined for landfill was diverted to create rammed earth walls, while used carpet tiles rescued from an office provided exterior cladding.</p>
+            <p>"The waste house is a 'live' research project that gets people thinking where materials come from and where they end up," says Baker-Brown. He has laid out a blueprint for a new way of minimal waste construction in his 2017 book The  Re-Use Atlas, and teaches its principles to a rising generation of architects and builders at the University of Brighton’s architecture school. He offers a simple but powerful redefinition of waste as being "just useful things in the wrong place".</p>
+            <p>While these ideas would be included under the "circular economy" banner, Baker-Brown uses a more striking phrase: he calls for the need to "mine the Anthropocene" rather than dig up new material. "We need to become ‘urban miners’ and re-work [or] re-use previously made buildings, components, and material sources, " he wrote in a rallying call to action published in the Royal Institute of British Architects Journal in 2019.</p>
+            <blockquote>"Why don't we re-use what we've already extracted, rather than gouging the planet for ever more raw materials?"</blockquote>
+            <p>Baker-Brown is currently completing a pavilion for the world-famous Glyndebourne Opera in Sussex, the UK, built from waste products including oyster shells, champagne corks and "reject" underfired brick from a nearby brickworks. Crucially, he is also using these materials in a way that facilitates any later deconstruction - such as joining elements with bolts rather than glue - to create what he calls "a material store for the future". </p>
+            <p>The idea of designing buildings specifically with re-use in mind has acquired the tag "design for deconstruction". The 2012 Olympics showed these ideas in action through the construction of temporary accommodation for 17,000 athletes in London. This used buildings designed to be refashioned afterwards into sustainable homes for locals, thanks to things like full-storey partition walls that could be moved easily into new configurations. </p>
+            <p>However, those seeking to mine the Anthropocene have to work largely with existing buildings that were not designed for de- or re-construction. Dutch firm Maurer United Architects has responded to this challenge by building 125 new social housing units using over 90% of recycled materials from old adjacent blocks of flats on the Superlocal Estate in the Dutch town of Kerkrade.</p>
+            <p>Giant concrete floor sections were cut and lifted from the old buildings and set down to provide frameworks for the new homes, while leftover concrete was ground on site for re-use, an approach the firm's founder Mark Maurer called "smart demolition".</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>This 'waste house' at the University of Brighton was built using over 90% waste materials (Credit: Duncan Baker-Brown)</figcaption>
+            </figure>
+            <p>A key to successfully mining the Anthropocene for our future built environment is working out ways to re-use existing materials in myriad forms. Folke Köbberling, a professor of architecture-related art at Technical University Braunschweig in Germany, has spent years honing ways to re-use materials. "Using found material is different to working with brand new materials, " she says. "These materials have a story. We look for materials and try to use them as they come in a very flexible way."</p>
+            <p>One example is the amphitheatre she and colleague Martin Kaltwasser constructed in 2008 at the Wysing Arts Centre just outside Cambridge in the UK. Made primarily from 400 wooden pallets rescued from local construction sites, it also features windows from old glasshouses and teak floors repurposed from discarded Cambridge University shelves. Built for a total cost of just €5,000 (£4,270/$5,660) the building was envisaged to provide a distinctive arts venue for two years before being taken apart to re-use its materials elsewhere. But it is still going strong. </p>
+            <p>Köbberling has also found that discarded raw sheep wool acts as superb wall insulation and pollution filter, and has turned thousands of plastic bottles and cups discarded at the Berlin Marathon into material for bus shelter roofs.</p>
+            <p>Connecting the supply of these materials with the demand for components is a key element in the drive to reinvent "waste" as new construction materials. "We have to find a way to create prosperity and added value not by the production of new goods but from the maintenance and management of existing goods," says Michael Ghyoot, co-founder of Brussels-based design firm Rotor, one of the companies driving efforts to make reuse easier for building professionals.</p>
+            <p>Rotor has teamed up with other firms across Europe in an EU-funded project to build up an online directory which has so far signed up just over 1,000 specialised salvage dealers and allied businesses (the original target of signing up 1,500 was primarily hindered by the global pandemic). It is also creating a pre-demolition tool kit to help businesses assess the re-use potential of materials and products present in buildings slated for demolition or redevelopment.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Niyazahmed Shaikh peers through coiled wires made from scrap steel strips in his factory in India (Credit: Sam Panthaky/Getty Images)</figcaption>
+            </figure>
+            <p>Paris-based Bellastock's remodelling of the 59-storey Montparnasse Tower is another example of mining the Anthropocene in action. It is using concrete, glass and steel from the building's facade and interior to help create new levels and spaces, with no recourse to the wastefulness of demolition. The transformed tower is due to complete in time to welcome visitors to the 2024 Paris Olympics.</p>
+            <p>Mathilde Billet, technical director of reuse at Bellastock and project manager on the Montparnasse Tower de/reconstruction, argues that embedded attitudes in the building sector, rather than practical barriers, are the main hurdle to widespread implementation of re-use principle.</p>
+            <p>"The hardest thing is to change our way of thinking," she says, adding that awareness raising, training, conferences and simply talking can remove much of this fear of change. "We need to imagine the city as a material bank, conducive to re-use. There are no significant changes. It just takes a little agility and will."</p>
+            <p>Ghyoot also points out that the process of making existing materials ready for re-use creates an array of new jobs. "This activity is labour intensive: [it requires things like] cleaning the edges of a marble slab, removing mortar from tiles, rewiring old electrical appliances - and documenting all the materials."</p>
+            <p>For Billet, the principles which underpin the mining of the Anthropocene also chime with ancient practice, be it the once common re-use of old building stones over centuries or the constant reconstruction of large mud edifices in a country like Mali. "Re-use calls for ancestral know-how, " she says. "This know-how exists almost everywhere on the planet but it is slowly dying." The alarming situation we find ourselves in means must we return to a more frugal architecture, she says: "an architecture built with the material of the place it is located".</p>
+            <p>Far from being something that flies in the face of practical economics, a 2020 analysis of five EU countries by the Club of Rome found shifting to a more circular economy would reduce their carbon emissions by two-thirds while providing over a million new jobs.</p>
+            <p>What really makes little economic or environmental sense is continuing to gouge out billions of tonnes of virgin raw material from the planet.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_food_4" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Food</mark>
+                <h2>Bsissa: North Africa's ancient convenience food</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>When blended with olive oil and honey, this unassuming brown powder - which has been eaten by Tunisians and Libyans for millennia - transforms into a breakfast of champions.</h3>
+            <p>Along the curving bay of Tunisia's southern Gulf of Hammamet is the pretty village of Lamta, marked by its ornate blue and white doorways, eclectic architecture and shops selling bsissa, a nutritious food that has been loved and eaten by Tunisians and Libyans for millennia.</p>
+            <p>Traditionally, this simple beige-coloured powder is based on the regional staples of roasted hard durum wheat and barley that have been flavoured with fennel seed, aniseed and marjoram, and then ground. It's often augmented with ground nuts - roasted pulses such as chickpeas, lentils or fava beans - and other additions like ground sesame seeds and carob, to ramp up its already substantial nutritional value. When blended with olive oil and honey into a thick cream and decorated with roasted nuts, this unassuming brown dust - a veritable ugly duckling of the food world - transforms into a breakfast of champions.</p>
+            <p>As people today search for the next "superfood", this ancient powder is becoming increasingly popular in North Africa and beyond for its purported health benefits. Locals have learned that the bsissa their mum once made them for breakfast is as good as - if not better than - any trendy protein shake. Being high in complex carbohydrates and fibre, it releases energy slowly, has 15 to 18g of protein per 100g, and is packed with vitamin C as well as minerals including iron, potassium, zinc, magnesium and calcium. More and more, it's becoming available on menus at cafes and a growing number of eco-hotels that offer yoga retreats.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Bsissa's unassuming brown mixture is loaded with nutrients - and delicious flavour (Credit: Elizia Volkmann)</figcaption>
+            </figure>
+            <p>However, long before hipster kitchens buzzed to the sound of power smoothies, farmers and caravan drivers in the Maghreb - which runs from Libya in the east of North Africa to the Atlantic seaboard of Morocco - carried sacks of bsissa to ensure they'd have a good source of nutrition, even in the middle of the Sahara Desert. Serving as North Africa's original convenience food, it could either be mixed with olive oil, or with water and fruits to create a satisfying meal-shake called rowina.</p>
+            <p>The past few years living in Tunis, I started noticing new types of bsissa in shops and eateries, including gluten-free versions, and the food was becoming a regular topic of conversation. During lunch in the capital city one day, a new acquaintance told me that her mother is from Lamta, where an annual bsissa festival is held, and gave me the contact information of the festival organisers so I could learn more about why bsissa is so important to the town. When I called the number, Khairi Sassi, a young, enterprising entrepreneur, picked up and invited me to visit his family's bsissa business.</p>
+            <p>Sassi and his family's lives revolve around the making and selling of bsissa. In their small shop, which is crowded with shelves housing packets of bsissa powder, his father Dalel ladled out zrir - a Tunisian dessert made of sesame seeds, nuts such as hazelnuts and pine nuts, butter and honey - into plastic pots. Dalel gave me a spoon so I could dig in and taste it, which is often sold alongside bsissa as its more luxurious counterpart, while Sassi showed me all the different types of bsissa available for sale and told me about his business.</p>
+            <p>"We all work together as a family - mum, dad, my sister and me," Sassi said. "My mum used to work in an office and hated it, so we set up the workshop and we financed it all ourselves."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Khairi Sassi runs a small bsissa shop with his family (Credit: Elizia Volkmann)</figcaption>
+            </figure>
+            <p>We then headed to the family's home in a working-class seafront neighbourhood. On its ground floor was a small, modern and scrupulously clean bsissa-making workshop, where I was greeted by the smell of roasting wheat along with a warm smile and handshake from Sassi's mother, Zahia Bousrhi. She showed me the entire process, pouring the hot roasted wheat into large metal bowls and measuring out other ingredients including chickpeas, beans, almonds and spices. Once everything is mixed, it's packed up and taken to the local miller, who grinds it into the finished product: an unassuming looking but flavour-packed powder.</p>
+            <p>Bousrhi took me outside and pointed out the home built on top of the workshop. She said, "I built those three floors - everything good that I have comes from bsissa."</p>
+            <p>Bsissa has been a lifeline for the Lamtiens, who have managed to develop a thriving cottage industry from it. However, it's more than just something to eat to Tunisians. It's also a marker of major life events such as weddings, births and moving into a new home, as well as holidays and other special occasions.</p>
+            <blockquote>Everything good that I have comes from bsissa</blockquote>
+            <p>Bsissa has been a lifeline for the Lamtiens, who have managed to develop a thriving cottage industry from it. However, it's more than just something to eat to Tunisians. It's also a marker of major life events such as weddings, births and moving into a new home, as well as holidays and other special occasions.</p>
+            <p>"Bsissa is linked to our traditions and festivals," said Saoussen Baccar, co-owner of a family-run delicatessen called Ayem Zmen located in Tunis' chic seaside suburb of La Marsa. "When a couple gets married, they present the bride with bowl of bsissa decorated with toasted nuts and dried fruit. We give a special type of bsissa to a woman as she prepares for birth and another for when she is breastfeeding."</p>
+            <p>Libyan and Tunisian Jews eat it when celebrating Al Bsissa, a uniquely Maghrebian feast that follows the spring festival of Purim and augurs the season of Passover. Traditionally, the mother of the family would stir the olive oil into the bsissa with the key to the house, signifying wealth and the protection of the home. Or, sometimes, the women would put their gold jewellery into the bsissa as it is being mixed to symbolise how Jewish women gave up all their gold to pay for the Mishkan (or tabernacle) that served as the temporary home for the Ark of the Covenant, as described in the Book of Exodus when Moses and the Israelites wandered in search of their promised land.</p>
+            <p>When Islam arrived in North Africa in the 7th and 8th Centuries, bsissa became a Ramadan essential as part of Suhoor, the meal eaten before sunrise when fasting begins. My travel companion, Lazahr Gamoudi, a consultant who has worked on agricultural development projects all over Tunisia, told me that before modern transportation, when people walked or travelled in camel trains, they took sacks of bsissa as supplies to ensure they ate well for Hajj, the pilgrimage to Mecca.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Zahia Bousrhi, Khairi Sassi's mother, credits her family's successes all to bsissa (Credit: Elizia Volkmann)</figcaption>
+            </figure>
+            <p>Bsissa is a mercurial dish that not only varies by religion but also by season and by which part of the country it's eaten in. "Each region has its own tradition of bsissa," explained Baccar. "[The island of] Djerba uses sorghum but only in winter; [the city of] Sousse makes bsissa from roasted lentils; some use beans. We always use ground nuts or helba (fenugreek seeds), though not everyone likes the strong flavour, and carob powder and sesame too."</p>
+            <p>She offered me a bowl of Sfaxien bsissa made from chickpeas, as it's gluten free, perfect for a coeliac like me, along with a box of dates. "You use the date like a spoon," she said. The pasty, golden bsissa hit my tastebuds with a rich nuttiness that was simultaneously silky and sticky, demanding me to chew slowly and revel in an almost contemplative way of eating. Fast food this is not, and after three scoops of it with plump dates, I was satisfied.</p>
+            <blockquote>Bsissa has been a lifeline for the Lamtiens, who have managed to develop a thriving cottage industry from it</blockquote>
+            <p>Apart from the typical regional variations, Baccar creates her own signature bsissa blends using various health foods, from an oat-based bsissa with dates and figs to a sugar-free bsissa. She is proudest of her moringa bsissa. Moringa powder, made from the leaves of a tree nicknamed the "Miracle Tree", which is cultivated in South-east Asia and East Africa, has recently become very popular due its nutrient content including high levels of calcium making it a plant-based alternative to dairy.</p>
+            <p>"I'm always doing research into new types of healthy foods to introduce to Tunisia," she said. "[Bsissa] is a food that is very easy to eat - a few spoonfuls and you feel full. Durum wheat is a source of protein that can replace animal protein for vegetable protein. It has antioxidants, vitamin E, vitamins B1, B6, B9, zinc; it's very rich, and mixed with olive oil, you gain the benefits of the good fats and oleic acids."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>"Bsissa is linked to our traditions and festivals," said Saoussen Baccar, co-owner of the bsissa shop Ayem Zmen (Credit: Elizia Volkmann)</figcaption>
+            </figure>
+            <p>All of Baccar's ingredient sourcing and recipe development is carefully monitored, including the honey, which she buys from local producers, and she tests and analyses every batch to ensure the highest quality. "We collaborate with nutritionists," she said. "For example, dietary fibre is important for digestive transit, but you need the right amount; too much and you create other problems."</p>
+            <p>Baccar's bsissa is very successful, and her shop that has housed the family business since 1966 is now too small, with customers regularly queuing to get in. To meet the demand, she and her husband have built a new food hall due to open in February. She explained how visitors to Tunisia are trying bsissa for breakfast in hotels or at Tunisian friend's houses, and are getting hooked. And an appetite for bsissa is growing internationally as Tunisians living abroad in France and Australia are now packaging and selling bsissa as a stylish health food.</p>
+            <p>Nevertheless, if there's one must-go place to eat bsissa in Tunisia, it's Lamta. The town's annual (apart from being cancelled in 2020 and 2021 due to Covid) bsissa festival began back in May 2001 and attracts visitors from the wider Maghreb, as well as people from as far afield as Italy and Indonesia. According to Sana Saleh, president of the committee that organises the festival, it was "set it up to support the intangible heritage of Lamta and to support the Lamtiens".</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Salma Saleh and her husband Najib Rajeb recently won the bsissa competition at a food festival in Latma (Credit: Elizia Volkmann)</figcaption>
+            </figure>
+            <p>At the festival, visitors can sample different varieties of bsissa, as well as other local dishes, and the event culminates in a competition for the best bsissa. Recent gold medal winners Salma Saleh and her husband Najib Rajeb, who run Bsissa Salma just off the main drag, boast the most expensive bsissa in Lamta. Their cousin Selim popped into the shop and wielded a disposable spoon with delight, scooping up some of their "Bsissa Royale" made from draa (sorghum) and zoughou, a typical Tunisian flavouring made with ground nuts from the Aleppo pine.</p>
+            <p>"Draa is the best, it has your A, B, C vitamins!" exclaimed Selim.</p>
+            <p>All the bsissas we tasted were delicious, but tasting the Bsissa Royal with its aromatic and slightly spicy flavour made me understand why it won the top prize. Gamoudi, my travel buddy and "taster" (since I couldn't eat any wheat-based bsissa), enjoyed bsissa so much that he bought several packets of it for his daughter, as the healthy on-the-go snack is a working parent's friend. It was a perfect snack for us, too: the spoonfuls we tasted meant we had no desire for lunch before our journey back to Tunis.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

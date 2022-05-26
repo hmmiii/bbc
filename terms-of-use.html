@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_Using-the-BBC_BBC-Terms-of-Use" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Using The BBC</mark>
+                <h2>BBC Terms of Use</h2>
+                <time datetime="2022-03-31">31 March 2022</time>
+            </div>
+        </div>
+        <ol>
+            <li>
+                <h3>Hello</h3>
+                <p>These are the BBC’s terms of use. They tell you:</p>
+                <ul>
+                    <li>The rules for using our services</li>
+                    <li>What you can do with our content (share it, link to it, that sort of thing)</li>
+                    <li>What we can do with things you post or upload.</li>
+                </ul>
+                <p>Your rights and responsibilities, basically - important stuff.</p>
+                <p>We’ve kept them as short as possible, and we’ve made videos for the complicated bits. So do read them, and check in for updates as the latest version always applies (we’ll usually only make updates when we release a new service, change how we provide a service, or have to comply with a new legal requirement).</p>
+            </li>
+            </li>
+            <li>
+                <h3>When these terms apply</h3>
+                <p>Read these terms before using our services. Whenever you use our services you agree to these terms.</p>
+                <p>If you don’t stick to all these terms then we can suspend or terminate your use of services and your account.</p>
+                <p>But first…</p>        
+            </li>
+            <li>
+                <h3>What’s this about "services" and "content"?</h3>
+                <p>That’s media speak for:</p>
+                <p><strong>a. Services</strong></p>
+                <p>Anything digital offered by the BBC. Such as:</p>
+                <ul>
+                    <li>Websites (like bbc.co.uk, BBC News)</li>
+                    <li>BBC iPlayer</li>
+                    <li>Apps (like BBC Sport, BBC News)</li>
+                    <li>Podcasts</li>
+                    <li>Content available through RSS feeds</li>
+                    <li>Red Button</li>
+                </ul>
+                <p><strong>b. Content</strong></p>
+                <p>Anything that’s available through those services. Including:</p>
+                <ul>
+                    <li>TV and radio shows</li>
+                    <li>Text</li>
+                    <li>Audio</li>
+                    <li>Video</li>
+                    <li>Images</li>
+                    <li>Games</li>
+                    <li>Software</li>
+                    <li>Technical stuff such as metadata and open-source code</li>
+                    <li>Anything made by people using our services. User-generated content, that’s called.</li>
+                </ul>        
+            </li>
+            <li>
+                <h3>When other terms apply</h3>
+                <p><strong>a. When you use services provided by BBC Studios or someone else</strong></p>
+                <p>When you use someone else's services or products, like a social media platform, they will have terms for using them.</p>
+                <p>Some services are provided by BBC Studios. These will have their own terms.</p>
+                <p><strong>b. When you use services where we tell you they apply</strong></p>
+                <p>Like when you enter a competition. If there are extra terms, we’ll always let you know.</p>        
+            </li>
+            <li>
+                <h3>Child-friendly services and tools</h3>
+                <p>If you’re looking for something child-friendly, here are some good starting points:</p>
+                <ul>
+                    <li>CBeebies</li>
+                    <li>CBeebies Playtime Island</li>
+                    <li>CBeebies iPlayer</li>
+                    <li>CBBC</li>
+                    <li>CBBC iPlayer</li>
+                </ul>
+                <p>Ultimately, it’s up to you to decide what’s suitable. But here are some tools that may help:</p>
+                <ul>
+                    <li>To stop children accessing Guidance-labelled content, use the BBC Parental Guidance Lock.</li>
+                    <li>To teach children about staying safe online, try CBBC Stay Safe.</li>
+                    <li>For advice on how to keep your children safe online visit Internet Matters. On that site is how-to advice to activate parental controls for your devices, gaming consoles, broadband access and entertainment platforms around your home.</li>
+                </ul>        
+            </li>
+            <li>
+                <h3>When you need a TV Licence</h3>
+                <p>You need to be covered by a TV Licence to watch or record live TV programmes on any channel, or to watch or download BBC programmes on iPlayer when you’re in the UK, the Channel Islands or the Isle of Man.</p>
+                <p>This could be on any device, including a TV, desktop computer, laptop, mobile phone, tablet, games console, digital box or DVD/VHS recorder.</p>
+                <p>If you’re outside these areas you need to check if your country has its own TV licensing scheme.</p>
+                <p>Find out more about when you need a TV Licence.</p>        
+            </li>
+            <li>
+                <h3>Terms for using our services and content</h3>
+                <p>A few rules to stop you (and us) getting in trouble.</p>
+                <p>These apply to our services and content. One exception is content that’s made to be shared - “shareables” for short - which has some different, more relaxed rules. The rules about shareables are here.</p>
+                <p><strong>a. Don’t mess with our services</strong></p>
+                <p>What do we mean by that? This sort of thing:</p>
+                <ul>
+                    <li>Hacking them</li>
+                    <li>Trying to get around our content security technology (software that stops people copying our content)</li>
+                    <li>Accessing content from outside the UK that you aren’t allowed to, or helping others do the same. For example: using a VPN service so you can watch BBC iPlayer when you're outside the UK</li>
+                    <li>Refusing to remove content, games or apps from your device when we ask you to. This might happen when we take down services. Which we can do at any time, without notice.</li>
+                </ul>
+                <p><strong>b. Don’t harm or offend other people...</strong></p>
+                <p>...while using our services or content. That means:</p>
+                <ul>
+                    <li>Don’t damage our reputation by associating us with sexism or racism, for instance</li>
+                    <li>Don’t get us sued - by defaming (damaging the reputation of) someone, say, or commenting on an active lawsuit</li>
+                    <li>Don’t harass or upset people</li>
+                    <li>Don’t post or upload anything offensive or obscene</li>
+                    <li>If you disagree with someone, attack the argument, not the person.</li>
+                </ul>
+                <p><strong>c. Play it safe</strong></p>
+                <p>Be aware of your surroundings especially when you’re using our services or content on the move and always use your device safely.</p>
+                <p>Don’t use our 360° and virtual reality apps if you:</p>
+                <ul>
+                    <li>Are pregnant</li>
+                    <li>Have consumed anything that may affect your balance</li>
+                    <li>Have (or have had) a medical condition, like binocular vision abnormalities, psychiatric disorders, seizures or a heart problem.</li>
+                </ul>
+                <p>Make sure you’re in a safe place, preferably seated.</p>
+                <p>Stop immediately if you feel:</p>
+                <ul>
+                    <li>Sick</li>
+                    <li>Eye strain</li>
+                    <li>Dizziness</li>
+                    <li>Any discomfort.</li>
+                </ul>
+                <p>Don’t take part in any activities where you need to focus straight after, or if you feel slightly dazed or confused.</p>
+                <p><strong>d. Don’t pretend to be the BBC</strong></p>
+                <p>Except at fancy dress parties. That includes:</p>
+                <ul>
+                    <li>Recreating a service or copying the look of a service</li>
+                    <li>Using our brands, trade marks or logos without our permission</li>
+                    <li>Using or mentioning our content in press releases and other marketing bumph</li>
+                    <li>Making money from our content or services. You can’t charge people to watch our shows, for example</li>
+                    <li>Sharing our content. Apart from shareables.</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Using BBC content</h3>
+                <p><strong>a. When you need permission</strong></p>
+                <p>To use any of the following things…</p>
+                <ul>
+                    <li>Whole shows</li>
+                    <li>Clips</li>
+                    <li>Photos</li>
+                    <li>Content from bbc.co.uk</li>
+                    <li>Our logo and other branding</li>
+                    <li>Metadata</li>
+                    <li>Anything plucked from our services to develop or train artificial intelligence or to do computer analysis</li>
+                    <li>Anything else that’s protected by copyright.</li>
+                </ul>
+                <p>…you’ll need to get permission.</p>
+                <p>We don’t always own the copyright.</p>
+                <p>Our content often includes other people’s content, you see. For instance, a TV show might feature images, video and music that belong to artists, actors and musicians.</p>
+                <p>Or we only have a licence to broadcast a show, and it’s the production company who owns it.</p>
+                <p>So you’ll have to ask them if you can use it. Except under certain circumstances…</p>
+                <p><strong>b. When you already have permission</strong></p>
+                <ul>
+                    <li>If you’re at a school, college or university that’s got an Educational Recording Agency licence.</li>
+                    <li>Read about the Educational Recording Agency licence here.</li>
+                    <li>Read about other copyright exceptions here.</li>
+                    <li>For shareables. The rules about shareables are here.</li>
+                    <li>For open-source code and open data.</li>
+                    <li>To download podcasts for personal use using our download button. You can download podcasts for personal use. You can also transfer podcasts between your devices. But don’t upload a podcast back to the internet from your device. Use the sharing buttons instead to tell your friends about it.</li>
+                    <li>To download BBC iPlayer programmes using our download button.</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Shareables - what they are</h3>
+                <p>Content that’s shareable will have one or more of these buttons next to it:</p>
+                <ul>
+                    <li>Share</li>
+                    <li>Embed</li>
+                    <li>Social media buttons for posting to Facebook, Twitter and so on.</li>
+                </ul>
+                <p>We don’t always own the copyright for shareables. Sometimes we have to get a licence or permission from the people who made it.</p>
+                <p>So stick to these rules. Otherwise, among other things, the people who made it won’t want to make content for us again.</p>
+                <p>You’ll need to get our permission first for any business use, and you might have to pay a fee. For business use read this.</p>
+                <p>When you share to a social media platform their terms will apply. Do read their terms (which you can search for online).</p>
+            </li>
+            <li>
+                <h3>Shareables - what you can do</h3>
+                <p><strong>a. Use sharing buttons</strong></p>
+                <p>To share a link to our content on your website or social media.</p>
+                <p><strong>b. Use our player</strong></p>
+                <p>It’s fine to use our embed button to put our player on your website or social media account.</p>
+                <p>But don’t change how the player works, and don’t take content out of it. Don’t embed any content that doesn’t have an embed button.  </p>
+                <p>Different rules apply for using iPlayer. Read about them here.  </p>
+                <p><strong>c. Post comments and views...</strong></p>
+                <p>… about our shareables. That’s fine. Encouraged, even. Just as long as they’re not evil.</p>
+            </li>
+        </ol>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

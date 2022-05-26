@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_family-tree_9" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Family Tree</mark>
+                <h2>Why some Asian schools are going wild</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Scandinavian-style forest schools are booming in Europe and the US - and spreading in Asia, too. Could outdoor classrooms be the future?</h3>
+            <p>In Sai Kung, a leafy neighbourhood on the east side of Hong Kong, a group of school children clad in neon-yellow striped vests and rain boots are running up and down a tree-covered slope, singing a song about forests in English: "I love the mountains, I love the sun so bright."</p>
+            <p>Here, in the shelter of fir and maple trees, away from the concrete jungle of central Hong Kong, the children and their teachers are experimenting with a new learning style that is becoming increasingly popular in Asia - forest school.</p>
+            <p>First developed in Denmark in the 1950s, forest education involves teaching children outdoors, usually in woodlands, through play and hands-on exercises. The method has caught on all over Europe, in the US - and in Asia, where some see it as a way of connecting children with nature, and fostering a more independent, child-led way of learning.</p>
+            <p>"This can help my son gain more outdoor knowledge, and stay curious. It's good to develop their different abilities," says a mother who gave her name as Ms Tang, looking at her four-year-old son mixing mud with water in a "science workshop" under the trees. The bi-weekly sessions started in 2017 and are run by Malvern College Pre-School, the Hong Kong branch of a school in the UK.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Forest schools are gaining popularity in Asia (Credit: Forest School Singapore)</figcaption>
+            </figure>
+            <p>Forest schools are gaining popularity in Asia (Credit: Forest School Singapore)</p>
+            <p>As the concept has expanded in Asia, it has had to evolve and adapt to different environmental, cultural and educational settings, resulting in a broad range of forest schools in places as diverse as Hong Kong, Singapore, Japan and Korea.</p>
+            <p>"Children learn the best through playing," says Claire Jones, Malvern College's forest school teacher, who is originally from the UK.</p>
+            <p>Jones incorporates local touches into the original forest school model, such as Hong Kong's multilingual influences, and its natural environment. During one session, the children blurted out the names of animal species in the woods around them, in either English or Mandarin: "Spider! Zhizhu!" Their outdoor school includes a beach as well as the forest. During a scavenger hunt, red flags tied to trees warned the children to stay away from dangerous areas, such as a small mountain of severed sharp-edged tree trunks.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Playing in nature may boost children's attention skills and imagination, research suggests (Credit: Forest School Singapore)</figcaption>
+            </figure>
+            <p>The forest school concept has not spread to Hong Kong's public schools yet. But Jacqueline McNalty, Malvern College Pre-School's principal, says many local parents have been enthusiastic.</p>
+            <p>"Parents want to bring children outdoors," she says, adding that the environment acts as an additional teacher. In her experience, forest school boosts the children's physical fitness and general wellbeing. "It also infuses confidence in children. This cultivates their problem-solving skills. Like, one time they wanted to take action after seeing rubbish washed up on the beach."</p>
+            <p>Studies suggest that time spent outdoors may improve pre-school children's attention skills, and that playing in nature encourages physical activity and imaginative play.</p>
+            <p>One study showed that adding natural elements to a playground, such as grass, trees, logs and mulch, led to more imaginative play, and reduced conflicts between children. A recent study from the University of Ioannina, Greece, found that running and climbing up tree trunks develop children’s strength and coordination.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Covid-19 pandemic has sparked a global conversation about the importance of outdoor play (Credit: Chermaine Lee)</figcaption>
+            </figure>
+            <p>However, one critique of forest schools warns that their "quick pace of growth" around the world could also "bring with it problems", such as losing the original philosophy of forest schools, which is based on experiencing freedom by connecting with nature. The author cautions that cultural sensitivity should be used when transplanting the idea to different places, to ensure its original meaning and benefits are not lost.</p>
+            <p>For Darren Quek, a forest school coach in Singapore, one early challenge was to convey the forest school concept to Singaporean parents, who were used to a more structured type of indoor learning, with clear tasks and tests.</p>
+            <p>"Culturally, we have a more academic focus in Singapore, hence in the beginning when we first started, there was a lot of explanation to do, to help people understand how a programme with no clear itinerary and curriculum can work," says Quek. He founded the Forest School Singapore in 2016, and offers sessions in country parks covered by lush rainforests. The children play and learn amid local plants and animals, such as Seraya trees and wild boars.</p>
+            <blockquote>In cool countries, the children can take naps outdoors. In Singapore, we would be feeding the mosquitoes - Darren Quek</blockquote>
+            <p>In academic terms, Singapore is one of the highest-achieving countries in the world, and regularly tops global educational performance rankings. But Quek argues that forest school can enrich the conventional curriculum, for example by offering an opportunity to interact with nature. In hot and humid Singapore, that can require some flexibility.</p>
+            <p>"In temperate countries they can take afternoon naps outdoors as a group. If we do it in Singapore, we will be feeding mosquitoes, and be baking ourselves. Even the animals take shade in the hot weather of Singapore during the mid-day," Quek says. His forest school sessions are conducted either early in the morning, when the Sun is rising, or in the late afternoon, when the Sun is about to set.</p>
+            <p>"Children do take shade under the trees and in the forest when it is too hot. They like to enter the forest area where it is wetter, when it is hot. In our hot weather, static activities can be more common than long hikes," Quek adds.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Outdoor learning can be adapted to different climates and habitats (Credit: Forest School Singapore)</figcaption>
+            </figure>
+            <p>While forest schools are a relatively new trend in Hong Kong and Singapore, in other parts of Asia, they are embedded in much older, homegrown traditions.</p>
+            <p>In Japan, forest education has been part of compulsory education for over a century for pupils aged from six to 12. Students are taught to craft objects from wood, such as chopsticks, and learn to measure and study trees, and plant school forests. Some visit sawmills and other wood-processing facilities, and study forests and their different social and environmental functions as part of their usual indoor classes.</p>
+            <p>A report on forest education in Japan also highlights the deep cultural and religious significance of trees in the country, where temples and shrines were traditionally surrounded by woods. </p>
+            <p>Educators in South Korea observed Japan's forest education movement in the 1990s, and brought the approach back to their own country. There are currently over 700 "school forests" in South Korea, meaning, forests planted by or near schools so children can use them as outdoor classrooms.</p>
+            <blockquote>Educators in South Korea observed Japan's forest education movement in the 1990s, and brought the approach back to their own country. There are currently over 700 "school forests" in South Korea, meaning, forests planted by or near schools so children can use them as outdoor classrooms.</blockquote>
+            <p>In addition to those wooded areas, Korea's Forest Service introduced its first forest school in 2008, and the concept has ballooned since then. In 2017, the Korean government announced a plan to create over 400 forest kindergarten outdoor spaces, modelled after European forest schools. They are set to open by 2023, and will reportedly be more nature-oriented than current, forest-oriented models used in Korea.</p>
+            <p>The government's initiative is a main driver for the exponential growth of forest schools in South Korea, according to Jiyoun Shin, vice-chairperson of Korea Forest Kindergarten Association.</p>
+            <p>"It was an effort to prepare a space for young children to play in the forest and to train certified forest teachers who can guide them," Shin says of the Forest Service's decision to boost forest education. She points out that while Korea's approach was inspired by forest education in other countries, the country also developed its own, unique approach.</p>
+            <p>"Most forest kindergartens in Europe and the US are operated by non-accredited institutions, but in Korea, 99% of forest kindergartens are operated by regular early childhood education institutions and meet the national standards for early childhood education," she tells the BBC in an email interview.</p>
+            <p>This means that although forest school is not yet mandatory in kindergartens’ curriculum, schools are very open to the concept and have been willing to adopt it when they can.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Sometimes toy animals are used to help the children learn (Credit: Chermaine Lee)</figcaption>
+            </figure>
+            <p>In China, the forest school movement is only just beginning to catch on. Jean Lomino, founder and president of the Forest School Teacher Institute and Nature Kin Pocket Forest Schools, says that she saw a high demand from Chinese parents for such programmes during her two-month consultancy in China in 2017.</p>
+            <p>"This private school [that I consulted with] transported their children at least two days a week to a 300-acre forest which they rented from a farmer. Their goal was to provide their students many experiences of nature immersion learning," Lomino says.</p>
+            <p>"As a consultant for this school I became convinced that many families in China were looking for these kinds of opportunities for their young children," she adds, though she has also observed some obstacles: "I believe the greatest hindrance there is the continued strong focus on academic learning instead of holistic learning, which children receive in outdoor, nature-based programmes."</p>
+            <p>Like Singapore, Hong Kong also scores highly in global educational league tables. Many parents share a similar focus on measurable academic results, and a desire to help their children excel. Those good intentions can sometimes get in the way of the forest schools' emphasis on independence, educators say.</p>
+            <p>For example, at the forest class in Sai Kung, some parents attending the session were keen to help their children with tasks, held their hands when looking for animals, or even shouted the answers to the teacher's questions.</p>
+            <p>"So you need to educate the parents as well," Jones said, referring to the principle of letting the children find their own solutions to problems.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Forest schools encourage children to experiment, and find their own solutions to problems (Credit: Forest School Singapore)</figcaption>
+            </figure>
+            <blockquote>Children who spent time in the forest, will look to protect it - Darren Quek</blockquote>
+            <p>Some forest school advocates argue that this kind of independent, nature-based learning ultimately leads to deeper, longer-lasting results - and can help children grasp some of today's most vital challenges, such as climate change and environmental destruction.</p>
+            <p>"There is enough science and academic education about climate change and issues but there isn’t enough experiential, story and relationships with Mother Nature and Earth," says Quek, the educator in Singapore. "In the long term, children who spend time in the forest long enough, building that relationship with the land, will look to protect it."</p>
+            <p>There have been calls to place climate change and sustainability on the curriculum in Southeast Asia, following the example of some environmentally-conscious schools in the region.</p>
+            <p>The Covid-19 pandemic, and the related lockdowns and school closures, have also sparked a global conversation around children's need for exercise and outdoor play.</p>
+            <p>During the outbreaks in Hong Kong, Jones resorted to video classes, in which she tried to maintain the forest-school spirit, for example by making a small fire in her rooftop garden, and asking the children to suggest other experiments.</p>
+            <p>When the outdoor classes started again,  Jones noticed that the time inside had taken its toll.</p>
+            <p>"They [children] spent a lot of time indoors, and so [when classes resumed], they fell a lot, and some hated the feeling of sand at first because they were not used to it. I found it worrying at the time, because the connection I wanted to build between them and nature was going backwards," says Jones.</p>
+            <p>Looking at children filling their assigned buckets with seawater or sand on the beach in Sai Kung, Jones blew her whistle to gather them for the next activity. Asked what the next session should be about, children said they wanted to plant flowers. That settled it, since the children decide what they wish to learn each time.</p>
+            <p>"There are skills and knowledge that are vital to develop and practice alongside the academic skills in order for it all to become embedded, practiced and investigated," Jones says, observing her open-air classroom. "These are skills for life."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

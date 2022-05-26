@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World - BBC News</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="world" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>News</li>
+                <li>World</li>
+            </ul>
+        </div>
+    </section>
+    <section class="viewBox newsSubTop">
+        <div>
+            <h2 class="heading large">World</h2>
+            <div class="views">
+                <input type="button" class="btn_list active" value="List View">
+                <input type="button" class="btn_grid" value="Grid View">
+            </div>
+        </div>
+        <ul class="listView x3 column">
+            <li class="display large">
+                <img src="images/thumb_world_9.jpg" alt="Article Image">
+                <div>
+                    <mark>World</mark>
+                    <h3><a href="a_world_9.html">Families of Sandy Hook victims settle… with Remington</a></h3>
+                    <p>Teaching people about achieving sexual pleasure can help sell safe-sex messages, say researchers from the World Health Organization.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_9.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="grid">
+                <img src="images/thumb_world_30.jpg" alt="Article Image">
+                <div>
+                    <mark>UK</mark>
+                    <h3><a href="a_world_30.html">Paislee Shultis: US girl missing since 2019 found alive in secret room</a></h3>
+                    <p>Police have charged three people over Paislee Shultis' disappearance in Saugerties, New York state.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_30.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="grid">
+                <img src="images/thumb_world_31.jpg" alt="Article Image">
+                <div>
+                    <mark>Europe</mark>
+                    <h3><a href="a_world_31.html">US conservative satirist PJ O'Rourke dies at 74</a></h3>
+                    <p>The best-selling writer and political commentator defied the leftward trend of American humour.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_31.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="grid">
+                <img src="images/thumb_world_32.jpg" alt="Article Image">
+                <div>
+                    <mark>World</mark>
+                    <h3><a href="a_world_32.html">Biden: Human cost of Russia attack would be immense</a></h3>
+                    <p>The US president says an invasion of Ukraine is still possible despite Russian claims of a withdrawal.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_32.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="listView row">
+            <li class="plain vertical">
+                <img src="images/thumb_world_33.jpg" alt="Article Image">
+                <div>
+                    <mark>World</mark>
+                    <h3><a href="a_world_33.html">Pictures lay bare worst drought in 1,200 years</a></h3>
+                    <p>A study has found that the American West has not seen such drought since the time of Charlemagne.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_33.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_world_34.jpg" alt="Article Image">
+                <div>
+                    <mark>World</mark>
+                    <h3><a href="a_world_34.html">Jury rules against Sarah Palin in news libel case</a></h3>
+                    <p>Ms Palin failed to prove that the NY Times ruined her reputation by linking her to a deadly shooting.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_34.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_world_35.jpg" alt="Article Image">
+                <div>
+                    <mark>World</mark>
+                    <h3><a href="a_world_35.html">Dozens more graves found at two Canadian schools</a></h3>
+                    <p>Indigenous-led investigations have discovered more than 1,100 unmarked graves in recent months.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_35.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_business_8.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_8.html">Four ways Elon Musk might change Twitter</a></h3>
+                    <p>After the billionaire struck a deal to buy the site, speculation has begun over what the future holds.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_business_8.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <div class="postCarouselBBox">
+        <div>
+            <h2 class="heading large">Coronavirus pandemic</h2>
+            <div class="controller">
+                <span class="btn_prev"></span>
+                <span class="btn_next"></span>
+            </div>
+        </div>
+        <ul class="gridView">
+            <li class="plain vertical">
+                <img src="images/thumb_world_22.jpg" alt="Article Image">
+                <div>
+                    <mark>World</mark>
+                    <h3><a href="a_world_22.html">The day Canada's bridge protesters had dreaded</a></h3>
+                    <p>A police raid has finally put an end to the costly bridge blockade at Windsor, Ontario, with the crossing reopening for traffic on Sunday night after a six-day protest. But with the demonstrations in Ottawa still going strong, is any end in sight for the anti-mandate movement?</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_22.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_world_23.jpg" alt="Article Image">
+                <div>
+                    <mark>Asia</mark>
+                    <h3><a href="a_world_23.html">Cook Islands braces after Covid-positive traveller</a></h3>
+                    <p>The Cook Islands is bracing for its first coronavirus cases after a visitor to the country tested positive.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_23.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_world_24.jpg" alt="Article Image">
+                <div>
+                    <mark>Asia</mark>
+                    <h3><a href="a_world_24.html">New Zealand plays Barry Manilow to repel protesters</a></h3>
+                    <p>Protesters opposed to Covid-19 vaccine mandates remain camped outside parliament.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_24.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_world_25.jpg" alt="Article Image">
+                <div>
+                    <mark>Europe</mark>
+                    <h3><a href="a_world_25.html">Hundreds fined and tear gas fired at Paris protest</a></h3>
+                    <p>Police intercept lorries trying to join a protest against France's coronavirus regulations.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_25.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_world_26.jpg" alt="Article Image">
+                <div>
+                    <mark>UK</mark>
+                    <h3><a href="a_world_26.html">PM sent lockdown party questionnaire by police</a></h3>
+                    <p>No 10 confirms that Boris Johnson has been contacted and says he will "respond as required".</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_26.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_world_21.jpg" alt="Article Image">
+                <div>
+                    <mark>World</mark>
+                    <h3><a href="a_world_21.html">White House left behind as states drop Covid rules</a></h3>
+                    <p>The White House is facing pressure to revise its position on mask wearing as pandemic restrictions are eased in a number of US states.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_21.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_world_27.jpg" alt="Article Image">
+                <div>
+                    <mark>World</mark>
+                    <h3><a href="a_world_27.html">Israel may hit herd immunity but at a price - adviser</a></h3>
+                    <p>Health boss says Omicron may lead to herd immunity but it would be better achieved via vaccination.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_27.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_world_28.jpg" alt="Article Image">
+                <div>
+                    <mark>UK</mark>
+                    <h3><a href="a_world_28.html">France suspends Covid transit ban for UK nationals</a></h3>
+                    <p>EU-based Brits trying to get home will be allowed to cross France during the Christmas period.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_28.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="postCarouselABox">
+        <div>
+            <h2 class="heading large">Europe</h2>
+            <div class="controller">
+                <span class="btn_prev"></span>
+                <span class="btn_next"></span>
+            </div>
+        </div>
+        <ul class="gridView">
+            <li class="display">
+                <img src="images/thumb_world_14.jpg" alt="Article Image">
+                <div>
+                    <mark>Europe</mark>
+                    <h3><a href="a_world_14.html">Ukrainians wary of Russian claims of withdrawal</a></h3>
+                    <p>Kyiv says it wants to see evidence that Russia really is moving troops away from the border.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_14.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="display">
+                <img src="images/thumb_world_10.jpg" alt="Article Image">
+                <div>
+                    <mark>Europe</mark>
+                    <h3><a href="a_world_10.html">Hungarian election: Orban faces toughest race so far</a></h3>
+                    <p>After 12 years in power, Hungarian Prime Minister Viktor Orban is asking for eight more, but his right-wing Fidesz government is facing a strong challenge from an alliance of six opposition parties.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_10.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="display">
+                <img src="images/thumb_world_36.jpg" alt="Article Image">
+                <div>
+                    <mark>Europe</mark>
+                    <h3><a href="a_world_36.html">I haven't decided future - PSG's Mbappe</a></h3>
+                    <p>Paris St-Germain's Kylian Mbappe says he has not decided his future after scoring the winner against Real Madrid in their </p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_36.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="display">
+                <img src="images/thumb_world_37.jpg" alt="Article Image">
+                <div>
+                    <mark>Europe</mark>
+                    <h3><a href="a_world_37.html">Ten dead as Spanish trawler sinks off Canada</a></h3>
+                    <p>Three crew members have been found and rescue efforts are continuing for other survivors.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_37.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="display">
+                <img src="images/thumb_world_38.jpg" alt="Article Image">
+                <div>
+                    <mark>Europe</mark>
+                    <h3><a href="a_world_38.html"">Putin critic Navalny put on trial again in Russia</a></h3>
+                    <p>The opposition leader, who has already spent a year behind bars, faces fresh fraud charges.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_38.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="display">
+                <img src="images/thumb_world_39.jpg" alt="Article Image">
+                <div>
+                    <mark>Europe</mark>
+                    <h3><a href="a_world_39.html">Ukraine's Eurovision act put on hold by broadcaster</a></h3>
+                    <p>With ongoing tensions between Russia and Ukraine, Alina Pash hopes to represent her country in May.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_39.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="postCarouselBBox">
+        <div>
+            <h2 class="heading large">Asia</h2>
+            <div class="controller">
+                <span class="btn_prev"></span>
+                <span class="btn_next"></span>
+            </div>
+        </div>
+        <ul class="gridView">
+            <li class="plain vertical">
+                <img src="images/thumb_world_40.jpg" alt="Article Image">
+                <div>
+                    <mark>China</mark>
+                    <h3><a href="a_world_40.html">Hong Kong's hospitals overwhelmed amid Covid spike</a></h3>
+                    <p>Infected patients are treated outside crowded facilities as daily cases reach a new record.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_40.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_world_7.jpg" alt="Article Image">
+                <div>
+                    <mark>Australia</mark>
+                    <h3><a href="a_world_7.html">Australia asylum seekers held 689 days on average</a></h3>
+                    <p>Teaching people about achieving sexual pleasure can help sell safe-sex messages, say researchers from the World Health Organization.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_7.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_world_41.jpg" alt="Article Image">
+                <div>
+                    <mark>India</mark>
+                    <h3><a href="a_world_41.html">The hijab row polarising classrooms in India state</a></h3>
+                    <p>Young students on both sides of the hijab row say they are struggling to understand their classmates.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_41.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_world_42.jpg" alt="Article Image">
+                <div>
+                    <mark>South Korea</mark>
+                    <h3><a href="a_world_42.html">Why a 'fake' posh girl enraged South Korea</a></h3>
+                    <p>Song Ji-a shot to fame on Netflix show Single's Inferno, but then had a spectacular fall from grace.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_42.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_world_43.jpg" alt="Article Image">
+                <div>
+                    <mark>Australia</mark>
+                    <h3><a href="a_world_43.html"">Sydney reports first fatal shark attack since 1963</a></h3>
+                    <p>A swimmer sustained "catastrophic injuries" in Wednesday's attack, Australian officials say.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_43.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_world_44.jpg" alt="Article Image">
+                <div>
+                    <mark>India</mark>
+                    <h3><a href="a_world_44.html">King of Bollywood disco Bappi Lahiri dies</a></h3>
+                    <p>The music composer, known for his groovy disco tunes and iconic style, has died at the age of 69.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_44.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_world_8.jpg" alt="Article Image">
+                <div>
+                    <mark>Asia</mark>
+                    <h3><a href="a_world_8.html">Teacher who raped 13 students gets life in jail</a></h3>
+                    <p>Teaching people about achieving sexual pleasure can help sell safe-sex messages, say researchers from the World Health Organization.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_8.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="plain vertical">
+                <img src="images/thumb_world_45.jpg" alt="Article Image">
+                <div>
+                    <mark>Asia</mark>
+                    <h3><a href="a_world_45.html">Tongans suffering trauma from disasters, says PM</a></h3>
+                    <p>Tonga's Prime Minister Hu'akavemeiliku Siaosi Sovaleni says his island nation is trying to rebuild the lives of its people and not just its infrastructure, in the wake of the devastating volcanic eruption and tsunami.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_45.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="postCarouselABox">
+        <div>
+            <h2 class="heading large">Australia</h2>
+            <div class="controller">
+                <span class="btn_prev"></span>
+                <span class="btn_next"></span>
+            </div>
+        </div>
+        <ul class="gridView">
+            <li class="display">
+                <img src="images/thumb_world_46.jpg" alt="Article Image">
+                <div>
+                    <mark>Australia</mark>
+                    <h3><a href="a_world_46.html">Working with assertive China a must: Jacinda Ardern</a></h3>
+                    <p>New Zealand's PM tells the BBC in an exclusive interview she'll work with China where possible.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_46.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="display">
+                <img src="images/thumb_world_7.jpg" alt="Article Image">
+                <div>
+                    <mark>Australia</mark>
+                    <h3><a href="a_world_7.html">Australia asylum seekers held 689 days on average</a></h3>
+                    <p>Teaching people about achieving sexual pleasure can help sell safe-sex messages, say researchers from the World Health Organization.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_7.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="display">
+                <img src="images/thumb_world_47.jpg" alt="Article Image">
+                <div>
+                    <mark>Australia</mark>
+                    <h3><a href="a_world_47.html">The refugee kids locked up by Australia for three years</a></h3>
+                    <p>Kopika is a five-year-old girl who has been locked up by the Australian government for most of her childhood.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_47.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="display">
+                <img src="images/thumb_world_48.jpg" alt="Article Image">
+                <div>
+                    <mark>Australia</mark>
+                    <h3><a href="a_world_48.html">Thousands of Sydney nurses strike despite ruling</a></h3>
+                    <p>The Omicron variant has led to a recent surge of cases, putting hospital systems under further strain.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_48.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="display">
+                <img src="images/thumb_world_49.jpg" alt="Article Image">
+                <div>
+                    <mark>Australia</mark>
+                    <h3><a href="a_world_49.html">Rugby star wins appeal in sexual assault case</a></h3>
+                    <p>Jarryd Hayne will face a retrial in Australia after his sexual assault convictions were quashed.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_49.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="display">
+                <img src="images/thumb_world_50.jpg" alt="Article Image">
+                <div>
+                    <mark>Australia</mark>
+                    <h3><a href="a_world_50.html">NZ band criticises Australia PM over song use</a></h3>
+                    <p>Rock band Dragon called Scott Morrison's rendition of their hit song, April Sun in Cuba, "cynical".</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_50.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+            <li class="display">
+                <img src="images/thumb_world_51.jpg" alt="Article Image">
+                <div>
+                    <mark>Australia</mark>
+                    <h3><a href="a_world_51.html">Blackstone takes $6.3bn gamble on casino operator</a></h3>
+                    <p>Australian gambling firm Crown Resorts has faced major scandals and intense regulatory scrutiny.</p>
+                    <div>
+                        <time datetime="2022-01-01">today</time>
+                        <a href="a_world_51.html" class="readMore">Read More</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <section class="viewBox mV">
+        <div>
+            <h2 class="heading large">More around the BBC</h2>
+            <div class="views">
+                <input type="button" class="btn_list active" value="List View">
+                <input type="button" class="btn_grid" value="Grid View">
+            </div>
+        </div>
+        <ul class="listView x3 column">
+            <li class="display medium">
+                <img src="images/thumb_science_10.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_10.html">74% of ransomware revenue goes to Russian hackers</a></h3>
+                    <p>Crypto-currency researchers say more than $400m of cyber-crime funds go to Russian gangs.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_10.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_world_20.jpg" alt="Article Image">
+                <div>
+                    <mark>World</mark>
+                    <h3><a href="a_world_20.html">Eccentric sewage rebels head for the big screen</a></h3>
+                    <p>When a group of middle-aged swimming friends from Scarborough became worried about sewage in the sea in the 1980s, they started staging eccentric stunts to highlight their cause, and even took on the government. Now, their story is being turned into a film.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_world_20.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_business_6.jpg" alt="Article Image">
+                <div>
+                    <mark>Business</mark>
+                    <h3><a href="a_business_6.html">How nurseries are keeping track of their toddlers</a></h3>
+                    <p>Misty Ardouin set up her nursery, Nestlings, in Cardiff City centre in 2019. At the end of each day, they would have a "good sit down" in the playroom with parents to catch-up on everything the children had been doing.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="/a_business_6.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_science_6.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_6.html">Record high deforestation of Amazon in January</a></h3>
+                    <p>The number of trees cut down in the Brazilian Amazon in January far exceeded deforestation for the same month last year, according to government satellite data.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_6.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_science_8.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_8.html">Lessons in pleasure boost good safe sex</a></h3>
+                    <p>Teaching people about achieving sexual pleasure can help sell safe-sex messages, say researchers from the World Health Organization.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_8.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_world_21.jpg" alt="Article Image">
+                <div>
+                    <mark>World</mark>
+                    <h3><a href="a_world_21.html">White House left behind as states drop Covid rules</a></h3>
+                    <p>The White House is facing pressure to revise its position on mask wearing as pandemic restrictions are eased in a number of US states.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_world_21.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_science_9.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_9.html">James Webb telescope begins to focus its 'big eye'</a></h3>
+                    <p>It's a confusing but amazing image.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_9.html" class="readMore">Read More</a>
+                </div>
+            </li>
+            <li class="plain">
+                <img src="images/thumb_science_11.jpg" alt="Article Image">
+                <div>
+                    <mark>Science</mark>
+                    <h3><a href="a_science_9.html">How Taiwan used simple tech to help contain Covid-19</a></h3>
+                    <p>In Taiwan, finding someone who will talk about their Covid experience is harder than you might think.</p>
+                    <time datetime="2022-01-01">today</time>
+                    <a href="a_science_11.html" class="readMore">Read More</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

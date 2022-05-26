@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_business_10" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Business</mark>
+                <h2>'I have had more time, silence and solitude to write'</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <p><strong>Celebrated author Isabel Allende is no stranger to international book tours.</strong></p>
+            <p>The Chilean-American, winner of the prestigious Presidential Medal of Freedom, has published more than 20 books over the past four decades. But even before the pandemic she was ready to change the way she connects with her readers.</p>
+            <p>After a gruelling promotional schedule that took her through the US and Europe, ending in the UK in February 2020, the 79-year-old decided she had had enough of the relentless travel.</p>
+            <p>Before even leaving the airport on her return to her home, north of San Francisco, she turned to her daughter-in-law who had travelled with her and said that would be her last in-person book tour.</p>
+            <p>"We swore that we would never do another book tour because we were so sick and fed up," Ms Allende remembers. "And two weeks later, the pandemic hit."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Isabel Allende pictured in the UK on her last book tour</figcaption>
+            </figure>
+            <p>The global book industry was worth an estimated $109bn (£81bn) in 2021. The pandemic has helped drive a rise in book sales over the past two years as lockdowns meant more people were spending time at home reading.</p>
+            <p>Sales of physical books last year in the UK totalled 212 million - the highest in a decade and 5% up on 2020. It was a similar picture in the US, where sales jumped 9% to 826 million.</p>
+            <p>Yet, while physical book sales still dwarf those of e-books by about five to one, authors' marketing and promotion strategies have increasingly shifted online as Covid has made book tours impossible.</p>
+            <p>And even as international travel restrictions are being lifted, some writers say they will continue to carry on with virtual events because they are more convenient and accessible. They say this has the additional benefit of leaving them with more time to focus on their craft.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Sales of books have soared over the past two years</figcaption>
+            </figure>
+            <p>"I have been able to do all the promotion for everything on Zoom... or on the phone," says Ms Allende, who is in the midst of online promotional work for her latest novel, Violeta. "It has been great because I have had [more] time, silence and solitude to write."</p>
+            <p>Other authors say virtual book tours offer opportunities to those who can't attend in-person events. One such writer is Angie Thomas, whose young adult fiction books include The Hate U Give, On the Come Up, and Concrete Rose.</p>
+            <p>"I missed - and I still miss - interacting with readers in person," she says, speaking from her home in Jackson, Mississippi. "But what I love about doing virtual online events is that readers who maybe wouldn't have had access before, now have access.</p>
+            <p>"This includes young readers whose parents might not be able to bring them to in-person events, or readers with restricted mobility. So that's been a huge advantage, especially for disadvantaged young people who don't have always the means [to travel]."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Angie Thomas admits that she does miss meeting her readers in person</figcaption>
+            </figure>
+            <p>Ms Thomas often does her own social media broadcasts, rather than solely relying on her publisher to organise her virtual events. These include live video broadcasts on Instagram, covering topics beyond books, where readers are often less inhibited than they would be in a more formal in-person setting.</p>
+            <p>"We get to talk about the publishing industry, about social justice, about just life in general. We do wellness checks, we ask everyone 'how are you doing right now?'," she says.</p>
+            <p>"We remind them it's OK if you're not OK. We're honest also about our own mental health struggles during all this."</p>
+            <p>Ms Thomas adds she has pointed readers toward free mental health resources that can help them with the anxiety caused by the pandemic when they say they're struggling.</p>
+            <p>"You know what? Even once we do get back to in-person events, I still want to do some virtual events for those young people who can't get to them, for whatever reason."</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Angie Thomas now regularly holds events on social media with her readers</figcaption>
+            </figure>
+            <p>Natalie Tindall is the director of the University of Texas at Austin's Stan Richards School of Advertising and Public Relations, and also a published writer. She says the online world gives authors an opportunity to build "authentic relationships" with readers.</p>
+            <p>"It's a chance to show a different side of yourself, to be creative and to expand this community you're trying to build - this network of readers, of reviewers, this network of people who are going to support you regardless. It is incredibly important for authors to have community."</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>

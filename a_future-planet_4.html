@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="a_future-planet_4" data-dark="false">
+    <input type="button" class="btn_convert darken" value="convert theme">
+    <div id="search" class="modal">
+        <form class="modalContainer">
+            <fieldset>
+                <input type="button" class="btn_close" value="X">
+                <input inputmode="search" type="search" placeholder="Search at bbc.com">
+            </fieldset>
+        </form>
+    </div>
+    <div id="access" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-tabName="inTab">Sign in</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="upTab">Register</a>
+                </li>
+            </ul>
+            <div id="inTab" class="active">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign in">
+                    </fieldset>
+                </form>
+                <input type="button" class="btn_close" value="I've forgotten my password" data-tabName="forgotten1">
+            </div>
+            <div id="upTab">
+                <form>
+                    <fieldset>
+                        <input inputmode="email" type="email" required placeholder="Email or Username">
+                        <input type="password" required placeholder="Password">
+                        <input type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forgotten1" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="email" type="email" required placeholder="Email or Username">
+                    <input type="button" value="Send Pin Number" data-tabName="forgotten2">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="forgotten2" class="modal">
+        <div class="modalContainer">
+            <input type="button" class="btn_close" value="X">
+            <h2>I've forgotten my password</h2>
+            <form>
+                <fieldset>
+                    <input inputmode="numeric" type="text" required placeholder="Pin Number">
+                    <input type="submit" value="Confirm Pin Number">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="headerContainer">
+            <a class="mui">menu</a>
+            <h1><a href="index.html">BBC</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ol>
+                            <li><a href="coronavirus.html">Coronavirus</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="world.html">World</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="in-pictures.html">In Pictires</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Worklife</a>
+                        <ol>
+                            <li><a href="what-is-worklife.html">What is Worklife?</a></li>
+                            <li><a href="how-we-work.html">How We Work</a></li>
+                            <li><a href="how-we-live.html">How We Live</a></li>
+                            <li><a href="how-we-think.html">How We Think</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                        <ol>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="discovery.html">Discovery</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                        </ol>
+                    </li>
+                    <li class="active">
+                        <a href="#">Future</a>
+                        <ol>
+                            <li><a href="what-is-bbc-future.html">What is BBC Future?</a></li>
+                            <li><a href="future-planet.html">Future Planet</a></li>
+                            <li><a href="immune-response.html">Immune Response</a></li>
+                            <li><a href="family-tree.html">Family Tree</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="Access" data-modal="access">
+                <input type="button" value="Search" data-modal="search">
+            </div>
+        </div>
+    </header>
+    <section class="navigator">
+        <div class="navigatorContainer">
+            <h2>navigator</h2>
+            <ul>
+                <li>BBC</li>
+                <li>2depth</li>
+                <li>3depth</li>
+                <li>4depth</li>
+            </ul>
+        </div>
+    </section>
+    <article class="content">
+        <div class="header">
+            <img src="" alt="">
+            <div>
+                <mark>Future Planet</mark>
+                <h2>How Dubai is pushing back its encroaching deserts</h2>
+                <time datetime="2022-01-01">today</time>
+            </div>
+        </div>
+        <div>
+            <h3>Desertification threatens food supply in Dubai. Can its fledgling green tech sector help to stem the encroaching sands?</h3>
+            <p>The desert has never been far from Dubai's doorstep. Now a modern financial hub of some three million people, the United Arab Emirates’ (UAE) most populous city remains surrounded on one side by sea, on the other by a seemingly endless carpet of sand.</p>
+            <p>Over the last 50 years the city has become a somewhat improbable success story, transforming from a sleepy fishing port to a shining urban metropolis. But despite its opulence, the city faces a major challenge: encroaching deserts which threaten the emirate's remaining fertile land.</p>
+            <p>The UAE is around the same size as Portugal, but some 80% of its land area is already desert. Its ecosystem is fragile and, partly due to desertification, much of its most valuable land is coming under increased strain. A government report published in 2019 stated that "with an increase in population and food consumption systems, land degradation and desertification are becoming rampant". Finding effective solutions has become a priority for the country. The goal is not to conquer the desert, but to restore areas of land that are no longer productive.</p>
+            <p>The UAE is uniquely positioned compared to many other countries affected by desertification in that it has the financial clout needed to nurture ideas and innovations. Dubai, especially, is making noises around going green, investing heavily in supporting green startups and tech-led education institutions with an environmental slant.</p>
+            <p>Dubai's very existence is testimony to what can be achieved when ambition and focus are financially backed. The mentality which helped build a city on sand is now being harnessed to fight against the desert's encroachment. If successful, the solutions developed here could have a major impact globally.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Vegetables in field treated with liquid natural clay (Credit: Desert Control)</figcaption>
+            </figure>
+            <p>Desertification is a type of land degradation whereby fertile, farmable land in arid or semi-arid regions becomes unproductive. It typically occurs when natural resources such as water and soil are overburdened, which makes the land less able to support vegetation. While it can happen naturally, desertification is increasingly prevalent both in the UAE and globally due to human activities such as overgrazing, intensive farming and infrastructure development.</p>
+            <p>"Desertification occurs when land and vegetation, usually at the borders of deserts, is overstressed," says William H Schlesinger, a biogeochemist and president emeritus of the Cary Institute of Ecosystem Studies in New York. He has studied deserts for more than 30 years. "The result is a lower productivity of vegetation and often a transition to vegetation types that are less useful to human activities."</p>
+            <p>Approximately 12 million hectares (46,000 sq miles) are lost around the world each year as a direct consequence of drought and desertification. That's the equivalent of 2,000 American football fields every hour. To put that into context, if those fields were lined up end to end, you would have to drive at 130 mph (210km/h) just to keep pace with desertification's spread.</p>
+            <p>In the last 20 years, the UAE's loss of valuable land has been stark. According to the World Bank, the UAE had 75,000 hectares (290 sq miles) of arable land in 2002, but by 2018 had only 42,300 hectares (163 sq miles). The data also indicated that, in the same timeframe, the percentage of agricultural land in the UAE fell from 7.97% to 5.38%.</p>
+            <blockquote>Political and business leaders in the UAE understand that burnishing environmental credentials are incredibly important for presenting the country and cities like Dubai as modern - Natalie Koch</blockquote>
+            <p>During the 1970s and 1980s, the UAE's utilisation of its vast oil reserves sparked an incredible period of growth and financial prosperity, but this largely happened without much consideration for the environment. In 2008, the World Wide Fund for Nature (WWF) ranked the UAE as the country with the worst ecological footprint per person.</p>
+            <p>"The UAE's development over the past 40 years has required an environmentally unfriendly approach to the Earth's resources," says Dawn Chatty, a professor of anthropology at the University of Oxford. "To undo that is going to require serious financial effort as well as social transformation."</p>
+            <p>Partly as a result of this negative press, the UAE - and Dubai in particular, which was a primary culprit - pledged to do things better. In 2012, Sheikh Mohammed bin Rashid Al Maktoum, prime minister of the UAE and ruler of Dubai, announced the UAE green growth strategy to "maintain a sustainable environment to support long-term economic growth" and build the country's green economy.</p>
+            <p>"Political and business leaders in the UAE understand that burnishing environmental credentials are incredibly important for presenting the country and cities like Dubai as modern," says professor Natalie Koch, a specialist in political geography at Syracuse University in New York.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>A man tends crops in an experimental farm in the UAE (Credit: Art Directors & TRIP / Alamy)</figcaption>
+            </figure>
+            <p>Decision-makers in the UAE are also concerned with how they will maintain their current wealth when oil resources run dry or become less valuable, says Gökçe Günel, professor of anthropology at Rice University in Texas and author of Spaceship in the Desert, a book about energy, climate change and urban design in Abu Dhabi.</p>
+            <p>"There has definitely been a push to attract tech start-ups to the region since the early 2000s as part of Dubai's transition to a knowledge-based economy," she says. "In this context, investments in renewable energy and clean technology, or more broadly in sustainability, also serve as means for economic diversification."</p>
+            <p>There are already a host of initiatives centered around Dubai. The Dubai Industrial Strategy 2030 outlines the city's plan to "promote environmentally friendly and energy-efficient manufacturing", while the 1 gigawatt (one billion watt) Mohammed Bin Rashid Al Maktoum Solar Park, located 30 miles (50 km) south of Dubai, is among the world's largest solar parks.</p>
+            <p>But Dubai's environmental issues are far from solved, especially in the case of desertification. Drought, overuse of natural resources, swift urban development and increased soil salinity are all risks for the city. Failure to adequately address them threatens everything from the permanent loss of arable land to the demise of species native to the region.</p>
+            <p>Additionally, given the UAE relies heavily on imports to support its rising population, there is a keen need to increase levels of internal food production so as to make the region more self-sufficient, and thereby more sustainable. In May 2021, Sheikh Mohammed launched Food Tech Valley, a research and innovation incubator that aims to triple the UAE's food production. To achieve this, the UAE is going to need effective anti-desertification initiatives.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>The Burj Khalifa skyscraper in Dubai contrasts with date palm trees at its base (Credit: Snapper Nick/Alamy)</figcaption>
+            </figure>
+            <p>One approach that has long been touted as central to these efforts is the age-old environmental solution of simply planting more trees. "Trees bind the soil, sequester carbon, improve soil fertility and also improve infiltration and recharge of groundwater," says Anna Tengberg, a professor at the Lund University Centre for Sustainability Studies in Sweden.</p>
+            <p>Dubai's decision-makers are well aware of the potential impact trees can provide in the fight against desertification. In 2010, Sheikh Mohammed launched the One Million Trees initiative, aiming to plant a million trees in a bid to increase green areas in the city and halt desertification.</p>
+            <p>However, according to Hamza Nazzal, a representative of Green Land, the company that developed the project in partnership with the government-backed Zayed International Foundation for the Environment, "100% of the trees have died and the initiative has failed completely."</p>
+            <p>Nazzal says the project was "abandoned" after Dubai Holding, a government-owned investment company, announced the development of several real estate projects on the same land, although these ultimately did not get built.</p>
+            <p>"It is clear the project was used for PR and media purposes and to showcase initiatives designed to promote sustainability." Nazzal states. "If they really cared about the environment, they would have attempted to save the one million trees that were dying in front of them."</p>
+            <blockquote>Decision-makers in the UAE are also concerned with how they will maintain their current wealth when oil resources run dry or become less valuable - Gökçe Günel</blockquote>
+            <p>Christian Henderson, a professor of Middle East studies at Leiden University in the Netherlands, says it is "questionable" that the real objective of the project was genuine sustainability, noting that political prestige and the image of environmentalism also appear to have been important rationales. "Ecologically, the failure of this project is a result of the fact that some of the trees were not suited to the environment of the UAE," he adds.</p>
+            <p>Future Planet contacted Dubai Holding and the Dubai Municipality about the initiative, but has so far received no response.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Washingtonia palm planted as part of One Million Trees initiative near Dubai in 2016 (left) and 2019 (right) (Credit: Hamza Nazzal)</figcaption>
+            </figure>
+            <p>Selecting the right - preferably native - species is crucial to tree planting projects, agrees Tengberg, as is considering the spacing of trees when planting in dry areas and considering the benefits to local people.</p>
+            <p>Despite the initiative's failure, planting trees is still seen as a core part of Dubai's anti-desertification strategy, as is the case elsewhere in the Middle East. Saudi Arabia, for example, recently declared its ambition to plant 10 billion trees over the coming decades as part of its Saudi Green Initiative.</p>
+            <p>Of course, for any project to succeed in a dry, arid landscape, understanding how to intelligently use scant water supplies to keep trees alive and healthy is crucial. Dubai, as well as other parts of the Middle East, has invested in numerous "cloud seeding" projects aimed at artificially inducing rain, but many of these are controversial, with success difficult to measure and some arguing it could lead to flooding, and others suggesting the materials used, such as silver iodine, could be harmful.</p>
+            <p>New technologies developed by green start-ups such as Norwegian-based Desert Control offer a different route. Desert Control aims to improve Dubai's desertification problem by deploying liquid natural clay nanoparticles to rapidly turn desert sand into fertile soils. The technology works by spraying a liquid made of water and clay onto dry, damaged ground, creating a layer around 50cm (20in) deep.</p>
+            <p>"Gravity brings the tiny clay particles down into the ground, and they stick to every grain of sand they encounter," explains Ole Kristian Sivertsen, chief executive of Desert Control. "They then form a soil structure that retains water like a sponge. This, in time, turns degraded sand into fertile soil." </p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>LNC treatment of Guava and Psidium guajavain fruit trees in Al Ain, Abu Dhabi (Credit: Desert Control)</figcaption>
+            </figure>
+            <p>The nanoparticle liquid not only irrigates the land, but ensures the water can be retained by the soil in the long term, and allows it to hold more nutrients. As a result, mineral-deficient land can be given a new lease of life.</p>
+            <p>The technology showcases the possibilities of forming soil in difficult environmental conditions, says Daniel Evans, who researches sustainable land systems at the Cranfield Soil and Agrifood Institute in the UK.</p>
+            <blockquote>Trees bind the soil, sequester carbon, improve soil fertility and also improve infiltration and recharge of groundwater - Anna Tengberg</blockquote>
+            <p>Desert Control is still in the early stages of its story, but since 2019 has implemented liquid natural clay pilots in Dubai with several farmers and landowners and Dubai's International Center for Biosaline Agriculture (ICBA). Different soil types require custom liquid natural clay compositions, so robust testing is needed to ensure the correct solution is used in each instance.</p>
+            <p>According to Sivertsen, ICBA documented a 47% water saving using the technology for grasses typically used for sports turf, golf courses, parks and green landscapes. It has also seen better yields of food crops such as watermelon (17%), pearl millet (28%) and courgette (62%). In one project in Dubai, the treatment led to 50% water savings for palms and various other types of trees, says Sivertsen.</p>
+            <p>Still, using liquid natural clay to grow great numbers of trees across Dubai will be a substantial task. "A single date palm can drink some 250 litres [55 gallons] per day," Sivertsen says.</p>
+            <p>Anne Verhoef, a soil physicist at the University of Reading, says that while liquid natural clay is "in principle, a very exciting opportunity" there are still questions around its practicality and viability. For example, the use of saline water could impact whether the soils remain healthy and suitable for agriculture in the long-run, she says. Due to the lack of freshwater availability in the UAE, water used in agriculture often comes via desalination plants, which can result in higher-than-normal levels of salt.</p>
+            <p>It is therefore crucial that liquid natural clay is rolled out slowly, says Verhoef, with proper scientific trials taking place over a number of years to ensure there are no adverse effects on the soils, the wider environment and local communities.</p>
+            <p>And even if liquid natural clay treatment works, says Evans, it does not tackle all the challenges to establishing agriculture in desert environments, such as storing harvested food and supporting the workforce needed to harvest crops. "Technological innovations in robotics, AI and sensors could help to overcome these constraints," he adds.</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Camels in the desert with Dubai cityscape in the background (Credit: philipus / Alamy)</figcaption>
+            </figure>
+            <p>An estimated 75% of our planet's land area is already degraded but the issue often lacks the attention it warrants. "It is a problem mostly affecting Africa, Asia and Latin America, and poor areas in developed countries, such as some dry and marginalised Mediterranean areas," says Tengberg. "Rich countries are more concerned about climate change, biodiversity loss and pollution by chemicals."</p>
+            <p>This is reflected in the international environmental governance structure and financing mechanisms, she adds, with the United Nations Convention to Combat Desertification receiving far less multilateral funding than its counterparts in climate change and biodiversity.</p>
+            <p>Given its vast wealth, its push to be at the forefront of progress, and the necessity of reclaiming land increasingly purloined by the sands, the UAE's anti-desertification efforts could provide a remedy to this, and a template for the rest of the world to follow. As a technological leader in the area, a progressive path forged by the country could bring wider benefits to surrounding countries and other regions facing uncertain futures due to desertification.</p>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2>BBC</h2>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <hr>
+        <p>Copyright © 2022 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+    </footer>
+</body>
+</html>
