@@ -903,14 +903,13 @@ ul.tab li.active:last-child{
 		scrollbar-width: none; 
 	}
 	[class^=postCarousel] div h2{
-		width: 70%;
+		width: calc(100% - 78px);
 		text-overflow: ellipsis;
 		overflow: hidden;
 		white-space: nowrap;
 	}
 	[class^=postCarousel] div .controller{
-		width: 30%;
-		float: right;
+		text-align: right;
 	}
 }
 
