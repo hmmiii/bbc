@@ -219,6 +219,8 @@ form fieldset input{
 	box-sizing: border-box;
 	height: 36px;
 	border-radius: 5px;
+	appearance: none;
+	-webkit-appearance: none;
 }
 form fieldset input[type=email], form fieldset input[type=password], form fieldset input[type=text]{
 	padding-left: 45px;
