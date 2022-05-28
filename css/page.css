@@ -37,15 +37,15 @@
 [class$=SlideBox] [class$=Slide] li div h2{
     margin: 0 auto 18px;
 }
-[class$=SlideBox] a{
+[class$=SlideBox] [class$=Slide] li div h2 a{
     text-decoration: none;
     color: inherit
 }
-[class$=SlideBox] li:hover strong,
-[class$=SlideBox] a{
+[class$=SlideBox] div [class^=thumbPager] li:hover a strong,
+[class$=SlideBox] [class$=Slide] li div h2:hover a{
     transition: color .3s;
 }
-[class$=SlideBox] li:hover strong,
+[class$=SlideBox] div [class^=thumbPager] li:hover a strong,
 [class$=SlideBox] [class$=Slide] li div h2:hover a{
     color: #37dce2;
 }
