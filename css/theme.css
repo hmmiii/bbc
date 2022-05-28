@@ -12,7 +12,7 @@ body[data-dark=true] .gridView .left p,
 body[data-dark=true] .gridView .right p,
 body[data-dark=true] #access .modalContainer, body[data-dark=true] [id^=forgotten] .modalContainer,
 body[data-dark=true] input[type=email], body[data-dark=true] input[type=password], body[data-dark=true] input[type=text],
-body[data-dark=true] .content figcaption,
+body[data-dark=true] .content figure figcaption,
 body[data-dark=true] .navigator .navigatorContainer ul li:not(:first-child, :last-child){
     color: inherit;
 }
