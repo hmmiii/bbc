@@ -231,6 +231,8 @@ form fieldset input[type=email], form fieldset input[type=password], form fields
 	background-repeat: no-repeat;
 }
 .modal .modalContainer fieldset input[type=search]{
+	appearance: none;
+	-webkit-appearance: none;
 	background-repeat: no-repeat;
 	width: 100%;
 	border-radius: 5px;
