@@ -77,6 +77,7 @@ $(document).ready(function(){
     setNavigator();
     setTitle();
     menu();
+    rollingNumber();
 });
 
 function init(){
@@ -391,4 +392,11 @@ function menu(){
             $(this).removeClass('opened');
         }
     });
+}
+
+function rollingNumber(){
+    var length = $('.number').length;
+    for(var i = 0; i<length; i++){
+        $('.number').eq(i).rollingNumbers();
+    }
 }

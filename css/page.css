@@ -431,6 +431,7 @@
     }
     .infoBox .infoContainer div section:last-child strong,
     .infoBox .infoContainer > section strong{
+        font-family: 'Open Sans';
         display: block;
         font-size: 28px;
         font-weight: 800;
@@ -447,7 +448,7 @@
     .infoBox .infoContainer > section ul li:not(:last-child){
         margin-bottom: 20px;
     }
-    .infoBox .infoContainer > section ul li span{
+    .infoBox .infoContainer > section ul li > span{
         display: block;
         font-size: 13px;
         font-weight: 500;
