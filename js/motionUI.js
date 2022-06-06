@@ -17,7 +17,7 @@
 
 
         if(settings.comma === true){
-            el.text(parseInt(el.text()).toLocaleString('en'));
+            el.text(el.text().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
             numbers = el.text();
             length = el.text().length;
         }
