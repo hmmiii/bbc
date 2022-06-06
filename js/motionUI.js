@@ -1,8 +1,7 @@
 (function($) {
     $.fn.rollingNumbers = function(options){
         let settings = $.extend({
-            comma : true,
-            unit : ''
+            comma : true
         },options);
 
         const el = this;
@@ -37,8 +36,6 @@
                 el.append('<div class="nan">'+nan+'</div>');
             }
         }
-        el.append(unitTemp)
-
 
         rolling = setTimeout(function(){
             for(let i=0; i<length; i++){
