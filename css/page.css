@@ -396,7 +396,7 @@
     .infoBox .infoContainer div section:first-child ul li *{
         display: block;
     }
-    .infoBox .infoContainer div section:first-child ul li span:first-child{
+    .infoBox .infoContainer div section:first-child ul li > span:first-child{
         font-size: 13px;
         font-weight: 500;
         margin-bottom: 6px;
@@ -406,7 +406,7 @@
         font-weight: 600;
         margin-bottom: 6px;
     }
-    .infoBox .infoContainer div section:first-child ul li span:last-child{
+    .infoBox .infoContainer div section:first-child ul li > span:last-child{
         font-size: 10px;
         font-weight: 500;
         color: #a5a6aa;
