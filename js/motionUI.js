@@ -1,7 +1,13 @@
 (function($) {
     $.fn.rollingNumbers = function(options){
+        let settings = $.extend({
+            comma : true,
+            unit : ''
+        },options);
+
         const el = this;
         const countTemp = '<div class="count"><span>9</span><span>8</span><span>7</span><span>6</span><span>5</span><span>4</span><span>3</span><span>2</span><span>1</span><span>0</span></div>';
+        const unitTemp = '<div class="unit">'+settings.unit+'</div>';
         let length = el.text().length;
         let numbers = el.text();
         let number = 0;
@@ -10,12 +16,7 @@
         let nan = '';
 
 
-        let settings = $.extend({
-            commma : true
-        },options);
-
-
-        if(settings.commma === true){
+        if(settings.comma === true){
             el.text(parseInt(el.text()).toLocaleString('en'));
             numbers = el.text();
             length = el.text().length;
@@ -36,6 +37,8 @@
                 el.append('<div class="nan">'+nan+'</div>');
             }
         }
+        el.append(unitTemp)
+
 
         rolling = setTimeout(function(){
             for(let i=0; i<length; i++){
