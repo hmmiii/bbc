@@ -44,6 +44,6 @@
                     count.attr('class','count'+number);
                 }
             }
-        });
+        },100);
     };
 }(jQuery));
