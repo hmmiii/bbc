@@ -10,7 +10,6 @@
         let numbers = el.text();
         let number = 0;
         let count = null;
-        let rolling = null;
         let nan = '';
 
 
@@ -24,26 +23,29 @@
         el.text('');
         el.addClass('rollingNumber');
     
-        
-        for(let i=0; i<length; i++){
-            number = numbers.substr(i,1);
-            if(!isNaN(number)){
-                el.append(countTemp);
-            }
-            else {
-                nan = numbers.substr(i,1);
-                el.append('<div class="nan">'+nan+'</div>');
-            }
-        }
-
-        rolling = setTimeout(function(){
+        (function(){
             for(let i=0; i<length; i++){
-                count = $(el).children('div').eq(i);
-                number = parseInt(numbers.substr(i,1));
+                number = numbers.substr(i,1);
                 if(!isNaN(number)){
-                    count.attr('class','count'+number);
+                    el.append(countTemp);
+                }
+                else {
+                    nan = numbers.substr(i,1);
+                    el.append('<div class="nan">'+nan+'</div>');
                 }
             }
-        },100);
+            (function(){
+                setTimeout(function(){
+                    for(let i=0; i<length; i++){
+                        count = $(el).children('div').eq(i);
+                        number = parseInt(numbers.substr(i,1));
+                        if(!isNaN(number)){
+                            count.attr('class','count'+number);
+                        }
+                    }
+                })
+            })();
+        })();
+
     };
 }(jQuery));
