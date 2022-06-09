@@ -41,8 +41,8 @@
                         count = $(el).children('div').eq(i);
                         number = parseInt(numbers.substr(i,1));
                         if(!isNaN(number)){
-                            count.removeAttr('style');
                             count.attr('class','count'+number);
+                            count.removeAttr('style');
                         }
                     }
                 },settings.delay)
