@@ -41,6 +41,6 @@
 .rollingNumber .count9{
     transform: translateY(0em);
 }
-.rollingNumber [class^=count] span{
+.rollingNumber div span{
     display: block;
 }

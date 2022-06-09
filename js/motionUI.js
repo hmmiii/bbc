@@ -6,7 +6,7 @@
         },options);
     
         const el = this;
-        const countTemp = '<div class="count" style="transform: translateY(-9em)"><span>9</span><span>8</span><span>7</span><span>6</span><span>5</span><span>4</span><span>3</span><span>2</span><span>1</span><span>0</span></div>';
+        const countTemp = '<div style="transform: translateY(-9em)"><span>9</span><span>8</span><span>7</span><span>6</span><span>5</span><span>4</span><span>3</span><span>2</span><span>1</span><span>0</span></div>';
         let length = el.text().length;
         let numbers = el.text();
         let number = 0;
