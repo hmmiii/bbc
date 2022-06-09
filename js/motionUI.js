@@ -1,7 +1,8 @@
 (function($){
     $.fn.rollingNumbers = function(options){
         let settings = $.extend({
-            comma : true
+            comma : true,
+            delay : 200
         },options);
     
         const el = this;
@@ -43,7 +44,7 @@
                             count.attr('class','count'+number);
                         }
                     }
-                })
+                },settings.delay)
             })();
         })();
     };
