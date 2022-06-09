@@ -8,7 +8,7 @@
     transition: transform 1.5s;
     text-align: left;
 }
-.rollingNumber [class^=count]{
+.rollingNumber [class=count]{
     transform: translateY(-9em);
 }
 .rollingNumber .count0{
