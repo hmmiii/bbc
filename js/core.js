@@ -32,7 +32,6 @@ var weekInPictures = null;
 var yourPictures = null;
 var etcSubTop = null;
 
-
 $(document).ready(function(){
     init();
 
@@ -77,7 +76,10 @@ $(document).ready(function(){
     setNavigator();
     setTitle();
     menu();
-    rollingNumber();
+
+    $(window).on('load',function(){
+        rollingNumber();
+    })
 });
 
 function init(){
