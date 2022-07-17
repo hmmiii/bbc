@@ -1,46 +1,46 @@
-.rollingNumber{
+.rollingNumbers{
     height: 1em;
     overflow: hidden;
 }
-.rollingNumber > div{
+.rollingNumbers > div{
     display: block;
     float: left;
     transition: transform 1.5s;
     text-align: left;
 }
-.rollingNumber .count{
+.rollingNumbers .count{
     transform: translateY(-9em);
 }
-.rollingNumber .count0{
+.rollingNumbers .count0{
     transform: translateY(-9em);
 }
-.rollingNumber .count1{
+.rollingNumbers .count1{
     transform: translateY(-8em);
 }
-.rollingNumber .count2{
+.rollingNumbers .count2{
     transform: translateY(-7em);
 }
-.rollingNumber .count3{
+.rollingNumbers .count3{
     transform: translateY(-6em);
 }
-.rollingNumber .count4{
+.rollingNumbers .count4{
     transform: translateY(-5em);
 }
-.rollingNumber .count5{
+.rollingNumbers .count5{
     transform: translateY(-4em);
 }
-.rollingNumber .count6{
+.rollingNumbers .count6{
     transform: translateY(-3em);
 }
-.rollingNumber .count7{
+.rollingNumbers .count7{
     transform: translateY(-2em);
 }
-.rollingNumber .count8{
+.rollingNumbers .count8{
     transform: translateY(-1em);
 }
-.rollingNumber .count9{
+.rollingNumbers .count9{
     transform: translateY(0em);
 }
-.rollingNumber div span{
+.rollingNumbers div span{
     display: block;
 }

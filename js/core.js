@@ -77,9 +77,10 @@ $(document).ready(function(){
     setTitle();
     menu();
 
-    $(window).on('load',function(){
-        rollingNumber();
-    })
+});
+
+$(window).on('load',function(){
+    rollingNumber();
 });
 
 function init(){

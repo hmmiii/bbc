@@ -33,7 +33,7 @@
     
     
         el.text('');
-        el.addClass('rollingNumber');
+        el.addClass('rollingNumbers');
     
         (function(){
             for(let i=0; i<length; i++){
