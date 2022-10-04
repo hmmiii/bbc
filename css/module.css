@@ -431,7 +431,6 @@ form fieldset input[type=submit]:hover, #forgotten1 .modalContainer form fieldse
 	color: rgba(255, 255, 255, 0.6);
 }
 .gridView .grid img, .gridView .plain img:not(.vertical img){
-	height: 100%;
 	margin-right: 22px;
 }
 .gridView .display:not(.small, .medium, .large) div h3 a,
