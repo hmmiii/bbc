@@ -31,6 +31,8 @@ var inPictureFeatures = null;
 var weekInPictures = null;
 var yourPictures = null;
 var etcSubTop = null;
+checkTheme(convertBtn);
+
 
 $(document).ready(function(){
     init();
@@ -45,7 +47,6 @@ $(document).ready(function(){
     closeModal(sendBtn);
     closeModal(modalBG);
     addShadow(header);
-    checkTheme(convertBtn);
     convertTheme(convertBtn);
     postCarouselA(etcSubTop);
     postCarouselB(editorsPick);
@@ -158,24 +159,18 @@ function addShadow(element){
 
 function checkTheme(convertBtn){
     if(localStorage.dark === 'true'){
-        $(convertBtn).removeClass('darken');
-        $(convertBtn).addClass('lighten');
-        $('body').attr('data-dark', 'true');
+        $('html').attr('data-dark', 'true');
     }
 }
 
 function convertTheme(convertBtn){
     $(convertBtn).click(function(){
-        if($(convertBtn).hasClass('darken')){
-            $(this).removeClass('darken');
-            $(this).addClass('lighten');
-            $('body').attr('data-dark', 'true');
+        if($(convertBtn).parents('html').attr('data-dark') == 'false'){
+            $('html').attr('data-dark', 'true');
             localStorage.dark = true;
             $(this).css('animation-name','bottom');
         }else{
-            $(this).removeClass('lighten');
-            $(this).addClass('darken');
-            $('body').attr('data-dark', 'false');
+            $('html').attr('data-dark', 'false');
             localStorage.dark = false;
             $(this).css('animation-name','bottom2');
         }

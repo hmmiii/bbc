@@ -785,13 +785,7 @@ ul.tab li.active:last-child{
 		bottom: 60px;
 		animation-duration: 1s;
         animation-timing-function: cubic-bezier(.24,.82,.4,.89);
-	}
-	.btn_convert.darken{
 		background-image: url('../images/btn_darken_m.svg');
-		background-size: 80px;
-	}
-	.btn_convert.lighten{
-		background-image: url('../images/btn_lighten_m.svg');
 		background-size: 80px;
 	}
 	@keyframes bottom{
@@ -1038,15 +1032,8 @@ ul.tab li.active:last-child{
 		z-index: 2;
 		transition: background-position .3s cubic-bezier(.24,.82,.4,.89);
 		background-repeat: no-repeat;
-	}
-	.btn_convert.darken{
 		background-image: url('../images/toggle_circle.svg'), url('../images/btn_darken_tablet.svg');
 		background-position: center 33px, left top;
-		background-size: 33px, 53px 133px;
-	}
-	.btn_convert.lighten{
-		background-image: url('../images/toggle_circle.svg'), url('../images/btn_lighten_tablet.svg');
-		background-position: center 68px, left top;
 		background-size: 33px, 53px 133px;
 	}
 	
@@ -1162,15 +1149,8 @@ ul.tab li.active:last-child{
 		z-index: 2;
 		transition: background-position .3s cubic-bezier(.24,.82,.4,.89);
 		background-repeat: no-repeat;
-	}
-	.btn_convert.darken{
 		background-image: url('../images/toggle_circle.svg'), url('../images/btn_darken.svg');
 		background-position: center 36px, left top;
-		background-size: 34px, 68px 138px;
-	}
-	.btn_convert.lighten{
-		background-image: url('../images/toggle_circle.svg'), url('../images/btn_lighten.svg');
-		background-position: center 70px, left top;
 		background-size: 34px, 68px 138px;
 	}
 	
