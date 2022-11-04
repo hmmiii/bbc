@@ -378,6 +378,7 @@ form fieldset input[type=submit]:hover, #forgotten1 .modalContainer form fieldse
 [class*=View] li img{
 	transition: transform 0.3s;
 	object-fit: cover;
+	will-change: transform;
 }
 [class*=View] li:hover img:not(.gridView .top:hover img, .gridView .display:hover img),
 .content :last-child img:hover{
