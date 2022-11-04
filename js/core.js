@@ -31,7 +31,7 @@ var inPictureFeatures = null;
 var weekInPictures = null;
 var yourPictures = null;
 var etcSubTop = null;
-checkTheme(convertBtn);
+checkTheme();
 
 
 $(document).ready(function(){
@@ -157,7 +157,7 @@ function addShadow(element){
     })
 }
 
-function checkTheme(convertBtn){
+function checkTheme(){
     if(localStorage.dark === 'true'){
         $('html').attr('data-dark', 'true');
     }
