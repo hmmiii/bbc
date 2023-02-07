@@ -97,6 +97,7 @@ small{
 	line-height: 13px;
 	padding: 16px 37px 16px 16px;
 	background-position: 87.59% center;
+	white-space: nowrap;
 }
 .moreArticles{
 	display: block;
